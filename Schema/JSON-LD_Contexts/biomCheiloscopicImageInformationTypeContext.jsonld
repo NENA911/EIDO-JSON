@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "lipPrintWidthValue": "biom:LipPrintWidthValue",
+    "lipPrintHeightValue": "biom:LipPrintHeightValue",
+    "philtrumWidthValue": "biom:PhiltrumWidthValue",
+    "philtrumHeightValue": "biom:PhiltrumHeightValue",
+    "upperLipCharacterizationCodeList": "biom:UpperLipCharacterizationCodeList",
+    "lowerLipCharacterizationCodeList": "biom:LowerLipCharacterizationCodeList",
+    "lipContactLineDescriptorCode": "biom:LipContactLineDescriptorCode",
+    "lipPrintCharacterization": "biom:LipPrintCharacterizationText",
+    "lipPrintPathologiesPeculiaritiesCodeList": "biom:LipPrintPathologiesPeculiaritiesCodeList",
+    "lipPrintPathologiesPeculiarities": "biom:LipPrintPathologiesPeculiaritiesText",
+    "lipPrintSurfaceCodeList": "biom:LipPrintSurfaceCodeList",
+    "lipPrintSurface": "biom:LipPrintSurfaceText",
+    "lipPrintMediumCode": "biom:LipPrintMediumCode",
+    "lipPrintMedium": "biom:LipPrintMediumText",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "personFacialHair": "nc:PersonFacialHairText",
+    "lipPositionTensionDescriptive": "biom:LipPositionTensionDescriptiveText",
+    "lipPrintDescriptive": "biom:LipPrintDescriptiveText",
+    "lipPrintComparisonDescriptive": "biom:LipPrintComparisonDescriptiveText"
+  }
+}

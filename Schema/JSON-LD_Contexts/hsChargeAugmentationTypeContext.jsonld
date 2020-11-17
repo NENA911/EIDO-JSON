@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+    "chargeAllegationReportedDate": "hs:ChargeAllegationReportedDate",
+    "chargeAllegationLocalDescription": "hs:ChargeAllegationLocalDescriptionText",
+    "chargeAllegationCategoryCode": "hs:ChargeAllegationCategoryCode",
+    "chargeAllegationCategory": "hs:ChargeAllegationCategoryText",
+    "chargeAdjudication": "hs:ChargeAdjudication",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "bailBond": "j:BailBond"
+  }
+}

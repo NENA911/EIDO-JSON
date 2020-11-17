@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "segmentID": "biom:SegmentID",
+    "trackChannelList": "biom:TrackChannelList",
+    "relativeStartTimeInMSValue": "biom:RelativeStartTimeInMSValue",
+    "relativeEndTimeInMSValue": "biom:RelativeEndTimeInMSValue",
+    "diaryComment": "biom:DiaryCommentText",
+    "tagStartDateTime": "biom:TagStartDateTime",
+    "tagEndDateTime": "biom:TagEndDateTime",
+    "originalRecordingDate": "biom:OriginalRecordingDate",
+    "segmentRecordingStartDateTime": "biom:SegmentRecordingStartDateTime",
+    "segmentRecordingEndDateTime": "biom:SegmentRecordingEndDateTime",
+    "timeSourceDescription": "biom:TimeSourceDescriptionText",
+    "timeComment": "biom:TimeCommentText"
+  }
+}

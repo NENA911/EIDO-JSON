@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "cbrn": "http://release.niem.gov/niem/domains/cbrn/4.1/#",
+    "remark": "cbrn:RemarkText",
+    "weekEndHours": "cbrn:WeekEndHoursText",
+    "weekDayHours": "cbrn:WeekDayHoursText",
+    "mondayHours": "cbrn:MondayHoursText",
+    "tuesdayHours": "cbrn:TuesdayHoursText",
+    "wednesdayHours": "cbrn:WednesdayHoursText",
+    "thursdayHours": "cbrn:ThursdayHoursText",
+    "fridayHours": "cbrn:FridayHoursText",
+    "saturdayHours": "cbrn:SaturdayHoursText",
+    "sundayHours": "cbrn:SundayHoursText",
+    "latitudeValue": "cbrn:LatitudeValue",
+    "longitudeValue": "cbrn:LongitudeValue",
+    "elevationValue": "cbrn:ElevationValue",
+    "elevationOffsetValue": "cbrn:ElevationOffsetValue",
+    "geoPointAccuracyValue": "cbrn:GeoPointAccuracyValue",
+    "elevationAccuracyValue": "cbrn:ElevationAccuracyValue",
+    "elevationOffsetAccuracyValue": "cbrn:ElevationOffsetAccuracyValue",
+    "datum": "cbrn:datumText",
+    "units": "cbrn:unitsText"
+  }
+}

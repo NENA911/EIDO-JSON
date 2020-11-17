@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "image": "j:SignatureImage",
+    "personName": "j:SignaturePersonName",
+    "name": "j:SignatureNameText",
+    "location": "j:SignatureLocationText",
+    "method": "j:SignatureMethodText",
+    "date": "j:SignatureDate"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "facilityEquipmentCapacity": "j:FacilityEquipmentCapacityText",
+    "facilityAgeLimitationRange": "j:FacilityAgeLimitationRange",
+    "facilityAreaDescription": "j:FacilityAreaDescriptionText",
+    "facilityAreaStatus": "j:FacilityAreaStatusText",
+    "facilityStaffingCapacityQuantity": "j:FacilityStaffingCapacityQuantity",
+    "facilityBuildingID": "j:FacilityBuildingID",
+    "facilityBedVacantCountQuantity": "j:FacilityBedVacantCountQuantity",
+    "facilityStatus": "j:FacilityStatus"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "description": "j:TargetDescriptionText",
+    "location": "j:TargetLocation",
+    "name": "j:TargetName",
+    "organization": "j:TargetOrganization",
+    "person": "j:TargetPerson",
+    "item": "j:TargetItem",
+    "reason": "j:TargetReasonText",
+    "category": "j:TargetCategoryText",
+    "sectorCode": "j:TargetSectorCode"
+  }
+}

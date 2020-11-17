@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "doctor": "nc:MedicalConditionDoctor",
+    "text": "nc:MedicalConditionText",
+    "cause": "nc:MedicalConditionCauseText",
+    "description": "nc:MedicalConditionDescriptionText",
+    "isPresent": "nc:MedicalConditionPresentIndicator",
+    "severity": "nc:MedicalConditionSeverityText",
+    "dateRange": "nc:MedicalConditionDateRange",
+    "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
+    "augmentation": "scr:MedicalConditionAugmentation"
+  }
+}

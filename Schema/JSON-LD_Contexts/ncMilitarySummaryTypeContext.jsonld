@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "militaryBranchName": "nc:MilitaryBranchName",
+    "militaryDischargeDate": "nc:MilitaryDischargeDate",
+    "militaryDischargeCategoryCode": "nc:MilitaryDischargeCategoryCode",
+    "militaryDischargeCategory": "nc:MilitaryDischargeCategoryText",
+    "militaryExemptionDescription": "nc:MilitaryExemptionDescriptionText",
+    "isMilitaryExperience": "nc:MilitaryExperienceIndicator",
+    "militaryReleaseDate": "nc:MilitaryReleaseDate",
+    "militaryReleaseCategory": "nc:MilitaryReleaseCategoryText",
+    "isMilitaryServiceActive": "nc:MilitaryServiceActiveIndicator",
+    "militaryServiceTimeMeasure": "nc:MilitaryServiceTimeMeasure",
+    "militaryStatus": "nc:MilitaryStatus",
+    "militaryCountry": "nc:MilitaryCountry",
+    "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+    "hsAugmentation": "hs:MilitarySummaryAugmentation",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "jAugmentation": "j:MilitarySummaryAugmentation"
+  }
+}

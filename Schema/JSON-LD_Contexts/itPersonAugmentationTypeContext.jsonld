@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "it": "http://release.niem.gov/niem/domains/internationalTrade/4.1/#",
+    "personFunction": "it:PersonFunctionText"
+  }
+}

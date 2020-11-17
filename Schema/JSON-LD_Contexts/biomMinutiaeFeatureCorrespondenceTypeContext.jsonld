@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "featureLabelID": "biom:FeatureLabelID",
+    "categoryCode": "biom:MinutiaeFeatureCorrespondenceCategoryCode",
+    "minutiaeFeatureCategoryCode": "biom:MinutiaeFeatureCategoryCode",
+    "correspondingSubfieldID": "biom:CorrespondingSubfieldID",
+    "imageFeatureVertex": "biom:ImageFeatureVertex",
+    "minutiaeComment": "biom:MinutiaeCommentText"
+  }
+}

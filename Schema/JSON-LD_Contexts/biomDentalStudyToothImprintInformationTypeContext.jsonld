@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "dentalStudyRecordingDate": "biom:DentalStudyRecordingDate",
+    "dentalStudyRecordingDateEstimateRangeDuration": "biom:DentalStudyRecordingDateEstimateRangeDuration",
+    "dentalStudyReferenceCode": "biom:DentalStudyReferenceCode",
+    "dentalStudyAdditionalDescriptive": "biom:DentalStudyAdditionalDescriptiveText"
+  }
+}

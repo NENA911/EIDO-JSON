@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "ucr": "http://release.niem.gov/niem/codes/fbi_ucr/4.1/#",
+    "simpleType": "ucr:InjuryCategoryCodeSimpleType"
+  }
+}

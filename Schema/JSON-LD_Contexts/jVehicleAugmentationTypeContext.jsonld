@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "vehicleGarage": "j:VehicleGarage",
+    "vehicleInvoiceIdentification": "j:VehicleInvoiceIdentification",
+    "vehicleVINA": "j:VehicleVINAText",
+    "vehicleTaxableAmount": "j:VehicleTaxableAmount",
+    "lessor": "j:Lessor",
+    "lessee": "j:Lessee",
+    "vehicleShipDate": "j:VehicleShipDate",
+    "isVehicleWanted": "j:VehicleWantedIndicator",
+    "isVehicleGarage": "j:VehicleGarageIndicator",
+    "vehicleGrossAxleWeightRatingMeasure": "j:VehicleGrossAxleWeightRatingMeasure",
+    "vehicleInvoiceDate": "j:VehicleInvoiceDate",
+    "vehicleNominalTonRateMeasure": "j:VehicleNominalTonRateMeasure",
+    "isVehiclePaperMCOIssued": "j:VehiclePaperMCOIssuedIndicator",
+    "vehicleEmissionInspectionQuantity": "j:VehicleEmissionInspectionQuantity",
+    "vehicleEmissionInspection": "j:VehicleEmissionInspection",
+    "vehicleOwnershipNICB": "j:VehicleOwnershipNICBText",
+    "isVehiclePartOrAccessory": "j:VehiclePartOrAccessoryIndicator",
+    "vehicleSafetyInspection": "j:VehicleSafetyInspection",
+    "vehicleBrand": "j:VehicleBrand",
+    "vehicleBrander": "j:VehicleBrander",
+    "vehicleUseCode": "j:VehicleUseCode",
+    "vehicleTitle": "j:VehicleTitle"
+  }
+}

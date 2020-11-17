@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "latentFrictionRidgePositionCode": "biom:LatentFrictionRidgePositionCode",
+    "segmentLocationCode": "biom:SegmentLocationCode",
+    "fingerprintOffCenterCode": "biom:FingerprintOffCenterCode",
+    "imageSegmentPolygon": "biom:ImageSegmentPolygon"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "angularDegreeValue": "nc:AngularDegreeValue",
+    "angularMinuteValue": "nc:AngularMinuteValue",
+    "angularSecondValue": "nc:AngularSecondValue",
+    "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
+    "augmentation": "mo:AngularMeasureAugmentation",
+    "directionDatumCode": "mo:DirectionDatumCode"
+  }
+}

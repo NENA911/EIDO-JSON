@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "plantarPositionCode": "biom:PlantarPositionCode",
+    "qualityAlgorithmProductID": "biom:QualityAlgorithmProductID",
+    "qualityAlgorithmVendorID": "biom:QualityAlgorithmVendorID",
+    "qualityValue": "biom:QualityValue"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "xml": "http://www.w3.org/XML/1998/namespace#",
+    "lang": "xml:lang",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "isTruncation": "nc:truncationIndicator",
+    "isPartial": "nc:partialIndicator"
+  }
+}

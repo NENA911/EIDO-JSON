@@ -1,0 +1,16 @@
+{
+  "@context": {
+    "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+    "juvenile": "hs:Juvenile",
+    "treatmentApproximateLength": "hs:TreatmentApproximateLengthText",
+    "treatmentAssessment": "hs:TreatmentAssessment",
+    "treatmentFocus": "hs:TreatmentFocusText",
+    "therapist": "hs:Therapist",
+    "treatmentGoalDescription": "hs:TreatmentGoalDescriptionText",
+    "treatmentProgram": "hs:TreatmentProgram",
+    "treatmentProgress": "hs:TreatmentProgress",
+    "treatmentRecommendationDescription": "hs:TreatmentRecommendationDescriptionText",
+    "treatmentReferral": "hs:TreatmentReferral",
+    "treatmentSupervisorEntity": "hs:TreatmentSupervisorEntity"
+  }
+}

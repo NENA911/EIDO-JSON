@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "name": "nc:TaskName",
+    "taskID": "nc:TaskID",
+    "startDate": "nc:TaskStartDate",
+    "endDate": "nc:TaskEndDate",
+    "description": "nc:TaskDescriptionText",
+    "criteriaForSuccess": "nc:TaskCriteriaForSuccessText",
+    "currentStatus": "nc:TaskCurrentStatus",
+    "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+    "hsAugmentation": "hs:TaskAugmentation",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "jAugmentation": "j:TaskAugmentation",
+    "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
+    "moAugmentation": "mo:TaskAugmentation"
+  }
+}

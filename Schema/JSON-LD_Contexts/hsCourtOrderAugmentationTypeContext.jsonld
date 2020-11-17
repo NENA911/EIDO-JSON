@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+    "organizationCaseID": "hs:OrganizationCaseID",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "caseDocketID": "nc:CaseDocketID",
+    "courtOrderRenderedDate": "hs:CourtOrderRenderedDate"
+  }
+}

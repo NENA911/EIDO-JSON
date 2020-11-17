@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "subjectExistentialStatusCode": "biom:SubjectExistentialStatusCode",
+    "subjectLastContactDate": "biom:SubjectLastContactDate",
+    "subjectLastContactDateEstimateRangeDuration": "biom:SubjectLastContactDateEstimateRangeDuration",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "personBirthDate": "nc:PersonBirthDate",
+    "subjectBirthDateEstimateRangeDuration": "biom:SubjectBirthDateEstimateRangeDuration",
+    "personEthnicity": "nc:PersonEthnicityText",
+    "subjectDNARecordsAvailableCode": "biom:SubjectDNARecordsAvailableCode",
+    "subjectCollectionLocationDescription": "biom:SubjectCollectionLocationDescriptionText",
+    "subjectEstimatedDeathDate": "biom:SubjectEstimatedDeathDate",
+    "subjectDeathDateRangeDuration": "biom:SubjectDeathDateRangeDuration",
+    "subjectDeathTimeEstimateRationale": "biom:SubjectDeathTimeEstimateRationaleText",
+    "subjectDeathAgeEstimate": "biom:SubjectDeathAgeEstimateText"
+  }
+}

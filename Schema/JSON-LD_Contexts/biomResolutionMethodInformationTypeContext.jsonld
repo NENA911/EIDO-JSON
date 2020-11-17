@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "resolutionMeansCode": "biom:ResolutionMeansCode",
+    "resolutionScaleLengthValue": "biom:ResolutionScaleLengthValue",
+    "resolutionScaleUnitCode": "biom:ResolutionScaleUnitCode",
+    "resolutionScaleXCoordinateAValue": "biom:ResolutionScaleXCoordinateAValue",
+    "resolutionScaleYCoordinateAValue": "biom:ResolutionScaleYCoordinateAValue",
+    "resolutionScaleXCoordinateBValue": "biom:ResolutionScaleXCoordinateBValue",
+    "resolutionScaleYCoordinateBValue": "biom:ResolutionScaleYCoordinateBValue",
+    "resolutionComment": "biom:ResolutionCommentText"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "contactRadioChannel": "nc:ContactRadioChannelText",
+    "em": "http://release.niem.gov/niem/domains/emergencyManagement/4.1/#",
+    "responseLevel": "em:ResponseLevelText",
+    "routingInstructions": "em:RoutingInstructionsText",
+    "location": "em:StagingLocationText"
+  }
+}

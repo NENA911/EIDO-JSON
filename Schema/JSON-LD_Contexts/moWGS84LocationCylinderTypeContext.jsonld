@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
+    "WGS84LocationPoint": "mo:WGS84LocationPoint",
+    "locationCylinderRadiusValue": "mo:LocationCylinderRadiusValue",
+    "locationCylinderHalfHeightValue": "mo:LocationCylinderHalfHeightValue",
+    "locationCreationCode": "mo:LocationCreationCode"
+  }
+}

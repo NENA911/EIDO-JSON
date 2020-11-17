@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+    "isJuvenileInformalAdjustment": "hs:JuvenileInformalAdjustmentIndicator",
+    "informalDispositionCategoryCode": "hs:InformalDispositionCategoryCode"
+  }
+}

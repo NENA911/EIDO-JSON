@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "codeIdentification": "j:StatuteCodeIdentification",
+    "codeSectionIdentification": "j:StatuteCodeSectionIdentification",
+    "description": "j:StatuteDescriptionText",
+    "enactmentDate": "j:StatuteEnactmentDate",
+    "jurisdiction": "j:StatuteJurisdiction",
+    "keyword": "j:StatuteKeywordText",
+    "level": "j:StatuteLevelText",
+    "isOffenseEnhanceable": "j:StatuteOffenseEnhanceableIndicator",
+    "repealDate": "j:StatuteRepealDate",
+    "status": "j:StatuteStatus",
+    "text": "j:StatuteText",
+    "categoryCode": "j:StatuteCategoryCode",
+    "category": "j:StatuteCategoryText",
+    "offenseStateCode": "j:StatuteOffenseStateCodeText",
+    "offenseAPCOCode": "j:StatuteOffenseAPCOCode",
+    "offenseUCRCode": "j:StatuteOffenseUCRCode",
+    "offenseIdentification": "j:StatuteOffenseIdentification"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "deviceID": "biom:DeviceID",
+    "name": "biom:DeviceName",
+    "category": "biom:DeviceCategoryText",
+    "manufacturer": "biom:DeviceManufacturerText",
+    "description": "biom:DeviceDescriptionText",
+    "make": "biom:DeviceMakeText",
+    "model": "biom:DeviceModelText",
+    "serialNumber": "biom:DeviceSerialNumberText",
+    "version": "biom:DeviceVersionText",
+    "firmwareVersion": "biom:DeviceFirmwareVersionText"
+  }
+}

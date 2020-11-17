@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "forensicAnalystCategoryCode": "biom:ForensicAnalystCategoryCode",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "organizationPrimaryContactInformation": "nc:OrganizationPrimaryContactInformation",
+    "contactInformationDescription": "nc:ContactInformationDescriptionText",
+    "forensicSourceCountry": "biom:ForensicSourceCountry",
+    "recordingSourceCountry": "biom:RecordingSourceCountry"
+  }
+}

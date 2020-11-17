@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "personEducationLevel": "nc:PersonEducationLevelText",
+    "intel": "http://release.niem.gov/niem/domains/intelligence/4.1/#",
+    "personEducationDegreeCode": "intel:PersonEducationDegreeCodeText"
+  }
+}

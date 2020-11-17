@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "aamva_d20": "http://release.niem.gov/niem/codes/aamva_d20/4.0/#",
+    "simpleType": "aamva_d20:DrivingStatusCodeSimpleType"
+  }
+}

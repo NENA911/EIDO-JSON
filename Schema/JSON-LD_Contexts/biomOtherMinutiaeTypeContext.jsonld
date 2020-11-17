@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "imageCaptureDetail": "biom:ImageCaptureDetail",
+    "minutiaeAlgorithmOwner": "biom:MinutiaeAlgorithmOwnerText",
+    "minutiaeAlgorithm": "biom:MinutiaeAlgorithm",
+    "captureDevice": "biom:CaptureDevice",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "contactInformationDescription": "nc:ContactInformationDescriptionText",
+    "fingerRidgeMinutia": "biom:FingerRidgeMinutia"
+  }
+}

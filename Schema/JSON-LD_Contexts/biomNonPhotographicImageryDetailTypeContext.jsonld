@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "biometricCapture": "biom:BiometricCapture",
+    "medicalImageryDataBlockBinaryObject": "biom:MedicalImageryDataBlockBinaryObject",
+    "sourceExternalAnalogFileReference": "biom:SourceExternalAnalogFileReferenceText",
+    "sourceExternalDigitalAudioReference": "biom:SourceExternalDigitalAudioReferenceText",
+    "sourceExternalDigitalImageReference": "biom:SourceExternalDigitalImageReferenceText",
+    "sourceExternalDigitalVideoReference": "biom:SourceExternalDigitalVideoReferenceText",
+    "sourceExternalFileReference": "biom:SourceExternalFileReferenceText",
+    "imageCaptureDateEstimateRangeDuration": "biom:ImageCaptureDateEstimateRangeDuration",
+    "imageCategoryCode": "biom:ImageCategoryCode",
+    "subjectExistentialDetails": "biom:SubjectExistentialDetails",
+    "dentalRadiographImageInformation": "biom:DentalRadiographImageInformation",
+    "nonPhotographicImageCategoryCode": "biom:NonPhotographicImageCategoryCode",
+    "nonPhotographicImageCategory": "biom:NonPhotographicImageCategoryText",
+    "nonPhotographicImageFormatCode": "biom:NonPhotographicImageFormatCode",
+    "nonPhotographicImageryComment": "biom:NonPhotographicImageryCommentText"
+  }
+}

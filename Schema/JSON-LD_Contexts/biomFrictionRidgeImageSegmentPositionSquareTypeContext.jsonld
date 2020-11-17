@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "fingerPositionCode": "biom:FingerPositionCode",
+    "palmPositionCode": "biom:PalmPositionCode",
+    "plantarPositionCode": "biom:PlantarPositionCode",
+    "segmentBottomVerticalCoordinateValue": "biom:SegmentBottomVerticalCoordinateValue",
+    "segmentLeftHorizontalCoordinateValue": "biom:SegmentLeftHorizontalCoordinateValue",
+    "segmentRightHorizontalCoordinateValue": "biom:SegmentRightHorizontalCoordinateValue",
+    "segmentTopVerticalCoordinateValue": "biom:SegmentTopVerticalCoordinateValue"
+  }
+}

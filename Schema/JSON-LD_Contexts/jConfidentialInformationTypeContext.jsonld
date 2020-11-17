@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "source": "j:ConfidentialInformationSource",
+    "confidentialSubjectInfoKnowledge": "j:ConfidentialSubjectInfoKnowledgeText",
+    "confidentialityMaterial": "j:ConfidentialityMaterial",
+    "confidentialityDocument": "j:ConfidentialityDocument",
+    "recordedDate": "j:ConfidentialInformationRecordedDate",
+    "document": "j:ConfidentialInformationDocument",
+    "associatedStaffMember": "j:ConfidentialInformationAssociatedStaffMember",
+    "confidentialityInformationListingPagesNumber": "j:ConfidentialityInformationListingPagesNumber"
+  }
+}

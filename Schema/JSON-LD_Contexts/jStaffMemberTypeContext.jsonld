@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "discipline": "j:StaffMemberDisciplineText",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "roleOfPerson": "nc:RoleOfPerson",
+    "qualification": "j:StaffMemberQualification",
+    "affiliatedPrimaryProgram": "j:StaffMemberAffiliatedPrimaryProgram",
+    "appliedForce": "j:StaffMemberAppliedForce",
+    "badgeNumberID": "j:StaffMemberBadgeNumberID",
+    "identification": "j:StaffMemberIdentification",
+    "status": "j:StaffMemberStatus",
+    "assignedWeapon": "j:StaffMemberAssignedWeapon",
+    "incident": "j:StaffMemberIncident",
+    "isJusticeSupervision": "j:StaffMemberJusticeSupervisionIndicator",
+    "isKeyPosition": "j:StaffMemberKeyPositionIndicator",
+    "location": "j:StaffMemberLocation",
+    "associatedSubject": "j:StaffMemberAssociatedSubject"
+  }
+}

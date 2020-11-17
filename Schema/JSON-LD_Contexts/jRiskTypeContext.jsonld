@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "level": "j:RiskLevelText",
+    "scoreValue": "j:RiskScoreValue"
+  }
+}

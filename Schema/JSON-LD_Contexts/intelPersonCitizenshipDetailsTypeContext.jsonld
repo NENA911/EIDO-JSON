@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "personCitizenshipISO3166Alpha2Code": "nc:PersonCitizenshipISO3166Alpha2Code",
+    "personCitizenship": "nc:PersonCitizenshipText",
+    "intel": "http://release.niem.gov/niem/domains/intelligence/4.1/#",
+    "personCitizenshipStatusCode": "intel:PersonCitizenshipStatusCodeText"
+  }
+}

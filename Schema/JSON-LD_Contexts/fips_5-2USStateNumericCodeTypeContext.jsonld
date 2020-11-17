@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "fips_5-2": "http://release.niem.gov/niem/codes/fips_5-2/4.0/#",
+    "simpleType": "fips_5-2:USStateNumericCodeSimpleType"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "em": "http://release.niem.gov/niem/domains/emergencyManagement/4.1/#",
+    "simpleType": "em:NotificationFunctionCategoryCodeSimpleType"
+  }
+}

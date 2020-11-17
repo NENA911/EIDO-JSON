@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "isLivingWithSpouse": "j:PersonLivingSituationLivingWithSpouseIndicator",
+    "category": "j:PersonLivingSituationCategoryText",
+    "isVerified": "j:PersonLivingSituationVerifiedIndicator"
+  }
+}

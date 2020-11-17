@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "binaryID": "nc:BinaryID",
+    "location": "nc:ImageLocation",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "categoryCode": "j:BinaryCategoryCode",
+    "category": "nc:BinaryCategoryText",
+    "hash": "nc:BinaryHash",
+    "isAvailable": "nc:BinaryAvailableIndicator",
+    "base64Object": "nc:Base64BinaryObject",
+    "hexObject": "nc:HexBinaryObject",
+    "cbrn": "http://release.niem.gov/niem/domains/cbrn/4.1/#",
+    "UTF8Object": "cbrn:UTF8BinaryObjectText",
+    "captureDate": "nc:BinaryCaptureDate",
+    "capturer": "nc:BinaryCapturer",
+    "description": "nc:BinaryDescriptionText",
+    "format": "nc:BinaryFormatText",
+    "formatStandardName": "nc:BinaryFormatStandardName",
+    "URI": "nc:BinaryURI",
+    "sizeValue": "nc:BinarySizeValue",
+    "augmentation": "j:BinaryAugmentation",
+    "heightValue": "nc:ImageHeightValue",
+    "widthValue": "nc:ImageWidthValue",
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "biomAugmentation": "biom:ImageAugmentation",
+    "jAugmentation": "j:ImageAugmentation",
+    "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
+    "moAugmentation": "mo:ImageAugmentation"
+  }
+}

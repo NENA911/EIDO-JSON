@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "description": "j:OffenseFactorDescriptionText",
+    "isKnown": "j:OffenseFactorKnownIndicator",
+    "incidentFactorSubCategory": "j:IncidentFactorSubCategoryText",
+    "code": "j:OffenseFactorCode",
+    "justifiableHomicideCode": "j:OffenseFactorJustifiableHomicideCode",
+    "NIBRSAggravatedAssaultHomicideCode": "j:OffenseFactorNIBRSAggravatedAssaultHomicideCode",
+    "text": "j:OffenseFactorText"
+  }
+}

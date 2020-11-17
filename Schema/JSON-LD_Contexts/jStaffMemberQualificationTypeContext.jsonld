@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "isHighlyQualifiedTeacher": "j:StaffMemberQualificationHighlyQualifiedTeacherIndicator",
+    "isFelonyInLast3Years": "j:StaffMemberQualificationFelonyInLast3YearsIndicator",
+    "experienceCategory": "j:StaffMemberQualificationExperienceCategoryText",
+    "isSHistoryOfSeriousOrViolentFelony": "j:StaffMemberQualificationsHistoryOfSeriousOrViolentFelonyIndicator",
+    "category": "j:StaffMemberQualificationCategoryText",
+    "isStaffMemberSocialScienceDegree": "j:StaffMemberSocialScienceDegreeIndicator",
+    "isSAffordableCareAct": "j:StaffMemberQualificationsAffordableCareActIndicator",
+    "satisfactionStatement": "j:StaffMemberQualificationSatisfactionStatementText",
+    "statement": "j:StaffMemberQualificationStatementText",
+    "sTXProfessionalCertification": "j:StaffMemberQualificationsTXProfessionalCertificationText",
+    "staffMemberServiceYearsOfServiceNumeric": "j:StaffMemberServiceYearsOfServiceNumeric",
+    "staffMemberSecurityClearanceResults": "j:StaffMemberSecurityClearanceResultsText",
+    "isStaffMemberSecurityClearanceCompleted": "j:StaffMemberSecurityClearanceCompletedIndicator",
+    "staffMemberServiceMonthsOfServiceNumeric": "j:StaffMemberServiceMonthsOfServiceNumeric",
+    "securityClearanceCompletionDate": "j:StaffMemberQualificationSecurityClearanceCompletionDate"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "hashValueBase64BinaryObject": "j:HashValueBase64BinaryObject",
+    "hashValue": "j:HashValueText",
+    "hashValueMethodAlgorithm": "j:HashValueMethodAlgorithmText"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "fingerprintPatternGeneralClassCode": "biom:FingerprintPatternGeneralClassCode",
+    "fingerprintPatternSubClassCode": "biom:FingerprintPatternSubClassCode",
+    "fingerprintPatternWhorlDeltaRelationshipCode": "biom:FingerprintPatternWhorlDeltaRelationshipCode"
+  }
+}

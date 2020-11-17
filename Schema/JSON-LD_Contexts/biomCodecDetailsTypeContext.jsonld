@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "codecCategoryCode": "biom:CodecCategoryCode",
+    "samplingRate": "biom:SamplingRate",
+    "recordingBitDepthValue": "biom:RecordingBitDepthValue",
+    "recordingEndianCode": "biom:RecordingEndianCode",
+    "numericFormat": "biom:NumericFormatText",
+    "recordingChannelsQuantity": "biom:RecordingChannelsQuantity",
+    "codecExternalReferenceCode": "biom:CodecExternalReferenceCodeText",
+    "codecComment": "biom:CodecCommentText"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "confidencePercent": "nc:confidencePercent",
+    "tolerance": "nc:toleranceNumeric",
+    "quantityUnit": "nc:quantityUnitText"
+  }
+}

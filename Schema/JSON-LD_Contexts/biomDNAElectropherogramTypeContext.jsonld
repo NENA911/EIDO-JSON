@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "DNAElectropherogramID": "biom:DNAElectropherogramID",
+    "fileStorage": "biom:DNAElectropherogramFileStorageText",
+    "dataDescription": "biom:DNAElectropherogramDataDescriptionText",
+    "binaryObject": "biom:DNAElectropherogramBinaryObject",
+    "screenshotImage": "biom:DNAElectropherogramScreenshotImage"
+  }
+}

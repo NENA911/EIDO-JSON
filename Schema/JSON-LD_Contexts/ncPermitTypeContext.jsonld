@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "identification": "nc:PermitIdentification",
+    "startDate": "nc:PermitStartDate",
+    "usage": "nc:PermitUsageText",
+    "category": "nc:PermitCategoryText",
+    "renewalDate": "nc:PermitRenewalDate"
+  }
+}

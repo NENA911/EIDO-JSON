@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "releaseTransportationAssociation": "j:ReleaseTransportationAssociation",
+    "releaseReviewDecision": "j:ReleaseReviewDecision",
+    "releaseFundsAmount": "j:ReleaseFundsAmount",
+    "isReleaseFundsDisperse": "j:ReleaseFundsDisperseIndicator",
+    "releaseReview": "j:ReleaseReview",
+    "releaseDateCategory": "j:ReleaseDateCategoryText",
+    "releaseToFacility": "j:ReleaseToFacility",
+    "releaseWitness": "j:ReleaseWitness",
+    "releaseDateAdjustedDateRange": "j:ReleaseDateAdjustedDateRange",
+    "releasePotentialDateRange": "j:ReleasePotentialDateRange"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "segmentTopVerticalCoordinateValue": "biom:SegmentTopVerticalCoordinateValue",
+    "segmentLeftHorizontalCoordinateValue": "biom:SegmentLeftHorizontalCoordinateValue",
+    "segmentRightHorizontalCoordinateValue": "biom:SegmentRightHorizontalCoordinateValue",
+    "segmentBottomVerticalCoordinateValue": "biom:SegmentBottomVerticalCoordinateValue"
+  }
+}

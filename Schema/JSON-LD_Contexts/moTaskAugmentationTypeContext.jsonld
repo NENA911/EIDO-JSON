@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
+    "taskNumber": "mo:TaskNumberText",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "taskName": "nc:TaskName",
+    "taskDescription": "nc:TaskDescriptionText",
+    "taskUUID": "mo:TaskUUID",
+    "taskPerformingUnit": "mo:TaskPerformingUnit",
+    "taskStartDate": "nc:TaskStartDate",
+    "taskEndDate": "nc:TaskEndDate"
+  }
+}

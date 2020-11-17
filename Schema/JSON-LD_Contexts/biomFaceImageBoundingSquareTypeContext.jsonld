@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "faceImageBoundingCategoryCode": "biom:FaceImageBoundingCategoryCode",
+    "segmentBottomVerticalCoordinateValue": "biom:SegmentBottomVerticalCoordinateValue",
+    "segmentLeftHorizontalCoordinateValue": "biom:SegmentLeftHorizontalCoordinateValue",
+    "segmentRightHorizontalCoordinateValue": "biom:SegmentRightHorizontalCoordinateValue",
+    "segmentTopVerticalCoordinateValue": "biom:SegmentTopVerticalCoordinateValue"
+  }
+}

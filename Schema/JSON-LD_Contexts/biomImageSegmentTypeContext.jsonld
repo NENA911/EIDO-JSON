@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "imageSegmentID": "biom:ImageSegmentID",
+    "internalFileLocation": "biom:ImageSegmentInternalFileLocationText",
+    "positionPolygonVertexQuantity": "biom:PositionPolygonVertexQuantity",
+    "positionPolygonVertex": "biom:PositionPolygonVertex"
+  }
+}

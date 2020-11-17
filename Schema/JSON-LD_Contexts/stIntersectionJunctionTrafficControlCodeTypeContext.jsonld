@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "st": "http://release.niem.gov/niem/domains/surfaceTransportation/4.0/#",
+    "simpleType": "st:IntersectionJunctionTrafficControlCodeSimpleType"
+  }
+}

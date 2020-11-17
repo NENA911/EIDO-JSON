@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "acquisitionSourceCode": "biom:AcquisitionSourceCode",
+    "acquisitionSourceCategory": "biom:AcquisitionSourceCategoryText",
+    "acquisitionSource": "biom:AcquisitionSourceText",
+    "acquisitionSourceDescription": "biom:AcquisitionSourceDescriptionText",
+    "acquisitionDigitalConversionDescription": "biom:AcquisitionDigitalConversionDescriptionText",
+    "acquisitionRadioTransmissionFormatDescription": "biom:AcquisitionRadioTransmissionFormatDescriptionText",
+    "acquisitionSpecialCharacteristics": "biom:AcquisitionSpecialCharacteristicsText"
+  }
+}

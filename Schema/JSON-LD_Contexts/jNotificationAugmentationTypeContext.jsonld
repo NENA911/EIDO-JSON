@@ -1,0 +1,16 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "notificationPurpose": "j:NotificationPurposeText",
+    "isNotificationDeliveryByMail": "j:NotificationDeliveryByMailIndicator",
+    "notificationSubject": "j:NotificationSubjectText",
+    "notificationSentDate": "j:NotificationSentDate",
+    "notificationResponseSummary": "j:NotificationResponseSummaryText",
+    "notificationResponseReceivedNotificationDate": "j:NotificationResponseReceivedNotificationDate",
+    "notificationSummary": "j:NotificationSummaryText",
+    "notificationEventCategory": "j:NotificationEventCategoryText",
+    "notificationPreparationDate": "j:NotificationPreparationDate",
+    "notificationCategory": "j:NotificationCategoryText",
+    "isNotificationDeliveryInPerson": "j:NotificationDeliveryInPersonIndicator"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "requiresSpecialHousingDetails": "j:AssignmentAssessmentRequiresSpecialHousingDetailsText",
+    "assignmentRequest": "j:AssignmentAssessmentAssignmentRequest",
+    "comment": "j:AssignmentAssessmentComment",
+    "decision": "j:AssignmentAssessmentDecision",
+    "developmentalDisability": "j:AssignmentAssessmentDevelopmentalDisability",
+    "healthConditionComment": "j:AssignmentAssessmentHealthConditionComment",
+    "healthOtherConditionDetails": "j:AssignmentAssessmentHealthOtherConditionDetailsText",
+    "healthCondition": "j:AssignmentAssessmentHealthConditionText",
+    "mentalHealthCare": "j:AssignmentAssessmentMentalHealthCareText",
+    "isRequiresSpecialHousing": "j:AssignmentAssessmentRequiresSpecialHousingIndicator",
+    "riskDescription": "j:AssignmentAssessmentRiskDescriptionText",
+    "securityLevel": "j:AssignmentAssessmentSecurityLevelText",
+    "disabilityProgramComment": "j:AssignmentAssessmentDisabilityProgramComment",
+    "requiredAssignment": "j:AssignmentAssessmentRequiredAssignment",
+    "priorSuicideAttemptsComment": "j:AssignmentAssessmentPriorSuicideAttemptsComment"
+  }
+}

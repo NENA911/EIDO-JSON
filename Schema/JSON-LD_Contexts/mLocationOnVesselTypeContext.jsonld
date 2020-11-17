@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "m": "http://release.niem.gov/niem/domains/maritime/4.1/#",
+    "deck": "m:LocationOnVesselDeckText",
+    "description": "m:LocationOnVesselDescriptionText",
+    "distanceFromBowMeasure": "m:LocationOnVesselDistanceFromBowMeasure",
+    "distanceFromPortMeasure": "m:LocationOnVesselDistanceFromPortMeasure",
+    "distanceFromStarboardMeasure": "m:LocationOnVesselDistanceFromStarboardMeasure",
+    "distanceFromSternMeasure": "m:LocationOnVesselDistanceFromSternMeasure",
+    "elevationMeasure": "m:LocationOnVesselElevationMeasure"
+  }
+}

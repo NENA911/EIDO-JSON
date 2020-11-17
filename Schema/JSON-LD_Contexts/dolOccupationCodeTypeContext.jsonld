@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "dol": "http://release.niem.gov/niem/codes/dol_soc/4.0/#",
+    "simpleType": "dol:OccupationCodeSimpleType"
+  }
+}

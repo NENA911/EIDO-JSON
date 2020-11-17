@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "amount": "nc:ItemValueAmount",
+    "assigningMethod": "nc:ItemValueAssigningMethodText",
+    "date": "nc:ItemValueDate",
+    "description": "nc:ItemValueDescriptionText",
+    "isTaxIncluded": "nc:ItemValueTaxIncludedIndicator",
+    "assigner": "nc:ItemValueAssigner"
+  }
+}

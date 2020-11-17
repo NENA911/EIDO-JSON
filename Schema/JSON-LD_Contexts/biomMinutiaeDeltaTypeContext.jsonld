@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "imageFeatureVertex": "biom:ImageFeatureVertex",
+    "directionUpMeasure": "biom:MinutiaeDeltaDirectionUpMeasure",
+    "directionLeftMeasure": "biom:MinutiaeDeltaDirectionLeftMeasure",
+    "directionRightMeasure": "biom:MinutiaeDeltaDirectionRightMeasure",
+    "categoryCode": "biom:MinutiaeDeltaCategoryCode",
+    "imageLocationUncertaintyRadiusMeasure": "biom:ImageLocationUncertaintyRadiusMeasure",
+    "directionUpUncertaintyValue": "biom:MinutiaeDeltaDirectionUpUncertaintyValue",
+    "directionLeftUncertaintyValue": "biom:MinutiaeDeltaDirectionLeftUncertaintyValue",
+    "directionRightUncertaintyValue": "biom:MinutiaeDeltaDirectionRightUncertaintyValue"
+  }
+}

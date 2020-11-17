@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "identification": "nc:FacilityIdentification",
+    "name": "nc:FacilityName",
+    "categoryCode": "nc:FacilityCategoryCode",
+    "category": "nc:FacilityCategoryText",
+    "location": "nc:FacilityLocation",
+    "contactInformation": "nc:FacilityContactInformation",
+    "containsItem": "nc:FacilityContainsItem",
+    "securityLevel": "nc:FacilitySecurityLevelText",
+    "usageCode": "nc:FacilityUsageCode",
+    "usageLevel1Code": "nc:FacilityUsageLevel1Code",
+    "usageLevel2Code": "nc:FacilityUsageLevel2Code",
+    "usage": "nc:FacilityUsageText",
+    "capacityQuantity": "nc:FacilityCapacityQuantity",
+    "systemIdentification": "nc:FacilitySystemIdentification",
+    "systemIPAddressID": "nc:FacilitySystemIPAddressID",
+    "maxOccupancyQuantity": "nc:FacilityMaxOccupancyQuantity",
+    "operationalStatus": "nc:FacilityOperationalStatus",
+    "description": "nc:FacilityDescriptionText",
+    "capacityDescription": "nc:FacilityCapacityDescriptionText",
+    "operatingSchedule": "nc:FacilityOperatingSchedule",
+    "siteDiagram": "nc:FacilitySiteDiagram",
+    "memberCategory": "nc:FacilityMemberCategoryText",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "jAugmentation": "j:FacilityAugmentation",
+    "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
+    "moAugmentation": "mo:FacilityAugmentation"
+  }
+}

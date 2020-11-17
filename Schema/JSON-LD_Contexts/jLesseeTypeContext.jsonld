@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "jurisdictionAuthorityCode": "j:LesseeJurisdictionAuthorityCode",
+    "jurisdictionAuthority": "j:LesseeJurisdictionAuthorityText",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "locationCountyCode": "nc:LocationCountyCode",
+    "locationCountyName": "nc:LocationCountyName",
+    "roleOfOrganization": "nc:RoleOfOrganization",
+    "roleOfPerson": "nc:RoleOfPerson"
+  }
+}

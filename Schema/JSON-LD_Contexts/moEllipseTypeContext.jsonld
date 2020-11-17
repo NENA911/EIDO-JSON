@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
+    "majorAxisLengthMeasure": "mo:EllipseMajorAxisLengthMeasure",
+    "minorAxisLengthMeasure": "mo:EllipseMinorAxisLengthMeasure",
+    "majorAxisAzimuthMeasure": "mo:EllipseMajorAxisAzimuthMeasure"
+  }
+}

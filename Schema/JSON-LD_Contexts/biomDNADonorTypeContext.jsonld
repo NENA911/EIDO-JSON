@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "categoryCode": "biom:DNADonorCategoryCode",
+    "lastContactDate": "biom:DNADonorLastContactDate",
+    "dentalRecordsAvailableCode": "biom:DNADonorDentalRecordsAvailableCode",
+    "collectionLocationDescription": "biom:DNADonorCollectionLocationDescriptionText",
+    "statusCode": "biom:DNADonorStatusCode"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "isDefendantNotPresent": "j:CourtAppearanceDefendantNotPresentIndicator",
+    "case": "j:CourtAppearanceCase",
+    "court": "j:CourtAppearanceCourt",
+    "date": "j:CourtAppearanceDate",
+    "entity": "j:CourtAppearanceEntity",
+    "reason": "j:CourtAppearanceReasonText",
+    "category": "j:CourtAppearanceCategoryText"
+  }
+}

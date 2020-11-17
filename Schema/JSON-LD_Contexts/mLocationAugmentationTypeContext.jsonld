@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "m": "http://release.niem.gov/niem/domains/maritime/4.1/#",
+    "COTPZoneRegionCode": "m:COTPZoneRegionCode",
+    "COTPZoneRegion": "m:COTPZoneRegionText",
+    "locationCurve": "m:LocationCurve",
+    "locationEllipse": "m:LocationEllipse",
+    "locationEnvelope": "m:LocationEnvelope",
+    "locationPoint": "m:LocationPoint",
+    "locationPolygon": "m:LocationPolygon",
+    "locationPort": "m:LocationPort",
+    "locationUNLOCODE": "m:LocationUNLOCODEText"
+  }
+}

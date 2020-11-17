@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "imageReferenceIdentification": "biom:ImageReferenceIdentification",
+    "imageReferenceID": "biom:ImageReferenceID",
+    "resultCode": "biom:MinutiaeExaminerComparisonDeterminationResultCode",
+    "minutiaeExaminerProgressCode": "biom:MinutiaeExaminerProgressCode",
+    "minutiaeExaminerName": "biom:MinutiaeExaminerName",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "organizationName": "nc:OrganizationName",
+    "dateTime": "biom:MinutiaeExaminerComparisonDeterminationDateTime",
+    "minutiaeComparisonComplexityCode": "biom:MinutiaeComparisonComplexityCode",
+    "minutiaeComment": "biom:MinutiaeCommentText"
+  }
+}

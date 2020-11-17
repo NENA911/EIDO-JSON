@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "segmentIDList": "biom:SegmentIDList",
+    "audioCaptureDeviceCode": "biom:AudioCaptureDeviceCode",
+    "transducerPrincipleCode": "biom:TransducerPrincipleCode",
+    "audioCaptureEnvironment": "biom:AudioCaptureEnvironmentText",
+    "transducerDistanceValue": "biom:TransducerDistanceValue",
+    "acquisitionSourceCode": "biom:AcquisitionSourceCode",
+    "transductionAlterationDescription": "biom:TransductionAlterationDescriptionText",
+    "channelComment": "biom:ChannelCommentText"
+  }
+}

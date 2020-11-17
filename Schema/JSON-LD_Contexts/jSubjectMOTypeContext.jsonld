@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "sexualPractices": "j:SubjectMOSexualPracticesText",
+    "observation": "j:SubjectMOObservationText",
+    "generalLifestyle": "j:SubjectMOGeneralLifestyleText",
+    "actionFeature": "j:SubjectMOActionFeature",
+    "actionCode": "j:SubjectMOActionCode",
+    "generalLifestyleCode": "j:SubjectMOGeneralLifestyleCode",
+    "observationCode": "j:SubjectMOObservationCode",
+    "sexualPracticesCode": "j:SubjectMOSexualPracticesCode"
+  }
+}

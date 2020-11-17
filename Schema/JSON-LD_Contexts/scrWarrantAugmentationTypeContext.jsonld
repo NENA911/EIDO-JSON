@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "charge": "j:Charge",
+    "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
+    "warrantIdentification": "scr:WarrantIdentification",
+    "warrantOffenseOccurredDate": "scr:WarrantOffenseOccurredDate",
+    "warrantDeportDemandDate": "scr:WarrantDeportDemandDate",
+    "warrantDeportServeDate": "scr:WarrantDeportServeDate",
+    "warrantDeportSurrenderDate": "scr:WarrantDeportSurrenderDate",
+    "warrantClassification": "scr:WarrantClassification"
+  }
+}

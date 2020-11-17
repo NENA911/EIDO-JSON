@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "iso_639-3": "http://release.niem.gov/niem/codes/iso_639-3/4.0/#",
+    "simpleType": "iso_639-3:LanguageCodeSimpleType"
+  }
+}

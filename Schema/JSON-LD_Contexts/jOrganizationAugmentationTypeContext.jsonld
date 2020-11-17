@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "organizationAlternateName": "j:OrganizationAlternateName",
+    "organizationLicenseIdentification": "j:OrganizationLicenseIdentification",
+    "organizationValidDate": "j:OrganizationValidDate",
+    "districtIdentification": "j:DistrictIdentification",
+    "organizationFieldOffice": "j:OrganizationFieldOfficeText",
+    "organizationJurisdiction": "j:OrganizationJurisdiction",
+    "isAgencyActive": "j:AgencyActiveIndicator",
+    "isAgencyAddCancel": "j:AgencyAddCancelIndicator",
+    "agencyBaselinePriorityValue": "j:AgencyBaselinePriorityValue",
+    "isAgencyCHRIAuthorized": "j:AgencyCHRIAuthorizedIndicator",
+    "isAgencyControlTerminal": "j:AgencyControlTerminalIndicator",
+    "agencyServiceHoursCode": "j:AgencyServiceHoursCode",
+    "agencyServiceHours": "j:AgencyServiceHoursText",
+    "agencyAuthorizationCode": "j:AgencyAuthorizationCode",
+    "agencyAuthorization": "j:AgencyAuthorizationText",
+    "organizationGovernmentLevel": "j:OrganizationGovernmentLevelText",
+    "organizationFFLID": "j:OrganizationFFLID",
+    "organizationORIIdentification": "j:OrganizationORIIdentification"
+  }
+}

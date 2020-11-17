@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
+    "addressIdentification": "scr:AddressIdentification",
+    "addressClassification": "scr:AddressClassification",
+    "isINSLookout": "scr:INSLookoutIndicator",
+    "countryNameID": "scr:CountryNameID",
+    "countryNameBeginDate": "scr:CountryNameBeginDate",
+    "countryNameEndDate": "scr:CountryNameEndDate",
+    "countrySubdivisionID": "scr:CountrySubdivisionID",
+    "countrySubdivisionNameID": "scr:CountrySubdivisionNameID",
+    "countrySubdivisionNameBeginDate": "scr:CountrySubdivisionNameBeginDate",
+    "countrySubdivisionNameEndDate": "scr:CountrySubdivisionNameEndDate",
+    "countrySubdivisionName": "scr:CountrySubdivisionName",
+    "countrySubdivisionCategoryDescription": "scr:CountrySubdivisionCategoryDescriptionText",
+    "locationBlockGroup": "scr:LocationBlockGroupText",
+    "locationCarrierRoute": "scr:LocationCarrierRouteText",
+    "locationTract": "scr:LocationTractText",
+    "locationBuildingUnitName": "scr:LocationBuildingUnitName",
+    "locationBuildingUnitNumber": "scr:LocationBuildingUnitNumberText",
+    "locationElement": "scr:LocationElement",
+    "countrySubdivisionCategoryCode": "scr:CountrySubdivisionCategoryCode"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "scoreNumeric": "j:NeedScoreNumeric",
+    "isAddressed": "j:NeedAddressedIndicator",
+    "category": "j:NeedCategoryText",
+    "source": "j:NeedSourceText",
+    "intensityLevel": "j:NeedIntensityLevelText",
+    "needID": "j:NeedID"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "segmentIDList": "biom:SegmentIDList",
+    "speakerList": "biom:SpeakerList",
+    "type2CrossReferenceList": "biom:Type2CrossReferenceList",
+    "impairmentValue": "biom:ImpairmentValue",
+    "dominantSpokenLanguageCode": "biom:DominantSpokenLanguageCode",
+    "languageProficiencyValue": "biom:LanguageProficiencyValue",
+    "speechStyleCode": "biom:SpeechStyleCode",
+    "intelligibilityValue": "biom:IntelligibilityValue",
+    "familiarityValue": "biom:FamiliarityValue",
+    "healthComment": "biom:HealthCommentText",
+    "emotionalStateCode": "biom:EmotionalStateCode",
+    "vocalEffortValue": "biom:VocalEffortValue",
+    "vocalStyleCode": "biom:VocalStyleCode",
+    "recordingAwarenessCode": "biom:RecordingAwarenessCode",
+    "script": "biom:ScriptText",
+    "speechCharacteristicsComment": "biom:SpeechCharacteristicsCommentText"
+  }
+}

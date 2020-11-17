@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "mobilityImpairmentExpirationDate": "j:PersonDisabilityMobilityImpairmentExpirationDate",
+    "dailyLivingLevel": "j:PersonDisabilityDailyLivingLevelText",
+    "isSelfIdentified": "j:PersonDisabilitySelfIdentifiedIndicator",
+    "mobilityImpairment": "j:PersonDisabilityMobilityImpairmentText",
+    "isMobilityImpairmentTemporary": "j:PersonDisabilityMobilityImpairmentTemporaryIndicator",
+    "mobilityImpairmentRecordedDate": "j:PersonDisabilityMobilityImpairmentRecordedDate",
+    "isMobilityImpairment": "j:PersonDisabilityMobilityImpairmentIndicator",
+    "medicalEquipment": "j:PersonDisabilityMedicalEquipment",
+    "identificationMethod": "j:PersonDisabilityIdentificationMethodText"
+  }
+}

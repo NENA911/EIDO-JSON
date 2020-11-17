@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "biometricCapture": "biom:BiometricCapture",
+    "forensicDentalSetting": "biom:ForensicDentalSetting",
+    "dentalSubjectInformation": "biom:DentalSubjectInformation",
+    "originalDentalEncodingSystemInformation": "biom:OriginalDentalEncodingSystemInformation",
+    "transmittalDentalEncodingSystemInformation": "biom:TransmittalDentalEncodingSystemInformation",
+    "dentalHistoryDataDetail": "biom:DentalHistoryDataDetail",
+    "toothDataDetail": "biom:ToothDataDetail",
+    "mouthDataDetail": "biom:MouthDataDetail",
+    "dentalStudyToothImprintDetail": "biom:DentalStudyToothImprintDetail",
+    "forensicDentalComment": "biom:ForensicDentalCommentText"
+  }
+}

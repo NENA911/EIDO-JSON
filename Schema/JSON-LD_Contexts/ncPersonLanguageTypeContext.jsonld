@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "languageCode": "nc:LanguageCode",
+    "languageName": "nc:LanguageName",
+    "isPersonComprehendsSpokenLanguage": "nc:PersonComprehendsSpokenLanguageIndicator",
+    "isPersonReadsLanguage": "nc:PersonReadsLanguageIndicator",
+    "isPersonSpeaksLanguage": "nc:PersonSpeaksLanguageIndicator",
+    "isPersonWritesLanguage": "nc:PersonWritesLanguageIndicator"
+  }
+}

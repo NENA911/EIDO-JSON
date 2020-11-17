@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "it": "http://release.niem.gov/niem/domains/internationalTrade/4.1/#",
+    "paymentMethodCategory": "it:PaymentMethodCategoryText",
+    "obligationGuarantee": "it:ObligationGuarantee",
+    "dutyTaxPaymentMethodCode": "it:DutyTaxPaymentMethodCode"
+  }
+}

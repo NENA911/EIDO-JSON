@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "acceptingAgency": "j:ExhibitAcceptingAgency",
+    "isAdmitted": "j:ExhibitAdmittedIndicator",
+    "evidence": "j:ExhibitEvidence",
+    "identification": "j:ExhibitIdentification",
+    "isRemainingProof": "j:ExhibitRemainingProofIndicator",
+    "status": "j:ExhibitStatusText"
+  }
+}

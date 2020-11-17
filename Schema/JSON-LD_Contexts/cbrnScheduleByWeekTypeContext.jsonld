@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "cbrn": "http://release.niem.gov/niem/domains/cbrn/4.1/#",
+    "remark": "cbrn:RemarkText",
+    "weekEndHours": "cbrn:WeekEndHoursText",
+    "weekDayHours": "cbrn:WeekDayHoursText"
+  }
+}

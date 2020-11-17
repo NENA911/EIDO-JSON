@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "description": "nc:AssociationDescriptionText",
+    "dateRange": "nc:AssociationDateRange",
+    "conveyance": "nc:Conveyance",
+    "conveyedItem": "nc:ConveyedItem",
+    "conveyanceOperator": "nc:ConveyanceOperator",
+    "conveyedPerson": "nc:ConveyedPerson",
+    "conveyancePassengerQuantity": "nc:ConveyancePassengerQuantity"
+  }
+}

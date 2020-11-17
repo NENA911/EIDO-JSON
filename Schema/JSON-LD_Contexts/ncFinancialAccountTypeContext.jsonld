@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "listedName": "nc:FinancialAccountListedName",
+    "presentBalanceAmount": "nc:FinancialAccountPresentBalanceAmount",
+    "category": "nc:FinancialAccountCategoryText",
+    "numberID": "nc:FinancialAccountNumberID",
+    "isClosed": "nc:FinancialAccountClosedIndicator",
+    "holder": "nc:FinancialAccountHolder"
+  }
+}

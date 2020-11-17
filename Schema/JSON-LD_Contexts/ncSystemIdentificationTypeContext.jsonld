@@ -1,0 +1,26 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "jurisdiction": "nc:IdentificationJurisdiction",
+    "identificationID": "nc:IdentificationID",
+    "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
+    "conveyanceCategoryCode": "scr:ConveyanceIdentificationCategoryCode",
+    "financialAccountNumberCategoryCode": "nc:FinancialAccountNumberCategoryCode",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "categoryCode": "j:IdentificationCategoryCode",
+    "category": "nc:IdentificationCategoryText",
+    "personDesignatorCategoryCode": "scr:PersonDesignatorCategoryCode",
+    "personIDCategoryCode": "j:PersonIDCategoryCode",
+    "em": "http://release.niem.gov/niem/domains/emergencyManagement/4.1/#",
+    "isTemporaryID": "em:TemporaryIDIndicator",
+    "categoryDescription": "nc:IdentificationCategoryDescriptionText",
+    "effectiveDate": "nc:IdentificationEffectiveDate",
+    "expirationDate": "nc:IdentificationExpirationDate",
+    "source": "nc:IdentificationSourceText",
+    "status": "nc:IdentificationStatus",
+    "intel": "http://release.niem.gov/niem/domains/intelligence/4.1/#",
+    "intelAugmentation": "intel:IdentificationAugmentation",
+    "scrAugmentation": "scr:IdentificationAugmentation",
+    "systemName": "nc:SystemName"
+  }
+}

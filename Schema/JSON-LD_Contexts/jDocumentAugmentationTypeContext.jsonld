@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "isParole": "j:ParoleIndicator",
+    "isProbation": "j:ProbationIndicator",
+    "isCorrectionalInstitute": "j:CorrectionalInstituteIndicator",
+    "documentSignature": "j:DocumentSignature",
+    "documentComment": "j:DocumentComment",
+    "documentApprovedDate": "j:DocumentApprovedDate",
+    "isDocumentAmended": "j:DocumentAmendedIndicator",
+    "documentReviewDate": "j:DocumentReviewDate"
+  }
+}

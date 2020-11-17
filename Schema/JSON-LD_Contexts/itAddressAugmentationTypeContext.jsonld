@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "it": "http://release.niem.gov/niem/domains/internationalTrade/4.1/#",
+    "locationCountrySubEntityName": "it:LocationCountrySubEntityName",
+    "locationCountrySubEntityIdentification": "it:LocationCountrySubEntityIdentification"
+  }
+}

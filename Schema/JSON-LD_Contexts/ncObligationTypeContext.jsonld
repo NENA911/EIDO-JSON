@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "totalAmount": "nc:ObligationTotalAmount",
+    "totalDuration": "nc:ObligationTotalDuration",
+    "dueAmount": "nc:ObligationDueAmount",
+    "dueDuration": "nc:ObligationDueDuration",
+    "paidAmount": "nc:ObligationPaidAmount",
+    "paidDuration": "nc:ObligationPaidDuration",
+    "isComplete": "nc:ObligationCompleteIndicator",
+    "isCompliance": "nc:ObligationComplianceIndicator",
+    "dueDate": "nc:ObligationDueDate",
+    "exemption": "nc:ObligationExemption",
+    "isExemption": "nc:ObligationExemptionIndicator",
+    "paidDate": "nc:ObligationPaidDate",
+    "progressDescription": "nc:ObligationProgressDescriptionText",
+    "requirementDescription": "nc:ObligationRequirementDescriptionText",
+    "category": "nc:ObligationCategoryText",
+    "entity": "nc:ObligationEntity",
+    "recipient": "nc:ObligationRecipient",
+    "recurrence": "nc:ObligationRecurrence",
+    "it": "http://release.niem.gov/niem/domains/internationalTrade/4.1/#",
+    "itAugmentation": "it:ObligationAugmentation",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "jAugmentation": "j:ObligationAugmentation"
+  }
+}

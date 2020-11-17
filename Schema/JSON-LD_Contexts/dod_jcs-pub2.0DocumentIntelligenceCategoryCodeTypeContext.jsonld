@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "dod_jcs-pub2.0": "http://release.niem.gov/niem/codes/dod_jcs-pub2.0/4.0/#",
+    "simpleType": "dod_jcs-pub2.0:DocumentIntelligenceCategoryCodeSimpleType"
+  }
+}

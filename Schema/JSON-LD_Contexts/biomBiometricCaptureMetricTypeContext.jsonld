@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "metricCode": "biom:MetricCodeText",
+    "metricValue": "biom:MetricValue",
+    "vendorName": "biom:VendorName"
+  }
+}

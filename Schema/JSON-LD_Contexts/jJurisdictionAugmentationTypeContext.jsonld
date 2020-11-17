@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "jurisdictionDescription": "j:JurisdictionDescriptionText",
+    "jurisdictionDistrict": "j:JurisdictionDistrictText",
+    "jurisdictionRestriction": "j:JurisdictionRestrictionText",
+    "jurisdictionDistrictIdentification": "j:JurisdictionDistrictIdentification",
+    "jurisdictionTitle": "j:JurisdictionTitle"
+  }
+}

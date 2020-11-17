@@ -1,0 +1,32 @@
+{
+  "@context": {
+    "m": "http://release.niem.gov/niem/domains/maritime/4.1/#",
+    "personAddress": "m:PersonAddress",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "personBirthDate": "nc:PersonBirthDate",
+    "personCitizenshipISO3166Alpha2Code": "nc:PersonCitizenshipISO3166Alpha2Code",
+    "personCitizenship": "nc:PersonCitizenshipText",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "personEyeColorCode": "j:PersonEyeColorCode",
+    "personEyeColorRapSheetCode": "j:PersonEyeColorRapSheetCode",
+    "personEyeColor": "nc:PersonEyeColorText",
+    "personHairColorCode": "j:PersonHairColorCode",
+    "personHairColorRapSheetCode": "j:PersonHairColorRapSheetCode",
+    "personHairColor": "nc:PersonHairColorText",
+    "personHeightDescription": "nc:PersonHeightDescriptionText",
+    "personHeightMeasure": "nc:PersonHeightMeasure",
+    "personName": "nc:PersonName",
+    "personSexCode": "j:PersonSexCode",
+    "personSexNDExCode": "j:PersonSexNDExCode",
+    "personSexRapSheetCode": "j:PersonSexRapSheetCode",
+    "personSex": "nc:PersonSexText",
+    "personSSNIdentification": "nc:PersonSSNIdentification",
+    "personWeightDescription": "nc:PersonWeightDescriptionText",
+    "personWeightMeasure": "nc:PersonWeightMeasure",
+    "identification": "m:SeamanLicenseIdentification",
+    "issueDate": "m:SeamanLicenseIssueDate",
+    "issuerLocation": "m:SeamanLicenseIssuerLocation",
+    "issuingOrganization": "m:SeamanLicenseIssuingOrganization",
+    "rating": "m:SeamanLicenseRatingText"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "roleOfBiometric": "j:RoleOfBiometric",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "roleOfItem": "nc:RoleOfItem",
+    "item": "j:EvidenceItemText",
+    "amount": "j:EvidenceAmount",
+    "itemContactInformation": "j:EvidenceItemContactInformation",
+    "documentationBinary": "j:EvidenceDocumentationBinary",
+    "IBISNumber": "j:IBISNumberText",
+    "roleOfBinary": "j:RoleOfBinary",
+    "collector": "j:EvidenceCollector",
+    "custodyTransfer": "j:EvidenceCustodyTransfer",
+    "kit": "j:EvidenceKit",
+    "numberIdentification": "j:EvidenceNumberIdentification",
+    "otherIdentification": "j:EvidenceOtherIdentification",
+    "previousLocation": "j:EvidencePreviousLocation",
+    "quantity": "j:EvidenceQuantityText",
+    "receiptIdentification": "j:EvidenceReceiptIdentification",
+    "isReturned": "j:EvidenceReturnedIndicator",
+    "takenLocation": "j:EvidenceTakenLocation",
+    "returnRecipientEntity": "j:EvidenceReturnRecipientEntity",
+    "takenFromEntity": "j:EvidenceTakenFromEntity"
+  }
+}

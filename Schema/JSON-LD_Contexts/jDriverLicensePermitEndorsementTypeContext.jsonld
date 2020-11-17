@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "driverLicenseEndorsement": "j:DriverLicenseEndorsementText",
+    "driverLicenseEndorsementEndDate": "j:DriverLicenseEndorsementEndDate",
+    "driverLicenseHMEThreatDate": "j:DriverLicenseHMEThreatDate",
+    "driverLicenseHMEThreatCode": "j:DriverLicenseHMEThreatCode",
+    "driverLicenseHMEThreat": "j:DriverLicenseHMEThreatText",
+    "code": "j:DriverLicensePermitEndorsementCode"
+  }
+}

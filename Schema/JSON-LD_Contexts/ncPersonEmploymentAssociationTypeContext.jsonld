@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "description": "nc:AssociationDescriptionText",
+    "dateRange": "nc:AssociationDateRange",
+    "conveyance": "nc:Conveyance",
+    "conveyedItem": "nc:ConveyedItem",
+    "conveyanceOperator": "nc:ConveyanceOperator",
+    "conveyedPerson": "nc:ConveyedPerson",
+    "conveyancePassengerQuantity": "nc:ConveyancePassengerQuantity",
+    "employee": "nc:Employee",
+    "employer": "nc:Employer",
+    "employeeDepartmentName": "nc:EmployeeDepartmentName",
+    "employeePositionName": "nc:EmployeePositionName",
+    "employeeOccupationCode": "nc:EmployeeOccupationCode",
+    "employeeOccupation": "nc:EmployeeOccupationText",
+    "employeeOccupationCategory": "nc:EmployeeOccupationCategoryText",
+    "employeeRank": "nc:EmployeeRankText",
+    "employeeIdentification": "nc:EmployeeIdentification",
+    "employmentContactInformation": "nc:EmploymentContactInformation",
+    "employmentLocation": "nc:EmploymentLocation",
+    "employeeShift": "nc:EmployeeShiftText",
+    "employeeEarningsRate": "nc:EmployeeEarningsRateText",
+    "employmentStatus": "nc:EmploymentStatus",
+    "employeeSupervisor": "nc:EmployeeSupervisor",
+    "im": "http://release.niem.gov/niem/domains/immigration/4.1/#",
+    "imAugmentation": "im:PersonEmploymentAssociationAugmentation",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "jAugmentation": "j:PersonEmploymentAssociationAugmentation",
+    "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
+    "scrAugmentation": "scr:PersonEmploymentAssociationAugmentation"
+  }
+}

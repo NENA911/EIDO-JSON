@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
+    "authorityURI": "mo:AuthorityURI",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "ANSID20AuthorityCode": "j:JurisdictionANSID20AuthorityCode",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "text": "nc:JurisdictionText",
+    "locationCityName": "nc:LocationCityName",
+    "locationCountry": "nc:LocationCountry",
+    "locationCountyCode": "nc:LocationCountyCode",
+    "locationCountyName": "nc:LocationCountyName",
+    "locationState": "nc:LocationState",
+    "identification": "nc:JurisdictionIdentification",
+    "augmentation": "j:JurisdictionAugmentation"
+  }
+}

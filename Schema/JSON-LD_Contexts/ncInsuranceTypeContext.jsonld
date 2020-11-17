@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "policyIdentification": "nc:InsurancePolicyIdentification",
+    "carrierIdentification": "nc:InsuranceCarrierIdentification",
+    "carrierName": "nc:InsuranceCarrierName",
+    "isActive": "nc:InsuranceActiveIndicator",
+    "cancellationDate": "nc:InsuranceCancellationDate",
+    "certifiedDate": "nc:InsuranceCertifiedDate",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "coverageCategoryCode": "j:InsuranceCoverageCategoryCode",
+    "coverageCategory": "nc:InsuranceCoverageCategoryText",
+    "coveredItem": "nc:InsuranceCoveredItem",
+    "effectiveDateRange": "nc:InsuranceEffectiveDateRange",
+    "isPersonal": "nc:InsurancePersonalIndicator",
+    "em": "http://release.niem.gov/niem/domains/emergencyManagement/4.1/#",
+    "augmentation": "em:InsuranceAugmentation"
+  }
+}

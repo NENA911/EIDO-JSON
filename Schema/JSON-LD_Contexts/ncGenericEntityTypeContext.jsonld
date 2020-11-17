@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "entityName": "nc:EntityName",
+    "entityContactInformation": "nc:EntityContactInformation",
+    "entityDescription": "nc:EntityDescriptionText"
+  }
+}

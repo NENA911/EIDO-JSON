@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "occs": "http://release.niem.gov/niem/codes/occs_facility/4.0/#",
+    "simpleType": "occs:FacilityUsageLevel2CodeSimpleType"
+  }
+}

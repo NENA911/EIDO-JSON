@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
+    "apprehensionChargeIdentification": "scr:ApprehensionChargeIdentification",
+    "isForeignAuthorityNotified": "scr:ForeignAuthorityNotifiedIndicator",
+    "chargeCategoryClassificationCode": "scr:ChargeCategoryClassificationCode",
+    "chargeSection": "scr:ChargeSectionText"
+  }
+}

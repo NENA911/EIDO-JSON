@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+    "simpleType": "hs:MethodOfPaymentCodeSimpleType"
+  }
+}

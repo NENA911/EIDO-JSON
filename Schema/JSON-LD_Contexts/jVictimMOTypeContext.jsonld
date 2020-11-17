@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "actionCode": "j:VictimMOActionCode",
+    "action": "j:VictimMOActionText",
+    "releaseDisposalCode": "j:VictimMOReleaseDisposalCode",
+    "releaseDisposal": "j:VictimMOReleaseDisposalText",
+    "approachedCode": "j:VictimMOApproachedCode",
+    "approached": "j:VictimMOApproachedText",
+    "foundClothedCode": "j:VictimMOFoundClothedCode",
+    "foundClothed": "j:VictimMOFoundClothedText",
+    "foundClothedDescription": "j:VictimMOFoundClothedDescriptionText",
+    "generalLifestyleCode": "j:VictimMOGeneralLifestyleCode",
+    "generalLifestyle": "j:VictimMOGeneralLifestyleText",
+    "recoveryCode": "j:VictimMORecoveryCode",
+    "recovery": "j:VictimMORecoveryText",
+    "subjectContactConclusionCode": "j:VictimMOSubjectContactConclusionCode",
+    "subjectContactConclusion": "j:VictimMOSubjectContactConclusionText",
+    "bindingsCode": "j:VictimMOBindingsCode",
+    "bindings": "j:VictimMOBindingsText",
+    "recoveryDescription": "j:VictimMORecoveryDescriptionText"
+  }
+}

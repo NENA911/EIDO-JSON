@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "m": "http://release.niem.gov/niem/domains/maritime/4.1/#",
+    "beginDateTime": "m:VoyageBeginDateTime",
+    "category": "m:VoyageCategoryText",
+    "destinationLocation": "m:VoyageDestinationLocation",
+    "endDateTime": "m:VoyageEndDateTime",
+    "identification": "m:VoyageIdentification",
+    "originLocation": "m:VoyageOriginLocation",
+    "summary": "m:VoyageSummaryText",
+    "vesselUse": "m:VoyageVesselUseText"
+  }
+}

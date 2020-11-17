@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "polygonCoordinate": "nc:PolygonCoordinate",
+    "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
+    "moAugmentation": "mo:PolygonRegionAugmentation",
+    "nc-4.0.1": "http://publication.niem.gov/niem/niem-core/4.0/1/#",
+    "nc-4.0.1Augmentation": "nc-4.0.1:PolygonRegionAugmentation"
+  }
+}

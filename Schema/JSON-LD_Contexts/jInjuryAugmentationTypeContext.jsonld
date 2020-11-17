@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "injuryNoticedDate": "j:InjuryNoticedDate",
+    "injuryDispositionDate": "j:InjuryDispositionDate",
+    "injuryCircumstances": "j:InjuryCircumstancesText",
+    "injuryWitness": "j:InjuryWitness",
+    "injuryReportedDate": "j:InjuryReportedDate",
+    "injuryReceivedMedicalAttentionDate": "j:InjuryReceivedMedicalAttentionDate",
+    "injuryOccurrenceLocation": "j:InjuryOccurrenceLocation",
+    "injuryModeOfArrival": "j:InjuryModeOfArrivalText",
+    "injuryDisposition": "j:InjuryDispositionText",
+    "injuryOtherDetails": "j:InjuryOtherDetailsText"
+  }
+}

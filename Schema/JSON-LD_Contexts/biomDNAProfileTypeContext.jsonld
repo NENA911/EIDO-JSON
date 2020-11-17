@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "categoryCode": "biom:DNAProfileCategoryCode",
+    "resultCode": "biom:DNAProfileResultCode",
+    "DNAProfileID": "biom:DNAProfileID",
+    "supplemental": "biom:DNAProfileSupplementalText",
+    "comment": "biom:DNAProfileCommentText"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "entryDate": "j:EducationCourseEntryDate",
+    "name": "j:EducationCourseName",
+    "terminatedReason": "j:EducationCourseTerminatedReasonText",
+    "enrollmentDate": "j:EducationCourseEnrollmentDate",
+    "metadataRepositoryID": "j:EducationCourseMetadataRepositoryID",
+    "priorUnitsCompletedQuantity": "j:EducationCoursePriorUnitsCompletedQuantity",
+    "earnedGrade": "j:EducationCourseEarnedGradeText",
+    "terminatedDate": "j:EducationCourseTerminatedDate",
+    "unitsCompletedQuantity": "j:EducationCourseUnitsCompletedQuantity",
+    "sequenceNumeric": "j:EducationCourseSequenceNumeric",
+    "description": "j:EducationCourseDescriptionText",
+    "comment": "j:EducationCourseComment",
+    "genderRestriction": "j:EducationCourseGenderRestrictionText",
+    "activity": "j:EducationCourseActivity",
+    "levelOfNeedIntensity": "j:EducationCourseLevelOfNeedIntensityText",
+    "title": "j:EducationCourseTitleText"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "status": "nc:ScheduleDayStatus",
+    "scheduleDate": "nc:ScheduleDate",
+    "ofWeekCode": "nc:ScheduleDayOfWeekCode",
+    "scheduleActivity": "nc:ScheduleActivityText",
+    "scheduleTimeRange": "nc:ScheduleTimeRange",
+    "schedulePerson": "nc:SchedulePerson",
+    "startTime": "nc:ScheduleDayStartTime",
+    "endTime": "nc:ScheduleDayEndTime",
+    "cbrn": "http://release.niem.gov/niem/domains/cbrn/4.1/#",
+    "scheduleByWeek": "cbrn:ScheduleByWeek",
+    "scheduleByWeekDay": "cbrn:ScheduleByWeekDay"
+  }
+}

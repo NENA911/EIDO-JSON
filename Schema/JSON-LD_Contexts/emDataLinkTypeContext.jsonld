@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "em": "http://release.niem.gov/niem/domains/emergencyManagement/4.1/#",
+    "dateTime": "em:DataLinkDateTime",
+    "category": "em:DataLinkCategoryText",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "serviceCallOperator": "j:ServiceCallOperator",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "organizationName": "nc:OrganizationName",
+    "organizationIdentification": "nc:OrganizationIdentification",
+    "sourceID": "nc:SourceIDText",
+    "restrictionCategory": "em:RestrictionCategoryText",
+    "URLID": "nc:URLID"
+  }
+}

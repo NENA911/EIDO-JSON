@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "imageCaptureDetail": "biom:ImageCaptureDetail",
+    "fingerLocation": "biom:MinutiaeFingerLocation",
+    "fingerprintCaptureTechnique": "biom:FingerprintCaptureTechnique",
+    "quantity": "biom:MinutiaeQuantity",
+    "fingerprintImageMajorCasePrint": "biom:FingerprintImageMajorCasePrint",
+    "fingerprintImageSegmentPositionSquare": "biom:FingerprintImageSegmentPositionSquare",
+    "fingerprintImageFingerMissing": "biom:FingerprintImageFingerMissing",
+    "positionUncertaintyValue": "biom:PositionUncertaintyValue",
+    "minutiaCharacterizationQualityValue": "biom:MinutiaCharacterizationQualityValue",
+    "minutiaClassifierQualityValue": "biom:MinutiaClassifierQualityValue",
+    "fingerprintPatternCoreLocation": "biom:FingerprintPatternCoreLocation",
+    "fingerprintPatternDeltaLocation": "biom:FingerprintPatternDeltaLocation",
+    "isFingerprintTaken": "biom:FingerprintTakenIndicator",
+    "fingerprintCategoryDescription": "biom:FingerprintCategoryDescriptionText",
+    "fingerprintFeaturesFeedback": "biom:FingerprintFeaturesFeedback",
+    "fingerprintFeaturesVersion": "biom:FingerprintFeaturesVersionText",
+    "fingerprintIdentification": "biom:FingerprintIdentification",
+    "isFormatNISTStandard": "biom:MinutiaeFormatNISTStandardIndicator",
+    "fingerRidgeMinutia": "biom:FingerRidgeMinutia",
+    "extendedFeatureSet": "biom:ExtendedFeatureSetMinutiae",
+    "INCITS": "biom:INCITSMinutiae",
+    "other": "biom:OtherMinutiae"
+  }
+}

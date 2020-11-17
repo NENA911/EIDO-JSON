@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "im": "http://release.niem.gov/niem/domains/immigration/4.1/#",
+    "personNickName": "im:PersonNickName",
+    "personNameDateRange": "im:PersonNameDateRange"
+  }
+}

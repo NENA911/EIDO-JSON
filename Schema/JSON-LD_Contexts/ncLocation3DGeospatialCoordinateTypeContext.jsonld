@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "geodeticDatumCoordinateSystemCode": "biom:GeodeticDatumCoordinateSystemCode",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "geographicDatum": "nc:GeographicDatumText",
+    "geographicCoordinateLatitude": "nc:GeographicCoordinateLatitude",
+    "geographicCoordinateLongitude": "nc:GeographicCoordinateLongitude",
+    "locationAltitude": "nc:LocationAltitude",
+    "locationDepth": "nc:LocationDepth",
+    "locationElevation": "nc:LocationElevation"
+  }
+}

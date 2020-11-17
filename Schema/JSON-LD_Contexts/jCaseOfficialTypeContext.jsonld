@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "roleOfPerson": "nc:RoleOfPerson",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "barMembership": "j:JudicialOfficialBarMembership",
+    "court": "j:JudicialOfficialCourt",
+    "firm": "j:JudicialOfficialFirm",
+    "panelIdentification": "j:JudicialOfficialPanelIdentification",
+    "registrationIdentification": "j:JudicialOfficialRegistrationIdentification",
+    "category": "j:JudicialOfficialCategoryText",
+    "im": "http://release.niem.gov/niem/domains/immigration/4.1/#",
+    "augmentation": "im:JudicialOfficialAugmentation",
+    "caseIdentification": "j:CaseOfficialCaseIdentification",
+    "caseStatus": "j:CaseOfficialCaseStatusText",
+    "endDate": "j:CaseOfficialEndDate",
+    "roleDescription": "j:CaseOfficialRoleDescriptionText",
+    "role": "j:CaseOfficialRoleText",
+    "startDate": "j:CaseOfficialStartDate",
+    "isTermination": "j:CaseOfficialTerminationIndicator",
+    "terminationReason": "j:CaseOfficialTerminationReasonText"
+  }
+}

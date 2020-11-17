@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "census": "http://release.niem.gov/niem/codes/census_uscounty/4.0/#",
+    "simpleType": "census:USCountyCodeSimpleType"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "iso_4217": "http://release.niem.gov/niem/codes/iso_4217/4.0/#",
+    "simpleType": "iso_4217:CurrencyCodeSimpleType"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "featurePointHorizontalCoordinateValue": "biom:FeaturePointHorizontalCoordinateValue",
+    "featurePointID": "biom:FeaturePointID",
+    "featurePointCategoryCode": "biom:FeaturePointCategoryCode",
+    "featurePointVerticalCoordinateValue": "biom:FeaturePointVerticalCoordinateValue"
+  }
+}

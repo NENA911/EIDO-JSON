@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "full": "nc:HighwayFullText",
+    "name": "nc:HighwayName",
+    "highwayID": "nc:HighwayID",
+    "position": "nc:HighwayPositionText"
+  }
+}

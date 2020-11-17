@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "st": "http://release.niem.gov/niem/domains/surfaceTransportation/4.0/#",
+    "roadwayStructureIdentification": "st:RoadwayStructureIdentification",
+    "roadwayInclinationValue": "st:RoadwayInclinationValue",
+    "AADTRampNumeric": "st:AADTRampNumeric",
+    "throughLanesNumeric": "st:ThroughLanesNumeric",
+    "bridgeStructure": "st:BridgeStructure",
+    "isRoadwayCurveApplicable": "st:RoadwayCurveApplicableIndicator",
+    "roadwayCurveRadiusLengthMeasure": "st:RoadwayCurveRadiusLengthMeasure",
+    "roadwayCurveLengthMeasure": "st:RoadwayCurveLengthMeasure",
+    "roadwayCurveSuperelevationMeasure": "st:RoadwayCurveSuperelevationMeasure",
+    "roadwayGradeSlopePercent": "st:RoadwayGradeSlopePercent",
+    "averageAnnualDailyTrafficNumeric": "st:AverageAnnualDailyTrafficNumeric",
+    "roadwayLaneWidthMeasure": "st:RoadwayLaneWidthMeasure",
+    "roadwayShoulderWidthMeasure": "st:RoadwayShoulderWidthMeasure",
+    "roadwayMedianWidthMeasure": "st:RoadwayMedianWidthMeasure",
+    "roadwayRailwayCrossingIdentification": "st:RoadwayRailwayCrossingIdentification",
+    "roadwayIntersectionAverageAnnualDailyEnteringTrafficQuantity": "st:RoadwayIntersectionAverageAnnualDailyEnteringTrafficQuantity",
+    "intersectionCategoryCode": "st:IntersectionCategoryCode",
+    "functionalClassCode": "st:FunctionalClassCode",
+    "roadwayGradeCode": "st:RoadwayGradeCode",
+    "roadwayHorizontalAlignmentCode": "st:RoadwayHorizontalAlignmentCode",
+    "intersectionJunctionTrafficControlCategoryCode": "st:IntersectionJunctionTrafficControlCategoryCode",
+    "roadwayLightingCode": "st:RoadwayLightingCode",
+    "roadwayNationalHighwayPartCode": "st:RoadwayNationalHighwayPartCode"
+  }
+}

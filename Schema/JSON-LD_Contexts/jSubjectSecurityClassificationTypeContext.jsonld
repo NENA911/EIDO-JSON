@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "hearing": "j:SubjectSecurityClassificationHearing",
+    "subjectClassificationAssessment": "j:SubjectClassificationAssessment",
+    "activity": "j:SubjectSecurityClassificationActivity"
+  }
+}

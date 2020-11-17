@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "sar": "http://release.niem.gov/niem/codes/pmise_sar/4.0/#",
+    "simpleType": "sar:TargetSectorCodeSimpleType"
+  }
+}

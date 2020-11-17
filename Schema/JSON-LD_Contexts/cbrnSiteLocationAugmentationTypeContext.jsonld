@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "cbrn": "http://release.niem.gov/niem/domains/cbrn/4.1/#",
+    "geographicPoint": "cbrn:GeographicPoint",
+    "siteSpecialInfo": "cbrn:SiteSpecialInfoText",
+    "mapGuideLocation": "cbrn:MapGuideLocation",
+    "specialEventName": "cbrn:SpecialEventName",
+    "specialEventStartDateTime": "cbrn:SpecialEventStartDateTime",
+    "specialEventEndDateTime": "cbrn:SpecialEventEndDateTime",
+    "specialEventSecurityArea": "cbrn:SpecialEventSecurityArea"
+  }
+}

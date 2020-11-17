@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "issueDate": "j:DriverLicenseMedicalCertificationIssueDate",
+    "expirationDate": "j:DriverLicenseMedicalCertificationExpirationDate",
+    "driverLicenseSkillsPerformanceEvaluationEffectiveDate": "j:DriverLicenseSkillsPerformanceEvaluationEffectiveDate",
+    "driverLicenseWaiverExemptExpirationDate": "j:DriverLicenseWaiverExemptExpirationDate",
+    "driverLicenseWaiverExemptEffectiveDate": "j:DriverLicenseWaiverExemptEffectiveDate",
+    "driverLicenseSkillsPerformanceEvaluationExpirationDate": "j:DriverLicenseSkillsPerformanceEvaluationExpirationDate",
+    "isDriverLicenseWaiverExemptExpirationIndefinite": "j:DriverLicenseWaiverExemptExpirationIndefiniteIndicator",
+    "restrictionCode": "j:DriverLicenseMedicalCertificationRestrictionCode",
+    "statusCode": "j:DriverLicenseMedicalCertificationStatusCode",
+    "driverLicenseMedicalSelfCertificationCode": "j:DriverLicenseMedicalSelfCertificationCode"
+  }
+}

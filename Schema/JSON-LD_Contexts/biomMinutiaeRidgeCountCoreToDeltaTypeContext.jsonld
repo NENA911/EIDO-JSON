@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "coreID": "biom:CoreID",
+    "deltaID": "biom:DeltaID",
+    "ridgeCountMinimumValue": "biom:RidgeCountMinimumValue",
+    "ridgeCountMaximumValue": "biom:RidgeCountMaximumValue"
+  }
+}

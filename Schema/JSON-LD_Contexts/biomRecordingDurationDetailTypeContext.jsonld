@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "recordingDuration": "biom:RecordingDuration",
+    "recordingCompressedBytesQuantity": "biom:RecordingCompressedBytesQuantity",
+    "recordingSampleQuantity": "biom:RecordingSampleQuantity"
+  }
+}

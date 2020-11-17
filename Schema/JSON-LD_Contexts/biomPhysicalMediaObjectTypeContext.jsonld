@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "mediaCategory": "biom:MediaCategoryText",
+    "recordingSpeedRate": "biom:RecordingSpeedRate",
+    "recordingSpeedUnit": "biom:RecordingSpeedUnitText",
+    "audioEqualization": "biom:AudioEqualizationText",
+    "audioTrackQuantity": "biom:AudioTrackQuantity",
+    "speakerTrackList": "biom:SpeakerTrackList",
+    "mediaComment": "biom:MediaCommentText"
+  }
+}

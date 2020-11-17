@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "m": "http://release.niem.gov/niem/domains/maritime/4.1/#",
+    "simpleType": "m:COTPRegionCodeSimpleType"
+  }
+}

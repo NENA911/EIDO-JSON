@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "locationSection": "j:LocationSectionText",
+    "locationBed": "j:LocationBedText",
+    "locationBuilding": "j:LocationBuildingText",
+    "location": "j:LocationText",
+    "locationSuite": "j:LocationSuiteText",
+    "locationRoom": "j:LocationRoomText"
+  }
+}

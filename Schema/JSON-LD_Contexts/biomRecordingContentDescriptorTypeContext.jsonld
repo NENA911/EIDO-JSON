@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "recordingAssignedVoiceCategoryCode": "biom:RecordingAssignedVoiceCategoryCode",
+    "speakerPluralityCode": "biom:SpeakerPluralityCode",
+    "recordingContentComment": "biom:RecordingContentCommentText"
+  }
+}

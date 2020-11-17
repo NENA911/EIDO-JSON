@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
+    "nameTranslationRepresentationID": "scr:nameTranslationRepresentationID",
+    "nameTranslationRepresentation": "scr:nameTranslationRepresentationText",
+    "nameTranslationShortName": "scr:nameTranslationShortName",
+    "nameTranslationCategoryCode": "scr:nameTranslationCategoryCode",
+    "nameTranslationCategoryDescription": "scr:nameTranslationCategoryDescriptionText"
+  }
+}

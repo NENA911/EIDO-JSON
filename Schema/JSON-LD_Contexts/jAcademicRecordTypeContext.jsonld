@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "diplomaDescription": "j:AcademicRecordDiplomaDescriptionText",
+    "creditsNeededNumeric": "j:AcademicRecordCreditsNeededNumeric",
+    "yearDate": "j:AcademicRecordYearDate",
+    "unitsTotalNumeric": "j:AcademicRecordUnitsTotalNumeric",
+    "isExpelledFromSchool": "j:AcademicRecordExpelledFromSchoolIndicator",
+    "creditsEarnedNumeric": "j:AcademicRecordCreditsEarnedNumeric",
+    "diplomaReceivedDate": "j:AcademicRecordDiplomaReceivedDate",
+    "recordedDate": "j:AcademicRecordRecordedDate"
+  }
+}

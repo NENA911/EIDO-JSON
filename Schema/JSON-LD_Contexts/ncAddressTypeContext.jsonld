@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "full": "nc:AddressFullText",
+    "privateMailbox": "nc:AddressPrivateMailboxText",
+    "secondaryUnit": "nc:AddressSecondaryUnitText",
+    "buildingName": "nc:AddressBuildingName",
+    "deliveryPointID": "nc:AddressDeliveryPointID",
+    "deliveryPoint": "nc:AddressDeliveryPointText",
+    "locationRouteName": "nc:LocationRouteName",
+    "locationStreet": "nc:LocationStreet",
+    "recipientName": "nc:AddressRecipientName",
+    "locationCityName": "nc:LocationCityName",
+    "locationCountyCode": "nc:LocationCountyCode",
+    "locationCountyName": "nc:LocationCountyName",
+    "locationState": "nc:LocationState",
+    "locationCountry": "nc:LocationCountry",
+    "locationPostalCode": "nc:LocationPostalCode",
+    "locationPostalExtensionCode": "nc:LocationPostalExtensionCode",
+    "urbanizationName": "nc:AddressUrbanizationName",
+    "categoryCode": "nc:AddressCategoryCode",
+    "category": "nc:AddressCategoryText",
+    "it": "http://release.niem.gov/niem/domains/internationalTrade/4.1/#",
+    "itAugmentation": "it:AddressAugmentation",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "jAugmentation": "j:AddressAugmentation",
+    "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
+    "scrAugmentation": "scr:AddressAugmentation"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "category": "j:MentalHealthAssessmentFactorCategoryText",
+    "details": "j:MentalHealthAssessmentFactorDetailsText"
+  }
+}

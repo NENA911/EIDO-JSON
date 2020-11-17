@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "minutiaID": "biom:MinutiaID",
+    "imageSegmentVertex": "biom:ImageSegmentVertex",
+    "positionThetaAngleMeasure": "biom:PositionThetaAngleMeasure",
+    "categoryCode": "biom:MinutiaCategoryCode",
+    "eQuality": "biom:MinutiaeQuality",
+    "ridgeCount": "biom:MinutiaRidgeCount"
+  }
+}

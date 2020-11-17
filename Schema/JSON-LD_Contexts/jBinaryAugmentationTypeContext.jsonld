@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "binaryHashValue": "j:BinaryHashValue",
+    "cbrn": "http://release.niem.gov/niem/domains/cbrn/4.1/#",
+    "MIMEContentCode": "cbrn:MIMEContentCode"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "isPersonEmploymentIncludesCommunityService": "j:PersonEmploymentIncludesCommunityServiceIndicator",
+    "personEmploymentEmployeeOccupationTitle": "j:PersonEmploymentEmployeeOccupationTitleText",
+    "isPersonEmploymentBondPostedToGainEmployment": "j:PersonEmploymentBondPostedToGainEmploymentIndicator",
+    "personEmploymentDuration": "j:PersonEmploymentDuration",
+    "personEmploymentEmployerTestimonial": "j:PersonEmploymentEmployerTestimonialText",
+    "personEmploymentAuthorizedEndDate": "j:PersonEmploymentAuthorizedEndDate",
+    "isPersonEmploymentFullTime": "j:PersonEmploymentFullTimeIndicator",
+    "personEmploymentNumberOfDaysEmployedNumeric": "j:PersonEmploymentNumberOfDaysEmployedNumeric",
+    "personEmploymentPlan": "j:PersonEmploymentPlan",
+    "personEmploymentSupervisor": "j:PersonEmploymentSupervisor",
+    "personEmploymentUnemploymentStatus": "j:PersonEmploymentUnemploymentStatusText",
+    "personEmploymentFacility": "j:PersonEmploymentFacility",
+    "employeeHours": "j:EmployeeHoursText",
+    "personEmploymentEndReason": "j:PersonEmploymentEndReasonText"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "isYouth": "j:DevelopmentalDisabilityYouthIndicator",
+    "developmentDisabilityDetails": "j:DevelopmentDisabilityDetailsText",
+    "developmentDisabilityDocumentOfRecord": "j:DevelopmentDisabilityDocumentOfRecord",
+    "developmentDisabilityFunctionalLevel": "j:DevelopmentDisabilityFunctionalLevelText",
+    "developmentDisabilityIdentifiedDate": "j:DevelopmentDisabilityIdentifiedDate",
+    "developmentDisabilityCategory": "j:DevelopmentDisabilityCategoryText"
+  }
+}

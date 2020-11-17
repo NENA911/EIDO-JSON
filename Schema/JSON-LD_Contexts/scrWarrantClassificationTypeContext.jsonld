@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
+    "warrantCategoryDescription": "scr:WarrantCategoryDescriptionText",
+    "warrantCategoryCode": "scr:WarrantCategoryCode"
+  }
+}

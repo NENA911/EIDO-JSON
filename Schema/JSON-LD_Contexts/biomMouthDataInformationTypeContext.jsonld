@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "mouthDataRecordingDate": "biom:MouthDataRecordingDate",
+    "mouthDataRecordingDateEstimateRangeDuration": "biom:MouthDataRecordingDateEstimateRangeDuration",
+    "mouthDataADAReferenceCodeList": "biom:MouthDataADAReferenceCodeList",
+    "mouthDataAdditionalDescriptive": "biom:MouthDataAdditionalDescriptiveText"
+  }
+}

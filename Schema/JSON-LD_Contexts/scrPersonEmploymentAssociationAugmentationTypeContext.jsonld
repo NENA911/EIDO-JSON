@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "person": "nc:Person",
+    "organization": "nc:Organization",
+    "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
+    "payRateAmount": "scr:PayRateAmount",
+    "beginSalaryAmount": "scr:BeginSalaryAmount",
+    "endSalaryAmount": "scr:EndSalaryAmount",
+    "employeeStarNumberID": "scr:EmployeeStarNumberID",
+    "employeeBadgeNumberID": "scr:EmployeeBadgeNumberID",
+    "employeeCallNumberID": "scr:EmployeeCallNumberID"
+  }
+}

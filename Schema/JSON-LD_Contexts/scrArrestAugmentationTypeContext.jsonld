@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
+    "isHearingRequest": "scr:HearingRequestIndicator",
+    "arrestMethod": "scr:ArrestMethod",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "charge": "j:Charge",
+    "im": "http://release.niem.gov/niem/domains/immigration/4.1/#",
+    "isAttorneyRights": "im:AttorneyRightsIndicator",
+    "isPedestrian": "im:PedestrianIndicator",
+    "isTreatAsAdult": "scr:TreatAsAdultIndicator",
+    "isPhoneUseRights": "im:PhoneUseRightsIndicator",
+    "phoneAttemptsQuantity": "im:PhoneAttemptsQuantity",
+    "isPhoneAssist": "im:PhoneAssistIndicator",
+    "isHearingRights": "im:HearingRightsIndicator",
+    "isFacingHarm": "im:FacingHarmIndicator",
+    "isConsulateRights": "im:ConsulateRightsIndicator",
+    "isAttorneyRequest": "im:AttorneyRequestIndicator",
+    "distanceFromLandmarkMeasure": "im:DistanceFromLandmarkMeasure"
+  }
+}

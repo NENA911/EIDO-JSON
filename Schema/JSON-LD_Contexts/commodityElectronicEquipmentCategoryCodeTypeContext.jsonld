@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "commodity": "http://release.niem.gov/niem/codes/census_commodity/4.0/#",
+    "simpleType": "commodity:ElectronicEquipmentCategoryCodeSimpleType"
+  }
+}

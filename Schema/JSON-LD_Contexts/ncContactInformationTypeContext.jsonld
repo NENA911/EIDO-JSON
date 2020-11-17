@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "contactEmailID": "nc:ContactEmailID",
+    "contactInstantMessenger": "nc:ContactInstantMessenger",
+    "contactMailingAddress": "nc:ContactMailingAddress",
+    "contactRadio": "nc:ContactRadio",
+    "contactTelephoneNumber": "nc:ContactTelephoneNumber",
+    "contactWebsiteURI": "nc:ContactWebsiteURI",
+    "contactEntity": "nc:ContactEntity",
+    "contactEntityDescription": "nc:ContactEntityDescriptionText",
+    "description": "nc:ContactInformationDescriptionText",
+    "contactResponder": "nc:ContactResponder",
+    "availabilityCode": "nc:ContactInformationAvailabilityCode",
+    "availability": "nc:ContactInformationAvailabilityText",
+    "intel": "http://release.niem.gov/niem/domains/intelligence/4.1/#",
+    "intelAugmentation": "intel:ContactInformationAugmentation",
+    "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
+    "moAugmentation": "mo:ContactInformationAugmentation"
+  }
+}

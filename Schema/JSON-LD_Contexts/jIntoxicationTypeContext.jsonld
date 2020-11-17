@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "level": "j:IntoxicationLevelText",
+    "testCategory": "j:IntoxicationTestCategoryText",
+    "isAlcoholInvolved": "j:IntoxicationAlcoholInvolvedIndicator",
+    "isDrugInvolved": "j:IntoxicationDrugInvolvedIndicator",
+    "isIntoxicantIllegal": "j:IntoxicationIntoxicantIllegalIndicator",
+    "intoxicantCategoryCode": "j:IntoxicationIntoxicantCategoryCode",
+    "intoxicantCategory": "j:IntoxicationIntoxicantCategoryText",
+    "isOverLimit": "j:IntoxicationOverLimitIndicator",
+    "tester": "j:IntoxicationTester",
+    "testDate": "j:IntoxicationTestDate",
+    "testDescription": "j:IntoxicationTestDescriptionText",
+    "relatedActivity": "j:IntoxicationRelatedActivity"
+  }
+}

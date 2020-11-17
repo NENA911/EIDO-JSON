@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "code": "nc:CountryCode",
+    "intel": "http://release.niem.gov/niem/domains/intelligence/4.1/#",
+    "locationFIPS10-4PlusNCTCCode": "intel:LocationCountryFIPS10-4PlusNCTCCodeText",
+    "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
+    "locationIdentification": "scr:LocationCountryIdentification",
+    "locationISO3166Alpha2Code": "nc:LocationCountryISO3166Alpha2Code",
+    "locationISO3166Alpha3Code": "nc:LocationCountryISO3166Alpha3Code",
+    "locationISO3166NumericCode": "nc:LocationCountryISO3166NumericCode",
+    "locationName": "nc:LocationCountryName"
+  }
+}

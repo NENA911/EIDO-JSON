@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "decimalValue": "nc:MeasureDecimalValue",
+    "doubleValue": "nc:MeasureDoubleValue",
+    "integerValue": "nc:MeasureIntegerValue",
+    "unsignedIntegerValue": "nc:MeasureUnsignedIntegerValue",
+    "decimalRange": "nc:MeasureDecimalRange",
+    "doubleRange": "nc:MeasureDoubleRange",
+    "integerRange": "nc:MeasureIntegerRange",
+    "unsignedIntegerRange": "nc:MeasureUnsignedIntegerRange",
+    "decimalValueList": "nc:MeasureDecimalValueList",
+    "doubleValueList": "nc:MeasureDoubleValueList",
+    "integerValueList": "nc:MeasureIntegerValueList",
+    "textList": "nc:MeasureTextList",
+    "value": "nc:MeasureValueText",
+    "date": "nc:MeasureDate",
+    "comment": "nc:MeasureCommentText",
+    "measurer": "nc:Measurer",
+    "error": "nc:MeasureErrorText",
+    "errorValue": "nc:MeasureErrorValue",
+    "quality": "nc:MeasureQualityText",
+    "unit": "nc:MeasureUnitText",
+    "method": "nc:MeasureMethodText",
+    "isEstimated": "nc:MeasureEstimatedIndicator",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "personPrenatalAgeUnitCode": "j:PersonPrenatalAgeUnitCode",
+    "timeUnitCode": "nc:TimeUnitCode",
+    "engineDisplacementUnitCode": "j:EngineDisplacementUnitCode",
+    "engineDisplacementUnitNCICCode": "j:EngineDisplacementUnitNCICCode",
+    "volumeUnitCode": "nc:VolumeUnitCode"
+  }
+}

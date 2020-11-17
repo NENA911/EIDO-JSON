@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "segmentID": "biom:SegmentID",
+    "trackChannelList": "biom:TrackChannelList",
+    "relativeStartTimeInMSValue": "biom:RelativeStartTimeInMSValue",
+    "relativeEndTimeInMSValue": "biom:RelativeEndTimeInMSValue",
+    "diaryComment": "biom:DiaryCommentText"
+  }
+}

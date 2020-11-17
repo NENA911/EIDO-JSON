@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "driverLicenseCardDesignRevisionDate": "j:DriverLicenseCardDesignRevisionDate",
+    "driverLicenseMedicalCertification": "j:DriverLicenseMedicalCertification",
+    "driverLicenseIdentification": "j:DriverLicenseIdentification",
+    "isDriverLicenseLimitedTerm": "j:DriverLicenseLimitedTermIndicator",
+    "driverLicenseExpirationDate": "j:DriverLicenseExpirationDate",
+    "driverLicenseIssueDate": "j:DriverLicenseIssueDate",
+    "driverLicensePerson": "j:DriverLicensePerson",
+    "driverLicenseIssuingCountryCode": "j:DriverLicenseIssuingCountryCode"
+  }
+}

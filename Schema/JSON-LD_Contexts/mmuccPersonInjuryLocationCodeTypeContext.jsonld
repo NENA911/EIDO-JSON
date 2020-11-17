@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "mmucc": "http://release.niem.gov/niem/codes/mmucc/4.0/#",
+    "simpleType": "mmucc:PersonInjuryLocationCodeSimpleType"
+  }
+}

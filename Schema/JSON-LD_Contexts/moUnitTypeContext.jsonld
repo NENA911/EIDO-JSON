@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
+    "organizationUniqueID": "mo:OrganizationUniqueID",
+    "identificationCodeID": "mo:UnitIdentificationCodeID",
+    "name": "mo:UnitName",
+    "abbreviatedName": "mo:UnitAbbreviatedName",
+    "shortName": "mo:UnitShortName",
+    "typeCode": "mo:UnitTypeCodeText",
+    "presentLocation": "mo:UnitPresentLocation",
+    "pointOfContact": "mo:UnitPointOfContact",
+    "metadata": "mo:UnitMetadata",
+    "geopoliticalAffiliationCode": "mo:UnitGeopoliticalAffiliationCode",
+    "courseAngleDegreesMeasure": "mo:CourseAngleDegreesMeasure",
+    "operationalStatusCode": "mo:UnitOperationalStatusCode",
+    "statusQualifierCode": "mo:UnitStatusQualifierCode",
+    "reinforcementCode": "mo:UnitReinforcementCode",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "speedMeasure": "nc:SpeedMeasure"
+  }
+}

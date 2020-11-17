@@ -1,0 +1,16 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "date": "nc:Date",
+    "range": "nc:DateRange",
+    "time": "nc:DateTime",
+    "day": "nc:DayDate",
+    "fiscalYear": "nc:FiscalYearDate",
+    "month": "nc:MonthDate",
+    "quarterID": "nc:QuarterID",
+    "year": "nc:YearDate",
+    "yearMonth": "nc:YearMonthDate",
+    "zuluTime": "nc:ZuluDateTime",
+    "marginOfErrorDuration": "nc:DateMarginOfErrorDuration"
+  }
+}

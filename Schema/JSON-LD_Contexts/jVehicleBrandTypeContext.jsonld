@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "damagePercentageCategoryCode": "j:VehicleBrandDamagePercentageCategoryCode",
+    "damagePercentageCategory": "j:VehicleBrandDamagePercentageCategoryText",
+    "date": "j:VehicleBrandDate",
+    "vehicleBrander": "j:VehicleBrander",
+    "salvagePercent": "j:VehicleBrandSalvagePercent",
+    "code": "j:VehicleBrandCode",
+    "text": "j:VehicleBrandText",
+    "vehicleDispositionCode": "j:VehicleBrandVehicleDispositionCode",
+    "vehicleDisposition": "j:VehicleBrandVehicleDispositionText",
+    "vehicleSourceName": "j:VehicleBrandVehicleSourceName"
+  }
+}

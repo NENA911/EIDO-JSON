@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "roleOfPerson": "nc:RoleOfPerson",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "identification": "j:WitnessIdentification",
+    "sequenceNumber": "j:WitnessSequenceNumberText",
+    "accountDescription": "j:WitnessAccountDescriptionText",
+    "date": "j:WitnessDate",
+    "locationDescription": "j:WitnessLocationDescriptionText",
+    "isReportVerified": "j:WitnessReportVerifiedIndicator",
+    "specialCondition": "j:WitnessSpecialConditionText",
+    "isWillTestify": "j:WitnessWillTestifyIndicator"
+  }
+}

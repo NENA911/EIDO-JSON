@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
+    "isCriminalAffiliation": "scr:CriminalAffiliationIndicator",
+    "isFraudulent": "scr:FraudulentIndicator",
+    "grossAnnualIncomeAmount": "scr:GrossAnnualIncomeAmount",
+    "organizationSizeQuantity": "scr:OrganizationSizeQuantity",
+    "isSuspicious": "scr:SuspiciousIndicator",
+    "organizationNameEffectiveDate": "scr:OrganizationNameEffectiveDate",
+    "organizationNameIdentification": "scr:OrganizationNameIdentification",
+    "organizationNameTerminationDate": "scr:OrganizationNameTerminationDate",
+    "organizationStatusClassificationCategoryCode": "scr:OrganizationStatusClassificationCategoryCode",
+    "organizationClassificationCategoryCode": "scr:OrganizationClassificationCategoryCode"
+  }
+}

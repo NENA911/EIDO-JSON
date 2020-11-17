@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "startDate": "nc:CapabilityStartDate",
+    "endDate": "nc:CapabilityEndDate",
+    "generalCategory": "nc:CapabilityGeneralCategoryText",
+    "identification": "nc:CapabilityIdentification",
+    "name": "nc:CapabilityName",
+    "category": "nc:CapabilityCategoryText",
+    "description": "nc:CapabilityDescriptionText",
+    "isIsLimitation": "nc:CapabilityIsLimitationIndicator",
+    "intel": "http://release.niem.gov/niem/domains/intelligence/4.1/#",
+    "augmentation": "intel:CapabilityAugmentation"
+  }
+}

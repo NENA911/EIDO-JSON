@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
+    "conveyanceIdentificationCategoryCode": "scr:ConveyanceIdentificationCategoryCode",
+    "vehicleCategoryCode": "scr:VehicleCategoryCodeText",
+    "conveyanceCategoryCode": "scr:ConveyanceCategoryCode",
+    "vehicleSubjectCategoryCode": "scr:VehicleSubjectCategoryCodeText",
+    "conveyanceIDIssuingJurisdictionCode": "scr:ConveyanceIDIssuingJurisdictionCode"
+  }
+}

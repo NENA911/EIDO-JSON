@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "iso_3166": "http://release.niem.gov/niem/codes/iso_3166-1/4.0/#",
+    "simpleType": "iso_3166:CountrySubdivisionCodeSimpleType"
+  }
+}

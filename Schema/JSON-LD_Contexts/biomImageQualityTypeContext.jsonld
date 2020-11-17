@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "qualityAlgorithmProductID": "biom:QualityAlgorithmProductID",
+    "qualityAlgorithmVendorID": "biom:QualityAlgorithmVendorID",
+    "qualityValue": "biom:QualityValue"
+  }
+}

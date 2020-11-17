@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "hazmat": "http://release.niem.gov/niem/codes/dot_hazmat/4.0/#",
+    "simpleType": "hazmat:HazmatUNCodeSimpleType"
+  }
+}

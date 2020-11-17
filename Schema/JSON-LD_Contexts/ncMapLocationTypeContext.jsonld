@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "mapCoordinateFull": "nc:MapCoordinateFullText",
+    "mapDate": "nc:MapDate",
+    "mapElevationCoordinate": "nc:MapElevationCoordinateText",
+    "mapHorizontalCoordinate": "nc:MapHorizontalCoordinateText",
+    "description": "nc:MapLocationDescriptionText",
+    "mapName": "nc:MapName",
+    "mapPageID": "nc:MapPageID",
+    "mapQuadrant": "nc:MapQuadrantText",
+    "mapVersionID": "nc:MapVersionID",
+    "mapVerticalCoordinate": "nc:MapVerticalCoordinateText"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "activityEstimatedDuration": "j:ActivityEstimatedDuration",
+    "activityEffectiveDate": "j:ActivityEffectiveDate",
+    "activityDueDate": "j:ActivityDueDate",
+    "isActivityCompleted": "j:ActivityCompletedIndicator",
+    "activityComment": "j:ActivityComment",
+    "activityCapacityQuantity": "j:ActivityCapacityQuantity",
+    "isActivityApproved": "j:ActivityApprovedIndicator",
+    "activityRequestedDate": "j:ActivityRequestedDate",
+    "activityReportedDate": "j:ActivityReportedDate",
+    "activityDocumentServer": "j:ActivityDocumentServer",
+    "activityAssignedDate": "j:ActivityAssignedDate",
+    "narrative": "j:Narrative",
+    "activityFrequency": "j:ActivityFrequencyText",
+    "caseNumber": "j:CaseNumberText",
+    "activityActualDuration": "j:ActivityActualDuration",
+    "caseLinkage": "j:CaseLinkage",
+    "activityPrescribedDuration": "j:ActivityPrescribedDuration",
+    "activityVerifiedDate": "j:ActivityVerifiedDate",
+    "activitySignature": "j:ActivitySignature",
+    "activitySequenceNumeric": "j:ActivitySequenceNumeric",
+    "activityScheduledDate": "j:ActivityScheduledDate",
+    "activityDocumentValidator": "j:ActivityDocumentValidator",
+    "activityOfficial": "j:ActivityOfficial"
+  }
+}

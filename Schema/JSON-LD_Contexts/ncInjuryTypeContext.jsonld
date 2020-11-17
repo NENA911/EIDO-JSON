@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "locationCode": "j:InjuryLocationCode",
+    "locationNDEXCode": "j:InjuryLocationNDEXCode",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "location": "nc:InjuryLocationText",
+    "categoryCode": "j:InjuryCategoryCode",
+    "categoryNDExCode": "j:InjuryCategoryNDExCode",
+    "category": "nc:InjuryCategoryText",
+    "date": "nc:InjuryDate",
+    "description": "nc:InjuryDescriptionText",
+    "causerForce": "j:InjuryCauserForce",
+    "causerPerson": "nc:InjuryCauserPerson",
+    "sustainer": "nc:InjurySustainer",
+    "severityCode": "j:InjurySeverityCode",
+    "severity": "nc:InjurySeverityText",
+    "augmentation": "j:InjuryAugmentation"
+  }
+}

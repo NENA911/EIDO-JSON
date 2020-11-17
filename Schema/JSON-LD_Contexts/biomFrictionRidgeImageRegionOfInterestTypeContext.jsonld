@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "imageSegmentWidthMeasure": "biom:ImageSegmentWidthMeasure",
+    "imageSegmentHeightMeasure": "biom:ImageSegmentHeightMeasure",
+    "imageSegmentHorizontalOffsetMeasure": "biom:ImageSegmentHorizontalOffsetMeasure",
+    "imageSegmentVerticalOffsetMeasure": "biom:ImageSegmentVerticalOffsetMeasure",
+    "imageSegmentPolygon": "biom:ImageSegmentPolygon"
+  }
+}

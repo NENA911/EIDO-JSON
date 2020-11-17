@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "apco": "http://release.niem.gov/niem/codes/apco_event/4.0/#",
+    "simpleType": "apco:AlarmEventCategoryCodeSimpleType"
+  }
+}

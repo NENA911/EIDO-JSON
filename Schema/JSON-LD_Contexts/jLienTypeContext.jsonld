@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "amount": "j:LienAmount",
+    "date": "j:LienDate",
+    "releaseDate": "j:LienReleaseDate",
+    "releaseReasonCode": "j:LienReleaseReasonCode",
+    "releaseReason": "j:LienReleaseReasonText"
+  }
+}

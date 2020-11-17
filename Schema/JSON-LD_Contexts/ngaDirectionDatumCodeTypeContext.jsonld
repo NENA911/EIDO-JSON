@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "nga": "http://release.niem.gov/niem/codes/nga_datum/4.0/#",
+    "simpleType": "nga:DirectionDatumCodeSimpleType"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "binaryID": "nc:BinaryID",
+    "location": "nc:BinaryLocationText",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "categoryCode": "j:BinaryCategoryCode",
+    "category": "nc:BinaryCategoryText",
+    "hash": "nc:BinaryHash",
+    "isAvailable": "nc:BinaryAvailableIndicator",
+    "base64Object": "nc:Base64BinaryObject",
+    "hexObject": "nc:HexBinaryObject",
+    "cbrn": "http://release.niem.gov/niem/domains/cbrn/4.1/#",
+    "UTF8Object": "cbrn:UTF8BinaryObjectText",
+    "captureDate": "nc:BinaryCaptureDate",
+    "capturer": "nc:BinaryCapturer",
+    "description": "nc:BinaryDescriptionText",
+    "format": "nc:BinaryFormatText",
+    "formatStandardName": "nc:BinaryFormatStandardName",
+    "URI": "nc:BinaryURI",
+    "sizeValue": "nc:BinarySizeValue",
+    "augmentation": "j:BinaryAugmentation"
+  }
+}

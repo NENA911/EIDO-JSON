@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "subjectExistentialStatusCode": "biom:SubjectExistentialStatusCode",
+    "subjectBodyStatusCode": "biom:SubjectBodyStatusCode",
+    "subjectBodyClassCode": "biom:SubjectBodyClassCode"
+  }
+}

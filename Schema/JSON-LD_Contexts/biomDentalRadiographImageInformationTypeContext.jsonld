@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "radiographSize": "biom:RadiographSizeText",
+    "radiographImageSeriesCode": "biom:RadiographImageSeriesCodeText",
+    "radiographImageSeries": "biom:RadiographImageSeriesText",
+    "radiographImageInformation": "biom:RadiographImageInformationText"
+  }
+}

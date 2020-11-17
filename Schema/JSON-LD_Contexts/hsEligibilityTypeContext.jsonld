@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+    "servicesIndicatorCode": "hs:ServicesEligibilityIndicatorCode",
+    "isTANF": "hs:TANFIndicator",
+    "childSupportAssistanceStatusIndicatorCode": "hs:ChildSupportAssistanceStatusIndicatorCode",
+    "TANFMonthsQuantity": "hs:TANFMonthsEligibilityQuantity"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "roleOfPerson": "nc:RoleOfPerson",
+    "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+    "caseWorkerCategoryCode": "hs:CaseWorkerCategoryCode",
+    "category": "hs:CaseworkerCategoryText",
+    "caseWorkerInvolvementCategoryCode": "hs:CaseWorkerInvolvementCategoryCode"
+  }
+}

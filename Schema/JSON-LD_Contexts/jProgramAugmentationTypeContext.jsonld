@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "programStaffMember": "j:ProgramStaffMember",
+    "programCalendarSchedule": "j:ProgramCalendarSchedule",
+    "programOwner": "j:ProgramOwner",
+    "programInServiceSchedule": "j:ProgramInServiceSchedule",
+    "programGenderRestrictionCategory": "j:ProgramGenderRestrictionCategoryText",
+    "isProgramIncludesTesting": "j:ProgramIncludesTestingIndicator",
+    "programOverviewStatement": "j:ProgramOverviewStatementText",
+    "programKeyPositionName": "j:ProgramKeyPositionName",
+    "isProgramIncludesChildren": "j:ProgramIncludesChildrenIndicator",
+    "isProgramRequirementMinimumAge18": "j:ProgramRequirementMinimumAge18Indicator",
+    "isProgramRequirementMinimumAge21": "j:ProgramRequirementMinimumAge21Indicator",
+    "programSupportedAlternativeLanguage": "j:ProgramSupportedAlternativeLanguageText",
+    "programVerifiedDate": "j:ProgramVerifiedDate",
+    "programPlan": "j:ProgramPlan",
+    "programContract": "j:ProgramContract",
+    "programActivity": "j:ProgramActivity",
+    "programKeyAreasOfPracticeCategory": "j:ProgramKeyAreasOfPracticeCategoryText",
+    "programEnrollment": "j:ProgramEnrollment",
+    "programKeyPositionDescription": "j:ProgramKeyPositionDescriptionText",
+    "isProgramIncludesSeniors": "j:ProgramIncludesSeniorsIndicator",
+    "programDefectFinding": "j:ProgramDefectFindingText",
+    "programDescriptionOfServices": "j:ProgramDescriptionOfServicesText",
+    "isProgramIncludesOffenderPopulationActivity": "j:ProgramIncludesOffenderPopulationActivityIndicator",
+    "programCaseworker": "j:ProgramCaseworker"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "personEyeColorCode": "j:PersonEyeColorCode",
+    "personEyeColorRapSheetCode": "j:PersonEyeColorRapSheetCode",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "personEyeColor": "nc:PersonEyeColorText",
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "personHairAppearance": "biom:PersonHairAppearanceText",
+    "personHairCategory": "biom:PersonHairCategoryText",
+    "physicalFeatureColorDetail": "biom:PhysicalFeatureColorDetail",
+    "physicalFeatureCategoryCode": "biom:PhysicalFeatureCategoryCode",
+    "physicalFeatureCategory": "biom:PhysicalFeatureCategoryText",
+    "physicalFeatureClassCode": "biom:PhysicalFeatureClassCode",
+    "physicalFeatureSubClassCode": "biom:PhysicalFeatureSubClassCode",
+    "physicalFeatureLocation": "biom:PhysicalFeatureLocationText",
+    "physicalFeatureGeneralCategory": "biom:PhysicalFeatureGeneralCategoryText",
+    "text": "biom:PhysicalFeatureDescriptionText",
+    "medicalImageryDataBlockBinaryObject": "biom:MedicalImageryDataBlockBinaryObject",
+    "sourceExternalAnalogFileReference": "biom:SourceExternalAnalogFileReferenceText",
+    "sourceExternalDigitalAudioReference": "biom:SourceExternalDigitalAudioReferenceText",
+    "sourceExternalDigitalImageReference": "biom:SourceExternalDigitalImageReferenceText",
+    "sourceExternalDigitalVideoReference": "biom:SourceExternalDigitalVideoReferenceText",
+    "sourceExternalFileReference": "biom:SourceExternalFileReferenceText"
+  }
+}

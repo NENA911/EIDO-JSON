@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "caveat": "nc:CaveatText",
+    "administrativeID": "nc:AdministrativeID",
+    "distribution": "nc:DistributionText",
+    "effectiveDate": "nc:EffectiveDate",
+    "expirationDate": "nc:ExpirationDate",
+    "lastUpdatedDate": "nc:LastUpdatedDate",
+    "lastVerifiedDate": "nc:LastVerifiedDate",
+    "probabilityPercent": "nc:ProbabilityPercent",
+    "qualityComment": "nc:QualityComment",
+    "confidencePercent": "nc:ConfidencePercent",
+    "reportedDate": "nc:ReportedDate",
+    "reportingOrganization": "nc:ReportingOrganizationText",
+    "reportingPersonRole": "nc:ReportingPersonRoleText",
+    "reportingPerson": "nc:ReportingPersonText",
+    "sensitivity": "nc:SensitivityText",
+    "creatorName": "nc:CreatorName",
+    "description": "nc:DescriptionText",
+    "sourceID": "nc:SourceIDText",
+    "sourceContactPerson": "nc:SourceContactPersonText",
+    "publisherName": "nc:PublisherName",
+    "releaseDate": "nc:ReleaseDate",
+    "repositoryID": "nc:RepositoryID",
+    "source": "nc:SourceText",
+    "languageCode": "nc:LanguageCode",
+    "languageName": "nc:LanguageName",
+    "comment": "nc:Comment"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "telephoneAreaCodeID": "nc:TelephoneAreaCodeID",
+    "telephoneExchangeID": "nc:TelephoneExchangeID",
+    "telephoneLineID": "nc:TelephoneLineID",
+    "telephoneSuffixID": "nc:TelephoneSuffixID"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "criminalTraitAction": "j:CriminalTraitAction",
+    "criminalTraitActivityDescription": "j:CriminalTraitActivityDescriptionText",
+    "criminalTraitColor": "j:CriminalTraitColorText",
+    "criminalTraitCommunicationDescription": "j:CriminalTraitCommunicationDescriptionText",
+    "criminalTraitDescription": "j:CriminalTraitDescriptionText",
+    "criminalTraitDress": "j:CriminalTraitDressText",
+    "criminalTraitEthnicityCode": "j:CriminalTraitEthnicityCode",
+    "criminalTraitEthnicity": "j:CriminalTraitEthnicityText",
+    "criminalTraitGraffitiDescription": "j:CriminalTraitGraffitiDescriptionText",
+    "criminalTraitGraffitiImage": "j:CriminalTraitGraffitiImage",
+    "criminalTraitHandSignal": "j:CriminalTraitHandSignalText",
+    "criminalTraitModusOperandi": "j:CriminalTraitModusOperandiText",
+    "criminalTraitTargetDescription": "j:CriminalTraitTargetDescriptionText",
+    "criminalTraitTattooDescription": "j:CriminalTraitTattooDescriptionText",
+    "criminalTraitTattooImage": "j:CriminalTraitTattooImage",
+    "criminalTraitTurf": "j:CriminalTraitTurfText"
+  }
+}

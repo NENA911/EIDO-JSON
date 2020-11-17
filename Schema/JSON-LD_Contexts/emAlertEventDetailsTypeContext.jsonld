@@ -1,0 +1,16 @@
+{
+  "@context": {
+    "em": "http://release.niem.gov/niem/domains/emergencyManagement/4.1/#",
+    "audienceDescription": "em:AlertEventDetailsAudienceDescriptionText",
+    "systemRecordID": "em:AlertEventDetailsSystemRecordID",
+    "description": "em:AlertEventDetailsDescriptionText",
+    "headline": "em:AlertEventDetailsHeadlineText",
+    "instructionsDescription": "em:AlertEventDetailsInstructionsDescriptionText",
+    "onsetDateTime": "em:AlertEventDetailsOnsetDateTime",
+    "urgencyCode": "em:AlertEventDetailsUrgencyCode",
+    "severityCode": "em:AlertEventDetailsSeverityCode",
+    "categoryCode": "em:AlertEventDetailsCategoryCode",
+    "certaintyCode": "em:AlertEventDetailsCertaintyCode",
+    "responseRecommendationCode": "em:AlertEventDetailsResponseRecommendationCode"
+  }
+}

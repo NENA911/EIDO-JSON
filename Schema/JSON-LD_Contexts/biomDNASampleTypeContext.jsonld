@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "biometricCapture": "biom:BiometricCapture",
+    "DNALaboratory": "biom:DNALaboratory",
+    "DNAAnalysisQuantityCode": "biom:DNAAnalysisQuantityCode",
+    "DNADonor": "biom:DNADonor",
+    "DNAClaimedRelationshipCode": "biom:DNAClaimedRelationshipCode",
+    "DNAValidatedRelationshipCode": "biom:DNAValidatedRelationshipCode",
+    "DNAPedigree": "biom:DNAPedigree",
+    "origin": "biom:DNASampleOrigin",
+    "DNATypingTechnologyCategoryCode": "biom:DNATypingTechnologyCategoryCode",
+    "collectionMethod": "biom:DNASampleCollectionMethodText",
+    "DNAProfileStorageDate": "biom:DNAProfileStorageDate",
+    "DNAProfile": "biom:DNAProfile",
+    "DNASTRProfile": "biom:DNASTRProfile",
+    "DNAMitochondrialData": "biom:DNAMitochondrialData",
+    "DNAElectropherogram": "biom:DNAElectropherogram",
+    "DNAElectropherogramLadder": "biom:DNAElectropherogramLadder",
+    "DNAGenotypeDistributionCode": "biom:DNAGenotypeDistributionCode",
+    "DNAGenotypeAllelePair": "biom:DNAGenotypeAllelePair",
+    "DNAComment": "biom:DNACommentText"
+  }
+}

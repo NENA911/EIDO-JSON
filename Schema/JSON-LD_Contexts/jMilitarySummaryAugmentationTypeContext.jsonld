@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "militaryCountry": "nc:MilitaryCountry",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "militaryDischargeRank": "j:MilitaryDischargeRankText",
+    "militaryDisciplinaryAction": "j:MilitaryDisciplinaryAction",
+    "militaryDuties": "j:MilitaryDutiesText",
+    "militaryEnlistmentDate": "j:MilitaryEnlistmentDate",
+    "militaryHighRank": "j:MilitaryHighRankText",
+    "militaryWorkSkill": "j:MilitaryWorkSkillText"
+  }
+}

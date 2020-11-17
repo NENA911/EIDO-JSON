@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "CBEFFProductID": "biom:CBEFFProductID",
+    "deviceCertificationCode": "biom:DeviceCertificationCode",
+    "deviceID": "biom:DeviceID",
+    "horizontalLineLengthPixelQuantity": "biom:HorizontalLineLengthPixelQuantity",
+    "verticalLineLengthPixelQuantity": "biom:VerticalLineLengthPixelQuantity",
+    "imageScaleUnitsCode": "biom:ImageScaleUnitsCode",
+    "imageHorizontalPixelDensityValue": "biom:ImageHorizontalPixelDensityValue",
+    "imageVerticalPixelDensityValue": "biom:ImageVerticalPixelDensityValue",
+    "fingerViewNumeric": "biom:FingerViewNumeric",
+    "fingerPositionCode": "biom:FingerPositionCode",
+    "minutiaeQuality": "biom:MinutiaeQuality",
+    "minutiaeQuantity": "biom:MinutiaeQuantity",
+    "INCITSMinutia": "biom:INCITSMinutia",
+    "minutiaeRidgeCountDetail": "biom:MinutiaeRidgeCountDetail",
+    "fingerprintPatternCoreLocation": "biom:FingerprintPatternCoreLocation",
+    "fingerprintPatternDeltaLocation": "biom:FingerprintPatternDeltaLocation"
+  }
+}

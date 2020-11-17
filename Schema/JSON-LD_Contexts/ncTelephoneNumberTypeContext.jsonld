@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "directDial": "nc:DirectDialTelephoneNumber",
+    "full": "nc:FullTelephoneNumber",
+    "international": "nc:InternationalTelephoneNumber",
+    "NANP": "nc:NANPTelephoneNumber",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "jCategoryCode": "j:TelephoneNumberCategoryCode",
+    "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
+    "moCategoryCode": "mo:TelephoneNumberCategoryCode",
+    "ncCategoryCode": "nc:TelephoneNumberCategoryCode",
+    "category": "nc:TelephoneNumberCategoryText",
+    "description": "nc:TelephoneNumberDescriptionText",
+    "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
+    "augmentation": "scr:TelephoneNumberAugmentation"
+  }
+}

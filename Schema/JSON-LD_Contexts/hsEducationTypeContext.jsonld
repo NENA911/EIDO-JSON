@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+    "alGoal": "hs:EducationalGoalText",
+    "alNeed": "hs:EducationalNeedText",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "augmentation": "j:EducationAugmentation"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "em": "http://release.niem.gov/niem/domains/emergencyManagement/4.1/#",
+    "isAlarmAudible": "em:AlarmAudibleIndicator",
+    "alarmAudibleDescriptionCode": "em:AlarmAudibleDescriptionCode",
+    "alarmCallBackTelephoneNumber": "em:AlarmCallBackTelephoneNumber",
+    "alarmDetails": "em:AlarmDetailsText",
+    "alarmDispatchActivity": "em:AlarmDispatchActivity",
+    "alarmDispatchAgencyID": "em:AlarmDispatchAgencyID",
+    "alarmDispatchAgencyName": "em:AlarmDispatchAgencyNameText",
+    "alarmMonitoringServiceProviderID": "em:AlarmMonitoringServiceProviderID",
+    "alarmMonitoringServiceProviderName": "em:AlarmMonitoringServiceProviderNameText",
+    "alarmMonitoringServiceProviderReceiveDateTime": "em:AlarmMonitoringServiceProviderReceiveDateTime",
+    "alarmRequestedResponseActionDescription": "em:AlarmRequestedResponseActionDescriptionText",
+    "alarmConfirmation": "em:AlarmConfirmation",
+    "alarmPermit": "em:AlarmPermit",
+    "alarmEvent": "em:AlarmEvent",
+    "alarmLocation": "em:AlarmLocation"
+  }
+}

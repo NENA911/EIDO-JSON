@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "cbrn": "http://release.niem.gov/niem/domains/cbrn/4.1/#",
+    "scheduleStartDateTime": "cbrn:ScheduleStartDateTime",
+    "scheduleEndDateTime": "cbrn:ScheduleEndDateTime",
+    "scheduleTimeZone": "cbrn:ScheduleTimeZoneText"
+  }
+}

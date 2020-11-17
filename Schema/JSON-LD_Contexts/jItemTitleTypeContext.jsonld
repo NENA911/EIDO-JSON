@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "titleIdentification": "j:TitleIdentification",
+    "titleDuplicateQuantity": "j:TitleDuplicateQuantity",
+    "titleIssueDate": "j:TitleIssueDate",
+    "titleIssuingAuthorityName": "j:TitleIssuingAuthorityName",
+    "isTitleLien": "j:TitleLienIndicator",
+    "titleItem": "j:TitleItem",
+    "titleStatus": "j:TitleStatus",
+    "titleHolder": "j:TitleHolder",
+    "titleCategory": "j:TitleCategoryText",
+    "lien": "j:Lien",
+    "documentCategoryCode": "j:ItemTitleDocumentCategoryCode",
+    "purchaseDate": "j:ItemTitlePurchaseDate",
+    "purchasePriceAmount": "j:ItemTitlePurchasePriceAmount",
+    "salesTaxAmount": "j:ItemTitleSalesTaxAmount",
+    "salesTaxPercent": "j:ItemTitleSalesTaxPercent",
+    "taxableValue": "j:ItemTitleTaxableValue",
+    "titleIssuingJurisdiction": "j:TitleIssuingJurisdiction"
+  }
+}

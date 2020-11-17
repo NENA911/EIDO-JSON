@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "toothDataRecordingDate": "biom:ToothDataRecordingDate",
+    "toothDataRecordingDateEstimateRangeDuration": "biom:ToothDataRecordingDateEstimateRangeDuration",
+    "toothID": "biom:ToothID",
+    "originalSystemEncoding": "biom:OriginalSystemEncodingText",
+    "toothDataADAReferenceCodeList": "biom:ToothDataADAReferenceCodeList",
+    "transmittedToothEncoding": "biom:TransmittedToothEncodingText",
+    "toothIDCertaintyCode": "biom:ToothIDCertaintyCode",
+    "toothDataAdditionalDescriptive": "biom:ToothDataAdditionalDescriptiveText"
+  }
+}

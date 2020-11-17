@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "roleOfPerson": "nc:RoleOfPerson",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "activityCategoryCode": "j:EnforcementOfficialActivityCategoryCode",
+    "activityCategory": "j:EnforcementOfficialActivityCategoryText",
+    "activityNDExCategoryCode": "j:EnforcementOfficialActivityNDExCategoryCode",
+    "assignmentCategoryCode": "j:EnforcementOfficialAssignmentCategoryCode",
+    "assignmentCategory": "j:EnforcementOfficialAssignmentCategoryText",
+    "badgeIdentification": "j:EnforcementOfficialBadgeIdentification",
+    "POSTLicenseIdentification": "j:EnforcementOfficialPOSTLicenseIdentification",
+    "category": "j:EnforcementOfficialCategoryText",
+    "unavailableSchedule": "j:EnforcementOfficialUnavailableSchedule",
+    "unit": "j:EnforcementOfficialUnit",
+    "LEOKACircumstanceCategoryCode": "j:LEOKACircumstanceCategoryCode"
+  }
+}

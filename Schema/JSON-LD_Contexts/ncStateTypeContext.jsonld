@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "locationCanadianProvinceCode": "nc:LocationCanadianProvinceCode",
+    "locationFIPS5-2Code": "nc:LocationStateFIPS5-2Code",
+    "locationName": "nc:LocationStateName",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "locationNCICLISCode": "j:LocationStateNCICLISCode",
+    "locationNCICLSTACode": "j:LocationStateNCICLSTACode",
+    "locationNCICRESCode": "j:LocationStateNCICRESCode",
+    "locationUSPostalServiceCode": "nc:LocationStateUSPostalServiceCode",
+    "code": "nc:StateCode",
+    "ISO3166Code": "nc:StateISO3166Code"
+  }
+}

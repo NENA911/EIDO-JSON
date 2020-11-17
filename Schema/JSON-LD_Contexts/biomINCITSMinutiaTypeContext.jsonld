@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "minutiaID": "biom:MinutiaID",
+    "location": "biom:INCITSMinutiaLocation",
+    "categoryCode": "biom:INCITSMinutiaCategoryCode",
+    "minutiaQualityValue": "biom:MinutiaQualityValue"
+  }
+}

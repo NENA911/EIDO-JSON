@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "full": "nc:StreetFullText",
+    "number": "nc:StreetNumberText",
+    "predirectional": "nc:StreetPredirectionalText",
+    "name": "nc:StreetName",
+    "category": "nc:StreetCategoryText",
+    "postdirectional": "nc:StreetPostdirectionalText",
+    "extension": "nc:StreetExtensionText"
+  }
+}

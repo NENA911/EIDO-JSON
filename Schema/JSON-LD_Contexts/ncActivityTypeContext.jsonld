@@ -1,0 +1,16 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "identification": "nc:ActivityIdentification",
+    "category": "nc:ActivityCategoryText",
+    "description": "nc:ActivityDescriptionText",
+    "name": "nc:ActivityName",
+    "status": "nc:ActivityStatus",
+    "reason": "nc:ActivityReasonText",
+    "disposition": "nc:ActivityDisposition",
+    "contactEntity": "nc:ActivityContactEntity",
+    "date": "nc:ActivityDate",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "augmentation": "j:ActivityAugmentation"
+  }
+}

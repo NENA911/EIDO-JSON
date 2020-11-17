@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "assignedHoursNumeric": "j:GoalAssignedHoursNumeric",
+    "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+    "objective": "hs:GoalObjective",
+    "associatedActivity": "j:GoalAssociatedActivity",
+    "description": "j:GoalDescriptionText",
+    "achievementLevel": "j:GoalAchievementLevelText",
+    "isAchieved": "j:GoalAchievedIndicator",
+    "effortTotalHoursNumeric": "j:GoalEffortTotalHoursNumeric",
+    "notation": "j:GoalNotation"
+  }
+}

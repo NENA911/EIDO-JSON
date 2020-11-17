@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "featureColorFieldReferencedCode": "biom:FeatureColorFieldReferencedCode",
+    "featureColorFieldOccurenceReferencedValue": "biom:FeatureColorFieldOccurenceReferencedValue",
+    "featureColorHexidecimalValue": "biom:FeatureColorHexidecimalValue",
+    "featureColorComment": "biom:FeatureColorCommentText"
+  }
+}

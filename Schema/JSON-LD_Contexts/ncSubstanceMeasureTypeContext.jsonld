@@ -1,0 +1,16 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "lengthUnitCode": "nc:LengthUnitCode",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "vehicleOdometerReadingUnitCode": "j:VehicleOdometerReadingUnitCode",
+    "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
+    "angleUnitCode": "mo:AngleUnitCode",
+    "locationHeightVerticalDatumCode": "nc:LocationHeightVerticalDatumCode",
+    "locationHeightVerticalDatum": "nc:LocationHeightVerticalDatumText",
+    "nc-4.0.1": "http://publication.niem.gov/niem/niem-core/4.0/1/#",
+    "augmentation": "nc-4.0.1:LocationHeightMeasureAugmentation",
+    "weightUnitCode": "nc:WeightUnitCode",
+    "substanceUnitCode": "j:SubstanceUnitCode"
+  }
+}

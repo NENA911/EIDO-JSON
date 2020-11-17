@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "taskHoursPerDayQuantity": "j:TaskHoursPerDayQuantity",
+    "taskReferralDate": "j:TaskReferralDate",
+    "taskEstimatedDaysToCompletedQuantity": "j:TaskEstimatedDaysToCompletedQuantity",
+    "taskCompletionDescription": "j:TaskCompletionDescriptionText",
+    "taskAssistanceProvider": "j:TaskAssistanceProvider",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "taskID": "nc:TaskID"
+  }
+}

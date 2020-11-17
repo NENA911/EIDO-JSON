@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "roleOfOrganization": "nc:RoleOfOrganization",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "caution": "j:CriminalOrganizationCautionText",
+    "membershipHighQuantity": "j:CriminalOrganizationMembershipHighQuantityText",
+    "membershipInitiation": "j:CriminalOrganizationMembershipInitiationText",
+    "membershipLowQuantity": "j:CriminalOrganizationMembershipLowQuantityText",
+    "NCICIdentification": "j:CriminalOrganizationNCICIdentification",
+    "objective": "j:CriminalOrganizationObjectiveText",
+    "traitDetails": "j:CriminalOrganizationTraitDetails"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "categoryCode": "biom:MinutiaeLocalQualityIssuesCategoryCode",
+    "imageSegmentPolygon": "biom:ImageSegmentPolygon",
+    "minutiaeComment": "biom:MinutiaeCommentText"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "itcodes": "http://release.niem.gov/niem/codes/it_codes/4.0/#",
+    "simpleType": "itcodes:DutyTaxPaymentMethodCodeSimpleType"
+  }
+}

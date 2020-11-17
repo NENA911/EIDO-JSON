@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "dentalVisualImageCode": "biom:DentalVisualImageCode",
+    "dentalVisualImageDescriptive": "biom:DentalVisualImageDescriptiveText",
+    "dentalVisualImageComparisonDescriptive": "biom:DentalVisualImageComparisonDescriptiveText"
+  }
+}

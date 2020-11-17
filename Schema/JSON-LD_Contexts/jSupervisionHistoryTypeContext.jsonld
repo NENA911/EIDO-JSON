@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "isContinuousMinimumCustody": "j:SupervisionHistoryContinuousMinimumCustodyIndicator",
+    "supervisionOffense": "j:SupervisionHistorySupervisionOffense",
+    "aggressionNarrative": "j:SupervisionHistoryAggressionNarrativeText",
+    "isNoSeriousDisciplinaryViolations": "j:SupervisionHistoryNoSeriousDisciplinaryViolationsIndicator",
+    "classificationScore": "j:SupervisionHistoryClassificationScore",
+    "aggression": "j:SupervisionHistoryAggressionText",
+    "totalUnfavorablePointsNumeric": "j:SupervisionHistoryTotalUnfavorablePointsNumeric",
+    "totalFavorablePointsNumeric": "j:SupervisionHistoryTotalFavorablePointsNumeric"
+  }
+}
