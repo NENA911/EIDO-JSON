@@ -1,0 +1,1728 @@
+components:
+  schemas:
+    emLocationAugmentationType:
+      type: object
+      title: 'em:LocationAugmentationType'
+      description: A data type for additional information about a location
+      properties:
+        locationAcronym:
+          type: array
+          description: >-
+            An acronym for the name of a Location NIEM reference is
+            em:LocationAcronymText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        locationInformation:
+          type: array
+          description: >-
+            A textual details about a location NIEM reference is
+            em:LocationInformationText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        locationDirections:
+          type: array
+          description: >-
+            A set of directions to a location. NIEM reference is
+            nc:LocationDirectionsText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emLocationAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/emLocationAugmentationTypeContext.jsonld
+    emServiceCallAugmentationType:
+      type: object
+      title: 'em:ServiceCallAugmentationType'
+      description: A data type for additional information about a call for service
+      properties:
+        serviceCallResponseLocation:
+          type: array
+          description: >-
+            A data element for the location of a service call NIEM reference is
+            em:ServiceCallResponseLocation
+          items:
+            $ref: em.yaml#/components/schemas/emServiceCallResponseLocationType
+        fireSeverityLevel:
+          type: array
+          description: >-
+            A data element for the severity of a fire and the corresponding
+            response based on procedure (e.g. three alarm fire). NIEM reference
+            is em:FireSeverityLevelText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        callCategory:
+          type: array
+          description: >-
+            A kind of call, e.g., Alarm, Burglary, Fire, Accident. NIEM
+            reference is em:CallCategoryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        callSubCategory:
+          type: array
+          description: >-
+            A kind of sub-type of the call (e.g. Robbery Alarm, Fire Alarm,
+            Intrusion Alarm). NIEM reference is em:CallSubCategoryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        callPriority:
+          type: array
+          description: >-
+            A data element for the priority assigned to the call based on the
+            type of call (burglary, shooting, etc.) and other additional
+            information provided by the caller. NIEM reference is
+            em:CallPriorityText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        comment:
+          type: array
+          description: 'A comment, note, or remark. NIEM reference is nc:Comment'
+          items:
+            $ref: nc.yaml#/components/schemas/ncCommentType
+        dataLink:
+          type: array
+          description: >-
+            An element for the structure that contains a data link NIEM
+            reference is em:DataLink
+          items:
+            $ref: em.yaml#/components/schemas/emDataLinkType
+        staging:
+          type: array
+          description: >-
+            A data element for the staging information for resources NIEM
+            reference is em:Staging
+          items:
+            $ref: em.yaml#/components/schemas/emStagingType
+        substanceCategory:
+          type: array
+          description: 'A kind of substance. NIEM reference is nc:SubstanceCategoryText'
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        callOpenDate:
+          type: array
+          description: 'A date for when the call started NIEM reference is em:CallOpenDate'
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        callUpdateDate:
+          type: array
+          description: >-
+            A date for when the call was updated NIEM reference is
+            em:CallUpdateDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        callCloseDate:
+          type: array
+          description: 'A date for when the call stopped NIEM reference is em:CallCloseDate'
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        '@context':
+          type: string
+          description: emServiceCallAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/emServiceCallAugmentationTypeContext.jsonld
+    emServiceCallResponseLocationType:
+      title: 'em:ServiceCallResponseLocationType'
+      description: 'A data type for a structure that extends nc:LocationType'
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncLocationType
+        - type: object
+          properties:
+            cellID:
+              type: array
+              description: >-
+                A data element for text that specifically identifies a
+                particular cell tower. NIEM reference is em:CellIDText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            cellSectorID:
+              type: array
+              description: >-
+                A data element for text that specifically identifies a
+                particular cell sector. NIEM reference is em:CellSectorIDText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            coordinateDateTime:
+              type: array
+              description: >-
+                A data element for the Date/Time that the coordinates were
+                recorded by the device in UTC. NIEM reference is
+                em:CoordinateDateTime
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsdateTime
+            speedMeasure:
+              type: array
+              description: >-
+                A measure of a speed or rate of motion. NIEM reference is
+                nc:SpeedMeasure
+              items:
+                $ref: nc.yaml#/components/schemas/ncSpeedMeasureType
+            uncertaintyDistance:
+              type: array
+              description: >-
+                A confidence measure derived from the number of cell sites,
+                distance of the coordinates recorded from the cell site,
+                accuracy of measurement of the coordinates and is typically
+                expressed in meters. NIEM reference is
+                em:UncertaintyDistanceText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            firebox:
+              type: array
+              description: >-
+                A data element for the name of ID of a firebox NIEM reference is
+                em:FireboxText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            '@context':
+              type: string
+              description: emServiceCallResponseLocationType JSON-LD context
+              enum:
+                - >-
+                  ../JSON-LD_Contexts/emServiceCallResponseLocationTypeContext.jsonld
+    emDataLinkType:
+      type: object
+      title: 'em:DataLinkType'
+      description: A data type for a structure that contains a data link
+      properties:
+        dateTime:
+          type: array
+          description: >-
+            A data element for the timestamp of an associated data link NIEM
+            reference is em:DataLinkDateTime
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsdateTime
+        category:
+          type: array
+          description: >-
+            A kind of data link, such as VIDEO, MAP, WEB, etc NIEM reference is
+            em:DataLinkCategoryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        serviceCallOperator:
+          type: array
+          description: >-
+            A person who receives a call for service. NIEM reference is
+            j:ServiceCallOperator
+          items:
+            $ref: nc.yaml#/components/schemas/ncPersonType
+        organizationName:
+          type: array
+          description: 'A name of an organization. NIEM reference is nc:OrganizationName'
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        organizationIdentification:
+          type: array
+          description: >-
+            An identification that references an organization. NIEM reference is
+            nc:OrganizationIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        sourceID:
+          type: array
+          description: >-
+            A number or string set by a data provider so that information that
+            is sent can be retraced back to its source. NIEM reference is
+            nc:SourceIDText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        restrictionCategory:
+          type: array
+          description: >-
+            A kind of applicable restriction NIEM reference is
+            em:RestrictionCategoryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        URLID:
+          type: array
+          description: >-
+            An identifier representing a universal resource locator (URL). NIEM
+            reference is nc:URLID
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsanyURI
+        '@context':
+          type: string
+          description: emDataLinkType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/emDataLinkTypeContext.jsonld
+    emStagingType:
+      type: object
+      title: 'em:StagingType'
+      description: A data type for a structure that contains staging information
+      properties:
+        contactRadioChannel:
+          type: array
+          description: >-
+            A radio channel or frequency within the band. NIEM reference is
+            nc:ContactRadioChannelText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        responseLevel:
+          type: array
+          description: >-
+            A data element for information about the urgency of the response
+            NIEM reference is em:ResponseLevelText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        routingInstructions:
+          type: array
+          description: >-
+            A data element for text instructions for how units should arrive at
+            the location NIEM reference is em:RoutingInstructionsText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        location:
+          type: array
+          description: >-
+            A data element for the description of the staging location NIEM
+            reference is em:StagingLocationText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emStagingType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/emStagingTypeContext.jsonld
+    emNotificationType:
+      title: 'em:NotificationType'
+      description: A data type for the  function of the message
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncActivityType
+        - type: object
+          properties:
+            notificationID:
+              type: array
+              description: >-
+                An identifier of the alert message. A number or string uniquely
+                identifying this message, assigned by the sender NIEM reference
+                is em:NotificationID
+              items:
+                $ref: nc.yaml#/components/schemas/ncIdentificationType
+            sourceID:
+              type: array
+              description: >-
+                An identifier for the particular source of this alert; e.g., an
+                operator or a specific device NIEM reference is
+                em:NotificationSourceID
+              items:
+                $ref: nc.yaml#/components/schemas/ncIdentificationType
+            sourceName:
+              type: array
+              description: >-
+                A name, in text, of particular source of this alert; e.g., an
+                operator or a specific device NIEM reference is
+                em:NotificationSourceNameText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            recipient:
+              type: array
+              description: >-
+                An element for recipient of the notification NIEM reference is
+                em:NotificationRecipient
+              items:
+                $ref: em.yaml#/components/schemas/emNotifierType
+            originator:
+              type: array
+              description: >-
+                An element for originator of the notification NIEM reference is
+                em:NotificationOriginator
+              items:
+                $ref: em.yaml#/components/schemas/emNotifierType
+            alarm:
+              type: array
+              description: >-
+                An event that begins when an assembly of equipment or a device
+                installed in or for commercial or residential premises, or other
+                property, is triggered to transmit a signal, visibly, audibly,
+                electronically, mechanically, or otherwise, to indicate NIEM
+                reference is em:AlarmNotification
+              items:
+                $ref: em.yaml#/components/schemas/emAlarmNotificationType
+            alert:
+              type: array
+              description: >-
+                A notification of an incident or threat that may require a
+                coordinated response or action. A type of NOTIFICATION NIEM
+                reference is em:AlertNotification
+              items:
+                $ref: em.yaml#/components/schemas/emAlertNotificationType
+            general:
+              type: array
+              description: >-
+                An element for representing a generalized notification to
+                broadcast NIEM reference is em:GeneralNotification
+              items:
+                $ref: em.yaml#/components/schemas/emGeneralNotificationType
+            incident:
+              type: array
+              description: >-
+                An element for representing an incident NIEM reference is
+                em:IncidentNotification
+              items:
+                $ref: em.yaml#/components/schemas/emIncidentNotificationType
+            operationalStatus:
+              type: array
+              description: >-
+                An element for an emergency operation notification NIEM
+                reference is em:OperationalStatusNotification
+              items:
+                $ref: >-
+                  em.yaml#/components/schemas/emOperationalStatusNotificationType
+            unitLogoff:
+              type: array
+              description: >-
+                An element to represent that the specified units are being
+                logged off NIEM reference is em:UnitLogoffNotification
+              items:
+                $ref: em.yaml#/components/schemas/emUnitLogoffNotificationType
+            unitLogon:
+              type: array
+              description: >-
+                An element to represent that the specified units are being
+                logged on NIEM reference is em:UnitLogonNotification
+              items:
+                $ref: em.yaml#/components/schemas/emUnitLogonNotificationType
+            functionCategoryCode:
+              type: array
+              description: >-
+                A code  value denoting the nature of the notification message
+                NIEM reference is em:NotificationFunctionCategoryCode
+              items:
+                $ref: >-
+                  em.yaml#/components/schemas/emNotificationFunctionCategoryCodeType
+            keyword:
+              type: array
+              description: >-
+                A significant word or phrase related to the notification
+                message. It may determine message routing decisions NIEM
+                reference is em:NotificationKeywordText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            languageCode:
+              type: array
+              description: >-
+                A code denoting the primary language used in the payload or body
+                of the notification message NIEM reference is
+                em:NotificationLanguageCode
+              items:
+                $ref: iso_639-3.yaml#/components/schemas/iso_639-3LanguageCodeType
+            distributionScope:
+              type: array
+              description: >-
+                A set of details about the intended level of distribution of the
+                notification message NIEM reference is
+                em:NotificationDistributionScope
+              items:
+                $ref: >-
+                  em.yaml#/components/schemas/emNotificationDistributionScopeType
+            categoryCode:
+              type: array
+              description: >-
+                An element for possible notification message types NIEM
+                reference is em:NotificationCategoryCode
+              items:
+                $ref: em.yaml#/components/schemas/emNotificationCategoryCodeType
+            targetLocation:
+              type: array
+              description: >-
+                A notification target location NIEM reference is
+                em:NotificationTargetLocation
+              items:
+                $ref: em.yaml#/components/schemas/emNotificationTargetLocationType
+            confidentiality:
+              type: array
+              description: >-
+                A textual details about the confidentiality of a notification
+                NIEM reference is em:NotificationConfidentialityText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            messageStatusCode:
+              type: array
+              description: >-
+                An element for possible message status types indicating outcome
+                of notification transmission NIEM reference is
+                em:NotificationMessageStatusCode
+              items:
+                $ref: >-
+                  em.yaml#/components/schemas/emNotificationMessageStatusCodeType
+            augmentation:
+              type: array
+              description: >-
+                Additional information about a Notification. NIEM reference is
+                j:NotificationAugmentation
+              items:
+                $ref: j.yaml#/components/schemas/jNotificationAugmentationType
+            '@context':
+              type: string
+              description: emNotificationType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/emNotificationTypeContext.jsonld
+    emNotifierType:
+      type: object
+      title: 'em:NotifierType'
+      description: A data type for notifier information
+      properties:
+        contactInformation:
+          type: array
+          description: >-
+            A set of details about how to contact a person or an organization.
+            NIEM reference is nc:ContactInformation
+          items:
+            $ref: nc.yaml#/components/schemas/ncContactInformationType
+        notificationDateTime:
+          type: array
+          description: >-
+            An element for the date of a notification sent or received NIEM
+            reference is em:NotificationDateTime
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsdateTime
+        roleDescription:
+          type: array
+          description: >-
+            A description of the message Originator's/Recipient's role, as it
+            may determine message distribution and presentation decisions. The
+            list and associated value(s) is derived from the Uniform Resource
+            Name of a published list of values and definitions, and the content
+            is a string (which may represent a number) denoting the value itself
+            NIEM reference is em:NotifierRoleDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        roleIdentification:
+          type: array
+          description: >-
+            An identification of the message Originator's/Recipient's role, as
+            it may determine message distribution and presentation decisions.
+            The list and associated value(s) is derived from the Uniform
+            Resource Name of a published list of values and definitions, and the
+            content NIEM reference is em:NotifierRoleIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        '@context':
+          type: string
+          description: emNotifierType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/emNotifierTypeContext.jsonld
+    emAlarmNotificationType:
+      type: object
+      title: 'em:AlarmNotificationType'
+      description: A data type for an alarm
+      properties:
+        isAlarmAudible:
+          type: array
+          description: >-
+            True if an audible alarm is sounding; false if the alarm is
+            inaudible NIEM reference is em:AlarmAudibleIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        alarmAudibleDescriptionCode:
+          type: array
+          description: >-
+            A code indicating whether the alarm is audible or silent NIEM
+            reference is em:AlarmAudibleDescriptionCode
+          items:
+            $ref: em.yaml#/components/schemas/emAlarmAudibleDescriptionCodeType
+        alarmCallBackTelephoneNumber:
+          type: array
+          description: >-
+            A phone number of the monitoring station NIEM reference is
+            em:AlarmCallBackTelephoneNumber
+          items:
+            $ref: nc.yaml#/components/schemas/ncTelephoneNumberType
+        alarmDetails:
+          type: array
+          description: >-
+            A text describing an alarm event NIEM reference is
+            em:AlarmDetailsText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        alarmDispatchActivity:
+          type: array
+          description: >-
+            A response or activity needed when a dispatch agency is activated in
+            response to an alarm NIEM reference is em:AlarmDispatchActivity
+          items:
+            $ref: nc.yaml#/components/schemas/ncActivityType
+        alarmDispatchAgencyID:
+          type: array
+          description: >-
+            An identifier for the agency (PSAP) being requested to respond to an
+            alarm  (typically a police or fire department or central dispatch
+            point) or responder NIEM reference is em:AlarmDispatchAgencyID
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        alarmDispatchAgencyName:
+          type: array
+          description: >-
+            A name of the agency (PSAP) being requested to respond to an alarm 
+            (typically a police or fire department or central dispatch point) or
+            responder NIEM reference is em:AlarmDispatchAgencyNameText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        alarmMonitoringServiceProviderID:
+          type: array
+          description: >-
+            An identifier assigned to Central Station Monitoring Companies NIEM
+            reference is em:AlarmMonitoringServiceProviderID
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        alarmMonitoringServiceProviderName:
+          type: array
+          description: >-
+            A name of the dispatch requesting agency (typically an alarm central
+            station) NIEM reference is em:AlarmMonitoringServiceProviderNameText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        alarmMonitoringServiceProviderReceiveDateTime:
+          type: array
+          description: >-
+            A date and time the monitoring station received the event based on
+            the time zone of the site NIEM reference is
+            em:AlarmMonitoringServiceProviderReceiveDateTime
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsdateTime
+        alarmRequestedResponseActionDescription:
+          type: array
+          description: >-
+            A description of an action requested of an alarm event responder
+            NIEM reference is em:AlarmRequestedResponseActionDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        alarmConfirmation:
+          type: array
+          description: >-
+            A container for information related to the confirmation of an alarm
+            NIEM reference is em:AlarmConfirmation
+          items:
+            $ref: em.yaml#/components/schemas/emAlarmConfirmationType
+        alarmPermit:
+          type: array
+          description: 'A permit for the alarm site NIEM reference is em:AlarmPermit'
+          items:
+            $ref: em.yaml#/components/schemas/emAlarmPermitType
+        alarmEvent:
+          type: array
+          description: 'An alarm event NIEM reference is em:AlarmEvent'
+          items:
+            $ref: em.yaml#/components/schemas/emAlarmEventType
+        alarmLocation:
+          type: array
+          description: 'A location for an alarm NIEM reference is em:AlarmLocation'
+          items:
+            $ref: nc.yaml#/components/schemas/ncLocationType
+        '@context':
+          type: string
+          description: emAlarmNotificationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/emAlarmNotificationTypeContext.jsonld
+    emAlarmAudibleDescriptionCodeType:
+      type: object
+      title: 'em:AlarmAudibleDescriptionCodeType'
+      description: A data type code indicating whether the alarm is audible or silent
+      properties:
+        simpleType:
+          $ref: em.yaml#/components/schemas/emAlarmAudibleDescriptionCodeSimpleType
+        '@context':
+          type: string
+          description: emAlarmAudibleDescriptionCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emAlarmAudibleDescriptionCodeTypeContext.jsonld
+    emAlarmAudibleDescriptionCodeSimpleType:
+      type: string
+      description: A data type code indicating whether the alarm is audible or silent
+      enum:
+        - Audible
+        - Silent
+    emAlarmConfirmationType:
+      type: object
+      title: 'em:AlarmConfirmationType'
+      description: >-
+        A data type for the container for information related to the
+        confirmation of an alarm
+      properties:
+        methodDescription:
+          type: array
+          description: >-
+            A description of  mechanism used to confirm the validity of the
+            alarm. e.g., observed video, live audio, guard verified, call to
+            premises etc. If the alarm is confirmed through a call to the
+            premise, then the details of this call are indicated in the Call to
+            Premise text field NIEM reference is
+            em:AlarmConfirmationMethodDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        callPrivacyBypassPasscode:
+          type: array
+          description: >-
+            A code that allows the Public Safety Answering Point or monitoring
+            station to bypass any call screening and directly reach the alarm
+            subscriber NIEM reference is
+            em:AlarmConfirmationCallPrivacyBypassPasscodeText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        isCallToPremises:
+          type: array
+          description: >-
+            True if an agency is to call the premise before arrival; false
+            otherwise NIEM reference is
+            em:AlarmConfirmationCallToPremisesIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        callToPremisesResultsDescription:
+          type: array
+          description: >-
+            A description of the results of the actions taken by the alarm
+            company to attempt to reach someone at the premise before notifying
+            the Public Safety Answering Point NIEM reference is
+            em:AlarmConfirmationCallToPremisesResultsDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emAlarmConfirmationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/emAlarmConfirmationTypeContext.jsonld
+    emAlarmPermitType:
+      type: object
+      title: 'em:AlarmPermitType'
+      description: A data type for a permit for the alarm event site
+      properties:
+        permitCategory:
+          type: array
+          description: 'A kind of permit. NIEM reference is nc:PermitCategoryText'
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        permitIdentification:
+          type: array
+          description: 'A permit identification. NIEM reference is nc:PermitIdentification'
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        '@context':
+          type: string
+          description: emAlarmPermitType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/emAlarmPermitTypeContext.jsonld
+    emAlarmEventType:
+      title: 'em:AlarmEventType'
+      description: A data type for an alarm event
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncActivityType
+        - type: object
+          properties:
+            categoryCode:
+              type: array
+              description: >-
+                A kind of alarm event NIEM reference is
+                em:AlarmEventCategoryCode
+              items:
+                $ref: apco.yaml#/components/schemas/apcoAlarmEventCategoryCodeType
+            category:
+              type: array
+              description: >-
+                A kind of event which resulted in an alarm NIEM reference is
+                em:AlarmEventCategoryText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            callBackTelephoneNumber:
+              type: array
+              description: >-
+                A telephone number of the alarm event requester NIEM reference
+                is em:AlarmEventCallBackTelephoneNumber
+              items:
+                $ref: nc.yaml#/components/schemas/ncTelephoneNumberType
+            location:
+              type: array
+              description: >-
+                A location of an alarm event NIEM reference is
+                em:AlarmEventLocation
+              items:
+                $ref: nc.yaml#/components/schemas/ncLocationType
+            locationCategoryCode:
+              type: array
+              description: >-
+                A kind of location at which an alarm event occurs NIEM reference
+                is em:AlarmEventLocationCategoryCode
+              items:
+                $ref: >-
+                  apco.yaml#/components/schemas/apcoAlarmEventLocationCategoryCodeType
+            locationCategory:
+              type: array
+              description: >-
+                A kind of location at which an alarm event occurs NIEM reference
+                is em:AlarmEventLocationCategoryText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            isAlarmAudible:
+              type: array
+              description: >-
+                True if an audible alarm is sounding; false if the alarm is
+                inaudible NIEM reference is em:AlarmAudibleIndicator
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            details:
+              type: array
+              description: >-
+                A text describing details about the alarm event NIEM reference
+                is em:AlarmEventDetailsText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            requestorReceiveDate:
+              type: array
+              description: >-
+                A date the requester received the alarm event NIEM reference is
+                em:AlarmEventRequestorReceiveDate
+              items:
+                $ref: nc.yaml#/components/schemas/ncDateType
+            callPrivacyBypassCode:
+              type: array
+              description: >-
+                A code necessary to access the sites phone system NIEM reference
+                is em:AlarmEventCallPrivacyBypassCodeText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            isCallToPremises:
+              type: array
+              description: >-
+                True if an agency is to call the premise before arrival; false
+                otherwise NIEM reference is em:AlarmEventCallToPremisesIndicator
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            permit:
+              type: array
+              description: >-
+                A permit for the alarm event site NIEM reference is
+                em:AlarmEventPermit
+              items:
+                $ref: nc.yaml#/components/schemas/ncPermitType
+            responseActionCode:
+              type: array
+              description: >-
+                An action requested of an alarm event responder NIEM reference
+                is em:AlarmEventResponseActionCode
+              items:
+                $ref: >-
+                  apco.yaml#/components/schemas/apcoAlarmEventResponseActionCodeType
+            responseAction:
+              type: array
+              description: >-
+                An action requested of an alarm event responder NIEM reference
+                is em:AlarmEventResponseActionText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            dispatchAgency:
+              type: array
+              description: >-
+                An agency to which an alarm event is dispatched NIEM reference
+                is em:AlarmEventDispatchAgency
+              items:
+                $ref: nc.yaml#/components/schemas/ncOrganizationType
+            '@context':
+              type: string
+              description: emAlarmEventType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/emAlarmEventTypeContext.jsonld
+    emAlertNotificationType:
+      type: object
+      title: 'em:AlertNotificationType'
+      description: A data type for an alert message
+      properties:
+        alertEffectiveDateTime:
+          type: array
+          description: >-
+            A time of the information of the alert message NIEM reference is
+            em:AlertEffectiveDateTime
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsdateTime
+        alertExpirationDateTime:
+          type: array
+          description: >-
+            A time of the information of the alert message expiring. If this
+            item is not provided, each recipient is free to set its own policy
+            as to when the message is no longer in effect NIEM reference is
+            em:AlertExpirationDateTime
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsdateTime
+        alertHeadline:
+          type: array
+          description: >-
+            A text headline of the alert message. A brief human-readable
+            headline. Note that some displays (for example, short messaging
+            service devices) may only present this headline; it SHOULD be made
+            as direct and actionable as possible while remaining short. 1 NIEM
+            reference is em:AlertHeadlineText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        alertInstructionsDescription:
+          type: array
+          description: >-
+            A description of the recommended action to be taken by recipients of
+            the alert message. An extended human readable instruction to
+            targeted recipients. If different instructions are intended for
+            different recipients, they should be represented by use of multiple
+            info blocks NIEM reference is em:AlertInstructionsDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        alertHandlingID:
+          type: array
+          description: >-
+            An identifier denoting the special handling of the alert message
+            NIEM reference is em:AlertHandlingID
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        alertHandling:
+          type: array
+          description: >-
+            A code denoting the special handling of the alert message NIEM
+            reference is em:AlertHandlingText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        alertReason:
+          type: array
+          description: >-
+            A text describing the reason the alert message was distributed NIEM
+            reference is em:AlertReasonText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        alertCategoryCode:
+          type: array
+          description: >-
+            A code  value denoting the type of alert message NIEM reference is
+            em:AlertCategoryCode
+          items:
+            $ref: em.yaml#/components/schemas/emAlertCategoryCodeType
+        alertEventDetails:
+          type: array
+          description: >-
+            A container for all component parts of the info sub-element of the
+            alert message. Multiple occurrences are permitted within a single
+            alert NIEM reference is em:AlertEventDetails
+          items:
+            $ref: em.yaml#/components/schemas/emAlertEventDetailsType
+        alertAffectedLocation:
+          type: array
+          description: >-
+            A location affected by an alert NIEM reference is
+            em:AlertAffectedLocation
+          items:
+            $ref: em.yaml#/components/schemas/emAlertAffectedLocationType
+        alertSupplementaryDigitalResource:
+          type: array
+          description: >-
+            A digital representation of an object NIEM reference is
+            em:AlertSupplementaryDigitalResource
+          items:
+            $ref: >-
+              em.yaml#/components/schemas/emAlertSupplementaryDigitalResourceType
+        alertAugmentation:
+          type: array
+          description: >-
+            Additional information about an alert. NIEM reference is
+            scr:AlertAugmentation
+          items:
+            $ref: scr.yaml#/components/schemas/scrAlertAugmentationType
+        augmentation:
+          type: array
+          description: >-
+            Additional information about a Alert. NIEM reference is
+            j:AlertNotificationAugmentation
+          items:
+            $ref: j.yaml#/components/schemas/jAlertNotificationAugmentationType
+        '@context':
+          type: string
+          description: emAlertNotificationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/emAlertNotificationTypeContext.jsonld
+    emAlertCategoryCodeType:
+      type: object
+      title: 'em:AlertCategoryCodeType'
+      description: A data type for a code set denoting the type of alert message
+      properties:
+        simpleType:
+          $ref: em.yaml#/components/schemas/emAlertCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: emAlertCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/emAlertCategoryCodeTypeContext.jsonld
+    emAlertCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code set denoting the type of alert message
+      enum:
+        - Ack
+        - Cancel
+        - Dispatch
+        - Error
+        - Report
+        - Request
+        - Response
+        - Sensor Configuration
+        - Sensor Control
+        - Sensor Detection
+        - Sensor Status
+        - Update
+    emAlertEventDetailsType:
+      type: object
+      title: 'em:AlertEventDetailsType'
+      description: A data type for an alert event details
+      properties:
+        audienceDescription:
+          type: array
+          description: >-
+            A description of the intended audience of the alert message NIEM
+            reference is em:AlertEventDetailsAudienceDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        systemRecordID:
+          type: array
+          description: >-
+            An identifier for the event type of the alert message NIEM reference
+            is em:AlertEventDetailsSystemRecordID
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        description:
+          type: array
+          description: >-
+            A description of the incident/event/situation associated with the
+            Alert message NIEM reference is em:AlertEventDetailsDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        headline:
+          type: array
+          description: >-
+            A headline of the alert message. A brief human-readable headline.
+            Note that some displays (for example, short messaging service
+            devices) may only present this headline; it SHOULD be made as direct
+            and actionable as possible while remaining short. 1 NIEM reference
+            is em:AlertEventDetailsHeadlineText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        instructionsDescription:
+          type: array
+          description: >-
+            A description of  recommended action to be taken by recipients of
+            the alert message. An extended human readable instruction to
+            targeted recipients. (If different instructions are intended for
+            different recipients, they should be represented by use of multiple
+            info blocks. See CAP specification for details.) NIEM reference is
+            em:AlertEventDetailsInstructionsDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        onsetDateTime:
+          type: array
+          description: >-
+            An expected time of the beginning of the subject event of the alert
+            message NIEM reference is em:AlertEventDetailsOnsetDateTime
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsdateTime
+        urgencyCode:
+          type: array
+          description: >-
+            A code denoting the urgency of the subject event of the alert
+            message NIEM reference is em:AlertEventDetailsUrgencyCode
+          items:
+            $ref: em.yaml#/components/schemas/emAlertEventDetailsUrgencyCodeType
+        severityCode:
+          type: array
+          description: >-
+            A code denoting the severity of the subject event of the alert
+            message NIEM reference is em:AlertEventDetailsSeverityCode
+          items:
+            $ref: em.yaml#/components/schemas/emAlertEventDetailsSeverityCodeType
+        categoryCode:
+          type: array
+          description: >-
+            A code denoting the category of the subject event of the alert
+            message NIEM reference is em:AlertEventDetailsCategoryCode
+          items:
+            $ref: em.yaml#/components/schemas/emAlertEventDetailsCategoryCodeType
+        certaintyCode:
+          type: array
+          description: >-
+            A code denoting the certainty of the subject event of the alert
+            message NIEM reference is em:AlertEventDetailsCertaintyCode
+          items:
+            $ref: em.yaml#/components/schemas/emAlertEventDetailsCertaintyCodeType
+        responseRecommendationCode:
+          type: array
+          description: >-
+            A code denoting the type of action recommended for the target
+            audience NIEM reference is
+            em:AlertEventDetailsResponseRecommendationCode
+          items:
+            $ref: >-
+              em.yaml#/components/schemas/emAlertEventDetailsResponseRecommendationCodeType
+        '@context':
+          type: string
+          description: emAlertEventDetailsType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/emAlertEventDetailsTypeContext.jsonld
+    emAlertEventDetailsUrgencyCodeType:
+      type: object
+      title: 'em:AlertEventDetailsUrgencyCodeType'
+      description: A data type for the urgency code designated to an alert event
+      properties:
+        simpleType:
+          $ref: em.yaml#/components/schemas/emAlertEventDetailsUrgencyCodeSimpleType
+        '@context':
+          type: string
+          description: emAlertEventDetailsUrgencyCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emAlertEventDetailsUrgencyCodeTypeContext.jsonld
+    emAlertEventDetailsUrgencyCodeSimpleType:
+      type: string
+      description: A data type for the urgency code designated to an alert event
+      enum:
+        - Expected
+        - Future
+        - Immediate
+        - Past
+        - Unknown
+    emAlertEventDetailsSeverityCodeType:
+      type: object
+      title: 'em:AlertEventDetailsSeverityCodeType'
+      description: A data type for the severity code designated to an alert event
+      properties:
+        simpleType:
+          $ref: >-
+            em.yaml#/components/schemas/emAlertEventDetailsSeverityCodeSimpleType
+        '@context':
+          type: string
+          description: emAlertEventDetailsSeverityCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emAlertEventDetailsSeverityCodeTypeContext.jsonld
+    emAlertEventDetailsSeverityCodeSimpleType:
+      type: string
+      description: A data type for the severity code designated to an alert event
+      enum:
+        - Extreme
+        - Minor
+        - Moderate
+        - Severe
+        - Unknown
+    emAlertEventDetailsCategoryCodeType:
+      type: object
+      title: 'em:AlertEventDetailsCategoryCodeType'
+      description: A data type for the category code designated to an alert event
+      properties:
+        simpleType:
+          $ref: >-
+            em.yaml#/components/schemas/emAlertEventDetailsCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: emAlertEventDetailsCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emAlertEventDetailsCategoryCodeTypeContext.jsonld
+    emAlertEventDetailsCategoryCodeSimpleType:
+      type: string
+      description: A data type for the category code designated to an alert event
+      enum:
+        - CBRNE
+        - Env
+        - Fire
+        - Geo
+        - Health
+        - Infra
+        - Met
+        - Other
+        - Rescue
+        - Safety
+        - Security
+        - Transport
+    emAlertEventDetailsCertaintyCodeType:
+      type: object
+      title: 'em:AlertEventDetailsCertaintyCodeType'
+      description: A data type for the certainty code designated to an alert event
+      properties:
+        simpleType:
+          $ref: >-
+            em.yaml#/components/schemas/emAlertEventDetailsCertaintyCodeSimpleType
+        '@context':
+          type: string
+          description: emAlertEventDetailsCertaintyCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emAlertEventDetailsCertaintyCodeTypeContext.jsonld
+    emAlertEventDetailsCertaintyCodeSimpleType:
+      type: string
+      description: A data type for the certainty code designated to an alert event
+      enum:
+        - Likely
+        - Observed
+        - Possible
+        - Unknown
+        - Unlikely
+    emAlertEventDetailsResponseRecommendationCodeType:
+      type: object
+      title: 'em:AlertEventDetailsResponseRecommendationCodeType'
+      description: >-
+        A data type for the response recommendation code designated to an alert
+        event
+      properties:
+        simpleType:
+          $ref: >-
+            em.yaml#/components/schemas/emAlertEventDetailsResponseRecommendationCodeSimpleType
+        '@context':
+          type: string
+          description: emAlertEventDetailsResponseRecommendationCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emAlertEventDetailsResponseRecommendationCodeTypeContext.jsonld
+    emAlertEventDetailsResponseRecommendationCodeSimpleType:
+      type: string
+      description: >-
+        A data type for the response recommendation code designated to an alert
+        event
+      enum:
+        - Assess
+        - Evacuate
+        - Execute
+        - Monitor
+        - None
+        - Prepare
+        - Shelter
+    emAlertAffectedLocationType:
+      title: 'em:AlertAffectedLocationType'
+      description: A data type for a location affected by an alert
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncLocationType
+        - type: object
+          properties:
+            polygonCoordinate:
+              type: array
+              description: >-
+                A geographic coordinate identifying a location at the end of a
+                side of a multi-sided region. NIEM reference is
+                nc:PolygonCoordinate
+              items:
+                $ref: >-
+                  nc.yaml#/components/schemas/ncLocation2DGeospatialCoordinateType
+            ceiling:
+              type: array
+              description: >-
+                A maximum altitude of the affected area of the alert message
+                (conditional) NIEM reference is em:Ceiling
+              items:
+                $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+            '@context':
+              type: string
+              description: emAlertAffectedLocationType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/emAlertAffectedLocationTypeContext.jsonld
+    emAlertSupplementaryDigitalResourceType:
+      type: object
+      title: 'em:AlertSupplementaryDigitalResourceType'
+      description: A data type for a digital representation of an object
+      properties:
+        binaryChecksumDigestID:
+          type: array
+          description: >-
+            An identifier representing the digital digest ('hash') computed from
+            the resource file.  Calculated using the Secure Hash Algorithm
+            (SHA-1) per [FIPS 180-2] NIEM reference is em:BinaryChecksumDigestID
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        '@context':
+          type: string
+          description: emAlertSupplementaryDigitalResourceType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emAlertSupplementaryDigitalResourceTypeContext.jsonld
+    emGeneralNotificationType:
+      type: object
+      title: 'em:GeneralNotificationType'
+      description: A data type to represent a generalized notification to broadcast
+      properties:
+        notificationMessage:
+          type: array
+          description: >-
+            An element for notification message text NIEM reference is
+            em:NotificationMessageText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emGeneralNotificationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/emGeneralNotificationTypeContext.jsonld
+    emIncidentNotificationType:
+      type: object
+      title: 'em:IncidentNotificationType'
+      description: A data type to represent a incident notification to broadcast
+      properties:
+        emergencyIncident:
+          type: array
+          description: >-
+            An element for an emergency incident NIEM reference is
+            em:EmergencyIncident
+          items:
+            $ref: em.yaml#/components/schemas/emEmergencyIncidentType
+        notificationMessage:
+          type: array
+          description: >-
+            An element for notification message text NIEM reference is
+            em:NotificationMessageText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emIncidentNotificationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/emIncidentNotificationTypeContext.jsonld
+    emEmergencyIncidentType:
+      title: 'em:EmergencyIncidentType'
+      description: A data type for the description for an emergency Incident
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncIncidentType
+        - type: object
+          properties:
+            incidentSummary:
+              type: array
+              description: >-
+                An element for an incident summary NIEM reference is
+                em:IncidentSummaryText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            incidentPublishDate:
+              type: array
+              description: >-
+                An element for an incident publish date NIEM reference is
+                em:IncidentPublishDate
+              items:
+                $ref: nc.yaml#/components/schemas/ncDateType
+            incidentUpdateDate:
+              type: array
+              description: >-
+                An element for an incident last updated date NIEM reference is
+                em:IncidentUpdateDate
+              items:
+                $ref: nc.yaml#/components/schemas/ncDateType
+            parentIncident:
+              type: array
+              description: >-
+                A data element for information on parent Incidents of an
+                incident NIEM reference is em:ParentIncident
+              items:
+                $ref: em.yaml#/components/schemas/emEmergencyIncidentType
+            childIncident:
+              type: array
+              description: >-
+                A data element for information on child Incidents of an incident
+                NIEM reference is em:ChildIncident
+              items:
+                $ref: em.yaml#/components/schemas/emEmergencyIncidentType
+            relatedIncident:
+              type: array
+              description: >-
+                A data element for information on related Incidents of an
+                incident NIEM reference is em:RelatedIncident
+              items:
+                $ref: em.yaml#/components/schemas/emEmergencyIncidentType
+            incidentActionCode:
+              type: array
+              description: >-
+                An element for the valid actions related to the incident
+                information NIEM reference is em:IncidentActionCode
+              items:
+                $ref: em.yaml#/components/schemas/emIncidentActionCodeType
+            owner:
+              type: array
+              description: >-
+                An organization with a specific range of authority for specified
+                resource(s) NIEM reference is em:Owner
+              items:
+                $ref: nc.yaml#/components/schemas/ncOrganizationType
+            author:
+              type: array
+              description: >-
+                An element for incident author information NIEM reference is
+                em:Author
+              items:
+                $ref: em.yaml#/components/schemas/emIncidentAuthorType
+            contributor:
+              type: array
+              description: >-
+                An element for contributer's information NIEM reference is
+                em:Contributor
+              items:
+                $ref: em.yaml#/components/schemas/emIncidentAuthorType
+            serviceCall:
+              type: array
+              description: >-
+                A call for service received from a person alerting an authority
+                of a situation. NIEM reference is j:ServiceCall
+              items:
+                $ref: j.yaml#/components/schemas/jServiceCallType
+            serviceCallAssignedUnit:
+              type: array
+              description: >-
+                An element for for service call assigned unit detail NIEM
+                reference is em:ServiceCallAssignedUnit
+              items:
+                $ref: em.yaml#/components/schemas/emServiceCallAssignedUnitType
+            subject:
+              type: array
+              description: >-
+                A person who is involved or suspected of being involved in an
+                incident or criminal activity. NIEM reference is j:Subject
+              items:
+                $ref: j.yaml#/components/schemas/jSubjectType
+            victim:
+              type: array
+              description: >-
+                A person, organization, or other entity who suffers injury,
+                loss, or death as a result of an incident. NIEM reference is
+                j:Victim
+              items:
+                $ref: j.yaml#/components/schemas/jVictimType
+            witness:
+              type: array
+              description: >-
+                A person who has observed an incident. NIEM reference is
+                j:Witness
+              items:
+                $ref: j.yaml#/components/schemas/jWitnessType
+            '@context':
+              type: string
+              description: emEmergencyIncidentType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/emEmergencyIncidentTypeContext.jsonld
+    emIncidentActionCodeType:
+      type: object
+      title: 'em:IncidentActionCodeType'
+      description: A data type for the valid actions related to the incident information
+      properties:
+        simpleType:
+          $ref: em.yaml#/components/schemas/emIncidentActionCodeSimpleType
+        '@context':
+          type: string
+          description: emIncidentActionCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/emIncidentActionCodeTypeContext.jsonld
+    emIncidentActionCodeSimpleType:
+      type: string
+      description: >-
+        A data type that defines the valid actions related to the incident
+        information
+      enum:
+        - Close
+        - Create
+        - Transfer
+        - Update
+        - View
+    emIncidentAuthorType:
+      type: object
+      title: 'em:IncidentAuthorType'
+      description: A data type for information about the author of the incident
+      properties:
+        authorURI:
+          type: array
+          description: 'An element for incident author''s URI NIEM reference is em:AuthorURI'
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsanyURI
+        authorName:
+          type: array
+          description: >-
+            A data element that is the name of an author of a publication NIEM
+            reference is em:AuthorName
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emIncidentAuthorType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/emIncidentAuthorTypeContext.jsonld
+    emServiceCallAssignedUnitType:
+      title: 'em:ServiceCallAssignedUnitType'
+      description: A data type for a service call assigned unit detail.
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncOrganizationType
+        - type: object
+          properties:
+            unitAssignedDate:
+              type: array
+              description: >-
+                A structure that contains date information about when a unit was
+                assigned to an incident NIEM reference is em:UnitAssignedDate
+              items:
+                $ref: nc.yaml#/components/schemas/ncDateType
+            unitUnassignedDate:
+              type: array
+              description: >-
+                A structure that contains date information about when a unit was
+                unassigned from an incident NIEM reference is
+                em:UnitUnassignedDate
+              items:
+                $ref: nc.yaml#/components/schemas/ncDateType
+            '@context':
+              type: string
+              description: emServiceCallAssignedUnitType JSON-LD context
+              enum:
+                - >-
+                  ../JSON-LD_Contexts/emServiceCallAssignedUnitTypeContext.jsonld
+    emOperationalStatusNotificationType:
+      type: object
+      title: 'em:OperationalStatusNotificationType'
+      description: >-
+        A data type to represent an operational status change for the submitting
+        jurisdiction
+      properties:
+        operationalStatusNotification:
+          type: array
+          description: >-
+            An element for an emergency operation notification NIEM reference is
+            em:OperationalStatusNotification
+          items:
+            $ref: em.yaml#/components/schemas/emOperationalStatusNotificationType
+        notificationMessage:
+          type: array
+          description: >-
+            An element for notification message text NIEM reference is
+            em:NotificationMessageText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emOperationalStatusNotificationType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emOperationalStatusNotificationTypeContext.jsonld
+    emUnitLogoffNotificationType:
+      type: object
+      title: 'em:UnitLogoffNotificationType'
+      description: >-
+        A data type for a structure to represent that the specified units are
+        being logged off
+      properties:
+        serviceCallAssignedUnit:
+          type: array
+          description: >-
+            An element for for service call assigned unit detail NIEM reference
+            is em:ServiceCallAssignedUnit
+          items:
+            $ref: em.yaml#/components/schemas/emServiceCallAssignedUnitType
+        notificationMessage:
+          type: array
+          description: >-
+            An element for notification message text NIEM reference is
+            em:NotificationMessageText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emUnitLogoffNotificationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/emUnitLogoffNotificationTypeContext.jsonld
+    emUnitLogonNotificationType:
+      type: object
+      title: 'em:UnitLogonNotificationType'
+      description: >-
+        A data type for a structure to represent that the specified units are
+        being logged on
+      properties:
+        serviceCallAssignedUnit:
+          type: array
+          description: >-
+            An element for for service call assigned unit detail NIEM reference
+            is em:ServiceCallAssignedUnit
+          items:
+            $ref: em.yaml#/components/schemas/emServiceCallAssignedUnitType
+        notificationMessage:
+          type: array
+          description: >-
+            An element for notification message text NIEM reference is
+            em:NotificationMessageText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emUnitLogonNotificationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/emUnitLogonNotificationTypeContext.jsonld
+    emNotificationFunctionCategoryCodeType:
+      type: object
+      title: 'em:NotificationFunctionCategoryCodeType'
+      description: A data type for a notification function type codes
+      properties:
+        simpleType:
+          $ref: >-
+            em.yaml#/components/schemas/emNotificationFunctionCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: emNotificationFunctionCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emNotificationFunctionCategoryCodeTypeContext.jsonld
+    emNotificationFunctionCategoryCodeSimpleType:
+      type: string
+      description: A data type for a notification function type codes
+      enum:
+        - Ack
+        - Alarm
+        - Alert
+        - Cancel
+        - Error
+        - Other
+        - Status
+        - Update
+    emNotificationDistributionScopeType:
+      type: object
+      title: 'em:NotificationDistributionScopeType'
+      description: >-
+        A data type for the intended level of distribution of the notification
+        message
+      properties:
+        categoryCode:
+          type: array
+          description: >-
+            A category code denoting the intended level of distribution of the
+            notification message NIEM reference is
+            em:NotificationDistributionScopeCategoryCode
+          items:
+            $ref: >-
+              em.yaml#/components/schemas/emNotificationDistributionScopeCategoryCodeType
+        audienceDescription:
+          type: array
+          description: >-
+            A description of the distribution scope of the audience of the
+            notification message. NIEM reference is
+            em:NotificationDistributionScopeAudienceDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emNotificationDistributionScopeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emNotificationDistributionScopeTypeContext.jsonld
+    emNotificationDistributionScopeCategoryCodeType:
+      type: object
+      title: 'em:NotificationDistributionScopeCategoryCodeType'
+      description: >-
+        A data type for the category code denoting the intended level of
+        distribution of the notification message
+      properties:
+        simpleType:
+          $ref: >-
+            em.yaml#/components/schemas/emNotificationDistributionScopeCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: emNotificationDistributionScopeCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emNotificationDistributionScopeCategoryCodeTypeContext.jsonld
+    emNotificationDistributionScopeCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type for the category code denoting the intended level of
+        distribution of the notification message
+      enum:
+        - Private
+        - Public
+        - Restricted
+    emNotificationCategoryCodeType:
+      type: object
+      title: 'em:NotificationCategoryCodeType'
+      description: A data type for a notification type codes
+      properties:
+        simpleType:
+          $ref: em.yaml#/components/schemas/emNotificationCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: emNotificationCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/emNotificationCategoryCodeTypeContext.jsonld
+    emNotificationCategoryCodeSimpleType:
+      type: string
+      description: A data type for a notification status codes
+      enum:
+        - Actual
+        - Exercise
+        - System
+        - Test
+    emNotificationTargetLocationType:
+      title: 'em:NotificationTargetLocationType'
+      description: A data type for a notification target location
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncLocationType
+        - type: object
+          properties:
+            polygonCoordinate:
+              type: array
+              description: >-
+                A geographic coordinate identifying a location at the end of a
+                side of a multi-sided region. NIEM reference is
+                nc:PolygonCoordinate
+              items:
+                $ref: >-
+                  nc.yaml#/components/schemas/ncLocation2DGeospatialCoordinateType
+            '@context':
+              type: string
+              description: emNotificationTargetLocationType JSON-LD context
+              enum:
+                - >-
+                  ../JSON-LD_Contexts/emNotificationTargetLocationTypeContext.jsonld
+    emNotificationMessageStatusCodeType:
+      type: object
+      title: 'em:NotificationMessageStatusCodeType'
+      description: >-
+        A data type for an element for possible message status types indicating
+        outcome of notification transmission
+      properties:
+        simpleType:
+          $ref: >-
+            em.yaml#/components/schemas/emNotificationMessageStatusCodeSimpleType
+        '@context':
+          type: string
+          description: emNotificationMessageStatusCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emNotificationMessageStatusCodeTypeContext.jsonld
+    emNotificationMessageStatusCodeSimpleType:
+      type: string
+      description: >-
+        A data type for an enumeration of possible message status types
+        indicating outcome of notification transmission
+      enum:
+        - Complete
+        - Complete Not Sent
+        - Inprocess
+        - Inprocess Send Error
+        - Received
+    emInsuranceAugmentationType:
+      type: object
+      title: 'em:InsuranceAugmentationType'
+      description: A data type for additional information about an insurance
+      properties:
+        insuranceName:
+          type: array
+          description: 'A textual name of the insurance NIEM reference is em:InsuranceName'
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        insurancePhoneNumber:
+          type: array
+          description: >-
+            A phone number of the company that has issued the insurance NIEM
+            reference is em:InsurancePhoneNumber
+          items:
+            $ref: nc.yaml#/components/schemas/ncTelephoneNumberType
+        insuranceGroupNumberID:
+          type: array
+          description: >-
+            An identifier for the insurance group number NIEM reference is
+            em:InsuranceGroupNumberID
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        address:
+          type: array
+          description: >-
+            A postal location to which paper mail can be directed. NIEM
+            reference is nc:Address
+          items:
+            $ref: nc.yaml#/components/schemas/ncAddressType
+        '@context':
+          type: string
+          description: emInsuranceAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/emInsuranceAugmentationTypeContext.jsonld

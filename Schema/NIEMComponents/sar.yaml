@@ -1,0 +1,52 @@
+components:
+  schemas:
+    sarTargetSectorCodeType:
+      type: object
+      title: 'sar:TargetSectorCodeType'
+      description: A data type for the broad categorization of infrastructure type.
+      properties:
+        simpleType:
+          $ref: sar.yaml#/components/schemas/sarTargetSectorCodeSimpleType
+        '@context':
+          type: string
+          description: sarTargetSectorCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/sarTargetSectorCodeTypeContext.jsonld
+    sarTargetSectorCodeSimpleType:
+      type: string
+      description: A data type for the broad categorization of infrastructure type.
+      enum:
+        - AGRI
+        - CHEM
+        - COMM
+        - CORR
+        - CSTL
+        - CULTR
+        - DAMS
+        - DFNSE
+        - EDU
+        - EMRG
+        - ENRG
+        - ENTMT
+        - FIN
+        - GVTBLDG
+        - HAZMAT
+        - HLTH
+        - IT
+        - LIVSTK
+        - MAIL
+        - MASS
+        - MFG
+        - MNMT
+        - NATRL
+        - NCLR
+        - OTHR
+        - POP
+        - PRSN
+        - RETL
+        - SPCFXN
+        - TACTCP
+        - TELCM
+        - TRANS
+        - UTL
+        - WATR

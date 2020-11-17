@@ -1,0 +1,1240 @@
+components:
+  schemas:
+    imImmigrationClassOfAdmissionCategoryCodeType:
+      type: object
+      title: 'im:ImmigrationClassOfAdmissionCategoryCodeType'
+      description: A data type for Immigrant Class of Admission (COA) Codes
+      properties:
+        simpleType:
+          $ref: >-
+            im.yaml#/components/schemas/imImmigrationClassOfAdmissionCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: imImmigrationClassOfAdmissionCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/imImmigrationClassOfAdmissionCategoryCodeTypeContext.jsonld
+    imImmigrationClassOfAdmissionCategoryCodeSimpleType:
+      type: string
+      description: A data type for Immigrant Class of Admission (COA) Codes
+      enum:
+        - '1'
+        - '12'
+        - 12A
+        - 12C
+        - 13A
+        - 1B1
+        - 1B2
+        - 1B3
+        - 1B4
+        - 1B5
+        - 1BS
+        - '2'
+        - '231'
+        - 2C
+        - 2C6
+        - 2D
+        - 2E
+        - 2F
+        - 2G
+        - '317'
+        - '318'
+        - '384'
+        - 3B
+        - 3B2
+        - 3B3
+        - 3B4
+        - 3C
+        - '4'
+        - '407'
+        - 4A
+        - 4B
+        - 4C
+        - 4D
+        - 4F
+        - '5'
+        - '503'
+        - '6'
+        - 6A
+        - 6A1
+        - 6A2
+        - 6A3
+        - '991'
+        - '992'
+        - '993'
+        - '994'
+        - '999'
+        - A1
+        - A11
+        - A12
+        - A16
+        - A17
+        - A2
+        - A3
+        - A31
+        - A32
+        - A33
+        - A36
+        - A37
+        - A38
+        - A41
+        - A42
+        - A43
+        - A46
+        - A47
+        - A48
+        - AA1
+        - AA2
+        - AA3
+        - AA6
+        - AA7
+        - AA8
+        - ABD
+        - ABS
+        - AM
+        - AM1
+        - AM2
+        - AM3
+        - AM6
+        - AM7
+        - AM8
+        - AO
+        - AR
+        - AR1
+        - AR6
+        - AS
+        - AS1
+        - AS2
+        - AS3
+        - AS6
+        - AS7
+        - AS8
+        - ASD
+        - ASR
+        - ASY
+        - AW
+        - AY
+        - AY1
+        - AY2
+        - B1
+        - B11
+        - B12
+        - B16
+        - B17
+        - B1A
+        - B1B
+        - B1C
+        - B1D
+        - B2
+        - B20
+        - B21
+        - B22
+        - B23
+        - B24
+        - B25
+        - B26
+        - B27
+        - B28
+        - B29
+        - B31
+        - B32
+        - B33
+        - B36
+        - B37
+        - B38
+        - BBB
+        - BC1
+        - BC2
+        - BC3
+        - BC6
+        - BC7
+        - BC8
+        - BCC
+        - BCD
+        - BE
+        - BX1
+        - BX2
+        - BX3
+        - BX6
+        - BX7
+        - BX8
+        - C1
+        - C1D
+        - C2
+        - C20
+        - C21
+        - C22
+        - C23
+        - C24
+        - C25
+        - C26
+        - C27
+        - C28
+        - C29
+        - C3
+        - C31
+        - C32
+        - C33
+        - C36
+        - C37
+        - C38
+        - C4
+        - C41
+        - C42
+        - C43
+        - C46
+        - C47
+        - C48
+        - C5
+        - C51
+        - C52
+        - C53
+        - C56
+        - C57
+        - C58
+        - C7P
+        - CB1
+        - CB2
+        - CB6
+        - CB7
+        - CC
+        - CF1
+        - CF2
+        - CH
+        - CH6
+        - CM1
+        - CM2
+        - CNP
+        - CP
+        - CPR
+        - CR1
+        - CR2
+        - CR6
+        - CR7
+        - CRI
+        - CS1
+        - CS2
+        - CS3
+        - CSS
+        - CT
+        - CU0
+        - CU6
+        - CU7
+        - CU8
+        - CU9
+        - CUP
+        - CW1
+        - CW2
+        - CX1
+        - CX2
+        - CX3
+        - CX6
+        - CX7
+        - CX8
+        - D
+        - D1
+        - D2
+        - DA
+        - DAS
+        - DCR
+        - DE
+        - DEC
+        - DED
+        - DEF
+        - DEP
+        - DFC
+        - DHR
+        - DIN
+        - DNA
+        - DP
+        - DS1
+        - DT
+        - DT1
+        - DT2
+        - DT3
+        - DT6
+        - DT7
+        - DT8
+        - DV1
+        - DV2
+        - DV3
+        - DV6
+        - DV7
+        - DV8
+        - DVI
+        - DX
+        - E1
+        - E10
+        - E11
+        - E12
+        - E13
+        - E14
+        - E15
+        - E16
+        - E17
+        - E18
+        - E19
+        - E2
+        - E21
+        - E22
+        - E23
+        - E26
+        - E27
+        - E28
+        - E2C
+        - E3
+        - E30
+        - E31
+        - E32
+        - E34
+        - E35
+        - E36
+        - E37
+        - E39
+        - E4
+        - E51
+        - E52
+        - E53
+        - E56
+        - E57
+        - E58
+        - EAO
+        - EB1
+        - EB2
+        - EB3
+        - EB4
+        - EB5
+        - EC6
+        - EC7
+        - EC8
+        - EC9
+        - EF
+        - EP
+        - ER
+        - ERF
+        - ERP
+        - ERR
+        - ES1
+        - ES6
+        - EW
+        - EW0
+        - EW3
+        - EW4
+        - EW5
+        - EW8
+        - EW9
+        - EWI
+        - EX1
+        - EX2
+        - EX3
+        - EX6
+        - EX7
+        - EX8
+        - EXC
+        - EXP
+        - F1
+        - F11
+        - F12
+        - F16
+        - F17
+        - F2
+        - F20
+        - F21
+        - F22
+        - F23
+        - F24
+        - F25
+        - F26
+        - F27
+        - F28
+        - F29
+        - F2A
+        - F2B
+        - F3
+        - F31
+        - F32
+        - F33
+        - F36
+        - F37
+        - F38
+        - F4
+        - F41
+        - F42
+        - F43
+        - F46
+        - F47
+        - F48
+        - FFD
+        - FFG
+        - FFP
+        - FFW
+        - FSM
+        - FUG
+        - FX
+        - FX1
+        - FX2
+        - FX3
+        - FX6
+        - FX7
+        - FX8
+        - G1
+        - G2
+        - G3
+        - G4
+        - G5
+        - GA6
+        - GA7
+        - GA8
+        - GB
+        - GR
+        - GT
+        - H1
+        - H1A
+        - H1B
+        - H1B1
+        - H1C
+        - H2
+        - H2A
+        - H2B
+        - H2R
+        - H3
+        - H3A
+        - H3B
+        - H4
+        - HA6
+        - HA7
+        - HA8
+        - HA9
+        - HB6
+        - HB7
+        - HB8
+        - HB9
+        - HC6
+        - HC7
+        - HC8
+        - HC9
+        - HD6
+        - HD7
+        - HD8
+        - HD9
+        - HE6
+        - HE7
+        - HE8
+        - HE9
+        - HK
+        - HK1
+        - HK2
+        - HK3
+        - HK6
+        - HK7
+        - HK8
+        - HSC
+        - I
+        - I1
+        - I51
+        - I52
+        - I53
+        - I56
+        - I57
+        - I58
+        - IB0
+        - IB1
+        - IB2
+        - IB3
+        - IB5
+        - IB6
+        - IB7
+        - IB8
+        - IC6
+        - IC7
+        - ID6
+        - IF1
+        - IF2
+        - IH3
+        - IH4
+        - IH8
+        - IH9
+        - IJ
+        - IMM
+        - IN
+        - IR
+        - IR0
+        - IR1
+        - IR2
+        - IR3
+        - IR4
+        - IR5
+        - IR6
+        - IR7
+        - IR8
+        - IR9
+        - IT
+        - IT1
+        - IT2
+        - IT3
+        - IT6
+        - IT7
+        - IT8
+        - IW1
+        - IW2
+        - IW6
+        - IW7
+        - J1
+        - J1S
+        - J2
+        - J2S
+        - K1
+        - K10
+        - K11
+        - K12
+        - K13
+        - K14
+        - K15
+        - K16
+        - K17
+        - K18
+        - K19
+        - K2
+        - K20
+        - K21
+        - K22
+        - K23
+        - K24
+        - K25
+        - K26
+        - K3
+        - K3M
+        - K4
+        - K4M
+        - K5
+        - K6
+        - K7
+        - K8
+        - K9
+        - KIC
+        - KIP
+        - KN4
+        - KP4
+        - KR3
+        - KR4
+        - KS3
+        - KS4
+        - KT4
+        - KU4
+        - L1
+        - L1A
+        - L1B
+        - L2
+        - LA6
+        - LB
+        - LB1
+        - LB2
+        - LB6
+        - LB7
+        - LE1
+        - LE2
+        - LPR
+        - LU1
+        - LU2
+        - LZ
+        - M1
+        - M2
+        - M3
+        - M4
+        - M8
+        - M83
+        - M9
+        - M93
+        - ME
+        - MI1
+        - MI2
+        - MI3
+        - MIS
+        - ML
+        - MR0
+        - MR6
+        - MR7
+        - 'N'
+        - N1
+        - N2
+        - N3
+        - N4
+        - N5
+        - N51
+        - N52
+        - N53
+        - N56
+        - N57
+        - N58
+        - N6
+        - N7
+        - N8
+        - N9
+        - NA
+        - NA3
+        - NAT
+        - NATO1
+        - NATO2
+        - NATO3
+        - NATO4
+        - NATO5
+        - NATO6
+        - NATO7
+        - NC
+        - NC6
+        - NC7
+        - NC8
+        - NC9
+        - NP
+        - NP0
+        - NP1
+        - NP2
+        - NP5
+        - NP6
+        - NP7
+        - NP8
+        - NP9
+        - NT1
+        - NT2
+        - NT3
+        - NT6
+        - NT7
+        - NT8
+        - O1
+        - O1A
+        - O1B
+        - O1M
+        - O2
+        - O2M
+        - O3
+        - O3M
+        - OFC
+        - OFM
+        - OFO
+        - OP
+        - OP1
+        - OP2
+        - OP3
+        - OP6
+        - OPR
+        - P1
+        - P11
+        - P12
+        - P16
+        - P17
+        - P1A
+        - P1B
+        - P1M
+        - P1S
+        - P2
+        - P21
+        - P22
+        - P23
+        - P26
+        - P27
+        - P28
+        - P2M
+        - P2S
+        - P3
+        - P31
+        - P32
+        - P33
+        - P36
+        - P37
+        - P38
+        - P3M
+        - P3S
+        - P4
+        - P41
+        - P42
+        - P43
+        - P46
+        - P47
+        - P48
+        - P51
+        - P52
+        - P53
+        - P56
+        - P57
+        - P58
+        - P61
+        - P62
+        - P63
+        - P66
+        - P67
+        - P68
+        - P7
+        - P71
+        - P72
+        - P75
+        - P76
+        - PAC
+        - PAL
+        - PAR
+        - PEN
+        - PH6
+        - PI
+        - PL1
+        - PL2
+        - PR
+        - PWA
+        - Q1
+        - Q1M
+        - Q2
+        - Q2M
+        - Q3
+        - Q3M
+        - R1
+        - R16
+        - R1M
+        - R2
+        - R2M
+        - R3
+        - R4
+        - R5
+        - R51
+        - R52
+        - R53
+        - R56
+        - R57
+        - R58
+        - R86
+        - RAD
+        - RE
+        - RE1
+        - RE2
+        - RE3
+        - RE4
+        - RE5
+        - RE6
+        - RE7
+        - RE8
+        - RE9
+        - REC
+        - REF
+        - REM
+        - REP
+        - RF
+        - RN6
+        - RN7
+        - RRA
+        - RW
+        - S1
+        - S13
+        - S16
+        - S17
+        - S18
+        - S1D
+        - S2
+        - S26
+        - S2D
+        - S3
+        - S4
+        - S5
+        - S6
+        - S7
+        - S8
+        - S9
+        - SA
+        - SA1
+        - SA2
+        - SA3
+        - SA6
+        - SA7
+        - SA8
+        - SB1
+        - SC
+        - SC1
+        - SC2
+        - SC6
+        - SC7
+        - SD
+        - SD1
+        - SD2
+        - SD3
+        - SD6
+        - SD7
+        - SD8
+        - SDF
+        - SE
+        - SE1
+        - SE2
+        - SE3
+        - SE6
+        - SE7
+        - SE8
+        - SEH
+        - SEK
+        - SF
+        - SF1
+        - SF2
+        - SF6
+        - SF7
+        - SG
+        - SG1
+        - SG2
+        - SG6
+        - SG7
+        - SH
+        - SH1
+        - SH2
+        - SH6
+        - SH7
+        - SI1
+        - SI2
+        - SI3
+        - SI6
+        - SI7
+        - SI9
+        - SJ
+        - SJ2
+        - SJ6
+        - SJ7
+        - SK
+        - SK1
+        - SK2
+        - SK3
+        - SK4
+        - SK6
+        - SK7
+        - SK8
+        - SK9
+        - SL
+        - SL1
+        - SL6
+        - SM0
+        - SM1
+        - SM2
+        - SM3
+        - SM4
+        - SM5
+        - SM6
+        - SM7
+        - SM8
+        - SM9
+        - SN1
+        - SN2
+        - SN3
+        - SN4
+        - SN6
+        - SN7
+        - SN8
+        - SN9
+        - SO1
+        - SO2
+        - SQ1
+        - SQ2
+        - SQ3
+        - SQ6
+        - SQ7
+        - SQ8
+        - SQ9
+        - SR
+        - SR1
+        - SR2
+        - SR3
+        - SR6
+        - SR7
+        - SR8
+        - ST
+        - ST0
+        - ST6
+        - ST7
+        - ST8
+        - ST9
+        - STC
+        - SU0
+        - SU2
+        - SU3
+        - SU4
+        - SU6
+        - SU7
+        - SU8
+        - SU9
+        - SUP
+        - SY6
+        - SY7
+        - SY8
+        - T1
+        - T1D
+        - T1M
+        - T2
+        - T21
+        - T22
+        - T23
+        - T26
+        - T27
+        - T28
+        - T2D
+        - T2M
+        - T3
+        - T3D
+        - T3M
+        - T4
+        - T41
+        - T42
+        - T43
+        - T46
+        - T47
+        - T48
+        - T5
+        - T51
+        - T52
+        - T53
+        - T56
+        - T57
+        - T58
+        - TA
+        - TB
+        - TC
+        - TC1
+        - TC2
+        - TC6
+        - TD
+        - TF1
+        - TF2
+        - TI
+        - TIA
+        - TN
+        - TN1
+        - TN2
+        - TPS
+        - TR
+        - TR1
+        - TR2
+        - TR6
+        - TR7
+        - TRM
+        - TS1
+        - TS2
+        - TW
+        - TW1
+        - TW2
+        - TW3
+        - TWO
+        - U
+        - U1
+        - U1M
+        - U2
+        - U2M
+        - U3
+        - U4
+        - U5
+        - UCR
+        - UN
+        - USC
+        - UU
+        - V1
+        - V1M
+        - V2
+        - V2M
+        - V3
+        - VD
+        - VI0
+        - VI5
+        - VI6
+        - VI7
+        - W1
+        - W16
+        - W1D
+        - W2
+        - W26
+        - W2D
+        - W3
+        - W36
+        - W3D
+        - W4
+        - W46
+        - W5
+        - WA
+        - WB
+        - WD
+        - WD2
+        - WI
+        - WID
+        - WP
+        - WR
+        - WT
+        - X
+        - X11
+        - X5
+        - XA
+        - XA3
+        - XB
+        - XB3
+        - XE3
+        - XF3
+        - XN3
+        - XR3
+        - Y1
+        - Y10
+        - Y11
+        - Y12
+        - Y13
+        - Y14
+        - Y15
+        - Y16
+        - Y2
+        - Y2A
+        - Y3
+        - Y4
+        - Y5
+        - Y6
+        - Y64
+        - Y7
+        - Y8
+        - Y9
+        - Z0
+        - Z03
+        - Z1
+        - Z11
+        - Z13
+        - Z14
+        - Z15
+        - Z2
+        - Z3
+        - Z33
+        - Z4
+        - Z41
+        - Z43
+        - Z5
+        - Z56
+        - Z57
+        - Z6
+        - Z66
+        - Z7
+        - Z8
+        - Z83
+        - Z9
+        - Z91
+        - ZM1
+        - ZM2
+        - ZN
+        - ZO
+    imStatusAugmentationType:
+      type: object
+      title: 'im:StatusAugmentationType'
+      description: A data type for additional information about a status.
+      properties:
+        statusReason:
+          type: array
+          description: 'A reason for the status. NIEM reference is im:StatusReasonText'
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: imStatusAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/imStatusAugmentationTypeContext.jsonld
+    imRelativeLocationAugmentationType:
+      type: object
+      title: 'im:RelativeLocationAugmentationType'
+      description: A data type for additional information about a relative location.
+      properties:
+        relativeLocationDistanceMeasure:
+          type: array
+          description: >-
+            A measure of the distance from the location relative to a starting
+            point. NIEM reference is im:RelativeLocationDistanceMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        '@context':
+          type: string
+          description: imRelativeLocationAugmentationType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/imRelativeLocationAugmentationTypeContext.jsonld
+    imLocationAugmentationType:
+      type: object
+      title: 'im:LocationAugmentationType'
+      description: A data type for additional information about a location.
+      properties:
+        locationNearestLargeCityName:
+          type: array
+          description: >-
+            A name of the nearest large city to a location. NIEM reference is
+            im:LocationNearestLargeCityName
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        locationAssociationBeginDate:
+          type: array
+          description: >-
+            A date on which the association with the location began. NIEM
+            reference is im:LocationAssociationBeginDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        locationAssociationEndDate:
+          type: array
+          description: >-
+            A date on which the association with the location ended. NIEM
+            reference is im:LocationAssociationEndDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        '@context':
+          type: string
+          description: imLocationAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/imLocationAugmentationTypeContext.jsonld
+    imPersonNameAugmentationType:
+      type: object
+      title: 'im:PersonNameAugmentationType'
+      description: A data type for additional information about a person name.
+      properties:
+        personNickName:
+          type: array
+          description: >-
+            A nickname or street name of a person. NIEM reference is
+            im:PersonNickName
+          items:
+            $ref: nc.yaml#/components/schemas/ncPersonNameTextType
+        personNameDateRange:
+          type: array
+          description: >-
+            A beginning and ending date range for the use of a name NIEM
+            reference is im:PersonNameDateRange
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateRangeType
+        '@context':
+          type: string
+          description: imPersonNameAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/imPersonNameAugmentationTypeContext.jsonld
+    imProgramAugmentationType:
+      type: object
+      title: 'im:ProgramAugmentationType'
+      description: A data type for additional information about a program.
+      properties:
+        programCompletionComment:
+          type: array
+          description: >-
+            A comment on the completion of the program. NIEM reference is
+            im:ProgramCompletionCommentText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        programEffectiveCompletionDate:
+          type: array
+          description: >-
+            A date on which the Exchange Visitor is expected to complete the
+            requirements of his/her program. NIEM reference is
+            im:ProgramEffectiveCompletionDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        isProgramParticipationBegun:
+          type: array
+          description: >-
+            True if the person has begun participation in his/her program; false
+            otherwise. NIEM reference is im:ProgramParticipationBegunIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        programTerminationDate:
+          type: array
+          description: >-
+            A date on which program participation will terminate. NIEM reference
+            is im:ProgramTerminationDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        programTermination:
+          type: array
+          description: >-
+            A field indicating free text about the program termination. NIEM
+            reference is im:ProgramTerminationText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: imProgramAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/imProgramAugmentationTypeContext.jsonld
+    imPersonEmploymentAssociationAugmentationType:
+      type: object
+      title: 'im:PersonEmploymentAssociationAugmentationType'
+      description: A data type for additional information about an employment.
+      properties:
+        employmentAuthorizationEndDate:
+          type: array
+          description: >-
+            A date through which an alien is authorized by DHS to work for a
+            United States business. NIEM reference is
+            im:EmploymentAuthorizationEndDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        employmentAuthorizationStartDate:
+          type: array
+          description: >-
+            A date that an alien is authorized by DHS to start work for a United
+            States business. NIEM reference is
+            im:EmploymentAuthorizationStartDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        employmentAuthorization:
+          type: array
+          description: >-
+            A description of the alien's work authorization by DHS to work for a
+            United States business NIEM reference is
+            im:EmploymentAuthorizationText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        employmentAssignedUnitEnforcementUnit:
+          type: array
+          description: >-
+            A unit commonly used by the person in a particular position. NIEM
+            reference is j:EmploymentAssignedUnitEnforcementUnit
+          items:
+            $ref: j.yaml#/components/schemas/jEnforcementUnitType
+        employmentAssignedUnitOrganization:
+          type: array
+          description: >-
+            A unit commonly used by the person in a particular position. NIEM
+            reference is j:EmploymentAssignedUnitOrganization
+          items:
+            $ref: nc.yaml#/components/schemas/ncOrganizationType
+        isEmploymentAuthorization:
+          type: array
+          description: >-
+            True if the Department of Homeland Security (DHS), Immigration and
+            Customs Enforcement (ICE) has authorized the alien to work for a
+            United States business; false otherwise. NIEM reference is
+            im:EmploymentAuthorizationIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        '@context':
+          type: string
+          description: imPersonEmploymentAssociationAugmentationType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/imPersonEmploymentAssociationAugmentationTypeContext.jsonld
+    imJudicialOfficialAugmentationType:
+      type: object
+      title: 'im:JudicialOfficialAugmentationType'
+      description: A data type for additional information about a judicial official.
+      properties:
+        judicialOfficialDescription:
+          type: array
+          description: >-
+            A free form field with detailed description about the attorney. NIEM
+            reference is im:JudicialOfficialDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: imJudicialOfficialAugmentationType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/imJudicialOfficialAugmentationTypeContext.jsonld
+    imPersonAugmentationType:
+      type: object
+      title: 'im:PersonAugmentationType'
+      description: A data type for additional information about a person.
+      properties:
+        personUnionAssociation:
+          type: array
+          description: >-
+            An association between two persons who are in a state of union with
+            each other. NIEM reference is nc:PersonUnionAssociation
+          items:
+            $ref: nc.yaml#/components/schemas/ncPersonUnionAssociationType
+        '@context':
+          type: string
+          description: imPersonAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/imPersonAugmentationTypeContext.jsonld

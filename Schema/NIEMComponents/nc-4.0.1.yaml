@@ -1,0 +1,32 @@
+components:
+  schemas:
+    nc-4.0.1PolygonRegionAugmentationType:
+      type: string
+      title: 'nc-4.0.1:PolygonRegionAugmentationType'
+      description: A data type for additional information about a polygon.
+    nc-4.0.1LocationHeightMeasureAugmentationType:
+      type: object
+      title: 'nc-4.0.1:LocationHeightMeasureAugmentationType'
+      description: A data type for additional information about a location height.
+      properties:
+        lengthUnitCode:
+          type: array
+          description: >-
+            A unit of measure of a length value. NIEM reference is
+            nc:LengthUnitCode
+          items:
+            $ref: unece.yaml#/components/schemas/uneceLengthCodeType
+        vehicleOdometerReadingUnitCode:
+          type: array
+          description: >-
+            A unit which qualifies a reading measured by an odometer. NIEM
+            reference is j:VehicleOdometerReadingUnitCode
+          items:
+            $ref: >-
+              aamva_d20.yaml#/components/schemas/aamva_d20VehicleOdometerReadingUnitCodeType
+        '@context':
+          type: string
+          description: nc-4.0.1LocationHeightMeasureAugmentationType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/nc-4.0.1LocationHeightMeasureAugmentationTypeContext.jsonld

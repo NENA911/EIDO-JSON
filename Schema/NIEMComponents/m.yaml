@@ -1,0 +1,1627 @@
+components:
+  schemas:
+    mLocationAugmentationType:
+      type: object
+      title: 'm:LocationAugmentationType'
+      description: A data type for additional information about a location.
+      properties:
+        COTPZoneRegionCode:
+          type: array
+          description: >-
+            A Captain of the Port (COTP) zone code. NIEM reference is
+            m:COTPZoneRegionCode
+          items:
+            $ref: m.yaml#/components/schemas/mCOTPRegionCodeType
+        COTPZoneRegion:
+          type: array
+          description: >-
+            A region of a Captain of the Port (COTP) zone. NIEM reference is
+            m:COTPZoneRegionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        locationCurve:
+          type: array
+          description: 'A geospatial curve. NIEM reference is m:LocationCurve'
+          items:
+            $ref: geo.yaml#/components/schemas/geoCurveType
+        locationEllipse:
+          type: array
+          description: >-
+            A location specified by an ellipse centered at a 2D or 3D geometric
+            point. NIEM reference is m:LocationEllipse
+          items:
+            $ref: geo.yaml#/components/schemas/geoEllipseType
+        locationEnvelope:
+          type: array
+          description: 'A rectangular geospatial area. NIEM reference is m:LocationEnvelope'
+          items:
+            $ref: geo.yaml#/components/schemas/geoEnvelopeType
+        locationPoint:
+          type: array
+          description: >-
+            A location specified by a 2D or 3D geometric point. NIEM reference
+            is m:LocationPoint
+          items:
+            $ref: geo.yaml#/components/schemas/geoPointType
+        locationPolygon:
+          type: array
+          description: 'A geospatial polygon. NIEM reference is m:LocationPolygon'
+          items:
+            $ref: geo.yaml#/components/schemas/geoPolygonType
+        locationPort:
+          type: array
+          description: 'A location identified by a port. NIEM reference is m:LocationPort'
+          items:
+            $ref: m.yaml#/components/schemas/mPortType
+        locationUNLOCODE:
+          type: array
+          description: >-
+            A location identified by a United Nations Location Code, also known
+            as a UN/LOCODE (United Nations Code for Trade and Transport
+            Locations). NIEM reference is m:LocationUNLOCODEText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: mLocationAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mLocationAugmentationTypeContext.jsonld
+    mCOTPRegionCodeType:
+      type: object
+      title: 'm:COTPRegionCodeType'
+      description: A data type for a Captain of the Port (COTP) Zone.
+      properties:
+        simpleType:
+          $ref: m.yaml#/components/schemas/mCOTPRegionCodeSimpleType
+        '@context':
+          type: string
+          description: mCOTPRegionCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mCOTPRegionCodeTypeContext.jsonld
+    mCOTPRegionCodeSimpleType:
+      type: string
+      description: A data type for a Captain of the Port (COTP) Zone.
+      enum:
+        - Baltimore
+        - Boston
+        - Buffalo
+        - Charleston
+        - Chicago
+        - Cleveland
+        - Corpus Christi
+        - Detroit
+        - Duluth
+        - Guam
+        - Hampton Roads
+        - Honolulu
+        - Houston-Galveston
+        - Huntington
+        - Jacksonville
+        - Long Island Sound
+        - Los Angeles-Long Beach
+        - Louisville
+        - Memphis
+        - Miami
+        - Milwaukee
+        - Mobile
+        - Morgan City
+        - New Orleans
+        - New York
+        - Paducah
+        - Philadelphia
+        - Pittsburgh
+        - Port Arthur
+        - 'Portland, Maine'
+        - 'Portland, Oregon'
+        - Prince William Sound
+        - Providence
+        - Puget Sound
+        - San Diego
+        - San Francisco
+        - San Juan
+        - Sault Ste. Marie
+        - Savannah
+        - Southeast Alaska
+        - St. Louis
+        - Tampa
+        - Toledo
+        - Western Alaska
+        - Wilmington
+    mPortType:
+      title: 'm:PortType'
+      description: >-
+        A data type for a facility capable of receiving vessels and transferring
+        cargo.
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncFacilityType
+        - type: object
+          properties:
+            anchorageCapability:
+              type: array
+              description: >-
+                A description of the anchorage capabilities of a port. NIEM
+                reference is m:PortAnchorageCapabilityText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            BENumber:
+              type: array
+              description: >-
+                A BE (Basic Encyclopedia) number for a port. NIEM reference is
+                m:PortBENumberText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            cargoCapability:
+              type: array
+              description: >-
+                A description of the cargo capabilities of a port. NIEM
+                reference is m:PortCargoCapabilityText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            code:
+              type: array
+              description: 'A code to identify a port. NIEM reference is m:PortCodeText'
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            COTPZone:
+              type: array
+              description: >-
+                A Captain of the Port (COTP) zone to which a port belongs. NIEM
+                reference is m:PortCOTPZone
+              items:
+                $ref: m.yaml#/components/schemas/mCaptainOfThePortZoneType
+            depthMeasure:
+              type: array
+              description: >-
+                A measure of the water depth of a port that limits which vessels
+                can make use of the port. NIEM reference is m:PortDepthMeasure
+              items:
+                $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+            description:
+              type: array
+              description: 'A description of a port. NIEM reference is m:PortDescriptionText'
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            dockQuantity:
+              type: array
+              description: >-
+                A number of docks possessed by a port. NIEM reference is
+                m:PortDockQuantity
+              items:
+                $ref: nc.yaml#/components/schemas/ncQuantityType
+            governmentISO3166Alpha2Code:
+              type: array
+              description: >-
+                A government which owns or operates a port, especially in the
+                situation where a port is physically in one country but is owned
+                or operated by another. NIEM reference is
+                m:PortGovernmentISO3166Alpha2Code
+              items:
+                $ref: >-
+                  iso_3166.yaml#/components/schemas/iso_3166CountryAlpha2CodeType
+            government:
+              type: array
+              description: >-
+                A government which owns or operates a port, especially in the
+                situation where a port is physically in one country but is owned
+                or operated by another. NIEM reference is m:PortGovernmentText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            image:
+              type: array
+              description: 'An image of a port. NIEM reference is m:PortImage'
+              items:
+                $ref: nc.yaml#/components/schemas/ncImageType
+            isISPSCompliant:
+              type: array
+              description: >-
+                True if a port is compliant with International Ship and Port
+                Facility Security (ISPS) requirements; false otherwise. NIEM
+                reference is m:PortISPSCompliantIndicator
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            maximumVesselQuantity:
+              type: array
+              description: >-
+                A maximum number of vessels the port is capable of handling.
+                NIEM reference is m:PortMaximumVesselQuantity
+              items:
+                $ref: nc.yaml#/components/schemas/ncQuantityType
+            name:
+              type: array
+              description: 'A name of a port. NIEM reference is m:PortName'
+              items:
+                $ref: nc.yaml#/components/schemas/ncProperNameTextType
+            operationalStatus:
+              type: array
+              description: >-
+                An operational status of a port. NIEM reference is
+                m:PortOperationalStatus
+              items:
+                $ref: nc.yaml#/components/schemas/ncStatusType
+            pilotBoatQuantity:
+              type: array
+              description: >-
+                A number of pilot boats available at a port. NIEM reference is
+                m:PortPilotBoatQuantity
+              items:
+                $ref: nc.yaml#/components/schemas/ncQuantityType
+            isStrategicPortOfEmbarkation:
+              type: array
+              description: >-
+                True if troops, munitions, etc. can be loaded/unloaded at this
+                port; false otherwise. NIEM reference is
+                m:PortStrategicPortOfEmbarkationIndicator
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            threatLevel:
+              type: array
+              description: >-
+                A threat level at a port. NIEM reference is
+                m:PortThreatLevelText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            UNLOCODE:
+              type: array
+              description: >-
+                A United Nations Location Code of a maritime port, also known as
+                a UN/LOCODE (United Nations Code for Trade and Transport
+                Locations). NIEM reference is m:PortUNLOCODEText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            locationCountry:
+              type: array
+              description: >-
+                A country, territory, dependency, or other such geopolitical
+                subdivision of a location. NIEM reference is nc:LocationCountry
+              items:
+                $ref: nc.yaml#/components/schemas/ncCountryType
+            locationState:
+              type: array
+              description: >-
+                A state, commonwealth, province, or other such geopolitical
+                subdivision of a country. NIEM reference is nc:LocationState
+              items:
+                $ref: nc.yaml#/components/schemas/ncStateType
+            locationCityName:
+              type: array
+              description: 'A name of a city or town. NIEM reference is nc:LocationCityName'
+              items:
+                $ref: nc.yaml#/components/schemas/ncProperNameTextType
+            '@context':
+              type: string
+              description: mPortType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/mPortTypeContext.jsonld
+    mCaptainOfThePortZoneType:
+      type: object
+      title: 'm:CaptainOfThePortZoneType'
+      description: >-
+        A data type for a geographical area or zone where a Coast Guard Captain
+        of the Port (COTP) enforces port safety and security.
+      properties:
+        COTPZoneRegionCode:
+          type: array
+          description: >-
+            A Captain of the Port (COTP) zone code. NIEM reference is
+            m:COTPZoneRegionCode
+          items:
+            $ref: m.yaml#/components/schemas/mCOTPRegionCodeType
+        COTPZoneRegion:
+          type: array
+          description: >-
+            A region of a Captain of the Port (COTP) zone. NIEM reference is
+            m:COTPZoneRegionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        COTPZoneContactInformation:
+          type: array
+          description: >-
+            A point of contact (POC) for a Captain of the Port (COTP) zone. NIEM
+            reference is m:COTPZoneContactInformation
+          items:
+            $ref: nc.yaml#/components/schemas/ncContactInformationType
+        COTPZoneGoverningEntity:
+          type: array
+          description: >-
+            An organization that is responsible for a Captain of the Port (COTP)
+            zone. NIEM reference is m:COTPZoneGoverningEntity
+          items:
+            $ref: nc.yaml#/components/schemas/ncEntityType
+        '@context':
+          type: string
+          description: mCaptainOfThePortZoneType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mCaptainOfThePortZoneTypeContext.jsonld
+    mVesselAugmentationType:
+      type: object
+      title: 'm:VesselAugmentationType'
+      description: 'A data type that supplements nc:VesselType.'
+      properties:
+        vesselActivityHistorySummary:
+          type: array
+          description: >-
+            A summary of activities of note in which a vessel has participated.
+            NIEM reference is m:VesselActivityHistorySummaryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselBeamMeasure:
+          type: array
+          description: >-
+            A measure of the beam (breadth) of a vessel. NIEM reference is
+            m:VesselBeamMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        vesselBuildDate:
+          type: array
+          description: >-
+            A date (or year) a vessel was built. NIEM reference is
+            m:VesselBuildDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        vesselCallSign:
+          type: array
+          description: 'A call sign for a vessel. NIEM reference is m:VesselCallSignText'
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselCargoCapability:
+          type: array
+          description: >-
+            A description of cargo capabilities of a vessel. NIEM reference is
+            m:VesselCargoCapabilityText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselCargoCategory:
+          type: array
+          description: >-
+            A kind of cargo that a vessel is carrying. Cargo types may be
+            categorized as DG=Dangerous Goods, HS=Harmful Substances, or
+            MP=Marine Pollutants. NIEM reference is m:VesselCargoCategoryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        isVesselCargoOnBoard:
+          type: array
+          description: >-
+            True if a vessel is carrying cargo; false otherwise. NIEM reference
+            is m:VesselCargoOnBoardIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        vesselCategory:
+          type: array
+          description: >-
+            A kind of vessel based upon the purpose for which the vessel was
+            designed or built. NIEM reference is m:VesselCategoryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        isVesselCDCCapable:
+          type: array
+          description: >-
+            True if a vessel is Certain Dangerous Cargo (CDC) capable; false
+            otherwise. NIEM reference is m:VesselCDCCapableIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isVesselCDCCargoOnBoard:
+          type: array
+          description: >-
+            True if a vessel is carrying hazardous or Certain Dangerous Cargo
+            (CDC); false otherwise. NIEM reference is
+            m:VesselCDCCargoOnBoardIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        vesselCertificateOfFinancialResponsibilityOperator:
+          type: array
+          description: >-
+            A responsible party for the Certificate of Financial Responsibility
+            for a vessel. NIEM reference is
+            m:VesselCertificateOfFinancialResponsibilityOperator
+          items:
+            $ref: nc.yaml#/components/schemas/ncEntityType
+        vesselCharterer:
+          type: array
+          description: >-
+            An entity that chartered a vessel. NIEM reference is
+            m:VesselCharterer
+          items:
+            $ref: nc.yaml#/components/schemas/ncEntityType
+        vesselClass:
+          type: array
+          description: 'A class or category of a vessel. NIEM reference is m:VesselClassText'
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselClassificationSocietyName:
+          type: array
+          description: >-
+            A name of a classification society for a vessel. NIEM reference is
+            m:VesselClassificationSocietyName
+          items:
+            $ref: nc.yaml#/components/schemas/ncProperNameTextType
+        vesselContactInformation:
+          type: array
+          description: >-
+            A means of contacting a vessel. NIEM reference is
+            m:VesselContactInformation
+          items:
+            $ref: nc.yaml#/components/schemas/ncContactInformationType
+        vesselCraneQuantity:
+          type: array
+          description: >-
+            A number of cranes on a vessel. NIEM reference is
+            m:VesselCraneQuantity
+          items:
+            $ref: nc.yaml#/components/schemas/ncQuantityType
+        vesselCruiseRangeMeasure:
+          type: array
+          description: >-
+            A measure of the range of a vessel while travelling at cruise speed.
+            NIEM reference is m:VesselCruiseRangeMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        vesselCruiseSpeedMeasure:
+          type: array
+          description: >-
+            A measure of the cruise speed of a vessel. NIEM reference is
+            m:VesselCruiseSpeedMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncSpeedMeasureType
+        isVesselCVSSAOnBoard:
+          type: array
+          description: >-
+            True if a vessel has at least one crew member qualified to meet 46
+            U.S.C Secs 3507, 3508; false otherwise. NIEM reference is
+            m:VesselCVSSAOnBoardIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        vesselDeadWeightMeasure:
+          type: array
+          description: >-
+            A measure of the total carrying capacity of a vessel. NIEM reference
+            is m:VesselDeadWeightMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncWeightMeasureType
+        vesselDeckConfiguration:
+          type: array
+          description: >-
+            A deck configuration of a vessel. NIEM reference is
+            m:VesselDeckConfigurationText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselDeckEquipment:
+          type: array
+          description: >-
+            A piece of equipment on the deck of a vessel. NIEM reference is
+            m:VesselDeckEquipment
+          items:
+            $ref: nc.yaml#/components/schemas/ncItemType
+        vesselDescription:
+          type: array
+          description: 'A description of a vessel. NIEM reference is m:VesselDescriptionText'
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselDisplacementMeasure:
+          type: array
+          description: >-
+            A weight of a vessel when empty. NIEM reference is
+            m:VesselDisplacementMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncVolumeMeasureType
+        vesselDOCCertificate:
+          type: array
+          description: >-
+            A Document of Compliance (DOC) Certificate for a vessel. NIEM
+            reference is m:VesselDOCCertificate
+          items:
+            $ref: m.yaml#/components/schemas/mCertificateType
+        vesselDraftMeasure:
+          type: array
+          description: >-
+            A measure of the draft of a vessel when fully loaded. NIEM reference
+            is m:VesselDraftMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        vesselDraftUnloadedMeasure:
+          type: array
+          description: >-
+            A measure of the draft of a vessel when unloaded. NIEM reference is
+            m:VesselDraftUnloadedMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        vesselElectronicEquipment:
+          type: array
+          description: >-
+            A piece of electronic equipment on a vessel. NIEM reference is
+            m:VesselElectronicEquipment
+          items:
+            $ref: nc.yaml#/components/schemas/ncItemType
+        vesselEnduranceMeasure:
+          type: array
+          description: >-
+            An extent of time that, under normal conditions, a vessel can
+            operate without support. NIEM reference is m:VesselEnduranceMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncTimeMeasureType
+        vesselEngineCategoryDescription:
+          type: array
+          description: >-
+            A description of the kind of engines on a vessel. NIEM reference is
+            m:VesselEngineCategoryDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselFuelConsumptionRateMeasure:
+          type: array
+          description: >-
+            A measure of the rate at which a vessel consumes fuel. NIEM
+            reference is m:VesselFuelConsumptionRateMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncConsumptionRateMeasureType
+        vesselFuelCategory:
+          type: array
+          description: >-
+            A kind of fuel a vessel uses. NIEM reference is
+            m:VesselFuelCategoryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselGrossTonnageValue:
+          type: array
+          description: >-
+            A gross tonnage (GT) of a vessel, described as a unitless index
+            related to the overall internal volume of a vessel. NIEM reference
+            is m:VesselGrossTonnageValue
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsnonNegativeInteger
+        vesselHailingPort:
+          type: array
+          description: 'A hailing port of a vessel. NIEM reference is m:VesselHailingPort'
+          items:
+            $ref: m.yaml#/components/schemas/mPortType
+        vesselHeloPadQuantity:
+          type: array
+          description: >-
+            A number of helicopter pads on a vessel. NIEM reference is
+            m:VesselHeloPadQuantity
+          items:
+            $ref: nc.yaml#/components/schemas/ncQuantityType
+        vesselHIN:
+          type: array
+          description: >-
+            A Hull Identification Number (HIN) for a vessel. NIEM reference is
+            m:VesselHINText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselHoldsQuantity:
+          type: array
+          description: >-
+            A number of holds in a vessel. NIEM reference is
+            m:VesselHoldsQuantity
+          items:
+            $ref: nc.yaml#/components/schemas/ncQuantityType
+        vesselHomePort:
+          type: array
+          description: 'A home port of a vessel. NIEM reference is m:VesselHomePort'
+          items:
+            $ref: m.yaml#/components/schemas/mPortType
+        vesselHullCategory:
+          type: array
+          description: >-
+            A kind of a hull of a vessel. NIEM reference is
+            m:VesselHullCategoryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselHullColorCode:
+          type: array
+          description: >-
+            A primary color of a hull of a vessel. NIEM reference is
+            m:VesselHullColorCode
+          items:
+            $ref: ncic.yaml#/components/schemas/ncicVCOCodeType
+        vesselHullColor:
+          type: array
+          description: >-
+            A primary color of a hull of a vessel. NIEM reference is
+            m:VesselHullColorText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselHullNumber:
+          type: array
+          description: 'A hull number of a vessel. NIEM reference is m:VesselHullNumberText'
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselIdentification:
+          type: array
+          description: >-
+            An identification of a vessel. NIEM reference is
+            m:VesselIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        vesselImage:
+          type: array
+          description: 'An image of a vessel. NIEM reference is m:VesselImage'
+          items:
+            $ref: nc.yaml#/components/schemas/ncImageType
+        vesselIncidentHistorySummary:
+          type: array
+          description: >-
+            A summary of activities of note in which crew or passengers have
+            participated.  Examples include illegal or suspicious activities on
+            the part of the passengers and, if applicable, vessels on which the
+            passenger has previously traveled, vessels on which the passenger
+            regularly traveled or travels, etc. NIEM reference is
+            m:VesselIncidentHistorySummaryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselIMONumber:
+          type: array
+          description: >-
+            An International Maritime Organization Number (IMO number) of a
+            vessel. NIEM reference is m:VesselIMONumberText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselIRCS:
+          type: array
+          description: >-
+            An International Registered Call Sign (IRCS) of a vessel. NIEM
+            reference is m:VesselIRCSText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselISMCode:
+          type: array
+          description: >-
+            An International Safety Management (ISM) Code of a vessel. NIEM
+            reference is m:VesselISMCodeText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselISSC:
+          type: array
+          description: >-
+            An International Ship Security Certificate (ISSC) for a vessel. NIEM
+            reference is m:VesselISSC
+          items:
+            $ref: >-
+              m.yaml#/components/schemas/mInternationalShipSecurityCertificateType
+        vesselKeelDate:
+          type: array
+          description: >-
+            A date (or year) the keel of a vessel was laid. NIEM reference is
+            m:VesselKeelDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        vesselLocation:
+          type: array
+          description: 'A location of a vessel. NIEM reference is m:VesselLocation'
+          items:
+            $ref: nc.yaml#/components/schemas/ncLocationType
+        vesselManager:
+          type: array
+          description: 'An entity that manages a vessel. NIEM reference is m:VesselManager'
+          items:
+            $ref: nc.yaml#/components/schemas/ncEntityType
+        vesselMastHeightMeasure:
+          type: array
+          description: >-
+            A measure of the height of the tallest (highest) mast of a vessel.
+            NIEM reference is m:VesselMastHeightMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        vesselMaximumCrewQuantity:
+          type: array
+          description: >-
+            A maximum number of crew members that can be aboard a vessel. NIEM
+            reference is m:VesselMaximumCrewQuantity
+          items:
+            $ref: nc.yaml#/components/schemas/ncQuantityType
+        vesselMaximumRangeMeasure:
+          type: array
+          description: >-
+            A measure of the maximum range of a vessel. NIEM reference is
+            m:VesselMaximumRangeMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        vesselMaximumStaticDraftMeasure:
+          type: array
+          description: >-
+            A measure of the draft of a vessel when fully loaded. NIEM reference
+            is m:VesselMaximumStaticDraftMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        vesselMaximumSpeedMeasure:
+          type: array
+          description: >-
+            A measure of the maximum speed of a vessel. NIEM reference is
+            m:VesselMaximumSpeedMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncSpeedMeasureType
+        vesselMaximumPassengerQuantity:
+          type: array
+          description: >-
+            A maximum number of passengers that are legally or safely permitted
+            to be aboard a vessel. NIEM reference is
+            m:VesselMaximumPassengerQuantity
+          items:
+            $ref: nc.yaml#/components/schemas/ncQuantityType
+        vesselMMSI:
+          type: array
+          description: >-
+            A Maritime Mobile Service Identity (MMSI) of a vessel. NIEM
+            reference is m:VesselMMSIText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselMovementDetails:
+          type: array
+          description: >-
+            A set of details of the geospatial movement activities of a vessel.
+            NIEM reference is m:VesselMovementDetails
+          items:
+            $ref: m.yaml#/components/schemas/mVesselMovementDetailsType
+        vesselName:
+          type: array
+          description: 'A name of a vessel. NIEM reference is m:VesselName'
+          items:
+            $ref: nc.yaml#/components/schemas/ncProperNameTextType
+        vesselNationalFlagISO3166Alpha2Code:
+          type: array
+          description: >-
+            A national flag under which a vessel sails. NIEM reference is
+            m:VesselNationalFlagISO3166Alpha2Code
+          items:
+            $ref: iso_3166.yaml#/components/schemas/iso_3166CountryAlpha2CodeType
+        vesselNationalFlag:
+          type: array
+          description: >-
+            A national flag under which a vessel sails. NIEM reference is
+            m:VesselNationalFlagText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselNationalFlagImage:
+          type: array
+          description: >-
+            An image of a national flag under which a vessel sails. NIEM
+            reference is m:VesselNationalFlagImage
+          items:
+            $ref: nc.yaml#/components/schemas/ncImageType
+        vesselNavigationStatus:
+          type: array
+          description: >-
+            A navigational status of a vessel. NIEM reference is
+            m:VesselNavigationStatus
+          items:
+            $ref: nc.yaml#/components/schemas/ncStatusType
+        vesselNetTonnageVolumeMeasure:
+          type: array
+          description: >-
+            A measure of the total internal volume of a vessel that is used for
+            cargo. NIEM reference is m:VesselNetTonnageVolumeMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncVolumeMeasureType
+        vesselNonTankVesselResponsePlanIdentification:
+          type: array
+          description: >-
+            An identification of a Non-Tank Vessel Response Plan (NTVRP). NIEM
+            reference is m:VesselNonTankVesselResponsePlanIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        isVesselNonTankVesselResponsePlan:
+          type: array
+          description: >-
+            True if a vessel has a Non-Tank Vessel Response Plan (NTVRP) per 33
+            CFR 151,155,160; false otherwise. NIEM reference is
+            m:VesselNonTankVesselResponsePlanIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        vesselOfficialCoastGuardNumber:
+          type: array
+          description: >-
+            An Official United States Coast Guard Number (USCG Official Number)
+            of a vessel. NIEM reference is m:VesselOfficialCoastGuardNumberText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselOperationalConditionOfEquipmentCode:
+          type: array
+          description: >-
+            A code indicating the Operational Condition of Equipment (OCE) of a
+            vessel. NIEM reference is
+            m:VesselOperationalConditionOfEquipmentCode
+          items:
+            $ref: >-
+              m.yaml#/components/schemas/mVesselOperationalConditionOfEquipmentCodeType
+        vesselOperationalConditionOfEquipmentDescription:
+          type: array
+          description: >-
+            A description of the Operational Condition of Equipment (OCE) of a
+            vessel. NIEM reference is
+            m:VesselOperationalConditionOfEquipmentDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselOperator:
+          type: array
+          description: >-
+            An entity that is responsible for the day-to-day operations and
+            travels of a vessel. NIEM reference is m:VesselOperator
+          items:
+            $ref: nc.yaml#/components/schemas/ncEntityType
+        vesselOverallLengthMeasure:
+          type: array
+          description: >-
+            A measure of the overall length of a vessel. NIEM reference is
+            m:VesselOverallLengthMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        vesselOwner:
+          type: array
+          description: 'An entity that owns a vessel. NIEM reference is m:VesselOwner'
+          items:
+            $ref: nc.yaml#/components/schemas/ncEntityType
+        vesselRampQuantity:
+          type: array
+          description: >-
+            A number of ramps on a vessel. NIEM reference is
+            m:VesselRampQuantity
+          items:
+            $ref: nc.yaml#/components/schemas/ncQuantityType
+        vesselSafetyManagementCertificate:
+          type: array
+          description: >-
+            A Safety Management Certificate (SMC) for a vessel. NIEM reference
+            is m:VesselSafetyManagementCertificate
+          items:
+            $ref: m.yaml#/components/schemas/mCertificateType
+        vesselSCONUM:
+          type: array
+          description: >-
+            A Ship Control Number (SCONUM) of a vessel. NIEM reference is
+            m:VesselSCONUMText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselShaftQuantity:
+          type: array
+          description: >-
+            A number of shafts on a vessel. NIEM reference is
+            m:VesselShaftQuantity
+          items:
+            $ref: nc.yaml#/components/schemas/ncQuantityType
+        vesselStackQuantity:
+          type: array
+          description: >-
+            A number of stacks on a vessel. NIEM reference is
+            m:VesselStackQuantity
+          items:
+            $ref: nc.yaml#/components/schemas/ncQuantityType
+        vesselStateIdentification:
+          type: array
+          description: >-
+            An identification of a vessel given by a government. NIEM reference
+            is m:VesselStateIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        vesselSubCategory:
+          type: array
+          description: >-
+            A kind of vessel, a subcategory of VesselCategoryText. NIEM
+            reference is m:VesselSubCategoryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselSuperstructureColorCode:
+          type: array
+          description: >-
+            A primary color of a superstructure of a vessel. NIEM reference is
+            m:VesselSuperstructureColorCode
+          items:
+            $ref: ncic.yaml#/components/schemas/ncicVCOCodeType
+        vesselSuperstructureColor:
+          type: array
+          description: >-
+            A primary color of a superstructure of a vessel. NIEM reference is
+            m:VesselSuperstructureColorText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselSuperstructureLocation:
+          type: array
+          description: >-
+            A location of a superstructure on a vessel. NIEM reference is
+            m:VesselSuperstructureLocation
+          items:
+            $ref: m.yaml#/components/schemas/mLocationOnVesselType
+        vesselTRDM:
+          type: array
+          description: >-
+            A US Transportation Command (USTRANSCOM) Reference Data Model (TRDM)
+            unique identifier for a vessel. NIEM reference is m:VesselTRDMText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselViolationHistorySummary:
+          type: array
+          description: >-
+            A summary of illegal activities in which the vessel has participated
+            during the previous 5 years. NIEM reference is
+            m:VesselViolationHistorySummaryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselVoyage:
+          type: array
+          description: >-
+            A journey of a vessel from one place to another. NIEM reference is
+            m:VesselVoyage
+          items:
+            $ref: m.yaml#/components/schemas/mVoyageType
+        '@context':
+          type: string
+          description: mVesselAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mVesselAugmentationTypeContext.jsonld
+    mCertificateType:
+      title: 'm:CertificateType'
+      description: A data type for an official or government-issued certificate or license.
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncDocumentType
+        - type: object
+          properties:
+            endorsement:
+              type: array
+              description: >-
+                An endorsement, qualification, or rating listed on a certificate
+                which authorizes the performance of certain duties or actions.
+                NIEM reference is m:CertificateEndorsementText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            issueDate:
+              type: array
+              description: >-
+                A date when a certificate was issued. NIEM reference is
+                m:CertificateIssueDate
+              items:
+                $ref: nc.yaml#/components/schemas/ncDateType
+            issuingAgency:
+              type: array
+              description: >-
+                An agency or organization that issued a certificate. NIEM
+                reference is m:CertificateIssuingAgency
+              items:
+                $ref: nc.yaml#/components/schemas/ncEntityType
+            jurisdiction:
+              type: array
+              description: >-
+                A description of locations or regions for which a certificate is
+                valid or appropriate. NIEM reference is
+                m:CertificateJurisdiction
+              items:
+                $ref: nc.yaml#/components/schemas/ncJurisdictionType
+            restriction:
+              type: array
+              description: >-
+                A restriction on a certificate. NIEM reference is
+                m:CertificateRestrictionText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            '@context':
+              type: string
+              description: mCertificateType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/mCertificateTypeContext.jsonld
+    mInternationalShipSecurityCertificateType:
+      title: 'm:InternationalShipSecurityCertificateType'
+      description: A data type for an International Ship Security Certificate (ISSC).
+      allOf:
+        - $ref: m.yaml#/components/schemas/mCertificateType
+        - type: object
+          properties:
+            reasonInterimISSCIssued:
+              type: array
+              description: >-
+                A reason why an interim International Ship Security Certificate
+                (ISSC) was issued. NIEM reference is
+                m:ReasonInterimISSCIssuedText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            recognizedISSCSecurityEntity:
+              type: array
+              description: >-
+                A Recognized Security Organization/Flag Administration for an
+                International Ship Security Certificate (ISSC). NIEM reference
+                is m:RecognizedISSCSecurityEntity
+              items:
+                $ref: nc.yaml#/components/schemas/ncEntityType
+            ISSCCategory:
+              type: array
+              description: >-
+                A kind of International Ship Security Certificate (ISSC). NIEM
+                reference is m:ISSCCategoryText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            vesselSecurityOfficerContactInformation:
+              type: array
+              description: >-
+                A set of contact information for the appointed Company Security
+                Officer (CSO) of a vessel. NIEM reference is
+                m:VesselSecurityOfficerContactInformation
+              items:
+                $ref: nc.yaml#/components/schemas/ncContactInformationType
+            isVesselSecurityPlanImplemented:
+              type: array
+              description: >-
+                True if a vessel has implemented a Vessel Security Plan (VSP);
+                false otherwise. NIEM reference is
+                m:VesselSecurityPlanImplementedIndicator
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            '@context':
+              type: string
+              description: mInternationalShipSecurityCertificateType JSON-LD context
+              enum:
+                - >-
+                  ../JSON-LD_Contexts/mInternationalShipSecurityCertificateTypeContext.jsonld
+    mVesselMovementDetailsType:
+      type: object
+      title: 'm:VesselMovementDetailsType'
+      description: A data type for a set of details of the geospatial movement of a vessel.
+      properties:
+        vesselActualActivity:
+          type: array
+          description: >-
+            An actual activity of a vessel. NIEM reference is
+            m:VesselActualActivity
+          items:
+            $ref: nc.yaml#/components/schemas/ncActivityType
+        vesselDestinationLocation:
+          type: array
+          description: >-
+            A destination of a vessel. NIEM reference is
+            m:VesselDestinationLocation
+          items:
+            $ref: nc.yaml#/components/schemas/ncLocationType
+        vesselIntendedActivity:
+          type: array
+          description: >-
+            An intended activity of a vessel. NIEM reference is
+            m:VesselIntendedActivity
+          items:
+            $ref: nc.yaml#/components/schemas/ncActivityType
+        vesselOriginLocation:
+          type: array
+          description: 'An origin of a vessel. NIEM reference is m:VesselOriginLocation'
+          items:
+            $ref: nc.yaml#/components/schemas/ncLocationType
+        '@context':
+          type: string
+          description: mVesselMovementDetailsType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mVesselMovementDetailsTypeContext.jsonld
+    mVesselOperationalConditionOfEquipmentCodeType:
+      type: object
+      title: 'm:VesselOperationalConditionOfEquipmentCodeType'
+      description: A data type for an Operational Condition of Equipment (OCE) of a vessel.
+      properties:
+        simpleType:
+          $ref: >-
+            m.yaml#/components/schemas/mVesselOperationalConditionOfEquipmentCodeSimpleType
+        '@context':
+          type: string
+          description: mVesselOperationalConditionOfEquipmentCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/mVesselOperationalConditionOfEquipmentCodeTypeContext.jsonld
+    mVesselOperationalConditionOfEquipmentCodeSimpleType:
+      type: string
+      description: A data type for an Operational Condition of Equipment (OCE) of a vessel.
+      enum:
+        - Not Operational
+        - Not Required
+        - Operational
+    mLocationOnVesselType:
+      type: object
+      title: 'm:LocationOnVesselType'
+      description: A data type for a location on a vessel.
+      properties:
+        deck:
+          type: array
+          description: >-
+            A location on a vessel specified by deck. NIEM reference is
+            m:LocationOnVesselDeckText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        description:
+          type: array
+          description: >-
+            A description of a location on a vessel. NIEM reference is
+            m:LocationOnVesselDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        distanceFromBowMeasure:
+          type: array
+          description: >-
+            A measure of distance from a location on a vessel to its bow. NIEM
+            reference is m:LocationOnVesselDistanceFromBowMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        distanceFromPortMeasure:
+          type: array
+          description: >-
+            A measure of distance from a location on a vessel to its port side.
+            NIEM reference is m:LocationOnVesselDistanceFromPortMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        distanceFromStarboardMeasure:
+          type: array
+          description: >-
+            A measure of distance from a location on a vessel to its starboard
+            side. NIEM reference is
+            m:LocationOnVesselDistanceFromStarboardMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        distanceFromSternMeasure:
+          type: array
+          description: >-
+            A measure of distance from a location on a vessel to its stern. NIEM
+            reference is m:LocationOnVesselDistanceFromSternMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        elevationMeasure:
+          type: array
+          description: >-
+            A measure of the elevation above or below the waterline of a vessel.
+            A positive value implies a location above the waterline and a
+            negative value implies a location below the waterline. NIEM
+            reference is m:LocationOnVesselElevationMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        '@context':
+          type: string
+          description: mLocationOnVesselType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mLocationOnVesselTypeContext.jsonld
+    mVoyageType:
+      type: object
+      title: 'm:VoyageType'
+      description: A data type for a journey from one place to another.
+      properties:
+        beginDateTime:
+          type: array
+          description: >-
+            A date and time a voyage begins. NIEM reference is
+            m:VoyageBeginDateTime
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        category:
+          type: array
+          description: 'A kind of a voyage. NIEM reference is m:VoyageCategoryText'
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        destinationLocation:
+          type: array
+          description: >-
+            A destination of a voyage. NIEM reference is
+            m:VoyageDestinationLocation
+          items:
+            $ref: nc.yaml#/components/schemas/ncLocationType
+        endDateTime:
+          type: array
+          description: 'A date and time a voyage ends. NIEM reference is m:VoyageEndDateTime'
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        identification:
+          type: array
+          description: >-
+            An identification of a voyage. NIEM reference is
+            m:VoyageIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        originLocation:
+          type: array
+          description: 'An origin of a voyage. NIEM reference is m:VoyageOriginLocation'
+          items:
+            $ref: nc.yaml#/components/schemas/ncLocationType
+        summary:
+          type: array
+          description: >-
+            A summary or description of a voyage. NIEM reference is
+            m:VoyageSummaryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        vesselUse:
+          type: array
+          description: >-
+            A description of the use or purpose of a vessel on a voyage. NIEM
+            reference is m:VoyageVesselUseText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: mVoyageType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mVoyageTypeContext.jsonld
+    mPersonAugmentationType:
+      type: object
+      title: 'm:PersonAugmentationType'
+      description: 'A data type that supplements nc:PersonType.'
+      properties:
+        personBiometricURI:
+          type: array
+          description: >-
+            A URI for a biometric identification for a person. NIEM reference is
+            m:PersonBiometricURI
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsanyURI
+        personDeathLocation:
+          type: array
+          description: >-
+            A location where a person died. NIEM reference is
+            m:PersonDeathLocation
+          items:
+            $ref: nc.yaml#/components/schemas/ncLocationType
+        merchantMarinerDocument:
+          type: array
+          description: >-
+            A Merchant Mariner Document (MMD) issued to a merchant mariner. NIEM
+            reference is m:MerchantMarinerDocument
+          items:
+            $ref: m.yaml#/components/schemas/mMerchantMarinerDocumentType
+        seamanLicense:
+          type: array
+          description: >-
+            An able-bodied seaman license issued to a person. NIEM reference is
+            m:SeamanLicense
+          items:
+            $ref: m.yaml#/components/schemas/mSeamanLicenseType
+        '@context':
+          type: string
+          description: mPersonAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mPersonAugmentationTypeContext.jsonld
+    mMerchantMarinerDocumentType:
+      type: object
+      title: 'm:MerchantMarinerDocumentType'
+      description: A data type for a Merchant Mariner Document (MMD).
+      properties:
+        identification:
+          type: array
+          description: >-
+            An identification of a merchant mariner document. NIEM reference is
+            m:MerchantMarinerDocumentIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        issueDate:
+          type: array
+          description: >-
+            A date a merchant mariner document was issued. NIEM reference is
+            m:MerchantMarinerDocumentIssueDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        issuerLocation:
+          type: array
+          description: >-
+            A location of the issuer of a merchant mariner document. NIEM
+            reference is m:MerchantMarinerDocumentIssuerLocation
+          items:
+            $ref: nc.yaml#/components/schemas/ncLocationType
+        issuingOrganization:
+          type: array
+          description: >-
+            An issuer of a merchant mariner document. NIEM reference is
+            m:MerchantMarinerDocumentIssuingOrganization
+          items:
+            $ref: nc.yaml#/components/schemas/ncOrganizationType
+        rating:
+          type: array
+          description: >-
+            A rating on a merchant mariner document which authorizes the
+            performance of certain shipboard duties or actions. NIEM reference
+            is m:MerchantMarinerDocumentRatingText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        personAddress:
+          type: array
+          description: 'An address for a person. NIEM reference is m:PersonAddress'
+          items:
+            $ref: nc.yaml#/components/schemas/ncAddressType
+        personBirthDate:
+          type: array
+          description: 'A date a person was born. NIEM reference is nc:PersonBirthDate'
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        personCitizenshipISO3166Alpha2Code:
+          type: array
+          description: >-
+            A country that assigns rights, duties, and privileges to a person
+            because of the birth or naturalization of the person in that
+            country. NIEM reference is nc:PersonCitizenshipISO3166Alpha2Code
+          items:
+            $ref: iso_3166.yaml#/components/schemas/iso_3166CountryAlpha2CodeType
+        personCitizenship:
+          type: array
+          description: >-
+            A country that assigns rights, duties, and privileges to a person
+            because of the birth or naturalization of the person in that
+            country. NIEM reference is nc:PersonCitizenshipText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        personEyeColorCode:
+          type: array
+          description: >-
+            A color of the eyes of a person. NIEM reference is
+            j:PersonEyeColorCode
+          items:
+            $ref: ncic.yaml#/components/schemas/ncicEYECodeType
+        personEyeColorRapSheetCode:
+          type: array
+          description: >-
+            A code set identifying an eye color of a person. NIEM reference is
+            j:PersonEyeColorRapSheetCode
+          items:
+            $ref: j.yaml#/components/schemas/jPersonEyeColorCodeType
+        personEyeColor:
+          type: array
+          description: >-
+            A color of the eyes of a person. NIEM reference is
+            nc:PersonEyeColorText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        personHairColorCode:
+          type: array
+          description: >-
+            A color of the hair of a person. NIEM reference is
+            j:PersonHairColorCode
+          items:
+            $ref: ncic.yaml#/components/schemas/ncicHAIRCodeType
+        personHairColorRapSheetCode:
+          type: array
+          description: >-
+            A code set identifying a hair color of a person. NIEM reference is
+            j:PersonHairColorRapSheetCode
+          items:
+            $ref: j.yaml#/components/schemas/jPersonHairColorCodeType
+        personHairColor:
+          type: array
+          description: >-
+            A color of the hair of a person. NIEM reference is
+            nc:PersonHairColorText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        personHeightDescription:
+          type: array
+          description: >-
+            A description of the height of a person. NIEM reference is
+            nc:PersonHeightDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        personHeightMeasure:
+          type: array
+          description: >-
+            A measurement of the height of a person. NIEM reference is
+            nc:PersonHeightMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        personName:
+          type: array
+          description: >-
+            A combination of names and/or titles by which a person is known.
+            NIEM reference is nc:PersonName
+          items:
+            $ref: nc.yaml#/components/schemas/ncPersonNameType
+        personSexCode:
+          type: array
+          description: 'A gender or sex of a person. NIEM reference is j:PersonSexCode'
+          items:
+            $ref: ncic.yaml#/components/schemas/ncicSEXCodeType
+        personSexNDExCode:
+          type: array
+          description: >-
+            A code that identifies the gender or sex of the person. NIEM
+            reference is j:PersonSexNDExCode
+          items:
+            $ref: ndex.yaml#/components/schemas/ndexSEXCodeType
+        personSexRapSheetCode:
+          type: array
+          description: >-
+            A code set identifying a gender or sex of a person. NIEM reference
+            is j:PersonSexRapSheetCode
+          items:
+            $ref: j.yaml#/components/schemas/jPersonSexCodeType
+        personSex:
+          type: array
+          description: 'A gender or sex of a person. NIEM reference is nc:PersonSexText'
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        personSSNIdentification:
+          type: array
+          description: >-
+            A unique identification reference to a living person; assigned by
+            the United States Social Security Administration. NIEM reference is
+            nc:PersonSSNIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        personWeightDescription:
+          type: array
+          description: >-
+            A description of the weight of a person. NIEM reference is
+            nc:PersonWeightDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        personWeightMeasure:
+          type: array
+          description: >-
+            A measurement of the weight of a person. NIEM reference is
+            nc:PersonWeightMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncWeightMeasureType
+        '@context':
+          type: string
+          description: mMerchantMarinerDocumentType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mMerchantMarinerDocumentTypeContext.jsonld
+    mSeamanLicenseType:
+      type: object
+      title: 'm:SeamanLicenseType'
+      description: A data type for an able-bodied seaman license.
+      properties:
+        personAddress:
+          type: array
+          description: 'An address for a person. NIEM reference is m:PersonAddress'
+          items:
+            $ref: nc.yaml#/components/schemas/ncAddressType
+        personBirthDate:
+          type: array
+          description: 'A date a person was born. NIEM reference is nc:PersonBirthDate'
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        personCitizenshipISO3166Alpha2Code:
+          type: array
+          description: >-
+            A country that assigns rights, duties, and privileges to a person
+            because of the birth or naturalization of the person in that
+            country. NIEM reference is nc:PersonCitizenshipISO3166Alpha2Code
+          items:
+            $ref: iso_3166.yaml#/components/schemas/iso_3166CountryAlpha2CodeType
+        personCitizenship:
+          type: array
+          description: >-
+            A country that assigns rights, duties, and privileges to a person
+            because of the birth or naturalization of the person in that
+            country. NIEM reference is nc:PersonCitizenshipText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        personEyeColorCode:
+          type: array
+          description: >-
+            A color of the eyes of a person. NIEM reference is
+            j:PersonEyeColorCode
+          items:
+            $ref: ncic.yaml#/components/schemas/ncicEYECodeType
+        personEyeColorRapSheetCode:
+          type: array
+          description: >-
+            A code set identifying an eye color of a person. NIEM reference is
+            j:PersonEyeColorRapSheetCode
+          items:
+            $ref: j.yaml#/components/schemas/jPersonEyeColorCodeType
+        personEyeColor:
+          type: array
+          description: >-
+            A color of the eyes of a person. NIEM reference is
+            nc:PersonEyeColorText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        personHairColorCode:
+          type: array
+          description: >-
+            A color of the hair of a person. NIEM reference is
+            j:PersonHairColorCode
+          items:
+            $ref: ncic.yaml#/components/schemas/ncicHAIRCodeType
+        personHairColorRapSheetCode:
+          type: array
+          description: >-
+            A code set identifying a hair color of a person. NIEM reference is
+            j:PersonHairColorRapSheetCode
+          items:
+            $ref: j.yaml#/components/schemas/jPersonHairColorCodeType
+        personHairColor:
+          type: array
+          description: >-
+            A color of the hair of a person. NIEM reference is
+            nc:PersonHairColorText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        personHeightDescription:
+          type: array
+          description: >-
+            A description of the height of a person. NIEM reference is
+            nc:PersonHeightDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        personHeightMeasure:
+          type: array
+          description: >-
+            A measurement of the height of a person. NIEM reference is
+            nc:PersonHeightMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        personName:
+          type: array
+          description: >-
+            A combination of names and/or titles by which a person is known.
+            NIEM reference is nc:PersonName
+          items:
+            $ref: nc.yaml#/components/schemas/ncPersonNameType
+        personSexCode:
+          type: array
+          description: 'A gender or sex of a person. NIEM reference is j:PersonSexCode'
+          items:
+            $ref: ncic.yaml#/components/schemas/ncicSEXCodeType
+        personSexNDExCode:
+          type: array
+          description: >-
+            A code that identifies the gender or sex of the person. NIEM
+            reference is j:PersonSexNDExCode
+          items:
+            $ref: ndex.yaml#/components/schemas/ndexSEXCodeType
+        personSexRapSheetCode:
+          type: array
+          description: >-
+            A code set identifying a gender or sex of a person. NIEM reference
+            is j:PersonSexRapSheetCode
+          items:
+            $ref: j.yaml#/components/schemas/jPersonSexCodeType
+        personSex:
+          type: array
+          description: 'A gender or sex of a person. NIEM reference is nc:PersonSexText'
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        personSSNIdentification:
+          type: array
+          description: >-
+            A unique identification reference to a living person; assigned by
+            the United States Social Security Administration. NIEM reference is
+            nc:PersonSSNIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        personWeightDescription:
+          type: array
+          description: >-
+            A description of the weight of a person. NIEM reference is
+            nc:PersonWeightDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        personWeightMeasure:
+          type: array
+          description: >-
+            A measurement of the weight of a person. NIEM reference is
+            nc:PersonWeightMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncWeightMeasureType
+        identification:
+          type: array
+          description: >-
+            An identification of a seaman license. NIEM reference is
+            m:SeamanLicenseIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        issueDate:
+          type: array
+          description: >-
+            A date a seaman license was issued. NIEM reference is
+            m:SeamanLicenseIssueDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        issuerLocation:
+          type: array
+          description: >-
+            A location of an issuer of a seaman license. NIEM reference is
+            m:SeamanLicenseIssuerLocation
+          items:
+            $ref: nc.yaml#/components/schemas/ncLocationType
+        issuingOrganization:
+          type: array
+          description: >-
+            An issuer of a seaman license. NIEM reference is
+            m:SeamanLicenseIssuingOrganization
+          items:
+            $ref: nc.yaml#/components/schemas/ncOrganizationType
+        rating:
+          type: array
+          description: >-
+            A rating on a seaman license which authorizes the performance of
+            certain shipboard duties or actions. NIEM reference is
+            m:SeamanLicenseRatingText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: mSeamanLicenseType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mSeamanLicenseTypeContext.jsonld

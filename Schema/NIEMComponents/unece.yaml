@@ -1,0 +1,210 @@
+components:
+  schemas:
+    uneceLengthCodeType:
+      type: object
+      title: 'unece:LengthCodeType'
+      description: A data type for units of measurements for a length value.
+      properties:
+        simpleType:
+          $ref: unece.yaml#/components/schemas/uneceLengthCodeSimpleType
+        '@context':
+          type: string
+          description: uneceLengthCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/uneceLengthCodeTypeContext.jsonld
+    uneceLengthCodeSimpleType:
+      type: string
+      description: A data type for units of measurements for a length value.
+      enum:
+        - 4H
+        - '77'
+        - A11
+        - A12
+        - A45
+        - A71
+        - AK
+        - B57
+        - C45
+        - C52
+        - C63
+        - CMT
+        - DMT
+        - FOT
+        - HMT
+        - INH
+        - KMT
+        - M7
+        - MMT
+        - MTR
+        - NMI
+        - SMI
+        - X1
+        - YRD
+    uneceMassCodeType:
+      type: object
+      title: 'unece:MassCodeType'
+      description: A data type for units of measurement for a weight value.
+      properties:
+        simpleType:
+          $ref: unece.yaml#/components/schemas/uneceMassCodeSimpleType
+        '@context':
+          type: string
+          description: uneceMassCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/uneceMassCodeTypeContext.jsonld
+    uneceMassCodeSimpleType:
+      type: string
+      description: A data type for units of measurement for a weight value.
+      enum:
+        - 2U
+        - APZ
+        - CGM
+        - CWA
+        - CWI
+        - DG
+        - DJ
+        - DTN
+        - GRM
+        - GRN
+        - HGM
+        - KGM
+        - KTN
+        - LBR
+        - LTN
+        - MC
+        - MGM
+        - ONZ
+        - STI
+        - STN
+        - TNE
+    uneceVelocityCodeType:
+      type: object
+      title: 'unece:VelocityCodeType'
+      description: A data type for units of measurement for a speed or velocity.
+      properties:
+        simpleType:
+          $ref: unece.yaml#/components/schemas/uneceVelocityCodeSimpleType
+        '@context':
+          type: string
+          description: uneceVelocityCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/uneceVelocityCodeTypeContext.jsonld
+    uneceVelocityCodeSimpleType:
+      type: string
+      description: A data type for units of measurement for a speed or velocity.
+      enum:
+        - 2M
+        - 2X
+        - C16
+        - FR
+        - FS
+        - HM
+        - IU
+        - KMH
+        - KNT
+        - MTS
+    uneceTimeCodeType:
+      type: object
+      title: 'unece:TimeCodeType'
+      description: A data type for units of time.
+      properties:
+        simpleType:
+          $ref: unece.yaml#/components/schemas/uneceTimeCodeSimpleType
+        '@context':
+          type: string
+          description: uneceTimeCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/uneceTimeCodeTypeContext.jsonld
+    uneceTimeCodeSimpleType:
+      type: string
+      description: A data type for units of time.
+      enum:
+        - ANN
+        - B52
+        - B98
+        - C26
+        - C47
+        - D42
+        - DAY
+        - HUR
+        - MIN
+        - MON
+        - SEC
+        - WEE
+    uneceVolumeUnitCodeType:
+      type: object
+      title: 'unece:VolumeUnitCodeType'
+      description: A data type for volume unit of measurement codes.
+      properties:
+        simpleType:
+          $ref: unece.yaml#/components/schemas/uneceVolumeUnitCodeSimpleType
+        '@context':
+          type: string
+          description: uneceVolumeUnitCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/uneceVolumeUnitCodeTypeContext.jsonld
+    uneceVolumeUnitCodeSimpleType:
+      type: string
+      description: A data type for volume unit of measurement codes.
+      enum:
+        - 4G
+        - 5I
+        - A44
+        - BLD
+        - BLL
+        - BUA
+        - BUI
+        - CLT
+        - CMQ
+        - DLT
+        - DMA
+        - DMQ
+        - FTQ
+        - G21
+        - G23
+        - G24
+        - G25
+        - G26
+        - G94
+        - G95
+        - G96
+        - G97
+        - GLD
+        - GLI
+        - GLL
+        - H19
+        - H20
+        - HLT
+        - INQ
+        - J57
+        - K21
+        - K23
+        - K6
+        - L43
+        - L61
+        - L62
+        - L84
+        - L86
+        - LTR
+        - M11
+        - M14
+        - M67
+        - M68
+        - M69
+        - M70
+        - M71
+        - MAL
+        - MLT
+        - MMQ
+        - MTQ
+        - OZA
+        - OZI
+        - PT
+        - PTD
+        - PTI
+        - PTL
+        - QT
+        - QTD
+        - QTI
+        - QTL
+        - YDQ

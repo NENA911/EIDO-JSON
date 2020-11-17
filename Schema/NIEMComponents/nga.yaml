@@ -1,0 +1,90 @@
+components:
+  schemas:
+    ngaDirectionDatumCodeType:
+      type: object
+      title: 'nga:DirectionDatumCodeType'
+      description: >-
+        A data type for a reference direction as determined by the means by
+        which it is established (e.g., by the direction of a geographic or
+        magnetic pole of the Earth).
+      properties:
+        simpleType:
+          $ref: nga.yaml#/components/schemas/ngaDirectionDatumCodeSimpleType
+        '@context':
+          type: string
+          description: ngaDirectionDatumCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ngaDirectionDatumCodeTypeContext.jsonld
+    ngaDirectionDatumCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a reference direction as determined by the means by
+        which it is established (e.g., by the direction of a geographic or
+        magnetic pole of the Earth).
+      enum:
+        - geodetic
+        - Magnetic
+        - militaryGrid
+        - Relative
+    ngaVerticalDatumCodeType:
+      type: object
+      title: 'nga:VerticalDatumCodeType'
+      description: A data type for vertical datum codes.
+      properties:
+        simpleType:
+          $ref: nga.yaml#/components/schemas/ngaVerticalDatumCodeSimpleType
+        '@context':
+          type: string
+          description: ngaVerticalDatumCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ngaVerticalDatumCodeTypeContext.jsonld
+    ngaVerticalDatumCodeSimpleType:
+      type: string
+      description: A data type for vertical datum codes.
+      enum:
+        - approxLowestAstronomTide
+        - approxMeanLowerLowWater
+        - approxMeanLowWater
+        - approxMeanLowWaterSprings
+        - approxMeanSeaLevel
+        - equinoctialSpringLowWater
+        - groundLevel
+        - higherHighWater
+        - higherHighWaterLargeTide
+        - highestAstronomicalTide
+        - highestHighWater
+        - highWater
+        - highWaterSprings
+        - igld1985
+        - indianSpringHighWater
+        - indianSpringLowWater
+        - lowerLowWater
+        - lowerLowWaterLargeTide
+        - lowestAstronomicalTide
+        - lowestLowWater
+        - lowestLowWaterSprings
+        - lowWater
+        - lowWaterSprings
+        - meanHigherHighWater
+        - meanHigherHighWaterSprings
+        - meanHighWater
+        - meanHighWaterNeaps
+        - meanHighWaterSprings
+        - meanLowerLowWater
+        - meanLowerLowWaterSprings
+        - meanLowWater
+        - meanLowWaterNeaps
+        - meanLowWaterSprings
+        - meanSeaLevel
+        - meanTideLevel
+        - meanWaterLevel
+        - navd88
+        - neapTide
+        - nearlyHighestHighWater
+        - nearlyLowestLowWater
+        - ngvd29
+        - springTide
+        - waterLevel
+        - wgs84Egm08Geoid
+        - wgs84Egm96Geoid
+        - wgs84Ellipsoid

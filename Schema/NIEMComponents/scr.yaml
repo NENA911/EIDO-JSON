@@ -1,0 +1,3989 @@
+components:
+  schemas:
+    scrConveyanceIdentificationCategoryCodeType:
+      type: object
+      title: 'scr:ConveyanceIdentificationCategoryCodeType'
+      description: A data type for a kind of conveyance identification.
+      properties:
+        simpleType:
+          $ref: >-
+            scr.yaml#/components/schemas/scrConveyanceIdentificationCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrConveyanceIdentificationCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrConveyanceIdentificationCategoryCodeTypeContext.jsonld
+    scrConveyanceIdentificationCategoryCodeSimpleType:
+      type: string
+      description: A data type for a kind of conveyance identification.
+      enum:
+        - LPN
+        - MVRN
+        - VIN
+    scrPersonDesignatorCategoryCodeType:
+      type: object
+      title: 'scr:PersonDesignatorCategoryCodeType'
+      description: A data type for a kind of person designator.
+      properties:
+        simpleType:
+          $ref: >-
+            scr.yaml#/components/schemas/scrPersonDesignatorCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrPersonDesignatorCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrPersonDesignatorCategoryCodeTypeContext.jsonld
+    scrPersonDesignatorCategoryCodeSimpleType:
+      type: string
+      description: A data type for a kind of person designator.
+      enum:
+        - ALIEN
+        - AS
+        - BANK
+        - BIRTH
+        - BOP
+        - CAN
+        - CEDUL
+        - CG
+        - CREDC
+        - CTECS
+        - DCDC
+        - DCPD
+        - DEANA
+        - DRIVE
+        - EIN
+        - FBI
+        - FID
+        - FMID
+        - FPS
+        - FSS
+        - FTD
+        - I94
+        - INMCI
+        - INMCN
+        - INMFJ
+        - INMST
+        - LEN
+        - MD
+        - MHN
+        - NCIC
+        - NEC
+        - NIV
+        - NS
+        - O
+        - OA
+        - OAFN
+        - OBIOM
+        - PAFDP
+        - PAFOF
+        - PAFRG
+        - PAUDP
+        - PAUOF
+        - PAURG
+        - PI
+        - PS
+        - RN
+        - SELSV
+        - SEVIS
+        - SEVP
+        - SID
+        - STAID
+        - STAPL
+        - STATL
+        - STNDV
+        - USAFR
+        - USARR
+        - USMCR
+        - USMDC
+        - USMIL
+        - USSSN
+        - USVIS
+        - VA
+        - WN
+    scrIdentificationAugmentationType:
+      type: object
+      title: 'scr:IdentificationAugmentationType'
+      description: >-
+        A data type that supplements Identification and is used by Screening for
+        augmenting the Identification Type
+      properties:
+        identificationStatusAdvisory:
+          type: array
+          description: >-
+            A text that describes special or advisory information about a
+            particular Identification ID NIEM reference is
+            scr:IdentificationStatusAdvisoryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: scrIdentificationAugmentationType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrIdentificationAugmentationTypeContext.jsonld
+    scrDocumentCategoryCodeType:
+      type: object
+      title: 'scr:DocumentCategoryCodeType'
+      description: A data type for a kind of document.
+      properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrDocumentCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrDocumentCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrDocumentCategoryCodeTypeContext.jsonld
+    scrDocumentCategoryCodeSimpleType:
+      type: string
+      description: A data type for a kind of document.
+      enum:
+        - AAP
+        - ACL
+        - ADR
+        - ADT
+        - ARC
+        - ARR
+        - BAC
+        - Benefit Application
+        - Benefit Credential
+        - BIC
+        - BP
+        - CBB
+        - CBD
+        - CBF
+        - CC
+        - CDL
+        - CIC
+        - CID
+        - CLP
+        - CMM
+        - CON
+        - Deportation Document
+        - DL
+        - DSR
+        - EAC
+        - EAD
+        - EC
+        - EEV
+        - Financial Document
+        - FP
+        - GC
+        - HR
+        - IDC
+        - Interview Statement
+        - IV
+        - LV
+        - Manifest
+        - MC
+        - MSC
+        - NAT
+        - NIC
+        - 'NO'
+        - NSC
+        - NTD
+        - O
+        - OLN
+        - P
+        - PAS
+        - PR
+        - RCC
+        - REP
+        - RSC
+        - RTD
+        - S
+        - SCD
+        - SR
+        - SSC
+        - TN
+        - Travel Document
+        - Traveler Credential
+        - TRC
+        - TRN
+        - V
+        - VRD
+        - Warrant
+        - WR
+    scrAddressAugmentationType:
+      type: object
+      title: 'scr:AddressAugmentationType'
+      description: A data type for additional information about an address.
+      properties:
+        addressIdentification:
+          type: array
+          description: >-
+            An identification value for an ADDRESS. NIEM reference is
+            scr:AddressIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        addressClassification:
+          type: array
+          description: >-
+            A classification of an ADDRESS NIEM reference is
+            scr:AddressClassification
+          items:
+            $ref: scr.yaml#/components/schemas/scrAddressClassificationType
+        isINSLookout:
+          type: array
+          description: >-
+            True if the COUNTRY is on the DHS list as a potential threat to the
+            United States; false otherwise. NIEM reference is
+            scr:INSLookoutIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        countryNameID:
+          type: array
+          description: >-
+            An identifier for a COUNTRY NAME. NIEM reference is
+            scr:CountryNameID
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        countryNameBeginDate:
+          type: array
+          description: >-
+            A date on which the COUNTRY NAME came into existence NIEM reference
+            is scr:CountryNameBeginDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        countryNameEndDate:
+          type: array
+          description: >-
+            A date on which the COUNTRY NAME ended. NIEM reference is
+            scr:CountryNameEndDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        countrySubdivisionID:
+          type: array
+          description: >-
+            An identifier that represents a COUNTRY SUBDIVISION. NIEM reference
+            is scr:CountrySubdivisionID
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        countrySubdivisionNameID:
+          type: array
+          description: >-
+            An identifier that represents a COUNTRY SUBDIVISION NAME. NIEM
+            reference is scr:CountrySubdivisionNameID
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        countrySubdivisionNameBeginDate:
+          type: array
+          description: >-
+            A date on which the COUNTRY SUBDIVISION NAME came into existence.
+            NIEM reference is scr:CountrySubdivisionNameBeginDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        countrySubdivisionNameEndDate:
+          type: array
+          description: >-
+            A date on which the COUNTRY SUBDIVISION NAME ended. NIEM reference
+            is scr:CountrySubdivisionNameEndDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        countrySubdivisionName:
+          type: array
+          description: >-
+            A name of the COUNTRY SUBDIVISION. NIEM reference is
+            scr:CountrySubdivisionName
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        countrySubdivisionCategoryDescription:
+          type: array
+          description: >-
+            A description of the values used for a COUNTRY SUBDIVISION TYPE.
+            NIEM reference is scr:CountrySubdivisionCategoryDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        locationBlockGroup:
+          type: array
+          description: >-
+            A real estate subdivision of the GEOPHYSICAL ADDRESS. NIEM reference
+            is scr:LocationBlockGroupText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        locationCarrierRoute:
+          type: array
+          description: >-
+            A postal carrier route serving the GEOPHYSICAL ADDRESS. NIEM
+            reference is scr:LocationCarrierRouteText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        locationTract:
+          type: array
+          description: >-
+            A real estate tract of the GEOPHYSICAL ADDRESS. NIEM reference is
+            scr:LocationTractText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        locationBuildingUnitName:
+          type: array
+          description: >-
+            A name of the part (room) of the physical structure specified for a
+            GEOPHYSICAL ADDRESS. NIEM reference is scr:LocationBuildingUnitName
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        locationBuildingUnitNumber:
+          type: array
+          description: >-
+            A number of the part (room) of the physical structure specified for
+            a GEOPHYSICAL ADDRESS. NIEM reference is
+            scr:LocationBuildingUnitNumberText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        locationElement:
+          type: array
+          description: >-
+            A part or sub-division of a location. NIEM reference is
+            scr:LocationElement
+          items:
+            $ref: scr.yaml#/components/schemas/scrLocationElementType
+        countrySubdivisionCategoryCode:
+          type: array
+          description: >-
+            A COUNTRY SUBDIVISION TYPE. NIEM reference is
+            scr:CountrySubdivisionCategoryCode
+          items:
+            $ref: scr.yaml#/components/schemas/scrCountrySubdivisionCategoryCodeType
+        '@context':
+          type: string
+          description: scrAddressAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrAddressAugmentationTypeContext.jsonld
+    scrAddressClassificationType:
+      type: object
+      title: 'scr:AddressClassificationType'
+      description: A data type for classification of an ADDRESS
+      properties:
+        categoryDescription:
+          type: array
+          description: >-
+            A description of a kind of address. NIEM reference is
+            scr:AddressClassificationCategoryDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        categoryCode:
+          type: array
+          description: >-
+            A kind of address. NIEM reference is
+            scr:AddressClassificationCategoryCode
+          items:
+            $ref: scr.yaml#/components/schemas/scrAddressCategoryCodeType
+        '@context':
+          type: string
+          description: scrAddressClassificationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrAddressClassificationTypeContext.jsonld
+    scrAddressCategoryCodeType:
+      type: object
+      title: 'scr:AddressCategoryCodeType'
+      description: A data type describing the kinds of Address types
+      properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrAddressCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrAddressCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrAddressCategoryCodeTypeContext.jsonld
+    scrAddressCategoryCodeSimpleType:
+      type: string
+      description: A data type describing the kinds of Address types
+      enum:
+        - Electronic
+        - Geophysical
+        - Primary
+        - Secondary
+        - Temporary
+    scrLocationElementType:
+      type: object
+      title: 'scr:LocationElementType'
+      description: A data type for a part or sub-division of a location.
+      properties:
+        identification:
+          type: array
+          description: >-
+            An identification value that represents a LOCATION ELEMENT NIEM
+            reference is scr:LocationElementIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        classification:
+          type: array
+          description: >-
+            A classification of LOCATION ELEMENT. NIEM reference is
+            scr:LocationElementClassification
+          items:
+            $ref: scr.yaml#/components/schemas/scrLocationElementClassificationType
+        '@context':
+          type: string
+          description: scrLocationElementType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrLocationElementTypeContext.jsonld
+    scrLocationElementClassificationType:
+      type: object
+      title: 'scr:LocationElementClassificationType'
+      description: >-
+        A data type for classification of part or sub-division (ELEMENT) of a
+        location.
+      properties:
+        locationElementCategoryDescription:
+          type: array
+          description: >-
+            A description of a kind of location element. NIEM reference is
+            scr:LocationElementCategoryDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        locationElementCategoryCode:
+          type: array
+          description: >-
+            A kind of location element. NIEM reference is
+            scr:LocationElementCategoryCode
+          items:
+            $ref: scr.yaml#/components/schemas/scrLocationElementCategoryCodeType
+        '@context':
+          type: string
+          description: scrLocationElementClassificationType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrLocationElementClassificationTypeContext.jsonld
+    scrLocationElementCategoryCodeType:
+      type: object
+      title: 'scr:LocationElementCategoryCodeType'
+      description: A data type for a kind of location element.
+      properties:
+        simpleType:
+          $ref: >-
+            scr.yaml#/components/schemas/scrLocationElementCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrLocationElementCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrLocationElementCategoryCodeTypeContext.jsonld
+    scrLocationElementCategoryCodeSimpleType:
+      type: string
+      description: A data type for a kind of location element.
+      enum:
+        - Airport
+        - BPO
+        - DO
+        - Floor
+        - Headquarters
+        - IO
+        - Lane
+        - Port of Entry
+        - Room
+    scrCountrySubdivisionCategoryCodeType:
+      type: object
+      title: 'scr:CountrySubdivisionCategoryCodeType'
+      description: A data type for a COUNTRY SUBDIVISION TYPE.
+      properties:
+        simpleType:
+          $ref: >-
+            scr.yaml#/components/schemas/scrCountrySubdivisionCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrCountrySubdivisionCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrCountrySubdivisionCategoryCodeTypeContext.jsonld
+    scrCountrySubdivisionCategoryCodeSimpleType:
+      type: string
+      description: A data type for a COUNTRY SUBDIVISION TYPE.
+      enum:
+        - Department
+        - Province
+        - Region
+        - State
+        - Territory
+    scrLocationCategoryCodeType:
+      type: object
+      title: 'scr:LocationCategoryCodeType'
+      description: A data type for a code indicating the location type.
+      properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrLocationCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrLocationCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrLocationCategoryCodeTypeContext.jsonld
+    scrLocationCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code indicating the location type.
+      enum:
+        - A
+        - B
+        - C
+        - D
+        - E
+        - F
+        - G
+        - H
+        - I
+        - K
+        - M
+        - 'N'
+        - O
+        - R
+        - S
+        - T
+        - U
+        - V
+        - W
+        - X
+        - Z
+    scrTelephoneNumberAugmentationType:
+      type: object
+      title: 'scr:TelephoneNumberAugmentationType'
+      description: A data type for additional information about a telephone number.
+      properties:
+        telephoneIdentification:
+          type: array
+          description: >-
+            An identification value that represents a PHONE NIEM reference is
+            scr:TelephoneIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        isInternationalNumber:
+          type: array
+          description: >-
+            True if the number for the PHONE is an international number; false
+            otherwise. NIEM reference is scr:InternationalNumberIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        telephoneNumberEndDate:
+          type: array
+          description: >-
+            A date on which the PHONE is no longer in service. NIEM reference is
+            scr:TelephoneNumberEndDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        telephoneNumberEffectiveDate:
+          type: array
+          description: >-
+            A date on which the PHONE came into service. NIEM reference is
+            scr:TelephoneNumberEffectiveDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        '@context':
+          type: string
+          description: scrTelephoneNumberAugmentationType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrTelephoneNumberAugmentationTypeContext.jsonld
+    scrLocationAugmentationType:
+      type: object
+      title: 'scr:LocationAugmentationType'
+      description: >-
+        A data type that supplements Location and specifies additional
+        information about a Screening location.
+      properties:
+        borderCode:
+          type: array
+          description: >-
+            A text representing a code for a DHS Border location on the Northern
+            and Southern borders of the US. NIEM reference is scr:BorderCodeText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        locationCategoryClassificationCode:
+          type: array
+          description: >-
+            A classification of locations based on general similarities NIEM
+            reference is scr:LocationCategoryClassificationCode
+          items:
+            $ref: scr.yaml#/components/schemas/scrLocationCategoryCodeType
+        portOfEntryCode:
+          type: array
+          description: >-
+            A text representing a code for a DHS organization location where a
+            traveler or alien entered or departed the US. NIEM reference is
+            scr:PortOfEntryCodeText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: scrLocationAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrLocationAugmentationTypeContext.jsonld
+    scrDocumentStatusCategoryCodeType:
+      type: object
+      title: 'scr:DocumentStatusCategoryCodeType'
+      description: A data type for a kind of status of a document.
+      properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrDocumentStatusCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrDocumentStatusCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrDocumentStatusCategoryCodeTypeContext.jsonld
+    scrDocumentStatusCategoryCodeSimpleType:
+      type: string
+      description: A data type for a kind of status of a document.
+      enum:
+        - Closed
+        - Open
+        - Pending
+        - Refused
+    scrPersonNameAugmentationType:
+      type: object
+      title: 'scr:PersonNameAugmentationType'
+      description: >-
+        A data type that supplements PersonName and specifies the additional
+        name information used for Screening.
+      properties:
+        soundexIndexValue:
+          type: array
+          description: >-
+            A value of the Phonetic index value for the name NIEM reference is
+            scr:SoundexIndexValueText
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        personNameOrigin:
+          type: array
+          description: >-
+            A text that specifies the presumed linguistic origin of the name.
+            NIEM reference is scr:PersonNameOriginText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        effectiveDate:
+          type: array
+          description: >-
+            A date that information take effect. NIEM reference is
+            nc:EffectiveDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        designationCategoryCode:
+          type: array
+          description: 'A kind of designation. NIEM reference is scr:DesignationCategoryCode'
+          items:
+            $ref: >-
+              scr.yaml#/components/schemas/scrPersonNameDesignationCategoryCodeType
+        '@context':
+          type: string
+          description: scrPersonNameAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrPersonNameAugmentationTypeContext.jsonld
+    scrPersonNameDesignationCategoryCodeType:
+      type: object
+      title: 'scr:PersonNameDesignationCategoryCodeType'
+      description: >-
+        A data type describing the kinds of words or phrase that represents a
+        professional title of an individual.
+      properties:
+        simpleType:
+          $ref: >-
+            scr.yaml#/components/schemas/scrPersonNameDesignationCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrPersonNameDesignationCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrPersonNameDesignationCategoryCodeTypeContext.jsonld
+    scrPersonNameDesignationCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type describing the kinds of words or phrase that represents a
+        professional title of an individual.
+      enum:
+        - CPA
+        - J.D.
+        - M.D
+        - Ph.D.
+    scrPersonNameTextAugmentationType:
+      type: object
+      title: 'scr:PersonNameTextAugmentationType'
+      description: A data type for additional information about a name of a person.
+      properties:
+        nameTranslationRepresentationID:
+          type: string
+          description: >-
+            An identifier that represents a NAME TRANSLATION REPRESENTATION NIEM
+            reference is scr:nameTranslationRepresentationID
+        nameTranslationRepresentation:
+          type: string
+          description: >-
+            A translation representation of a name NIEM reference is
+            scr:nameTranslationRepresentationText
+        nameTranslationShortName:
+          type: string
+          description: >-
+            A short name that describes the translation. NIEM reference is
+            scr:nameTranslationShortName
+        nameTranslationCategoryCode:
+          type: string
+          description: >-
+            A kind of name translation. NIEM reference is
+            scr:nameTranslationCategoryCode
+        nameTranslationCategoryDescription:
+          type: string
+          description: >-
+            A description of the values used for Name translation. NIEM
+            reference is scr:nameTranslationCategoryDescriptionText
+        '@context':
+          type: string
+          description: scrPersonNameTextAugmentationType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrPersonNameTextAugmentationTypeContext.jsonld
+    scrOrganizationAugmentationType:
+      type: object
+      title: 'scr:OrganizationAugmentationType'
+      description: A data type for additional information about an organization.
+      properties:
+        isCriminalAffiliation:
+          type: array
+          description: >-
+            True if an ORGANIZATION is suspected of illegal activities; false
+            otherwise. NIEM reference is scr:CriminalAffiliationIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isFraudulent:
+          type: array
+          description: >-
+            True if the ORGANIZATION is determined to be fraudulent; false
+            otherwise. NIEM reference is scr:FraudulentIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        grossAnnualIncomeAmount:
+          type: array
+          description: >-
+            An amount of money (dollars) earned by the ORGANIZATION each year.
+            NIEM reference is scr:GrossAnnualIncomeAmount
+          items:
+            $ref: nc.yaml#/components/schemas/ncAmountType
+        organizationSizeQuantity:
+          type: array
+          description: >-
+            A number of people belonging to the ORGANIZATION. NIEM reference is
+            scr:OrganizationSizeQuantity
+          items:
+            $ref: nc.yaml#/components/schemas/ncQuantityType
+        isSuspicious:
+          type: array
+          description: >-
+            True if the ORGANIZATION is determined to be questionable or under
+            suspicion; false otherwise. NIEM reference is
+            scr:SuspiciousIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        organizationNameEffectiveDate:
+          type: array
+          description: >-
+            A date the ORGANIZATION NAME became  effective. NIEM reference is
+            scr:OrganizationNameEffectiveDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        organizationNameIdentification:
+          type: array
+          description: >-
+            An identification value of the name of the ORGANIZATION. NIEM
+            reference is scr:OrganizationNameIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        organizationNameTerminationDate:
+          type: array
+          description: >-
+            A date the ORGANIZATION NAME became invalid. NIEM reference is
+            scr:OrganizationNameTerminationDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        organizationStatusClassificationCategoryCode:
+          type: array
+          description: >-
+            A kind of organization status. NIEM reference is
+            scr:OrganizationStatusClassificationCategoryCode
+          items:
+            $ref: scr.yaml#/components/schemas/scrOrganizationStatusCategoryCodeType
+        organizationClassificationCategoryCode:
+          type: array
+          description: >-
+            A kind of organization. NIEM reference is
+            scr:OrganizationClassificationCategoryCode
+          items:
+            $ref: scr.yaml#/components/schemas/scrOrganizationCategoryCodeType
+        '@context':
+          type: string
+          description: scrOrganizationAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrOrganizationAugmentationTypeContext.jsonld
+    scrOrganizationStatusCategoryCodeType:
+      type: object
+      title: 'scr:OrganizationStatusCategoryCodeType'
+      description: >-
+        A data type describing the kinds of status values associated with an
+        organization
+      properties:
+        simpleType:
+          $ref: >-
+            scr.yaml#/components/schemas/scrOrganizationStatusCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrOrganizationStatusCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrOrganizationStatusCategoryCodeTypeContext.jsonld
+    scrOrganizationStatusCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type describing the kinds of status values associated with an
+        organization
+      enum:
+        - Bankruptcy
+        - Foreclosure
+        - IPO
+        - Suspended
+    scrOrganizationCategoryCodeType:
+      type: object
+      title: 'scr:OrganizationCategoryCodeType'
+      description: >-
+        A data type describing the kinds of organizations involved in screening
+        activities
+      properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrOrganizationCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrOrganizationCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrOrganizationCategoryCodeTypeContext.jsonld
+    scrOrganizationCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type describing the kinds of organizations involved in screening
+        activities
+      enum:
+        - Business
+        - Community Group
+        - Federal Agency
+        - Gang
+        - Local Agency
+        - Political Group
+        - Religious Group
+        - School
+        - State Agency
+        - Surety Company
+    scrPersonEmploymentAssociationAugmentationType:
+      type: object
+      title: 'scr:PersonEmploymentAssociationAugmentationType'
+      description: >-
+        A data type for additional information about a person employment
+        association.
+      properties:
+        person:
+          type: array
+          description: 'A human being. NIEM reference is nc:Person'
+          items:
+            $ref: nc.yaml#/components/schemas/ncPersonType
+        organization:
+          type: array
+          description: >-
+            A unit which conducts some sort of business or operations. NIEM
+            reference is nc:Organization
+          items:
+            $ref: nc.yaml#/components/schemas/ncOrganizationType
+        payRateAmount:
+          type: array
+          description: >-
+            An amount of remuneration resulting from PERSON EMPLOYMENT. NIEM
+            reference is scr:PayRateAmount
+          items:
+            $ref: nc.yaml#/components/schemas/ncAmountType
+        beginSalaryAmount:
+          type: array
+          description: >-
+            A remuneration amount for Person's starting salary. NIEM reference
+            is scr:BeginSalaryAmount
+          items:
+            $ref: nc.yaml#/components/schemas/ncAmountType
+        endSalaryAmount:
+          type: array
+          description: >-
+            A date when the remuneration for PERSON EMPLOYMENT ended. NIEM
+            reference is scr:EndSalaryAmount
+          items:
+            $ref: nc.yaml#/components/schemas/ncAmountType
+        employeeStarNumberID:
+          type: array
+          description: >-
+            An identifier for a number representing the call number of an
+            EMPLOYEE. NIEM reference is scr:EmployeeStarNumberID
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        employeeBadgeNumberID:
+          type: array
+          description: >-
+            An identifier number for the the badge of the EMPLOYEE NIEM
+            reference is scr:EmployeeBadgeNumberID
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        employeeCallNumberID:
+          type: array
+          description: >-
+            An identifier for the call number of the EMPLOYEE NIEM reference is
+            scr:EmployeeCallNumberID
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        '@context':
+          type: string
+          description: scrPersonEmploymentAssociationAugmentationType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrPersonEmploymentAssociationAugmentationTypeContext.jsonld
+    scrChargeAugmentationType:
+      type: object
+      title: 'scr:ChargeAugmentationType'
+      description: A data type for additional information about a charge.
+      properties:
+        apprehensionChargeIdentification:
+          type: array
+          description: >-
+            An identification that represents an Apprehension Charge. NIEM
+            reference is scr:ApprehensionChargeIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        isForeignAuthorityNotified:
+          type: array
+          description: >-
+            True if the foreign authorities have been notified about this
+            CHARGE; false otherwise. NIEM reference is
+            scr:ForeignAuthorityNotifiedIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        chargeCategoryClassificationCode:
+          type: array
+          description: >-
+            A kind of charge. NIEM reference is
+            scr:ChargeCategoryClassificationCode
+          items:
+            $ref: scr.yaml#/components/schemas/scrChargeCategoryCodeType
+        chargeSection:
+          type: array
+          description: >-
+            A text that describes the section of law applicable to the CHARGE
+            TYPE. NIEM reference is scr:ChargeSectionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: scrChargeAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrChargeAugmentationTypeContext.jsonld
+    scrChargeCategoryCodeType:
+      type: object
+      title: 'scr:ChargeCategoryCodeType'
+      description: A data type describing the kinds of apprehension charges
+      properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrChargeCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrChargeCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrChargeCategoryCodeTypeContext.jsonld
+    scrChargeCategoryCodeSimpleType:
+      type: string
+      description: A data type describing the kinds of apprehension charges
+      enum:
+        - '1'
+        - '10'
+        - '100'
+        - '1000'
+        - '1001'
+        - '1002'
+        - '1003'
+        - '1004'
+        - '1005'
+        - '1006'
+        - '1007'
+        - '1008'
+        - '1009'
+        - '101'
+        - '1010'
+        - '1011'
+        - '1012'
+        - '1013'
+        - '1014'
+        - '1015'
+        - '1016'
+        - '1017'
+        - '102'
+        - '103'
+        - '104'
+        - '105'
+        - '1058'
+        - '1059'
+        - '106'
+        - '1060'
+        - '1061'
+        - '1062'
+        - '1063'
+        - '1064'
+        - '1065'
+        - '1066'
+        - '1067'
+        - '1068'
+        - '1069'
+        - '107'
+        - '1070'
+        - '1071'
+        - '1072'
+        - '1073'
+        - '1074'
+        - '1075'
+        - '1076'
+        - '1077'
+        - '1078'
+        - '1079'
+        - '108'
+        - '1080'
+        - '1081'
+        - '1082'
+        - '1083'
+        - '1084'
+        - '1085'
+        - '1086'
+        - '1087'
+        - '1088'
+        - '1089'
+        - '109'
+        - '1090'
+        - '1091'
+        - '1092'
+        - '1093'
+        - '1094'
+        - '1095'
+        - '1096'
+        - '1097'
+        - '1098'
+        - '1099'
+        - '11'
+        - '110'
+        - '1100'
+        - '1101'
+        - '1102'
+        - '1103'
+        - '1104'
+        - '1105'
+        - '1106'
+        - '1107'
+        - '1108'
+        - '1109'
+        - '111'
+        - '1110'
+        - '1111'
+        - '1112'
+        - '1113'
+        - '1114'
+        - '1115'
+        - '1116'
+        - '1117'
+        - '1118'
+        - '1119'
+        - '112'
+        - '1120'
+        - '1121'
+        - '1122'
+        - '1123'
+        - '1124'
+        - '1125'
+        - '1126'
+        - '1127'
+        - '1128'
+        - '1129'
+        - '113'
+        - '1130'
+        - '1131'
+        - '1132'
+        - '1133'
+        - '1134'
+        - '1135'
+        - '1136'
+        - '1137'
+        - '1138'
+        - '1139'
+        - '114'
+        - '1140'
+        - '1141'
+        - '1142'
+        - '1143'
+        - '1144'
+        - '1145'
+        - '1146'
+        - '1147'
+        - '1148'
+        - '1149'
+        - '115'
+        - '1150'
+        - '1151'
+        - '1152'
+        - '1153'
+        - '1154'
+        - '1155'
+        - '1156'
+        - '1157'
+        - '1158'
+        - '1159'
+        - '116'
+        - '1160'
+        - '1161'
+        - '1162'
+        - '1163'
+        - '1164'
+        - '1165'
+        - '1166'
+        - '1167'
+        - '1168'
+        - '1169'
+        - '117'
+        - '1170'
+        - '1171'
+        - '1172'
+        - '1173'
+        - '1174'
+        - '1175'
+        - '1176'
+        - '1177'
+        - '1178'
+        - '1179'
+        - '118'
+        - '1180'
+        - '1181'
+        - '1182'
+        - '1183'
+        - '1184'
+        - '1185'
+        - '1186'
+        - '1187'
+        - '1188'
+        - '1189'
+        - '119'
+        - '1190'
+        - '1191'
+        - '1192'
+        - '1193'
+        - '1194'
+        - '1195'
+        - '1196'
+        - '1197'
+        - '1198'
+        - '1199'
+        - '12'
+        - '120'
+        - '1200'
+        - '1201'
+        - '1202'
+        - '1203'
+        - '1204'
+        - '1205'
+        - '1206'
+        - '1207'
+        - '1208'
+        - '1209'
+        - '121'
+        - '1210'
+        - '1211'
+        - '1212'
+        - '1213'
+        - '1214'
+        - '1215'
+        - '1216'
+        - '1217'
+        - '1218'
+        - '1219'
+        - '122'
+        - '1220'
+        - '1221'
+        - '1222'
+        - '1223'
+        - '1224'
+        - '1225'
+        - '1226'
+        - '1227'
+        - '1228'
+        - '1229'
+        - '123'
+        - '1230'
+        - '1231'
+        - '1232'
+        - '1233'
+        - '1234'
+        - '1235'
+        - '1236'
+        - '1237'
+        - '1238'
+        - '1239'
+        - '124'
+        - '1240'
+        - '1241'
+        - '1242'
+        - '1243'
+        - '1244'
+        - '1245'
+        - '1246'
+        - '1247'
+        - '1248'
+        - '1249'
+        - '125'
+        - '1250'
+        - '1251'
+        - '1252'
+        - '1253'
+        - '1254'
+        - '1255'
+        - '1256'
+        - '1257'
+        - '1258'
+        - '1259'
+        - '126'
+        - '1260'
+        - '1261'
+        - '1262'
+        - '1263'
+        - '1264'
+        - '1265'
+        - '1266'
+        - '1267'
+        - '1268'
+        - '1269'
+        - '127'
+        - '1270'
+        - '1271'
+        - '1272'
+        - '1273'
+        - '1274'
+        - '1275'
+        - '1276'
+        - '1277'
+        - '1278'
+        - '1279'
+        - '128'
+        - '1280'
+        - '1281'
+        - '1282'
+        - '1283'
+        - '1284'
+        - '1285'
+        - '1286'
+        - '1287'
+        - '1288'
+        - '1289'
+        - '129'
+        - '1290'
+        - '1291'
+        - '1292'
+        - '1293'
+        - '1294'
+        - '1295'
+        - '1296'
+        - '1297'
+        - '1298'
+        - '1299'
+        - '13'
+        - '130'
+        - '1300'
+        - '1301'
+        - '1302'
+        - '1303'
+        - '1304'
+        - '1305'
+        - '1306'
+        - '1307'
+        - '1308'
+        - '1309'
+        - '131'
+        - '1310'
+        - '1311'
+        - '1312'
+        - '1313'
+        - '1314'
+        - '1315'
+        - '1316'
+        - '1317'
+        - '1318'
+        - '1319'
+        - '132'
+        - '1320'
+        - '1321'
+        - '1322'
+        - '1323'
+        - '1324'
+        - '1325'
+        - '1326'
+        - '1327'
+        - '1328'
+        - '1329'
+        - '133'
+        - '1330'
+        - '1331'
+        - '1332'
+        - '1333'
+        - '1334'
+        - '1335'
+        - '1336'
+        - '1337'
+        - '1338'
+        - '1339'
+        - '134'
+        - '1340'
+        - '1341'
+        - '1342'
+        - '1343'
+        - '1344'
+        - '1345'
+        - '1346'
+        - '1347'
+        - '1348'
+        - '1349'
+        - '135'
+        - '1350'
+        - '1351'
+        - '1352'
+        - '1353'
+        - '1354'
+        - '1355'
+        - '1356'
+        - '1357'
+        - '1358'
+        - '136'
+        - '1360'
+        - '1361'
+        - '1362'
+        - '1363'
+        - '1364'
+        - '1365'
+        - '1366'
+        - '1367'
+        - '1368'
+        - '1369'
+        - '137'
+        - '1370'
+        - '1371'
+        - '1372'
+        - '1373'
+        - '1375'
+        - '1376'
+        - '1377'
+        - '1378'
+        - '1379'
+        - '138'
+        - '1380'
+        - '1381'
+        - '1382'
+        - '1383'
+        - '1384'
+        - '1385'
+        - '1386'
+        - '1387'
+        - '1388'
+        - '1389'
+        - '139'
+        - '1390'
+        - '1391'
+        - '1392'
+        - '1393'
+        - '1394'
+        - '1395'
+        - '1396'
+        - '1397'
+        - '1399'
+        - '14'
+        - '140'
+        - '1400'
+        - '1402'
+        - '1404'
+        - '1405'
+        - '1407'
+        - '1408'
+        - '1409'
+        - '141'
+        - '1410'
+        - '1411'
+        - '1412'
+        - '1413'
+        - '1414'
+        - '1415'
+        - '1416'
+        - '1417'
+        - '1418'
+        - '1419'
+        - '142'
+        - '1420'
+        - '1421'
+        - '1422'
+        - '1423'
+        - '1424'
+        - '1425'
+        - '1426'
+        - '1427'
+        - '1428'
+        - '1429'
+        - '143'
+        - '1430'
+        - '1431'
+        - '1432'
+        - '1433'
+        - '1434'
+        - '1435'
+        - '1436'
+        - '1437'
+        - '1439'
+        - '144'
+        - '1440'
+        - '1441'
+        - '1442'
+        - '1443'
+        - '1444'
+        - '1446'
+        - '1447'
+        - '1448'
+        - '145'
+        - '1450'
+        - '1451'
+        - '1452'
+        - '1453'
+        - '1454'
+        - '1455'
+        - '1456'
+        - '1457'
+        - '1458'
+        - '1459'
+        - '146'
+        - '1460'
+        - '1461'
+        - '1462'
+        - '1463'
+        - '1464'
+        - '1465'
+        - '1466'
+        - '1467'
+        - '1468'
+        - '1469'
+        - '147'
+        - '1470'
+        - '1471'
+        - '1472'
+        - '1473'
+        - '1474'
+        - '1476'
+        - '1477'
+        - '1478'
+        - '1479'
+        - '148'
+        - '1480'
+        - '1481'
+        - '1482'
+        - '1483'
+        - '1484'
+        - '1485'
+        - '1486'
+        - '1487'
+        - '1488'
+        - '1489'
+        - '149'
+        - '1490'
+        - '1491'
+        - '1492'
+        - '1493'
+        - '1494'
+        - '1495'
+        - '1496'
+        - '1497'
+        - '1498'
+        - '1499'
+        - '15'
+        - '150'
+        - '1500'
+        - '1501'
+        - '1502'
+        - '1503'
+        - '1504'
+        - '1505'
+        - '1506'
+        - '1507'
+        - '1508'
+        - '1509'
+        - '151'
+        - '1510'
+        - '1511'
+        - '1512'
+        - '1513'
+        - '1514'
+        - '1515'
+        - '1516'
+        - '1517'
+        - '1518'
+        - '1519'
+        - '152'
+        - '1520'
+        - '1521'
+        - '1522'
+        - '1523'
+        - '1524'
+        - '1525'
+        - '1526'
+        - '1527'
+        - '1528'
+        - '1529'
+        - '153'
+        - '1530'
+        - '1531'
+        - '1532'
+        - '1533'
+        - '1534'
+        - '1535'
+        - '1536'
+        - '1537'
+        - '1539'
+        - '154'
+        - '1541'
+        - '1542'
+        - '1543'
+        - '1544'
+        - '1545'
+        - '1546'
+        - '1547'
+        - '1548'
+        - '1549'
+        - '155'
+        - '1550'
+        - '1551'
+        - '1552'
+        - '1553'
+        - '1554'
+        - '1555'
+        - '1556'
+        - '1557'
+        - '1558'
+        - '1559'
+        - '156'
+        - '1560'
+        - '1561'
+        - '1562'
+        - '1563'
+        - '1564'
+        - '1565'
+        - '1566'
+        - '1567'
+        - '1568'
+        - '1569'
+        - '157'
+        - '1570'
+        - '1571'
+        - '1572'
+        - '1573'
+        - '1574'
+        - '1575'
+        - '1576'
+        - '1577'
+        - '1578'
+        - '1579'
+        - '158'
+        - '1580'
+        - '1581'
+        - '1582'
+        - '1583'
+        - '1584'
+        - '1585'
+        - '1586'
+        - '1587'
+        - '1588'
+        - '1589'
+        - '159'
+        - '1590'
+        - '1591'
+        - '1592'
+        - '1593'
+        - '1594'
+        - '1595'
+        - '1596'
+        - '1597'
+        - '1598'
+        - '1599'
+        - '16'
+        - '160'
+        - '1601'
+        - '1602'
+        - '1603'
+        - '1604'
+        - '1605'
+        - '1606'
+        - '1607'
+        - '1608'
+        - '1609'
+        - '1610'
+        - '1611'
+        - '1612'
+        - '1613'
+        - '1614'
+        - '1615'
+        - '1617'
+        - '1618'
+        - '1620'
+        - '1621'
+        - '1622'
+        - '1623'
+        - '1624'
+        - '1625'
+        - '1626'
+        - '1627'
+        - '1628'
+        - '1629'
+        - '1630'
+        - '1631'
+        - '1632'
+        - '1633'
+        - '1634'
+        - '1635'
+        - '1636'
+        - '1637'
+        - '1638'
+        - '1639'
+        - '1640'
+        - '1641'
+        - '1642'
+        - '1643'
+        - '1644'
+        - '1645'
+        - '1646'
+        - '1647'
+        - '1648'
+        - '1649'
+        - '1650'
+        - '1651'
+        - '1652'
+        - '1653'
+        - '1654'
+        - '1655'
+        - '1656'
+        - '1657'
+        - '1658'
+        - '1659'
+        - '1660'
+        - '1661'
+        - '1662'
+        - '1663'
+        - '1664'
+        - '1665'
+        - '1666'
+        - '1667'
+        - '1668'
+        - '1669'
+        - '1670'
+        - '1671'
+        - '1672'
+        - '1673'
+        - '1674'
+        - '1675'
+        - '1676'
+        - '1677'
+        - '1678'
+        - '1679'
+        - '1680'
+        - '1681'
+        - '1682'
+        - '1683'
+        - '1684'
+        - '1685'
+        - '1686'
+        - '1687'
+        - '1688'
+        - '1689'
+        - '1690'
+        - '1691'
+        - '1692'
+        - '1693'
+        - '1694'
+        - '1695'
+        - '1696'
+        - '1697'
+        - '1698'
+        - '1699'
+        - '17'
+        - '1700'
+        - '1701'
+        - '1702'
+        - '1703'
+        - '1704'
+        - '1705'
+        - '1706'
+        - '1707'
+        - '1708'
+        - '1709'
+        - '1711'
+        - '1712'
+        - '1713'
+        - '1714'
+        - '1715'
+        - '1716'
+        - '1717'
+        - '1718'
+        - '1719'
+        - '1720'
+        - '1721'
+        - '1722'
+        - '1723'
+        - '1724'
+        - '1725'
+        - '1726'
+        - '1727'
+        - '1728'
+        - '1729'
+        - '1730'
+        - '1731'
+        - '1732'
+        - '1733'
+        - '1734'
+        - '1735'
+        - '1736'
+        - '1737'
+        - '1738'
+        - '1739'
+        - '1740'
+        - '1741'
+        - '1742'
+        - '1743'
+        - '1744'
+        - '1745'
+        - '1746'
+        - '1747'
+        - '1748'
+        - '1749'
+        - '1750'
+        - '1751'
+        - '1752'
+        - '1753'
+        - '1754'
+        - '1756'
+        - '1758'
+        - '1759'
+        - '1760'
+        - '1761'
+        - '1762'
+        - '1763'
+        - '1764'
+        - '1765'
+        - '1766'
+        - '1767'
+        - '1768'
+        - '1770'
+        - '1771'
+        - '1772'
+        - '1773'
+        - '1774'
+        - '1775'
+        - '1776'
+        - '1777'
+        - '1778'
+        - '1779'
+        - '1780'
+        - '1781'
+        - '1782'
+        - '1783'
+        - '1784'
+        - '1785'
+        - '1786'
+        - '1787'
+        - '1788'
+        - '1789'
+        - '1790'
+        - '1791'
+        - '1792'
+        - '1793'
+        - '1794'
+        - '1795'
+        - '1796'
+        - '1797'
+        - '1798'
+        - '1799'
+        - '18'
+        - '1800'
+        - '1801'
+        - '1802'
+        - '1803'
+        - '1804'
+        - '1805'
+        - '1806'
+        - '1807'
+        - '1808'
+        - '1809'
+        - '1810'
+        - '1811'
+        - '1812'
+        - '1813'
+        - '1814'
+        - '1815'
+        - '1816'
+        - '1817'
+        - '1818'
+        - '1819'
+        - '1820'
+        - '1821'
+        - '1822'
+        - '1823'
+        - '1824'
+        - '1825'
+        - '1826'
+        - '1827'
+        - '1828'
+        - '1829'
+        - '1830'
+        - '1831'
+        - '1832'
+        - '1833'
+        - '1834'
+        - '1835'
+        - '1836'
+        - '1837'
+        - '1838'
+        - '1839'
+        - '1840'
+        - '1841'
+        - '1842'
+        - '1843'
+        - '1844'
+        - '1845'
+        - '1846'
+        - '1847'
+        - '1848'
+        - '1849'
+        - '1850'
+        - '1851'
+        - '1852'
+        - '1853'
+        - '1854'
+        - '1855'
+        - '1856'
+        - '1857'
+        - '1858'
+        - '1859'
+        - '1860'
+        - '1861'
+        - '1862'
+        - '1863'
+        - '1864'
+        - '1865'
+        - '1866'
+        - '1867'
+        - '1868'
+        - '1869'
+        - '1870'
+        - '1871'
+        - '1872'
+        - '1873'
+        - '1874'
+        - '1875'
+        - '1876'
+        - '1877'
+        - '1878'
+        - '1879'
+        - '1880'
+        - '1881'
+        - '1882'
+        - '1883'
+        - '1884'
+        - '1885'
+        - '1886'
+        - '1887'
+        - '1888'
+        - '1889'
+        - '1890'
+        - '1891'
+        - '1892'
+        - '1893'
+        - '1894'
+        - '1895'
+        - '1896'
+        - '1898'
+        - '1899'
+        - '1900'
+        - '1901'
+        - '1902'
+        - '1903'
+        - '1904'
+        - '1905'
+        - '1906'
+        - '1907'
+        - '1908'
+        - '1909'
+        - '1910'
+        - '1911'
+        - '1912'
+        - '1913'
+        - '1914'
+        - '1915'
+        - '1916'
+        - '1917'
+        - '1918'
+        - '1919'
+        - '1920'
+        - '1921'
+        - '1922'
+        - '1923'
+        - '1924'
+        - '1925'
+        - '1926'
+        - '1927'
+        - '1928'
+        - '1929'
+        - '1930'
+        - '1931'
+        - '1932'
+        - '1933'
+        - '1934'
+        - '1935'
+        - '1936'
+        - '1937'
+        - '1938'
+        - '1939'
+        - '1940'
+        - '1941'
+        - '1942'
+        - '1943'
+        - '1944'
+        - '1945'
+        - '1946'
+        - '1947'
+        - '1948'
+        - '1949'
+        - '1950'
+        - '1951'
+        - '1952'
+        - '1953'
+        - '1954'
+        - '1955'
+        - '1956'
+        - '1957'
+        - '1958'
+        - '1959'
+        - '1960'
+        - '1961'
+        - '1962'
+        - '1963'
+        - '1964'
+        - '1965'
+        - '1966'
+        - '1967'
+        - '1968'
+        - '1969'
+        - '1970'
+        - '1971'
+        - '1972'
+        - '1973'
+        - '1974'
+        - '1975'
+        - '1976'
+        - '1977'
+        - '1978'
+        - '1979'
+        - '1980'
+        - '1981'
+        - '1982'
+        - '1983'
+        - '1984'
+        - '1985'
+        - '1986'
+        - '1987'
+        - '1988'
+        - '1989'
+        - '1990'
+        - '1991'
+        - '1992'
+        - '1993'
+        - '1994'
+        - '1995'
+        - '1996'
+        - '1997'
+        - '1998'
+        - '1999'
+        - '2'
+        - '20'
+        - '200'
+        - '2000'
+        - '2001'
+        - '2002'
+        - '2003'
+        - '2004'
+        - '2005'
+        - '2006'
+        - '2007'
+        - '2008'
+        - '2009'
+        - '201'
+        - '2010'
+        - '2011'
+        - '2012'
+        - '2013'
+        - '2014'
+        - '2015'
+        - '2016'
+        - '2017'
+        - '2018'
+        - '2019'
+        - '202'
+        - '2020'
+        - '2021'
+        - '2022'
+        - '2023'
+        - '2024'
+        - '2025'
+        - '2026'
+        - '2027'
+        - '2028'
+        - '2029'
+        - '203'
+        - '2030'
+        - '2031'
+        - '2032'
+        - '2033'
+        - '2034'
+        - '2035'
+        - '2036'
+        - '2037'
+        - '2038'
+        - '2039'
+        - '204'
+        - '2040'
+        - '2041'
+        - '2042'
+        - '2043'
+        - '2044'
+        - '2045'
+        - '2046'
+        - '2047'
+        - '2048'
+        - '2049'
+        - '205'
+        - '2050'
+        - '2051'
+        - '2052'
+        - '2054'
+        - '2055'
+        - '2056'
+        - '2057'
+        - '2058'
+        - '2059'
+        - '206'
+        - '2060'
+        - '2061'
+        - '2062'
+        - '2063'
+        - '2064'
+        - '2065'
+        - '2066'
+        - '2067'
+        - '2068'
+        - '2069'
+        - '207'
+        - '2070'
+        - '2071'
+        - '2072'
+        - '2073'
+        - '2074'
+        - '2075'
+        - '2076'
+        - '2077'
+        - '2078'
+        - '2079'
+        - '208'
+        - '2080'
+        - '2081'
+        - '2082'
+        - '2083'
+        - '2084'
+        - '2085'
+        - '2086'
+        - '2087'
+        - '2088'
+        - '2089'
+        - '209'
+        - '2090'
+        - '2091'
+        - '2092'
+        - '2093'
+        - '2094'
+        - '2095'
+        - '2096'
+        - '2097'
+        - '2098'
+        - '2099'
+        - '21'
+        - '210'
+        - '2100'
+        - '2101'
+        - '2102'
+        - '2103'
+        - '2104'
+        - '2105'
+        - '2106'
+        - '2107'
+        - '2108'
+        - '2109'
+        - '211'
+        - '2110'
+        - '2111'
+        - '2112'
+        - '2113'
+        - '2114'
+        - '2115'
+        - '2116'
+        - '2117'
+        - '2118'
+        - '2119'
+        - '212'
+        - '2120'
+        - '2121'
+        - '2122'
+        - '2123'
+        - '2124'
+        - '2125'
+        - '2126'
+        - '2127'
+        - '2128'
+        - '2129'
+        - '213'
+        - '2130'
+        - '2131'
+        - '2132'
+        - '2133'
+        - '2134'
+        - '2135'
+        - '2136'
+        - '2137'
+        - '2138'
+        - '2139'
+        - '214'
+        - '2140'
+        - '2141'
+        - '2142'
+        - '2143'
+        - '2144'
+        - '2145'
+        - '2146'
+        - '2147'
+        - '2148'
+        - '2149'
+        - '215'
+        - '2150'
+        - '2151'
+        - '2152'
+        - '2153'
+        - '2154'
+        - '2155'
+        - '2156'
+        - '2157'
+        - '2158'
+        - '2159'
+        - '216'
+        - '2160'
+        - '2161'
+        - '2162'
+        - '2163'
+        - '2164'
+        - '2165'
+        - '2166'
+        - '2167'
+        - '2168'
+        - '2169'
+        - '217'
+        - '2170'
+        - '2171'
+        - '2172'
+        - '2173'
+        - '2174'
+        - '2175'
+        - '2176'
+        - '2177'
+        - '2178'
+        - '2179'
+        - '218'
+        - '2180'
+        - '2181'
+        - '2182'
+        - '2183'
+        - '2184'
+        - '2185'
+        - '2186'
+        - '2187'
+        - '2188'
+        - '2189'
+        - '219'
+        - '2190'
+        - '2191'
+        - '2192'
+        - '2193'
+        - '2194'
+        - '2195'
+        - '2196'
+        - '2197'
+        - '2198'
+        - '2199'
+        - '22'
+        - '220'
+        - '2200'
+        - '2201'
+        - '2202'
+        - '2203'
+        - '2204'
+        - '2205'
+        - '2206'
+        - '2207'
+        - '2208'
+        - '2209'
+        - '221'
+        - '2210'
+        - '2211'
+        - '2212'
+        - '2213'
+        - '2214'
+        - '2215'
+        - '2216'
+        - '2217'
+        - '2218'
+        - '2219'
+        - '222'
+        - '2220'
+        - '2221'
+        - '2222'
+        - '2223'
+        - '2224'
+        - '2225'
+        - '2226'
+        - '2227'
+        - '2228'
+        - '2229'
+        - '223'
+        - '2230'
+        - '2231'
+        - '2232'
+        - '2233'
+        - '2234'
+        - '2235'
+        - '2236'
+        - '2237'
+        - '2238'
+        - '2239'
+        - '224'
+        - '2240'
+        - '2241'
+        - '2242'
+        - '2243'
+        - '2244'
+        - '2245'
+        - '2246'
+        - '2247'
+        - '2248'
+        - '2249'
+        - '225'
+        - '2250'
+        - '2251'
+        - '2252'
+        - '2253'
+        - '2254'
+        - '2255'
+        - '2256'
+        - '2257'
+        - '2258'
+        - '2259'
+        - '226'
+        - '2260'
+        - '2261'
+        - '2262'
+        - '2263'
+        - '2264'
+        - '2265'
+        - '2266'
+        - '2267'
+        - '2268'
+        - '2269'
+        - '227'
+        - '2270'
+        - '2271'
+        - '2272'
+        - '2273'
+        - '2274'
+        - '2275'
+        - '2276'
+        - '2277'
+        - '2278'
+        - '2279'
+        - '228'
+        - '2280'
+        - '2281'
+        - '2282'
+        - '2283'
+        - '2284'
+        - '2285'
+        - '2286'
+        - '2287'
+        - '2288'
+        - '2289'
+        - '229'
+        - '2290'
+        - '2291'
+        - '2292'
+        - '2293'
+        - '2294'
+        - '2295'
+        - '2296'
+        - '2297'
+        - '2298'
+        - '2299'
+        - '23'
+        - '230'
+        - '2300'
+        - '2301'
+        - '2302'
+        - '2303'
+        - '2304'
+        - '2305'
+        - '2306'
+        - '2307'
+        - '2308'
+        - '2309'
+        - '231'
+        - '2310'
+        - '2311'
+        - '2312'
+        - '2313'
+        - '2314'
+        - '2315'
+        - '2316'
+        - '2317'
+        - '2318'
+        - '2319'
+        - '232'
+        - '2320'
+        - '2321'
+        - '2322'
+        - '2323'
+        - '2324'
+        - '2325'
+        - '2326'
+        - '2327'
+        - '2328'
+        - '2329'
+        - '233'
+        - '2330'
+        - '2331'
+        - '2332'
+        - '2333'
+        - '2334'
+        - '2335'
+        - '2336'
+        - '2337'
+        - '2338'
+        - '2339'
+        - '234'
+        - '2340'
+        - '2341'
+        - '2342'
+        - '2343'
+        - '2344'
+        - '2345'
+        - '2346'
+        - '2347'
+        - '2348'
+        - '2349'
+        - '235'
+        - '2350'
+        - '2351'
+        - '2352'
+        - '2353'
+        - '2354'
+        - '2355'
+        - '2356'
+        - '2357'
+        - '2358'
+        - '2359'
+        - '236'
+        - '2360'
+        - '2361'
+        - '2362'
+        - '2363'
+        - '2364'
+        - '2365'
+        - '2366'
+        - '2367'
+        - '2368'
+        - '2369'
+        - '237'
+        - '2370'
+        - '2371'
+        - '2372'
+        - '2373'
+        - '2374'
+        - '2375'
+        - '2376'
+        - '2377'
+        - '2378'
+        - '2379'
+        - '238'
+        - '2380'
+        - '2381'
+        - '2382'
+        - '2383'
+        - '2384'
+        - '2385'
+        - '2386'
+        - '2387'
+        - '2388'
+        - '2389'
+        - '239'
+        - '2390'
+        - '2391'
+        - '2392'
+        - '2393'
+        - '2394'
+        - '2395'
+        - '2396'
+        - '2397'
+        - '2398'
+        - '2399'
+        - '24'
+        - '240'
+        - '2400'
+        - '2401'
+        - '2402'
+        - '2403'
+        - '2404'
+        - '2405'
+        - '2406'
+        - '2407'
+        - '2408'
+        - '2409'
+        - '241'
+        - '2410'
+        - '2411'
+        - '2412'
+        - '2413'
+        - '2414'
+        - '2415'
+        - '2416'
+        - '2417'
+        - '2418'
+        - '2419'
+        - '242'
+        - '2420'
+        - '2421'
+        - '2422'
+        - '2423'
+        - '2424'
+        - '2425'
+        - '2426'
+        - '2427'
+        - '2428'
+        - '2429'
+        - '243'
+        - '2430'
+        - '2431'
+        - '2432'
+        - '2433'
+        - '2434'
+        - '2435'
+        - '2436'
+        - '2437'
+        - '2438'
+        - '2439'
+        - '244'
+        - '2440'
+        - '2441'
+        - '2442'
+        - '2443'
+        - '2444'
+        - '2445'
+        - '2446'
+        - '2447'
+        - '2448'
+        - '2449'
+        - '245'
+        - '2450'
+        - '2451'
+        - '2452'
+        - '2453'
+        - '2454'
+        - '2455'
+        - '2456'
+        - '2457'
+        - '2458'
+        - '2459'
+        - '246'
+        - '2460'
+        - '2461'
+        - '2462'
+        - '2463'
+        - '2464'
+        - '2465'
+        - '2466'
+        - '2467'
+        - '2468'
+        - '2469'
+        - '247'
+        - '2470'
+        - '2471'
+        - '2472'
+        - '2473'
+        - '2474'
+        - '2475'
+        - '2476'
+        - '2477'
+        - '2478'
+        - '2479'
+        - '248'
+        - '2480'
+        - '2481'
+        - '2482'
+        - '2483'
+        - '2484'
+        - '2485'
+        - '2486'
+        - '2487'
+        - '2488'
+        - '2489'
+        - '249'
+        - '2490'
+        - '2491'
+        - '2492'
+        - '2493'
+        - '2494'
+        - '2495'
+        - '2496'
+        - '2497'
+        - '2498'
+        - '2499'
+        - '25'
+        - '250'
+        - '2500'
+        - '2501'
+        - '2502'
+        - '2503'
+        - '2504'
+        - '2505'
+        - '2506'
+        - '2507'
+        - '2508'
+        - '2509'
+        - '251'
+        - '2510'
+        - '2511'
+        - '2512'
+        - '2513'
+        - '2514'
+        - '2515'
+        - '2516'
+        - '2517'
+        - '2518'
+        - '2519'
+        - '252'
+        - '2520'
+        - '2521'
+        - '2522'
+        - '2523'
+        - '2524'
+        - '2525'
+        - '2526'
+        - '2527'
+        - '2528'
+        - '2529'
+        - '253'
+        - '2530'
+        - '2531'
+        - '2532'
+        - '2533'
+        - '2534'
+        - '2535'
+        - '2536'
+        - '2537'
+        - '2538'
+        - '2539'
+        - '254'
+        - '2540'
+        - '2541'
+        - '2542'
+        - '2543'
+        - '2544'
+        - '2545'
+        - '2546'
+        - '2547'
+        - '2548'
+        - '2549'
+        - '255'
+        - '2550'
+        - '2551'
+        - '2552'
+        - '2553'
+        - '2554'
+        - '2555'
+        - '2556'
+        - '2557'
+        - '2559'
+        - '256'
+        - '2560'
+        - '2561'
+        - '2562'
+        - '2563'
+        - '2564'
+        - '2565'
+        - '2566'
+        - '2567'
+        - '2568'
+        - '2569'
+        - '257'
+        - '2570'
+        - '2571'
+        - '2572'
+        - '2573'
+        - '2574'
+        - '2575'
+        - '2576'
+        - '2577'
+        - '2578'
+        - '2579'
+        - '258'
+        - '2580'
+        - '2581'
+        - '2582'
+        - '2583'
+        - '2584'
+        - '2585'
+        - '2586'
+        - '2587'
+        - '2588'
+        - '259'
+        - '2590'
+        - '2591'
+        - '2592'
+        - '2593'
+        - '2594'
+        - '2595'
+        - '2596'
+        - '2597'
+        - '2599'
+        - '26'
+        - '260'
+        - '2600'
+        - '2601'
+        - '2602'
+        - '2603'
+        - '2604'
+        - '2605'
+        - '261'
+        - '262'
+        - '263'
+        - '264'
+        - '265'
+        - '266'
+        - '267'
+        - '268'
+        - '269'
+        - '27'
+        - '270'
+        - '271'
+        - '272'
+        - '273'
+        - '274'
+        - '275'
+        - '276'
+        - '277'
+        - '278'
+        - '279'
+        - '28'
+        - '280'
+        - '281'
+        - '282'
+        - '283'
+        - '284'
+        - '285'
+        - '286'
+        - '287'
+        - '288'
+        - '289'
+        - '29'
+        - '290'
+        - '291'
+        - '292'
+        - '293'
+        - '294'
+        - '295'
+        - '296'
+        - '297'
+        - '298'
+        - '299'
+        - '3'
+        - '30'
+        - '300'
+        - '301'
+        - '302'
+        - '303'
+        - '304'
+        - '305'
+        - '306'
+        - '307'
+        - '308'
+        - '309'
+        - '31'
+        - '310'
+        - '311'
+        - '312'
+        - '313'
+        - '314'
+        - '315'
+        - '316'
+        - '317'
+        - '318'
+        - '319'
+        - '32'
+        - '320'
+        - '321'
+        - '322'
+        - '323'
+        - '324'
+        - '325'
+        - '326'
+        - '327'
+        - '328'
+        - '329'
+        - '33'
+        - '330'
+        - '34'
+        - '35'
+        - '36'
+        - '37'
+        - '38'
+        - '39'
+        - '4'
+        - '40'
+        - '400'
+        - '401'
+        - '402'
+        - '403'
+        - '404'
+        - '405'
+        - '406'
+        - '407'
+        - '408'
+        - '409'
+        - '41'
+        - '410'
+        - '411'
+        - '412'
+        - '413'
+        - '414'
+        - '415'
+        - '416'
+        - '417'
+        - '418'
+        - '419'
+        - '42'
+        - '420'
+        - '421'
+        - '422'
+        - '423'
+        - '424'
+        - '425'
+        - '426'
+        - '427'
+        - '428'
+        - '429'
+        - '43'
+        - '430'
+        - '431'
+        - '432'
+        - '434'
+        - '435'
+        - '436'
+        - '437'
+        - '438'
+        - '439'
+        - '44'
+        - '440'
+        - '441'
+        - '442'
+        - '443'
+        - '444'
+        - '445'
+        - '446'
+        - '447'
+        - '448'
+        - '449'
+        - '45'
+        - '450'
+        - '451'
+        - '452'
+        - '453'
+        - '454'
+        - '455'
+        - '456'
+        - '457'
+        - '458'
+        - '459'
+        - '46'
+        - '460'
+        - '461'
+        - '462'
+        - '463'
+        - '464'
+        - '465'
+        - '466'
+        - '467'
+        - '468'
+        - '469'
+        - '47'
+        - '470'
+        - '471'
+        - '472'
+        - '473'
+        - '474'
+        - '475'
+        - '48'
+        - '480'
+        - '481'
+        - '482'
+        - '483'
+        - '484'
+        - '485'
+        - '486'
+        - '487'
+        - '488'
+        - '489'
+        - '49'
+        - '490'
+        - '491'
+        - '492'
+        - '493'
+        - '494'
+        - '495'
+        - '496'
+        - '497'
+        - '498'
+        - '499'
+        - '5'
+        - '50'
+        - '500'
+        - '501'
+        - '502'
+        - '503'
+        - '504'
+        - '505'
+        - '506'
+        - '507'
+        - '508'
+        - '509'
+        - '51'
+        - '510'
+        - '511'
+        - '512'
+        - '513'
+        - '514'
+        - '515'
+        - '516'
+        - '517'
+        - '518'
+        - '519'
+        - '52'
+        - '520'
+        - '521'
+        - '522'
+        - '523'
+        - '524'
+        - '525'
+        - '526'
+        - '527'
+        - '528'
+        - '529'
+        - '53'
+        - '530'
+        - '531'
+        - '532'
+        - '533'
+        - '534'
+        - '535'
+        - '536'
+        - '537'
+        - '538'
+        - '539'
+        - '54'
+        - '540'
+        - '541'
+        - '542'
+        - '543'
+        - '544'
+        - '545'
+        - '546'
+        - '547'
+        - '548'
+        - '549'
+        - '55'
+        - '550'
+        - '551'
+        - '552'
+        - '553'
+        - '556'
+        - '557'
+        - '558'
+        - '559'
+        - '56'
+        - '560'
+        - '561'
+        - '562'
+        - '563'
+        - '564'
+        - '565'
+        - '566'
+        - '567'
+        - '568'
+        - '569'
+        - '57'
+        - '570'
+        - '571'
+        - '572'
+        - '573'
+        - '574'
+        - '575'
+        - '576'
+        - '577'
+        - '578'
+        - '579'
+        - '58'
+        - '580'
+        - '581'
+        - '582'
+        - '583'
+        - '584'
+        - '585'
+        - '586'
+        - '587'
+        - '588'
+        - '589'
+        - '59'
+        - '590'
+        - '591'
+        - '592'
+        - '593'
+        - '594'
+        - '595'
+        - '596'
+        - '597'
+        - '598'
+        - '599'
+        - '6'
+        - '60'
+        - '600'
+        - '601'
+        - '602'
+        - '603'
+        - '604'
+        - '605'
+        - '606'
+        - '607'
+        - '608'
+        - '609'
+        - '61'
+        - '610'
+        - '611'
+        - '612'
+        - '613'
+        - '614'
+        - '615'
+        - '616'
+        - '617'
+        - '618'
+        - '619'
+        - '62'
+        - '620'
+        - '621'
+        - '622'
+        - '623'
+        - '624'
+        - '625'
+        - '626'
+        - '627'
+        - '628'
+        - '629'
+        - '63'
+        - '630'
+        - '631'
+        - '632'
+        - '633'
+        - '634'
+        - '635'
+        - '636'
+        - '637'
+        - '638'
+        - '639'
+        - '64'
+        - '640'
+        - '641'
+        - '642'
+        - '643'
+        - '644'
+        - '645'
+        - '646'
+        - '647'
+        - '648'
+        - '649'
+        - '65'
+        - '650'
+        - '651'
+        - '652'
+        - '653'
+        - '654'
+        - '655'
+        - '656'
+        - '657'
+        - '658'
+        - '659'
+        - '66'
+        - '660'
+        - '661'
+        - '662'
+        - '663'
+        - '664'
+        - '665'
+        - '666'
+        - '667'
+        - '668'
+        - '669'
+        - '67'
+        - '670'
+        - '671'
+        - '672'
+        - '673'
+        - '674'
+        - '675'
+        - '676'
+        - '677'
+        - '678'
+        - '679'
+        - '68'
+        - '680'
+        - '681'
+        - '682'
+        - '683'
+        - '684'
+        - '685'
+        - '686'
+        - '687'
+        - '688'
+        - '689'
+        - '69'
+        - '690'
+        - '691'
+        - '692'
+        - '693'
+        - '694'
+        - '695'
+        - '696'
+        - '697'
+        - '698'
+        - '699'
+        - '7'
+        - '70'
+        - '700'
+        - '701'
+        - '702'
+        - '703'
+        - '704'
+        - '705'
+        - '706'
+        - '707'
+        - '708'
+        - '709'
+        - '71'
+        - '710'
+        - '711'
+        - '712'
+        - '713'
+        - '714'
+        - '715'
+        - '716'
+        - '717'
+        - '718'
+        - '719'
+        - '72'
+        - '720'
+        - '721'
+        - '722'
+        - '723'
+        - '724'
+        - '725'
+        - '726'
+        - '727'
+        - '728'
+        - '729'
+        - '73'
+        - '730'
+        - '731'
+        - '732'
+        - '733'
+        - '734'
+        - '735'
+        - '736'
+        - '737'
+        - '738'
+        - '739'
+        - '74'
+        - '740'
+        - '741'
+        - '742'
+        - '743'
+        - '744'
+        - '745'
+        - '746'
+        - '747'
+        - '748'
+        - '749'
+        - '75'
+        - '750'
+        - '751'
+        - '752'
+        - '753'
+        - '754'
+        - '755'
+        - '756'
+        - '757'
+        - '758'
+        - '759'
+        - '76'
+        - '760'
+        - '761'
+        - '77'
+        - '78'
+        - '79'
+        - '796'
+        - '798'
+        - '799'
+        - '8'
+        - '80'
+        - '800'
+        - '801'
+        - '802'
+        - '803'
+        - '804'
+        - '805'
+        - '806'
+        - '807'
+        - '808'
+        - '809'
+        - '81'
+        - '810'
+        - '811'
+        - '812'
+        - '813'
+        - '814'
+        - '815'
+        - '816'
+        - '817'
+        - '818'
+        - '819'
+        - '82'
+        - '820'
+        - '821'
+        - '822'
+        - '823'
+        - '824'
+        - '825'
+        - '826'
+        - '827'
+        - '828'
+        - '829'
+        - '83'
+        - '830'
+        - '831'
+        - '832'
+        - '833'
+        - '834'
+        - '835'
+        - '836'
+        - '837'
+        - '838'
+        - '839'
+        - '84'
+        - '840'
+        - '841'
+        - '842'
+        - '843'
+        - '844'
+        - '845'
+        - '846'
+        - '847'
+        - '848'
+        - '849'
+        - '85'
+        - '850'
+        - '851'
+        - '852'
+        - '853'
+        - '854'
+        - '855'
+        - '856'
+        - '857'
+        - '858'
+        - '859'
+        - '86'
+        - '860'
+        - '861'
+        - '862'
+        - '863'
+        - '864'
+        - '865'
+        - '866'
+        - '867'
+        - '868'
+        - '869'
+        - '87'
+        - '870'
+        - '871'
+        - '872'
+        - '873'
+        - '874'
+        - '875'
+        - '876'
+        - '877'
+        - '878'
+        - '879'
+        - '88'
+        - '880'
+        - '881'
+        - '882'
+        - '883'
+        - '884'
+        - '885'
+        - '886'
+        - '887'
+        - '888'
+        - '889'
+        - '89'
+        - '890'
+        - '891'
+        - '892'
+        - '893'
+        - '894'
+        - '895'
+        - '896'
+        - '897'
+        - '898'
+        - '899'
+        - '9'
+        - '90'
+        - '900'
+        - '901'
+        - '902'
+        - '903'
+        - '904'
+        - '905'
+        - '906'
+        - '907'
+        - '908'
+        - '909'
+        - '91'
+        - '910'
+        - '911'
+        - '912'
+        - '913'
+        - '914'
+        - '915'
+        - '916'
+        - '917'
+        - '918'
+        - '919'
+        - '92'
+        - '920'
+        - '921'
+        - '922'
+        - '923'
+        - '924'
+        - '925'
+        - '926'
+        - '927'
+        - '928'
+        - '929'
+        - '93'
+        - '930'
+        - '931'
+        - '932'
+        - '933'
+        - '934'
+        - '935'
+        - '936'
+        - '937'
+        - '938'
+        - '939'
+        - '94'
+        - '940'
+        - '941'
+        - '942'
+        - '943'
+        - '944'
+        - '945'
+        - '946'
+        - '947'
+        - '948'
+        - '949'
+        - '95'
+        - '950'
+        - '951'
+        - '952'
+        - '953'
+        - '954'
+        - '955'
+        - '956'
+        - '957'
+        - '958'
+        - '959'
+        - '96'
+        - '960'
+        - '961'
+        - '962'
+        - '963'
+        - '964'
+        - '965'
+        - '966'
+        - '967'
+        - '968'
+        - '969'
+        - '97'
+        - '970'
+        - '971'
+        - '972'
+        - '973'
+        - '974'
+        - '975'
+        - '976'
+        - '977'
+        - '978'
+        - '979'
+        - '98'
+        - '980'
+        - '981'
+        - '982'
+        - '983'
+        - '984'
+        - '985'
+        - '986'
+        - '987'
+        - '988'
+        - '989'
+        - '99'
+        - '990'
+        - '991'
+        - '992'
+        - '993'
+        - '994'
+        - '995'
+        - '996'
+        - '997'
+        - '998'
+        - '999'
+    scrArrestAugmentationType:
+      type: object
+      title: 'scr:ArrestAugmentationType'
+      description: A data type for additional information about an arrest.
+      properties:
+        isHearingRequest:
+          type: array
+          description: >-
+            True if the person arrested has requested a court hearing; false
+            otherwise. NIEM reference is scr:HearingRequestIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        arrestMethod:
+          type: array
+          description: >-
+            A classification of the manner of ARREST NIEM reference is
+            scr:ArrestMethod
+          items:
+            $ref: scr.yaml#/components/schemas/scrArrestMethodType
+        charge:
+          type: array
+          description: >-
+            A formal allegation that a specific person has committed a specific
+            offense. NIEM reference is j:Charge
+          items:
+            $ref: j.yaml#/components/schemas/jChargeType
+        isAttorneyRights:
+          type: array
+          description: >-
+            True if the alien was informed of his or her right to be represented
+            by counsel; false otherwise. NIEM reference is
+            im:AttorneyRightsIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isPedestrian:
+          type: array
+          description: >-
+            True if  the alien was arrested as a pedestrian; false otherwise
+            NIEM reference is im:PedestrianIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isTreatAsAdult:
+          type: array
+          description: >-
+            True if a juvenile individual should be treated as an adult in this
+            specific ENFORCEMENT ENCOUNTER; false otherwise. NIEM reference is
+            scr:TreatAsAdultIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isPhoneUseRights:
+          type: array
+          description: >-
+            True if the alien was made aware of his/her right to use a
+            telephone; false otherwise NIEM reference is
+            im:PhoneUseRightsIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        phoneAttemptsQuantity:
+          type: array
+          description: >-
+            A number indicating the number of attempts made by telephone to
+            contact the party responsible for the juvenile alien. NIEM reference
+            is im:PhoneAttemptsQuantity
+          items:
+            $ref: nc.yaml#/components/schemas/ncQuantityType
+        isPhoneAssist:
+          type: array
+          description: >-
+            True if  the officer assisted the alien in using a phone; false
+            otherwise NIEM reference is im:PhoneAssistIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isHearingRights:
+          type: array
+          description: >-
+            True if the alien requested a hearing before a judge; false
+            otherwise NIEM reference is im:HearingRightsIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isFacingHarm:
+          type: array
+          description: >-
+            True if the alien faces harm by returning to his/her country; false
+            otherwise NIEM reference is im:FacingHarmIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isConsulateRights:
+          type: array
+          description: >-
+            True if the alien was informed of his/her right to contact his or
+            her consulate; false otherwise. NIEM reference is
+            im:ConsulateRightsIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isAttorneyRequest:
+          type: array
+          description: >-
+            True if  the alien exercised his or her right to request for counse;
+            false otherwise NIEM reference is im:AttorneyRequestIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        distanceFromLandmarkMeasure:
+          type: array
+          description: >-
+            A number indicating the distance in miles from a landmark to where
+            the alien's ARREST occurred. NIEM reference is
+            im:DistanceFromLandmarkMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        '@context':
+          type: string
+          description: scrArrestAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrArrestAugmentationTypeContext.jsonld
+    scrArrestMethodType:
+      type: object
+      title: 'scr:ArrestMethodType'
+      description: A data type for a information on the manner of ARREST
+      properties:
+        description:
+          type: array
+          description: >-
+            A description of the values used for the ARREST METHOD. NIEM
+            reference is scr:ArrestMethodDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        code:
+          type: array
+          description: 'An ARREST METHOD TYPE NIEM reference is scr:ArrestMethodCode'
+          items:
+            $ref: scr.yaml#/components/schemas/scrArrestMethodCategoryCodeType
+        '@context':
+          type: string
+          description: scrArrestMethodType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrArrestMethodTypeContext.jsonld
+    scrArrestMethodCategoryCodeType:
+      type: object
+      title: 'scr:ArrestMethodCategoryCodeType'
+      description: A data type describing the kinds of Apprehension methods
+      properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrArrestMethodCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrArrestMethodCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrArrestMethodCategoryCodeTypeContext.jsonld
+    scrArrestMethodCategoryCodeSimpleType:
+      type: string
+      description: A data type describing the kinds of Apprehension methods
+      enum:
+        - AS
+        - BPT
+        - CAP
+        - CRW
+        - ES
+        - ESU
+        - ISP
+        - L
+        - O
+        - OA
+        - OCD
+        - OTF
+        - PB
+        - PI
+        - TCA
+        - TCB
+        - TCF
+        - TCP
+        - TRC
+        - XXX
+    scrAlertAugmentationType:
+      type: object
+      title: 'scr:AlertAugmentationType'
+      description: A data type for additional information about an alert.
+      properties:
+        alertReceivedDate:
+          type: array
+          description: >-
+            A date on which the ALERT was received. NIEM reference is
+            scr:AlertReceivedDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        alertCategoryClassificationCode:
+          type: array
+          description: >-
+            A kind of alert Category NIEM reference is
+            scr:AlertCategoryClassificationCode
+          items:
+            $ref: scr.yaml#/components/schemas/scrAlertCategoryCodeType
+        '@context':
+          type: string
+          description: scrAlertAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrAlertAugmentationTypeContext.jsonld
+    scrAlertCategoryCodeType:
+      type: object
+      title: 'scr:AlertCategoryCodeType'
+      description: A data type for denoting the type of alert message.
+      properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrAlertCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrAlertCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrAlertCategoryCodeTypeContext.jsonld
+    scrAlertCategoryCodeSimpleType:
+      type: string
+      description: A data type for denoting the type of alert message.
+      enum:
+        - A
+        - D
+        - FI
+        - FT
+        - I
+        - IDENT
+        - L
+        - LD
+        - M
+        - MI
+        - MT
+        - 'N'
+        - O
+        - OTH
+        - P
+        - S
+        - X
+    scrWarrantAugmentationType:
+      type: object
+      title: 'scr:WarrantAugmentationType'
+      description: A data type for additional information about a warrant.
+      properties:
+        charge:
+          type: array
+          description: >-
+            A formal allegation that a specific person has committed a specific
+            offense. NIEM reference is j:Charge
+          items:
+            $ref: j.yaml#/components/schemas/jChargeType
+        warrantIdentification:
+          type: array
+          description: >-
+            An identification value for the warrant number. NIEM reference is
+            scr:WarrantIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        warrantOffenseOccurredDate:
+          type: array
+          description: >-
+            A date that the warrant offense occurred. Format is MMDDYY. NIEM
+            reference is scr:WarrantOffenseOccurredDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        warrantDeportDemandDate:
+          type: array
+          description: >-
+            A date on which DHS demanded a WARRANT to be served to an individual
+            to facilitate deportation. NIEM reference is
+            scr:WarrantDeportDemandDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        warrantDeportServeDate:
+          type: array
+          description: >-
+            A date on which DHS served a WARRANT to an individual to facilitate
+            deportation. NIEM reference is scr:WarrantDeportServeDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        warrantDeportSurrenderDate:
+          type: array
+          description: >-
+            A date on which the individual must appear for deportation as a
+            result of the WARRANT. NIEM reference is
+            scr:WarrantDeportSurrenderDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        warrantClassification:
+          type: array
+          description: >-
+            A classification of a warrant. NIEM reference is
+            scr:WarrantClassification
+          items:
+            $ref: scr.yaml#/components/schemas/scrWarrantClassificationType
+        '@context':
+          type: string
+          description: scrWarrantAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrWarrantAugmentationTypeContext.jsonld
+    scrWarrantClassificationType:
+      type: object
+      title: 'scr:WarrantClassificationType'
+      description: A data type for a classification of a warrant.
+      properties:
+        warrantCategoryDescription:
+          type: array
+          description: >-
+            A description of a kind of warrant. NIEM reference is
+            scr:WarrantCategoryDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        warrantCategoryCode:
+          type: array
+          description: 'A kind of warrant. NIEM reference is scr:WarrantCategoryCode'
+          items:
+            $ref: scr.yaml#/components/schemas/scrWarrantCategoryCodeType
+        '@context':
+          type: string
+          description: scrWarrantClassificationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrWarrantClassificationTypeContext.jsonld
+    scrWarrantCategoryCodeType:
+      type: object
+      title: 'scr:WarrantCategoryCodeType'
+      description: A data type for a kind of warrant.
+      properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrWarrantCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrWarrantCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrWarrantCategoryCodeTypeContext.jsonld
+    scrWarrantCategoryCodeSimpleType:
+      type: string
+      description: A data type for a kind of warrant.
+      enum:
+        - Arrest
+        - Deportation
+        - Search
+    scrEthnicityCategoryCodeType:
+      type: object
+      title: 'scr:EthnicityCategoryCodeType'
+      description: A data type for a kind of ethnicity.
+      properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrEthnicityCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrEthnicityCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrEthnicityCategoryCodeTypeContext.jsonld
+    scrEthnicityCategoryCodeSimpleType:
+      type: string
+      description: A data type for a kind of ethnicity.
+      enum:
+        - A
+        - ARMEN
+        - AZERB
+        - B
+        - BASQU
+        - CHINE
+        - ERITR
+        - ESTON
+        - GEORG
+        - GYPSY
+        - H
+        - HMONG
+        - HUNGA
+        - I
+        - INDIA
+        - KHMER
+        - KURD
+        - LATVI
+        - LITHU
+        - MONG
+        - 'N'
+        - OTHER
+        - RUSSI
+        - TAMIL
+        - TIBIT
+        - TIGRE
+        - TURK
+        - U
+        - UNKNO
+        - W
+    scrMedicalConditionAugmentationType:
+      type: object
+      title: 'scr:MedicalConditionAugmentationType'
+      description: >-
+        A data type for additional information about a medical condition of a
+        person.
+      properties:
+        isNCICData:
+          type: array
+          description: >-
+            True if the National Crime Information Center (NCIC) data
+            administered by the Federal Bureau of Investigation (FBI) is either
+            primary, fraudulent, or supplemental; false otherwise. NIEM
+            reference is scr:NCICDataIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        personMedicalConditionCategoryCode:
+          type: array
+          description: >-
+            A kind of medical condition of a person. NIEM reference is
+            scr:PersonMedicalConditionCategoryCode
+          items:
+            $ref: scr.yaml#/components/schemas/scrPersonMedicalConditionCodeType
+        personMedicalConditionStatus:
+          type: array
+          description: >-
+            A status or name of the PERSONs health problem and physical
+            limitation that an officer should be cautious of. NIEM reference is
+            scr:PersonMedicalConditionStatus
+          items:
+            $ref: scr.yaml#/components/schemas/scrPersonMedicalConditionStatusType
+        '@context':
+          type: string
+          description: scrMedicalConditionAugmentationType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrMedicalConditionAugmentationTypeContext.jsonld
+    scrPersonMedicalConditionCodeType:
+      type: object
+      title: 'scr:PersonMedicalConditionCodeType'
+      description: >-
+        A data type describing the kinds of medical conditions for a person
+        involved in a screening activity
+      properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrPersonMedicalConditionCodeSimpleType
+        '@context':
+          type: string
+          description: scrPersonMedicalConditionCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrPersonMedicalConditionCodeTypeContext.jsonld
+    scrPersonMedicalConditionCodeSimpleType:
+      type: string
+      description: >-
+        A data type describing the kinds of medical conditions for a person
+        involved in a screening activity
+      enum:
+        - '1'
+        - '20'
+        - '25'
+        - '5'
+        - '50'
+        - '55'
+        - '60'
+        - '65'
+        - '70'
+        - '80'
+        - '85'
+        - '90'
+    scrPersonMedicalConditionStatusType:
+      title: 'scr:PersonMedicalConditionStatusType'
+      description: >-
+        A data type for a PERSONs health problem and physical limitation that an
+        officer should be cautious of.
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncStatusType
+        - type: object
+          properties:
+            code:
+              type: array
+              description: >-
+                A status of the medical condition of a person. NIEM reference is
+                scr:PersonMedicalConditionStatusCode
+              items:
+                $ref: >-
+                  scr.yaml#/components/schemas/scrPersonMedicalConditionStatusCategoryCodeType
+            '@context':
+              type: string
+              description: scrPersonMedicalConditionStatusType JSON-LD context
+              enum:
+                - >-
+                  ../JSON-LD_Contexts/scrPersonMedicalConditionStatusTypeContext.jsonld
+    scrPersonMedicalConditionStatusCategoryCodeType:
+      type: object
+      title: 'scr:PersonMedicalConditionStatusCategoryCodeType'
+      description: >-
+        A data type describing the kinds of status changes for medical
+        conditions of a person involved in a screening activity
+      properties:
+        simpleType:
+          $ref: >-
+            scr.yaml#/components/schemas/scrPersonMedicalConditionStatusCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrPersonMedicalConditionStatusCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrPersonMedicalConditionStatusCategoryCodeTypeContext.jsonld
+    scrPersonMedicalConditionStatusCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type describing the kinds of status changes for medical
+        conditions of a person involved in a screening activity
+      enum:
+        - Hansen's disease
+        - HIV
+        - tuberculosis
+        - venereal disease
+    scrVehicleAugmentationType:
+      type: object
+      title: 'scr:VehicleAugmentationType'
+      description: A data type for additional information about a conveyance.
+      properties:
+        conveyanceIdentificationCategoryCode:
+          type: array
+          description: >-
+            A kind of conveyance identification. NIEM reference is
+            scr:ConveyanceIdentificationCategoryCode
+          items:
+            $ref: >-
+              scr.yaml#/components/schemas/scrConveyanceIdentificationCategoryCodeType
+        vehicleCategoryCode:
+          type: array
+          description: >-
+            A class of conveyance being used. NIEM reference is
+            scr:VehicleCategoryCodeText
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xstoken
+        conveyanceCategoryCode:
+          type: array
+          description: 'A kind of conveyance. NIEM reference is scr:ConveyanceCategoryCode'
+          items:
+            $ref: scr.yaml#/components/schemas/scrConveyanceCategoryCodeType
+        vehicleSubjectCategoryCode:
+          type: array
+          description: >-
+            A reason that a vehicle subject is of interest. NIEM reference is
+            scr:VehicleSubjectCategoryCodeText
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xstoken
+        conveyanceIDIssuingJurisdictionCode:
+          type: array
+          description: >-
+            A conveyance ID issuing jurisdiction type. NIEM reference is
+            scr:ConveyanceIDIssuingJurisdictionCode
+          items:
+            $ref: >-
+              scr.yaml#/components/schemas/scrConveyanceIDIssuingJurisdictionCategoryCodeType
+        '@context':
+          type: string
+          description: scrVehicleAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrVehicleAugmentationTypeContext.jsonld
+    scrConveyanceCategoryCodeType:
+      type: object
+      title: 'scr:ConveyanceCategoryCodeType'
+      description: A data type for a kind of conveyance.
+      properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrConveyanceCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrConveyanceCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/scrConveyanceCategoryCodeTypeContext.jsonld
+    scrConveyanceCategoryCodeSimpleType:
+      type: string
+      description: A data type for a kind of conveyance.
+      enum:
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+    scrConveyanceIDIssuingJurisdictionCategoryCodeType:
+      type: object
+      title: 'scr:ConveyanceIDIssuingJurisdictionCategoryCodeType'
+      description: >-
+        A data type describing the kinds of jurisdictions issuing Conveyance
+        registrations
+      properties:
+        simpleType:
+          $ref: >-
+            scr.yaml#/components/schemas/scrConveyanceIDIssuingJurisdictionCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrConveyanceIDIssuingJurisdictionCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrConveyanceIDIssuingJurisdictionCategoryCodeTypeContext.jsonld
+    scrConveyanceIDIssuingJurisdictionCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type describing the kinds of jurisdictions issuing Conveyance
+        registrations
+      enum:
+        - A1
+        - A2
+        - A3
+        - A4
+        - A5
+        - A6
+        - A7
+        - A8
+        - A9
+        - Commercial Cargo Ship
+        - Commercial Cargo Vehicle
+        - L1
+        - L2
+        - L3
+        - L4
+        - L5
+        - L6
+        - Medical Board of Maryland
+        - Private Aircraft
+        - S1
+        - S2
+        - S3
+        - Train
+        - US Department of State
+        - Virginia State Department of Transportation

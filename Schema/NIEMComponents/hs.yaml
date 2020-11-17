@@ -1,0 +1,2497 @@
+components:
+  schemas:
+    hsDispositionAugmentationType:
+      type: object
+      title: 'hs:DispositionAugmentationType'
+      description: A data type for additional information about a disposition.
+      properties:
+        isJuvenileInformalAdjustment:
+          type: array
+          description: >-
+            True if the juvenile (with parental consent) admits the facts of the
+            alleged delinquent act, and the tribunal approves the conditions of
+            the juvenile's supervision for a period of time without being
+            adjudicated; false otherwise. NIEM reference is
+            hs:JuvenileInformalAdjustmentIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        informalDispositionCategoryCode:
+          type: array
+          description: >-
+            A kind of informal disposition. NIEM reference is
+            hs:InformalDispositionCategoryCode
+          items:
+            $ref: hs.yaml#/components/schemas/hsInformalDispositionCategoryCodeType
+        '@context':
+          type: string
+          description: hsDispositionAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsDispositionAugmentationTypeContext.jsonld
+    hsInformalDispositionCategoryCodeType:
+      type: object
+      title: 'hs:InformalDispositionCategoryCodeType'
+      description: A data type for a kind of informal disposition.
+      properties:
+        simpleType:
+          $ref: >-
+            hs.yaml#/components/schemas/hsInformalDispositionCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: hsInformalDispositionCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsInformalDispositionCategoryCodeTypeContext.jsonld
+    hsInformalDispositionCategoryCodeSimpleType:
+      type: string
+      description: A data type for a kind of informal disposition.
+      enum:
+        - Continued
+        - Deferred
+    hsOrganizationAugmentationType:
+      type: object
+      title: 'hs:OrganizationAugmentationType'
+      description: A data type for additional information about an organization.
+      properties:
+        organizationCaseID:
+          type: array
+          description: >-
+            An identifier assigned by an organization to a case. NIEM reference
+            is hs:OrganizationCaseID
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        '@context':
+          type: string
+          description: hsOrganizationAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsOrganizationAugmentationTypeContext.jsonld
+    hsProgramAugmentationType:
+      type: object
+      title: 'hs:ProgramAugmentationType'
+      description: A data type for additional information about a program.
+      properties:
+        programEligibleStartDate:
+          type: array
+          description: >-
+            A date a person became eligible to enroll in a program (e.g.,
+            receive financial assistance, treatment, or some other social
+            service). NIEM reference is hs:ProgramEligibleStartDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        programEligibleEndDate:
+          type: array
+          description: >-
+            A date a person lost eligibility for a program (e.g., exceeded
+            income limits, violated a program rule, or otherwise failed to
+            satisfy a requirement). NIEM reference is hs:ProgramEligibleEndDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        programMonetaryValue:
+          type: array
+          description: >-
+            An evaluation of the monetary worth of the program provided. NIEM
+            reference is hs:ProgramMonetaryValue
+          items:
+            $ref: nc.yaml#/components/schemas/ncItemValueType
+        '@context':
+          type: string
+          description: hsProgramAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsProgramAugmentationTypeContext.jsonld
+    hsChargeAugmentationType:
+      type: object
+      title: 'hs:ChargeAugmentationType'
+      description: A data type for additional information about a charge.
+      properties:
+        chargeAllegationReportedDate:
+          type: array
+          description: >-
+            A date the allegation was reported. NIEM reference is
+            hs:ChargeAllegationReportedDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        chargeAllegationLocalDescription:
+          type: array
+          description: >-
+            A description of a state or local definition of an allegation. NIEM
+            reference is hs:ChargeAllegationLocalDescriptionText
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        chargeAllegationCategoryCode:
+          type: array
+          description: >-
+            A code indicating NCANDS (National Child Abuse and Neglect Data
+            System) allegation categories. NIEM reference is
+            hs:ChargeAllegationCategoryCode
+          items:
+            $ref: hs.yaml#/components/schemas/hsChargeAllegationCategoryCodeType
+        chargeAllegationCategory:
+          type: array
+          description: >-
+            A kind of allegation of abuse or neglect. NIEM reference is
+            hs:ChargeAllegationCategoryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        chargeAdjudication:
+          type: array
+          description: >-
+            An adjudication result of  a juvenile. NIEM reference is
+            hs:ChargeAdjudication
+          items:
+            $ref: j.yaml#/components/schemas/jSentenceType
+        bailBond:
+          type: array
+          description: >-
+            An agreement between a bondsman and a subject in which a bondsman
+            pays the subject's bail or portion of the bail in exchange for
+            certain conditions, including the payment of a certain amount of
+            money and the reappearance of the subject NIEM reference is
+            j:BailBond
+          items:
+            $ref: j.yaml#/components/schemas/jBailBondType
+        '@context':
+          type: string
+          description: hsChargeAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsChargeAugmentationTypeContext.jsonld
+    hsChargeAllegationCategoryCodeType:
+      type: object
+      title: 'hs:ChargeAllegationCategoryCodeType'
+      description: >-
+        A data type for a list of NCANDS (National Child Abuse and Neglect Data
+        System) allegation categories.
+      properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsChargeAllegationCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: hsChargeAllegationCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsChargeAllegationCategoryCodeTypeContext.jsonld
+    hsChargeAllegationCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a list of NCANDS (National Child Abuse and Neglect Data
+        System) allegation categories.
+      enum:
+        - EA
+        - MN
+        - NE
+        - PA
+        - SA
+    hsGoalObjectiveType:
+      title: 'hs:GoalObjectiveType'
+      description: A data type for describing a subset of a service plan goal.
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncActivityType
+        - type: object
+          properties:
+            task:
+              type: array
+              description: >-
+                A clearly defined action or activity specifically assigned to an
+                individual or organization that must be done as it is imposed by
+                an appropriate authority. NIEM reference is nc:Task
+              items:
+                $ref: nc.yaml#/components/schemas/ncTaskType
+            '@context':
+              type: string
+              description: hsGoalObjectiveType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/hsGoalObjectiveTypeContext.jsonld
+    hsTaskAugmentationType:
+      type: object
+      title: 'hs:TaskAugmentationType'
+      description: A data type for additional information about a task.
+      properties:
+        activityPersonAssociation:
+          type: array
+          description: >-
+            An association between a person and an activity in which a person
+            was or may have been involved. NIEM reference is
+            nc:ActivityPersonAssociation
+          items:
+            $ref: nc.yaml#/components/schemas/ncActivityPersonAssociationType
+        taskCriteriaForSuccess:
+          type: array
+          description: >-
+            A description of what needs to be done to successfully complete a
+            task. NIEM reference is nc:TaskCriteriaForSuccessText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        taskCurrentStatus:
+          type: array
+          description: >-
+            A status of the progress toward accomplishment of this task. NIEM
+            reference is nc:TaskCurrentStatus
+          items:
+            $ref: nc.yaml#/components/schemas/ncStatusType
+        taskTimeframeDescription:
+          type: array
+          description: >-
+            A description of the date range for the completion of a task. NIEM
+            reference is hs:TaskTimeframeDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        service:
+          type: array
+          description: >-
+            A service  that will be made available by the agency. NIEM reference
+            is hs:Service
+          items:
+            $ref: hs.yaml#/components/schemas/hsServiceType
+        '@context':
+          type: string
+          description: hsTaskAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsTaskAugmentationTypeContext.jsonld
+    hsActivityInvolvedPersonAssociationAugmentationType:
+      type: object
+      title: 'hs:ActivityInvolvedPersonAssociationAugmentationType'
+      description: >-
+        A data type for additional information about an activity and a person
+        involved in that activity.
+      properties:
+        isSignatureRequired:
+          type: array
+          description: >-
+            True if a signature is required from this person; false otherwise.
+            NIEM reference is hs:SignatureRequiredIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        '@context':
+          type: string
+          description: hsActivityInvolvedPersonAssociationAugmentationType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsActivityInvolvedPersonAssociationAugmentationTypeContext.jsonld
+    hsServiceType:
+      title: 'hs:ServiceType'
+      description: >-
+        A data type for describing the service that will be made available by
+        the agency.
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncActivityType
+        - type: object
+          properties:
+            responsibilityForCost:
+              type: array
+              description: >-
+                An agency responsible for paying the cost of a service. NIEM
+                reference is hs:ResponsibilityForServiceCostText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            responsibleEntityDescription:
+              type: array
+              description: >-
+                A description of the person or organization who will provide the
+                service. NIEM reference is hs:ResponsibleEntityDescriptionText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            costValue:
+              type: array
+              description: >-
+                A cost or estimated cost of the service. NIEM reference is
+                hs:ServiceCostValue
+              items:
+                $ref: nc.yaml#/components/schemas/ncNumericType
+            categoryCode:
+              type: array
+              description: >-
+                A kind of a service that will be provided as part of a case
+                plan.  Categories include:  assessment, treatment, program,
+                benefit, education, transportation, respite care. NIEM reference
+                is hs:ServiceCategoryCode
+              items:
+                $ref: hs.yaml#/components/schemas/hsServiceCategoryCodeType
+            category:
+              type: array
+              description: >-
+                A kind of a service that will be provided as part of a case
+                plan.  Categories include:  assessment, treatment, program,
+                benefit, education, transportation, respite care. NIEM reference
+                is hs:ServiceCategoryText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            referredOutReason:
+              type: array
+              description: >-
+                A reason a service was referred out. NIEM reference is
+                hs:ReferredOutServiceReasonText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            unprovidedReasonCategoryCode:
+              type: array
+              description: >-
+                A kind of reason a service was not provided, e.g organizational
+                barriers. NIEM reference is
+                hs:UnprovidedServiceReasonCategoryCode
+              items:
+                $ref: >-
+                  hs.yaml#/components/schemas/hsUnprovidedServiceReasonCategoryCodeType
+            unprovidedReasonCategory:
+              type: array
+              description: >-
+                A kind of reason a service was not provided, e.g organizational
+                barriers. NIEM reference is
+                hs:UnprovidedServiceReasonCategoryText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            '@context':
+              type: string
+              description: hsServiceType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/hsServiceTypeContext.jsonld
+    hsServiceCategoryCodeType:
+      type: object
+      title: 'hs:ServiceCategoryCodeType'
+      description: >-
+        A data type for a kind of a service that will be provided as part of a
+        case plan.  Categories include:  assessment, treatment, program,
+        benefit, education, transportation, respite care.
+      properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsServiceCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: hsServiceCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsServiceCategoryCodeTypeContext.jsonld
+    hsServiceCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a kind of a service that will be provided as part of a
+        case plan.  Categories include:  assessment, treatment, program,
+        benefit, education, transportation, respite care.
+      enum:
+        - Basic Necessities
+        - Case Management Services
+        - Educational Services
+        - Employment Services
+        - Housing Services
+        - Language Services
+        - Legal Services
+        - Medical and Dental Services
+        - Mental Health Services
+        - Other Services
+        - Safety Planning
+    hsUnprovidedServiceReasonCategoryCodeType:
+      type: object
+      title: 'hs:UnprovidedServiceReasonCategoryCodeType'
+      description: >-
+        A data type for a kind of reason a service was not provided, e.g
+        organizational barriers.
+      properties:
+        simpleType:
+          $ref: >-
+            hs.yaml#/components/schemas/hsUnprovidedServiceReasonCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: hsUnprovidedServiceReasonCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsUnprovidedServiceReasonCategoryCodeTypeContext.jsonld
+    hsUnprovidedServiceReasonCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a kind of reason a service was not provided, e.g
+        organizational barriers.
+      enum:
+        - Absence of Legal Authority
+        - Feeling of no support and isolation
+        - Ineffective coordination with federal agencies
+        - Ineffective coordination with local agencies
+        - Lack of adequate funding
+        - Lack of adequate resources
+        - Lack of adequate training
+        - Lack of formal rules and regulations
+        - Lack of health insurance
+        - Lack of in-house procedures
+        - Lack of knowledge of free health care options
+        - Lack of knowledge of victims rights
+        - Language concerns
+        - Safety concerns
+        - Victims legal status
+    hsTreatmentAugmentationType:
+      type: object
+      title: 'hs:TreatmentAugmentationType'
+      description: A data type for additional information about a treatment.
+      properties:
+        juvenile:
+          type: array
+          description: >-
+            A role of a juvenile, played by a person defined as a juvenile
+            rather than an adult under the law. NIEM reference is hs:Juvenile
+          items:
+            $ref: hs.yaml#/components/schemas/hsJuvenileType
+        treatmentApproximateLength:
+          type: array
+          description: >-
+            An estimated length of a treatment program. NIEM reference is
+            hs:TreatmentApproximateLengthText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        treatmentAssessment:
+          type: array
+          description: >-
+            An assessment of a treatment program. NIEM reference is
+            hs:TreatmentAssessment
+          items:
+            $ref: hs.yaml#/components/schemas/hsJuvenileAssessmentType
+        treatmentFocus:
+          type: array
+          description: >-
+            A description of the focus of the treatment program. NIEM reference
+            is hs:TreatmentFocusText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        therapist:
+          type: array
+          description: >-
+            A person who provides therapy services. NIEM reference is
+            hs:Therapist
+          items:
+            $ref: nc.yaml#/components/schemas/ncPersonType
+        treatmentGoalDescription:
+          type: array
+          description: >-
+            A description of a goal of a treatment program. NIEM reference is
+            hs:TreatmentGoalDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        treatmentProgram:
+          type: array
+          description: 'A treatment program. NIEM reference is hs:TreatmentProgram'
+          items:
+            $ref: nc.yaml#/components/schemas/ncProgramType
+        treatmentProgress:
+          type: array
+          description: >-
+            A set of details about the progress made within a treatment program.
+            NIEM reference is hs:TreatmentProgress
+          items:
+            $ref: nc.yaml#/components/schemas/ncProgressType
+        treatmentRecommendationDescription:
+          type: array
+          description: >-
+            A description of recommended treatment or services for a juvenile.
+            NIEM reference is hs:TreatmentRecommendationDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        treatmentReferral:
+          type: array
+          description: >-
+            A referral to a treatment program. NIEM reference is
+            hs:TreatmentReferral
+          items:
+            $ref: nc.yaml#/components/schemas/ncReferralType
+        treatmentSupervisorEntity:
+          type: array
+          description: >-
+            An entity supervising a treatment program. NIEM reference is
+            hs:TreatmentSupervisorEntity
+          items:
+            $ref: nc.yaml#/components/schemas/ncEntityType
+        '@context':
+          type: string
+          description: hsTreatmentAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsTreatmentAugmentationTypeContext.jsonld
+    hsJuvenileType:
+      type: object
+      title: 'hs:JuvenileType'
+      description: A data type for a juvenile.
+      properties:
+        isArrestedFriends:
+          type: array
+          description: >-
+            True if the juvenile's friends who have been arrested; false
+            otherwise. NIEM reference is hs:JuvenileArrestedFriendsIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isAttentionDisorderDiagnosis:
+          type: array
+          description: >-
+            True if diagnosed with Attention Deficit Disorder (ADD) or as
+            Hyperactive; false otherwise. NIEM reference is
+            hs:JuvenileAttentionDisorderDiagnosisIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isChildEverAdopted:
+          type: array
+          description: >-
+            True if the juvenile was ever adopted; false otherwise. NIEM
+            reference is hs:JuvenileChildEverAdoptedIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        culturalFactorsDescription:
+          type: array
+          description: >-
+            A description of the specific cultural needs of a juvenile and
+            family. NIEM reference is hs:JuvenileCulturalFactorsDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        isDeceasedParent:
+          type: array
+          description: >-
+            True if either of the child's parents are deceased; false otherwise.
+            NIEM reference is hs:JuvenileDeceasedParentIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isEmotionalDisturbance:
+          type: array
+          description: >-
+            True if the juvenile has an emotional disturbance; false otherwise.
+            NIEM reference is hs:JuvenileEmotionalDisturbanceIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        familyFinancialProblemCode:
+          type: array
+          description: >-
+            A description of whether juvenile's family is experiencing financial
+            problems. NIEM reference is hs:JuvenileFamilyFinancialProblemCode
+          items:
+            $ref: >-
+              hs.yaml#/components/schemas/hsJuvenileFamilyFinancialProblemCodeType
+        familyFinancialProblem:
+          type: array
+          description: >-
+            A description of whether juvenile's family is experiencing financial
+            problems. NIEM reference is hs:JuvenileFamilyFinancialProblemText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        isFosterCarePlacement:
+          type: array
+          description: >-
+            True if juvenile was ever placed in foster care home or group home;
+            false otherwise. NIEM reference is
+            hs:JuvenileFosterCarePlacementIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        futureGoalDescription:
+          type: array
+          description: >-
+            A description of a future aspiration or goal. NIEM reference is
+            hs:JuvenileFutureGoalDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        isHomelessness:
+          type: array
+          description: >-
+            True if the juvenile is or has ever been homeless; false otherwise.
+            NIEM reference is hs:JuvenileHomelessnessIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isHomePrivacy:
+          type: array
+          description: >-
+            True if juvenile has their own space or private area at home; false
+            otherwise. NIEM reference is hs:JuvenileHomePrivacyIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isHomeSafe:
+          type: array
+          description: >-
+            True if juvenile's home is a safe place; false otherwise. NIEM
+            reference is hs:JuvenileHomeSafeIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        behaviorDescription:
+          type: array
+          description: >-
+            A description of behaviors exhibited by a juvenile. NIEM reference
+            is hs:JuvenileBehaviorDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        isKinshipCarePlacement:
+          type: array
+          description: >-
+            True if the juvenile was ever placed in kinship care; false
+            otherwise. NIEM reference is
+            hs:JuvenileKinshipCarePlacementIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isLackOfNecessity:
+          type: array
+          description: >-
+            True if the juvenile has ever lived without lights, power, water
+            and/or food; false otherwise. NIEM reference is
+            hs:JuvenileLackOfNecessityIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        legalConcernsDescription:
+          type: array
+          description: >-
+            A description of any legal concerns (for example, custodial
+            information, restraining orders). NIEM reference is
+            hs:JuvenileLegalConcernsDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        livingSituationDescription:
+          type: array
+          description: >-
+            A description of other people living in the home with the juvenile
+            and family. NIEM reference is
+            hs:JuvenileLivingSituationDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        overallGrowthAssessmentDescription:
+          type: array
+          description: >-
+            A description of the evaluation of whether a juvenile's maturation
+            is within normal limits. NIEM reference is
+            hs:JuvenileOverallGrowthAssessmentDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        isParentConversation:
+          type: array
+          description: >-
+            True if juvenile is able to talk to parent or guardian about
+            important issues; false otherwise. NIEM reference is
+            hs:JuvenileParentConversationIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isParentSubstanceUse:
+          type: array
+          description: >-
+            True if parent or legal guardian uses drugs or alcohol; false
+            otherwise. NIEM reference is hs:JuvenileParentSubstanceUseIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        positiveActivitiesDescription:
+          type: array
+          description: >-
+            A description of positive activities in which a juvenile engages.
+            NIEM reference is hs:JuvenilePositiveActivitiesDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        isPositiveActivities:
+          type: array
+          description: >-
+            True if a person engages in positive activities; false otherwise.
+            NIEM reference is hs:JuvenilePositiveActivitiesIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isPositivePeerRelationship:
+          type: array
+          description: >-
+            True if a person has positive relationships with peers; false
+            otherwise. NIEM reference is
+            hs:JuvenilePositivePeerRelationshipIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        problemImpactDescription:
+          type: array
+          description: >-
+            A description of the impact of problems on family and social system.
+            NIEM reference is hs:JuvenileProblemImpactDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        isRepeatOffender:
+          type: array
+          description: >-
+            True if the person is a repeat offender; false otherwise. NIEM
+            reference is hs:JuvenileRepeatOffenderIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        roleOfPerson:
+          type: array
+          description: >-
+            A person of whom the role object is a function. NIEM reference is
+            nc:RoleOfPerson
+          items:
+            $ref: nc.yaml#/components/schemas/ncPersonType
+        isSpecialNeeds:
+          type: array
+          description: >-
+            True if the juvenile has any special need that qualifies his or her
+            adoption for a subsidy under Title IV-E of the Social Security Act;
+            false otherwise. NIEM reference is hs:JuvenileSpecialNeedsIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        specialNeedCode:
+          type: array
+          description: >-
+            An enumerated list from the Adoption and Foster Care Annual
+            Reporting System, 45 CFR 1355, appendix B (Adoption Data Elements),
+            section III (Special Needs Status). NIEM reference is
+            hs:JuvenileSpecialNeedCode
+          items:
+            $ref: hs.yaml#/components/schemas/hsJuvenileSpecialNeedCodeType
+        specialNeed:
+          type: array
+          description: >-
+            A textual description of a state-defined characteristic that
+            qualifies a child's adoption for a subsidy under Title IV-E of the
+            Social Security Act. NIEM reference is hs:JuvenileSpecialNeedText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        strengthsInterestsDescription:
+          type: array
+          description: >-
+            A description of the strengths and Interests of juvenile. NIEM
+            reference is hs:JuvenileStrengthsInterestsDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        isTroubledFriends:
+          type: array
+          description: >-
+            True if friends get into trouble; false otherwise. NIEM reference is
+            hs:JuvenileTroubledFriendsIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        '@context':
+          type: string
+          description: hsJuvenileType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsJuvenileTypeContext.jsonld
+    hsJuvenileFamilyFinancialProblemCodeType:
+      type: object
+      title: 'hs:JuvenileFamilyFinancialProblemCodeType'
+      description: >-
+        A data type for describing whether a family suffers from financial
+        problems.
+      properties:
+        simpleType:
+          $ref: >-
+            hs.yaml#/components/schemas/hsJuvenileFamilyFinancialProblemCodeSimpleType
+        '@context':
+          type: string
+          description: hsJuvenileFamilyFinancialProblemCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsJuvenileFamilyFinancialProblemCodeTypeContext.jsonld
+    hsJuvenileFamilyFinancialProblemCodeSimpleType:
+      type: string
+      description: >-
+        A data type for describing whether a family suffers from financial
+        problems.
+      enum:
+        - 'No'
+        - Unknown
+        - 'Yes'
+    hsJuvenileSpecialNeedCodeType:
+      type: object
+      title: 'hs:JuvenileSpecialNeedCodeType'
+      description: >-
+        A data type for an enumerated list from the Adoption and Foster Care
+        Annual Reporting System, 45 CFR 1355, appendix B (Adoption Data
+        Elements), section III (Special Needs Status).
+      properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsJuvenileSpecialNeedCodeSimpleType
+        '@context':
+          type: string
+          description: hsJuvenileSpecialNeedCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsJuvenileSpecialNeedCodeTypeContext.jsonld
+    hsJuvenileSpecialNeedCodeSimpleType:
+      type: string
+      description: >-
+        A data type for an enumerated list from the Adoption and Foster Care
+        Annual Reporting System, 45 CFR 1355, appendix B (Adoption Data
+        Elements), section III (Special Needs Status).
+      enum:
+        - Age
+        - Emotionally disturbed
+        - Medical Condition
+        - Mental retardation
+        - Not Applicable
+        - Other
+        - Physically disabled
+        - Racial/Original Background
+        - Sibling Group
+        - Visually or hearing impaired
+    hsJuvenileAssessmentType:
+      title: 'hs:JuvenileAssessmentType'
+      description: A data type for a juvenile assessment.
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncAssessmentType
+        - type: object
+          properties:
+            administeringFacility:
+              type: array
+              description: >-
+                A facility administering an assessment. NIEM reference is
+                hs:AdministeringFacility
+              items:
+                $ref: nc.yaml#/components/schemas/ncFacilityType
+            assessmentOther:
+              type: array
+              description: >-
+                An additional piece of information about the assessment. NIEM
+                reference is hs:AssessmentOtherText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            assessmentOutcome:
+              type: array
+              description: >-
+                An outcome of an assessment. NIEM reference is
+                hs:AssessmentOutcome
+              items:
+                $ref: hs.yaml#/components/schemas/hsAssessmentOutcomeType
+            assessmentRecommendation:
+              type: array
+              description: >-
+                A recommendation of an assessment. NIEM reference is
+                hs:AssessmentRecommendation
+              items:
+                $ref: hs.yaml#/components/schemas/hsAssessmentRecommendationType
+            caseworker:
+              type: array
+              description: 'A caseworker for the child. NIEM reference is hs:Caseworker'
+              items:
+                $ref: hs.yaml#/components/schemas/hsCaseworkerType
+            juvenile:
+              type: array
+              description: >-
+                A role of a juvenile, played by a person defined as a juvenile
+                rather than an adult under the law. NIEM reference is
+                hs:Juvenile
+              items:
+                $ref: hs.yaml#/components/schemas/hsJuvenileType
+            receivedByTrackingID:
+              type: array
+              description: >-
+                An identifier of a person receiving a record. NIEM reference is
+                hs:ReceivedByTrackingID
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+            '@context':
+              type: string
+              description: hsJuvenileAssessmentType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/hsJuvenileAssessmentTypeContext.jsonld
+    hsAssessmentOutcomeType:
+      title: 'hs:AssessmentOutcomeType'
+      description: A data type for the outcome of an assessment.
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncActivityType
+        - type: object
+          properties:
+            score:
+              type: array
+              description: >-
+                A simple score as the outcome of an assessment. NIEM reference
+                is hs:AssessmentOutcomeScoreText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            '@context':
+              type: string
+              description: hsAssessmentOutcomeType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/hsAssessmentOutcomeTypeContext.jsonld
+    hsAssessmentRecommendationType:
+      title: 'hs:AssessmentRecommendationType'
+      description: A data type for the recommendation of an assessment.
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncActivityType
+        - type: object
+          properties:
+            assessmentRecommendedCourseOfAction:
+              type: array
+              description: >-
+                A recommended course of action arising from an assessment. NIEM
+                reference is hs:AssessmentRecommendedCourseOfAction
+              items:
+                $ref: >-
+                  hs.yaml#/components/schemas/hsAssessmentRecommendedCourseOfActionType
+            '@context':
+              type: string
+              description: hsAssessmentRecommendationType JSON-LD context
+              enum:
+                - >-
+                  ../JSON-LD_Contexts/hsAssessmentRecommendationTypeContext.jsonld
+    hsAssessmentRecommendedCourseOfActionType:
+      title: 'hs:AssessmentRecommendedCourseOfActionType'
+      description: A data type for an action.
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncActivityType
+        - type: object
+          properties:
+            isAssessmentCourseOfActionWillBeTaken:
+              type: array
+              description: >-
+                True if defined course of action will be taken; false otherwise.
+                NIEM reference is
+                hs:AssessmentCourseOfActionWillBeTakenIndicator
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            categoryCode:
+              type: array
+              description: >-
+                A kind of course of action. NIEM reference is
+                hs:AssessmentRecommendedCourseOfActionCategoryCode
+              items:
+                $ref: >-
+                  hs.yaml#/components/schemas/hsAssessmentRecommendedCourseOfActionCategoryCodeType
+            '@context':
+              type: string
+              description: hsAssessmentRecommendedCourseOfActionType JSON-LD context
+              enum:
+                - >-
+                  ../JSON-LD_Contexts/hsAssessmentRecommendedCourseOfActionTypeContext.jsonld
+    hsAssessmentRecommendedCourseOfActionCategoryCodeType:
+      type: object
+      title: 'hs:AssessmentRecommendedCourseOfActionCategoryCodeType'
+      description: A data type for describing courses of action.
+      properties:
+        simpleType:
+          $ref: >-
+            hs.yaml#/components/schemas/hsAssessmentRecommendedCourseOfActionCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: >-
+            hsAssessmentRecommendedCourseOfActionCategoryCodeType JSON-LD
+            context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsAssessmentRecommendedCourseOfActionCategoryCodeTypeContext.jsonld
+    hsAssessmentRecommendedCourseOfActionCategoryCodeSimpleType:
+      type: string
+      description: A data type for describing a course of action.
+      enum:
+        - Cognitive Behavior Treatment
+        - Drug/Alcohol Assessment
+        - Drug/Alcohol Treatment
+        - Family Counseling
+        - Mental Health Assessment
+        - Mental Health Screening
+        - Multi Systemic Therapy
+        - Risk Intervention
+        - Trauma Intervention
+    hsCaseworkerType:
+      type: object
+      title: 'hs:CaseworkerType'
+      description: A data type for information about the caseworker.
+      properties:
+        roleOfPerson:
+          type: array
+          description: >-
+            A person of whom the role object is a function. NIEM reference is
+            nc:RoleOfPerson
+          items:
+            $ref: nc.yaml#/components/schemas/ncPersonType
+        caseWorkerCategoryCode:
+          type: array
+          description: 'A case worker category. NIEM reference is hs:CaseWorkerCategoryCode'
+          items:
+            $ref: hs.yaml#/components/schemas/hsCaseWorkerCategoryCodeType
+        category:
+          type: array
+          description: >-
+            A kind of caseworker, described in terms of their function or
+            program specialty. NIEM reference is hs:CaseworkerCategoryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        caseWorkerInvolvementCategoryCode:
+          type: array
+          description: >-
+            A code indicating the type of caseworker assigned e.g.
+            investigation, ongoing, adoption, permanency, caseworker supervisor.
+            NIEM reference is hs:CaseWorkerInvolvementCategoryCode
+          items:
+            $ref: >-
+              hs.yaml#/components/schemas/hsCaseworkerInvolvementCategoryCodeType
+        '@context':
+          type: string
+          description: hsCaseworkerType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsCaseworkerTypeContext.jsonld
+    hsCaseWorkerCategoryCodeType:
+      type: object
+      title: 'hs:CaseWorkerCategoryCodeType'
+      description: A data type for a kind of case worker.
+      properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsCaseWorkerCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: hsCaseWorkerCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsCaseWorkerCategoryCodeTypeContext.jsonld
+    hsCaseWorkerCategoryCodeSimpleType:
+      type: string
+      description: A data type for a kind of case worker.
+      enum:
+        - Caseworker
+        - Caseworker Supervisor
+        - Enforcement Worker
+        - Financial Supervisor
+        - Financial Worker
+        - Locate Worker
+    hsCaseworkerInvolvementCategoryCodeType:
+      type: object
+      title: 'hs:CaseworkerInvolvementCategoryCodeType'
+      description: >-
+        A data type describing the specific involvement of a caseworker as
+        related to a particular case
+      properties:
+        simpleType:
+          $ref: >-
+            hs.yaml#/components/schemas/hsCaseworkerInvolvementCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: hsCaseworkerInvolvementCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsCaseworkerInvolvementCategoryCodeTypeContext.jsonld
+    hsCaseworkerInvolvementCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type describing the specific involvement of a caseworker as
+        related to a particular case.
+      enum:
+        - AD
+        - IN
+        - 'ON'
+        - OT
+        - PE
+        - PT
+        - SU
+    hsEducationType:
+      type: object
+      title: 'hs:EducationType'
+      description: >-
+        A data type for describing the educational issues related to the court
+        report and service plan of any participant  in the case.
+      properties:
+        alGoal:
+          type: array
+          description: >-
+            A kind of educational level the child and or court wishes to 
+            achieve. NIEM reference is hs:EducationalGoalText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        alNeed:
+          type: array
+          description: >-
+            A specific educational need that the child may have. NIEM reference
+            is hs:EducationalNeedText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        augmentation:
+          type: array
+          description: >-
+            Additional information about an education. NIEM reference is
+            j:EducationAugmentation
+          items:
+            $ref: j.yaml#/components/schemas/jEducationAugmentationType
+        '@context':
+          type: string
+          description: hsEducationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsEducationTypeContext.jsonld
+    hsCourtOrderAugmentationType:
+      type: object
+      title: 'hs:CourtOrderAugmentationType'
+      description: A data type for additional information about a court order.
+      properties:
+        organizationCaseID:
+          type: array
+          description: >-
+            An identifier assigned by an organization to a case. NIEM reference
+            is hs:OrganizationCaseID
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        caseDocketID:
+          type: array
+          description: >-
+            An identifier used to reference a case docket. NIEM reference is
+            nc:CaseDocketID
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        courtOrderRenderedDate:
+          type: array
+          description: >-
+            A date the judge verbally issued the order. NIEM reference is
+            hs:CourtOrderRenderedDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        '@context':
+          type: string
+          description: hsCourtOrderAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsCourtOrderAugmentationTypeContext.jsonld
+    hsReportingOrganizationType:
+      title: 'hs:ReportingOrganizationType'
+      description: A data type for an organization reporting information.
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncOrganizationType
+        - type: object
+          properties:
+            categoryCode:
+              type: array
+              description: >-
+                A kind of an organization reporting information. NIEM reference
+                is hs:ReportingOrganizationCategoryCode
+              items:
+                $ref: >-
+                  hs.yaml#/components/schemas/hsReportingOrganizationCategoryCodeType
+            category:
+              type: array
+              description: >-
+                A kind of an organization reporting information. NIEM reference
+                is hs:ReportingOrganizationCategoryText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            classCode:
+              type: array
+              description: >-
+                A class of an organization reporting information. NIEM reference
+                is hs:ReportingOrganizationClassCode
+              items:
+                $ref: >-
+                  hs.yaml#/components/schemas/hsReportingOrganizationClassCodeType
+            class:
+              type: array
+              description: >-
+                A class of an organization reporting information. NIEM reference
+                is hs:ReportingOrganizationClassText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            '@context':
+              type: string
+              description: hsReportingOrganizationType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/hsReportingOrganizationTypeContext.jsonld
+    hsReportingOrganizationCategoryCodeType:
+      type: object
+      title: 'hs:ReportingOrganizationCategoryCodeType'
+      description: A data type for a kind of an organization reporting information.
+      properties:
+        simpleType:
+          $ref: >-
+            hs.yaml#/components/schemas/hsReportingOrganizationCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: hsReportingOrganizationCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsReportingOrganizationCategoryCodeTypeContext.jsonld
+    hsReportingOrganizationCategoryCodeSimpleType:
+      type: string
+      description: A data type for a kind of an organization reporting information.
+      enum:
+        - Advocate
+        - Community Action Organization
+        - Consultant
+        - Educational Department
+        - Elementary and Secondary School
+        - Environmental Organization
+        - Financial Institution
+        - Health Department
+        - Hospital
+        - Indian Tribal Program
+        - Intermediary Organization
+        - 'Junior College, College and University'
+        - Law Enforcement Agency
+        - Library and Museum
+        - Nursing Home OR Other Domiciliary Care Facility
+        - Other Educational Organization
+        - Other Health Organization
+        - Other Social Services Organization
+        - Other Special Interest Organization
+        - Planning and Administrative Organizations
+        - Rehabilitation Organization
+        - 'Research Institution, Foundation and Laboratory'
+        - School Board and School District
+        - Shelter
+        - Substance Abuse Treatment Center
+        - Supplier Organizations
+        - Unknown
+        - Vocational and Training School
+        - Welfare Department
+    hsReportingOrganizationClassCodeType:
+      type: object
+      title: 'hs:ReportingOrganizationClassCodeType'
+      description: A data type for a class of an organization reporting information.
+      properties:
+        simpleType:
+          $ref: >-
+            hs.yaml#/components/schemas/hsReportingOrganizationClassCodeSimpleType
+        '@context':
+          type: string
+          description: hsReportingOrganizationClassCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsReportingOrganizationClassCodeTypeContext.jsonld
+    hsReportingOrganizationClassCodeSimpleType:
+      type: string
+      description: A data type for a class of an organization reporting information.
+      enum:
+        - City Government
+        - County Government
+        - Federal Government
+        - Foreign Non-Profit Organization
+        - Foreign Profit Organization
+        - International
+        - Interstate Government Affiliated Organizations
+        - Non-Profit Private Non-Government Organizations
+        - Non-Profit Public Non-Government Organizations
+        - Other
+        - Private Profit (Large Business) Organizations
+        - Private Profit (Small Business) Organizations
+        - Special Unit of Government
+        - Sponsored Organizations
+        - State Government
+        - Unknown
+    hsMilitarySummaryAugmentationType:
+      type: object
+      title: 'hs:MilitarySummaryAugmentationType'
+      description: >-
+        A data type for additional information about a person's military
+        service.
+      properties:
+        militaryInductionDate:
+          type: array
+          description: >-
+            A date a person was inducted (or will be inducted) into active
+            service in a military. NIEM reference is hs:MilitaryInductionDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        '@context':
+          type: string
+          description: hsMilitarySummaryAugmentationType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsMilitarySummaryAugmentationTypeContext.jsonld
+    hsPersonAugmentationType:
+      type: object
+      title: 'hs:PersonAugmentationType'
+      description: A data type for additional information about a person.
+      properties:
+        locationStateName:
+          type: array
+          description: >-
+            A name of a state, commonwealth, province, or other such
+            geopolitical subdivision of a country. NIEM reference is
+            nc:LocationStateName
+          items:
+            $ref: nc.yaml#/components/schemas/ncProperNameTextType
+        isPhoneContactSupport:
+          type: array
+          description: >-
+            True if contact by voice phone is supported for follow up purposes;
+            false otherwise. NIEM reference is hs:PhoneContactSupportIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isFaxContactSupport:
+          type: array
+          description: >-
+            True if contact by fax machine is supported for follow up purposes;
+            false otherwise. NIEM reference is hs:FaxContactSupportIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isEmailContactSupport:
+          type: array
+          description: >-
+            True if contact by e-mail is supported for follow up purposes; false
+            otherwise. NIEM reference is hs:EmailContactSupportIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        SSNVerificationIndicatorCode:
+          type: array
+          description: >-
+            A verification of a SSN by the Social Security Administration (SSA).
+            NIEM reference is hs:SSNVerificationIndicatorCode
+          items:
+            $ref: hs.yaml#/components/schemas/hsSSNVerificationIndicatorCodeType
+        isFraud:
+          type: array
+          description: >-
+            True if there has been fraudulent receipt of TANF benefits within
+            the last ten years due to a misrepresentation of residence; false
+            otherwise. NIEM reference is hs:FraudIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isFugitiveFelon:
+          type: array
+          description: >-
+            True if a person is a current fugitive felon; false otherwise. NIEM
+            reference is hs:FugitiveFelonIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isProbationAndParoleViolation:
+          type: array
+          description: >-
+            True if Current Probation or Parole Violation; false otherwise. NIEM
+            reference is hs:ProbationAndParoleViolationIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isDrugRelatedFelon:
+          type: array
+          description: >-
+            True if a person is a drug-related felon; false otherwise. NIEM
+            reference is hs:DrugRelatedFelonIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isVAMatchRequest:
+          type: array
+          description: >-
+            True if to perform a VA Match; false if there is no VA match. NIEM
+            reference is hs:VAMatchRequestIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isStateMatchRequest:
+          type: array
+          description: >-
+            True if to perform an interstate match; false if there is no state
+            match. NIEM reference is hs:StateMatchRequestIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isFEDMatchRequest:
+          type: array
+          description: >-
+            True if perform federal data match; false if there is no fed match.
+            NIEM reference is hs:FEDMatchRequestIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        eligibility:
+          type: array
+          description: >-
+            A set of programs for which a person may be considered for
+            eligibility. NIEM reference is hs:Eligibility
+          items:
+            $ref: hs.yaml#/components/schemas/hsEligibilityType
+        tribalAffiliation:
+          type: array
+          description: >-
+            A tribe in which the child may be affiliated with. NIEM reference is
+            hs:TribalAffiliationText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        case:
+          type: array
+          description: >-
+            An aggregation of information about a set of related activities and
+            events. NIEM reference is nc:Case
+          items:
+            $ref: nc.yaml#/components/schemas/ncCaseType
+        isStudentCurrentEducationEnrollment:
+          type: array
+          description: >-
+            True if the juvenile is currently enrolled in an educational
+            program; false otherwise. NIEM reference is
+            hs:StudentCurrentEducationEnrollmentIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isStudentCurrentEducationTruancy:
+          type: array
+          description: >-
+            True if the juvenile is currently considered truant; false
+            otherwise. NIEM reference is
+            hs:StudentCurrentEducationTruancyIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        studentCurrentEducationDescription:
+          type: array
+          description: >-
+            A description of the juvenile's current educational program (e.g.,
+            grade level, curriculum, etc.). NIEM reference is
+            hs:StudentCurrentEducationDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        isStudentSpecialEducationEligible:
+          type: array
+          description: >-
+            True if the student is eligible for enrollment in a
+            special-education program (based on diagnosed developmental
+            disabilities, learning disorders, etc.); false otherwise. NIEM
+            reference is hs:StudentSpecialEducationEligibleIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        studentCurrentEducationEnrollmentEndDate:
+          type: array
+          description: >-
+            A date a juvenile's current educational program is scheduled to
+            conclude. NIEM reference is
+            hs:StudentCurrentEducationEnrollmentEndDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        studentIdentification:
+          type: array
+          description: >-
+            A unique alphanumeric identification assigned to a student by an
+            education organization. NIEM reference is hs:StudentIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        education:
+          type: array
+          description: >-
+            A description of the educational issues related to the court report
+            and service plan of any participant in the case. NIEM reference is
+            hs:Education
+          items:
+            $ref: hs.yaml#/components/schemas/hsEducationType
+        historicalNarrative:
+          type: array
+          description: >-
+            A history of a participant of a case. NIEM reference is
+            hs:HistoricalNarrative
+          items:
+            $ref: hs.yaml#/components/schemas/hsHistoricalNarrativeType
+        isICWAEligibility:
+          type: array
+          description: >-
+            True if a case participant's ethnicity implicates the Indian Child
+            Welfare Act (ICWA); false otherwise. NIEM reference is
+            hs:ICWAEligibilityIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        isSeriousHabitualOffender:
+          type: array
+          description: >-
+            True if the juvenile has Serious Habitual Offender status; false
+            otherwise. NIEM reference is hs:SeriousHabitualOffenderIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        healthDetails:
+          type: array
+          description: >-
+            A person's mental health, substance abuse, medical health and
+            medications. NIEM reference is hs:HealthDetails
+          items:
+            $ref: hs.yaml#/components/schemas/hsHealthDetailsType
+        healthInsurance:
+          type: array
+          description: 'A health insurance policy. NIEM reference is hs:HealthInsurance'
+          items:
+            $ref: hs.yaml#/components/schemas/hsHealthInsuranceType
+        isEnglishInterpreterRequired:
+          type: array
+          description: >-
+            True if any of the case participants requires an interpreter during
+            case proceedings; false otherwise. NIEM reference is
+            hs:EnglishInterpreterRequiredIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        recentLifeChangesDescription:
+          type: array
+          description: >-
+            A description of recent major life changes, generally in the prior
+            year. NIEM reference is hs:RecentLifeChangesDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        employerContactInformation:
+          type: array
+          description: >-
+            An association between an employer and contact information. NIEM
+            reference is hs:EmployerContactInformation
+          items:
+            $ref: nc.yaml#/components/schemas/ncContactInformationType
+        alienIdentification:
+          type: array
+          description: >-
+            An identification for a foreign-born person. NIEM reference is
+            hs:AlienIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        currentLivingSituationCategoryCode:
+          type: array
+          description: >-
+            A data concept for a kind of current living situtation. NIEM
+            reference is hs:CurrentLivingSituationCategoryCode
+          items:
+            $ref: hs.yaml#/components/schemas/hsLivingSituationCategoryCodeType
+        currentLivingSituationCategory:
+          type: array
+          description: >-
+            A kind of current living situtation. NIEM reference is
+            hs:CurrentLivingSituationCategoryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        hobbiesInterestsDescription:
+          type: array
+          description: >-
+            A description of a person's hobbies and/or interests. NIEM reference
+            is hs:HobbiesInterestsDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        housingPermanencyCategoryCode:
+          type: array
+          description: >-
+            A kind of housing at time of service. NIEM reference is
+            hs:HousingPermanencyCategoryCode
+          items:
+            $ref: hs.yaml#/components/schemas/hsHousingPermanencyCategoryCodeType
+        perceivedAgeMeasure:
+          type: array
+          description: >-
+            A measurement of the perceived or apparent age of a person. NIEM
+            reference is hs:PerceivedAgeMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncTimeMeasureType
+        personGenderIdentityCode:
+          type: array
+          description: >-
+            A gender of a person's identity. The cultural meanings of patterns
+            of behavior, experience, and personality that are labeled masculine
+            or feminine. NIEM reference is hs:PersonGenderIdentityCode
+          items:
+            $ref: hs.yaml#/components/schemas/hsPersonGenderIdentityCodeType
+        personGenderIdentity:
+          type: array
+          description: >-
+            A gender of a person's identity. The cultural meanings of patterns
+            of behavior, experience, and personality that are labeled masculine
+            or feminine. NIEM reference is hs:PersonGenderIdentityText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        personPhysicalCondition:
+          type: array
+          description: >-
+            A description of a person's general physical condition. NIEM
+            reference is hs:PersonPhysicalConditionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        recentLivingSituationCategoryCode:
+          type: array
+          description: >-
+            A kind of living situation experienced in the last year. NIEM
+            reference is hs:RecentLivingSituationCategoryCode
+          items:
+            $ref: hs.yaml#/components/schemas/hsLivingSituationCategoryCodeType
+        recentLivingSituationCategory:
+          type: array
+          description: >-
+            A kind of living situation experienced in the last year. NIEM
+            reference is hs:RecentLivingSituationCategoryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: hsPersonAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsPersonAugmentationTypeContext.jsonld
+    hsSSNVerificationIndicatorCodeType:
+      type: object
+      title: 'hs:SSNVerificationIndicatorCodeType'
+      description: >-
+        A data type for a verification of a SSN by the Social Security
+        Administration (SSA).
+      properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsSSNVerificationIndicatorCodeSimpleType
+        '@context':
+          type: string
+          description: hsSSNVerificationIndicatorCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsSSNVerificationIndicatorCodeTypeContext.jsonld
+    hsSSNVerificationIndicatorCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a verification of a SSN by the Social Security
+        Administration (SSA).
+      enum:
+        - '*'
+        - .
+        - '1'
+        - '3'
+        - '5'
+        - F
+        - M
+        - P
+        - R
+        - V
+        - X
+        - Z
+    hsEligibilityType:
+      type: object
+      title: 'hs:EligibilityType'
+      description: >-
+        A data type for a set of programs for which a person may be considered
+        for eligibility.
+      properties:
+        servicesIndicatorCode:
+          type: array
+          description: >-
+            A service for which a person is eligible. NIEM reference is
+            hs:ServicesEligibilityIndicatorCode
+          items:
+            $ref: hs.yaml#/components/schemas/hsServicesEligibilityIndicatorCodeType
+        isTANF:
+          type: array
+          description: >-
+            True if a client receives TANF Assistance or if their assets count;
+            false otherwise. NIEM reference is hs:TANFIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        childSupportAssistanceStatusIndicatorCode:
+          type: array
+          description: >-
+            A former assistance. NIEM reference is
+            hs:ChildSupportAssistanceStatusIndicatorCode
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        TANFMonthsQuantity:
+          type: array
+          description: >-
+            A number of countable months that a client has received TANF
+            Benefits as an adult. NIEM reference is
+            hs:TANFMonthsEligibilityQuantity
+          items:
+            $ref: nc.yaml#/components/schemas/ncQuantityType
+        '@context':
+          type: string
+          description: hsEligibilityType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsEligibilityTypeContext.jsonld
+    hsServicesEligibilityIndicatorCodeType:
+      type: object
+      title: 'hs:ServicesEligibilityIndicatorCodeType'
+      description: A data type for a service for which a person is eligible.
+      properties:
+        simpleType:
+          $ref: >-
+            hs.yaml#/components/schemas/hsServicesEligibilityIndicatorCodeSimpleType
+        '@context':
+          type: string
+          description: hsServicesEligibilityIndicatorCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsServicesEligibilityIndicatorCodeTypeContext.jsonld
+    hsServicesEligibilityIndicatorCodeSimpleType:
+      type: string
+      description: A data type for a service for which a person is eligible.
+      enum:
+        - ChildCare
+        - FoodStamp
+        - General Assistance
+        - Medicaid
+        - SSI
+        - TANF
+        - WorkersComp
+    hsHistoricalNarrativeType:
+      type: object
+      title: 'hs:HistoricalNarrativeType'
+      description: A data type for the history of a participant of a case.
+      properties:
+        competencyStatus:
+          type: array
+          description: >-
+            A status describing whether a person is competent to understand the
+            court process. NIEM reference is hs:CompetencyStatusText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        criminalHistoryPendingCharges:
+          type: array
+          description: >-
+            A description of a person's criminal history, pending charges, and
+            other relevant legal status information (for example, eligibility
+            for protection under the Soldiers and Sailors Civil Relief Act).
+            NIEM reference is hs:CriminalHistoryPendingChargesText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        indigencyStatus:
+          type: array
+          description: >-
+            An indigency status of the child. NIEM reference is
+            hs:IndigencyStatus
+          items:
+            $ref: nc.yaml#/components/schemas/ncStatusType
+        nonCriminalLegalIssues:
+          type: array
+          description: >-
+            A description of other cases and situations that may impact a court
+            report. Tribal membership status and other ICWA issues. Includes
+            prior juvenile (non-criminal) history, child support enforcement
+            issues, mental health adjudications. Also identifies interstate
+            placement issues (where there is an ICPC issue or UCCJEA issue).
+            Also indicates the citizenship and legal residency status (if
+            applicable). NIEM reference is hs:NonCriminalLegalIssuesText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        presentingProblem:
+          type: array
+          description: >-
+            A presenting history of the circumstances surrounding removal of the
+            child. Includes some analysis of how those circumstances put the
+            child in danger or actually harmed the child. NIEM reference is
+            hs:PresentingProblemText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: hsHistoricalNarrativeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsHistoricalNarrativeTypeContext.jsonld
+    hsHealthDetailsType:
+      type: object
+      title: 'hs:HealthDetailsType'
+      description: >-
+        A data type for the details about a person's mental health, substance
+        abuse, medical health and medications.
+      properties:
+        medical:
+          type: array
+          description: >-
+            A person's medical health details. NIEM reference is
+            hs:MedicalHealthDetails
+          items:
+            $ref: hs.yaml#/components/schemas/hsMedicalHealthDetailsType
+        mental:
+          type: array
+          description: >-
+            An element that contains information about a person's mental health
+            including social history and psychosocial information. NIEM
+            reference is hs:MentalHealthDetails
+          items:
+            $ref: hs.yaml#/components/schemas/hsMentalHealthDetailsType
+        medicationUse:
+          type: array
+          description: >-
+            A set of details about medication use for an individual. NIEM
+            reference is hs:MedicationUse
+          items:
+            $ref: hs.yaml#/components/schemas/hsMedicationUseType
+        prescription:
+          type: array
+          description: >-
+            A set of written instructions from a physician or dentist to a
+            druggist concerning the form and dosage of a drug to be issued to a
+            given patient NIEM reference is hs:Prescription
+          items:
+            $ref: hs.yaml#/components/schemas/hsPrescriptionType
+        substanceAbuseDetails:
+          type: array
+          description: >-
+            A set of details about a person's substance abuse. NIEM reference is
+            hs:SubstanceAbuseDetails
+          items:
+            $ref: hs.yaml#/components/schemas/hsSubstanceAbuseDetailsType
+        '@context':
+          type: string
+          description: hsHealthDetailsType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsHealthDetailsTypeContext.jsonld
+    hsMedicalHealthDetailsType:
+      title: 'hs:MedicalHealthDetailsType'
+      description: A data type for details about a person's medical health.
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncActivityType
+        - type: object
+          properties:
+            dentalHistoryDescription:
+              type: array
+              description: >-
+                A description of the details of a person's dental history, which
+                may include diagnosis, treatment plans, and medications. NIEM
+                reference is hs:DentalHistoryDescriptionText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            medicalHistoryDescription:
+              type: array
+              description: >-
+                A description of known medical history. NIEM reference is
+                hs:MedicalHistoryDescriptionText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            isHearingDisability:
+              type: array
+              description: >-
+                True if the juvenile has a hearing disability; false otherwise.
+                NIEM reference is hs:HearingDisabilityIndicator
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            isVisualDisability:
+              type: array
+              description: >-
+                True if the juvenile has a visual disability; false otherwise.
+                NIEM reference is hs:VisualDisabilityIndicator
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            isOtherPhysicalDisability:
+              type: array
+              description: >-
+                True if the juvenile has a physical disability other than a
+                visual or hearing impairment; false otherwise. NIEM reference is
+                hs:OtherPhysicalDisabilityIndicator
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            '@context':
+              type: string
+              description: hsMedicalHealthDetailsType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/hsMedicalHealthDetailsTypeContext.jsonld
+    hsMentalHealthDetailsType:
+      title: 'hs:MentalHealthDetailsType'
+      description: >-
+        A data type for details about a person's mental health including social
+        history and psychosocial information.
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncActivityType
+        - type: object
+          properties:
+            developmentalDisabilityCategoryCode:
+              type: array
+              description: >-
+                A code list that describes a person's developmental disabilities
+                NIEM reference is hs:DevelopmentalDisabilityCategoryCode
+              items:
+                $ref: hs.yaml#/components/schemas/hsDevelopmentalDisabilityCodeType
+            developmentalDisabilityCategory:
+              type: array
+              description: >-
+                A kind of developmental disability. NIEM reference is
+                hs:DevelopmentalDisabilityCategoryText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            mentalHealthHospitalizationHistoryDescription:
+              type: array
+              description: >-
+                A description of past in-patient hospitalizations due to mental
+                health issues. NIEM reference is
+                hs:MentalHealthHospitalizationHistoryDescriptionText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            mentalHealthHistoryDescription:
+              type: array
+              description: >-
+                A description of known mental health history, including
+                behavioral health and psychological or psychiatric assessments,
+                diagnoses, or treatments. NIEM reference is
+                hs:MentalHealthHistoryDescriptionText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            '@context':
+              type: string
+              description: hsMentalHealthDetailsType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/hsMentalHealthDetailsTypeContext.jsonld
+    hsDevelopmentalDisabilityCodeType:
+      type: object
+      title: 'hs:DevelopmentalDisabilityCodeType'
+      description: A data type for describing a person's developmental disabilities
+      properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsDevelopmentalDisabilityCodeSimpleType
+        '@context':
+          type: string
+          description: hsDevelopmentalDisabilityCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsDevelopmentalDisabilityCodeTypeContext.jsonld
+    hsDevelopmentalDisabilityCodeSimpleType:
+      type: string
+      description: A data type for describing a person's developmental disabilities
+      enum:
+        - ADD
+        - ADHD
+        - DYSLEXIA
+        - LEARNING
+        - SPEECH
+    hsMedicationUseType:
+      title: 'hs:MedicationUseType'
+      description: A data type for recording medication use for an individual.
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncActivityType
+        - type: object
+          properties:
+            medication:
+              type: array
+              description: 'A medication in use. NIEM reference is hs:Medication'
+              items:
+                $ref: nc.yaml#/components/schemas/ncDrugType
+            prescriber:
+              type: array
+              description: >-
+                A medical professional or organization that authorizes a
+                prescription drug. NIEM reference is hs:Prescriber
+              items:
+                $ref: nc.yaml#/components/schemas/ncEntityType
+            dispenser:
+              type: array
+              description: >-
+                A pharmacy or pharmacist who filled the prescription. NIEM
+                reference is hs:Dispenser
+              items:
+                $ref: nc.yaml#/components/schemas/ncEntityType
+            medicationDispensingDate:
+              type: array
+              description: >-
+                A date when the medication was last dispensed from a dispensing
+                entity. NIEM reference is hs:MedicationDispensingDate
+              items:
+                $ref: nc.yaml#/components/schemas/ncDateType
+            medicationDoseMeasure:
+              type: array
+              description: >-
+                A specified dosage of medication. NIEM reference is
+                hs:MedicationDoseMeasure
+              items:
+                $ref: nc.yaml#/components/schemas/ncMeasureType
+            frequencyCode:
+              type: array
+              description: >-
+                A frequency of medication use, e.g. daily with food, as needed
+                for discomfort, not more than every 8 hours, etc. NIEM reference
+                is hs:MedicationUseFrequencyCode
+              items:
+                $ref: hs.yaml#/components/schemas/hsMedicationUseFrequencyCodeType
+            frequency:
+              type: array
+              description: >-
+                A frequency of medication use, e.g. daily with food, as needed
+                for discomfort, not more than every 8 hours, etc. NIEM reference
+                is hs:MedicationUseFrequencyText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            medicationLastTakenDate:
+              type: array
+              description: >-
+                A date when the medication was last taken. NIEM reference is
+                hs:MedicationLastTakenDate
+              items:
+                $ref: nc.yaml#/components/schemas/ncDateType
+            medicationTreatmentReason:
+              type: array
+              description: >-
+                A description of the treatment reason or condition being treated
+                with the medication.  This should include any 'off label' use.
+                NIEM reference is hs:MedicationTreatmentReasonText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            prescriptionUseInstructions:
+              type: array
+              description: >-
+                A set of instructions for use of medication e.g. daily with food
+                for 7 days, as needed for discomfort, not more than every 8
+                hours, etc. NIEM reference is hs:PrescriptionUseInstructionsText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            '@context':
+              type: string
+              description: hsMedicationUseType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/hsMedicationUseTypeContext.jsonld
+    hsMedicationUseFrequencyCodeType:
+      type: object
+      title: 'hs:MedicationUseFrequencyCodeType'
+      description: A data type for describing the medication use frequency.
+      properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsMedicationUseFrequencyCodeSimpleType
+        '@context':
+          type: string
+          description: hsMedicationUseFrequencyCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsMedicationUseFrequencyCodeTypeContext.jsonld
+    hsMedicationUseFrequencyCodeSimpleType:
+      type: string
+      description: A data type for describing the medication use frequency.
+      enum:
+        - As Needed
+        - At Meal
+        - Daily
+        - Three Times Daily
+        - Twice Daily
+    hsPrescriptionType:
+      title: 'hs:PrescriptionType'
+      description: >-
+        A data type for the details of written instructions from a physician or
+        dentist to a druggist concerning the form and dosage of a drug to be
+        issued to a given patient
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncActivityType
+        - type: object
+          properties:
+            dispenser:
+              type: array
+              description: >-
+                A pharmacy or pharmacist who filled the prescription. NIEM
+                reference is hs:Dispenser
+              items:
+                $ref: nc.yaml#/components/schemas/ncEntityType
+            drug:
+              type: array
+              description: >-
+                A legal or illegal substance that can be used as a medicine or a
+                narcotic. NIEM reference is nc:Drug
+              items:
+                $ref: nc.yaml#/components/schemas/ncDrugType
+            prescriber:
+              type: array
+              description: >-
+                A medical professional or organization that authorizes a
+                prescription drug. NIEM reference is hs:Prescriber
+              items:
+                $ref: nc.yaml#/components/schemas/ncEntityType
+            lastTakenDate:
+              type: array
+              description: >-
+                A date or date range when the medication was last taken. NIEM
+                reference is hs:PrescriptionLastTakenDate
+              items:
+                $ref: nc.yaml#/components/schemas/ncDateType
+            treatmentReason:
+              type: array
+              description: >-
+                A description of the treatment reason or condition being treated
+                with the medication. This should include any 'off label' use.
+                NIEM reference is hs:PrescriptionTreatmentReasonText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            useInstructions:
+              type: array
+              description: >-
+                A set of instructions for use of medication e.g. daily with food
+                for 7 days, as needed for discomfort, not more than every 8
+                hours, etc. NIEM reference is hs:PrescriptionUseInstructionsText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            drugDispensedQuantity:
+              type: array
+              description: >-
+                A total count of a drug dispensed to a patient NIEM reference is
+                hs:DrugDispensedQuantity
+              items:
+                $ref: nc.yaml#/components/schemas/ncQuantityType
+            drugDosageUnitsCode:
+              type: array
+              description: >-
+                A unit of measure for the quantity dispensed of a drug. NIEM
+                reference is hs:DrugDosageUnitsCode
+              items:
+                $ref: hs.yaml#/components/schemas/hsDrugDosageUnitsCodeType
+            drugDosageUnits:
+              type: array
+              description: >-
+                A unit of measure for the quantity dispensed of a drug. NIEM
+                reference is hs:DrugDosageUnitsText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            isDrugPartialFill:
+              type: array
+              description: >-
+                True if a prescription is partially filled; false otherwise.
+                NIEM reference is hs:DrugPartialFillIndicator
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            drugRefillNumberCountQuantity:
+              type: array
+              description: >-
+                A sequential number representing the sequential filling of a
+                prescription. 0 indicates an original dispensing instead of a
+                refill. NIEM reference is hs:DrugRefillNumberCountQuantity
+              items:
+                $ref: nc.yaml#/components/schemas/ncQuantityType
+            drugRefillsAuthorizedQuantity:
+              type: array
+              description: >-
+                A number of times a prescriber has authorized a prescription to
+                be refilled. NIEM reference is hs:DrugRefillsAuthorizedQuantity
+              items:
+                $ref: nc.yaml#/components/schemas/ncQuantityType
+            methodOfPaymentCode:
+              type: array
+              description: 'A method of payment. NIEM reference is hs:MethodOfPaymentCode'
+              items:
+                $ref: hs.yaml#/components/schemas/hsMethodOfPaymentCodeType
+            methodOfPayment:
+              type: array
+              description: 'A method of payment. NIEM reference is hs:MethodOfPaymentText'
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            pharmacist:
+              type: array
+              description: >-
+                A person who is professionally qualified to prepare and dispense
+                medicinal drugs. NIEM reference is hs:Pharmacist
+              items:
+                $ref: hs.yaml#/components/schemas/hsPharmacistType
+            filledDate:
+              type: array
+              description: >-
+                A date on which a prescription was filled. NIEM reference is
+                hs:PrescriptionFilledDate
+              items:
+                $ref: nc.yaml#/components/schemas/ncDateType
+            normCode:
+              type: array
+              description: >-
+                A standardized and normalized cross-platform RxCode for
+                electronic prescriptions to capture the prescribed drug product
+                identification information. Part of the Unified Medical Language
+                System (UMLS) NIEM reference is hs:PrescriptionNormCodeText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            soldDate:
+              type: array
+              description: >-
+                A date on which a prescription received by a patient or a
+                patient's agent. NIEM reference is hs:PrescriptionSoldDate
+              items:
+                $ref: nc.yaml#/components/schemas/ncDateType
+            writtenDate:
+              type: array
+              description: >-
+                A date on which a prescription was written by a prescriber. NIEM
+                reference is hs:PrescriptionWrittenDate
+              items:
+                $ref: nc.yaml#/components/schemas/ncDateType
+            stateIssuedRxSerialNumberIdentification:
+              type: array
+              description: >-
+                An identification assigned to a state issued serialized
+                prescription blank as well as the state which issued it. NIEM
+                reference is hs:StateIssuedRxSerialNumberIdentification
+              items:
+                $ref: nc.yaml#/components/schemas/ncIdentificationType
+            transmissionFormOfRxOriginCode:
+              type: array
+              description: >-
+                A transmission method by which a pharmacy receives a
+                prescription. NIEM reference is
+                hs:TransmissionFormOfRxOriginCode
+              items:
+                $ref: >-
+                  hs.yaml#/components/schemas/hsTransmissionFormOfRxOriginCodeType
+            transmissionFormOfRxOrigin:
+              type: array
+              description: >-
+                A transmission method by which a pharmacy receives a
+                prescription. NIEM reference is
+                hs:TransmissionFormOfRxOriginText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            '@context':
+              type: string
+              description: hsPrescriptionType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/hsPrescriptionTypeContext.jsonld
+    hsDrugDosageUnitsCodeType:
+      type: object
+      title: 'hs:DrugDosageUnitsCodeType'
+      description: >-
+        A data type for the unit of measure for the quantity dispensed of a
+        drug.
+      properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsDrugDosageUnitsCodeSimpleType
+        '@context':
+          type: string
+          description: hsDrugDosageUnitsCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsDrugDosageUnitsCodeTypeContext.jsonld
+    hsDrugDosageUnitsCodeSimpleType:
+      type: string
+      description: >-
+        A data type for the unit of measure for the quantity dispensed of a
+        drug.
+      enum:
+        - '01'
+        - '02'
+        - '03'
+    hsMethodOfPaymentCodeType:
+      type: object
+      title: 'hs:MethodOfPaymentCodeType'
+      description: A data type for a method of payment.
+      properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsMethodOfPaymentCodeSimpleType
+        '@context':
+          type: string
+          description: hsMethodOfPaymentCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsMethodOfPaymentCodeTypeContext.jsonld
+    hsMethodOfPaymentCodeSimpleType:
+      type: string
+      description: A data type for a method of payment.
+      enum:
+        - '01'
+        - '02'
+        - '03'
+        - '04'
+        - '05'
+        - '06'
+        - '07'
+        - '99'
+    hsPharmacistType:
+      type: object
+      title: 'hs:PharmacistType'
+      description: >-
+        A data type for a person who is professionally qualified to prepare and
+        dispense medicinal drugs.
+      properties:
+        NPIIdentification:
+          type: array
+          description: >-
+            An identification called the National Provider Identifier, which
+            includes a unique 10-digit identification number issued to health
+            care providers in the United States by the Centers for Medicare and
+            Medicaid Services (CMS). NIEM reference is hs:NPIIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        stateLicenseIdentification:
+          type: array
+          description: >-
+            An identification of a license giving an organization the right to
+            prescribe drugs for patients. NIEM reference is
+            hs:StateLicenseIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        roleOfPerson:
+          type: array
+          description: >-
+            A person of whom the role object is a function. NIEM reference is
+            nc:RoleOfPerson
+          items:
+            $ref: nc.yaml#/components/schemas/ncPersonType
+        '@context':
+          type: string
+          description: hsPharmacistType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsPharmacistTypeContext.jsonld
+    hsTransmissionFormOfRxOriginCodeType:
+      type: object
+      title: 'hs:TransmissionFormOfRxOriginCodeType'
+      description: >-
+        A data type for a transmission method by which a pharmacy receives a
+        prescription.
+      properties:
+        simpleType:
+          $ref: >-
+            hs.yaml#/components/schemas/hsTransmissionFormOfRxOriginCodeSimpleType
+        '@context':
+          type: string
+          description: hsTransmissionFormOfRxOriginCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsTransmissionFormOfRxOriginCodeTypeContext.jsonld
+    hsTransmissionFormOfRxOriginCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a transmission method by which a pharmacy receives a
+        prescription.
+      enum:
+        - '01'
+        - '02'
+        - '03'
+        - '04'
+        - '05'
+        - '99'
+    hsSubstanceAbuseDetailsType:
+      title: 'hs:SubstanceAbuseDetailsType'
+      description: A data type for the details about a person's substance abuse.
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncActivityType
+        - type: object
+          properties:
+            drugUseAgeMeasure:
+              type: array
+              description: >-
+                An age at which the person first began using an illegal
+                substance. NIEM reference is hs:DrugUseAgeMeasure
+              items:
+                $ref: nc.yaml#/components/schemas/ncTimeMeasureType
+            drugUseFrequencyCode:
+              type: array
+              description: >-
+                A code list describing how often the person uses drugs. NIEM
+                reference is hs:DrugUseFrequencyCode
+              items:
+                $ref: hs.yaml#/components/schemas/hsDrugUseFrequencyCodeType
+            drugUseFrequencyDescription:
+              type: array
+              description: >-
+                A description of how often a person uses drugs. NIEM reference
+                is hs:DrugUseFrequencyDescriptionText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            isDrugUse:
+              type: array
+              description: >-
+                True if the person is currently using an illegal substance or
+                has used an illegal substance in the immediate past; false
+                otherwise. NIEM reference is hs:DrugUseIndicator
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            preferredDrugName:
+              type: array
+              description: >-
+                A name of the substance identified as the primary drug of choice
+                used by a person. NIEM reference is hs:PreferredDrugName
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            substance:
+              type: array
+              description: >-
+                A matter or substance of which something consists. NIEM
+                reference is nc:Substance
+              items:
+                $ref: nc.yaml#/components/schemas/ncSubstanceType
+            substanceAbuseCurrentDescription:
+              type: array
+              description: >-
+                A description of current substance abuse. NIEM reference is
+                hs:SubstanceAbuseCurrentDescriptionText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            substanceAbusePastDescription:
+              type: array
+              description: >-
+                A description of past substance abuse issues which may include
+                details about substances used or abused in the past, past
+                treatment episodes or other details related to a person's
+                substance use in the past. NIEM reference is
+                hs:SubstanceAbusePastDescriptionText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            '@context':
+              type: string
+              description: hsSubstanceAbuseDetailsType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/hsSubstanceAbuseDetailsTypeContext.jsonld
+    hsDrugUseFrequencyCodeType:
+      type: object
+      title: 'hs:DrugUseFrequencyCodeType'
+      description: A data type for describing the frequency with which a substance is used.
+      properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsDrugUseFrequencyCodeSimpleType
+        '@context':
+          type: string
+          description: hsDrugUseFrequencyCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsDrugUseFrequencyCodeTypeContext.jsonld
+    hsDrugUseFrequencyCodeSimpleType:
+      type: string
+      description: A data type for describing the frequency with which a substance is used.
+      enum:
+        - FORTY
+        - NINE
+        - NINETEEN
+        - THIRTYNINE
+        - TWO
+        - ZERO
+    hsHealthInsuranceType:
+      title: 'hs:HealthInsuranceType'
+      description: A data type for health insurance information.
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncInsuranceType
+        - type: object
+          properties:
+            policyPrimaryInsuredFullName:
+              type: array
+              description: >-
+                A full name of the primarily insured person under a health
+                insurance policy. NIEM reference is
+                hs:HealthInsurancePolicyPrimaryInsuredFullName
+              items:
+                $ref: nc.yaml#/components/schemas/ncPersonNameTextType
+            '@context':
+              type: string
+              description: hsHealthInsuranceType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/hsHealthInsuranceTypeContext.jsonld
+    hsLivingSituationCategoryCodeType:
+      type: object
+      title: 'hs:LivingSituationCategoryCodeType'
+      description: A data type for a kind of living situtation.
+      properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsLivingSituationCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: hsLivingSituationCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsLivingSituationCategoryCodeTypeContext.jsonld
+    hsLivingSituationCategoryCodeSimpleType:
+      type: string
+      description: A data type for a kind of living situtation.
+      enum:
+        - Assisted Living (Temporary)
+        - Did Not Disclose
+        - DV/Crisis Shelter
+        - Foster Family Home (Non-Relative)
+        - Foster Family Home (Relative)
+        - Friends Home
+        - Group Home
+        - Homeless Shelter
+        - Human Trafficking Specific Shelter
+        - Independent Living (Supervised)
+        - Institution
+        - Juvenile Detention Facility/Jail/Prison
+        - Living In Own Home
+        - Other
+        - Other Relative(s) Home
+        - Out-Of-State/Tribal Service Area
+        - Pre-Adoptive Home
+        - Runaway Homeless Youth
+        - Runaway/Homeless
+        - Trial Home Visit
+        - Unknown
+        - Youth Emergency Shelter
+    hsHousingPermanencyCategoryCodeType:
+      type: object
+      title: 'hs:HousingPermanencyCategoryCodeType'
+      description: A data type for a kind of housing at time of service.
+      properties:
+        simpleType:
+          $ref: >-
+            hs.yaml#/components/schemas/hsHousingPermanencyCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: hsHousingPermanencyCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsHousingPermanencyCategoryCodeTypeContext.jsonld
+    hsHousingPermanencyCategoryCodeSimpleType:
+      type: string
+      description: A data type for a kind of housing at time of service.
+      enum:
+        - Did not disclose
+        - Permanent housing
+        - Transitional or No Housing
+        - Unknown
+    hsPersonGenderIdentityCodeType:
+      type: object
+      title: 'hs:PersonGenderIdentityCodeType'
+      description: A data type for a gender of a person's identity.
+      properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsPersonGenderIdentityCodeSimpleType
+        '@context':
+          type: string
+          description: hsPersonGenderIdentityCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hsPersonGenderIdentityCodeTypeContext.jsonld
+    hsPersonGenderIdentityCodeSimpleType:
+      type: string
+      description: A data type for a gender of a person's identity.
+      enum:
+        - Did not disclose
+        - Female
+        - Genderqueer/Gender Non-conforming
+        - Intersex/Non-binary gender
+        - Male
+        - Transgender Female to Male (FTM)
+        - Transgender General
+        - Transgender Male to Female (MTF)
+        - Unknown
+    hsPersonSexualOrientationCodeType:
+      type: object
+      title: 'hs:PersonSexualOrientationCodeType'
+      description: A data type for a target gender of the sexual interest of a person.
+      properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsPersonSexualOrientationCodeSimpleType
+        '@context':
+          type: string
+          description: hsPersonSexualOrientationCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsPersonSexualOrientationCodeTypeContext.jsonld
+    hsPersonSexualOrientationCodeSimpleType:
+      type: string
+      description: A data type for a target gender of the sexual interest of a person.
+      enum:
+        - Bisexual
+        - Did not disclose
+        - Do not know/Not sure
+        - Lesbian or gay
+        - Other
+        - Straight

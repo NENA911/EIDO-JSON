@@ -1,0 +1,5201 @@
+components:
+  schemas:
+    ndexApprovalStatusCodeType:
+      type: object
+      title: 'ndex:ApprovalStatusCodeType'
+      description: >-
+        A data type for a code that identifies the status of the request for
+        addition to the approved visitor list.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexApprovalStatusCodeSimpleType
+        '@context':
+          type: string
+          description: ndexApprovalStatusCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexApprovalStatusCodeTypeContext.jsonld
+    ndexApprovalStatusCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the status of the request for
+        addition to the approved visitor list.
+      enum:
+        - APPROVED
+        - DENIED
+        - PENDING
+        - REVOKED
+    ndexIncidentStatusCodeType:
+      type: object
+      title: 'ndex:IncidentStatusCodeType'
+      description: >-
+        A data type for a code that identifies the current disposition of the
+        incident.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexIncidentStatusCodeSimpleType
+        '@context':
+          type: string
+          description: ndexIncidentStatusCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexIncidentStatusCodeTypeContext.jsonld
+    ndexIncidentStatusCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the current disposition of the
+        incident.
+      enum:
+        - ACTIVE
+        - ADMINISTRATIVELY CLOSED
+        - CLEARED BY ARREST
+        - CLEARED BY EXCEPTIONAL MEANS
+        - CLOSED
+        - COLD
+        - INACTIVE
+        - OPEN
+        - PENDING
+        - RE_OPENED
+        - UNFOUNDED
+    ndexSupervisedReleaseStatusCodeType:
+      type: object
+      title: 'ndex:SupervisedReleaseStatusCodeType'
+      description: >-
+        A data type for a code that indicates the release status of the subject
+        involved in supervised release.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexSupervisedReleaseStatusCodeSimpleType
+        '@context':
+          type: string
+          description: ndexSupervisedReleaseStatusCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexSupervisedReleaseStatusCodeTypeContext.jsonld
+    ndexSupervisedReleaseStatusCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that indicates the release status of the subject
+        involved in supervised release.
+      enum:
+        - ABSCONDER
+        - ACTIVE
+        - CANCELED
+        - CANCELED DECEASED
+        - CANCELED REVOKED
+        - CANCELED TRANSFERRED
+        - CANCELED UNSUCCESSFUL
+        - COMPLETED
+        - COMPLETED EARLY
+    ndexBinaryCategoryCodeType:
+      type: object
+      title: 'ndex:BinaryCategoryCodeType'
+      description: >-
+        A data type for a code that represents the type of digital
+        representation.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexBinaryCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexBinaryCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexBinaryCategoryCodeTypeContext.jsonld
+    ndexBinaryCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that represents the type of digital
+        representation.
+      enum:
+        - AUDIO
+        - DOCUMENT
+        - DOCUMENT APPROVED TELEPHONE LIST
+        - DOCUMENT EMAIL MESSAGE
+        - DOCUMENT EMAIL USAGE LOG
+        - DOCUMENT IDENTIFICATION
+        - DOCUMENT PHONE PEN REGISTER
+        - DOCUMENT TELEPHONE CALL LOG
+        - DOCUMENT TELEPHONE CALL REQUEST LIST
+        - DOCUMENT TEXTING MESSAGE
+        - DOCUMENT VISITOR LOG
+        - DOCUMENT VISITOR REQUEST LIST
+        - IMAGE
+        - IMAGE AERIAL PHOTO
+        - IMAGE BIOMETRIC
+        - IMAGE BIOMETRIC DNA
+        - IMAGE BIOMETRIC FINGERPRINT
+        - IMAGE CHILD PORNOGRAPHY PHOTO
+        - IMAGE CRIMINAL JUSTICE PHOTO
+        - IMAGE DRIVER LICENSE PHOTO
+        - IMAGE EXAMPLE PHOTO
+        - IMAGE MEDICAL PHOTO
+        - IMAGE MUG SHOT
+        - IMAGE PHYSICAL FEATURE
+        - IMAGE POLICE SKETCH
+        - IMAGE PORTRAIT
+        - IMAGE PROPERTY ITEM
+        - IMAGE SNAPSHOT
+        - MALWARE
+        - OTHER
+        - VIDEO
+    ndexLocationCategoryNDExCodeType:
+      type: object
+      title: 'ndex:LocationCategoryNDExCodeType'
+      description: >-
+        A data type for a code that characterizes a location or area. Includes
+        all NIBRS codes, plus additional codes.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexLocationCategoryNDExCodeSimpleType
+        '@context':
+          type: string
+          description: ndexLocationCategoryNDExCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexLocationCategoryNDExCodeTypeContext.jsonld
+    ndexLocationCategoryNDExCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that characterizes a location or area. Includes
+        all NIBRS codes, plus additional codes.
+      enum:
+        - ABANDONED_CONDEMNED STRUCTURE
+        - AIRPORT_TERMINAL_COMMERCIAL
+        - AIRPORT_TERMINAL_CONCOURSE
+        - AIRPORT_TERMINAL_FREIGHT
+        - AIRPORT_TERMINAL_HANGAR
+        - AIRPORT_TERMINAL_INTERNATIONAL
+        - AIRPORT_TERMINAL_MILITARY
+        - AIRPORT_TERMINAL_PRIVATE
+        - AIRPORT_TERMINAL_RAMP
+        - AIRPORT_TERMINAL_RUNWAY
+        - ASSEMBLY LINE
+        - ATM
+        - AUTO SHOP
+        - BAR
+        - BAR_LOUNGE
+        - BAR_NIGHTCLUB
+        - BAR_STRIP CLUB
+        - BARN
+        - BOARDING HOUSE
+        - BRIDGE
+        - BRIDGE_OVERPASS
+        - BRIDGE_TRESTLE
+        - BRIDGE_VIADUCT
+        - BUSINESS OFFICE
+        - CABIN
+        - CAMP
+        - CAMPGROUND
+        - CAMPUS
+        - CARGO CONTAINER
+        - CARGO CONTAINER_RENTAL STORAGE
+        - CASINO
+        - CASINO_RACE TRACK
+        - CEMETERY
+        - CHECK POINT_BORDER CROSSING
+        - COMMERCIAL BUILDING
+        - COMMERCIAL BUILDING_VACANT
+        - COMMUNITY CENTER
+        - COMMUNITY CENTER_SENIOR CITIZENS
+        - CONSTRUCTION SITE
+        - CONVALESCENT_HOME
+        - CORRECTIONAL FACILITY
+        - CORRECTIONAL FACILITY_JAIL
+        - CORRECTIONAL FACILITY_JUVENILE DETENTION
+        - CORRECTIONAL FACILITY_PENITENTIARY
+        - CORRECTIONAL FACILITY_PRISON
+        - DAYCARE
+        - DEALERSHIP
+        - DEALERSHIP_BOAT
+        - DEALERSHIP_VEHICLE
+        - DESERT
+        - FACTORY
+        - FAIRGROUNDS
+        - FARM
+        - FARM_BARN
+        - FARM_GARDEN
+        - FARM_GRAIN ELEVATOR
+        - FARM_SHED
+        - FARM_SILO
+        - FARM_STABLE
+        - FARM_TACK ROOM
+        - FIELD
+        - FIELD_WOODS
+        - FINANCIAL INSTITUTION
+        - FINANCIAL INSTITUTION_AUTOMATED TELLER MACHINE
+        - FINANCIAL INSTITUTION_BANK
+        - FINANCIAL INSTITUTION_BANK_DRIVE THRU
+        - FINANCIAL INSTITUTION_CREDIT UNION
+        - FINANCIAL INSTITUTION_MORTGAGE COMPANY
+        - FINANCIAL INSTITUTION_SAVINGS LOAN
+        - FIRE STATION
+        - FOOTHILLS
+        - GARAGE
+        - GARDEN
+        - GOLF COURSE
+        - GOVERNMENT BUILDING
+        - GOVERNMENT BUILDING_CITY
+        - GOVERNMENT BUILDING_COUNTY
+        - GOVERNMENT BUILDING_FEDERAL
+        - GOVERNMENT BUILDING_MILITARY
+        - GOVERNMENT BUILDING_MUNICIPAL
+        - GOVERNMENT BUILDING_STATE
+        - GOVERNMENT BUILDING_TOWN
+        - GYM
+        - HOTEL
+        - HOTEL_MOTEL_INN
+        - HOUSE_VACANT
+        - INN
+        - LANDFILL_DUMP
+        - LAUNDROMAT
+        - LAW ENFORCEMENT FACILITY
+        - LAW ENFORCEMENT FACILITY_CITY
+        - LAW ENFORCEMENT FACILITY_COUNTY
+        - LAW ENFORCEMENT FACILITY_FEDERAL
+        - LAW ENFORCEMENT FACILITY_STATE
+        - LAW ENFORCEMENT FACILITY_TRIBAL
+        - LIBRARY
+        - LOT
+        - LOT_VACANT
+        - MALL_RETAIL COMPLEX
+        - MEDICAL CENTER
+        - MEDICAL CENTER_DENTIST
+        - MEDICAL CENTER_DOCTOR OFFICE
+        - MEDICAL CENTER_DOCTOR OFFICE_CLINIC
+        - MEDICAL CENTER_DRUG_STORE
+        - MEDICAL CENTER_HOSPITAL
+        - MEDICAL CENTER_HOSPITAL_CONVALESCENT
+        - MEDICAL CENTER_OFFICE
+        - MEDICAL CENTER_SUPPLY BUILDING
+        - MEETING HALL_COMMUNITY CENTER
+        - MILITARY INSTALLATION
+        - MILL
+        - MINE
+        - MONUMENT
+        - MOTEL
+        - MOUNTAINS
+        - MOVIE THEATER
+        - MUSEUM
+        - NURSING HOME
+        - OFFICE BUILDING
+        - OIL FIELD
+        - OPEN FIELD
+        - OUTBUILDING
+        - PARK
+        - PARK_CITY
+        - PARK_FEDERAL
+        - PARK_NATIONAL
+        - PARK_PLAYGROUND
+        - PARK_ROADSIDE
+        - PARK_STATE
+        - PARKING LOT
+        - PARKING LOT_GARAGE
+        - PARKING_GARAGE
+        - PIPELINE
+        - PLANT
+        - PUBLIC WORKS FACILITY
+        - QUARRY
+        - RAIL YARD
+        - RECREATION FACILITY
+        - RECREATION FACILITY_AMUSEMENT PARK
+        - RECREATION FACILITY_CIVIC CENTER
+        - RECREATION FACILITY_RACE TRACK
+        - RECREATION FACILITY_SPORTS ARENA
+        - RECREATION FACILITY_STADIUM
+        - RECREATION FACILITY_SWIMMING POOL
+        - RECREATION FACILITY_ZOO
+        - REFINERY
+        - RELIGIOUS BUILDING
+        - RELIGIOUS BUILDING_CHAPEL
+        - RELIGIOUS BUILDING_CHURCH
+        - RELIGIOUS BUILDING_MOSQUE
+        - RELIGIOUS BUILDING_SYNAGOGUE
+        - RELIGIOUS BUILDING_TEMPLE
+        - RESERVATION
+        - RESERVOIR
+        - RESIDENTIAL_ APARTMENT COMPLEX
+        - RESIDENTIAL_AIRPLANE_AFFIXED
+        - RESIDENTIAL_APARTMENT
+        - RESIDENTIAL_BOAT_AFFIXED
+        - RESIDENTIAL_CONDOMINIUM
+        - RESIDENTIAL_DORMITORY
+        - RESIDENTIAL_DUPLEX
+        - RESIDENTIAL_FLAT
+        - RESIDENTIAL_HOUSE
+        - RESIDENTIAL_MOBILIE HOME
+        - RESIDENTIAL_RV_AFFIXED
+        - RESIDENTIAL_TENEMENT
+        - RESIDENTIAL_TOWNHOUSE
+        - RESIDENTIAL_VAN_AFFIXED
+        - RESTAURANT
+        - RESTAURANT_CAFETERIA
+        - RESTAURANT_FAMILY DINING
+        - RESTAURANT_FAST FOOD
+        - RESTAURANT_SNACK BAR
+        - RIGHT OF WAY
+        - RIGHT OF WAY_RAILBED_TRAIN
+        - RIGHT OF WAY_ROAD
+        - RIGHT OF WAY_UTILITY
+        - ROADWAY
+        - ROADWAY_ALLEY
+        - ROADWAY_CITY
+        - ROADWAY_COUNTY
+        - ROADWAY_CROSSWALK
+        - ROADWAY_CUL_DE_SAC
+        - ROADWAY_DIRT ROAD
+        - ROADWAY_FIRE ROAD
+        - ROADWAY_FREEWAY
+        - ROADWAY_HIGHWAY
+        - ROADWAY_INTERCHANGE
+        - ROADWAY_INTERSTATE
+        - ROADWAY_REST AREA
+        - ROADWAY_ROAD
+        - ROADWAY_SERVICE ROAD
+        - ROADWAY_STATE
+        - ROADWAY_STREET
+        - ROADWAY_TOLL ROAD
+        - SCHOOL COMBINED K_12_PRIVATE_PAROCHIAL
+        - SCHOOL_COLLEGE
+        - SCHOOL_COMBINED K_12
+        - SCHOOL_COMBINED K_12_PRIVATE
+        - SCHOOL_COMBINED K_12_PUBLIC
+        - SCHOOL_ELEMENTARY
+        - SCHOOL_ELEMENTARY_PRIVATE
+        - SCHOOL_ELEMENTARY_PRIVATE_PAROCHIAL
+        - SCHOOL_ELEMENTARY_PUBLIC
+        - SCHOOL_HIGH
+        - SCHOOL_HIGH_PRIVATE
+        - SCHOOL_HIGH_PRIVATE_PAROCHIAL
+        - SCHOOL_HIGH_PUBLIC
+        - SCHOOL_MIDDLE
+        - SCHOOL_MIDDLE_PRIVATE
+        - SCHOOL_MIDDLE_PRIVATE_PAROCHIAL
+        - SCHOOL_MIDDLE_PUBLIC
+        - SCHOOL_PAROCHIAL
+        - SCHOOL_PRESCHOOL
+        - SCHOOL_PRESCHOOL_PRIVATE
+        - SCHOOL_PRESCHOOL_PRIVATE_PAROCHIAL
+        - SCHOOL_PRESCHOOL_PUBLIC
+        - SCHOOL_PRIVATE
+        - SCHOOL_PRIVATE_PAROCHIAL
+        - SCHOOL_PUBLIC
+        - SCHOOL_TECHNICAL
+        - SCHOOL_TECHNICAL_PRIVATE
+        - SCHOOL_TECHNICAL_PRIVATE_PAROCHIAL
+        - SCHOOL_TECHNICAL_PUBLIC
+        - SCHOOL_VOCATIONAL
+        - SHELTER
+        - SHELTER_FAMILY
+        - SHELTER_WOMANS
+        - SHIP YARD
+        - SHOPPING CENTER
+        - SIDEWALK
+        - SKY
+        - STABLES
+        - STORAGE FACILITY
+        - STORAGE FACILITY_ LOCKER
+        - STORAGE FACILITY_TANK
+        - STORAGE FACILITY_UNIT
+        - STORE
+        - STORE_ARCADE
+        - STORE_AUTO PARTS
+        - STORE_CANDY
+        - STORE_COIN
+        - STORE_CONVENIENCE
+        - STORE_DEPARTMENT
+        - STORE_DEPARTMENT_DISCOUNT
+        - STORE_DISCOUNT
+        - STORE_DOLL
+        - STORE_DRESS
+        - STORE_DRUG
+        - STORE_ELECTRONIC
+        - STORE_FUR
+        - STORE_GAS STATION
+        - STORE_GAS STATION_SERVICE STATION
+        - STORE_GROCERY
+        - STORE_GROCERY_SUPERMARKET
+        - STORE_JEWELRY
+        - STORE_LIQUOR
+        - STORE_MARKET
+        - STORE_MINIMART
+        - STORE_MUSIC
+        - STORE_PAWN SHOP
+        - STORE_PHARMACY
+        - STORE_SECOND HAND
+        - STORE_SERVICE STATION
+        - STORE_SEX
+        - STORE_SPECIALTY
+        - STORE_STAMP
+        - STORE_STRIP MALL_RETAIL COMPLEX
+        - STORE_SUPERMARKET
+        - STORE_TV
+        - STORE_VIDEO
+        - STOREHOUSE
+        - TERMINAL
+        - TERMINAL_AIRPORT
+        - TERMINAL_BOAT
+        - TERMINAL_BUS
+        - TERMINAL_BUS STOP
+        - TERMINAL_NONPASSENGER
+        - TERMINAL_NONPASSENGER_AIRPORT
+        - TERMINAL_NONPASSENGER_BOAT
+        - TERMINAL_NONPASSENGER_TRAIN
+        - TERMINAL_NONPASSENGER_TRUCK
+        - TERMINAL_PASSENGER_AIRPORT
+        - TERMINAL_PASSENGER_BOAT
+        - TERMINAL_PASSENGER_BUS
+        - TERMINAL_PASSENGER_TRAIN
+        - TERMINAL_PASSENGER_TRAIN_SUBWAY
+        - THEATER_COMMUNITY
+        - TRAILER PARK
+        - TUNNEL
+        - UNKNOWN
+        - UTILITY_STATION_PLANT
+        - UTILITY_STATION_PLANT_ELECTRIC
+        - UTILITY_STATION_PLANT_NATURAL GAS
+        - UTILITY_STATION_PLANT_NUCLEAR REACTOR
+        - UTILITY_STATION_PLANT_SEWER
+        - UTILITY_STATION_PLANT_WATER
+        - UTILITY_STATION_PLANT_WINDMILL
+        - WAREHOUSE
+        - WATERWAY
+        - WATERWAY_AQUEDUCT
+        - WATERWAY_BEACH
+        - WATERWAY_CANAL
+        - WATERWAY_DAM
+        - WATERWAY_DOCK
+        - WATERWAY_HARBOR
+        - WATERWAY_LAKE
+        - WATERWAY_LOCK
+        - WATERWAY_OCEAN
+        - WATERWAY_RIVER
+        - WATERWAY_STREAM
+        - WATERWAY_SWAMP
+        - WATERWAY_WHARF
+        - WOODS
+        - YARD
+        - YARD_JUNK
+        - YARD_PIPE
+        - YARD_RAIL
+        - YARD_SHIP
+    ndexLocationGeneralCategoryCodeType:
+      type: object
+      title: 'ndex:LocationGeneralCategoryCodeType'
+      description: A data type for a code that identifies the general type of location.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexLocationGeneralCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexLocationGeneralCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexLocationGeneralCategoryCodeTypeContext.jsonld
+    ndexLocationGeneralCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies the general type of location.
+      enum:
+        - Commercial
+        - Industrial
+        - Open Area
+        - Public_Non Residential
+        - Residential
+        - Unknown
+    ndexLocationSublocationCategoryCodeType:
+      type: object
+      title: 'ndex:LocationSublocationCategoryCodeType'
+      description: >-
+        A data type for a code that identifies a location inside of another
+        location.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexLocationSublocationCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexLocationSublocationCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexLocationSublocationCategoryCodeTypeContext.jsonld
+    ndexLocationSublocationCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies a location inside of another
+        location.
+      enum:
+        - Attic
+        - Boat
+        - Boat_Aircraft Carrier
+        - Boat_Barge
+        - Boat_Boat
+        - Boat_Canoe
+        - Boat_Charter Fishing
+        - Boat_Commercial Fishing
+        - Boat_Cruise Ship
+        - Boat_Freighter
+        - Boat_House
+        - Boat_Kayak
+        - Boat_Motorboat
+        - Boat_Raft
+        - Boat_Rowboat
+        - Boat_Sailboat
+        - Boat_Speed
+        - Boat_Submarine
+        - Drilling Site_Platform
+        - Driveway
+        - Entryway_Exterior
+        - Entryway_Interior
+        - Freezer
+        - Garage
+        - Hallway_Exterior
+        - Hallway_Interior
+        - Internet
+        - Kitchen
+        - Mail Box
+        - Patio
+        - Patio_Porch
+        - Playground
+        - Porch
+        - Room_Basement
+        - Room_Bathroom_Restroom
+        - Room_Bedroom
+        - Room_Bedroom_Children
+        - Room_Bedroom_Guest
+        - Room_Bedroom_Master
+        - Room_Breakfast Nook
+        - Room_Breakroom
+        - Room_Cellar
+        - Room_Classroom
+        - Room_Closet
+        - Room_Conference
+        - Room_Den
+        - Room_Family Room
+        - Room_Kitchen
+        - Room_Laundry Room
+        - Room_Living Room
+        - Room_Living_Family Room
+        - Room_Office
+        - Room_Pantry
+        - Room_Restroom_Family
+        - Room_Restroom_Men
+        - Room_Restroom_Portable
+        - Room_Restroom_Unisex
+        - Room_Restroom_Women
+        - Room_Stock Room
+        - Room_Waiting Room
+        - Sidewalk
+        - Tack Room
+        - Vehicle
+        - Vehicle_Automobile
+        - Vehicle_Automobile_Taxi
+        - Vehicle_Bus
+        - Vehicle_Cable Car
+        - Vehicle_Car
+        - Vehicle_Catering Truck
+        - Vehicle_Commercial
+        - Vehicle_Motorcycle
+        - Vehicle_Pick up Truck
+        - Vehicle_Recreational
+        - Vehicle_Semi
+        - Vehicle_Snowmobile
+        - Vehicle_Street Car
+        - Vehicle_Tractor Trailer
+        - Vehicle_Train
+        - Vehicle_Train_Freight
+        - Vehicle_Train_Freight_Heavy Rail
+        - Vehicle_Train_Freight_Light Rail
+        - Vehicle_Train_Passenger
+        - Vehicle_Train_Passenger_Heavy Rail
+        - Vehicle_Train_Passenger_Light Rail
+        - Vehicle_Train_Railway Car
+        - Vehicle_Truck
+    ndexTelephoneNumberCategoryCodeType:
+      type: object
+      title: 'ndex:TelephoneNumberCategoryCodeType'
+      description: A data type for a code that identifies a type of telephone number.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexTelephoneNumberCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexTelephoneNumberCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexTelephoneNumberCategoryCodeTypeContext.jsonld
+    ndexTelephoneNumberCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a type of telephone number.
+      enum:
+        - Facsimile
+        - Landline
+        - Mobile
+        - Other
+        - Pager
+        - VoIP
+    ndexIndianNationCodeType:
+      type: object
+      title: 'ndex:IndianNationCodeType'
+      description: A data type for a code that identifies an American Indian nation.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexIndianNationCodeSimpleType
+        '@context':
+          type: string
+          description: ndexIndianNationCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexIndianNationCodeTypeContext.jsonld
+    ndexIndianNationCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies an American Indian nation.
+      enum:
+        - ABSENTEE SHAWNEE
+        - APACHE TRIBE
+        - BAD RIVER BAND OF LAKE SUPERIOR TRIBE OF CHIPPEWA INDIANS
+        - BOIS FORTE BAND OF CHIPPEWA
+        - CADDO TRIBE
+        - CHEROKEE NATION
+        - CHEYENNE_ARAPAHO TRIBES
+        - CITIZEN POTAWATOMI NATION
+        - COMANCHE NATION
+        - DELAWARE NATION
+        - DEVILS LAKE SIOUX TRIBE
+        - EASTERN SHAWNEE TRIBE
+        - FOND DU LAC
+        - GRAND PORTAGE BAND OF LAKE SUPERIOR CHIPPEWA
+        - IOWA TRIBE
+        - KICKAPOO TRIBE
+        - KIOWA
+        - LAC DU FLAMBEAU BAND OF LAKE SUPERIOR CHIPPEWA
+        - LEECH LAKE BAND OF CHIPPEWA
+        - MENOMINEE
+        - MIAMI TRIBE
+        - MILLE LACS
+        - MODOC TRIBE
+        - MUSCOGEE TRIBE
+        - OGLALA SIOUX
+        - ONEIDA TRIBE OF INDIANS OF WISCONSIN
+        - OSAGE NATION
+        - OTOE_MISSOURIA TRIBE
+        - OTTAWA TRIBE
+        - PAWNEE TRIBE
+        - PEORIA TRIBE
+        - PONCA TRIBE
+        - QUAPAW TRIBE
+        - RED LAKE BAND OF CHIPPEWA
+        - SAC_FOX
+        - SEMINOLE NATION
+        - SENECA_CAYUGA TRIBES
+        - SHAKOPEE
+        - TURTLE MOUNTAIN BAND OF CHIPPEWA
+        - UNITED KEETOOWAH BAND OF CHEROKEE INDIANS
+        - WESTERN DELAWARE TRIBE
+        - WHITE EARTH BAND OF CHIPPEWA
+        - WICHITA TRIBE
+        - WYANDOTTE TRIBE
+    ndexOrganizationCategoryCodeType:
+      type: object
+      title: 'ndex:OrganizationCategoryCodeType'
+      description: A data type for a code that identifies the type of organization.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexOrganizationCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexOrganizationCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexOrganizationCategoryCodeTypeContext.jsonld
+    ndexOrganizationCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies the type of organization.
+      enum:
+        - BUSINESS
+        - CHARITY
+        - COMMUNITY_SOCIAL
+        - CRIMINAL JUSTICE
+        - CRIMINAL JUSTICE_ENFORCEMENT UNIT
+        - CRIMINAL JUSTICE_SUPERVISORY ORGANIZATION
+        - CRIMINAL JUSTICE_TASK FORCE
+        - EDUCATION
+        - FOUNDATION
+        - GANG
+        - GANG_JUVENILE
+        - GANG_MOTORCYCLE
+        - GANG_PRISON
+        - GOVERNMENT
+        - ORGANIZED CRIME
+        - POLITICAL GROUP
+        - PROFESSIONAL ASSOCIATION
+        - RELIGIOUS
+        - SERVICE CLUB
+        - SOCIETY
+        - SPORTS_RECREATION
+        - TERRORIST
+        - THREAT GROUP
+    ndexArtObjectCategoryCodeType:
+      type: object
+      title: 'ndex:ArtObjectCategoryCodeType'
+      description: A data type for a code that identifies the type of art object.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexArtObjectCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexArtObjectCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexArtObjectCategoryCodeTypeContext.jsonld
+    ndexArtObjectCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies the type of art object.
+      enum:
+        - LITHOGRAPH
+        - MODEL
+        - PAINTING
+        - PHOTOGRAPH
+        - SCULPTURE
+    ndexAudioVisualRecordingCategoryCodeType:
+      type: object
+      title: 'ndex:AudioVisualRecordingCategoryCodeType'
+      description: >-
+        A data type for a code that identifies the type of audio visual
+        recording.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexAudioVisualRecordingCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexAudioVisualRecordingCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexAudioVisualRecordingCategoryCodeTypeContext.jsonld
+    ndexAudioVisualRecordingCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the type of audio visual
+        recording.
+      enum:
+        - AUDIO TAPE
+        - AUDIO TAPE_CASSETTES
+        - AUDIO TAPE_REEL
+        - AUDIO_COMPACT DISC
+        - AUDIO_LASER COMPACT DISC
+        - AUDIO_PHONOGRAPH RECORD
+        - VIDEO_ FILM
+        - VIDEO_DISK
+        - VIDEO_DVD
+        - VIDEO_SLIDE
+        - VIDEO_TAPE
+        - VIDEO_TAPE_BETA
+        - VIDEO_TAPE_VHS
+    ndexBicycleCategoryCodeType:
+      type: object
+      title: 'ndex:BicycleCategoryCodeType'
+      description: A data type for a code that identifies the type of bicycle.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexBicycleCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexBicycleCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexBicycleCategoryCodeTypeContext.jsonld
+    ndexBicycleCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies the type of bicycle.
+      enum:
+        - BICYCLE
+        - BICYCLE SHOCK
+        - BICYCLE_TANDEM
+        - BICYCLE_TRAILER
+        - TRICYCLE
+        - UNICYCLE
+    ndexClothingCategoryCodeType:
+      type: object
+      title: 'ndex:ClothingCategoryCodeType'
+      description: A data type for a code that identifies a type of clothing.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexClothingCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexClothingCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexClothingCategoryCodeTypeContext.jsonld
+    ndexClothingCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a type of clothing.
+      enum:
+        - BANDANA
+        - BELT
+        - BRA
+        - COAT
+        - COVERALLS
+        - DIAPER
+        - DRESS
+        - FUR
+        - GLOVES
+        - HANDBAG
+        - HANDKERCHIEF
+        - HAT
+        - JACKET
+        - JEANS
+        - NIGHTGOWN
+        - OVERALLS
+        - PANTS
+        - PANTS_CARGO
+        - PANTS_SUIT
+        - PANTS_SWEAT
+        - PONCHO
+        - PURSE
+        - RAINCOAT
+        - ROBE
+        - SCARF
+        - SHIRT
+        - SHIRT_SWEAT
+        - SHIRT_TEE
+        - SHOE
+        - SHORTS
+        - SKIRT
+        - SOCKS
+        - SUIT
+        - SUIT_BUSINESS
+        - SUIT_SWEAT
+        - SUIT_WIND
+        - SUSPENDERS
+        - SWEATER
+        - SWIMSUIT
+        - TIE
+        - UNDERWEAR
+        - VEST
+        - WALLET
+    ndexDataProcessingEquipmentCategoryCodeType:
+      type: object
+      title: 'ndex:DataProcessingEquipmentCategoryCodeType'
+      description: >-
+        A data type for a code that identifies the type of computer hardware and
+        software.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexDataProcessingEquipmentCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexDataProcessingEquipmentCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexDataProcessingEquipmentCategoryCodeTypeContext.jsonld
+    ndexDataProcessingEquipmentCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the type of computer hardware and
+        software.
+      enum:
+        - ACCELERATOR BOARD
+        - ACOUSTIC COUPLER
+        - AUTOMATIC CONTROLLER
+        - BAR CODE KIT
+        - BAR CODE READER
+        - BATTERY_CHARGEABLE_COMPUTER
+        - BATTERY_COMPUTER
+        - BLACKBERRY
+        - BOARD_CIRCUIT_MEMORY
+        - BUFFER_INTERFACE MODULE
+        - BUS EXTENDER
+        - BUSINESS CARD READER
+        - CABLE_TELECOMMUNICATION
+        - CARD_CIRCUIT_MEMORY
+        - CARRYING CASE FOR PORTABLE COMPUTER
+        - CARTRIDGE TAPE_BLANK
+        - CARTRIDGE TAPE_ENCODED
+        - CASSETTE TAPE_BLANK
+        - CASSETTE TAPE_ENCODED
+        - CD_ROM BURNER
+        - CD_ROM DRIVE
+        - CD_ROM DUPLICATOR
+        - CENTRAL PROCESSING UNIT_CPU
+        - CIRCUIT BOARD_CARD
+        - COMPUTER
+        - COMPUTER CONSOLE
+        - COMPUTER SERVER
+        - COMPUTER SOFTWARE
+        - COMPUTER SPEAKERS
+        - COMPUTER TAPE
+        - COMPUTER TAPE_BLANK
+        - COMPUTER TAPE_ENCODED
+        - COMPUTER TERMINAL
+        - COMPUTER_CD_COMPACT DISC
+        - COMPUTER_DISK
+        - COMPUTER_DVD
+        - CONTROL PANEL
+        - CONTROLLER_AUTOMATIC
+        - CONTROLS_COMPUTER HANDHELD
+        - COUPLER_ACOUSTIC
+        - CREDIT CARD SCANNER
+        - DATA PEN OCR SCANNER
+        - DATA SET
+        - DATA TABLET_DIGITIZER
+        - DECODER MODULE_TELETEXT
+        - DEMODULATOR
+        - DESK JET PRINTER
+        - DEVICE_VOICE RECOGNITION
+        - DIGITIZER
+        - DIGITIZER_ MODEM
+        - DIGITIZER_ACOUSTIC COUPLER
+        - DIGITIZER_DATA TABLET
+        - DISK DUPLICATOR
+        - DOCUMENT PROCESSING SYSTEM
+        - DOCUMENT SCANNER
+        - DOT MATRIX PRINTER
+        - DRIVE SYSTEM
+        - DRIVE SYSTEM_DISK
+        - DRIVE SYSTEM_TAPE
+        - ELECTRONIC DICTIONARY
+        - ELECTRONIC ENCYCLOPEDIA
+        - ELECTRONIC NOTEBOOK
+        - ELECTRONIC ORGANIZER
+        - ELECTRONIC SPELLER
+        - EPROM PROGRAMMER
+        - EQUIPMENT STAND_COMPUTER
+        - EXTENDER
+        - EXTERNAL FAX MODEM
+        - FLOPPY DISK
+        - FLOPPY DISK_BLANK
+        - FLOPPY DISK_RECORDED
+        - GLIDE POINT DESKTOP
+        - GRAPHIC ACCELERATOR BOARD
+        - GRAPHIC INPUT DRAWING BOARD
+        - HAND CONTROLS
+        - HAND HELD COMPUTING DEVICE
+        - HARD DISK
+        - INKJET PRINTER
+        - INTERNAL FAX MODEM
+        - JOYSTICK_COMPUTER
+        - KEYBOARD_COMPUTER
+        - KEYPAD_COMPUTER
+        - KEYPUNCH MACHINE
+        - LABEL PRINTER
+        - LABEL WRITER
+        - LAPTOP COMPUTER
+        - LASER PRINTER
+        - LED PRINTER
+        - LIGHT PEN
+        - LINE FILTER
+        - LINE POWER_PROTECTION DEVICE
+        - LINE PROTECTOR
+        - MAGNETIC COMPUTER TAPE
+        - MAGNETIC DISK
+        - MAGNETIC DISK_FLOPPY
+        - MAGNETIC DISK_HARD
+        - MAINFRAME_CENTRAL PROCESSING UNIT
+        - MATH COPROCESSOR
+        - MEMORY BOARD_CARD
+        - MEMORY CHIP
+        - MEMORY MODULE
+        - MICROFICHE_OPTICAL CHARACTER READER
+        - MICROFILM_OPTICAL CHARACTER READER
+        - MICROPROCESSORS
+        - MODEM
+        - MODEM_ACOUSTIC COUPLER
+        - MODEM_COMPUTER
+        - MODEM_COMPUTER_EXTERNAL
+        - MODEM_COMPUTER_INTERNAL
+        - MODULATOR
+        - MODULE_INTERFACE
+        - MODULE_TELETEXT DECODER
+        - MODULE_VOICE RECOGNITION
+        - MONITOR_COMPUTER
+        - MONITOR_COMPUTER_CRT
+        - MONITOR_COMPUTER_FLAT SCREEN
+        - MOTHERBOARD
+        - MOUSE
+        - MULTIMEDIA PRESENTER
+        - MULTIPLEXOR
+        - MUSICAL INSTRUMENT_DIRECT COMPUTER INTERFACE
+        - MUSICAL LEARNING SYSTEM_COMPUTER
+        - NOISE_STATIC FILTER_LINE PROTECTOR
+        - NOTEBOOK_COMPUTER
+        - OPTICAL CHARACTER READER
+        - PADDLE_COMPUTER
+        - PC_PORTABLE COMPUTER_CARRYING CASE
+        - PC_TV CONVERTOR
+        - PC_VCR CONVERTOR
+        - PERSONAL DIGITAL ASSISTANT_PDA
+        - PHOTO READER
+        - PIANO TEACHING SYSTEM_COMPUTER INTERFACE
+        - PLOTTERS
+        - PLUGBOARD
+        - POCKET MODEM
+        - POINT PAD
+        - POWER PACK_COMPUTER
+        - POWER SUPPLY_COMPUTER
+        - POWERBOOK_COMPUTER
+        - PRINTER
+        - READER
+        - RECHARGEABLE BATTERY FOR COMPUTER
+        - REEL COMPUTER TAPE
+        - REEL COMPUTER TAPE_BLANK
+        - REEL COMPUTER TAPE_ENCODED
+        - ROUTER
+        - ROUTER_COMPUTER
+        - ROUTER_WIRELESS
+        - SCREEN_COMPUTER
+        - SOUND CARD
+        - SPEECH SYNTHESIZER
+        - SPIKE PROTECTOR
+        - STATIC FILTER_LINE PROTECTOR
+        - SURGE PROTECTOR
+        - SYNTHESIZER_COMPUTER
+        - SYNTHESIZER_SPEECH
+        - TELETEXT DECODER MODULE
+        - TELETYPEWRITER
+        - TRACKBALL_COMPUTER
+        - VIDEO ACCELERATOR CARD
+        - VOICE RECOGNITION DEVICE_SYNTHESIZER
+        - WORD PROCESSOR
+    ndexConstructionMaterialCategoryCodeType:
+      type: object
+      title: 'ndex:ConstructionMaterialCategoryCodeType'
+      description: A data type for a code that identifies a type of construction material.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexConstructionMaterialCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexConstructionMaterialCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexConstructionMaterialCategoryCodeTypeContext.jsonld
+    ndexConstructionMaterialCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a type of construction material.
+      enum:
+        - BEAM_METAL
+        - BEAM_WOOD
+        - BLOCK
+        - BOLTS
+        - BRICK
+        - CABLE
+        - CONCRETE
+        - CONDUIT
+        - CONDUIT_METAL
+        - CONDUIT_METAL_ALUMINUM
+        - CONDUIT_METAL_STEEL
+        - CONDUIT_PLASTIC
+        - DOOR
+        - DRYWALL
+        - ELECTRICAL SUPPLIES
+        - ELECTRICAL SUPPLIES_LIGHTING
+        - FENCE
+        - GLASS
+        - NAILS
+        - PAINT
+        - PIPE
+        - PIPE_METAL
+        - PIPE_METAL_ALUMINUM
+        - PIPE_METAL_COPPER
+        - PIPE_METAL_STEEL
+        - PIPE_PLASTIC
+        - PLUMBING SUPPLIES
+        - REBAR
+        - ROOFING SUPPLIES
+        - SHINGLES
+        - SIDING
+        - SIDING_METAL_ALUMINUM
+        - SIDING_VINYL
+        - TILE
+        - TRUSS
+        - TRUSS_METAL
+        - TRUSS_WOOD
+        - VENTILATION SUPPLIES
+        - WINDOW
+        - WIRE
+        - WIRE_ALUMINUM
+        - WIRE_COPPER
+        - WIRE_STEEL
+        - WOOD_LUMBER
+        - WOOD_PLYWOOD
+    ndexConsumableGoodsCategoryCodeType:
+      type: object
+      title: 'ndex:ConsumableGoodsCategoryCodeType'
+      description: A data type for a code that identifies a type of consumable goods.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexConsumableGoodsCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexConsumableGoodsCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexConsumableGoodsCategoryCodeTypeContext.jsonld
+    ndexConsumableGoodsCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a type of consumable goods.
+      enum:
+        - ALCOHOL_BEVERAGE
+        - ALCOHOL_BEVERAGE_BEER
+        - ALCOHOL_BEVERAGE_LIQUOR
+        - ALCOHOL_BEVERAGE_WINE
+        - ALCOHOL_NONBEVERAGE
+        - ALCOHOL_NONBEVERAGE_FUEL
+        - BEVERAGE_NONALCOHOLIC
+        - CLEANING PRODUCT
+        - DIESEL_FUEL
+        - FIREWOOD_FUEL
+        - FOOD
+        - FOOD_CANNED
+        - FOOD_DRIED
+        - FOOD_FRESH
+        - FOOD_FROZEN
+        - FUEL
+        - GASOLINE_FUEL
+        - GASOLINE_OIL_FUEL
+        - GROOMING PRODUCT
+        - HYGIENE PRODUCT
+        - KEROSENE_FUEL
+        - MEAT
+        - MEDICATION_OFF SHELF
+        - OIL_FUEL
+        - TOBACCO
+        - TOBACCO PRODUCT
+        - TOOTH PASTE
+    ndexCreditBankIDCardCategoryCodeType:
+      type: object
+      title: 'ndex:CreditBankIDCardCategoryCodeType'
+      description: A data type for a code that identifies a type of Credit/Bank/ID Card.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexCreditBankIDCardCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexCreditBankIDCardCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexCreditBankIDCardCategoryCodeTypeContext.jsonld
+    ndexCreditBankIDCardCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a type of Credit/Bank/ID Card.
+      enum:
+        - ALIEN REGISTRATION CARD
+        - ATM CARD
+        - BADGE_SHIELD
+        - BANK CARD
+        - CLUB CARD
+        - CREDENTIALS
+        - CREDENTIALS_FEDERAL ID
+        - CREDENTIALS_LAW ENFORCEMENT
+        - CREDIT CARD
+        - DEBIT CARD
+        - DINERS CLUB CARD
+        - DOG TAG_MILITARY
+        - DRIVERS LICENSE
+        - DRIVERS LICENSE_CHAUFFEUR
+        - DRIVERS LICENSE_MOTORCYCLE
+        - DRIVERS LICENSE_PILOT
+        - FISHING_HUNTING_LICENSE
+        - HANDICAP PERMIT
+        - IDENTIFICATION CARD
+        - IDENTIFICATION CARD_POLICE
+        - IDENTIFICATION PASS
+        - IDENTIFICATION_MILITARY
+        - INSURANCE CARD
+        - PASSPORT
+        - PIN CARD
+        - SAVINGS ACCOUNT BOOK
+        - SMART CARD
+        - SOCIAL SECURITY CARD
+        - UNION CARD
+    ndexDrillingEquipmentCategoryCodeType:
+      type: object
+      title: 'ndex:DrillingEquipmentCategoryCodeType'
+      description: A data type for a code that identifies the type of drilling tool.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexDrillingEquipmentCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexDrillingEquipmentCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexDrillingEquipmentCategoryCodeTypeContext.jsonld
+    ndexDrillingEquipmentCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies the type of drilling tool.
+      enum:
+        - BAILER
+        - BIT_DRILLING
+        - BLOWOUT PREVENTER
+        - CASING CUTTER
+        - CASING ROLLER
+        - CATHEAD
+        - CATHEAD_BREAKOUT
+        - CATHEAD_MAKEUP
+        - CATWORK
+        - COLLAR
+        - COLLAR_DIE
+        - COLLAR_DRILL
+        - DRAWWORKS
+        - DRILL
+        - DRILL_BLASTHOLE
+        - DRILL_ROCK
+        - DRILLING UNIT_ROTARY TABLE
+        - HYDRA HOOK
+        - KELLY SPINNER
+        - KEYSEAT WIPER
+        - MILL
+        - MUD PIT TANK
+        - PACKER
+        - PIPELINE_PIG
+        - PUMPING UNIT
+        - RATHOLE GUIDE
+        - REAMER
+        - REAMER_ENLARGERS
+        - REAMER_OPENERS
+        - SHAKER_ SHALE
+        - SHOCK
+        - SPIDER
+        - SPIDER_ELEVATOR
+        - SPIDER_TUBING
+        - STABILIZER
+        - SUB
+        - SUB_BASKET
+        - SUB_KICK
+        - SUB_PIN
+        - SUB_ROD
+        - SUB_SHEAR
+        - SWIVEL
+        - SWIVEL_POWER
+        - TONG
+        - TONG_POWER
+        - TOOL JOINT
+        - TRAVELING BLOCK_CROWN
+        - VALVE CONTROLS
+        - VALVE_DRILLING
+        - WASHOVER SHOE
+        - WRENCH_ SPINNING
+    ndexEntertainmentDeviceCategoryCodeType:
+      type: object
+      title: 'ndex:EntertainmentDeviceCategoryCodeType'
+      description: >-
+        A data type for a code that identifies the type of radio, TV, camera,
+        sound or entertainment device.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexEntertainmentDeviceCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexEntertainmentDeviceCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexEntertainmentDeviceCategoryCodeTypeContext.jsonld
+    ndexEntertainmentDeviceCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the type of radio, TV, camera,
+        sound or entertainment device.
+      enum:
+        - AMPLIFIER
+        - ANTENNA
+        - ANTENNA_ACTUATOR
+        - AUDIO PROCESSOR
+        - AUDIO_SWITCHER
+        - AUDIO_VIDEO ENHANCER_STABILIZER
+        - AUDIO_VIDEO_SWITCHER
+        - BATTERY PACK_RECHARGEABLE
+        - CABLE TV_BOX
+        - CABLE TV_CONVERTER
+        - CABLE TV_DECODER
+        - CABLE TV_LASHER
+        - CAMCORDER
+        - CAMERA_VIDEO
+        - CHANNEL SELECTOR
+        - CITIZENS BAND_RADIO
+        - COMPACT DISC CHANGER
+        - COMPACT DISC PLAYER
+        - COMPACT DISC PLAYER_RADIO COMBINATION
+        - COMPACT DISC PLAYER_RADIO_CASSETTE PLAYER COMBINATION
+        - COMPACT DISC RECORDER
+        - CONVERTER_FILM_SLIDE TO VIDEO
+        - CONVERTER_FM
+        - CROSSOVER_STEREO
+        - DESCRAMBLER
+        - DIGITAL DELAY PROCESSOR
+        - DIGITAL MULTIMEDIA DEVICE
+        - DIGITAL MULTIMEDIA DEVICE_MP3
+        - DIRECTION FINDER_RADIO
+        - DISC_COMPACT AUDIO
+        - DISC_DVD
+        - DVD PLAYER
+        - DVD RECORDER
+        - EARPHONE
+        - EQUALIZER
+        - EQUIPMENT CARRING CASE
+        - FLASH MEMORY
+        - FM CONVERTER
+        - HAND CONTROLS_VIDEO
+        - HAND CONTROLS_VIDEO_KEYPAD CONTROL
+        - HAND CONTROLS_VIDEO_TRACKBALL
+        - HEADSET
+        - INTERCOM
+        - JUKEBOX
+        - KARAOKE
+        - LIGHT MIXER
+        - MICROPHONE
+        - MONITOR
+        - NOISE REDUCTION UNIT
+        - PAGER
+        - POWER BOOSTER_PACK_AUDIO_VIDEO
+        - PREAMPLIFIER
+        - PUBLIC ADDRESS SYSTEM
+        - RADIO
+        - RADIO DIRECTION FINDER
+        - RADIO_RECORD PLAYER COMBINATION
+        - RADIO_TAPE PLAYER COMBINATION
+        - RADIO_TELEVISION COMBINATION
+        - RADIO_TELEVISION_RECORD PLAYER COMBINATION
+        - RANGE EXPANDER
+        - RECEIVER_DIGITAL SATELLITE
+        - RECEIVER_STEREO
+        - RECORD PLAYER_MONO
+        - RECORD PLAYER_STEREO
+        - RECORDER_PLAYER_VIDEO CASSETTE
+        - RECORDER_PLAYER_VIDEO DISK
+        - REMOTE CONTROL UNIT
+        - REMOTE CONTROL UNIT_VIDEO_TV_STEREO
+        - REMOTE CONTROL_ BOAT
+        - REMOTE CONTROL_AIRPLANE
+        - REMOTE CONTROL_CAR
+        - REMOTE CONTROL_TRUCK
+        - REVERBERATOR
+        - SATELLITE DISH
+        - SCANNER
+        - SLIDE
+        - SOUND MIXER_BOARD
+        - SPEAKER
+        - STEREO FACE PLATE
+        - STEREO NEEDLE
+        - STEREO RACK SYSTEM
+        - STEREO TONE ARM CARTRIDGE
+        - TAPE DECK
+        - TAPE PLAYER
+        - TAPE PLAYER_RECORDER
+        - TAPE_AUDIO
+        - TAPE_AUDIO_CASSETTE
+        - TAPE_AUDIO_REEL
+        - TAPE_VIDEO
+        - TAPE_VIDEO_BETA
+        - TAPE_VIDEO_VHS
+        - TELEPROMPTER
+        - TELEVISION
+        - TELEVISION GAME_ELECTRONIC
+        - TRANSCEIVER
+        - TRANSMITTER
+        - TUNER
+        - TURNTABLE
+        - VIDEO CASSETTE REWINDER
+        - VIDEO DISK
+        - VIDEO_EQUIPMENT_CARRYING CASE
+        - VIDEO_EQUIPMENT_CASSETTE RECORDER_TELEVISION COMBINATION
+        - VIDEO_EQUIPMENT_STAND
+        - VIDEO_MULTIPLEXOR
+        - VIDEO_PROCESSOR
+        - VIDEO_STILL PRINTER
+        - VIDEO_SWITCHER
+        - VIDEO_TUNER_TIMER
+        - VOICE CONTROL UNIT
+        - WALKIE TALKIE
+        - WEB TV
+    ndexGamblingEquipmentCategoryCodeType:
+      type: object
+      title: 'ndex:GamblingEquipmentCategoryCodeType'
+      description: >-
+        A data type for a code that identifies a type of games and/or gambling
+        apparatus.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexGamblingEquipmentCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexGamblingEquipmentCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexGamblingEquipmentCategoryCodeTypeContext.jsonld
+    ndexGamblingEquipmentCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies a type of games and/or gambling
+        apparatus.
+      enum:
+        - ARCADE GAME
+        - ARCADE GAME_COIN OPERATED
+        - BILLIARD TABLE
+        - BILLIARD TABLE_POOL
+        - BILLIARD TABLE_SNOOKER
+        - CARDS
+        - CYBER SHADES_GLASSES
+        - DICE
+        - ELECTRONIC GAME
+        - GAMING MACHINE
+        - GAMING MACHINE_LOTTERY MACHINE
+        - GAMING MACHINE_SLOT MACHINE
+        - GAMING MACHINE_VIDEO POKER
+        - PINBALL MACHINE
+        - POKER CHIPS
+        - POKER TABLE
+        - ROULETTE WHEEL
+        - TIP BOARD
+    ndexGrainCategoryCodeType:
+      type: object
+      title: 'ndex:GrainCategoryCodeType'
+      description: A data type for a code that identifies a type of grain.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexGrainCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexGrainCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexGrainCategoryCodeTypeContext.jsonld
+    ndexGrainCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a type of grain.
+      enum:
+        - BARLEY
+        - CORN
+        - COTTON SEED
+        - FEED
+        - FERTILIZER
+        - GRASS
+        - HAY
+        - HAY_FEED
+        - HAY_MULCH
+        - HERBICIDE
+        - INSECTICIDE
+        - MILO
+        - PEANUT
+        - RYE
+        - SILAGE
+        - SOYBEAN
+        - STRAW
+        - WHEAT
+    ndexHouseholdFurnishingsCategoryCodeType:
+      type: object
+      title: 'ndex:HouseholdFurnishingsCategoryCodeType'
+      description: A data type for a code that identifies a type of household furnishings.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexHouseholdFurnishingsCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexHouseholdFurnishingsCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexHouseholdFurnishingsCategoryCodeTypeContext.jsonld
+    ndexHouseholdFurnishingsCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a type of household furnishings.
+      enum:
+        - BED
+        - BENCH
+        - BOOKCASE
+        - BOX SPRING
+        - BUFFET CABINET_CREDENZA
+        - CABINET
+        - CARPET
+        - CHAIR
+        - CHAIR_MASSAGE THERAPY
+        - CHEST
+        - CHINA
+        - CLOCK
+        - COAT RACK_TREE
+        - COUCH
+        - CURTAIN_DRAPES
+        - DAVENPORT
+        - DESK
+        - DRESSER
+        - ENTERTAINMENT CENTER
+        - HUTCH
+        - LAMP
+        - LINENS
+        - LOVESEAT
+        - LUGGAGE
+        - MATTRESS
+        - NIGHTSTAND
+        - NURSERY AND INFANT FURNITURE
+        - OTTOMAN
+        - POTTERY
+        - RECLINER
+        - RUG
+        - SETTEE
+        - SIDEBOARD CABINET
+        - SOFA
+        - STOOL
+        - TABLE
+        - THERAPY CHAIR
+        - THERAPY CHAIR_MASSAGE
+        - VASE
+        - WASTEBASKET
+    ndexHousewaresCategoryCodeType:
+      type: object
+      title: 'ndex:HousewaresCategoryCodeType'
+      description: A data type for a code that identifies a type of household goods.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexHousewaresCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexHousewaresCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexHousewaresCategoryCodeTypeContext.jsonld
+    ndexHousewaresCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a type of household goods.
+      enum:
+        - AIR CONDITIONER
+        - BATHTUB
+        - BLENDER
+        - BOWL
+        - BOWL_SILVER
+        - BUFFER_POLISHER
+        - BUFFER_POLISHER_FLOOR
+        - CAN OPENER
+        - COFFEE MAKER
+        - COOKING UTENSILS
+        - COOKING UTENSILS_KNIFE
+        - DEHUMIDIFIER
+        - DISH
+        - DISH_SILVER
+        - DISHWASHER
+        - DRYER
+        - DRYER_CLOTHES
+        - DRYER_HAIR
+        - FAN
+        - FOOD MIXER
+        - FOOD PROCESSOR
+        - FREEZER
+        - FRYER
+        - FURNACE
+        - GARBAGE DISPOSAL
+        - GRILL
+        - HANDHELD MIXER_ELECTRIC
+        - HANDHELD MIXER_NONELECTRIC
+        - HEAT PUMP
+        - HOT TUB
+        - HUMIDIFIER
+        - ICE CREAM MACHINE
+        - ICE MAKER
+        - ICEBOX
+        - IRON
+        - JUICER
+        - MANDOLIN
+        - MEAT SLICER
+        - MICROWAVE_OVEN
+        - OIL BURNER
+        - PITCHER
+        - PITCHER_SILVER
+        - PLATE
+        - PLATE_SILVER
+        - POPCORN MAKER
+        - PORTABLE TOILET
+        - RANGE
+        - RANGE HOOD
+        - RANGE_OVEN
+        - REFRIGERATOR
+        - RUG SHAMPOOER
+        - SCISSORS
+        - SEWING MACHINE
+        - SILVER_PIECES
+        - SILVERWARE
+        - SMALL APPLIANCE
+        - SPACE HEATER
+        - STEAM CARPET CLEANER
+        - TEA SET
+        - TEA SET_SILVER
+        - TOASTER
+        - TOASTER_OVEN
+        - TRASH BARREL_POLY CART
+        - TRASH COMPACTOR
+        - TRAY
+        - TRAY_SILVER
+        - VACUUM CLEANER
+        - VACUUM CLEANER ATTACHMENTS
+        - WASHING MACHINE_CLOTHES WASHER
+        - WATER HEATER
+        - WATER SOFTENER
+        - WOODBURNING STOVE
+        - YOGURT MACHINE
+    ndexItemCategoryCodeType:
+      type: object
+      title: 'ndex:ItemCategoryCodeType'
+      description: A data type for a code that identifies a type of property.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexItemCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexItemCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexItemCategoryCodeTypeContext.jsonld
+    ndexItemCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a type of property.
+      enum:
+        - ART OBJECT
+        - AUDIO VISUAL EQUIPMENT
+        - AV RECORDING
+        - BICYCLE
+        - CLOTHING
+        - COMPUTER HARDWARE_SOFTWARE
+        - CONSTRUCTION MATERIAL
+        - CONSUMABLE GOOD
+        - CREDIT_BANK_ID
+        - GAMBLING EQUIPMENT
+        - GRAIN
+        - HOUSEHOLD GOOD
+        - KEEPSAKE
+        - KNIFE
+        - LIVESTOCK_PET
+        - MUSICAL INSTRUMENT
+        - OFFICE EQUIPMENT
+        - OPTICAL EQUIPMENT
+        - OTHER
+        - SERVICE UTILITY
+        - SPORTS_RECREATIONAL EQUIPMENT
+        - TOOL
+    ndexKeepsakeCategoryCodeType:
+      type: object
+      title: 'ndex:KeepsakeCategoryCodeType'
+      description: >-
+        A data type for a code that identifies items collected as a hobby or
+        given in friendship.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexKeepsakeCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexKeepsakeCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexKeepsakeCategoryCodeTypeContext.jsonld
+    ndexKeepsakeCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies items collected as a hobby or
+        given in friendship.
+      enum:
+        - BOOK_COLLECTOR
+        - CARD
+        - CARD_NONSPORT
+        - CARD_SPORT
+        - CARD_SPORT_BASEBALL
+        - CARD_SPORT_BASKETBALL
+        - CARD_SPORT_FOOTBALL
+        - CARD_SPORT_HOCKEY
+        - CARPET_ORIENTAL
+        - COIN SET
+        - DOLL
+        - FIGURINE
+        - FIGURINE_STATUE
+        - INGOT_BULLION
+        - INGOT_BULLION_GOLD
+        - INGOT_BULLION_SILVER
+        - MODEL
+        - MODEL_AIRPLANE
+        - MODEL_ATV
+        - MODEL_AUTOMOBILE
+        - MODEL_BOAT
+        - MODEL_MOTORCYCLE
+        - MODEL_TRACTOR
+        - MODEL_TRAILER
+        - MODEL_TRAIN
+        - MODEL_TRUCK
+        - PAINTING_ART
+        - PLATE
+        - PRINT_ART
+        - VASE
+    ndexKnifeCategoryCodeType:
+      type: object
+      title: 'ndex:KnifeCategoryCodeType'
+      description: A data type for a code that identifies a kind of knife.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexKnifeCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexKnifeCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexKnifeCategoryCodeTypeContext.jsonld
+    ndexKnifeCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a kind of knife.
+      enum:
+        - BAYONET
+        - BONING
+        - BOWIE
+        - BREAD
+        - BUCK
+        - BUTCHER
+        - BUTCHER_KITCHEN
+        - CARVING
+        - CARVING_PARING
+        - CHEFS
+        - CLEAVER
+        - DAGGER
+        - DIRK
+        - DIRK_DAGGER_STILETTO
+        - DIVERS
+        - FISH FILLET
+        - FIXED BLADE
+        - FOLDED BLADE
+        - HUNTING
+        - HUNTING_BOWIE
+        - JACKKNIFE
+        - KITCHEN
+        - LOCKING BLADE
+        - PARING
+        - POCKET
+        - SIMULATED
+        - STEAK
+        - STILETTO
+        - SURVIVAL
+        - SWISS ARMY STYLE
+        - SWITCHBLADE
+        - TOY
+        - US ARMY STYLE
+        - UTILITY
+    ndexLivestockCategoryCodeType:
+      type: object
+      title: 'ndex:LivestockCategoryCodeType'
+      description: A data type for a code that identifies a type of livestock/pet.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexLivestockCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexLivestockCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexLivestockCategoryCodeTypeContext.jsonld
+    ndexLivestockCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a type of livestock/pet.
+      enum:
+        - ALLIGATOR
+        - ALPACA
+        - BEE
+        - BIRD
+        - BUFFALO
+        - CAT
+        - CATTLE
+        - CHICKEN
+        - DOG
+        - EMU
+        - FERRET
+        - FISH
+        - FOWL
+        - GERBIL
+        - HAMSTER
+        - HORSE
+        - INSECT
+        - LION
+        - LIZARD
+        - LLAMA
+        - MICE_RAT
+        - OSTRICH
+        - PARROT
+        - PIG
+        - PIGEON
+        - SHEEP
+        - SNAKE
+        - TIGER
+        - TURKEY
+        - TURTLE
+        - WORM
+    ndexMusicalInstrumentCategoryCodeType:
+      type: object
+      title: 'ndex:MusicalInstrumentCategoryCodeType'
+      description: A data type for a code that identifies a type of musical instrument.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexMusicalInstrumentCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexMusicalInstrumentCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexMusicalInstrumentCategoryCodeTypeContext.jsonld
+    ndexMusicalInstrumentCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a type of musical instrument.
+      enum:
+        - ACCORDION
+        - AUTOHARP
+        - BAGPIPES
+        - BANJO
+        - BARITONE
+        - BASS
+        - BASSOON
+        - BELLS
+        - BELLS_ MARCHING BAND
+        - BELLS_ORCHESTRA
+        - BUGLE
+        - CELLO
+        - CLARINET
+        - CORNET
+        - CYMBAL
+        - DRUM
+        - FIDDLE
+        - FLUTE
+        - GUITAR
+        - HARMONICA
+        - HARP
+        - HORN
+        - INSTRUMENT_STAND
+        - KEYBOARD_MUSICAL
+        - MANDOLIN
+        - MELLOPHONE
+        - MUSIC_STAND
+        - MUSICAL INSTRUMENT CASE
+        - OBOE
+        - ORGAN
+        - PIANO
+        - PICCOLO
+        - RECORDER
+        - SAXOPHONE
+        - SOUSAPHONE
+        - SYNTHESIZER
+        - TROMBONE
+        - TRUMPET
+        - TUBA
+        - UKULELE
+        - VIOLA
+        - VIOLIN
+        - XYLOPHONE
+    ndexOfficeEquipmentCategoryCodeType:
+      type: object
+      title: 'ndex:OfficeEquipmentCategoryCodeType'
+      description: A data type for a code that identifies a type of office equipment.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexOfficeEquipmentCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexOfficeEquipmentCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexOfficeEquipmentCategoryCodeTypeContext.jsonld
+    ndexOfficeEquipmentCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a type of office equipment.
+      enum:
+        - ACCOUNTING MACHINE
+        - ADDING MACHINE
+        - ADDRESSING MACHINE
+        - ATM MACHINE
+        - CALCULATOR
+        - CALLER ID BOX_UNIT
+        - CANDY MACHINE
+        - CAR PHONE
+        - CART
+        - CASH REGISTER
+        - CASTING MACHINE
+        - CHECK PROTECTOR
+        - CHECKWRITER
+        - COMMUNICATIONS MANAGER
+        - COMPOSER
+        - COMPTOGRAPH
+        - COPY MACHINE
+        - DICTATING MACHINE
+        - DISPENSER_AUTOMATIC TAPE
+        - DITTO MACHINE
+        - DRAFTING MACHINE
+        - DUPLICATOR
+        - ENVELOPE MACHINE
+        - FILE CABINET
+        - FILE CABINET_LATERAL
+        - FILE CABINET_VERTICAL
+        - FOLDING MACHINE
+        - IMPRINT MACHINE
+        - LABELER
+        - LANGUAGE TEACHING MACHINE
+        - LECTERN_PODIUM
+        - MAILING MACHINE
+        - MIMEOGRAPH
+        - MONEY CHANGER
+        - MONEY CHANGER_BILL
+        - MONEY CHANGER_COIN
+        - MONEY ORDER MACHINE
+        - MONEY_BANK BAG
+        - MULTIPLIER
+        - ORDERING MACHINE
+        - PAGER
+        - PHONE
+        - PHOTOCOPY MACHINE
+        - POSTAGE METER
+        - POSTING MACHINE
+        - SAFE
+        - SHIPPING CONTAINER
+        - SHREDDER
+        - SLIDE RULER
+        - SOFT DRINK MACHINE
+        - STAMP MACHINE
+        - STENCIL MACHINE
+        - STENOTYPE
+        - STORAGE CONTAINER
+        - TABULATOR
+        - TAPE DISPENSER_AUTOMATIC
+        - TELECOPIER_FACSIMILE TRANSCEIVER_FAX
+        - TELEPHONE
+        - TELEPHONE ANSWERING MACHINE
+        - TELEPHONE DIALER_AUTOMATIC
+        - TELEPHONE_CELLULAR
+        - TELERECORDER
+        - TRANSCRIBER
+        - TRANSPORTATION CONTAINER
+        - TYPESETTER
+        - TYPEWRITER
+        - VALIDATION PLATE_POST OFFICE
+        - VENDING MACHINE
+        - VOICEWRITER
+        - WATER COOLER
+    ndexOpticalEquipmentCategoryCodeType:
+      type: object
+      title: 'ndex:OpticalEquipmentCategoryCodeType'
+      description: A data type for a code that identifies a type of optical equipment.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexOpticalEquipmentCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexOpticalEquipmentCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexOpticalEquipmentCategoryCodeTypeContext.jsonld
+    ndexOpticalEquipmentCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a type of optical equipment.
+      enum:
+        - BINOCULARS
+        - BINOCULARS_FIELD GLASSES
+        - BINOCULARS_SPYGLASS
+        - EYEGLASSES
+        - EYEGLASSES_FRAMES
+        - MICROSCOPE
+        - NIGHT VISION GOGGLES
+        - PERISCOPE
+        - SCOPE
+        - SCOPE_ TELESCOPE
+        - SCOPE_GUN
+        - TELESCOPE
+        - VIEWER
+    ndexPhotoEquipmentCategoryCodeType:
+      type: object
+      title: 'ndex:PhotoEquipmentCategoryCodeType'
+      description: >-
+        A data type for a code that identifies the type of camera or imaging
+        device.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexPhotoEquipmentCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexPhotoEquipmentCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexPhotoEquipmentCategoryCodeTypeContext.jsonld
+    ndexPhotoEquipmentCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the type of camera or imaging
+        device.
+      enum:
+        - CAMERA
+        - CAMERA BACK
+        - CAMERA BODY
+        - CAMERA CASE
+        - CAMERA FILTER
+        - CAMERA LENS
+        - CAMERA WINDER
+        - DIGITAL CAMERA
+        - ENLARGER
+        - EXPOSURE METER_LIGHT METER
+        - FILM MAGAZINE
+        - FILM_VIDEO TAPE EDITOR
+        - FLASH
+        - LENS
+        - MOTOR DRIVE_CAMERA
+        - PHOTO DRYER
+        - PRISM RANGE FINDER
+        - PROJECTOR
+        - PROJECTOR_MOVIE
+        - PROJECTOR_MOVIE_SLIDE
+        - PROJECTOR_SLIDE
+        - RANGE FINDER
+        - SCREEN
+        - TRIPOD
+        - VIEWFINDER
+    ndexServiceUtilityCategoryCodeType:
+      type: object
+      title: 'ndex:ServiceUtilityCategoryCodeType'
+      description: A data type for a code that identifies a type of public utility service.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexServiceUtilityCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexServiceUtilityCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexServiceUtilityCategoryCodeTypeContext.jsonld
+    ndexServiceUtilityCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a type of public utility service.
+      enum:
+        - Communication Signal
+        - Communication Signal_Internet
+        - Communication Signal_Internet_Phone
+        - Communication Signal_Internet_Radio
+        - Communication Signal_Internet_Television
+        - Communication Signal_Phone
+        - Communication Signal_Phone_Land Line
+        - Communication Signal_Phone_Satellite
+        - Communication Signal_Radio
+        - Communication Signal_Television
+        - Communication Signal_Television_Cable
+        - Communication Signal_Television_Satellite
+        - Electric
+        - Natural Gas
+        - Sanitation_Garbage
+        - Sanitation_Sewage
+        - Water
+    ndexSportsEquipmentCategoryCodeType:
+      type: object
+      title: 'ndex:SportsEquipmentCategoryCodeType'
+      description: >-
+        A data type for a code that identifies a type of sports/recreational
+        equipment.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexSportsEquipmentCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexSportsEquipmentCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexSportsEquipmentCategoryCodeTypeContext.jsonld
+    ndexSportsEquipmentCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies a type of sports/recreational
+        equipment.
+      enum:
+        - AQUALUNG
+        - BALL
+        - BB GUN
+        - BENCH_EXERCISE
+        - BICYCLE RACK
+        - BICYCLE_SKI RACK
+        - BOW
+        - CROSS COUNTRY SKI_MACHINE_EXERCISE
+        - CYCLE_EXERCISE
+        - FISHING ROD_POLE
+        - GOLF CART_NONMOTORIZED
+        - GOLF CLUBS
+        - GUN_BB
+        - HOME_GYM
+        - INCLINE BENCH_EXERCISE
+        - LANTERN
+        - LASER TAG GUN
+        - LEG DEVELOPING MACHINE_EXERCISE
+        - PAINT BALL GUN
+        - PARACHUTE
+        - RACKET
+        - REEL
+        - ROLLER BLADES
+        - ROWING MACHINE_EXERCISE
+        - SADDLE
+        - SCOOTER
+        - SCUBA
+        - SKATE BOARD
+        - SKATES_ICE
+        - SKATES_INLINE
+        - SKATES_ROLLER
+        - SKI RACK
+        - SKIS
+        - SKIS_SNOW
+        - SKIS_WATER
+        - SLANT BOARD
+        - SNOWBOARD
+        - STEP MACHINE_EXERCISE
+        - STOP WATCH
+        - SURFBOARD
+        - SWORD
+        - TENT
+        - TREADMILL_EXERCISE
+        - TREE STAND
+    ndexToolDeviceCategoryCodeType:
+      type: object
+      title: 'ndex:ToolDeviceCategoryCodeType'
+      description: A data type for a code that identifies a type of tool.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexToolDeviceCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexToolDeviceCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexToolDeviceCategoryCodeTypeContext.jsonld
+    ndexToolDeviceCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a type of tool.
+      enum:
+        - ADAPTOR
+        - AIR BRUSH
+        - AIR COMPRESSOR
+        - AIR CONDITIONING CHARGING SYSTEM
+        - AIR FILE
+        - AIR RATCHET
+        - AIR SPADER
+        - AIR WRENCH
+        - AIRHANDLING UNIT
+        - ALARM
+        - AMMETER
+        - ANALYZER
+        - ANGLE
+        - ANTENNA AND RADAR CROSS-SECTION MEASUREMENT SYSTEM
+        - ATTENUATOR
+        - AUDIOMETER
+        - AUGER
+        - AUTOMATIC PILOT
+        - BALANCER
+        - BAROMETER
+        - BATTERY CHARGER_AUTOMOBILE
+        - BATTERY CHARGER_NONAUTOMOBILE
+        - BINDER
+        - BIT_NONWELL
+        - BLADE
+        - BLADE_FAN
+        - BLADE_KNIFE
+        - BLADE_MOWER
+        - BLADE_SAW
+        - BLOOD PRESSURE INSTRUMENT
+        - BLOOD PRESSURE INSTRUMENT_SPHYGMOMANOMETER
+        - BLOWER
+        - BOLT CUTTER
+        - BRAKE
+        - BREAKER
+        - BREATH ANALYZER_TESTER
+        - CABLE
+        - CABLE LOCATOR
+        - CALIBRATOR
+        - CALIPER
+        - CARDIOGRAPH
+        - CARPET TOOL_ LAYING IRON
+        - CARPET TOOL_KICKER
+        - CARPET TOOL_POWER STRETCHER
+        - CEMENT MIXER
+        - CHAIN SAW
+        - CHISEL
+        - CHRONOMETER
+        - CLIPPERS
+        - COIL_AIR CONDITIONING UNIT
+        - COMPACTOR_TAMPER
+        - COMPASS
+        - CONDENSER
+        - CONTROLLER
+        - CONVEYOR
+        - COUNTER
+        - COUPLER
+        - CRUNCHER
+        - CUTTER
+        - DEFIBRILLATOR
+        - DENTAL BOWL
+        - DENTAL HANDPIECE
+        - DEPTHFINDER
+        - DETECTOR_METAL
+        - DETECTOR_RADAR
+        - DIAGNOSTIC SCANNER
+        - DIE TOOL SET
+        - DOPPLER
+        - DOSIMETER
+        - DRILL
+        - DRILL PRESS
+        - DUMPSTER
+        - DWELL METER
+        - EDGER
+        - EEG MACHINE
+        - EKG MACHINE
+        - ENGINE_NONVEHICLE
+        - ENGRAVER
+        - EQUALIZER
+        - EVAPORATOR
+        - EXPLOSIVES
+        - FILE
+        - FILTER
+        - FINISHING MACHINE
+        - FIRE EXTINGUISHER
+        - FLASHLIGHT
+        - FUSE
+        - GARAGE DOOR OPENER
+        - GAUGE
+        - GAUGE_ULTRASONIC THICKNESS
+        - GEIGER COUNTER
+        - GENERATOR_NONAUTOMOBILE
+        - GRINDER
+        - GUN_RIVET
+        - GUN_SCREW
+        - GUN_SEALANT
+        - GUN_SEALANT_CAULKING
+        - GUN_SEALANT_GLUE
+        - GUN_SOLDERING
+        - GUN_SPRAY
+        - GUN_STAPLE
+        - GUN_STUD_RAMSET
+        - GYROSCOPE
+        - HAMMER
+        - HAMMER_GUN_IMPACT
+        - HAMMER_JACKHAMMER
+        - HAMMER_ROTOHAMMER
+        - HAND TRUCK
+        - HANDHELD RADIO_POLICE
+        - HEART MONITOR
+        - HEART MONITOR_APNEA MONITOR
+        - HEDGE CUTTER
+        - HOE
+        - HOIST
+        - HOLSTER
+        - HORSE_HARNESS RACING EQUIPMENT
+        - INDICATOR
+        - INVERTER
+        - IRON_SOLDERING
+        - JACK
+        - JOINTER
+        - KEY
+        - KEY MAKING MACHINE
+        - KNIFE
+        - LAB EQUIPMENT
+        - LADDER
+        - LAMINATING MACHINE
+        - LASER
+        - LASER MEASURING DEVICE
+        - LATHE
+        - LAWNMOWER_NONRIDING
+        - LEAF BLOWER
+        - LEAK DETECTOR
+        - LEVEL
+        - LIFE PRESERVER
+        - LIFT
+        - LOCK
+        - LONG RANGE NAVIGATION UNIT
+        - MACE_TEAR GAS
+        - MAGAZINE_NEWSPAPER STAND_RACK
+        - MEDICAL EQUIPMENT
+        - MEGOHMMETER
+        - METER
+        - MICROMETER
+        - MICROWAVE RADIO FREQUENCY HEAT APPLICATION SYSTEM
+        - MILLING MACHINE
+        - MITER BOX
+        - MOTOR
+        - MULTIMETER
+        - NAVIGATION METER
+        - NAVIGATION SYSTEM
+        - NAVIGATION SYSTEM_AUTOLINK
+        - NAVIGATION SYSTEM_GLOBAL POSITIONING SYSTEM
+        - NEON SIGN
+        - NEON SIGN_FLASHING SIGN FOR ROADWORK
+        - NERVE STIMULATION UNIT
+        - NIBBLER
+        - OHMMETER
+        - OSCILLOSCOPE
+        - OXIMETER
+        - PAINT SPRAYER
+        - PAINT STRIPPER
+        - PARKING METER
+        - PIPE THREADING MACHINE
+        - PLANE
+        - PLANER
+        - PLIERS
+        - PLOW
+        - POLICE_CRUISER MINIBAR
+        - POLICE_EMERGENCY LIGHT
+        - POLICE_WARNING LIGHT
+        - POSTHOLE DIGGER
+        - POWER PACK
+        - POWER SUPPLY
+        - PRESS
+        - PROBE
+        - PROBE_DIGITAL
+        - PROBE_PULSAR
+        - PROBE_TEMPERATURE
+        - PROBE_TEMPERATURE_DIGITAL
+        - PROBE_TEMPERATURE_PULSAR
+        - PULLER
+        - PULLER_BEARING PULLER
+        - PULLER_PIN PULLER
+        - PUMP
+        - PUNCH
+        - PYROMETER
+        - RADAR
+        - RADIO TELEMETRY SYSTEM
+        - RAKE
+        - REFRIGERANT RECOVERY UNIT
+        - REGULATOR
+        - RESPIRATOR
+        - RESUSCITATOR
+        - ROLLER
+        - ROUTER
+        - SANDBLASTER
+        - SANDER
+        - SAW
+        - SAW_HACKSAW
+        - SAW_JIGSAW
+        - SAW_SCROLL
+        - SAW_TABLE
+        - SCAFFOLD
+        - SCALES
+        - SCAN TOOL_AUTOMOTIVE
+        - SCREWDRIVER
+        - SCRUBBER
+        - SEISMOGRAPH
+        - SENSOR
+        - SEPARATOR
+        - SEWER CLEANER
+        - SEXTANT
+        - SHARPENER
+        - SHARPENER_KNIFE
+        - SHEARS
+        - SHOVEL
+        - SHREDDER
+        - SHREDDER_PAPER
+        - SHREDDER_WOOD
+        - SLICER
+        - SMOKE ALARM_DETECTOR
+        - SNAKE
+        - SNAKE_ELECTRIC
+        - SNOWBLOWER
+        - SNOWPLOW_NONRIDING
+        - SOCKET SET_SOCKET WRENCH
+        - SOD CUTTER
+        - SONAR
+        - SONAR_ECHO SOUNDER
+        - SONAR_FISH LOCATOR
+        - SPOTLIGHT
+        - SPRAYER
+        - SPREADER
+        - SPRINKLER
+        - STETHOSCOPE
+        - STROBE LIGHT
+        - SWEEPER_OUTDOOR POWER
+        - SWITCHES
+        - TACHOMETER
+        - TANK
+        - TANK_ACETYLENE
+        - TANK_HYDROGEN
+        - TANK_OXYGEN
+        - TANK_PROPANE
+        - TAPE APPLICATOR_DRYWALL
+        - TAPE MACHINE_AUTOMATIC
+        - TAPE MEASURE
+        - TESTER
+        - THATCHER_POWER RAKE
+        - THEODOLITE
+        - THERMOMETER
+        - THERMOSTAT
+        - THREADER
+        - TILLER
+        - TILLER_FARM CULTIVATOR
+        - TILLER_ROTOTILLER
+        - TIME CLOCK
+        - TIMER
+        - TIMING LIGHT
+        - TONGS
+        - TONOMETER
+        - TOOLBOX
+        - TORCH
+        - TORCH_CUTTING
+        - TRAFFIC COUNTER
+        - TRANSDUCER
+        - TRANSFORMER
+        - TRANSIT SURVEY
+        - TRANSPONDER
+        - TRENCHER
+        - TRIMMER
+        - TROWEL
+        - TROWEL_POWER
+        - ULTRASOUND MACHINE
+        - VALVE
+        - VIBRATOR
+        - VISE
+        - VOLTMETER
+        - WATER BLASTER_PRESSURE WASHER
+        - WATT METER
+        - WEEDER
+        - WELDER
+        - WELDER_ARC
+        - WHEEL BALANCER
+        - WINCH
+        - WINDSHIELD REPAIR KIT
+        - WIRE STRIPPER
+        - WOOD SPLITTER
+        - WRENCH
+        - XRAY EQUIPMENT
+        - ZAPPER_BUG
+    ndexItemGenderUseCodeType:
+      type: object
+      title: 'ndex:ItemGenderUseCodeType'
+      description: >-
+        A data type for a code that identifies the gender for which the property
+        is intended, such as a girl's bicycle or a man's jacket.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexItemGenderUseCodeSimpleType
+        '@context':
+          type: string
+          description: ndexItemGenderUseCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexItemGenderUseCodeTypeContext.jsonld
+    ndexItemGenderUseCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the gender for which the property
+        is intended, such as a girl's bicycle or a man's jacket.
+      enum:
+        - FEMALE
+        - FEMALE_GIRLS
+        - FEMALE_WOMENS
+        - MALE
+        - MALE_BOYS
+        - MALE_MENS
+        - UNISEX
+    ndexOffenseCodeType:
+      type: object
+      title: 'ndex:OffenseCodeType'
+      description: >-
+        A data type for a code that identifies the offense.  Includes all NIBRS
+        and NCIC codes, plus additional codes.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexOffenseCodeSimpleType
+        '@context':
+          type: string
+          description: ndexOffenseCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexOffenseCodeTypeContext.jsonld
+    ndexOffenseCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the offense.  Includes all NIBRS
+        and NCIC codes, plus additional codes.
+      enum:
+        - ABDUCTION_NO RANSOM OR ASSAULT
+        - ABORTIFACIENT
+        - ABORTION
+        - ABORTIONAL ACT ON OTHER
+        - ABORTIONAL ACT ON SELF
+        - ABORTIONAL ACT_SUBMISSION TO
+        - ABSCOND WHILE ON PAROLE
+        - ABSCOND WHILE ON PROBATION
+        - ABUSE_NONVIOLENT
+        - ACCESSORY_AFTER THE FACT
+        - ACCESSORY_BEFORE THE FACT
+        - ACCIDENTAL DEATH
+        - ACCOSTING
+        - ADULTERATED_FOOD_DRUG_COSMETICS
+        - ADULTERY
+        - AGGRAVATED ASSAULT
+        - AGGRAVATED ASSAULT_FAMILY_GUN
+        - AGGRAVATED ASSAULT_FAMILY_STRONGARM
+        - AGGRAVATED ASSAULT_FAMILY_WEAPON
+        - AGGRAVATED ASSAULT_GUN
+        - AGGRAVATED ASSAULT_NONFAMILY_GUN
+        - AGGRAVATED ASSAULT_NONFAMILY_STRONGARM
+        - AGGRAVATED ASSAULT_NONFAMILY_WEAPON
+        - AGGRAVATED ASSAULT_POLICE OFFICER_GUN
+        - AGGRAVATED ASSAULT_POLICE OFFICER_STRONGARM
+        - AGGRAVATED ASSAULT_POLICE OFFICER_WEAPON
+        - AGGRAVATED ASSAULT_PUBLIC OFFICIAL_GUN
+        - AGGRAVATED ASSAULT_PUBLIC OFFICIAL_STRONGARM
+        - AGGRAVATED ASSAULT_PUBLIC OFFICIAL_WEAPON
+        - AGGRAVATED ASSAULT_WEAPON
+        - AIDING AND ABETTING
+        - AIDING PRISONER ESCAPE
+        - ANARCHISM
+        - ANTITRUST
+        - ARSON
+        - ARSON_BURNING OF
+        - ARSON_BUSINESS
+        - ARSON_BUSINESS_DEFRAUD INSURER
+        - ARSON_BUSINESS_ENDANGERED LIFE
+        - ARSON_PUBLIC_BUILDING
+        - ARSON_PUBLIC_BUILDING_ENDANGERED LIFE
+        - ARSON_RESIDENTIAL
+        - ARSON_RESIDENTIAL_DEFRAUD INSURER
+        - ARSON_RESIDENTIAL_ENDANGERED LIFE
+        - ASSAULT
+        - ASSEMBLY_UNLAWFUL
+        - BAD CHECKS
+        - BAIL_PERSONAL RECOGNIZANCE
+        - BAIL_SECURED BOND
+        - BESTIALITY
+        - BETTING_WAGERING
+        - BIGAMY
+        - BLUE LAW VIOLATIONS
+        - BOATING LAW VIOLATIONS
+        - BOND DEFAULT_FAILURE TO APPEAR
+        - BRIBE
+        - BRIBE_GIVING
+        - BRIBE_OFFERING
+        - BRIBE_RECEIVING
+        - BRIBERY
+        - BRIBERY_GRATUITY
+        - BRIBERY_GRATUITY_GIVING
+        - BRIBERY_GRATUITY_OFFERING
+        - BRIBERY_GRATUITY_RECEIVING
+        - BRIBERY_KICKBACK
+        - BRIBERY_KICKBACK_GIVING
+        - BRIBERY_KICKBACK_OFFERING
+        - BRIBERY_KICKBACK_RECEIVING
+        - BUGGERY
+        - BURGLARY
+        - BURGLARY TOOLS POSSESSION
+        - BURGLARY_BANKING TYPE INSTITUTION
+        - BURGLARY_FORCED ENTRY_NONRESIDENCE
+        - BURGLARY_FORCED ENTRY_RESIDENCE
+        - BURGLARY_NO FORCED ENTRY_NONRESIDENCE
+        - BURGLARY_NO FORCED ENTRY_RESIDENCE
+        - BURGLARY_SAFE_VAULT
+        - CANVASSING_ILLEGAL
+        - CARJACKING_ARMED
+        - CIVIL RIGHTS
+        - COMBINATIONS IN RESTRAINT OF TRADE
+        - COMMERCIAL SEX
+        - COMMERCIAL SEX_HOMOSEXUAL PROSTITUTION
+        - COMMERCIALIZED VICE
+        - COMPOUNDING CRIME
+        - COMPUTER_INTERFERENCE WITH GOVERNMENT FUNCTION
+        - COMPUTER_PHYSICAL HARM TO PERSONS OR PROPERTY
+        - CONFLICT OF INTEREST
+        - CONSENSUAL SODOMY
+        - CONSERVATION
+        - CONSERVATION_ANIMALS
+        - CONSERVATION_BIRDS
+        - CONSERVATION_ENVIRONMENT
+        - CONSERVATION_FISH
+        - CONSERVATION_LICENSE_STAMP
+        - CONSPIRACY TO COMMIT
+        - CONTEMPT OF CONGRESS
+        - CONTEMPT OF COURT
+        - CONTEMPT OF LEGISLATURE
+        - CONTRIBUTING DELINQUENCY MINOR
+        - CORRUPT CONDUCT BY JUROR
+        - COSMETICS MISBRANDED
+        - COSMETICS_ADULTERATED
+        - COSMETICS_HEALTH OR SAFETY
+        - COUNTERFEITED_PASS
+        - COUNTERFEITED_POSSESSING
+        - COUNTERFEITED_TRANSPORTING
+        - COUNTERFEITING
+        - COUNTERFEITING OF
+        - COUNTERFEITING_FORGERY
+        - CRIMES AGAINST PERSON
+        - CRIMINAL DEFAMATION
+        - CRIMINAL LIBEL
+        - CRIMINAL SLANDER
+        - CROSSING POLICE LINES
+        - CRUELTY TO ANIMALS
+        - CRUELTY TOWARD DISABLED
+        - CRUELTY TOWARD ELDERLY
+        - CURFEW_LOITERING_VAGRANCY VIOLATIONS
+        - DAMAGE PROPERTY
+        - DAMAGE PROPERTY_BUSINESS
+        - DAMAGE PROPERTY_BUSINESS_WITH EXPLOSIVE
+        - DAMAGE PROPERTY_PRIVATE
+        - DAMAGE PROPERTY_PRIVATE_WITH EXPLOSIVE
+        - DAMAGE PROPERTY_PUBLIC
+        - DAMAGE PROPERTY_PUBLIC_WITH EXPLOSIVE
+        - DESECRATING FLAG
+        - DESTRUCTION_DAMAGE_VANDALISM OF PROPERTY
+        - DISINTERMENT UNLAWFUL
+        - DISORDERLY CONDUCT
+        - DIVULGE EAVESDROP ORDER
+        - DIVULGE MESSAGE CONTENTS
+        - DIVULGE_EAVESDROP INFORMATION
+        - DRIVING UNDER INFLUENCE
+        - DRIVING UNDER INFLUENCE_DRUGS
+        - DRIVING UNDER INFLUENCE_LIQUOR
+        - DRUG_EQUIPMENT VIOLATIONS
+        - DRUG_NARCOTIC EQUIPMENT_POSSESSION
+        - DRUG_NARCOTIC VIOLATIONS
+        - DRUG_NARCOTIC_AMPHETAMINE
+        - DRUG_NARCOTIC_AMPHETAMINE MANUFACTURE
+        - DRUG_NARCOTIC_AMPHETAMINE POSSESSION
+        - DRUG_NARCOTIC_AMPHETAMINE SELLING
+        - DRUG_NARCOTIC_BARBITURATE
+        - DRUG_NARCOTIC_BARBITURATE MANUFACTURE
+        - DRUG_NARCOTIC_BARBITURATE POSSESSION
+        - DRUG_NARCOTIC_BARBITURATE SELLING
+        - DRUG_NARCOTIC_COCAINE
+        - DRUG_NARCOTIC_COCAINE POSSESSION
+        - DRUG_NARCOTIC_COCAINE SELLING
+        - DRUG_NARCOTIC_COCAINE SMUGGLE
+        - DRUG_NARCOTIC_DANGEROUS DRUGS
+        - DRUG_NARCOTIC_HALLUCINOGEN
+        - DRUG_NARCOTIC_HALLUCINOGEN_DISTRIBUTING
+        - DRUG_NARCOTIC_HALLUCINOGEN_MANUFACTURING
+        - DRUG_NARCOTIC_HALLUCINOGEN_POSSESSION
+        - DRUG_NARCOTIC_HALLUCINOGEN_SELLING
+        - DRUG_NARCOTIC_HEROIN
+        - DRUG_NARCOTIC_HEROIN_POSSESSION
+        - DRUG_NARCOTIC_HEROIN_SELLING
+        - DRUG_NARCOTIC_HEROIN_SMUGGLE
+        - DRUG_NARCOTIC_MARIJUANA
+        - DRUG_NARCOTIC_MARIJUANA_POSSESSION
+        - DRUG_NARCOTIC_MARIJUANA_PRODUCING
+        - DRUG_NARCOTIC_MARIJUANA_SELLING
+        - DRUG_NARCOTIC_MARIJUANA_SMUGGLE
+        - DRUG_NARCOTIC_OPIUM OR DERIVATIVE
+        - DRUG_NARCOTIC_OPIUM OR DERIVATIVE_POSSESSION
+        - DRUG_NARCOTIC_OPIUM OR DERIVATIVE_SELLING
+        - DRUG_NARCOTIC_OPIUM OR DERIVATIVE_SMUGGLE
+        - DRUG_NARCOTIC_SYNTHETIC NARCOTIC
+        - DRUG_NARCOTIC_SYNTHETIC NARCOTIC_POSSESSION
+        - DRUG_NARCOTIC_SYNTHETIC NARCOTIC_SELLING
+        - DRUG_NARCOTIC_SYNTHETIC NARCOTIC_SMUGGLE
+        - DRUGS ADULTERATED
+        - DRUGS HEALTH OR SAFETY
+        - DRUGS MISBRANDED
+        - DRUNKENNESS
+        - EAVESDROP EQUIPMENT
+        - EAVESDROPPING
+        - ECOLOGY LAW VIOLATIONS
+        - ELECTION LAWS
+        - EMBEZZLEMENT
+        - EMBEZZLEMENT_BANKING_TYPE INSTITUTION
+        - EMBEZZLEMENT_BUSINESS PROPERTY
+        - EMBEZZLEMENT_INTERSTATE SHIPMENT
+        - EMBEZZLEMENT_POSTAL
+        - EMBEZZLEMENT_PUBLIC PROPERTY
+        - ENTICEMENT OF MINOR FOR INDECENT PURPOSES
+        - ENTICEMENT OF MINOR FOR INDECENT PURPOSES_TELECOMMUNICATIONS
+        - ENTICEMENT OF MINOR FOR PROSTITUTION
+        - ENVIRONMENT LAW VIOLATIONS
+        - ESCAPE
+        - ESCAPE FROM CUSTODY
+        - ESPIONAGE
+        - EVIDENCE DESTROYING
+        - EXPLOITATION_ENTICEMENT
+        - EXPLOSIVES
+        - EXPLOSIVES POSSESSING
+        - EXPLOSIVES TEACHING USE
+        - EXPLOSIVES TRANSPORTING
+        - EXPLOSIVES USING
+        - EXPORT VIOLATIONS
+        - EXTORTION BLACKMAIL
+        - EXTORTION THREAT_ACCUSE PERSON OF CRIME
+        - EXTORTION THREAT_DAMAGE PROPERTY
+        - EXTORTION THREAT_INJURE PERSON
+        - EXTORTION THREAT_INJURE REPUTATION
+        - EXTORTION THREAT_OF INFORMING OF VIOLATION
+        - FACILITATION OF
+        - FAILING TO MOVE ON
+        - FAILURE REPORT CRIME
+        - FAILURE TO APPEAR
+        - FAILURE TO REGISTER AS A SEX OFFENDER
+        - FALSE ARREST
+        - FALSE CITIZENSHIP
+        - FALSE FIRE ALARM
+        - FALSE IMPRISONMENT_MINOR_NONPARENT
+        - FALSE IMPRISONMENT_MINOR_PARENT
+        - FALSE REPORT
+        - FALSE STATEMENT
+        - FAMILY OFFENSE
+        - FAMILY OFFENSES_CRUELTY TOWARD CHILD
+        - FAMILY OFFENSES_CRUELTY TOWARD WIFE
+        - FAMILY OFFENSES_NEGLECT CHILD
+        - FAMILY OFFENSES_NEGLECT FAMILY
+        - FAMILY OFFENSES_NONPAYMENT OF ALIMONY
+        - FAMILY OFFENSES_NONSUPPORT OF PARENT
+        - FAMILY OFFENSES_NONVIOLENT
+        - FEDERAL LIQUOR OFFENSES
+        - FEDERAL RESOURCE VIOLATIONS
+        - FEDERAL TOBACCO OFFENSES
+        - FEDERAL_MATERIAL WITNESS
+        - FIREARM ACT VIOLATION
+        - FISH AND GAME LAW VIOLATIONS
+        - FLIGHT TO AVOID
+        - FLIGHT_ESCAPE
+        - FOOD ADULTERATED
+        - FOOD HEALTH OR SAFETY
+        - FOOD MISBRANDED
+        - FORCIBLE FONDLING
+        - FORCIBLE PURSE SNATCHING
+        - FORCIBLE RAPE
+        - FORCIBLE SODOMY
+        - FORGED_PASS
+        - FORGED_POSSESSING
+        - FORGED_TRANSPORTING
+        - FORGERY
+        - FORGERY OF
+        - FORGERY OF CHECKS
+        - FORNICATION_CONSENSUAL
+        - FRAUD
+        - FRAUD AND ABUSE_COMPUTER
+        - FRAUD_BY WIRE
+        - FRAUD_CONFIDENCE GAME
+        - FRAUD_CREDIT CARD_AUTOMATIC TELLER MACHINE
+        - FRAUD_FALSE PRETENSES_SWINDLE_CONFIDENCE GAME
+        - FRAUD_FALSE STATEMENT
+        - FRAUD_IMPERSONATION
+        - FRAUD_INSUFFICIENT FUNDS CHECK
+        - FRAUD_MAIL FRAUD
+        - FRAUD_SWINDLE
+        - FRAUD_WELFARE FRAUD
+        - FREQUENT HOUSE ILL FAME
+        - FUGITIVE_FLIGHT TO AVOID DEPORTATION
+        - FUGITIVE_FLIGHT TO AVOID PROSECUTION
+        - GAMBLING
+        - GAMBLING DEVICE
+        - GAMBLING DEVICE_NOT REGISTERED
+        - GAMBLING DEVICE_POSSESSION
+        - GAMBLING DEVICE_TRANSPORT
+        - GAMBLING EQUIPMENT VIOLATION
+        - GAMBLING GOODS
+        - GAMBLING GOODS_POSSESSION
+        - GAMBLING GOODS_TRANSPORT
+        - GAMBLING_BOOKMAKING
+        - GAMBLING_CARD GAME
+        - GAMBLING_CARD GAME_OPERATING
+        - GAMBLING_DICE GAME
+        - GAMBLING_DICE GAME OPERATING
+        - GAMBLING_ESTABLISH GAMBLING PLACE
+        - GAMBLING_LOTTERY
+        - GAMBLING_LOTTERY_OPERATING
+        - GAMBLING_LOTTERY_RUNNER
+        - GAMBLING_OPERATING_PROMOTING_ASSISTING
+        - GAMBLING_TRANSMIT WAGER INFORMATION
+        - HARASSING COMMUNICATION
+        - HARASSMENT
+        - HARBORING ESCAPEE_FUGITIVE
+        - HEALTH_SAFETY
+        - HIT AND RUN
+        - HOMICIDE
+        - HOMICIDE_JOHN OR JANE DOE_NO WARRANT
+        - HOMICIDE_NEGLIGENT MANSLAUGHTER_VEHICLE
+        - HOMICIDE_NEGLIGENT MANSLAUGHTER_WEAPON
+        - HOMICIDE_WILLFUL KILLING_FAMILY_GUN
+        - HOMICIDE_WILLFUL KILLING_FAMILY_WEAPON
+        - HOMICIDE_WILLFUL KILLING_GUN
+        - HOMICIDE_WILLFUL KILLING_NONFAMILY_GUN
+        - HOMICIDE_WILLFUL KILLING_NONFAMILY_WEAPON
+        - HOMICIDE_WILLFUL KILLING_POLICE OFFICER_GUN
+        - HOMICIDE_WILLFUL KILLING_POLICE OFFICER-WEAPON
+        - HOMICIDE_WILLFUL KILLING_PUBLIC OFFICIAL_GUN
+        - HOMICIDE_WILLFUL KILLING_PUBLIC OFFICIAL_WEAPON
+        - HOMICIDE_WILLFUL KILLING_WEAPON
+        - HOMOSEXUAL ACT
+        - HOMOSEXUAL ACT_WITH BOY
+        - HOMOSEXUAL ACT_WITH GIRL
+        - HOMOSEXUAL ACT_WITH MAN
+        - HOMOSEXUAL ACT_WITH WOMAN
+        - HUMAN TRAFFICKING_COMMERCIAL SEX ACTS
+        - HUMAN TRAFFICKING_INVOLUNTARY SERVITUDE
+        - ILLEGAL ARREST
+        - ILLEGAL ENTRY
+        - IMMIGRATION
+        - IMPORT VIOLATIONS
+        - INCENDIARY DEVICE_POSSESSION
+        - INCENDIARY DEVICE_TEACHING USE
+        - INCENDIARY DEVICE_USING
+        - INCEST
+        - INCEST WITH ADULT
+        - INCEST WITH MINOR
+        - INCOME TAX
+        - INDECENT EXPOSURE
+        - INDECENT EXPOSURE TO ADULT
+        - INDECENT EXPOSURE TO MINOR
+        - INTERSTATE TRANSPORTATION STOLEN VEHICLE
+        - INTIMIDATION
+        - INVADE PRIVACY
+        - JURY TAMPERING
+        - JUSTIFIABLE HOMICIDE
+        - KEEPING HOUSE ILL FAME
+        - KIDNAPPING
+        - KIDNAPPING ADULT
+        - KIDNAPPING ADULT FOR RANSOM
+        - KIDNAPPING ADULT TO SEXUALLY ASSAULT
+        - KIDNAPPING HOSTAGE FOR ESCAPE
+        - KIDNAPPING MINOR
+        - KIDNAPPING MINOR FOR RANSOM
+        - KIDNAPPING MINOR TO SEXUALLY ASSAULT
+        - KIDNAPPING MINOR_NONPARENT
+        - KIDNAPPING MINOR_PARENT
+        - KIDNAPPING_HIJACK AIRCRAFT
+        - LARCENY
+        - LARCENY_AIRCRAFT THEFT
+        - LARCENY_ALL OTHER
+        - LARCENY_FROM AUTO
+        - LARCENY_FROM BANKING TYPE INSTITUTION
+        - LARCENY_FROM BUILDING
+        - LARCENY_FROM COIN OPERATED MACHINE
+        - LARCENY_FROM INTERSTATE SHIPMENT
+        - LARCENY_FROM MAILS
+        - LARCENY_FROM SHIPMENT
+        - LARCENY_FROM YARDS
+        - LARCENY_ON US GOVERNMENT RESERVATION
+        - LARCENY_PARTS FROM VEHICLE
+        - LARCENY_POSTAL
+        - LEWD OR LASCIVIOUS ACTS WITH MINOR
+        - LIQUOR LAW VIOLATIONS
+        - LIQUOR TAX
+        - LIQUOR_MANUFACTURING
+        - LIQUOR_POSSESSION
+        - LIQUOR_SELLING
+        - LIQUOR_TRANSPORTING
+        - LITTERING
+        - MAKING FALSE REPORT
+        - MILITARY DESERTION
+        - MILITARY LAW VIOLATION
+        - MISAPPROPRIATION OF GOVERNMENT FUNDS
+        - MISCONDUCT_JUDICIAL OFFICER
+        - MOLESTATION OF MINOR
+        - MONEY LAUNDERING
+        - MONOPOLY IN RESTRAINT OF TRADE
+        - MORALS_DECENCY CRIMES
+        - MOTOR VEHICLE THEFT
+        - MURDER AND NONNEGLIGENT MANSLAUGHTER
+        - NEGLECT DISABLED
+        - NEGLECT ELDERLY
+        - NEGLIGENT MANSLAUGHTER
+        - OBSCENE COMMUNICATION
+        - OBSCENE MATERIAL_DISTRIBUTING
+        - OBSCENE MATERIAL_MAILING
+        - OBSCENE MATERIAL_MANUFACTURING
+        - OBSCENE MATERIAL_PORNOGRAPHY
+        - OBSCENE MATERIAL_POSSESSION
+        - OBSCENE MATERIAL_SELLING
+        - OBSCENE MATERIAL_TRANSPORTING
+        - OBSCENITY
+        - OBSTRUCT
+        - OBSTRUCT CORRESPONDENCE
+        - OBSTRUCT COURT ORDER
+        - OBSTRUCT CRIMINAL INVESTIGATION
+        - OBSTRUCT JUSTICE
+        - OBSTRUCT POLICE
+        - OPENING SEALED COMMUNICATION
+        - PAROLE VIOLATION
+        - PEEPING TOM
+        - PERJURY
+        - PERJURY_SUBORNATION OF
+        - POCKET PICKING
+        - POLYGAMY
+        - POSSESSING TOOLS FOR FORGERY_COUNTERFEITING
+        - PRIVACY_INVASION OF
+        - PROBATION VIOLATION
+        - PROCURE FOR PROSTITUTE
+        - PROCURE FOR PROSTITUTE WHO IS A MINOR
+        - PROCURE FOR PROSTITUTE WHO IS AN ADULT
+        - PROPERTY CRIMES
+        - PROSTITUTION
+        - PROSTITUTION_ASSISTING OR PROMOTING
+        - PUBLIC ORDER CRIMES
+        - PUBLIC PEACE
+        - PURSE SNATCHING_NO FORCE
+        - QUARANTINE VIOLATION
+        - RACKETEERING
+        - RAPE
+        - RAPE WITH WEAPON
+        - RAPE_DISABLED
+        - RAPE_DRUG INDUCED
+        - RAPE_ELDERLY
+        - RAPE_GUN
+        - RAPE_STATUTORY
+        - RAPE_STRONGARM
+        - RE_ENTRY AFTER DEPORTATION
+        - RECKLESS ENDANGERMENT
+        - RECKLESS OPERATION OF AIRCRAFT
+        - REFUSING TO AID OFFICER
+        - RELEASE VIOLATION_CONDITIONAL
+        - RELEASE VIOLATION_MANDATORY
+        - RESISTING OFFICER
+        - REVENUE LAW VIOLATIONS
+        - RIOT
+        - RIOT_ENGAGING IN
+        - RIOT_INCITING
+        - RIOT_INTERFERE FIREARM
+        - RIOT_INTERFERE OFFICER
+        - ROBBERY
+        - ROBBERY_BANKING TYPE INSTITUTION
+        - ROBBERY_BUSINESS_GUN
+        - ROBBERY_BUSINESS_STRONGARM
+        - ROBBERY_BUSINESS_WEAPON
+        - ROBBERY_RESIDENCE_GUN
+        - ROBBERY_RESIDENCE_STRONGARM
+        - ROBBERY_RESIDENCE_WEAPON
+        - ROBBERY_STREET_GUN
+        - ROBBERY_STREET_STRONGARM
+        - ROBBERY_STREET_WEAPON
+        - ROUT
+        - RUNAWAY
+        - SABOTAGE
+        - SALES TAX
+        - SANITATION LAW VIOLATIONS
+        - SCALPING_TICKETS
+        - SEDITION
+        - SEDUCTION
+        - SEDUCTION OF ADULT
+        - SELECTIVE SERVICE
+        - SEX ASSAULT
+        - SEX ASSAULT_CARNAL ABUSE
+        - SEX ASSAULT_DISABLED
+        - SEX ASSAULT_ELDERLY
+        - SEX ASSAULT_SODOMY_BOY_GUN
+        - SEX ASSAULT_SODOMY_BOY_STRONGARM
+        - SEX ASSAULT_SODOMY_BOY_WEAPON
+        - SEX ASSAULT_SODOMY_GIRL_GUN
+        - SEX ASSAULT_SODOMY_GIRL_STRONGARM
+        - SEX ASSAULT_SODOMY_GIRL_WEAPON
+        - SEX ASSAULT_SODOMY_MAN_GUN
+        - SEX ASSAULT_SODOMY_MAN_STRONGARM
+        - SEX ASSAULT_SODOMY_MAN_WEAPON
+        - SEX ASSAULT_SODOMY_WOMAN_GUN
+        - SEX ASSAULT_SODOMY_WOMAN_STRONGARM
+        - SEX ASSAULT_SODOMY_WOMAN_WEAPON
+        - SEX OFFENDER REGISTRATION VIOLATION
+        - SEX OFFENSE
+        - SEX OFFENSE_AGAINST CHILD_FONDLING
+        - SEX OFFENSE_DISABLED
+        - SEX OFFENSE_ELDERLY
+        - SEXUAL ASSAULT WITH AN OBJECT
+        - SEXUAL ASSAULT_DRUG_INDUCED
+        - SEXUAL EXPLOITATION OF MINOR_EXHIBITION OF MINOR
+        - SEXUAL EXPLOITATION OF MINOR_MATERIAL_FILM
+        - SEXUAL EXPLOITATION OF MINOR_MATERIAL_PHOTOGRAPH
+        - SEXUAL EXPLOITATION OF MINOR_MATERIAL_TRANSPORTING
+        - SEXUAL EXPLOITATION OF MINOR_PROSTITUTION
+        - SEXUAL EXPLOITATION OF MINOR_SEX PERFORMANCE
+        - SEXUAL EXPLOITATION OF MINOR_VIA TELECOMMUNICATIONS
+        - SEXUALLY VIOLATE HUMAN REMAINS_NECROPHILIA
+        - SHOPLIFTING
+        - SIMPLE ASSAULT
+        - SMUGGLE CONTRABAND
+        - SMUGGLE CONTRABAND INTO PRISON
+        - SMUGGLE TO AVOID PAYING DUTY
+        - SMUGGLING
+        - SMUGGLING ALIENS
+        - SOLICITATION TO COMMIT FELONY
+        - SOVEREIGNTY
+        - SPORTS TAMPERING
+        - STATE_LOCAL_MATERIAL WITNESS
+        - STOLEN PROPERTY OFFENSES
+        - STOLEN PROPERTY_CONCEAL
+        - STOLEN PROPERTY_POSSESSING
+        - STOLEN PROPERTY_RECEIVE
+        - STOLEN PROPERTY_SALE
+        - STOLEN PROPERTY_TRANSPORTING INTERSTATE
+        - STOLEN VEHICLE
+        - STOLEN VEHICLE_POSSESSING
+        - STOLEN VEHICLE_RECEIVE
+        - STRIP STOLEN VEHICLE
+        - SUICIDE
+        - TAX REVENUE
+        - THEFT AND SALE VEHICLE
+        - THEFT AND STRIP VEHICLE
+        - THEFT AND USE VEHICLE OTHER CRIME
+        - THEFT FROM BUILDING
+        - THEFT OF MOTOR VEHICLE PARTS OR ACCESSORIES
+        - THEFT OF US GOVERNMENT PROPERTY
+        - THEFT VEHICLE BY BAILEE
+        - THREAT TO BOMB
+        - THREAT TO BURN
+        - THREAT_FEDERAL PROTECTEES
+        - THREAT_TERRORISTIC_STATE OFFENSES
+        - TRAFFIC OFFENSE
+        - TRANSPORTING DANGEROUS MATERIAL
+        - TRANSPORTING FEMALE INTERSTATE FOR IMMORAL PURPOSES
+        - TRANSPORTING INTERSTATE FOR COMMERCIALIZED SEX
+        - TRANSPORTING INTERSTATE FOR SEXUAL ACTIVITY
+        - TRANSPORTING TOOLS FOR FORGERY_COUNTERFEITING
+        - TREASON
+        - TREASON MISPRISION
+        - TRESPASSING
+        - TRESSPASS OF REAL PROPERTY
+        - UNAUTHORIZED COMMUNICATION WITH PRISONER
+        - UNAUTHORIZED USE OF VEHICLE
+        - VEHICULAR MANSLAUGHTER
+        - VIOLATION OF A COURT ORDER
+        - VIOLATION OF RESTRAINING ORDER
+        - VOYEURISM
+        - WEAPON LAW VIOLATIONS
+        - WEAPON LAW_ALTERING IDENTIFICATION ON WEAPON
+        - WEAPON LAW_CARRYING CONCEALED WEAPON
+        - WEAPON LAW_CARRYING PROHIBITED WEAPON
+        - WEAPON LAW_FIRING WEAPON
+        - WEAPON LAW_LICENSING_REGISTRATION WEAPON
+        - WEAPON LAW_POSSESSING OF WEAPON
+        - WEAPON LAW_SELLING WEAPON
+        - WEAPON OFFENSE
+        - WEAPON TRAFFICKING
+        - WEAPONS OF MASS DESTRUCTION
+        - WILDLIFE TRAFFICKING
+        - WIRETAP_FAILURE TO REPORT
+        - WITNESS_DECEIVING
+        - WITNESS_DISSUADING
+    ndexOffenseCategoryNDExCodeType:
+      type: object
+      title: 'ndex:OffenseCategoryNDExCodeType'
+      description: A data type for a code that indicates the category of offense.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexOffenseCategoryNDExCodeSimpleType
+        '@context':
+          type: string
+          description: ndexOffenseCategoryNDExCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexOffenseCategoryNDExCodeTypeContext.jsonld
+    ndexOffenseCategoryNDExCodeSimpleType:
+      type: string
+      description: A data type for a code that indicates the category of offense.
+      enum:
+        - FELONY
+        - MISDEMEANOR
+        - OTHER
+    ndexOffenseMOCrimeAndMotiveCodeType:
+      type: object
+      title: 'ndex:OffenseMOCrimeAndMotiveCodeType'
+      description: >-
+        A data type for a code that identifies probable crime types and/or
+        motives based on investigator experience.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexOffenseMOCrimeAndMotiveCodeSimpleType
+        '@context':
+          type: string
+          description: ndexOffenseMOCrimeAndMotiveCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexOffenseMOCrimeAndMotiveCodeTypeContext.jsonld
+    ndexOffenseMOCrimeAndMotiveCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies probable crime types and/or
+        motives based on investigator experience.
+      enum:
+        - Argument_Conflict
+        - Bias_Hate
+        - Burglary
+        - Carjacking
+        - Child Abduction
+        - Contract
+        - Crime Concealment
+        - Domestic Violence
+        - Drug Related
+        - Financial Gain
+        - Gang Related
+        - Home Invasion
+        - Identity Theft
+        - Kidnapping
+        - Murder_Suicide
+        - Police Officer Involved
+        - Revenge
+        - Sexual
+        - Terrorism
+        - Thrill_Amusement
+        - Unknown
+        - Witness Elimination
+    ndexBiasMotivationCodeType:
+      type: object
+      title: 'ndex:BiasMotivationCodeType'
+      description: >-
+        A data type for a code that identifies the type of bias that motivated
+        the offense, if any. Includes all NIBRS codes, plus additional codes.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexBiasMotivationCodeSimpleType
+        '@context':
+          type: string
+          description: ndexBiasMotivationCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexBiasMotivationCodeTypeContext.jsonld
+    ndexBiasMotivationCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the type of bias that motivated
+        the offense, if any. Includes all NIBRS codes, plus additional codes.
+      enum:
+        - ANTIAMERICAN INDIAN_ ALASKAN NATIVE
+        - ANTIARAB
+        - ANTIASIAN
+        - ANTIATHEIST_AGNOSTIC
+        - ANTIBISEXUAL
+        - ANTIBLACK_AFRICAN AMERICAN
+        - ANTIBUDDHIST
+        - ANTICATHOLIC
+        - ANTIDISABLED
+        - ANTIEASTERNORTHODOX
+        - ANTIFEMALE
+        - ANTIFEMALE HOMOSEXUAL
+        - ANTIGENDER_NONCONFORMING
+        - ANTIHETEROSEXUAL
+        - ANTIHINDU
+        - ANTIHISPANIC_LATINO
+        - ANTIHOMOSEXUAL
+        - ANTIISLAMIC
+        - ANTIJEHOVAHWITNESS
+        - ANTIJEWISH
+        - ANTIMALE
+        - ANTIMALE HOMOSEXUAL
+        - ANTIMENTAL DISABILITY
+        - ANTIMORMON
+        - ANTIMULTIRACIAL GROUP
+        - ANTIMULTIRELIGIOUS GROUP
+        - ANTINATIVEHAWAIIAN_OTHERPACIFICISLANDER
+        - ANTIOTHER CHRISTIAN
+        - ANTIOTHER ETHNICITY_NATIONAL ORIGIN
+        - ANTIOTHER RELIGION
+        - ANTIPHYSICAL DISABILITY
+        - ANTIPROTESTANT
+        - ANTISIKH
+        - ANTITRANSGENDER
+        - ANTIWHITE
+        - GENDER BIAS
+        - NONE
+        - POLITICAL AFFILIATION BIAS
+        - UNKNOWN
+    ndexBiasMotivationCauseCodeType:
+      type: object
+      title: 'ndex:BiasMotivationCauseCodeType'
+      description: >-
+        A data type for a code that indicates offender was motivated to commit
+        the offense, in whole/part, because of bias.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexBiasMotivationCauseCodeSimpleType
+        '@context':
+          type: string
+          description: ndexBiasMotivationCauseCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexBiasMotivationCauseCodeTypeContext.jsonld
+    ndexBiasMotivationCauseCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that indicates offender was motivated to commit
+        the offense, in whole/part, because of bias.
+      enum:
+        - ADVOCACY GROUP MEMBER SUPPORTING TARGETED GROUP
+        - COINCIDES WITH HOLIDAY
+        - COINCIDES WITH SYMBOLIC_SIGNIFICANT DATE
+        - COMMUNITY PERCEPTION
+        - DAMAGE TO A SYMBOL
+        - EVIDENCE OF SYMBOLIC_RITUALISTIC ACT
+        - GESTURES
+        - GRAFFITI
+        - HATE GROUP CLAIMED RESPONSIBILITY
+        - HISTORIC ANIMOSITY
+        - LOGOS
+        - NEIGHBORHOOD TENSIONS EXIST AGAINST TARGETED GROUP
+        - NONE
+        - OFFENDER ADMITS HATE GROUP MEMBERSHIP
+        - ORAL COMMENTS
+        - PREVIOUSLY INVOLVED IN HATE CRIME
+        - PROMOTING ACTIVITIES OF HIS_HER GROUP
+        - RECENT ANIMOSITY
+        - RECENT PUBLIC FOCUS
+        - RETALIATORY ACTIONS
+        - SERIAL INCIDENTS IN SAME LOCALITY
+        - SPECIAL CLOTHING
+        - SUSPECTED HATE GROUP MEMBER
+        - SYMBOL_CROSS BURNING
+        - SYMBOLS
+        - UNKNOWN
+        - UPSET BALANCE OF RESIDENTIAL DEMOGRAPHICS
+        - VICTIM_OFFENDER BELONG TO DIFFERENT GROUPS
+        - WRITTEN WORDS_STATEMENTS
+    ndexCriminalActivityCategoryNDExCodeType:
+      type: object
+      title: 'ndex:CriminalActivityCategoryNDExCodeType'
+      description: >-
+        A data type for a code that identifies additional information on
+        criminal activity of offenders in the offense. N-Dex code list includes
+        all NIBRS codes, plus additional codes.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexCriminalActivityCategoryNDExCodeSimpleType
+        '@context':
+          type: string
+          description: ndexCriminalActivityCategoryNDExCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexCriminalActivityCategoryNDExCodeTypeContext.jsonld
+    ndexCriminalActivityCategoryNDExCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies additional information on
+        criminal activity of offenders in the offense. N-Dex code list includes
+        all NIBRS codes, plus additional codes.
+      enum:
+        - Assisting
+        - Buying
+        - Buying_Receiving
+        - Concealing
+        - Consuming
+        - Cultivating
+        - Cultivating_Manufacturing_Publishing
+        - Distributing
+        - Distributing_Selling
+        - Exploiting Children
+        - Importing
+        - Manufacturing
+        - None
+        - Operating
+        - Operating_Promoting_Assisting
+        - Possessing
+        - Possessing_Concealing
+        - Promoting
+        - Publishing
+        - Receiving
+        - Selling
+        - Transmitting
+        - Transporting
+        - Transporting_Transmitting_Importing
+        - Unknown
+        - Using
+        - Using_Consuming
+    ndexSecuritySystemStatusCodeType:
+      type: object
+      title: 'ndex:SecuritySystemStatusCodeType'
+      description: >-
+        A data type for a code that identifies the functioning of the security
+        system at the entry point for an incident.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexSecuritySystemStatusCodeSimpleType
+        '@context':
+          type: string
+          description: ndexSecuritySystemStatusCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexSecuritySystemStatusCodeTypeContext.jsonld
+    ndexSecuritySystemStatusCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the functioning of the security
+        system at the entry point for an incident.
+      enum:
+        - Disabled
+        - Nonexistent
+        - 'Off'
+        - 'On'
+    ndexPremiseSecurityCategoryCodeType:
+      type: object
+      title: 'ndex:PremiseSecurityCategoryCodeType'
+      description: >-
+        A data type for a code that identifies the type of security present at
+        the point of entry to a premises for an incident.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexPremiseSecurityCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexPremiseSecurityCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexPremiseSecurityCategoryCodeTypeContext.jsonld
+    ndexPremiseSecurityCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the type of security present at
+        the point of entry to a premises for an incident.
+      enum:
+        - Alarm_audio
+        - Alarm_silent
+        - AntiTheft device
+        - Camera
+        - Camera_Recording
+        - Dog
+        - Fence
+        - Gate
+        - Guard
+        - Guard_Security Patrol
+        - Kill switch
+        - Lights
+        - Lights_Exterior
+        - Lights_Interior
+        - Lock
+        - Lock_Deadbolt
+        - Lock_Electronic
+        - Lock_Padlock
+        - Neighborhood watch
+        - None
+        - Operation ID
+        - Security sign_Sticker
+        - Unknown
+        - Unlocked
+        - Window bars
+    ndexMethodOfAccessCodeType:
+      type: object
+      title: 'ndex:MethodOfAccessCodeType'
+      description: A data type for a method of access.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexMethodOfAccessCodeSimpleType
+        '@context':
+          type: string
+          description: ndexMethodOfAccessCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexMethodOfAccessCodeTypeContext.jsonld
+    ndexMethodOfAccessCodeSimpleType:
+      type: string
+      description: A data type for a method of access.
+      enum:
+        - Attempt Only
+        - Bodily Force
+        - Body Force_Kicked
+        - Broke
+        - Broke Door Panel
+        - Broke Glass
+        - Broke Padlock
+        - Broke_Removed_Cut Door Panel
+        - Chopped
+        - Cut
+        - Cut Door Panel
+        - Cut Glass
+        - Cut Padlock
+        - Cut_Broke Glass
+        - Cut_Broke Padlock
+        - Hid in Building
+        - Kicked
+        - Knob Twist
+        - Lawful
+        - Let In
+        - Let In_Ruse
+        - Lock Box
+        - Lock Broken
+        - Lock Cut
+        - Lock Cut_Broken
+        - Lock Key
+        - Lock Pick
+        - Lock Punch
+        - Lock Slip
+        - Lock Slip_Key_Pick
+        - No Force
+        - Open
+        - Open For Business
+        - Open_Unlocked
+        - Phone
+        - Picked
+        - Picked Lock
+        - Picked_Slipped Lock
+        - Pried
+        - Removed
+        - Removed Door Panel
+        - Ruse
+        - Sawed
+        - Slipped Lock
+        - Smashed
+        - Through Unlocked Door
+        - Through Unlocked Window
+        - Took Apart
+        - Tunneled
+        - Twisted Doorknob
+        - Unbolted Gate
+        - Unlocked
+        - Unsecured
+    ndexGangInvolvementCategoryCodeType:
+      type: object
+      title: 'ndex:GangInvolvementCategoryCodeType'
+      description: >-
+        A data type for a code that identifies gang involvement of offenders in
+        an offense.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexGangInvolvementCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexGangInvolvementCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexGangInvolvementCategoryCodeTypeContext.jsonld
+    ndexGangInvolvementCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies gang involvement of offenders in
+        an offense.
+      enum:
+        - G
+        - J
+        - 'N'
+    ndexLEOKAActivityCategoryNDExCodeType:
+      type: object
+      title: 'ndex:LEOKAActivityCategoryNDExCodeType'
+      description: >-
+        A data type for a code that identifies the type of law enforcement
+        activity which the officer was involved in at the time of incident. 
+        Includes all NIBRS codes, plus additional codes.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexLEOKAActivityCategoryNDExCodeSimpleType
+        '@context':
+          type: string
+          description: ndexLEOKAActivityCategoryNDExCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexLEOKAActivityCategoryNDExCodeTypeContext.jsonld
+    ndexLEOKAActivityCategoryNDExCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the type of law enforcement
+        activity which the officer was involved in at the time of incident. 
+        Includes all NIBRS codes, plus additional codes.
+      enum:
+        - Ambush_No warning
+        - Attempting other arrest
+        - Burglary in progress or pursuing
+        - Civil disorder
+        - Domestic Disturbance
+        - Handling_Transporting prisoner
+        - Investigation_Suspicious person
+        - Mentally deranged assailant
+        - Other
+        - Responding to disturbance call
+        - Robbery in progress or pursuing
+        - Traffic Pursuit
+        - Traffic Pursuit_Stop
+        - Traffic Stop
+    ndexVictimMOWasCodeType:
+      type: object
+      title: 'ndex:VictimMOWasCodeType'
+      description: >-
+        A data type for a code that identifies the actions of the victim at time
+        of incident.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexVictimMOWasCodeSimpleType
+        '@context':
+          type: string
+          description: ndexVictimMOWasCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexVictimMOWasCodeTypeContext.jsonld
+    ndexVictimMOWasCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the actions of the victim at time
+        of incident.
+      enum:
+        - Administered drugs
+        - Asked to Model
+        - Asked to Model_Pose for Photos
+        - Asked to Pose
+        - Asked to Pose_Model
+        - Asphyxiated
+        - Blindfolded
+        - Bound
+        - Bound Gagged
+        - Burned
+        - Camping
+        - Cut
+        - Cut Stabbed
+        - Distracted
+        - Drowned
+        - Drugged
+        - Drugged Sedated
+        - Exploited
+        - Face Covered
+        - Fishing
+        - Followed
+        - Fondled
+        - Forced to Disrobe
+        - Forced to Fondle Suspect
+        - Forced to Lie on Floor
+        - Forced to Masturbate
+        - Forced to Move
+        - Forced to Orally Copulate Suspect
+        - Gagged
+        - Gang Related
+        - Going from Bar
+        - Going from Club
+        - Going from Residence
+        - Going from Restaurant
+        - Going from Work
+        - Going to Bar
+        - Going to Club
+        - Going to or from Bar Club Restaurant
+        - Going to or from Residence
+        - Going to or from Work
+        - Going to Residence
+        - Going to Restaurant
+        - Going to Work
+        - Handcuffed
+        - Hiking
+        - Hit
+        - Hitchhiking
+        - Hunting
+        - Hunting Camping Hiking Fishing
+        - Injured
+        - Injured Hit
+        - Involved in Drug Transaction
+        - Locked In
+        - Made to Count
+        - On a Date
+        - On Vacation
+        - Outdoor Exercising
+        - Pinched
+        - Pistol Whipped
+        - Prostituting
+        - Sedated
+        - Shot
+        - Slapped
+        - Sleeping
+        - Stabbed
+        - Strangled
+        - Suffocated
+        - Threatened
+        - Tortured Mutilated
+        - Using Alcohol Drugs
+        - Victim Sleeping
+    ndexVictimMODisposalCodeType:
+      type: object
+      title: 'ndex:VictimMODisposalCodeType'
+      description: >-
+        A data type for a code that identifies the manner of victim body
+        disposal based on investigator perception.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexVictimMODisposalCodeSimpleType
+        '@context':
+          type: string
+          description: ndexVictimMODisposalCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexVictimMODisposalCodeTypeContext.jsonld
+    ndexVictimMODisposalCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the manner of victim body
+        disposal based on investigator perception.
+      enum:
+        - Apparent Lack of Concern
+        - Concealed
+        - Openly Placed
+        - Unknown
+    ndexVictimMOApproachedCodeType:
+      type: object
+      title: 'ndex:VictimMOApproachedCodeType'
+      description: >-
+        A data type for a code that identifies how subject initially approached
+        victim based on investigator experience.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexVictimMOApproachedCodeSimpleType
+        '@context':
+          type: string
+          description: ndexVictimMOApproachedCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexVictimMOApproachedCodeTypeContext.jsonld
+    ndexVictimMOApproachedCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies how subject initially approached
+        victim based on investigator experience.
+      enum:
+        - Blitz
+        - Blitz_Choked
+        - Blitz_Hit
+        - Blitz_Hit_Blunt Object
+        - Blitz_Hit_Personal Weapon
+        - Blitz_Physically Overpowered
+        - Blitz_Shot
+        - Blitz_Shot_Drive by Attack
+        - Blitz_Stabbed
+        - Deception
+        - Deception_Administered Drug
+        - Deception_Administered Drug_GHB
+        - Deception_Advertising_Placed
+        - Deception_Advertising_Responded
+        - Deception_Contacted_Fax
+        - Deception_Contacted_Internet
+        - Deception_Contacted_Internet Communication
+        - Deception_Contacted_Mail
+        - Deception_Contacted_Phone
+        - Deception_Offered
+        - Deception_Offered_ Assistance
+        - Deception_Offered_Goods
+        - Deception_Offered_Goods_Toys
+        - Deception_Offered_Goods_Treats
+        - Deception_Offered_Job
+        - Deception_Offered_Money
+        - Deception_Offered_Services
+        - Deception_Offered_Services_Sex
+        - Deception_Offered_Services_Transportation
+        - Deception_Pretend
+        - Deception_Pretend_Business person
+        - Deception_Pretend_Common Friend
+        - Deception_Pretend_Conversation Befriend
+        - Deception_Pretend_Customer
+        - Deception_Pretend_Delivery Person
+        - Deception_Pretend_Family Member
+        - Deception_Pretend_Handicapped
+        - Deception_Pretend_Job Seeker
+        - Deception_Pretend_Law Enforcement
+        - Deception_Pretend_Position of Trust
+        - Deception_Pretend_Repair Person
+        - Deception_Pretend_Sales Person
+        - Deception_Pretend_Utility Employee
+        - Deception_Requested
+        - Deception_Requested_Assistance
+        - Deception_Requested_Donation
+        - Deception_Requested_Other Object
+        - Deception_Requested_Phone
+        - Deception_Requested_To Show
+        - Deception_Requested_Toilet
+        - Deception_Requested_Victim Model
+        - Deception_Requested_Water
+        - Deception_Solicited Sex
+        - Deception_Staged Traffic Accident
+        - Deception_Used animal to lure
+        - Deception_Used third person to lure
+        - Surprise
+        - Surprise_Followed
+        - Surprise_Lay in Wait_In Building
+        - Surprise_Lay in Wait_In Vehicle
+        - Surprise_Lay in Wait_Out Doors
+        - Surprise_Threatened with Weapon
+        - Surprise_Victim Sleeping
+        - Unknown Approach
+    ndexVictimMOFoundClothedCodeType:
+      type: object
+      title: 'ndex:VictimMOFoundClothedCodeType'
+      description: >-
+        A data type for a code that characterizes clothed condition of the
+        victim.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexVictimMOFoundClothedCodeSimpleType
+        '@context':
+          type: string
+          description: ndexVictimMOFoundClothedCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexVictimMOFoundClothedCodeTypeContext.jsonld
+    ndexVictimMOFoundClothedCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that characterizes clothed condition of the
+        victim.
+      enum:
+        - Dressed without Socks_Shoes
+        - Fully Dressed
+        - Fully Dressed_Redressed
+        - Nude
+        - Nude with Socks_Shoes
+        - Partially Dressed
+        - Partially Dressed_Waist Down
+        - Partially Dressed_Waist Down_Redressed
+        - Partially Dressed_Waist Up
+        - Partially Dressed_Waist Up_Redressed
+        - Unknown
+    ndexVictimMOGeneralLifestyleCodeType:
+      type: object
+      title: 'ndex:VictimMOGeneralLifestyleCodeType'
+      description: >-
+        A data type for a code that identifies lifestyle characteristics for the
+        victim person based on investigator experience.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexVictimMOGeneralLifestyleCodeSimpleType
+        '@context':
+          type: string
+          description: ndexVictimMOGeneralLifestyleCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexVictimMOGeneralLifestyleCodeTypeContext.jsonld
+    ndexVictimMOGeneralLifestyleCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies lifestyle characteristics for the
+        victim person based on investigator experience.
+      enum:
+        - Alcoholic
+        - Bisexual
+        - Child
+        - Criminal Activity Engaged
+        - Drug Seller
+        - Drug User
+        - Elderly
+        - Gang Member
+        - Heterosexual
+        - Hitchhiker
+        - Homosexual
+        - Infant
+        - Lived Alone
+        - Mentally Ill
+        - Physically Disabled
+        - Prostitute
+        - Recluse
+        - Runaway
+        - Street Person_Homeless
+        - Student
+        - Transient
+        - Transvestite
+        - Unknown
+        - Worked Alone
+    ndexVictimMORecoveryCodeType:
+      type: object
+      title: 'ndex:VictimMORecoveryCodeType'
+      description: >-
+        A data type for a code that characterizes the recovery of the victim
+        based on investigator perception.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexVictimMORecoveryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexVictimMORecoveryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexVictimMORecoveryCodeTypeContext.jsonld
+    ndexVictimMORecoveryCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that characterizes the recovery of the victim
+        based on investigator perception.
+      enum:
+        - As skeletal remains
+        - Buried
+        - Covered
+        - Covered_Completely
+        - Covered_Face Only
+        - Covered_Partially
+        - In Bag
+        - In Bag_Garbage
+        - In Bag_Laundry
+        - In Bag_Plastic
+        - In Bathtub
+        - In Container
+        - In Container_Box
+        - In Container_Dumpster
+        - In Container_refrigerator
+        - In Container_suitcase
+        - In Vehicle
+        - In Water
+        - In Water_Not Weighted
+        - In Water_Weighted Down
+        - Wrapped
+    ndexVictimMOSubjectContactConclusionCodeType:
+      type: object
+      title: 'ndex:VictimMOSubjectContactConclusionCodeType'
+      description: >-
+        A data type for a code that identifies how victim subject contact ended
+        based on investigator perception.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexVictimMOSubjectContactConclusionCodeSimpleType
+        '@context':
+          type: string
+          description: ndexVictimMOSubjectContactConclusionCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexVictimMOSubjectContactConclusionCodeTypeContext.jsonld
+    ndexVictimMOSubjectContactConclusionCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies how victim subject contact ended
+        based on investigator perception.
+      enum:
+        - Escape
+        - Inadvertant Intervention
+        - Intentional Release
+        - Offender Left Scene
+        - Rescue_Intervention
+        - Unknown
+    ndexVictimMOBindingsCodeType:
+      type: object
+      title: 'ndex:VictimMOBindingsCodeType'
+      description: >-
+        A data type for a code that identifies the type of article used by the
+        subject at the crime scene to bind a victim.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexVictimMOBindingsCodeSimpleType
+        '@context':
+          type: string
+          description: ndexVictimMOBindingsCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexVictimMOBindingsCodeTypeContext.jsonld
+    ndexVictimMOBindingsCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the type of article used by the
+        subject at the crime scene to bind a victim.
+      enum:
+        - Chain
+        - Clothing
+        - Electrical Cord
+        - Flexcuffs
+        - Glue
+        - Handcuffs
+        - Linens
+        - Rope
+        - Tape
+        - Wire
+    ndexInjuryLocationCodeType:
+      type: object
+      title: 'ndex:InjuryLocationCodeType'
+      description: >-
+        A data type for a code that identifies the body location of a victim's
+        injury.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexInjuryLocationCodeSimpleType
+        '@context':
+          type: string
+          description: ndexInjuryLocationCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexInjuryLocationCodeTypeContext.jsonld
+    ndexInjuryLocationCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the body location of a victim's
+        injury.
+      enum:
+        - Abdomen
+        - Anus
+        - Arm
+        - Back
+        - Breast_left
+        - Breast_right
+        - Breasts
+        - Buttock
+        - Buttock_left
+        - Buttock_right
+        - Chest
+        - Ear_left
+        - Ear_right
+        - Ears
+        - Eyes
+        - Face
+        - Feet
+        - Finger
+        - Foot_left
+        - Foot_right
+        - Genitalia
+        - Groin
+        - Hand_left
+        - Hand_right
+        - Hands
+        - Head
+        - Leg_left
+        - Leg_right
+        - Legs
+        - Mouth
+        - Neck_Throat
+        - Nose
+        - Shoulder_left
+        - Shoulder_right
+        - Shoulders
+        - Thigh_left
+        - Thigh_right
+        - Thighs
+        - Torso
+        - Unknown
+    ndexInjuryCategoryCodeType:
+      type: object
+      title: 'ndex:InjuryCategoryCodeType'
+      description: >-
+        A data type for a code that identifies the type of bodily injury
+        suffered by a person who was the victim of the incident.  Includes all
+        NIBRS Codes, plus additional codes.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexInjuryCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexInjuryCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexInjuryCategoryCodeTypeContext.jsonld
+    ndexInjuryCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the type of bodily injury
+        suffered by a person who was the victim of the incident.  Includes all
+        NIBRS Codes, plus additional codes.
+      enum:
+        - Apparent Broken Bones
+        - Apparent Minor Injury
+        - Loss of Teeth
+        - None
+        - Other
+        - Other Major Injury
+        - Possible Internal Injury
+        - Severe Laceration
+        - Unconsciousness
+        - Undetermined
+    ndexAggravatedAssaultCircumstanceNDExCodeType:
+      type: object
+      title: 'ndex:AggravatedAssaultCircumstanceNDExCodeType'
+      description: >-
+        A data type for a code that describes the circumstances of either an
+        aggravated assault or homicide. Includes all NIBRS codes, plus
+        additional codes.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexAggravatedAssaultCircumstanceNDExCodeSimpleType
+        '@context':
+          type: string
+          description: ndexAggravatedAssaultCircumstanceNDExCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexAggravatedAssaultCircumstanceNDExCodeTypeContext.jsonld
+    ndexAggravatedAssaultCircumstanceNDExCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that describes the circumstances of either an
+        aggravated assault or homicide. Includes all NIBRS codes, plus
+        additional codes.
+      enum:
+        - Aggravated stalking
+        - Ambush
+        - Argument
+        - Argument over boyfriend
+        - Argument over girlfriend
+        - Argument over money
+        - Argument over weapon
+        - Arson
+        - Assault on Law Enforcement Officer
+        - Barroom brawl
+        - Bootlegging
+        - Burglary attempt
+        - Child abuse
+        - Child Playing With Weapon
+        - Criminal Killed by Police Officer
+        - Criminal Killed by Private Citizen
+        - Domestic argument
+        - Drive by shooting assault
+        - Drive by shooting homicide
+        - Drug Dealing
+        - Fight assault
+        - Fight homicide
+        - Fleeing suspect_police assault
+        - Fleeing suspect_police homicide
+        - Gambling assault
+        - Gambling homicide
+        - Gangland
+        - Gun_Cleaning Accident
+        - Homicide_suicide
+        - Hunting Accident
+        - Juvenile Gang
+        - Kidnap_murder
+        - Kidnap_noncustodial parent
+        - Kidnap_stranger
+        - Lovers Quarrel
+        - Mental problem assault
+        - Mental problem homicide
+        - Mercy Killing
+        - Mugging assault
+        - Mugging homicide
+        - Murder for hire
+        - Other Circumstances
+        - Other Felony Involved
+        - Other Negligent Killings
+        - Other Negligent Weapon Handling
+        - Playing with weapon assault
+        - Playing with weapon homicide
+        - Police officer killed
+        - Race related assault
+        - Race related homicide
+        - Rape attempt_homicide
+        - Rape_Homicide
+        - Revenge assault
+        - Revenge homicide
+        - Robber killed by victim
+        - Self defense assault
+        - Self defense homicide
+        - Stalking
+        - Unknown assault circumstance
+        - Unknown Circumstances
+        - Unknown homicide circumstance
+        - Victim killed by robber
+    ndexChargeCategoryCodeType:
+      type: object
+      title: 'ndex:ChargeCategoryCodeType'
+      description: A data type for a code that identifies a type of charge.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexChargeCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexChargeCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexChargeCategoryCodeTypeContext.jsonld
+    ndexChargeCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a type of charge.
+      enum:
+        - COMPLAINT
+        - INDICTMENT
+        - INFORMATION
+    ndexBookingCategoryCodeType:
+      type: object
+      title: 'ndex:BookingCategoryCodeType'
+      description: A data type for a code that identifies the type of booking conducted.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexBookingCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexBookingCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexBookingCategoryCodeTypeContext.jsonld
+    ndexBookingCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies the type of booking conducted.
+      enum:
+        - ADMINISTRATIVE
+        - CRIMINAL
+        - INQUIRY
+    ndexArrestCategoryJABSCodeType:
+      type: object
+      title: 'ndex:ArrestCategoryJABSCodeType'
+      description: >-
+        A data type for a Joint Automated Booking System (JABS) code that
+        identifies the type of apprehension.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexArrestCategoryJABSCodeSimpleType
+        '@context':
+          type: string
+          description: ndexArrestCategoryJABSCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexArrestCategoryJABSCodeTypeContext.jsonld
+    ndexArrestCategoryJABSCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a Joint Automated Booking System (JABS) code that
+        identifies the type of apprehension.
+      enum:
+        - FUGITIVE
+        - PROBABLE CAUSE
+        - WARRANT
+    ndexMetalCodeType:
+      type: object
+      title: 'ndex:MetalCodeType'
+      description: A data type for a code that identifies a metal.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexMetalCodeSimpleType
+        '@context':
+          type: string
+          description: ndexMetalCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexMetalCodeTypeContext.jsonld
+    ndexMetalCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a metal.
+      enum:
+        - ACTINIUM
+        - ALUMINUM
+        - ALUMINUM_BRONZE
+        - AMALGAM
+        - ANTIMONY
+        - ARSENIC
+        - BARIUM
+        - BERYLLIUM
+        - BISMUTH
+        - BORON
+        - BRASS
+        - BRONZE
+        - BRONZE_ARSENIC
+        - BRONZE_TIN
+        - CADMIUM
+        - CALCIUM
+        - CERIUM
+        - CESIUM
+        - CHROMIUM
+        - COBALT
+        - COPPER
+        - DYSPROSIUM
+        - ERBIUM
+        - EUROPIUM
+        - FRANCIUM
+        - GADOLINIUM
+        - GALLIUM
+        - GERMANIUM
+        - GOLD
+        - HAFNIUM
+        - HOLMIUM
+        - INDIUM
+        - IRIDIUM
+        - IRON
+        - LANTHANUM
+        - LEAD
+        - LITHIUM
+        - LUTETIUM
+        - MAGNESIUM
+        - MANGANESE
+        - MERCURY
+        - MOLYBDENUM
+        - NEODYMIUM
+        - NICKEL
+        - NIOBIUM
+        - OSMIUM
+        - PALLADIUM
+        - PEWTER
+        - PLATINUM
+        - POLONIUM
+        - POTASSIUM
+        - PRASEODYMIUM
+        - PROMETHIUM
+        - PROTACTINIUM
+        - RADIUM
+        - RHENIUM
+        - RHODIUM
+        - RUBIDIUM
+        - RUTHENIUM
+        - SAMARIUM
+        - SCANDIUM
+        - SELENIUM
+        - SILICON
+        - SILVER
+        - SODIUM
+        - STEEL
+        - STEEL_STAINLESS
+        - STRONTIUM
+        - TANTALUM
+        - TECHNETIUM
+        - TELLURIUM
+        - TERBIUM
+        - THALLIUM
+        - THORIUM
+        - THULIUM
+        - TIN
+        - TRANSURANIUM
+        - TRANSURANIUM_AMERICIUM
+        - TRANSURANIUM_BERKELIUM
+        - TRANSURANIUM_CALIFORNIUM
+        - TRANSURANIUM_CURIUM
+        - TRANSURANIUM_EINSTEINIUM
+        - TRANSURANIUM_FERMIUM
+        - TRANSURANIUM_LAWRENCIUM
+        - TRANSURANIUM_MENDELEVIUM
+        - TRANSURANIUM_NEPTUNIUM
+        - TRANSURANIUM_NOBELIUM
+        - TRANSURANIUM_PLUTONIUM
+        - TUNGSTEN
+        - URANIUM
+        - VANADIUM
+        - YTTRIUM
+        - ZINC
+        - ZIRCONIUM
+    ndexPreciousMetalCodeType:
+      type: object
+      title: 'ndex:PreciousMetalCodeType'
+      description: >-
+        A data type for a code that identifies a rare metallic chemical element
+        of high economic value, typically regarded as an investment and
+        industrial commodity.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexPreciousMetalCodeSimpleType
+        '@context':
+          type: string
+          description: ndexPreciousMetalCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexPreciousMetalCodeTypeContext.jsonld
+    ndexPreciousMetalCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies a rare metallic chemical element
+        of high economic value, typically regarded as an investment and
+        industrial commodity.
+      enum:
+        - ALUMINUM
+        - BRASS
+        - BRONZE
+        - COPPER
+        - GOLD
+        - IRIDIUM
+        - IRON
+        - LEAD
+        - OSMIUM
+        - PALLADIUM
+        - PEWTER
+        - PLATINUM
+        - RHENIUM
+        - RHODIUM
+        - RUTHENIUM
+        - SILVER
+        - TIN
+    ndexCADCallCodeType:
+      type: object
+      title: 'ndex:CADCallCodeType'
+      description: A data type for a code that identifies the type of service call.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexCADCallCodeSimpleType
+        '@context':
+          type: string
+          description: ndexCADCallCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexCADCallCodeTypeContext.jsonld
+    ndexCADCallCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies the type of service call.
+      enum:
+        - Abandoned Auto
+        - Abduction_Kidnapping
+        - Accident Conditions Unknown
+        - Accident Hit And Run Injury
+        - Accident Hit And Run Property
+        - Accident Personal Injury
+        - Accident Property Damage
+        - Agressive Driver
+        - Alarm
+        - Animal Complaint
+        - Arson
+        - Assault Aggravated
+        - Assault Simple
+        - Assist Citizen
+        - Assist Fire_Medics
+        - Assist Outside Agency
+        - Bad Check-Forgery
+        - Bolo
+        - Bomb Threat
+        - Boot Removal
+        - Burglary
+        - Carjacking
+        - City Property Damage
+        - Credit Card Fraud
+        - Destruction
+        - Disabled Motorist
+        - Disorderly Conduct
+        - Domestic Violence
+        - Drug Complaint
+        - Drunk Driver
+        - E911 911 Hang Up
+        - Embezzlement
+        - Escort
+        - False Pretense_Swindle_Confidence
+        - Fight
+        - Gambling
+        - Grand Larceny Auto
+        - Grand Larceny Auto Recovery
+        - Hazard
+        - Homicide
+        - Hostage_Barricade Situation
+        - Identity Fraud
+        - Impersonating Police Officer
+        - Intelligence Activity
+        - Intoxicated Subject
+        - Larceny
+        - Lockout
+        - Loud Party
+        - Missing Person
+        - Noise Violation
+        - Parking Complaint
+        - Police Information
+        - Property Found
+        - Property Lost
+        - Prostitution
+        - Protective Order Issued
+        - Prowler_Peeping Tom
+        - Public Service
+        - Robbery
+        - Runaway
+        - Sexual Offense
+        - Shoplifting
+        - Stalking
+        - Subject Stop
+        - Suicide
+        - Suspicious Event
+        - Suspicious Package_Substance
+        - Telephone Complaint
+        - Test Call
+        - Traffic Complaint
+        - Traffic Stop
+        - Trespassing
+        - Trouble Unknown
+        - Trouble Unknown_Officer Needs Assistance
+        - Warrant Issued
+        - Warrant Service
+        - Weapon Violation
+    ndexCADCallSourceCodeType:
+      type: object
+      title: 'ndex:CADCallSourceCodeType'
+      description: >-
+        A data type for a code that identifies the source type of a service
+        call.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexCADCallSourceCodeSimpleType
+        '@context':
+          type: string
+          description: ndexCADCallSourceCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexCADCallSourceCodeTypeContext.jsonld
+    ndexCADCallSourceCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the source type of a service
+        call.
+      enum:
+        - Alarm
+        - E911
+        - Hearing Impaired
+        - Internet_Email
+        - Multiple
+        - Officer
+        - Phone
+        - Teletype
+        - Unknown
+        - Walk_In
+    ndexSupervisedReleaseCategoryCodeType:
+      type: object
+      title: 'ndex:SupervisedReleaseCategoryCodeType'
+      description: A data type for a code that identifies a kind of supervised release.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexSupervisedReleaseCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexSupervisedReleaseCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexSupervisedReleaseCategoryCodeTypeContext.jsonld
+    ndexSupervisedReleaseCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a kind of supervised release.
+      enum:
+        - COURTESY SUPERVISION
+        - HOME CONFINEMENT
+        - MANDATORY RELEASE
+        - MILITARY SUPERVISED RELEASE
+        - PAROLE
+        - PAROLE COMPASSIONATE RELEASE
+        - PAROLE IN STATE
+        - PAROLE OUT OF STATE
+        - PAROLE SPECIAL TERM
+        - PRESENTENCE
+        - PRETRIAL
+        - PRETRIAL DIVERSION
+        - PROBATION
+        - PROBATION IN STATE
+        - PROBATION JUVENILE DELINQUENT
+        - PROBATION OUT OF STATE
+        - UNSPECIFIED
+        - WORK RELEASE
+    ndexAssignmentCategoryCodeType:
+      type: object
+      title: 'ndex:AssignmentCategoryCodeType'
+      description: A data type for a code that identifies a subject's assignment category.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexAssignmentCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexAssignmentCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexAssignmentCategoryCodeTypeContext.jsonld
+    ndexAssignmentCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies a subject's assignment category.
+      enum:
+        - ACTIVE INMATE
+        - DECEASED
+        - DISCHARGED FROM PAROLE
+        - ESCAPED
+        - IN CUSTODY OF ANOTHER FACILITY OR ORGANIZATION
+        - MEDICAL RESPITE
+        - OUT FOR COURT
+        - OUT FOR DEATH BED VISIT
+        - OUT FOR FUNERAL VISIT
+        - OUT FOR HUMANITARIAN VISIT
+        - OUT FOR JAIL
+        - OUT FOR MEDICAL TREATMENT
+        - OUT FOR OTHER REASON
+        - OUT FOR STUDY
+        - OUT FOR TREATMENT
+        - OUT FOR WORK RELEASE
+        - PARDONED
+        - PAROLE
+        - PAROLE ABSCONDER
+        - PAROLE TO DETAINER
+        - RELEASED
+        - RELEASED BAIL_BOND
+        - RELEASED CONVICTION OVERTURNED
+        - RELEASED DEPORTATION
+        - RELEASED TIME SERVED
+        - RELEASED TREATMENT
+    ndexOffenseSummaryCategoryCodeType:
+      type: object
+      title: 'ndex:OffenseSummaryCategoryCodeType'
+      description: A data type for a code that identifies an offense type being summarized.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexOffenseSummaryCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ndexOffenseSummaryCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexOffenseSummaryCategoryCodeTypeContext.jsonld
+    ndexOffenseSummaryCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies an offense type being summarized.
+      enum:
+        - ASSAULT
+        - BURGLARY
+        - EXTORTION
+        - FIREARMS
+        - FORGERY
+        - HOMICIDE
+        - IMMIGRATION
+        - KIDNAPPING
+        - NARCOTICS
+        - OTHER
+        - RAPE
+        - ROBBERY
+        - WEAPONS
+    ndexRiskLevelCodeType:
+      type: object
+      title: 'ndex:RiskLevelCodeType'
+      description: >-
+        A data type for a code that identifies a risk level corresponding to the
+        assessment score estimating the likelihood that the offender will
+        recidivate during his or her term of supervision.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexRiskLevelCodeSimpleType
+        '@context':
+          type: string
+          description: ndexRiskLevelCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexRiskLevelCodeTypeContext.jsonld
+    ndexRiskLevelCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies a risk level corresponding to the
+        assessment score estimating the likelihood that the offender will
+        recidivate during his or her term of supervision.
+      enum:
+        - EXTREME
+        - HIGH
+        - LOW
+        - LOW-MEDIUM
+        - MEDIUM
+        - MEDIUM-HIGH
+    ndexSubjectMOActionCodeType:
+      type: object
+      title: 'ndex:SubjectMOActionCodeType'
+      description: >-
+        A data type for a code that identifies the actions of the subject at the
+        crime scene to perpetrate crime and/or avoid apprehension based on
+        investigator experience.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexSubjectMOActionCodeSimpleType
+        '@context':
+          type: string
+          description: ndexSubjectMOActionCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexSubjectMOActionCodeTypeContext.jsonld
+    ndexSubjectMOActionCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the actions of the subject at the
+        crime scene to perpetrate crime and/or avoid apprehension based on
+        investigator experience.
+      enum:
+        - Altered Scene
+        - Altered Scene_Burned
+        - Altered Scene_Cleaned
+        - Altered Scene_Cleaned_Washed Clothing_Bedding
+        - Altered Scene_Planted Evidence
+        - Altered Scene_Ransacked
+        - Altered Scene_Vandalized
+        - Asked Victim to Model_Pose
+        - Assaulted_Asphyxiated Victim
+        - Assaulted_Blindfolded Victim
+        - Assaulted_Bound Victim
+        - Assaulted_Bound Victim_ArmsToTorso
+        - Assaulted_Bound Victim_Feet
+        - Assaulted_Bound Victim_Hands
+        - Assaulted_Bound Victim_HandsToFeet
+        - Assaulted_Bound Victim_Object
+        - Assaulted_Burned Victim
+        - Assaulted_Choked Victim
+        - Assaulted_Covered Face of Victim
+        - Assaulted_Cut_Stabbed Victim
+        - Assaulted_Distracted Victim
+        - Assaulted_Drowned Victim
+        - Assaulted_Drugged_Sedated Victim
+        - Assaulted_Excessive Force
+        - Assaulted_Exploited Victim
+        - Assaulted_Forced Victim Lie on Floor
+        - Assaulted_Forced Victim to Disrobe
+        - Assaulted_Forced Victim to Disrobe Subject
+        - Assaulted_Forced Victim to Move
+        - Assaulted_Gagged Victim
+        - Assaulted_Hit Victim
+        - Assaulted_Hit Victim_Blunt Object
+        - Assaulted_Hit Victim_Blunt Object_Aircraft
+        - Assaulted_Hit Victim_Blunt Object_Boat
+        - Assaulted_Hit Victim_Blunt Object_Vehicle
+        - Assaulted_Hit Victim_Personal Weapon
+        - Assaulted_Inflicted Injury
+        - Assaulted_Locked Victim In
+        - Assaulted_Made Victim Count
+        - Assaulted_Pinched Victim
+        - Assaulted_Pistol Whipped Victim
+        - Assaulted_Poisoned
+        - Assaulted_Pushed_Shoved Victim
+        - Assaulted_Ripped_Cut Clothing
+        - Assaulted_Sexual
+        - Assaulted_Sexual_Anal
+        - Assaulted_Sexual_Digital Penetration
+        - Assaulted_Sexual_Fondled Victim
+        - Assaulted_Sexual_Forced Oral Copulation
+        - Assaulted_Sexual_Forced Victim Fondle Subject
+        - Assaulted_Sexual_Forced Victim to Bathe
+        - Assaulted_Sexual_Forced Victim to Masturbate
+        - Assaulted_Sexual_Hand Insertion
+        - Assaulted_Sexual_Post Mortem Activity
+        - Assaulted_Sexual_Vaginal
+        - Assaulted_Shot Victim
+        - Assaulted_Slapped Victim
+        - Assaulted_Strangled Victim
+        - Assaulted_Suffocated Victim
+        - Assaulted_Threatened Retaliation
+        - Assaulted_Threatened Victim
+        - Assaulted_Threatened_Weapon
+        - Assaulted_Tortured_Mutilated Victim
+        - Behaved_Altered Temperature Setting
+        - Behaved_Ate_Drank On Premesis
+        - Behaved_Cleaned Self
+        - Behaved_Cleaned Victim
+        - Behaved_Disrobed Self
+        - Behaved_Exposed Self
+        - Behaved_Exposed Self_Disrobed
+        - Behaved_Fondled Self
+        - Behaved_Injured Self
+        - Behaved_Masturabated
+        - Behaved_Masturabated_Ejaculated
+        - Behaved_Placed Unique Objects
+        - Behaved_Smoked
+        - Behaved_Unusual or Symbolic Act
+        - Broke Cash Box
+        - Broke Lock
+        - Broke Window
+        - Concealed Goods
+        - Defeated Security
+        - Demanded Property
+        - Demanded Property_Drugs
+        - Demanded Property_Money
+        - Disabled Electricity
+        - Disabled Phone
+        - Disabled Security System
+        - Disabled Vehicle
+        - Forced Entry
+        - Gang Related
+        - Hid In Building
+        - Hijacked Victims Vehicle
+        - Ignition Punched
+        - Jumped The Counter
+        - Knew Location Of Hidden Stash
+        - Left Defecation and Urine at Scene
+        - Left Defecation and Urine on Victim
+        - Left Defecation at Scene
+        - Left Defecation on Victim
+        - Left Foreign Substance on Victim Body
+        - Left Graffiti
+        - Left Item
+        - Left Semen at Scene
+        - Left Semen on Victim
+        - Left Semen on Victim_Anus
+        - Left Semen on Victim_Body
+        - Left Semen on Victim_Clothing
+        - Left Semen on Victim_Mouth
+        - Left Semen on Victim_Vagina
+        - Left Urine at Scene
+        - Left Urine on Victim
+        - Left Writing at Scene
+        - Left Writing on Victim Body
+        - Prepared Exit
+        - Put Cash in Purse_Bag
+        - Recorded_Logged Events_Audio
+        - Recorded_Logged Events_Photographed_Videoed
+        - Recorded_Logged Events_Written
+        - Solicited for Sex
+        - Staged Scene
+        - Staged_Caused Traffic Accident
+        - Takeover
+        - Tampered with Alarm
+        - Tampered with Vehicle
+        - Took Cash from Register Personally
+        - Took Concealables
+        - Took Property from Person
+        - Took Property from Vehicle
+        - Took Property_Snatched Purse
+        - Took Specific Items
+        - Took Specific Types of Items
+        - Turned Lights Off
+        - Used Condom
+        - Used Demand Note
+        - Used Disguise
+        - Used Gloves
+        - Used Hand Signal
+        - Used Internet for Research
+        - Used Lookout
+        - Used Mask
+        - Used Multiple Subjects
+        - Used Multiple Weapons
+        - Used Phone at Scene
+        - Used Pillowcase
+        - Used Police Scanner
+        - Used Stolen Vehicle
+        - Used Unauthorized Key
+        - Used Vehicle To Remove Property
+        - Used Victims Name
+        - Used Victims Tools
+        - Used Weapon
+        - Used Weapon_ Not Firearm
+        - Used Weapon_Displayed Only
+        - Used Weapon_Fired No Injury
+    ndexSubjectMOGeneralLifestyleCodeType:
+      type: object
+      title: 'ndex:SubjectMOGeneralLifestyleCodeType'
+      description: >-
+        A data type for a code that identifies lifestyle characteristics for the
+        subject person based on investigator experience.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexSubjectMOGeneralLifestyleCodeSimpleType
+        '@context':
+          type: string
+          description: ndexSubjectMOGeneralLifestyleCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexSubjectMOGeneralLifestyleCodeTypeContext.jsonld
+    ndexSubjectMOGeneralLifestyleCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies lifestyle characteristics for the
+        subject person based on investigator experience.
+      enum:
+        - ALCOHOLIC
+        - BISEXUAL
+        - DRUG SELLER
+        - DRUG USER
+        - HABITUAL OFFENDER
+        - HETEROSEXUAL
+        - HITCHHIKER
+        - HOMOSEXUAL
+        - LONER
+        - MENTALLY ILL
+        - PEDOPHILE
+        - PIMP
+        - PROSTITUTE
+        - REGISTERED SEX OFFENDER
+        - STREET PERSON_HOMELESS
+        - STUDENT
+        - TRANSIENT
+        - TRANSVESTITE
+        - UNKNOWN
+    ndexSubjectMOObservationCodeType:
+      type: object
+      title: 'ndex:SubjectMOObservationCodeType'
+      description: A data type for a code that identifies observations of the subject.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexSubjectMOObservationCodeSimpleType
+        '@context':
+          type: string
+          description: ndexSubjectMOObservationCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexSubjectMOObservationCodeTypeContext.jsonld
+    ndexSubjectMOObservationCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies observations of the subject.
+      enum:
+        - Alcohol on breath
+        - Angry
+        - Apologetic
+        - Bad breath
+        - Body odor
+        - Body odor unusual odor
+        - Coerce
+        - Complimentary
+        - Ego Satisfying
+        - Gang related
+        - Inquisitive
+        - Intimidate coerce
+        - Intimidate_Commanding
+        - Kind
+        - Knowledgeable
+        - Negotiating
+        - Never spoke
+        - Never spoke quiet
+        - Personal
+        - Polite_Kind
+        - Profane
+        - Quiet
+        - Quotes unusual
+        - Rage
+        - Reassuring
+        - Self Demeaning
+        - Threatening
+        - Trust violation
+        - Under influence
+        - Unknown
+    ndexSubjectMOSexualPracticesCodeType:
+      type: object
+      title: 'ndex:SubjectMOSexualPracticesCodeType'
+      description: >-
+        A data type for a code that identifies the sexual practices and
+        preferences of a subject based on investigator perception.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexSubjectMOSexualPracticesCodeSimpleType
+        '@context':
+          type: string
+          description: ndexSubjectMOSexualPracticesCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexSubjectMOSexualPracticesCodeTypeContext.jsonld
+    ndexSubjectMOSexualPracticesCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the sexual practices and
+        preferences of a subject based on investigator perception.
+      enum:
+        - Bestiality
+        - Bisexuality
+        - Bondage Practitioner
+        - Child Molester_Pediphile
+        - Exibitionist
+        - Group Sex Practitioner
+        - Heterosexuality
+        - Homosexuality
+        - Incest
+        - Masochism
+        - Necrophilia
+        - Promiscuity
+        - Sadism
+        - Transsexualism
+        - Transvestitism
+        - Unknown
+        - Voyeurism
+    ndexPrenatalAgeUnitCodeType:
+      type: object
+      title: 'ndex:PrenatalAgeUnitCodeType'
+      description: >-
+        A data type for a code that identifies the unit of measure of an age of
+        an unborn child.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexPrenatalAgeUnitCodeSimpleType
+        '@context':
+          type: string
+          description: ndexPrenatalAgeUnitCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexPrenatalAgeUnitCodeTypeContext.jsonld
+    ndexPrenatalAgeUnitCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the unit of measure of an age of
+        an unborn child.
+      enum:
+        - PM
+        - PW
+    ndexPersonBuildCodeType:
+      type: object
+      title: 'ndex:PersonBuildCodeType'
+      description: >-
+        A data type for a code that identifies the person's physique or body
+        shape.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexPersonBuildCodeSimpleType
+        '@context':
+          type: string
+          description: ndexPersonBuildCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexPersonBuildCodeTypeContext.jsonld
+    ndexPersonBuildCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the person's physique or body
+        shape.
+      enum:
+        - AVERAGE
+        - HEAVY
+        - LARGE
+        - MEDIUM
+        - MUSCULAR
+        - OBESE
+        - POT BELLY
+        - ROTUND
+        - SLIM
+        - SMALL
+        - STOCKY
+        - THIN
+        - UNKNOWN
+        - VERY THIN
+    ndexPersonEyewearCodeType:
+      type: object
+      title: 'ndex:PersonEyewearCodeType'
+      description: >-
+        A data type for a code that identifies the type of glasses or other
+        eyewear worn by a person.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexPersonEyewearCodeSimpleType
+        '@context':
+          type: string
+          description: ndexPersonEyewearCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexPersonEyewearCodeTypeContext.jsonld
+    ndexPersonEyewearCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the type of glasses or other
+        eyewear worn by a person.
+      enum:
+        - BIFOCALS
+        - CONTACTS
+        - GLASSES
+        - NONE
+        - SUNGLASSES
+        - UNKNOWN
+    ndexPersonFacialHairCodeType:
+      type: object
+      title: 'ndex:PersonFacialHairCodeType'
+      description: >-
+        A data type for a code that identifies the type of facial hair of a
+        person.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexPersonFacialHairCodeSimpleType
+        '@context':
+          type: string
+          description: ndexPersonFacialHairCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexPersonFacialHairCodeTypeContext.jsonld
+    ndexPersonFacialHairCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the type of facial hair of a
+        person.
+      enum:
+        - CLEAN SHAVEN
+        - COMBO BEARD_MUSTACHE
+        - FU MANCHU
+        - FULL BEARD
+        - GOATEE
+        - HANDLEBAR MUSTACHE
+        - HEAVY BROWS
+        - HEAVY MUSTACHE
+        - LIGHT BROWS
+        - LIGHT MUSTACHE
+        - LONG SIDEBURNS
+        - MUSTACHE
+        - MUTTON CHOPS
+        - NEEDS A SHAVE
+        - SIDEBURNS
+        - SLIGHT BEARD
+        - UNKNOWN
+        - UNSHAVEN
+    ndexPersonHairLengthCodeType:
+      type: object
+      title: 'ndex:PersonHairLengthCodeType'
+      description: A data type for a code that identifies the length of the person's hair.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexPersonHairLengthCodeSimpleType
+        '@context':
+          type: string
+          description: ndexPersonHairLengthCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexPersonHairLengthCodeTypeContext.jsonld
+    ndexPersonHairLengthCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies the length of the person's hair.
+      enum:
+        - BALD_BALDING
+        - LONG
+        - MEDIUM_SHOULDER LENGTH
+        - SHORT_COLLAR LENGTH
+        - UNKNOWN
+        - WORE HAIR PIECE
+    ndexPersonHairStyleCodeType:
+      type: object
+      title: 'ndex:PersonHairStyleCodeType'
+      description: A data type for a code that identifies the style of a person's hair.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexPersonHairStyleCodeSimpleType
+        '@context':
+          type: string
+          description: ndexPersonHairStyleCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexPersonHairStyleCodeTypeContext.jsonld
+    ndexPersonHairStyleCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies the style of a person's hair.
+      enum:
+        - AFRO
+        - AFRO_NATURAL
+        - BRAIDED
+        - BUSHY
+        - BUTCH
+        - COMBED BACK
+        - CREW CUT
+        - CURLERS
+        - CURLY
+        - CURLY_WAVY
+        - DREADLOCKS
+        - FADE
+        - GREASY
+        - HAIR NET
+        - JHERI CURL
+        - MILITARY_FLAT TOP
+        - MULLET
+        - NATURAL
+        - PONY TAIL
+        - PROCESSED
+        - PUNKY
+        - SHAVED HEAD
+        - STRAIGHT
+        - UNKNOWN
+        - WAVY
+        - WIG_HAIR PIECE
+    ndexRACCodeType:
+      type: object
+      title: 'ndex:RACCodeType'
+      description: A data type for a code that identifies the race of the person.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexRACCodeSimpleType
+        '@context':
+          type: string
+          description: ndexRACCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexRACCodeTypeContext.jsonld
+    ndexRACCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies the race of the person.
+      enum:
+        - A
+        - B
+        - I
+        - P
+        - U
+        - W
+    ndexSEXCodeType:
+      type: object
+      title: 'ndex:SEXCodeType'
+      description: A data type for a code that identifies the gender or sex of the person.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexSEXCodeSimpleType
+        '@context':
+          type: string
+          description: ndexSEXCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexSEXCodeTypeContext.jsonld
+    ndexSEXCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies the gender or sex of the person.
+      enum:
+        - F
+        - G
+        - M
+        - 'N'
+        - X
+        - 'Y'
+        - Z
+    ndexMaritalStatusCodeType:
+      type: object
+      title: 'ndex:MaritalStatusCodeType'
+      description: A data type for a code that identifies marital status.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexMaritalStatusCodeSimpleType
+        '@context':
+          type: string
+          description: ndexMaritalStatusCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexMaritalStatusCodeTypeContext.jsonld
+    ndexMaritalStatusCodeSimpleType:
+      type: string
+      description: A data type for a code that identifies marital status.
+      enum:
+        - ANNULLED
+        - COHABITATING
+        - DIVORCED
+        - ENGAGED
+        - MARRIED
+        - SEPARATED
+        - SINGLE
+        - UNKNOWN
+        - WIDOWED
+    ndexPersonDentalCharacteristicCodeType:
+      type: object
+      title: 'ndex:PersonDentalCharacteristicCodeType'
+      description: >-
+        A data type for a code that identifies dental characteristics for the
+        person.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexPersonDentalCharacteristicCodeSimpleType
+        '@context':
+          type: string
+          description: ndexPersonDentalCharacteristicCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexPersonDentalCharacteristicCodeTypeContext.jsonld
+    ndexPersonDentalCharacteristicCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies dental characteristics for the
+        person.
+      enum:
+        - BRACES
+        - BRIDGE
+        - BROKEN_CHIPPED
+        - BUCKED
+        - CROOKED
+        - DECAYED_DECOLORED
+        - DENTURE LOWER
+        - DENTURE UPPER
+        - DIAMOND
+        - 'FALSE'
+        - FILLINGS
+        - GAPPED
+        - IRREGULAR
+        - MISSING
+        - NONE
+        - NORMAL
+        - OVERBITE_PROTRUSION
+        - RESTORATIONS_CAPS
+        - STAINED
+        - STAR
+        - UNDERBITE
+        - UNKNOWN
+        - VISIBLE GOLD
+        - VISIBLE SILVER
+    ndexPersonHandedCodeType:
+      type: object
+      title: 'ndex:PersonHandedCodeType'
+      description: >-
+        A data type for a code that identifies the hand the person is more adept
+        with using.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexPersonHandedCodeSimpleType
+        '@context':
+          type: string
+          description: ndexPersonHandedCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexPersonHandedCodeTypeContext.jsonld
+    ndexPersonHandedCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the hand the person is more adept
+        with using.
+      enum:
+        - AMBIDEXTROUS
+        - LEFT
+        - RIGHT
+        - UNKNOWN
+    ndexPersonSpeechCodeType:
+      type: object
+      title: 'ndex:PersonSpeechCodeType'
+      description: >-
+        A data type for a code that identifies impediments that affect a
+        person's speech or other speech characteristics that may help
+        distinguish a person.
+      properties:
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexPersonSpeechCodeSimpleType
+        '@context':
+          type: string
+          description: ndexPersonSpeechCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexPersonSpeechCodeTypeContext.jsonld
+    ndexPersonSpeechCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies impediments that affect a
+        person's speech or other speech characteristics that may help
+        distinguish a person.
+      enum:
+        - ACCENT
+        - DISGUISED
+        - FOREIGN
+        - HIGH PITCH
+        - LISPS
+        - LOUD
+        - LOW PITCH
+        - MEDIUM
+        - MONOTONE
+        - MUMBLES
+        - NASAL
+        - NORMAL
+        - OFFENSIVE
+        - QUIET
+        - RAPID
+        - RASPY
+        - SLOW
+        - SLURRED
+        - SOFT_LOW
+        - STREET TALK
+        - STUTTERS
+        - TALKATIVE
+        - UNKNOWN
+        - VULGAR_PROFANE
+    ndexPersonSexualOrientationCodeType:
+      type: object
+      title: 'ndex:PersonSexualOrientationCodeType'
+      description: >-
+        A data type for a code that identifies the sexual orientation of a
+        person.
+      properties:
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexPersonSexualOrientationCodeSimpleType
+        '@context':
+          type: string
+          description: ndexPersonSexualOrientationCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexPersonSexualOrientationCodeTypeContext.jsonld
+    ndexPersonSexualOrientationCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code that identifies the sexual orientation of a
+        person.
+      enum:
+        - BESTIALITY
+        - BISEXUAL
+        - HETEROSEXUAL
+        - HOMOSEXUAL
+        - UNKNOWN

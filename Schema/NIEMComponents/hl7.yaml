@@ -1,0 +1,105 @@
+components:
+  schemas:
+    hl7ReligionCodeType:
+      type: object
+      title: 'hl7:ReligionCodeType'
+      description: >-
+        A data type for a religion to which a person can subscribe or believe; a
+        categorization of spiritual beliefs.
+      properties:
+        simpleType:
+          $ref: hl7.yaml#/components/schemas/hl7ReligionCodeSimpleType
+        '@context':
+          type: string
+          description: hl7ReligionCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hl7ReligionCodeTypeContext.jsonld
+    hl7ReligionCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a religion to which a person can subscribe or believe; a
+        categorization of spiritual beliefs.
+      enum:
+        - ABC
+        - AGN
+        - AME
+        - AMT
+        - ANG
+        - AOG
+        - ATH
+        - BAH
+        - BAP
+        - BMA
+        - BOT
+        - BTA
+        - BTH
+        - BUD
+        - CAT
+        - CFR
+        - CHR
+        - CHS
+        - CMA
+        - CNF
+        - COC
+        - COG
+        - COI
+        - COL
+        - COM
+        - COP
+        - COT
+        - CRR
+        - EOT
+        - EPI
+        - ERL
+        - EVC
+        - FRQ
+        - FWB
+        - GRE
+        - HIN
+        - HOT
+        - HSH
+        - HVA
+        - JAI
+        - JCO
+        - JEW
+        - JOR
+        - JOT
+        - JRC
+        - JRF
+        - JRN
+        - JWN
+        - LMS
+        - LUT
+        - MEN
+        - MET
+        - MOM
+        - MOS
+        - MOT
+        - MSH
+        - MSU
+        - NAM
+        - NAZ
+        - NOE
+        - NRL
+        - ORT
+        - OTH
+        - PEN
+        - PRC
+        - PRE
+        - PRO
+        - QUA
+        - REC
+        - REO
+        - SAA
+        - SEV
+        - SHN
+        - SIK
+        - SOU
+        - SPI
+        - UCC
+        - UMD
+        - UNI
+        - UNU
+        - VAR
+        - WES
+        - WMC

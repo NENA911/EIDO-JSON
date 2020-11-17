@@ -1,0 +1,486 @@
+components:
+  schemas:
+    intelIdentificationAugmentationType:
+      type: object
+      title: 'intel:IdentificationAugmentationType'
+      description: A data type for additional information about an identification.
+      properties:
+        isAuthentic:
+          type: array
+          description: >-
+            True if something is of undisputed origin or veracity, genuine;
+            false otherwise. NIEM reference is intel:AuthenticIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        identificationIssuingCountryISO3166Alpha2Code:
+          type: array
+          description: >-
+            A GeoPolitical Entity from which this identification was issued.
+            NIEM reference is
+            intel:IdentificationIssuingCountryISO3166Alpha2Code
+          items:
+            $ref: iso_3166.yaml#/components/schemas/iso_3166CountryAlpha2CodeType
+        identificationIssuingCountryName:
+          type: array
+          description: >-
+            A name of a GeoPolitical Entity from which this identification was
+            issued. NIEM reference is intel:IdentificationIssuingCountryName
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        identificationIssuingStateName:
+          type: array
+          description: >-
+            A name of a major administrative district or division of a country
+            from which this identification was issued. NIEM reference is
+            intel:IdentificationIssuingStateName
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        identificationIssuingLocality:
+          type: array
+          description: >-
+            A Geographic Location from which this identification was issued.
+            NIEM reference is intel:IdentificationIssuingLocalityText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        personInIdentification:
+          type: array
+          description: >-
+            An identification of the human being referenced in the context of an
+            identification. NIEM reference is intel:PersonInIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        '@context':
+          type: string
+          description: intelIdentificationAugmentationType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/intelIdentificationAugmentationTypeContext.jsonld
+    intelContactInformationAugmentationType:
+      type: object
+      title: 'intel:ContactInformationAugmentationType'
+      description: A data type for additional information about a contact information.
+      properties:
+        contactSatelliteTelephoneNumber:
+          type: array
+          description: >-
+            A satellite phone number of a person. NIEM reference is
+            intel:ContactSatelliteTelephoneNumber
+          items:
+            $ref: nc.yaml#/components/schemas/ncTelephoneNumberType
+        '@context':
+          type: string
+          description: intelContactInformationAugmentationType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/intelContactInformationAugmentationTypeContext.jsonld
+    intelLocationAugmentationType:
+      type: object
+      title: 'intel:LocationAugmentationType'
+      description: A data type for additional information about a location.
+      properties:
+        globalRegionCode:
+          type: array
+          description: >-
+            A National Intelligence Priorities Framework area. NIEM reference is
+            intel:GlobalRegionCodeText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        personLocationUsageCode:
+          type: array
+          description: >-
+            A context within which a location is used. NIEM reference is
+            intel:PersonLocationUsageCodeText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: intelLocationAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/intelLocationAugmentationTypeContext.jsonld
+    intelBiometricAugmentationType:
+      type: object
+      title: 'intel:BiometricAugmentationType'
+      description: A data type for additional information about a biometric.
+      properties:
+        CBEFF:
+          type: array
+          description: >-
+            A data format [not defined by the ICMWG] for biometric data. NIEM
+            reference is intel:CBEFFText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: intelBiometricAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/intelBiometricAugmentationTypeContext.jsonld
+    intelCapabilityAugmentationType:
+      type: object
+      title: 'intel:CapabilityAugmentationType'
+      description: A data type for additional information about a capability.
+      properties:
+        capabilityProficiency:
+          type: array
+          description: >-
+            A skillfulness in the command of fundamentals deriving from practice
+            and familiarity. NIEM reference is intel:CapabilityProficiencyText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: intelCapabilityAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/intelCapabilityAugmentationTypeContext.jsonld
+    intelPersonAugmentationType:
+      type: object
+      title: 'intel:PersonAugmentationType'
+      description: A data type for additional information about a person.
+      properties:
+        agencySubjectInterest:
+          type: array
+          description: >-
+            A description of why an agency placed the person in its repository
+            or why the data on the person is being exchanged. NIEM reference is
+            intel:AgencySubjectInterest
+          items:
+            $ref: intel.yaml#/components/schemas/intelAgencySubjectInterestType
+        personCitizenshipDetails:
+          type: array
+          description: >-
+            A persons allegiance to a sovereign state by right of birthplace or
+            naturalization. NIEM reference is intel:PersonCitizenshipDetails
+          items:
+            $ref: intel.yaml#/components/schemas/intelPersonCitizenshipDetailsType
+        personContactDetails:
+          type: array
+          description: >-
+            A structure that describes details about how to contact a person.
+            NIEM reference is intel:PersonContactDetails
+          items:
+            $ref: nc.yaml#/components/schemas/ncContactInformationType
+        personEducationDetails:
+          type: array
+          description: >-
+            A relationship between a person and an organization in which the
+            organization is providing a service as an educational institution.
+            NIEM reference is intel:PersonEducationDetails
+          items:
+            $ref: intel.yaml#/components/schemas/intelPersonEducationDetailsType
+        location:
+          type: array
+          description: 'A geospatial location. NIEM reference is nc:Location'
+          items:
+            $ref: nc.yaml#/components/schemas/ncLocationType
+        personMultimediaIDBinary:
+          type: array
+          description: >-
+            A non-textual indicator of a persons identity. NIEM reference is
+            intel:PersonMultimediaIDBinary
+          items:
+            $ref: nc.yaml#/components/schemas/ncBinaryType
+        personSystemIdentification:
+          type: array
+          description: >-
+            A system identification that references a person. NIEM reference is
+            intel:PersonSystemIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncSystemIdentificationType
+        personCauseOfDeath:
+          type: array
+          description: >-
+            A cause which produces or effects a persons death. NIEM reference is
+            intel:PersonCauseOfDeathText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        personEyeDescription:
+          type: array
+          description: >-
+            A text description of the characteristics of a persons eyes. NIEM
+            reference is intel:PersonEyeDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        occupationName:
+          type: array
+          description: 'A name of an occupation. NIEM reference is intel:OccupationName'
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        aircraft:
+          type: array
+          description: >-
+            A mode of transportation capable of flying in the air. NIEM
+            reference is nc:Aircraft
+          items:
+            $ref: nc.yaml#/components/schemas/ncAircraftType
+        vessel:
+          type: array
+          description: >-
+            A mode of transportation capable of transport by water. NIEM
+            reference is nc:Vessel
+          items:
+            $ref: nc.yaml#/components/schemas/ncVesselType
+        '@context':
+          type: string
+          description: intelPersonAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/intelPersonAugmentationTypeContext.jsonld
+    intelAgencySubjectInterestType:
+      type: object
+      title: 'intel:AgencySubjectInterestType'
+      description: >-
+        A data type for a detailed description of why an agency placed the
+        person in its repository or why the data on the person is being
+        exchanged.
+      properties:
+        subjectCautionInformationCode:
+          type: array
+          description: >-
+            A piece of cautionary information about a subject. NIEM reference is
+            j:SubjectCautionInformationCode
+          items:
+            $ref: ncic.yaml#/components/schemas/ncicCMCCodeType
+        subjectCautionInformation:
+          type: array
+          description: >-
+            A piece of cautionary information about a subject. NIEM reference is
+            j:SubjectCautionInformationText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        agencyName:
+          type: array
+          description: >-
+            A name of a government organization that has specified an interest
+            in this person, or has issued a warning or handling instructions
+            regarding this person. NIEM reference is intel:AgencyName
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        agencyInterestCategory:
+          type: array
+          description: >-
+            A grouping of persons by the reason they are of interest to
+            intelligence. NIEM reference is intel:AgencyInterestCategory
+          items:
+            $ref: intel.yaml#/components/schemas/intelAgencyInterestCategoryType
+        agencySubjectHandling:
+          type: array
+          description: >-
+            An action to take on contact with the person. NIEM reference is
+            intel:AgencySubjectHandling
+          items:
+            $ref: intel.yaml#/components/schemas/intelAgencySubjectHandlingType
+        subjectReasonOnList:
+          type: array
+          description: >-
+            A reason why the person has been added to a terrorist watch list by
+            a government organization. NIEM reference is
+            intel:SubjectReasonOnListText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: intelAgencySubjectInterestType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/intelAgencySubjectInterestTypeContext.jsonld
+    intelAgencyInterestCategoryType:
+      type: object
+      title: 'intel:AgencyInterestCategoryType'
+      description: >-
+        A data type for a groupings of persons by the reason they are of
+        interest to intelligence.
+      properties:
+        subjectCategoryCode:
+          type: array
+          description: >-
+            A general category or classification of persons by the reason they
+            are of interest to intelligence. NIEM reference is
+            intel:SubjectCategoryCodeText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        FBIECRCode:
+          type: array
+          description: >-
+            A VGTOF Group Member Capability Criteria for Entry NIEM reference is
+            intel:FBIECRCode
+          items:
+            $ref: ncic.yaml#/components/schemas/ncicECRCodeType
+        stateINACode:
+          type: array
+          description: >-
+            A Department of State code that identifies the reason that a group
+            of people are of interest to intelligence. NIEM reference is
+            intel:StateINACodeText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        agencyInterestOtherCategory:
+          type: array
+          description: >-
+            An additional person-categorization system that groups of people by
+            the reason they are of interest to intelligence. NIEM reference is
+            intel:AgencyInterestOtherCategory
+          items:
+            $ref: >-
+              intel.yaml#/components/schemas/intelAgencyInterestOtherCategoryType
+        '@context':
+          type: string
+          description: intelAgencyInterestCategoryType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/intelAgencyInterestCategoryTypeContext.jsonld
+    intelAgencyInterestOtherCategoryType:
+      type: object
+      title: 'intel:AgencyInterestOtherCategoryType'
+      description: >-
+        A data type for a details that describe an additional
+        person-categorization system that groups of people by the reason they
+        are of interest to intelligence.
+      properties:
+        agencyInterestCategory:
+          type: array
+          description: >-
+            A kind of source of the code and/or description used to detail
+            groups of people by the reason they are of interest to intelligence.
+            NIEM reference is intel:AgencyInterestCategoryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        agencyInterestCategoryCode:
+          type: array
+          description: >-
+            A reason that a group of people are of interest to intelligence.
+            NIEM reference is intel:AgencyInterestCategoryCodeText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        agencyInterestCategoryDescription:
+          type: array
+          description: >-
+            A description of the reason that a group of people are of interest
+            to intelligence. NIEM reference is
+            intel:AgencyInterestCategoryDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: intelAgencyInterestOtherCategoryType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/intelAgencyInterestOtherCategoryTypeContext.jsonld
+    intelAgencySubjectHandlingType:
+      type: object
+      title: 'intel:AgencySubjectHandlingType'
+      description: A data type for actions to take on contact with the person.
+      properties:
+        FBICode:
+          type: array
+          description: >-
+            An action for the designated agency to take on contact with the
+            person. NIEM reference is intel:AgencySubjectHandlingFBICodeText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        subjectHandling:
+          type: array
+          description: >-
+            An action for the designated agency to take on contact with the
+            person. NIEM reference is intel:SubjectHandling
+          items:
+            $ref: intel.yaml#/components/schemas/intelSubjectHandlingType
+        '@context':
+          type: string
+          description: intelAgencySubjectHandlingType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/intelAgencySubjectHandlingTypeContext.jsonld
+    intelSubjectHandlingType:
+      type: object
+      title: 'intel:SubjectHandlingType'
+      description: >-
+        A data type for an action for the designated agency to take on contact
+        with the person.
+      properties:
+        agencyName:
+          type: array
+          description: >-
+            A name of an agency for whom the person handling information is
+            designated. NIEM reference is intel:SubjectHandlingAgencyName
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        code:
+          type: array
+          description: >-
+            An action for the designated agency to take on contact with the
+            person. NIEM reference is intel:SubjectHandlingCodeText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        description:
+          type: array
+          description: >-
+            A description that identifies the action for the designated agency
+            to take on contact with the person. NIEM reference is
+            intel:SubjectHandlingDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: intelSubjectHandlingType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/intelSubjectHandlingTypeContext.jsonld
+    intelPersonCitizenshipDetailsType:
+      type: object
+      title: 'intel:PersonCitizenshipDetailsType'
+      description: >-
+        A data type for information about a persons allegiance to a sovereign
+        state by right of birthplace or naturalization.
+      properties:
+        personCitizenshipISO3166Alpha2Code:
+          type: array
+          description: >-
+            A country that assigns rights, duties, and privileges to a person
+            because of the birth or naturalization of the person in that
+            country. NIEM reference is nc:PersonCitizenshipISO3166Alpha2Code
+          items:
+            $ref: iso_3166.yaml#/components/schemas/iso_3166CountryAlpha2CodeType
+        personCitizenship:
+          type: array
+          description: >-
+            A country that assigns rights, duties, and privileges to a person
+            because of the birth or naturalization of the person in that
+            country. NIEM reference is nc:PersonCitizenshipText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        personCitizenshipStatusCode:
+          type: array
+          description: >-
+            A mutually exclusive category recognized by law that identifies the
+            degree of protection given a person in return for that persons
+            allegiance. NIEM reference is intel:PersonCitizenshipStatusCodeText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: intelPersonCitizenshipDetailsType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/intelPersonCitizenshipDetailsTypeContext.jsonld
+    intelPersonEducationDetailsType:
+      type: object
+      title: 'intel:PersonEducationDetailsType'
+      description: >-
+        A data type for a relationship between a person and an organization in
+        which the organization is providing a service as an educational
+        institution.
+      properties:
+        personEducationLevel:
+          type: array
+          description: >-
+            A highest level of education a person has obtained. NIEM reference
+            is nc:PersonEducationLevelText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        personEducationDegreeCode:
+          type: array
+          description: >-
+            A document awarded by an educational institution conferring a degree
+            on a person or certifying his satisfactory completion of a course of
+            study.  NIEM reference is intel:PersonEducationDegreeCodeText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: intelPersonEducationDetailsType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/intelPersonEducationDetailsTypeContext.jsonld

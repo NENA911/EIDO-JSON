@@ -1,0 +1,31 @@
+components:
+  schemas:
+    dod_jcs-pub2.0DocumentIntelligenceCategoryCodeType:
+      type: object
+      title: 'dod_jcs-pub2.0:DocumentIntelligenceCategoryCodeType'
+      description: A data type for natures or genres of a document or resource.
+      properties:
+        simpleType:
+          $ref: >-
+            dod_jcs-pub2.0.yaml#/components/schemas/dod_jcs-pub2.0DocumentIntelligenceCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: dod_jcs-pub2.0DocumentIntelligenceCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/dod_jcs-pub2.0DocumentIntelligenceCategoryCodeTypeContext.jsonld
+    dod_jcs-pub2.0DocumentIntelligenceCategoryCodeSimpleType:
+      type: string
+      description: A data type for natures or genres of a document or resource.
+      enum:
+        - CI
+        - COMINT
+        - ELINT
+        - FISINT
+        - GEOINT
+        - HUMINT
+        - IMINT
+        - MASINT
+        - OSINT
+        - SIGINT
+        - TECHINT

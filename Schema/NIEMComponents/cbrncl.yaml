@@ -1,0 +1,310 @@
+components:
+  schemas:
+    cbrnclMIMEContentCodeType:
+      type: object
+      title: 'cbrncl:MIMEContentCodeType'
+      description: A data type that defines the various MIME Content Code
+      properties:
+        simpleType:
+          $ref: cbrncl.yaml#/components/schemas/cbrnclMIMEContentCodeSimpleType
+        '@context':
+          type: string
+          description: cbrnclMIMEContentCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/cbrnclMIMEContentCodeTypeContext.jsonld
+    cbrnclMIMEContentCodeSimpleType:
+      type: string
+      description: >-
+        A data type for the kinds of MIME content and their file extension, as
+        published by the Internet Assigned Numbers Authority (IANA.org).
+      enum:
+        - '323'
+        - acx
+        - ai
+        - aif
+        - aifc
+        - aiff
+        - asf
+        - asr
+        - asx
+        - au
+        - avi
+        - axs
+        - bas
+        - bcpio
+        - bin
+        - bmp
+        - c
+        - cat
+        - cdf
+        - cer
+        - class
+        - clp
+        - cmx
+        - cod
+        - cpio
+        - crd
+        - crl
+        - crt
+        - csh
+        - css
+        - dcr
+        - der
+        - dir
+        - dll
+        - dms
+        - doc
+        - dot
+        - dvi
+        - dxr
+        - eps
+        - etx
+        - evy
+        - exe
+        - fif
+        - flr
+        - gif
+        - gtar
+        - gz
+        - h
+        - hdf
+        - hlp
+        - hqx
+        - hta
+        - htc
+        - htm
+        - html
+        - htt
+        - ico
+        - ief
+        - iii
+        - ins
+        - isp
+        - jfif
+        - jpe
+        - jpeg
+        - jpg
+        - js
+        - latex
+        - lha
+        - lsf
+        - lsx
+        - lzh
+        - m13
+        - m14
+        - m3u
+        - man
+        - mdb
+        - me
+        - mht
+        - mhtml
+        - mid
+        - mny
+        - mov
+        - movie
+        - mp2
+        - mp3
+        - mpa
+        - mpe
+        - mpeg
+        - mpg
+        - mpp
+        - mpv2
+        - ms
+        - mvb
+        - nws
+        - oda
+        - p10
+        - p12
+        - p7b
+        - p7c
+        - p7m
+        - p7r
+        - p7s
+        - pbm
+        - pdf
+        - pfx
+        - pgm
+        - pko
+        - pma
+        - pmc
+        - pml
+        - pmr
+        - pmw
+        - pnm
+        - 'pot,'
+        - ppm
+        - pps
+        - ppt
+        - prf
+        - ps
+        - pub
+        - qt
+        - ra
+        - ram
+        - ras
+        - rgb
+        - rmi
+        - roff
+        - rtf
+        - rtx
+        - scd
+        - sct
+        - setpay
+        - setreg
+        - sh
+        - shar
+        - sit
+        - snd
+        - spc
+        - spl
+        - src
+        - sst
+        - stl
+        - stm
+        - sv4cpio
+        - sv4crc
+        - svg
+        - swf
+        - t
+        - tar
+        - tcl
+        - tex
+        - texi
+        - texinfo
+        - tgz
+        - tif
+        - tiff
+        - tr
+        - trm
+        - tsv
+        - txt
+        - uls
+        - ustar
+        - vcf
+        - vrml
+        - wav
+        - wcm
+        - wdb
+        - wks
+        - wmf
+        - wps
+        - wri
+        - wrl
+        - wrz
+        - xaf
+        - xbm
+        - xla
+        - xlc
+        - xlm
+        - xls
+        - xlt
+        - xlw
+        - xof
+        - xpm
+        - xwd
+        - z
+        - zip
+    cbrnclMapGuideBrandCodeType:
+      type: object
+      title: 'cbrncl:MapGuideBrandCodeType'
+      description: A data type for the brands of map guides.
+      properties:
+        simpleType:
+          $ref: cbrncl.yaml#/components/schemas/cbrnclMapGuideBrandCodeSimpleType
+        '@context':
+          type: string
+          description: cbrnclMapGuideBrandCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/cbrnclMapGuideBrandCodeTypeContext.jsonld
+    cbrnclMapGuideBrandCodeSimpleType:
+      type: string
+      description: A data type that defines the codes for the brands of map guides.
+      enum:
+        - Other
+        - Thomas
+    cbrnclConveyanceKindCodeType:
+      type: object
+      title: 'cbrncl:ConveyanceKindCodeType'
+      description: A data type for the  kind of Conveyance
+      properties:
+        simpleType:
+          $ref: cbrncl.yaml#/components/schemas/cbrnclConveyanceKindCodeSimpleType
+        '@context':
+          type: string
+          description: cbrnclConveyanceKindCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/cbrnclConveyanceKindCodeTypeContext.jsonld
+    cbrnclConveyanceKindCodeSimpleType:
+      type: string
+      description: A data type for the kinds of conveyances.
+      enum:
+        - A01
+        - A02
+        - A03
+        - A04
+        - A05
+        - A06
+        - A07
+        - A08
+        - A09
+        - A10
+        - A11
+        - A12
+        - A13
+        - A14
+        - A15
+        - A16
+        - A17
+        - A18
+        - B01
+        - B02
+        - B03
+        - B04
+        - B05
+        - C01
+        - other
+        - pipeline
+        - R01
+        - R02
+        - R03
+        - R04
+        - R05
+        - R06
+        - R07
+        - S01
+        - S02
+        - S03
+        - S04
+        - S05
+        - S06
+        - S07
+        - S08
+        - S09
+        - S10
+        - unknown
+        - V01
+        - V02
+        - V03
+        - V04
+        - V05
+        - V06
+        - V07
+        - V08
+        - V09
+        - V10
+        - V11
+        - V12
+        - V13
+        - V14
+        - V15
+        - V16
+        - V17
+        - V18
+        - V19
+        - V20
+        - V21
+        - V22
+        - V23
+        - V24
+        - V25

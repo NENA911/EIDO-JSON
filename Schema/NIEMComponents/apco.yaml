@@ -1,0 +1,276 @@
+components:
+  schemas:
+    apcoIncidentCategoryCodeType:
+      type: object
+      title: 'apco:IncidentCategoryCodeType'
+      description: A data type for incident codes.
+      properties:
+        simpleType:
+          $ref: apco.yaml#/components/schemas/apcoIncidentCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: apcoIncidentCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/apcoIncidentCategoryCodeTypeContext.jsonld
+    apcoIncidentCategoryCodeSimpleType:
+      type: string
+      description: A data type for incident codes.
+      enum:
+        - 911H
+        - 911OPN
+        - ABDOM
+        - ABDUCTF
+        - ABDUCTNF
+        - ABUSE
+        - ACCIND
+        - ADMIN
+        - AIR
+        - ALIEN
+        - ALLERGIC
+        - ALRBA
+        - ALRBOX
+        - ALRBS
+        - ALRCO
+        - ALRCO2
+        - ALRDEFIB
+        - ALRF
+        - ALRGAS
+        - ALRHEAT
+        - ALRKPAD
+        - ALRMED
+        - ALRNGAS
+        - ALRPANA
+        - ALRPANS
+        - ALRPROPN
+        - ALRPULL
+        - ALRROBA
+        - ALRROBS
+        - ALRU
+        - ALRVEH
+        - ALRWTR
+        - ALS
+        - ANIMAL
+        - ASSAULT
+        - ASSIST
+        - ATL
+        - BACK
+        - BARICADE
+        - BIO
+        - BITE
+        - BLDCLPSE
+        - BLEEDING
+        - BLS
+        - BOMB
+        - BRGCLPSE
+        - BURGLARY
+        - BURN
+        - CARDIAC
+        - CARJACK
+        - CHEMICAL
+        - CHESPAIN
+        - CHOKE
+        - CITASST
+        - CIVDIS
+        - CIVIL
+        - CNTRFT
+        - CRIMPS
+        - CRIMTRAF
+        - CURFEW
+        - DEATH
+        - DEATHNTF
+        - DIABETIC
+        - DISORD
+        - DISVEH
+        - DROWN
+        - DRUGPAR
+        - DRUGS
+        - DUI
+        - DVA
+        - DVNA
+        - EDP
+        - ELEC
+        - ELECHZD
+        - ELUDING
+        - ENTRAP
+        - ESCAPE
+        - EXPLOS
+        - EXPOSURE
+        - EXTORT
+        - EYE
+        - FAIRC
+        - FALL
+        - FAPT
+        - FARSON
+        - FBRUSH
+        - FELEC
+        - FFUEL
+        - FIGHT
+        - FIREWRKS
+        - FMARINE
+        - FORCENTR
+        - FOTHER
+        - FRAUD
+        - FREPORT
+        - FSMOKE
+        - FSTRU
+        - FTRAILER
+        - FTRAIN
+        - FTRASH
+        - FTRUCK
+        - FUNK
+        - FVEH
+        - GASLEAK
+        - HARR
+        - HAZMAT
+        - HEADACHE
+        - HEMRG
+        - HOMICIDE
+        - HOSTAGE
+        - INDECENT
+        - INFO
+        - INTERNET
+        - INTOX
+        - INVEST
+        - LARCENY
+        - LIQUOR
+        - MAJORINC
+        - MAYDAY
+        - MCI
+        - MISBOATR
+        - MISCON
+        - MVA
+        - MVAHR
+        - MVAINJY
+        - MVAUNK
+        - NEGLECT
+        - NOISE
+        - OD
+        - ODOR
+        - OPEN
+        - ORDERV
+        - PANDEMIC
+        - PARKING
+        - PERFND
+        - PERMISS
+        - PERSUSP
+        - PERUNCON
+        - PERWANT
+        - PHANDLE
+        - PREG
+        - PROPFND
+        - PROPLOST
+        - PROPSTLN
+        - PUBWKS
+        - PURSUIT
+        - RADIAT
+        - RECKDRV
+        - REPO
+        - RESCUE
+        - RESIST
+        - RESP
+        - RESPARR
+        - ROBBERY
+        - RUNAWAY
+        - SAR
+        - SEIZURE
+        - SEXOFFNS
+        - SHOOT
+        - SHOPLIFT
+        - SICK
+        - SMOKING
+        - STABBING
+        - STDBY
+        - STROKE
+        - SUBJSTP
+        - SUICIDE
+        - SUICTHRT
+        - SUSP
+        - TERROR
+        - THAZ
+        - THREATS
+        - TOW
+        - TRAIN
+        - TRAINDRL
+        - TRANSFER
+        - TRAUMA
+        - TRAUMAP
+        - TRESPASS
+        - TROUBLE
+        - TRUANT
+        - TSTOP
+        - VANDAL
+        - VEHABND
+        - VEHASST
+        - VEHLOCK
+        - VEHREC
+        - VEHSTLN
+        - VEHSUSP
+        - VICE
+        - WARRANT
+        - WATER
+        - WEAPON
+        - WELFARE
+        - WILDLIFE
+        - WIRES
+        - XTRACATE
+    apcoAlarmEventCategoryCodeType:
+      type: object
+      title: 'apco:AlarmEventCategoryCodeType'
+      description: A data type for kinds of alarm events.
+      properties:
+        simpleType:
+          $ref: apco.yaml#/components/schemas/apcoAlarmEventCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: apcoAlarmEventCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/apcoAlarmEventCategoryCodeTypeContext.jsonld
+    apcoAlarmEventCategoryCodeSimpleType:
+      type: string
+      description: A data type for kinds of alarm events.
+      enum:
+        - BURG
+        - Comm
+        - FIRE
+        - Holdup
+        - Medical
+    apcoAlarmEventLocationCategoryCodeType:
+      type: object
+      title: 'apco:AlarmEventLocationCategoryCodeType'
+      description: A data type for the kinds of location at which an alarm event occurs.
+      properties:
+        simpleType:
+          $ref: >-
+            apco.yaml#/components/schemas/apcoAlarmEventLocationCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: apcoAlarmEventLocationCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/apcoAlarmEventLocationCategoryCodeTypeContext.jsonld
+    apcoAlarmEventLocationCategoryCodeSimpleType:
+      type: string
+      description: A data type for the kinds of location at which an alarm event occurs.
+      enum:
+        - commercial
+        - residential
+    apcoAlarmEventResponseActionCodeType:
+      type: object
+      title: 'apco:AlarmEventResponseActionCodeType'
+      description: A data type for actions requested of an alarm event responder.
+      properties:
+        simpleType:
+          $ref: >-
+            apco.yaml#/components/schemas/apcoAlarmEventResponseActionCodeSimpleType
+        '@context':
+          type: string
+          description: apcoAlarmEventResponseActionCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/apcoAlarmEventResponseActionCodeTypeContext.jsonld
+    apcoAlarmEventResponseActionCodeSimpleType:
+      type: string
+      description: A data type for actions requested of an alarm event responder.
+      enum:
+        - notify
+        - respond

@@ -1,0 +1,311 @@
+components:
+  schemas:
+    mmuccIntersectionCategoryCodeType:
+      type: object
+      title: 'mmucc:IntersectionCategoryCodeType'
+      description: >-
+        A data type for an intersection consists of two or more roadways that
+        intersect at the same level.
+      properties:
+        simpleType:
+          $ref: >-
+            mmucc.yaml#/components/schemas/mmuccIntersectionCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: mmuccIntersectionCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/mmuccIntersectionCategoryCodeTypeContext.jsonld
+    mmuccIntersectionCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type for an intersection consists of two or more roadways that
+        intersect at the same level.
+      enum:
+        - '1'
+        - '10'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '98'
+        - '99'
+    mmuccRoadwayGradeCodeType:
+      type: object
+      title: 'mmucc:RoadwayGradeCodeType'
+      description: >-
+        A data type for the grade characteristics of the roadway in the
+        direction of travel for this vehicle.
+      properties:
+        simpleType:
+          $ref: mmucc.yaml#/components/schemas/mmuccRoadwayGradeCodeSimpleType
+        '@context':
+          type: string
+          description: mmuccRoadwayGradeCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mmuccRoadwayGradeCodeTypeContext.jsonld
+    mmuccRoadwayGradeCodeSimpleType:
+      type: string
+      description: >-
+        A data type for the grade characteristics of the roadway in the
+        direction of travel for this vehicle.
+      enum:
+        - '1'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+    mmuccRoadwayHorizontalAlignmentCodeType:
+      type: object
+      title: 'mmucc:RoadwayHorizontalAlignmentCodeType'
+      description: >-
+        A data type for the horizontal geometric or layout and inclination
+        characteristics of the roadway in the direction of travel for this
+        vehicle.
+      properties:
+        simpleType:
+          $ref: >-
+            mmucc.yaml#/components/schemas/mmuccRoadwayHorizontalAlignmentCodeSimpleType
+        '@context':
+          type: string
+          description: mmuccRoadwayHorizontalAlignmentCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/mmuccRoadwayHorizontalAlignmentCodeTypeContext.jsonld
+    mmuccRoadwayHorizontalAlignmentCodeSimpleType:
+      type: string
+      description: >-
+        A data type for the horizontal geometric or layout and inclination
+        characteristics of the roadway in the direction of travel for this
+        vehicle.
+      enum:
+        - '1'
+        - '2'
+        - '3'
+    mmuccStandardSelectionCodeType:
+      type: object
+      title: 'mmucc:StandardSelectionCodeType'
+      description: 'A data type for standard selection codes as yes, no, unknown.'
+      properties:
+        simpleType:
+          $ref: mmucc.yaml#/components/schemas/mmuccStandardSelectionCodeSimpleType
+        '@context':
+          type: string
+          description: mmuccStandardSelectionCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mmuccStandardSelectionCodeTypeContext.jsonld
+    mmuccStandardSelectionCodeSimpleType:
+      type: string
+      description: 'A data type for standard selection codes as yes, no, unknown.'
+      enum:
+        - '0'
+        - '1'
+        - '9'
+    mmuccPersonInjuryLocationCodeType:
+      type: object
+      title: 'mmucc:PersonInjuryLocationCodeType'
+      description: >-
+        A data type for the primary or most obvious area of the persons body
+        injured during the crash.
+      properties:
+        simpleType:
+          $ref: >-
+            mmucc.yaml#/components/schemas/mmuccPersonInjuryLocationCodeSimpleType
+        '@context':
+          type: string
+          description: mmuccPersonInjuryLocationCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/mmuccPersonInjuryLocationCodeTypeContext.jsonld
+    mmuccPersonInjuryLocationCodeSimpleType:
+      type: string
+      description: >-
+        A data type for the primary or most obvious area of the persons body
+        injured during the crash.
+      enum:
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+    mmuccCrashWeatherConditionCodeType:
+      type: object
+      title: 'mmucc:CrashWeatherConditionCodeType'
+      description: >-
+        A data type for the prevailing atmospheric conditions that existed at
+        the time of the crash.
+      properties:
+        atmosphericConditionCodeSimpleType:
+          $ref: >-
+            mmucc.yaml#/components/schemas/mmuccAtmosphericConditionCodeSimpleType
+        '@context':
+          type: string
+          description: mmuccCrashWeatherConditionCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/mmuccCrashWeatherConditionCodeTypeContext.jsonld
+    mmuccAtmosphericConditionCodeSimpleType:
+      type: string
+      description: >-
+        A data type for the prevailing atmospheric conditions that existed at
+        the time of the crash.
+      enum:
+        - '0'
+        - '1'
+        - '10'
+        - '11'
+        - '12'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '98'
+        - '99'
+    mmuccDrugTestResultCodeType:
+      type: object
+      title: 'mmucc:DrugTestResultCodeType'
+      description: A data type for a Result of Drug Test.
+      properties:
+        simpleType:
+          $ref: mmucc.yaml#/components/schemas/mmuccDrugTestResultCodeSimpleType
+        '@context':
+          type: string
+          description: mmuccDrugTestResultCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mmuccDrugTestResultCodeTypeContext.jsonld
+    mmuccDrugTestResultCodeSimpleType:
+      type: string
+      description: A data type for a Result of Drug Test.
+      enum:
+        - '101'
+        - '102'
+        - '999'
+    mmuccDrugTestCategoryCodeType:
+      type: object
+      title: 'mmucc:DrugTestCategoryCodeType'
+      description: A data type for a kind of Drug Test.
+      properties:
+        simpleType:
+          $ref: mmucc.yaml#/components/schemas/mmuccDrugTestCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: mmuccDrugTestCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mmuccDrugTestCategoryCodeTypeContext.jsonld
+    mmuccDrugTestCategoryCodeSimpleType:
+      type: string
+      description: A data type for a kind of Drug Test.
+      enum:
+        - '1'
+        - '2'
+        - '8'
+    mmuccVehicleUseCodeType:
+      type: object
+      title: 'mmucc:VehicleUseCodeType'
+      description: >-
+        A data type for a kind of special function being served by this vehicle
+        regardless of whether the function is marked on the vehicle.
+      properties:
+        simpleType:
+          $ref: mmucc.yaml#/components/schemas/mmuccVehicleUseCodeSimpleType
+        '@context':
+          type: string
+          description: mmuccVehicleUseCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mmuccVehicleUseCodeTypeContext.jsonld
+    mmuccVehicleUseCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a kind of special function being served by this vehicle
+        regardless of whether the function is marked on the vehicle.
+      enum:
+        - '0'
+        - '1'
+        - '13'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '98'
+        - '99'
+    mmuccDriverLicensePermitStatusCodeType:
+      type: object
+      title: 'mmucc:DriverLicensePermitStatusCodeType'
+      description: >-
+        A data type for a current status of an individuals driver license at the
+        time of the crash.
+      properties:
+        simpleType:
+          $ref: >-
+            mmucc.yaml#/components/schemas/mmuccDriverLicensePermitStatusCodeSimpleType
+        '@context':
+          type: string
+          description: mmuccDriverLicensePermitStatusCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/mmuccDriverLicensePermitStatusCodeTypeContext.jsonld
+    mmuccDriverLicensePermitStatusCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a current status of an individuals driver license at the
+        time of the crash.
+      enum:
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '99'
+    mmuccDrivingRestrictionCodeType:
+      type: object
+      title: 'mmucc:DrivingRestrictionCodeType'
+      description: >-
+        A data type for restrictions assigned to an individuals driver license
+        by the license examiner.
+      properties:
+        simpleType:
+          $ref: mmucc.yaml#/components/schemas/mmuccDrivingRestrictionCodeSimpleType
+        '@context':
+          type: string
+          description: mmuccDrivingRestrictionCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mmuccDrivingRestrictionCodeTypeContext.jsonld
+    mmuccDrivingRestrictionCodeSimpleType:
+      type: string
+      description: >-
+        A data type for restrictions assigned to an individuals driver license
+        by the license examiner.
+      enum:
+        - '0'
+        - '1'
+        - '10'
+        - '11'
+        - '12'
+        - '13'
+        - '14'
+        - '15'
+        - '16'
+        - '17'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+        - '98'

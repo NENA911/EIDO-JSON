@@ -1,0 +1,39 @@
+components:
+  schemas:
+    itcodesDutyTaxPaymentMethodCodeType:
+      type: object
+      title: 'itcodes:DutyTaxPaymentMethodCodeType'
+      description: >-
+        A data type for a code set that denotes the methods of payment for Duty
+        Tax
+      properties:
+        simpleType:
+          $ref: >-
+            itcodes.yaml#/components/schemas/itcodesDutyTaxPaymentMethodCodeSimpleType
+        '@context':
+          type: string
+          description: itcodesDutyTaxPaymentMethodCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/itcodesDutyTaxPaymentMethodCodeTypeContext.jsonld
+    itcodesDutyTaxPaymentMethodCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code set that denotes the methods of payment for Duty
+        Tax
+      enum:
+        - B
+        - C
+        - E
+        - F
+        - H
+        - I
+        - K
+        - O
+        - P
+        - R
+        - S
+        - V
+        - W
+        - X
+        - 'Y'

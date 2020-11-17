@@ -1,0 +1,73 @@
+components:
+  schemas:
+    nletsOrganizationCategoryCodeType:
+      type: object
+      title: 'nlets:OrganizationCategoryCodeType'
+      description: A data type for the functional kinds of an organization.
+      properties:
+        simpleType:
+          $ref: >-
+            nlets.yaml#/components/schemas/nletsOrganizationCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: nletsOrganizationCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/nletsOrganizationCategoryCodeTypeContext.jsonld
+    nletsOrganizationCategoryCodeSimpleType:
+      type: string
+      description: A data type for the functional kinds of an organization.
+      enum:
+        - CJ
+        - FE
+        - JA
+        - JC
+        - JF
+        - JG
+        - JJ
+        - LE
+        - NJ
+        - PD
+        - SA
+        - SO
+    nletsAgencyServiceHoursCodeType:
+      type: object
+      title: 'nlets:AgencyServiceHoursCodeType'
+      description: A data type for the availability of an agency.
+      properties:
+        simpleType:
+          $ref: nlets.yaml#/components/schemas/nletsAgencyServiceHoursCodeSimpleType
+        '@context':
+          type: string
+          description: nletsAgencyServiceHoursCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/nletsAgencyServiceHoursCodeTypeContext.jsonld
+    nletsAgencyServiceHoursCodeSimpleType:
+      type: string
+      description: A data type for the availability of an agency.
+      enum:
+        - A
+        - B
+        - C
+        - D
+    nletsAgencyAuthorizationCodeType:
+      type: object
+      title: 'nlets:AgencyAuthorizationCodeType'
+      description: A data type for an agency's access category to data.
+      properties:
+        simpleType:
+          $ref: >-
+            nlets.yaml#/components/schemas/nletsAgencyAuthorizationCodeSimpleType
+        '@context':
+          type: string
+          description: nletsAgencyAuthorizationCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/nletsAgencyAuthorizationCodeTypeContext.jsonld
+    nletsAgencyAuthorizationCodeSimpleType:
+      type: string
+      description: A data type for an agency's access category to data.
+      enum:
+        - A
+        - C
+        - D
+        - Z

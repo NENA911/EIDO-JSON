@@ -1,0 +1,271 @@
+components:
+  schemas:
+    stLocationRoadwayType:
+      type: object
+      title: 'st:LocationRoadwayType'
+      description: >-
+        A data type for the part of the roadway where a traffic accident
+        occurred.
+      properties:
+        roadwayStructureIdentification:
+          type: array
+          description: >-
+            A unique federal inspection/inventory identification assigned to a
+            bridge, underpass, overpass, or tunnel bridge/structure that is also
+            linkable to the national bridge inventory. NIEM reference is
+            st:RoadwayStructureIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        roadwayInclinationValue:
+          type: array
+          description: >-
+            An inclination of the roadway, expressed in the rate of rise or fall
+            in feet (meters) per 100 feet (meters) of horizontal distance. NIEM
+            reference is st:RoadwayInclinationValue
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsdecimal
+        AADTRampNumeric:
+          type: array
+          description: 'An AADT on ramp NIEM reference is st:AADTRampNumeric'
+          items:
+            $ref: nc.yaml#/components/schemas/ncNumericType
+        throughLanesNumeric:
+          type: array
+          description: >-
+            A total number of through lanes on the segment. This excludes
+            auxiliary lanes, such as collector-distributor lanes, weaving lanes,
+            frontage road lanes, parking and turning lanes,
+            acceleration/deceleration lanes, toll collection lanes, shoulders,
+            and truck NIEM reference is st:ThroughLanesNumeric
+          items:
+            $ref: nc.yaml#/components/schemas/ncNumericType
+        bridgeStructure:
+          type: array
+          description: >-
+            A bridge, underpass, overpass, or tunnel bridge/structure that is
+            also linkable to the national bridge inventory. NIEM reference is
+            st:BridgeStructure
+          items:
+            $ref: nc.yaml#/components/schemas/ncFacilityType
+        isRoadwayCurveApplicable:
+          type: array
+          description: >-
+            True if road curvature measurement parameters are applicable to this
+            particular road part; false otherwise. NIEM reference is
+            st:RoadwayCurveApplicableIndicator
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        roadwayCurveRadiusLengthMeasure:
+          type: array
+          description: >-
+            A measurement of the curvature in the roadway expressed in terms of
+            its radius (use feet or meters). NIEM reference is
+            st:RoadwayCurveRadiusLengthMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        roadwayCurveLengthMeasure:
+          type: array
+          description: >-
+            A measurement of the curvature in the roadway expressed in terms of
+            its length (use feet or meters). NIEM reference is
+            st:RoadwayCurveLengthMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        roadwayCurveSuperelevationMeasure:
+          type: array
+          description: >-
+            A measurement of the curvature in the roadway expressed in terms of
+            its superelevation (use feet or meters). NIEM reference is
+            st:RoadwayCurveSuperelevationMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        roadwayGradeSlopePercent:
+          type: array
+          description: >-
+            An inclination of the roadway, expressed in the rate of rise or fall
+            in feet (meters) per 100 feet (meters) of horizontal distance. NIEM
+            reference is st:RoadwayGradeSlopePercent
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsdecimal
+        averageAnnualDailyTrafficNumeric:
+          type: array
+          description: >-
+            An AADT value to represent the current data year. For two-way
+            facilities, provide the AADT for both directions; provide the
+            directional AADT if part of a one-way couplet or for one-way streets
+            NIEM reference is st:AverageAnnualDailyTrafficNumeric
+          items:
+            $ref: nc.yaml#/components/schemas/ncNumericType
+        roadwayLaneWidthMeasure:
+          type: array
+          description: >-
+            A width of the lane(s) where crash occurred (use feet or meters).
+            NIEM reference is st:RoadwayLaneWidthMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        roadwayShoulderWidthMeasure:
+          type: array
+          description: >-
+            A widths of the shoulder(s) where crash occurred (use feet or
+            meters). NIEM reference is st:RoadwayShoulderWidthMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        roadwayMedianWidthMeasure:
+          type: array
+          description: >-
+            A width of portion of divided highway separating the road for
+            traffic in opposing directions where the crash occurred. If a crash
+            occurs at a mid-block section, the median width is based on the
+            mid-block section. If the crash occurs at an intersection, the NIEM
+            reference is st:RoadwayMedianWidthMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        roadwayRailwayCrossingIdentification:
+          type: array
+          description: >-
+            A unique US DOT/AAR number assigned for identification purposes to a
+            railroad crossing by a state highway agency in cooperation with the
+            Federal Railroad Administration. NIEM reference is
+            st:RoadwayRailwayCrossingIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        roadwayIntersectionAverageAnnualDailyEnteringTrafficQuantity:
+          type: array
+          description: >-
+            A total number of entering vehicles for all approaches of an
+            intersection. Actual or estimated traffic volume expressed as an
+            average annual daily count. NIEM reference is
+            st:RoadwayIntersectionAverageAnnualDailyEnteringTrafficQuantity
+          items:
+            $ref: nc.yaml#/components/schemas/ncQuantityType
+        intersectionCategoryCode:
+          type: array
+          description: >-
+            An intersection consists of two or more roadways. NIEM reference is
+            st:IntersectionCategoryCode
+          items:
+            $ref: mmucc.yaml#/components/schemas/mmuccIntersectionCategoryCodeType
+        functionalClassCode:
+          type: array
+          description: >-
+            A functional class of the segment. NIEM reference is
+            st:FunctionalClassCode
+          items:
+            $ref: st.yaml#/components/schemas/stFunctionalClassCodeType
+        roadwayGradeCode:
+          type: array
+          description: >-
+            A geometric or layout and inclination characteristics of the roadway
+            in the direction of travel for this vehicle. NIEM reference is
+            st:RoadwayGradeCode
+          items:
+            $ref: mmucc.yaml#/components/schemas/mmuccRoadwayGradeCodeType
+        roadwayHorizontalAlignmentCode:
+          type: array
+          description: >-
+            A Horizontal Alignment. The geometric or layout and inclination
+            characteristics of the roadway in the direction of travel for this
+            vehicle. NIEM reference is st:RoadwayHorizontalAlignmentCode
+          items:
+            $ref: >-
+              mmucc.yaml#/components/schemas/mmuccRoadwayHorizontalAlignmentCodeType
+        intersectionJunctionTrafficControlCategoryCode:
+          type: array
+          description: >-
+            An indicator of traffic control present at intersection/junction.
+            NIEM reference is st:IntersectionJunctionTrafficControlCategoryCode
+          items:
+            $ref: >-
+              st.yaml#/components/schemas/stIntersectionJunctionTrafficControlCodeType
+        roadwayLightingCode:
+          type: array
+          description: >-
+            A type of roadway illumination. NIEM reference is
+            st:RoadwayLightingCode
+          items:
+            $ref: st.yaml#/components/schemas/stRoadwayLightingCodeType
+        roadwayNationalHighwayPartCode:
+          type: array
+          description: >-
+            A designation of the roadway as part of the National Highway System.
+            NIEM reference is st:RoadwayNationalHighwayPartCode
+          items:
+            $ref: mmucc.yaml#/components/schemas/mmuccStandardSelectionCodeType
+        '@context':
+          type: string
+          description: stLocationRoadwayType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/stLocationRoadwayTypeContext.jsonld
+    stFunctionalClassCodeType:
+      type: object
+      title: 'st:FunctionalClassCodeType'
+      description: A data type indicating functional class of the segment
+      properties:
+        simpleType:
+          $ref: st.yaml#/components/schemas/stFunctionalClassCodeSimpleType
+        '@context':
+          type: string
+          description: stFunctionalClassCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/stFunctionalClassCodeTypeContext.jsonld
+    stFunctionalClassCodeSimpleType:
+      type: string
+      description: A data type indicating functional class of the segment
+      enum:
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+    stIntersectionJunctionTrafficControlCodeType:
+      type: object
+      title: 'st:IntersectionJunctionTrafficControlCodeType'
+      description: A data type indicating traffic control present at intersection/junction
+      properties:
+        simpleType:
+          $ref: >-
+            st.yaml#/components/schemas/stIntersectionJunctionTrafficControlCodeSimpleType
+        '@context':
+          type: string
+          description: stIntersectionJunctionTrafficControlCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/stIntersectionJunctionTrafficControlCodeTypeContext.jsonld
+    stIntersectionJunctionTrafficControlCodeSimpleType:
+      type: string
+      description: A data type indicating traffic control present at intersection/junction
+      enum:
+        - '1'
+        - '10'
+        - '11'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+    stRoadwayLightingCodeType:
+      type: object
+      title: 'st:RoadwayLightingCodeType'
+      description: A data type for a kind of roadway illumination.
+      properties:
+        simpleType:
+          $ref: st.yaml#/components/schemas/stRoadwayLightingCodeSimpleType
+        '@context':
+          type: string
+          description: stRoadwayLightingCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/stRoadwayLightingCodeTypeContext.jsonld
+    stRoadwayLightingCodeSimpleType:
+      type: string
+      description: A data type for a kind of roadway illumination.
+      enum:
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'

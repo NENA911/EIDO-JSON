@@ -1,0 +1,103 @@
+components:
+  schemas:
+    geoGeometryType:
+      type: object
+      title: 'geo:GeometryType'
+      description: A data type that encapsulates a GML geometry element.
+      properties:
+        abstract:
+          type: string
+        '@context':
+          type: string
+          description: geoGeometryType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/geoGeometryTypeContext.jsonld
+    geoEllipseType:
+      type: object
+      title: 'geo:EllipseType'
+      description: >-
+        A data type for an ellipse specified by a point, major axis, minor axis
+        and rotation.
+      properties:
+        ellipse:
+          type: string
+        '@context':
+          type: string
+          description: geoEllipseType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/geoEllipseTypeContext.jsonld
+    geoPointType:
+      type: object
+      title: 'geo:PointType'
+      description: >-
+        A data type for a 2D or 3D geometric point.  A gml:Point is defined by a
+        single coordinate tuple. The direct position of a point is specified by
+        the gml:pos element which is of type gml:DirectPositionType.
+      properties:
+        point:
+          type: string
+        '@context':
+          type: string
+          description: geoPointType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/geoPointTypeContext.jsonld
+    geoCurveType:
+      type: object
+      title: 'geo:CurveType'
+      description: >-
+        A data type for a curve is a 1-dimensional primitive. Curves are
+        continuous, connected, and have a measurable length in terms of the
+        coordinate system.  A curve is composed of one or more curve segments.
+        Each curve segment within a curve may be defined using a different
+      properties:
+        curve:
+          type: string
+        '@context':
+          type: string
+          description: geoCurveType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/geoCurveTypeContext.jsonld
+    geoEnvelopeType:
+      type: object
+      title: 'geo:EnvelopeType'
+      description: >-
+        A data type for an envelope, which defines an extent using a pair of
+        positions defining opposite corners in arbitrary dimensions. The first
+        direct position is the "lower corner" (a coordinate position consisting
+        of all the minimal ordinates for each dimension for all points within
+      properties:
+        envelope:
+          type: string
+        '@context':
+          type: string
+          description: geoEnvelopeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/geoEnvelopeTypeContext.jsonld
+    geoPolygonType:
+      type: object
+      title: 'geo:PolygonType'
+      description: >-
+        A data type for a polygon; a geometric surface defined by a single
+        surface patch whose boundary is coplanar.  A gml:Polygon is a special
+        surface that is defined by a single surface patch (see D.3.6). The
+        boundary of this patch is coplanar and the polygon uses planar inte
+      properties:
+        polygon:
+          type: string
+        '@context':
+          type: string
+          description: geoPolygonType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/geoPolygonTypeContext.jsonld
+    geoFeatureType:
+      type: object
+      title: 'geo:FeatureType'
+      description: A data type that encapsulates a GML feature instance.
+      properties:
+        abstract:
+          type: string
+        '@context':
+          type: string
+          description: geoFeatureType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/geoFeatureTypeContext.jsonld

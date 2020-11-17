@@ -1,0 +1,1011 @@
+components:
+  schemas:
+    moPolygonRegionAugmentationType:
+      type: object
+      title: 'mo:PolygonRegionAugmentationType'
+      description: A data type for additional information about a polygon.
+      properties:
+        polygonCoordinateLocation:
+          type: array
+          description: >-
+            A location of a coordinate that serves as a node of a polygon. NIEM
+            reference is mo:PolygonCoordinateLocation
+          items:
+            $ref: nc.yaml#/components/schemas/ncLocationType
+        '@context':
+          type: string
+          description: moPolygonRegionAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moPolygonRegionAugmentationTypeContext.jsonld
+    moEllipseType:
+      type: object
+      title: 'mo:EllipseType'
+      description: >-
+        A data type for an ellipse, expressed as an XY plane (projected onto
+        earth's surface) ellipse. The major axis is oriented along reported
+        azimuth, with zero being due North.
+      properties:
+        majorAxisLengthMeasure:
+          type: array
+          description: >-
+            A major axis length (XY) of an ellipse. NIEM reference is
+            mo:EllipseMajorAxisLengthMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        minorAxisLengthMeasure:
+          type: array
+          description: >-
+            A minor axis length (XY) of an ellipse. NIEM reference is
+            mo:EllipseMinorAxisLengthMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        majorAxisAzimuthMeasure:
+          type: array
+          description: >-
+            A major axis azimuth (XY) of an ellipse. NIEM reference is
+            mo:EllipseMajorAxisAzimuthMeasure
+          items:
+            $ref: mo.yaml#/components/schemas/moHorizontalAngularMeasureType
+        '@context':
+          type: string
+          description: moEllipseType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moEllipseTypeContext.jsonld
+    moHorizontalAngularMeasureType:
+      title: 'mo:HorizontalAngularMeasureType'
+      description: A data type for a measure of an angle in the horizontal plane.
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncAngularMeasureType
+        - type: object
+          properties:
+            directionDatumCode:
+              type: array
+              description: >-
+                A designator for a reference direction as determined by the
+                means by which it is established (e.g., by the direction of a
+                geographic or magnetic pole of the Earth). NIEM reference is
+                mo:DirectionDatumCode
+              items:
+                $ref: nga.yaml#/components/schemas/ngaDirectionDatumCodeType
+            '@context':
+              type: string
+              description: moHorizontalAngularMeasureType JSON-LD context
+              enum:
+                - >-
+                  ../JSON-LD_Contexts/moHorizontalAngularMeasureTypeContext.jsonld
+    moAngularMeasureAugmentationType:
+      type: object
+      title: 'mo:AngularMeasureAugmentationType'
+      description: A data type for additional information about an angular measure.
+      properties:
+        angleMeasure:
+          type: array
+          description: 'A measure of an angular value. NIEM reference is nc:AngleMeasure'
+          items:
+            $ref: nc.yaml#/components/schemas/ncAngleMeasureType
+        angularNATOMilValue:
+          type: array
+          description: >-
+            A measure of an angle in NATO Mils (there are 6400 NATO Mils in a
+            circle). NIEM reference is mo:AngularNATOMilValue
+          items:
+            $ref: mo.yaml#/components/schemas/moNATOMilType
+        angularMeasureCompassCode:
+          type: array
+          description: >-
+            An angle characterized by one of the sixteen generalized directions
+            based on the compass rose. NIEM reference is
+            mo:AngularMeasureCompassCode
+          items:
+            $ref: nc.yaml#/components/schemas/ncDirectionCodeType
+        '@context':
+          type: string
+          description: moAngularMeasureAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moAngularMeasureAugmentationTypeContext.jsonld
+    moAngleUnitCodeType:
+      type: object
+      title: 'mo:AngleUnitCodeType'
+      description: A data type for a unit code for an azimuth value.
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moAngleUnitCodeSimpleType
+        '@context':
+          type: string
+          description: moAngleUnitCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moAngleUnitCodeTypeContext.jsonld
+    moAngleUnitCodeSimpleType:
+      type: string
+      description: A data type for a unit code for an azimuth value.
+      enum:
+        - Degrees
+        - Mils
+    moNATOMilType:
+      type: object
+      title: 'mo:NATOMilType'
+      description: >-
+        A data type for a measure of an angle in NATO Mils (there are 6400 NATO
+        Mils in a circle).
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moNATOMilSimpleType
+        '@context':
+          type: string
+          description: moNATOMilType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moNATOMilTypeContext.jsonld
+    moNATOMilSimpleType:
+      type: string
+      description: >-
+        A data type for a measure of an angle in NATO Mils (there are 6400 NATO
+        Mils in a circle).
+      enum:
+        - '0'
+        - '6400'
+    moWGS84EllipseType:
+      type: object
+      title: 'mo:WGS84EllipseType'
+      description: >-
+        A data type for an ellipse specified by a point, major axis, minor axis
+        and rotation, using WGS84 coordinates, meters, and decimal degrees.
+      properties:
+        ellipse:
+          type: string
+        '@context':
+          type: string
+          description: moWGS84EllipseType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moWGS84EllipseTypeContext.jsonld
+    moWGS84ExternalPolygonType:
+      type: object
+      title: 'mo:WGS84ExternalPolygonType'
+      description: >-
+        A data type for a polygon having no interior regions, using WGS84
+        coordinates.
+      properties:
+        polygon:
+          type: string
+        '@context':
+          type: string
+          description: moWGS84ExternalPolygonType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moWGS84ExternalPolygonTypeContext.jsonld
+    moTelephoneNumberCategoryCodeType:
+      type: string
+      title: 'mo:TelephoneNumberCategoryCodeType'
+      description: A data type for a kind of telephone number.
+    moContactInformationAugmentationType:
+      type: object
+      title: 'mo:ContactInformationAugmentationType'
+      description: 'A data type for additional information about a nc:Contact.'
+      properties:
+        contactInformationComment:
+          type: array
+          description: >-
+            A field used by the POC or user to provide additional information
+            NIEM reference is mo:ContactInformationComment
+          items:
+            $ref: nc.yaml#/components/schemas/ncCommentType
+        contactInformationRank:
+          type: array
+          description: >-
+            A military rank for the focal point of information concerning an
+            activity or event. NIEM reference is mo:ContactInformationRankText
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        contactInformationSecureEmailID:
+          type: array
+          description: >-
+            A secure electronic mailing address by which a person or
+            organization may be contacted. NIEM reference is
+            mo:ContactInformationSecureEmailID
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        '@context':
+          type: string
+          description: moContactInformationAugmentationType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/moContactInformationAugmentationTypeContext.jsonld
+    moMGRSCoordinateStringType:
+      type: object
+      title: 'mo:MGRSCoordinateStringType'
+      description: >-
+        A data type for a complete coordinate string from the Military Grid
+        Reference System (MGRS) which represents a location with a Universal
+        Transverse Mercator (UTM) or Univeral Polar Steriographic (UPS)
+        coordinate and a unique military grid square.
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moMGRSCoordinateStringSimpleType
+        '@context':
+          type: string
+          description: moMGRSCoordinateStringType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moMGRSCoordinateStringTypeContext.jsonld
+    moMGRSCoordinateStringSimpleType:
+      type: string
+      description: >-
+        A data type for a complete coordinate string from the Military Grid
+        Reference System (MGRS) which represents a location with a Universal
+        Transverse Mercator (UTM) or Univeral Polar Steriographic (UPS)
+        coordinate and a unique military grid square.
+      enum:
+        - >-
+          (((0[1-9]|[1-5][0-9]|60)[C-HJ-NP-X][A-HJ-NP-Z][A-HJ-NP-V])|([ABYZ][A-CF-HJ-LP-UX-Z][A-HJ-NP-Z]))([0-9][0-9]){0,5}
+    moMGRSUPS1MeterCoordinateType:
+      type: object
+      title: 'mo:MGRSUPS1MeterCoordinateType'
+      description: A data type for a 1-meter precision level MGRS UPS coordinate.
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moMGRSUPS1MeterCoordinateSimpleType
+        '@context':
+          type: string
+          description: moMGRSUPS1MeterCoordinateType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moMGRSUPS1MeterCoordinateTypeContext.jsonld
+    moMGRSUPS1MeterCoordinateSimpleType:
+      type: string
+      description: A data type for a 1-meter precision level MGRS UPS coordinate.
+      enum:
+        - '([ABYZ])([A-CF-HJ-LP-UX-Z])([A-HJ-NP-Z])([0-9]{5}[0-9]{5})'
+        - '13'
+    moMGRSUTM100000MeterCoordinateType:
+      type: object
+      title: 'mo:MGRSUTM100000MeterCoordinateType'
+      description: 'A data type for a 100,000-meter precision level MGRS UTM coordinate.'
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moMGRSUTM100000MeterCoordinateSimpleType
+        '@context':
+          type: string
+          description: moMGRSUTM100000MeterCoordinateType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/moMGRSUTM100000MeterCoordinateTypeContext.jsonld
+    moMGRSUTM100000MeterCoordinateSimpleType:
+      type: string
+      description: 'A data type for a 100,000-meter precision level MGRS UTM coordinate.'
+      enum:
+        - '(0[1-9]|[1-5][0-9]|60)([C-HJ-NP-X])([A-HJ-NP-Z])([A-HJ-NP-V])'
+        - '5'
+    moMGRSUTM10000MeterCoordinateType:
+      type: object
+      title: 'mo:MGRSUTM10000MeterCoordinateType'
+      description: 'A data type for a 10,000-meter precision level MGRS UTM coordinate.'
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moMGRSUTM10000MeterCoordinateSimpleType
+        '@context':
+          type: string
+          description: moMGRSUTM10000MeterCoordinateType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/moMGRSUTM10000MeterCoordinateTypeContext.jsonld
+    moMGRSUTM10000MeterCoordinateSimpleType:
+      type: string
+      description: 'A data type for a 10,000-meter precision level MGRS UTM coordinate.'
+      enum:
+        - >-
+          (0[1-9]|[1-5][0-9]|60)([C-HJ-NP-X])([A-HJ-NP-Z])([A-HJ-NP-V])([0-9]{1}[0-9]{1})
+        - '7'
+    moMGRSUTM1000MeterCoordinateType:
+      type: object
+      title: 'mo:MGRSUTM1000MeterCoordinateType'
+      description: 'A data type for a 1,000-meter precision level MGRS UTM coordinate.'
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moMGRSUTM1000MeterCoordinateSimpleType
+        '@context':
+          type: string
+          description: moMGRSUTM1000MeterCoordinateType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moMGRSUTM1000MeterCoordinateTypeContext.jsonld
+    moMGRSUTM1000MeterCoordinateSimpleType:
+      type: string
+      description: 'A data type for a 1,000-meter precision level MGRS UTM coordinate.'
+      enum:
+        - >-
+          (0[1-9]|[1-5][0-9]|60)([C-HJ-NP-X])([A-HJ-NP-Z])([A-HJ-NP-V])([0-9]{2}[0-9]{2})
+        - '9'
+    moMGRSUTM100MeterCoordinateType:
+      type: object
+      title: 'mo:MGRSUTM100MeterCoordinateType'
+      description: A data type for a 100-meter precision level MGRS UTM coordinate.
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moMGRSUTM100MeterCoordinateSimpleType
+        '@context':
+          type: string
+          description: moMGRSUTM100MeterCoordinateType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moMGRSUTM100MeterCoordinateTypeContext.jsonld
+    moMGRSUTM100MeterCoordinateSimpleType:
+      type: string
+      description: A data type for a 100-meter precision level MGRS UTM coordinate.
+      enum:
+        - >-
+          (0[1-9]|[1-5][0-9]|60)([C-HJ-NP-X])([A-HJ-NP-Z])([A-HJ-NP-V])([0-9]{3}[0-9]{3})
+        - '11'
+    moMGRSUTM10MeterCoordinateType:
+      type: object
+      title: 'mo:MGRSUTM10MeterCoordinateType'
+      description: A data type for a 10-meter precision level MGRS UTM coordinate.
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moMGRSUTM10MeterCoordinateSimpleType
+        '@context':
+          type: string
+          description: moMGRSUTM10MeterCoordinateType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moMGRSUTM10MeterCoordinateTypeContext.jsonld
+    moMGRSUTM10MeterCoordinateSimpleType:
+      type: string
+      description: A data type for a 10-meter precision level MGRS UTM coordinate.
+      enum:
+        - >-
+          (0[1-9]|[1-5][0-9]|60)([C-HJ-NP-X])([A-HJ-NP-Z])([A-HJ-NP-V])([0-9]{4}[0-9]{4})
+        - '13'
+    moMGRSUTM1MeterCoordinateType:
+      type: object
+      title: 'mo:MGRSUTM1MeterCoordinateType'
+      description: A data type for a 1-meter precision level MGRS UTM coordinate.
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moMGRSUTM1MeterCoordinateSimpleType
+        '@context':
+          type: string
+          description: moMGRSUTM1MeterCoordinateType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moMGRSUTM1MeterCoordinateTypeContext.jsonld
+    moMGRSUTM1MeterCoordinateSimpleType:
+      type: string
+      description: A data type for a 1-meter precision level MGRS UTM coordinate.
+      enum:
+        - >-
+          (0[1-9]|[1-5][0-9]|60)([C-HJ-NP-X])([A-HJ-NP-Z])([A-HJ-NP-V])([0-9]{5}[0-9]{5})
+        - '15'
+    moWGS84LocationCylinderType:
+      type: object
+      title: 'mo:WGS84LocationCylinderType'
+      description: A data type for a cylinder described with WGS84 coordinates and meters.
+      properties:
+        WGS84LocationPoint:
+          type: array
+          description: >-
+            A data type for a 3D geometric point, defined by a single coordinate
+            tuple with values from the WGS84 coordinate reference system. NIEM
+            reference is mo:WGS84LocationPoint
+          items:
+            $ref: mo.yaml#/components/schemas/moWGS84LocationPointType
+        locationCylinderRadiusValue:
+          type: array
+          description: >-
+            A radius of a cylinder, measured in meters. NIEM reference is
+            mo:LocationCylinderRadiusValue
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsdecimal
+        locationCylinderHalfHeightValue:
+          type: array
+          description: >-
+            A value one-half of the height of a cylinder, measured in meters.
+            NIEM reference is mo:LocationCylinderHalfHeightValue
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsdecimal
+        locationCreationCode:
+          type: array
+          description: >-
+            A code indicating the method used to generate a location. NIEM
+            reference is mo:LocationCreationCode
+          items:
+            $ref: mo.yaml#/components/schemas/moLocationCreationCodeType
+        '@context':
+          type: string
+          description: moWGS84LocationCylinderType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moWGS84LocationCylinderTypeContext.jsonld
+    moWGS84LocationPointType:
+      type: object
+      title: 'mo:WGS84LocationPointType'
+      description: >-
+        A data type for a 3D geometric point, defined by a single coordinate
+        tuple with values from the WGS84 coordinate reference system.
+      properties:
+        point:
+          type: string
+        '@context':
+          type: string
+          description: moWGS84LocationPointType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moWGS84LocationPointTypeContext.jsonld
+    moLocationCreationCodeType:
+      type: object
+      title: 'mo:LocationCreationCodeType'
+      description: >-
+        A data type for a code indicating the method used to generate a
+        location.
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moLocationCreationCodeSimpleType
+        '@context':
+          type: string
+          description: moLocationCreationCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moLocationCreationCodeTypeContext.jsonld
+    moLocationCreationCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a code indicating the method used to generate a
+        location.
+      enum:
+        - HUMAN
+        - HUMAN.CALCULATED
+        - HUMAN.CUTANDPASTE
+        - HUMAN.ESTIMATED
+        - MACHINE
+        - MACHINE.CONFIGURED
+        - MACHINE.FUSED
+        - MACHINE.GPS
+        - MACHINE.MAGNETIC
+        - MACHINE.MENSURATED
+        - MACHINE.PREDICTED
+        - MACHINE.SIMULATED
+    moGeospatialLocationAugmentationType:
+      type: string
+      title: 'mo:GeospatialLocationAugmentationType'
+      description: 'A data type for additional information about a nc:Location.'
+    moImageAugmentationType:
+      type: object
+      title: 'mo:ImageAugmentationType'
+      description: A data type for additional information about an image.
+      properties:
+        imageName:
+          type: array
+          description: 'A name for the image. NIEM reference is mo:ImageName'
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        imageIdentification:
+          type: array
+          description: >-
+            An identification for the image. NIEM reference is
+            mo:ImageIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        imageRelativeLocationURI:
+          type: array
+          description: >-
+            A URI describing the relative location of an image. NIEM reference
+            is mo:ImageRelativeLocationURI
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsanyURI
+        imageDescription:
+          type: array
+          description: >-
+            A text for the primary description of the image. NIEM reference is
+            mo:ImageDescriptionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        imageFileCategory:
+          type: array
+          description: 'A kind of image on file. NIEM reference is mo:ImageFileCategoryText'
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        imageAlternateName:
+          type: array
+          description: >-
+            An alternate name associated to an image. NIEM reference is
+            mo:ImageAlternateName
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        imageBinary:
+          type: array
+          description: >-
+            A text that is a binary base-64 string that represents an Image.
+            NIEM reference is mo:ImageBinaryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: moImageAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moImageAugmentationTypeContext.jsonld
+    moFacilityAugmentationType:
+      type: object
+      title: 'mo:FacilityAugmentationType'
+      description: 'A data type for additional information about a nc:Facility.'
+      properties:
+        facilityAllegianceCountry:
+          type: array
+          description: >-
+            A designator for a country to which a facility owes its allegiance.
+            NIEM reference is mo:FacilityAllegianceCountry
+          items:
+            $ref: nc.yaml#/components/schemas/ncCountryType
+        '@context':
+          type: string
+          description: moFacilityAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moFacilityAugmentationTypeContext.jsonld
+    moLocationAugmentationType:
+      type: object
+      title: 'mo:LocationAugmentationType'
+      description: A data type for additional information about a location.
+      properties:
+        locationUncertaintyArea:
+          type: array
+          description: >-
+            An area of uncertainty about a location. NIEM reference is
+            mo:LocationUncertaintyArea
+          items:
+            $ref: nc.yaml#/components/schemas/ncAreaType
+        '@context':
+          type: string
+          description: moLocationAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moLocationAugmentationTypeContext.jsonld
+    moSpeedMeasureAugmentationType:
+      type: object
+      title: 'mo:SpeedMeasureAugmentationType'
+      description: 'A data type for additional information about an nc:SpeedMeasure.'
+      properties:
+        sigmaErrorValue:
+          type: number
+          description: >-
+            A magnitude of a one-sigma deviation of a normal (Gaussian)
+            distribution followed by the true value of the quantity. NIEM
+            reference is nc:sigmaErrorValue
+        '@context':
+          type: string
+          description: moSpeedMeasureAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moSpeedMeasureAugmentationTypeContext.jsonld
+    moTaskAugmentationType:
+      type: object
+      title: 'mo:TaskAugmentationType'
+      description: A data type for additional information about a task.
+      properties:
+        taskNumber:
+          type: array
+          description: >-
+            A hierarchical number that identifies a specific task. NIEM
+            reference is mo:TaskNumberText
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        taskName:
+          type: array
+          description: 'A name of a task. NIEM reference is nc:TaskName'
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        taskDescription:
+          type: array
+          description: >-
+            A description of the task in detail. NIEM reference is
+            nc:TaskDescriptionText
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        taskUUID:
+          type: array
+          description: >-
+            An identifier for a 128 bit Universally Unique ID (UUID) for a task.
+            NIEM reference is mo:TaskUUID
+          items:
+            $ref: mo.yaml#/components/schemas/moUUIDType
+        taskPerformingUnit:
+          type: array
+          description: >-
+            A unit that is/was/will be performing the task. NIEM reference is
+            mo:TaskPerformingUnit
+          items:
+            $ref: mo.yaml#/components/schemas/moUnitType
+        taskStartDate:
+          type: array
+          description: 'A date for the start of a task. NIEM reference is nc:TaskStartDate'
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        taskEndDate:
+          type: array
+          description: 'A date for the end of a task. NIEM reference is nc:TaskEndDate'
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        '@context':
+          type: string
+          description: moTaskAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moTaskAugmentationTypeContext.jsonld
+    moUUIDType:
+      type: object
+      title: 'mo:UUIDType'
+      description: A data type for a 128 bit Universally Unique ID (UUID)
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moUUIDSimpleType
+        '@context':
+          type: string
+          description: moUUIDType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moUUIDTypeContext.jsonld
+    moUUIDSimpleType:
+      type: string
+      description: A data type for a 128 bit Universally Unique ID (UUID)
+      enum:
+        - '[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}'
+    moUnitType:
+      type: object
+      title: 'mo:UnitType'
+      description: >-
+        A data type for a military element whose structure is prescribed by
+        competent authority.
+      properties:
+        organizationUniqueID:
+          type: array
+          description: >-
+            An identifier to uniquely distinguish one DoD organizational element
+            from another, allowing DoD systems to identify an organization
+            individually across the DoD enterprise.  Also known as OUID. NIEM
+            reference is mo:OrganizationUniqueID
+          items:
+            $ref: mo.yaml#/components/schemas/moForceManagementIDType
+        identificationCodeID:
+          type: array
+          description: >-
+            An identifier with a six-character, alphanumeric code that uniquely
+            identifies each Active, Reserve, and National Guard unit of the
+            Armed Forces. Also called UIC. NIEM reference is
+            mo:UnitIdentificationCodeID
+          items:
+            $ref: mo.yaml#/components/schemas/moSixAlphaNumericIDType
+        name:
+          type: array
+          description: >-
+            A character string assigned to represent a unit name. NIEM reference
+            is mo:UnitName
+          items:
+            $ref: mo.yaml#/components/schemas/moUnitNameType
+        abbreviatedName:
+          type: array
+          description: 'An abbreviated unit name. NIEM reference is mo:UnitAbbreviatedName'
+          items:
+            $ref: mo.yaml#/components/schemas/moAbbreviatedNameType
+        shortName:
+          type: array
+          description: >-
+            A name used to create derived names and for display with military
+            symbols. NIEM reference is mo:UnitShortName
+          items:
+            $ref: mo.yaml#/components/schemas/moUnitShortNameType
+        typeCode:
+          type: array
+          description: >-
+            A Joint Chiefs of Staff developed and assigned code, consisting of
+            five characters that uniquely identify a "type unit." NIEM reference
+            is mo:UnitTypeCodeText
+          items:
+            $ref: mo.yaml#/components/schemas/moUnitTypeCodeTextType
+        presentLocation:
+          type: array
+          description: >-
+            A position or site occupied by the unit. NIEM reference is
+            mo:UnitPresentLocation
+          items:
+            $ref: nc.yaml#/components/schemas/ncLocationType
+        pointOfContact:
+          type: array
+          description: >-
+            A person serving as coordinator, action officer, or focal point for
+            an activity. NIEM reference is mo:UnitPointOfContact
+          items:
+            $ref: nc.yaml#/components/schemas/ncContactInformationType
+        metadata:
+          type: array
+          description: >-
+            Information that further qualifies primary data about a unit; data
+            about unit data. NIEM reference is mo:UnitMetadata
+          items:
+            $ref: nc.yaml#/components/schemas/ncMetadataType
+        geopoliticalAffiliationCode:
+          type: array
+          description: >-
+            A designator representing the country affiliation for an object.
+            NIEM reference is mo:UnitGeopoliticalAffiliationCode
+          items:
+            $ref: iso_3166.yaml#/components/schemas/iso_3166CountryAlpha2CodeType
+        courseAngleDegreesMeasure:
+          type: array
+          description: >-
+            An angular distance measured in degrees of a direction from a chosen
+            reference direction.  The measured and reference directions are
+            located in the horizontal plane, and the value of the angle is
+            positive in a clockwise direction as viewed from "above" the
+            horizontal plane. NIEM reference is mo:CourseAngleDegreesMeasure
+          items:
+            $ref: mo.yaml#/components/schemas/moCourseAngleDegreesMeasureType
+        operationalStatusCode:
+          type: array
+          description: >-
+            A designator that describes the operational status of a military
+            entity. NIEM reference is mo:UnitOperationalStatusCode
+          items:
+            $ref: mo.yaml#/components/schemas/moUnitOperationalStatusCodeType
+        statusQualifierCode:
+          type: array
+          description: >-
+            A designator that qualifies the status of a unit. NIEM reference is
+            mo:UnitStatusQualifierCode
+          items:
+            $ref: mo.yaml#/components/schemas/moUnitStatusQualifierCodeType
+        reinforcementCode:
+          type: array
+          description: >-
+            A designator that gives the reinforcement for a unit that has
+            additional or detached strength. NIEM reference is
+            mo:UnitReinforcementCode
+          items:
+            $ref: mo.yaml#/components/schemas/moUnitReinforcementCodeType
+        speedMeasure:
+          type: array
+          description: >-
+            A measure of a speed or rate of motion. NIEM reference is
+            nc:SpeedMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncSpeedMeasureType
+        '@context':
+          type: string
+          description: moUnitType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moUnitTypeContext.jsonld
+    moForceManagementIDType:
+      type: object
+      title: 'mo:ForceManagementIDType'
+      description: >-
+        A data type for a  set of identifiers and indexes used to identify data
+        within the GFM XSD. FMIDs convey no information about the entity they
+        identify, are a fixed size, and are exchanged as a single attribute.
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moForceManagementIDSimpleType
+        '@context':
+          type: string
+          description: moForceManagementIDType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moForceManagementIDTypeContext.jsonld
+    moForceManagementIDSimpleType:
+      type: string
+      description: >-
+        A data type for a  set of identifiers and indexes used to identify data
+        within the GFM XSD. FMIDs convey no information about the entity they
+        identify, are a fixed size, and are exchanged as a single attribute.
+      enum:
+        - '18446744073709551615'
+        - '20'
+    moSixAlphaNumericIDType:
+      type: object
+      title: 'mo:SixAlphaNumericIDType'
+      description: A data type for a six-character alphanumeric number.
+      properties:
+        unitLineNumberIDSimpleType:
+          $ref: mo.yaml#/components/schemas/moUnitLineNumberIDSimpleType
+        '@context':
+          type: string
+          description: moSixAlphaNumericIDType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moSixAlphaNumericIDTypeContext.jsonld
+    moUnitLineNumberIDSimpleType:
+      type: string
+      description: >-
+        A data type for a seven-character alphanumeric code that describes a
+        unique increment of a unit deployment, i.e., advance party, main body,
+        equipment by sea and air, reception team, or trail party, in the
+        time-phased force and deployment data. Also called ULN. (JP 3-35)
+      enum:
+        - '7'
+    moUnitNameType:
+      type: object
+      title: 'mo:UnitNameType'
+      description: A data type for a character string assigned to represent a unit name.
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moUnitNameSimpleType
+        '@context':
+          type: string
+          description: moUnitNameType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moUnitNameTypeContext.jsonld
+    moUnitNameSimpleType:
+      type: string
+      description: A data type for a character string assigned to represent a unit name.
+      enum:
+        - '100'
+        - '4'
+    moAbbreviatedNameType:
+      type: object
+      title: 'mo:AbbreviatedNameType'
+      description: A data type for a shortened name.
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moAbbreviatedNameSimpleType
+        '@context':
+          type: string
+          description: moAbbreviatedNameType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moAbbreviatedNameTypeContext.jsonld
+    moAbbreviatedNameSimpleType:
+      type: string
+      description: A data type for a shortened name.
+      enum:
+        - '30'
+        - '4'
+    moUnitShortNameType:
+      type: object
+      title: 'mo:UnitShortNameType'
+      description: >-
+        A data type for a short name used to create derived names and for
+        display with military symbols.
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moUnitShortNameSimpleType
+        '@context':
+          type: string
+          description: moUnitShortNameType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moUnitShortNameTypeContext.jsonld
+    moUnitShortNameSimpleType:
+      type: string
+      description: >-
+        A data type for a short name used to create derived names and for
+        display with military symbols.
+      enum:
+        - '10'
+    moUnitTypeCodeTextType:
+      type: object
+      title: 'mo:UnitTypeCodeTextType'
+      description: >-
+        A data type for a Joint Chiefs of Staff developed and assigned code,
+        consisting of five characters that uniquely identify a "type unit." Also
+        called UTC.
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moUnitTypeCodeTextSimpleType
+        '@context':
+          type: string
+          description: moUnitTypeCodeTextType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moUnitTypeCodeTextTypeContext.jsonld
+    moUnitTypeCodeTextSimpleType:
+      type: string
+      description: >-
+        A data type for a Joint Chiefs of Staff developed and assigned code,
+        consisting of five characters that uniquely identify a "type unit." Also
+        called UTC.
+      enum:
+        - '5'
+    moCourseAngleDegreesMeasureType:
+      type: object
+      title: 'mo:CourseAngleDegreesMeasureType'
+      description: >-
+        A data type for an angle measured in degrees used to identify the
+        intended direction of movement in the horizontal plane.  The value of
+        the angle is positive in a clockwise direction as viewed from "above"
+        the horizontal plane.
+      properties:
+        angleDegreesMeasure:
+          type: array
+          description: >-
+            An angle in two dimensions measured in degrees (the angle between
+            two half-lines terminating at the same point). NIEM reference is
+            mo:AngleDegreesMeasure
+          items:
+            $ref: nc.yaml#/components/schemas/ncAngularMeasureType
+        directionDatumCode:
+          type: array
+          description: >-
+            A designator for a reference direction as determined by the means by
+            which it is established (e.g., by the direction of a geographic or
+            magnetic pole of the Earth). NIEM reference is mo:DirectionDatumCode
+          items:
+            $ref: nga.yaml#/components/schemas/ngaDirectionDatumCodeType
+        angularMeasureDecimalValue:
+          type: array
+          description: >-
+            A decimal value for a measurement of an angle. NIEM reference is
+            mo:AngularMeasureDecimalValue
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsdecimal
+        '@context':
+          type: string
+          description: moCourseAngleDegreesMeasureType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moCourseAngleDegreesMeasureTypeContext.jsonld
+    moUnitOperationalStatusCodeType:
+      type: object
+      title: 'mo:UnitOperationalStatusCodeType'
+      description: A data type that describes the operational status of a military entity.
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moUnitOperationalStatusCodeSimpleType
+        '@context':
+          type: string
+          description: moUnitOperationalStatusCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moUnitOperationalStatusCodeTypeContext.jsonld
+    moUnitOperationalStatusCodeSimpleType:
+      type: string
+      description: A data type that describes the operational status of a military entity.
+      enum:
+        - MarginallyOperational
+        - NotKnown
+        - NotOperational
+        - Operational
+        - SubstantiallyOperational
+        - TemporarilyNotOperational
+    moUnitStatusQualifierCodeType:
+      type: object
+      title: 'mo:UnitStatusQualifierCodeType'
+      description: A data type that qualifies the status of a unit.
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moUnitStatusQualifierCodeSimpleType
+        '@context':
+          type: string
+          description: moUnitStatusQualifierCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moUnitStatusQualifierCodeTypeContext.jsonld
+    moUnitStatusQualifierCodeSimpleType:
+      type: string
+      description: A data type that qualifies the status of a unit.
+      enum:
+        - Destroyed
+        - HeavilyDamaged
+        - LackingVitalResources
+        - LightlyDamaged
+        - Lost
+        - ModeratelyDamaged
+        - None
+        - NotKnown
+    moUnitReinforcementCodeType:
+      type: object
+      title: 'mo:UnitReinforcementCodeType'
+      description: >-
+        A data type that gives the reinforcement for a unit that has additional
+        or detached strength.
+      properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moUnitReinforcementCodeSimpleType
+        '@context':
+          type: string
+          description: moUnitReinforcementCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moUnitReinforcementCodeTypeContext.jsonld
+    moUnitReinforcementCodeSimpleType:
+      type: string
+      description: >-
+        A data type that gives the reinforcement for a unit that has additional
+        or detached strength.
+      enum:
+        - DetachedOnly
+        - NormalStrength
+        - NotKnown
+        - 'Null'
+        - ReinforcedAndDetached
+        - ReinforcedOnly
+    moAircraftAugmentationType:
+      type: object
+      title: 'mo:AircraftAugmentationType'
+      description: 'A data type for additional information about an nc:Aircraft.'
+      properties:
+        callSignIdentification:
+          type: array
+          description: >-
+            An identification of any combination of characters or pronounceable
+            words, which identifies a communication facility, a command, an
+            authority, an activity, or a unit; used primarily for establishing
+            and maintaining communications. NIEM reference is
+            mo:CallSignIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        '@context':
+          type: string
+          description: moAircraftAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/moAircraftAugmentationTypeContext.jsonld

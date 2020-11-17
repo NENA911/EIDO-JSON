@@ -1,0 +1,205 @@
+components:
+  schemas:
+    commodityConveyanceCategoryCodeType:
+      type: object
+      title: 'commodity:ConveyanceCategoryCodeType'
+      description: A data type for a kind of conveyance.
+      properties:
+        simpleType:
+          $ref: >-
+            commodity.yaml#/components/schemas/commodityConveyanceCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: commodityConveyanceCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/commodityConveyanceCategoryCodeTypeContext.jsonld
+    commodityConveyanceCategoryCodeSimpleType:
+      type: string
+      description: A data type for a kind of conveyance.
+      enum:
+        - '36000'
+        - '36100'
+        - '36101'
+        - '36109'
+        - '36200'
+        - '36210'
+        - '36220'
+        - '36300'
+        - '36310'
+        - '36320'
+        - '36330'
+        - '36340'
+        - '36351'
+        - '36359'
+        - '36360'
+        - '36391'
+        - '36399'
+        - '36400'
+        - '36401'
+        - '36402'
+        - '36403'
+        - '36404'
+        - '36409'
+        - '37000'
+        - '37100'
+        - '37101'
+        - '37102'
+        - '37103'
+        - '37104'
+        - '37200'
+        - '37210'
+        - '37220'
+        - '37230'
+        - '37240'
+        - '37300'
+        - '37310'
+        - '37320'
+    commodityElectronicEquipmentCategoryCodeType:
+      type: object
+      title: 'commodity:ElectronicEquipmentCategoryCodeType'
+      description: A data type for a kind of electronic equipment.
+      properties:
+        simpleType:
+          $ref: >-
+            commodity.yaml#/components/schemas/commodityElectronicEquipmentCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: commodityElectronicEquipmentCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/commodityElectronicEquipmentCategoryCodeTypeContext.jsonld
+    commodityElectronicEquipmentCategoryCodeSimpleType:
+      type: string
+      description: A data type for a kind of electronic equipment.
+      enum:
+        - '35000'
+        - '35100'
+        - '35110'
+        - '35120'
+        - '35200'
+        - '35210'
+        - '35220'
+        - '35300'
+        - '35310'
+        - '35390'
+        - '35400'
+        - '35500'
+        - '35510'
+        - '35520'
+        - '35600'
+        - '35610'
+        - '35621'
+        - '35629'
+        - '35700'
+        - '35800'
+        - '35811'
+        - '35812'
+        - '35813'
+        - '35814'
+        - '35820'
+        - '35900'
+        - '35912'
+        - '35920'
+        - '35991'
+        - '35992'
+        - '35993'
+        - '35994'
+        - '35995'
+        - '35999'
+    commodityElectronicInstrumentCategoryCodeType:
+      type: object
+      title: 'commodity:ElectronicInstrumentCategoryCodeType'
+      description: A data type for a kind of electronic instrument.
+      properties:
+        simpleType:
+          $ref: >-
+            commodity.yaml#/components/schemas/commodityElectronicInstrumentCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: commodityElectronicInstrumentCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/commodityElectronicInstrumentCategoryCodeTypeContext.jsonld
+    commodityElectronicInstrumentCategoryCodeSimpleType:
+      type: string
+      description: A data type for a kind of electronic instrument.
+      enum:
+        - '38000'
+        - '38100'
+        - '38101'
+        - '38109'
+        - '38200'
+        - '38210'
+        - '38220'
+        - '38300'
+        - '38310'
+        - '38320'
+        - '38400'
+        - '38410'
+        - '38420'
+        - '38491'
+        - '38492'
+        - '38499'
+        - '38500'
+        - '38510'
+        - '38520'
+        - '38591'
+        - '38592'
+        - '38593'
+        - '38599'
+    commodityMachineryCategoryCodeType:
+      type: object
+      title: 'commodity:MachineryCategoryCodeType'
+      description: A data type for a kind of machinery.
+      properties:
+        simpleType:
+          $ref: >-
+            commodity.yaml#/components/schemas/commodityMachineryCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: commodityMachineryCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/commodityMachineryCategoryCodeTypeContext.jsonld
+    commodityMachineryCategoryCodeSimpleType:
+      type: string
+      description: A data type for a kind of machinery.
+      enum:
+        - '34000'
+        - '34100'
+        - '34110'
+        - '34120'
+        - '34130'
+        - '34200'
+        - '34211'
+        - '34212'
+        - '34221'
+        - '34222'
+        - '34300'
+        - '34310'
+        - '34320'
+        - '34330'
+        - '34400'
+        - '34410'
+        - '34421'
+        - '34422'
+        - '34500'
+        - '34511'
+        - '34519'
+        - '34520'
+        - '34900'
+        - '34910'
+        - '34920'
+        - '34930'
+        - '34940'
+        - '34950'
+        - '34960'
+        - '34971'
+        - '34972'
+        - '34991'
+        - '34992'
+        - '34993'
+        - '34994'
+        - '34995'
+        - '34999'

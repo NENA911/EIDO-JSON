@@ -1,0 +1,133 @@
+components:
+  schemas:
+    itAddressAugmentationType:
+      type: object
+      title: 'it:AddressAugmentationType'
+      description: A data type for additional information about an address.
+      properties:
+        locationCountrySubEntityName:
+          type: array
+          description: >-
+            A name of a country subdivision. NIEM reference is
+            it:LocationCountrySubEntityName
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        locationCountrySubEntityIdentification:
+          type: array
+          description: >-
+            An identification of a country subdivision. NIEM reference is
+            it:LocationCountrySubEntityIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        '@context':
+          type: string
+          description: itAddressAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/itAddressAugmentationTypeContext.jsonld
+    itDocumentAugmentationType:
+      type: object
+      title: 'it:DocumentAugmentationType'
+      description: A data type for additional information about a document.
+      properties:
+        documentIssueDate:
+          type: array
+          description: >-
+            A date at which a document was issued and when appropriate, signed
+            or otherwise authenticated. NIEM reference is nc:DocumentIssueDate
+          items:
+            $ref: nc.yaml#/components/schemas/ncDateType
+        documentIssueLocationIdentification:
+          type: array
+          description: >-
+            An identification of a place at which an additional document was
+            issued and when appropriate, signed or otherwise authenticated. NIEM
+            reference is it:DocumentIssueLocationIdentification
+          items:
+            $ref: nc.yaml#/components/schemas/ncIdentificationType
+        documentFree:
+          type: array
+          description: >-
+            A free text field available to the message sender for information.
+            NIEM reference is it:DocumentFreeText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: itDocumentAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/itDocumentAugmentationTypeContext.jsonld
+    itObligationAugmentationType:
+      type: object
+      title: 'it:ObligationAugmentationType'
+      description: A data type for additional information about a payment.
+      properties:
+        paymentMethodCategory:
+          type: array
+          description: >-
+            A kind of payment method. NIEM reference is
+            it:PaymentMethodCategoryText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        obligationGuarantee:
+          type: array
+          description: >-
+            A set of details of how the obligation will be fulfilled NIEM
+            reference is it:ObligationGuarantee
+          items:
+            $ref: it.yaml#/components/schemas/itObligationGuaranteeType
+        dutyTaxPaymentMethodCode:
+          type: array
+          description: >-
+            A code identifying the method of payment for the Duty Tax. NIEM
+            reference is it:DutyTaxPaymentMethodCode
+          items:
+            $ref: >-
+              itcodes.yaml#/components/schemas/itcodesDutyTaxPaymentMethodCodeType
+        '@context':
+          type: string
+          description: itObligationAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/itObligationAugmentationTypeContext.jsonld
+    itObligationGuaranteeType:
+      type: object
+      title: 'it:ObligationGuaranteeType'
+      description: A data type for a set of details of how the obligation will be fulfilled
+      properties:
+        guaranteeReferenceID:
+          type: array
+          description: >-
+            A unique identifier for the obligation guarantee NIEM reference is
+            it:GuaranteeReferenceID
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        securityDetailsCode:
+          type: array
+          description: >-
+            A code specifying details regarding undertaking given in cash, bond
+            or as a written guarantee to ensure an obligation will be fulfilled
+            NIEM reference is it:SecurityDetailsCodeText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: itObligationGuaranteeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/itObligationGuaranteeTypeContext.jsonld
+    itPersonAugmentationType:
+      type: object
+      title: 'it:PersonAugmentationType'
+      description: A data type for additional information about a person.
+      properties:
+        personFunction:
+          type: array
+          description: >-
+            A capacity in which the representative person acts on behalf of the
+            party responsible for the declaration. NIEM reference is
+            it:PersonFunctionText
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: itPersonAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/itPersonAugmentationTypeContext.jsonld
