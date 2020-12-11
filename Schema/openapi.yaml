@@ -226,7 +226,7 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           properties:
-            additionalDataURL:
+            additionalDataUrl:
               type: string
               description: A URL that references additional data associated with a call.
             additionalDataDetail:
@@ -259,7 +259,7 @@ components:
             locationDescriptionText:
               type: string
               description: Optional text further describing the location type.
-            locationByReferenceURL:
+            locationByReferenceUrl:
               type: string
               description:
                 A URL where a location associated with an incident can be
@@ -272,7 +272,7 @@ components:
                 format.
               items:
                 type: string
-            crossStreetByReferenceURL:
+            crossStreetByReferenceUrl:
               type: array
               description:
                 A URL where a nearest cross street to an incident's location can
@@ -285,14 +285,14 @@ components:
                 intersection, in PIDF-LO format.
               items:
                 type: string
-            intersectingStreetByReferenceURL:
+            intersectingStreetByReferenceUrl:
               type: array
               description:
                 A URL where an additional street, that with the location forms
                 an intersection, can be dereferenced.
               items:
                 type: string
-            cellTowerSectorID:
+            cellTowerSectorId:
               type: string
               description:
                 The nearest cell tower and sector/face of the tower receiving a
@@ -460,7 +460,7 @@ components:
               description:
                 Shall only contains values present in the Incident Status
                 registry
-            internalIncidentID:
+            internalIncidentId:
               type: string
             agentReference:
               type: array
@@ -528,7 +528,7 @@ components:
           required:
             - updatedCBNIdentifierURI
           properties:
-            updatedCBNIdentifierURI:
+            updatedCBNIdentifierUri:
               type: string
               description:
                 A telephone number or SIP equivalent of a reporting party
@@ -553,7 +553,7 @@ components:
             - callStatusRegistryText
             - callTypeDescriptionRegistryText
             - activityDateRange
-            - deviceCallBackInformationURL
+            - deviceCallBackInformationUrl
             - deviceContactHeader
           properties:
             callIdentifier:
@@ -588,7 +588,7 @@ components:
             callStatusRegistryText:
               type: string
               description: Shall only contains values present in the Call Status registry
-            callMediaURL:
+            callMediaUrl:
               type: array
               description:
                 A location where media associated with the call (images,
@@ -596,7 +596,7 @@ components:
               items:
                 type: string
                 format: uri
-            deviceCallBackInformationURL:
+            deviceCallBackInformationUrl:
               type: array
               description:
                 A URL containing limited duration information for a telephone
@@ -618,7 +618,7 @@ components:
               type: string
               description: 
                 Content of the SIP identity header. Required if known.
-            callerCallBackInformationURL:
+            callerCallBackInformationUrl:
               type: string
               description:
                 A URL for a telephone number or SIP equivalent for calling back
@@ -785,7 +785,7 @@ components:
               description:
                 Central Station Alarm Association (CSAA) data associated with an
                 incident.
-            alarmURL:
+            alarmUrl:
               type: string
               description:
                 A URL that references Central Station Alarm Association (CSAA)
@@ -826,7 +826,7 @@ components:
               description:
                 An identifier of a functional element that created the EIDO
                 instance.
-            incidentCollaborationURL:
+            incidentCollaborationUrl:
               type: array
               description:
                 A URL reference to multi-media collaboration information
