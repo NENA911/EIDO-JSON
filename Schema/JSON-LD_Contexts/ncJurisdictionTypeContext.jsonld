@@ -1,9 +1,9 @@
 {
   "@context": {
     "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
-    "authorityURI": "mo:AuthorityURI",
+    "authorityUri": "mo:AuthorityURI",
     "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
-    "ANSID20AuthorityCode": "j:JurisdictionANSID20AuthorityCode",
+    "ansid20AuthorityCode": "j:JurisdictionANSID20AuthorityCode",
     "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
     "text": "nc:JurisdictionText",
     "locationCityName": "nc:LocationCityName",

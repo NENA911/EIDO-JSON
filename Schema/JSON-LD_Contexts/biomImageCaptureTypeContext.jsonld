@@ -3,7 +3,7 @@
     "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
     "captureIdentification": "biom:CaptureIdentification",
     "geographicSampleAcquisitionLocation": "biom:GeographicSampleAcquisitionLocation",
-    "captureUTCDateTime": "biom:CaptureUTCDateTime",
+    "captureUtcDateTime": "biom:CaptureUTCDateTime",
     "captureDate": "biom:CaptureDate",
     "captureDateEstimateRangeDuration": "biom:CaptureDateEstimateRangeDuration",
     "captureDevice": "biom:CaptureDevice",

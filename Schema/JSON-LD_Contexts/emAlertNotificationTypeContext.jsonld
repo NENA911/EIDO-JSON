@@ -5,7 +5,7 @@
     "alertExpirationDateTime": "em:AlertExpirationDateTime",
     "alertHeadline": "em:AlertHeadlineText",
     "alertInstructionsDescription": "em:AlertInstructionsDescriptionText",
-    "alertHandlingID": "em:AlertHandlingID",
+    "alertHandlingId": "em:AlertHandlingID",
     "alertHandling": "em:AlertHandlingText",
     "alertReason": "em:AlertReasonText",
     "alertCategoryCode": "em:AlertCategoryCode",

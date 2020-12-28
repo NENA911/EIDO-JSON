@@ -9,7 +9,7 @@
     "personAddress": "m:PersonAddress",
     "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
     "personBirthDate": "nc:PersonBirthDate",
-    "personCitizenshipISO3166Alpha2Code": "nc:PersonCitizenshipISO3166Alpha2Code",
+    "personCitizenshipIso3166Alpha2Code": "nc:PersonCitizenshipISO3166Alpha2Code",
     "personCitizenship": "nc:PersonCitizenshipText",
     "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
     "personEyeColorCode": "j:PersonEyeColorCode",
@@ -22,10 +22,10 @@
     "personHeightMeasure": "nc:PersonHeightMeasure",
     "personName": "nc:PersonName",
     "personSexCode": "j:PersonSexCode",
-    "personSexNDExCode": "j:PersonSexNDExCode",
+    "personSexNdExCode": "j:PersonSexNDExCode",
     "personSexRapSheetCode": "j:PersonSexRapSheetCode",
     "personSex": "nc:PersonSexText",
-    "personSSNIdentification": "nc:PersonSSNIdentification",
+    "personSsnIdentification": "nc:PersonSSNIdentification",
     "personWeightDescription": "nc:PersonWeightDescriptionText",
     "personWeightMeasure": "nc:PersonWeightMeasure"
   }

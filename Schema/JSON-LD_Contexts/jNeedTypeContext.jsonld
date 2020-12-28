@@ -6,6 +6,6 @@
     "category": "j:NeedCategoryText",
     "source": "j:NeedSourceText",
     "intensityLevel": "j:NeedIntensityLevelText",
-    "needID": "j:NeedID"
+    "needId": "j:NeedID"
   }
 }

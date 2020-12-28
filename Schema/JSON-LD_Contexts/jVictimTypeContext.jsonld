@@ -7,11 +7,11 @@
     "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
     "statement": "j:VictimStatementText",
     "sequenceNumber": "j:VictimSequenceNumberText",
-    "VICAPCaseNumber": "j:VictimVICAPCaseNumberText",
+    "vicapCaseNumber": "j:VictimVICAPCaseNumberText",
     "isContacted": "j:VictimContactedIndicator",
-    "victimMO": "j:VictimMO",
+    "victimMo": "j:VictimMO",
     "isSeeksRestitutionDescription": "j:VictimSeeksRestitutionDescriptionIndicator",
-    "isVICAP": "j:VictimVICAPIndicator",
+    "isVicap": "j:VictimVICAPIndicator",
     "seeksRestitutionDescription": "j:VictimSeeksRestitutionDescriptionText",
     "affectedItem": "j:VictimAffectedItem",
     "organization": "j:VictimOrganization",
@@ -28,7 +28,7 @@
     "aggravatedAssaultHomicideFactor": "j:VictimAggravatedAssaultHomicideFactorText",
     "justifiableHomicideFactor": "j:VictimJustifiableHomicideFactorText",
     "aggravatedAssaultHomicideFactorCode": "j:VictimAggravatedAssaultHomicideFactorCode",
-    "aggravatedAssaultHomicideFactorNDExCode": "j:VictimAggravatedAssaultHomicideFactorNDExCode",
+    "aggravatedAssaultHomicideFactorNdExCode": "j:VictimAggravatedAssaultHomicideFactorNDExCode",
     "justifiableHomicideFactorCode": "j:VictimJustifiableHomicideFactorCode"
   }
 }

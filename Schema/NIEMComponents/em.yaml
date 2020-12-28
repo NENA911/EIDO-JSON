@@ -127,14 +127,14 @@ components:
         - $ref: nc.yaml#/components/schemas/ncLocationType
         - type: object
           properties:
-            cellID:
+            cellId:
               type: array
               description: >-
                 A data element for text that specifically identifies a
                 particular cell tower. NIEM reference is em:CellIDText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            cellSectorID:
+            cellSectorId:
               type: array
               description: >-
                 A data element for text that specifically identifies a
@@ -217,7 +217,7 @@ components:
             nc:OrganizationIdentification
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
-        sourceID:
+        sourceId:
           type: array
           description: >-
             A number or string set by a data provider so that information that
@@ -232,7 +232,7 @@ components:
             em:RestrictionCategoryText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        URLID:
+        urlid:
           type: array
           description: >-
             An identifier representing a universal resource locator (URL). NIEM
@@ -289,7 +289,7 @@ components:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
           properties:
-            notificationID:
+            notificationId:
               type: array
               description: >-
                 An identifier of the alert message. A number or string uniquely
@@ -297,7 +297,7 @@ components:
                 is em:NotificationID
               items:
                 $ref: nc.yaml#/components/schemas/ncIdentificationType
-            sourceID:
+            sourceId:
               type: array
               description: >-
                 An identifier for the particular source of this alert; e.g., an
@@ -541,7 +541,7 @@ components:
             response to an alarm NIEM reference is em:AlarmDispatchActivity
           items:
             $ref: nc.yaml#/components/schemas/ncActivityType
-        alarmDispatchAgencyID:
+        alarmDispatchAgencyId:
           type: array
           description: >-
             An identifier for the agency (PSAP) being requested to respond to an
@@ -557,7 +557,7 @@ components:
             responder NIEM reference is em:AlarmDispatchAgencyNameText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        alarmMonitoringServiceProviderID:
+        alarmMonitoringServiceProviderId:
           type: array
           description: >-
             An identifier assigned to Central Station Monitoring Companies NIEM
@@ -861,7 +861,7 @@ components:
             info blocks NIEM reference is em:AlertInstructionsDescriptionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        alertHandlingID:
+        alertHandlingId:
           type: array
           description: >-
             An identifier denoting the special handling of the alert message
@@ -971,7 +971,7 @@ components:
             reference is em:AlertEventDetailsAudienceDescriptionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        systemRecordID:
+        systemRecordId:
           type: array
           description: >-
             An identifier for the event type of the alert message NIEM reference
@@ -1215,7 +1215,7 @@ components:
       title: 'em:AlertSupplementaryDigitalResourceType'
       description: A data type for a digital representation of an object
       properties:
-        binaryChecksumDigestID:
+        binaryChecksumDigestId:
           type: array
           description: >-
             An identifier representing the digital digest ('hash') computed from
@@ -1416,7 +1416,7 @@ components:
       title: 'em:IncidentAuthorType'
       description: A data type for information about the author of the incident
       properties:
-        authorURI:
+        authorUri:
           type: array
           description: 'An element for incident author''s URI NIEM reference is em:AuthorURI'
           items:
@@ -1707,7 +1707,7 @@ components:
             reference is em:InsurancePhoneNumber
           items:
             $ref: nc.yaml#/components/schemas/ncTelephoneNumberType
-        insuranceGroupNumberID:
+        insuranceGroupNumberId:
           type: array
           description: >-
             An identifier for the insurance group number NIEM reference is

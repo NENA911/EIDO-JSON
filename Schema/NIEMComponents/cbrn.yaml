@@ -372,14 +372,14 @@ components:
                 reference is cbrn:MapGuideName
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            mapGuidePageNumberID:
+            mapGuidePageNumberId:
               type: array
               description: >-
                 An identifier that refers to a page in a Map Guide document.
                 NIEM reference is cbrn:MapGuidePageNumberID
               items:
                 $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-            mapGuideGridNumberID:
+            mapGuideGridNumberId:
               type: array
               description: >-
                 An identifier that refers to a map grid in a Map Guide document

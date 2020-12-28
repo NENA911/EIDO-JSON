@@ -1,7 +1,7 @@
 {
   "@context": {
     "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
-    "referenceID": "biom:DNAKitReferenceID",
+    "referenceId": "biom:DNAKitReferenceID",
     "name": "biom:DNAKitName",
     "manufacturerName": "biom:DNAKitManufacturerName",
     "description": "biom:DNAKitDescriptionText"

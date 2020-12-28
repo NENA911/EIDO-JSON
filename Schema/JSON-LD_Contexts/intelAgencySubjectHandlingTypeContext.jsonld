@@ -1,7 +1,7 @@
 {
   "@context": {
     "intel": "http://release.niem.gov/niem/domains/intelligence/4.1/#",
-    "FBICode": "intel:AgencySubjectHandlingFBICodeText",
+    "fbiCode": "intel:AgencySubjectHandlingFBICodeText",
     "subjectHandling": "intel:SubjectHandling"
   }
 }

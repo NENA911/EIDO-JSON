@@ -6,7 +6,7 @@
     "incidentFactorSubCategory": "j:IncidentFactorSubCategoryText",
     "code": "j:OffenseFactorCode",
     "justifiableHomicideCode": "j:OffenseFactorJustifiableHomicideCode",
-    "NIBRSAggravatedAssaultHomicideCode": "j:OffenseFactorNIBRSAggravatedAssaultHomicideCode",
+    "nibrsAggravatedAssaultHomicideCode": "j:OffenseFactorNIBRSAggravatedAssaultHomicideCode",
     "text": "j:OffenseFactorText"
   }
 }

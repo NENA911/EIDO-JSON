@@ -15,8 +15,8 @@
     "categoryCode": "j:StatuteCategoryCode",
     "category": "j:StatuteCategoryText",
     "offenseStateCode": "j:StatuteOffenseStateCodeText",
-    "offenseAPCOCode": "j:StatuteOffenseAPCOCode",
-    "offenseUCRCode": "j:StatuteOffenseUCRCode",
+    "offenseApcoCode": "j:StatuteOffenseAPCOCode",
+    "offenseUcrCode": "j:StatuteOffenseUCRCode",
     "offenseIdentification": "j:StatuteOffenseIdentification"
   }
 }

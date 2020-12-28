@@ -52,7 +52,7 @@ components:
       title: 'hs:OrganizationAugmentationType'
       description: A data type for additional information about an organization.
       properties:
-        organizationCaseID:
+        organizationCaseId:
           type: array
           description: >-
             An identifier assigned by an organization to a case. NIEM reference
@@ -850,7 +850,7 @@ components:
                 hs:Juvenile
               items:
                 $ref: hs.yaml#/components/schemas/hsJuvenileType
-            receivedByTrackingID:
+            receivedByTrackingId:
               type: array
               description: >-
                 An identifier of a person receiving a record. NIEM reference is
@@ -1087,14 +1087,14 @@ components:
       title: 'hs:CourtOrderAugmentationType'
       description: A data type for additional information about a court order.
       properties:
-        organizationCaseID:
+        organizationCaseId:
           type: array
           description: >-
             An identifier assigned by an organization to a case. NIEM reference
             is hs:OrganizationCaseID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        caseDocketID:
+        caseDocketId:
           type: array
           description: >-
             An identifier used to reference a case docket. NIEM reference is
@@ -1290,7 +1290,7 @@ components:
             otherwise. NIEM reference is hs:EmailContactSupportIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        SSNVerificationIndicatorCode:
+        ssnVerificationIndicatorCode:
           type: array
           description: >-
             A verification of a SSN by the Social Security Administration (SSA).
@@ -1326,7 +1326,7 @@ components:
             reference is hs:DrugRelatedFelonIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        isVAMatchRequest:
+        isVaMatchRequest:
           type: array
           description: >-
             True if to perform a VA Match; false if there is no VA match. NIEM
@@ -1340,7 +1340,7 @@ components:
             match. NIEM reference is hs:StateMatchRequestIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        isFEDMatchRequest:
+        isFedMatchRequest:
           type: array
           description: >-
             True if perform federal data match; false if there is no fed match.
@@ -1431,7 +1431,7 @@ components:
             hs:HistoricalNarrative
           items:
             $ref: hs.yaml#/components/schemas/hsHistoricalNarrativeType
-        isICWAEligibility:
+        isIcwaEligibility:
           type: array
           description: >-
             True if a case participant's ethnicity implicates the Indian Child
@@ -1611,7 +1611,7 @@ components:
             hs:ServicesEligibilityIndicatorCode
           items:
             $ref: hs.yaml#/components/schemas/hsServicesEligibilityIndicatorCodeType
-        isTANF:
+        isTanf:
           type: array
           description: >-
             True if a client receives TANF Assistance or if their assets count;
@@ -1625,7 +1625,7 @@ components:
             hs:ChildSupportAssistanceStatusIndicatorCode
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        TANFMonthsQuantity:
+        tanfMonthsQuantity:
           type: array
           description: >-
             A number of countable months that a client has received TANF
@@ -2215,7 +2215,7 @@ components:
         A data type for a person who is professionally qualified to prepare and
         dispense medicinal drugs.
       properties:
-        NPIIdentification:
+        npiIdentification:
           type: array
           description: >-
             An identification called the National Provider Identifier, which

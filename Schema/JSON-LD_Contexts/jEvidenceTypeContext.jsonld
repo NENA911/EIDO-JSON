@@ -8,7 +8,7 @@
     "amount": "j:EvidenceAmount",
     "itemContactInformation": "j:EvidenceItemContactInformation",
     "documentationBinary": "j:EvidenceDocumentationBinary",
-    "IBISNumber": "j:IBISNumberText",
+    "ibisNumber": "j:IBISNumberText",
     "roleOfBinary": "j:RoleOfBinary",
     "collector": "j:EvidenceCollector",
     "custodyTransfer": "j:EvidenceCustodyTransfer",

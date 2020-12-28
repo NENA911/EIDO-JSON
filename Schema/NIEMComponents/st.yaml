@@ -24,7 +24,7 @@ components:
             reference is st:RoadwayInclinationValue
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsdecimal
-        AADTRampNumeric:
+        aadtRampNumeric:
           type: array
           description: 'An AADT on ramp NIEM reference is st:AADTRampNumeric'
           items:

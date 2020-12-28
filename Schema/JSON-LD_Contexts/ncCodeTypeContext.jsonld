@@ -2,7 +2,7 @@
   "@context": {
     "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
     "cli": "http://reference.niem.gov/niem/specification/code-lists/4.0/code-lists-instance/#",
-    "codeListURI": "cli:codeListURI",
+    "codeListUri": "cli:codeListURI",
     "codeListColumnName": "cli:codeListColumnName",
     "isCodeListConstraining": "cli:codeListConstrainingIndicator"
   }

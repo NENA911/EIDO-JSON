@@ -10,14 +10,14 @@
     "isAgencyActive": "j:AgencyActiveIndicator",
     "isAgencyAddCancel": "j:AgencyAddCancelIndicator",
     "agencyBaselinePriorityValue": "j:AgencyBaselinePriorityValue",
-    "isAgencyCHRIAuthorized": "j:AgencyCHRIAuthorizedIndicator",
+    "isAgencyChriAuthorized": "j:AgencyCHRIAuthorizedIndicator",
     "isAgencyControlTerminal": "j:AgencyControlTerminalIndicator",
     "agencyServiceHoursCode": "j:AgencyServiceHoursCode",
     "agencyServiceHours": "j:AgencyServiceHoursText",
     "agencyAuthorizationCode": "j:AgencyAuthorizationCode",
     "agencyAuthorization": "j:AgencyAuthorizationText",
     "organizationGovernmentLevel": "j:OrganizationGovernmentLevelText",
-    "organizationFFLID": "j:OrganizationFFLID",
-    "organizationORIIdentification": "j:OrganizationORIIdentification"
+    "organizationFflid": "j:OrganizationFFLID",
+    "organizationOriIdentification": "j:OrganizationORIIdentification"
   }
 }

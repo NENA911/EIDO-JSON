@@ -7,6 +7,6 @@
     "taskCompletionDescription": "j:TaskCompletionDescriptionText",
     "taskAssistanceProvider": "j:TaskAssistanceProvider",
     "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
-    "taskID": "nc:TaskID"
+    "taskId": "nc:TaskID"
   }
 }

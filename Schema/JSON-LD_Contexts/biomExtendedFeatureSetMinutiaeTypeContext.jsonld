@@ -47,10 +47,10 @@
     "frictionRidgeImageRelativeRotation": "biom:FrictionRidgeImageRelativeRotation",
     "frictionRidgeSkeletonizedImageBinaryObject": "biom:FrictionRidgeSkeletonizedImageBinaryObject",
     "minutiaeImageRidgePath": "biom:MinutiaeImageRidgePath",
-    "EFSMinutia": "biom:EFSMinutia",
-    "EFSRidgeCountAlgorithmCode": "biom:EFSRidgeCountAlgorithmCode",
-    "EFSRidgeCountItem": "biom:EFSRidgeCountItem",
-    "EFSTemporaryLine": "biom:EFSTemporaryLine",
-    "EFSFeatureColor": "biom:EFSFeatureColor"
+    "efsMinutia": "biom:EFSMinutia",
+    "efsRidgeCountAlgorithmCode": "biom:EFSRidgeCountAlgorithmCode",
+    "efsRidgeCountItem": "biom:EFSRidgeCountItem",
+    "efsTemporaryLine": "biom:EFSTemporaryLine",
+    "efsFeatureColor": "biom:EFSFeatureColor"
   }
 }

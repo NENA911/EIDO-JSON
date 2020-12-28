@@ -7,7 +7,7 @@
     "membershipHighQuantity": "j:CriminalOrganizationMembershipHighQuantityText",
     "membershipInitiation": "j:CriminalOrganizationMembershipInitiationText",
     "membershipLowQuantity": "j:CriminalOrganizationMembershipLowQuantityText",
-    "NCICIdentification": "j:CriminalOrganizationNCICIdentification",
+    "ncicIdentification": "j:CriminalOrganizationNCICIdentification",
     "objective": "j:CriminalOrganizationObjectiveText",
     "traitDetails": "j:CriminalOrganizationTraitDetails"
   }

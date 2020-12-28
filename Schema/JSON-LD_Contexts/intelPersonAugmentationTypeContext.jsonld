@@ -7,7 +7,7 @@
     "personEducationDetails": "intel:PersonEducationDetails",
     "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
     "location": "nc:Location",
-    "personMultimediaIDBinary": "intel:PersonMultimediaIDBinary",
+    "personMultimediaIdBinary": "intel:PersonMultimediaIDBinary",
     "personSystemIdentification": "intel:PersonSystemIdentification",
     "personCauseOfDeath": "intel:PersonCauseOfDeathText",
     "personEyeDescription": "intel:PersonEyeDescriptionText",

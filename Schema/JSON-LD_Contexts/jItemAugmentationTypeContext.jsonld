@@ -10,7 +10,7 @@
     "itemRecoveredValue": "nc:ItemRecoveredValue",
     "itemDetailDescription": "j:ItemDetailDescriptionText",
     "itemFederalIdentification": "j:ItemFederalIdentification",
-    "itemNCICIdentification": "j:ItemNCICIdentification",
+    "itemNcicIdentification": "j:ItemNCICIdentification",
     "lessor": "j:Lessor",
     "itemPreviousYearValue": "j:ItemPreviousYearValue",
     "itemMissingValue": "j:ItemMissingValue",

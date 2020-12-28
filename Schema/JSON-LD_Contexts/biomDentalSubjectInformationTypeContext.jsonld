@@ -8,7 +8,7 @@
     "personBirthDate": "nc:PersonBirthDate",
     "subjectBirthDateEstimateRangeDuration": "biom:SubjectBirthDateEstimateRangeDuration",
     "personEthnicity": "nc:PersonEthnicityText",
-    "subjectDNARecordsAvailableCode": "biom:SubjectDNARecordsAvailableCode",
+    "subjectDnaRecordsAvailableCode": "biom:SubjectDNARecordsAvailableCode",
     "subjectCollectionLocationDescription": "biom:SubjectCollectionLocationDescriptionText",
     "subjectEstimatedDeathDate": "biom:SubjectEstimatedDeathDate",
     "subjectDeathDateRangeDuration": "biom:SubjectDeathDateRangeDuration",

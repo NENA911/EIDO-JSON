@@ -4,7 +4,7 @@
     "directDial": "nc:DirectDialTelephoneNumber",
     "full": "nc:FullTelephoneNumber",
     "international": "nc:InternationalTelephoneNumber",
-    "NANP": "nc:NANPTelephoneNumber",
+    "nanp": "nc:NANPTelephoneNumber",
     "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
     "jCategoryCode": "j:TelephoneNumberCategoryCode",
     "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",

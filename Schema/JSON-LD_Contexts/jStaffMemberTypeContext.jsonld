@@ -7,7 +7,7 @@
     "qualification": "j:StaffMemberQualification",
     "affiliatedPrimaryProgram": "j:StaffMemberAffiliatedPrimaryProgram",
     "appliedForce": "j:StaffMemberAppliedForce",
-    "badgeNumberID": "j:StaffMemberBadgeNumberID",
+    "badgeNumberId": "j:StaffMemberBadgeNumberID",
     "identification": "j:StaffMemberIdentification",
     "status": "j:StaffMemberStatus",
     "assignedWeapon": "j:StaffMemberAssignedWeapon",

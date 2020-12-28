@@ -6,7 +6,7 @@
     "facilityAreaDescription": "j:FacilityAreaDescriptionText",
     "facilityAreaStatus": "j:FacilityAreaStatusText",
     "facilityStaffingCapacityQuantity": "j:FacilityStaffingCapacityQuantity",
-    "facilityBuildingID": "j:FacilityBuildingID",
+    "facilityBuildingId": "j:FacilityBuildingID",
     "facilityBedVacantCountQuantity": "j:FacilityBedVacantCountQuantity",
     "facilityStatus": "j:FacilityStatus"
   }

@@ -5,7 +5,7 @@
     "name": "j:EducationCourseName",
     "terminatedReason": "j:EducationCourseTerminatedReasonText",
     "enrollmentDate": "j:EducationCourseEnrollmentDate",
-    "metadataRepositoryID": "j:EducationCourseMetadataRepositoryID",
+    "metadataRepositoryId": "j:EducationCourseMetadataRepositoryID",
     "priorUnitsCompletedQuantity": "j:EducationCoursePriorUnitsCompletedQuantity",
     "earnedGrade": "j:EducationCourseEarnedGradeText",
     "terminatedDate": "j:EducationCourseTerminatedDate",

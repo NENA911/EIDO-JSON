@@ -18,10 +18,10 @@
     "fingerprintFeaturesFeedback": "biom:FingerprintFeaturesFeedback",
     "fingerprintFeaturesVersion": "biom:FingerprintFeaturesVersionText",
     "fingerprintIdentification": "biom:FingerprintIdentification",
-    "isFormatNISTStandard": "biom:MinutiaeFormatNISTStandardIndicator",
+    "isFormatNistStandard": "biom:MinutiaeFormatNISTStandardIndicator",
     "fingerRidgeMinutia": "biom:FingerRidgeMinutia",
     "extendedFeatureSet": "biom:ExtendedFeatureSetMinutiae",
-    "INCITS": "biom:INCITSMinutiae",
+    "incits": "biom:INCITSMinutiae",
     "other": "biom:OtherMinutiae"
   }
 }

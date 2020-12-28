@@ -8,8 +8,8 @@
     "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
     "organizationName": "nc:OrganizationName",
     "organizationIdentification": "nc:OrganizationIdentification",
-    "sourceID": "nc:SourceIDText",
+    "sourceId": "nc:SourceIDText",
     "restrictionCategory": "em:RestrictionCategoryText",
-    "URLID": "nc:URLID"
+    "urlid": "nc:URLID"
   }
 }

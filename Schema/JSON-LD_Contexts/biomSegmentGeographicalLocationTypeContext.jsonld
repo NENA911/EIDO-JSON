@@ -1,16 +1,16 @@
 {
   "@context": {
     "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
-    "captureUTCDateTime": "biom:CaptureUTCDateTime",
+    "captureUtcDateTime": "biom:CaptureUTCDateTime",
     "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
     "location3DGeospatialCoordinate": "nc:Location3DGeospatialCoordinate",
-    "locationUTMCoordinateValue": "nc:LocationUTMCoordinateValue",
+    "locationUtmCoordinateValue": "nc:LocationUTMCoordinateValue",
     "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
-    "MGRSCoordinateString": "mo:MGRSCoordinateStringText",
+    "mgrsCoordinateString": "mo:MGRSCoordinateStringText",
     "geographicLocation": "biom:GeographicLocationText",
     "geographicLocationSystemName": "biom:GeographicLocationSystemName",
     "locationDescription": "nc:LocationDescriptionText",
-    "segmentIDList": "biom:SegmentIDList",
+    "segmentIdList": "biom:SegmentIDList",
     "cellPhoneTowerCode": "biom:CellPhoneTowerCodeText"
   }
 }

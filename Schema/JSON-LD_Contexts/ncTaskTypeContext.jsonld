@@ -2,7 +2,7 @@
   "@context": {
     "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
     "name": "nc:TaskName",
-    "taskID": "nc:TaskID",
+    "taskId": "nc:TaskID",
     "startDate": "nc:TaskStartDate",
     "endDate": "nc:TaskEndDate",
     "description": "nc:TaskDescriptionText",

@@ -1,21 +1,21 @@
 {
   "@context": {
     "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
-    "censusBlockID": "nc:LocaleCensusBlockID",
-    "censusTractID": "nc:LocaleCensusTractID",
+    "censusBlockId": "nc:LocaleCensusBlockID",
+    "censusTractId": "nc:LocaleCensusTractID",
     "communityName": "nc:LocaleCommunityName",
     "description": "nc:LocaleDescriptionText",
     "districtName": "nc:LocaleDistrictName",
     "emergencyServicesName": "nc:LocaleEmergencyServicesName",
-    "fireJurisdictionID": "nc:LocaleFireJurisdictionID",
+    "fireJurisdictionId": "nc:LocaleFireJurisdictionID",
     "judicialDistrictName": "nc:LocaleJudicialDistrictName",
     "neighborhoodName": "nc:LocaleNeighborhoodName",
     "policeBeat": "nc:LocalePoliceBeatText",
     "policeGrid": "nc:LocalePoliceGridText",
-    "policeJurisdictionID": "nc:LocalePoliceJurisdictionID",
+    "policeJurisdictionId": "nc:LocalePoliceJurisdictionID",
     "regionName": "nc:LocaleRegionName",
     "subdivisionName": "nc:LocaleSubdivisionName",
     "zoneName": "nc:LocaleZoneName",
-    "emergencyServicesJurisdictionID": "nc:LocaleEmergencyServicesJurisdictionID"
+    "emergencyServicesJurisdictionId": "nc:LocaleEmergencyServicesJurisdictionID"
   }
 }

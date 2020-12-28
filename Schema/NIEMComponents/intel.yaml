@@ -12,7 +12,7 @@ components:
             false otherwise. NIEM reference is intel:AuthenticIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        identificationIssuingCountryISO3166Alpha2Code:
+        identificationIssuingCountryIso3166Alpha2Code:
           type: array
           description: >-
             A GeoPolitical Entity from which this identification was issued.
@@ -102,7 +102,7 @@ components:
       title: 'intel:BiometricAugmentationType'
       description: A data type for additional information about a biometric.
       properties:
-        CBEFF:
+        cbeff:
           type: array
           description: >-
             A data format [not defined by the ICMWG] for biometric data. NIEM
@@ -171,7 +171,7 @@ components:
           description: 'A geospatial location. NIEM reference is nc:Location'
           items:
             $ref: nc.yaml#/components/schemas/ncLocationType
-        personMultimediaIDBinary:
+        personMultimediaIdBinary:
           type: array
           description: >-
             A non-textual indicator of a persons identity. NIEM reference is
@@ -295,14 +295,14 @@ components:
             intel:SubjectCategoryCodeText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        FBIECRCode:
+        fbiEcrCode:
           type: array
           description: >-
             A VGTOF Group Member Capability Criteria for Entry NIEM reference is
             intel:FBIECRCode
           items:
             $ref: ncic.yaml#/components/schemas/ncicECRCodeType
-        stateINACode:
+        stateInaCode:
           type: array
           description: >-
             A Department of State code that identifies the reason that a group
@@ -366,7 +366,7 @@ components:
       title: 'intel:AgencySubjectHandlingType'
       description: A data type for actions to take on contact with the person.
       properties:
-        FBICode:
+        fbiCode:
           type: array
           description: >-
             An action for the designated agency to take on contact with the
@@ -426,7 +426,7 @@ components:
         A data type for information about a persons allegiance to a sovereign
         state by right of birthplace or naturalization.
       properties:
-        personCitizenshipISO3166Alpha2Code:
+        personCitizenshipIso3166Alpha2Code:
           type: array
           description: >-
             A country that assigns rights, duties, and privileges to a person

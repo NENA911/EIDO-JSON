@@ -1,10 +1,10 @@
 {
   "@context": {
     "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
-    "DNAPedigreeID": "biom:DNAPedigreeID",
+    "dnaPedigreeId": "biom:DNAPedigreeID",
     "memberIndexNumeric": "biom:DNAPedigreeMemberIndexNumeric",
     "memberStatusCode": "biom:DNAPedigreeMemberStatusCode",
-    "sampleID": "biom:DNAPedigreeSampleID",
+    "sampleId": "biom:DNAPedigreeSampleID",
     "fatherIndexNumeric": "biom:DNAPedigreeFatherIndexNumeric",
     "motherIndexNumeric": "biom:DNAPedigreeMotherIndexNumeric",
     "comment": "biom:DNAPedigreeCommentText"

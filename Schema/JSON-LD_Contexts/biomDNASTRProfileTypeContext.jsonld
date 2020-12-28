@@ -2,16 +2,16 @@
   "@context": {
     "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
     "categoryCode": "biom:DNASTRProfileCategoryCode",
-    "DNALocusReferenceID": "biom:DNALocusReferenceID",
-    "isDNAAllele": "biom:DNAAlleleIndicator",
-    "isDNALocusAnalysis": "biom:DNALocusAnalysisIndicator",
-    "isDNAPreciseCall": "biom:DNAPreciseCallIndicator",
-    "DNAAlleleCall1": "biom:DNAAlleleCall1Text",
-    "DNAAlleleCall2": "biom:DNAAlleleCall2Text",
-    "DNAAlleleCall3": "biom:DNAAlleleCall3Text",
-    "DNABatchID": "biom:DNABatchID",
-    "DNAElectropherogramID": "biom:DNAElectropherogramID",
-    "DNAElectropherogramLadderID": "biom:DNAElectropherogramLadderID",
-    "DNAKit": "biom:DNAKit"
+    "dnaLocusReferenceId": "biom:DNALocusReferenceID",
+    "isDnaAllele": "biom:DNAAlleleIndicator",
+    "isDnaLocusAnalysis": "biom:DNALocusAnalysisIndicator",
+    "isDnaPreciseCall": "biom:DNAPreciseCallIndicator",
+    "dnaAlleleCall1": "biom:DNAAlleleCall1Text",
+    "dnaAlleleCall2": "biom:DNAAlleleCall2Text",
+    "dnaAlleleCall3": "biom:DNAAlleleCall3Text",
+    "dnaBatchId": "biom:DNABatchID",
+    "dnaElectropherogramId": "biom:DNAElectropherogramID",
+    "dnaElectropherogramLadderId": "biom:DNAElectropherogramLadderID",
+    "dnaKit": "biom:DNAKit"
   }
 }

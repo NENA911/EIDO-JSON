@@ -3,7 +3,7 @@
     "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
     "angleMeasure": "nc:AngleMeasure",
     "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
-    "angularNATOMilValue": "mo:AngularNATOMilValue",
+    "angularNatoMilValue": "mo:AngularNATOMilValue",
     "angularMeasureCompassCode": "mo:AngularMeasureCompassCode"
   }
 }

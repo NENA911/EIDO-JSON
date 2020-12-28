@@ -5,7 +5,7 @@
     "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
     "taskName": "nc:TaskName",
     "taskDescription": "nc:TaskDescriptionText",
-    "taskUUID": "mo:TaskUUID",
+    "taskUuid": "mo:TaskUUID",
     "taskPerformingUnit": "mo:TaskPerformingUnit",
     "taskStartDate": "nc:TaskStartDate",
     "taskEndDate": "nc:TaskEndDate"

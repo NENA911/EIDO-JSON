@@ -1,7 +1,7 @@
 {
   "@context": {
     "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
-    "ridgeCountReferenceID": "biom:RidgeCountReferenceID",
+    "ridgeCountReferenceId": "biom:RidgeCountReferenceID",
     "ridgeCountValue": "biom:RidgeCountValue"
   }
 }

@@ -224,7 +224,7 @@ components:
             scr:AddressClassification
           items:
             $ref: scr.yaml#/components/schemas/scrAddressClassificationType
-        isINSLookout:
+        isInsLookout:
           type: array
           description: >-
             True if the COUNTRY is on the DHS list as a potential threat to the
@@ -232,7 +232,7 @@ components:
             scr:INSLookoutIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        countryNameID:
+        countryNameId:
           type: array
           description: >-
             An identifier for a COUNTRY NAME. NIEM reference is
@@ -253,14 +253,14 @@ components:
             scr:CountryNameEndDate
           items:
             $ref: nc.yaml#/components/schemas/ncDateType
-        countrySubdivisionID:
+        countrySubdivisionId:
           type: array
           description: >-
             An identifier that represents a COUNTRY SUBDIVISION. NIEM reference
             is scr:CountrySubdivisionID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        countrySubdivisionNameID:
+        countrySubdivisionNameId:
           type: array
           description: >-
             An identifier that represents a COUNTRY SUBDIVISION NAME. NIEM
@@ -697,7 +697,7 @@ components:
       title: 'scr:PersonNameTextAugmentationType'
       description: A data type for additional information about a name of a person.
       properties:
-        nameTranslationRepresentationID:
+        nameTranslationRepresentationId:
           type: string
           description: >-
             An identifier that represents a NAME TRANSLATION REPRESENTATION NIEM
@@ -905,21 +905,21 @@ components:
             reference is scr:EndSalaryAmount
           items:
             $ref: nc.yaml#/components/schemas/ncAmountType
-        employeeStarNumberID:
+        employeeStarNumberId:
           type: array
           description: >-
             An identifier for a number representing the call number of an
             EMPLOYEE. NIEM reference is scr:EmployeeStarNumberID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        employeeBadgeNumberID:
+        employeeBadgeNumberId:
           type: array
           description: >-
             An identifier number for the the badge of the EMPLOYEE NIEM
             reference is scr:EmployeeBadgeNumberID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        employeeCallNumberID:
+        employeeCallNumberId:
           type: array
           description: >-
             An identifier for the call number of the EMPLOYEE NIEM reference is
@@ -3761,7 +3761,7 @@ components:
         A data type for additional information about a medical condition of a
         person.
       properties:
-        isNCICData:
+        isNcicData:
           type: array
           description: >-
             True if the National Crime Information Center (NCIC) data
@@ -3905,7 +3905,7 @@ components:
             scr:VehicleSubjectCategoryCodeText
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xstoken
-        conveyanceIDIssuingJurisdictionCode:
+        conveyanceIdIssuingJurisdictionCode:
           type: array
           description: >-
             A conveyance ID issuing jurisdiction type. NIEM reference is

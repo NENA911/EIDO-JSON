@@ -93,7 +93,7 @@ components:
       title: 'it:ObligationGuaranteeType'
       description: A data type for a set of details of how the obligation will be fulfilled
       properties:
-        guaranteeReferenceID:
+        guaranteeReferenceId:
           type: array
           description: >-
             A unique identifier for the obligation guarantee NIEM reference is

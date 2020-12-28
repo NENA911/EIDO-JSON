@@ -15,7 +15,7 @@
     "usage": "nc:FacilityUsageText",
     "capacityQuantity": "nc:FacilityCapacityQuantity",
     "systemIdentification": "nc:FacilitySystemIdentification",
-    "systemIPAddressID": "nc:FacilitySystemIPAddressID",
+    "systemIpAddressId": "nc:FacilitySystemIPAddressID",
     "maxOccupancyQuantity": "nc:FacilityMaxOccupancyQuantity",
     "operationalStatus": "nc:FacilityOperationalStatus",
     "description": "nc:FacilityDescriptionText",

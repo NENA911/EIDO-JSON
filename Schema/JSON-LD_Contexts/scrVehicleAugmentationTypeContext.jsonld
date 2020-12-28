@@ -5,6 +5,6 @@
     "vehicleCategoryCode": "scr:VehicleCategoryCodeText",
     "conveyanceCategoryCode": "scr:ConveyanceCategoryCode",
     "vehicleSubjectCategoryCode": "scr:VehicleSubjectCategoryCodeText",
-    "conveyanceIDIssuingJurisdictionCode": "scr:ConveyanceIDIssuingJurisdictionCode"
+    "conveyanceIdIssuingJurisdictionCode": "scr:ConveyanceIDIssuingJurisdictionCode"
   }
 }

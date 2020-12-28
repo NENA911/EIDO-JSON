@@ -3,7 +3,7 @@
     "em": "http://release.niem.gov/niem/domains/emergencyManagement/4.1/#",
     "insuranceName": "em:InsuranceName",
     "insurancePhoneNumber": "em:InsurancePhoneNumber",
-    "insuranceGroupNumberID": "em:InsuranceGroupNumberID",
+    "insuranceGroupNumberId": "em:InsuranceGroupNumberID",
     "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
     "address": "nc:Address"
   }

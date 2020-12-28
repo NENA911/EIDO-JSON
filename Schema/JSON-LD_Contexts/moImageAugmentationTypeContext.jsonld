@@ -3,7 +3,7 @@
     "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
     "imageName": "mo:ImageName",
     "imageIdentification": "mo:ImageIdentification",
-    "imageRelativeLocationURI": "mo:ImageRelativeLocationURI",
+    "imageRelativeLocationUri": "mo:ImageRelativeLocationURI",
     "imageDescription": "mo:ImageDescriptionText",
     "imageFileCategory": "mo:ImageFileCategoryText",
     "imageAlternateName": "mo:ImageAlternateName",

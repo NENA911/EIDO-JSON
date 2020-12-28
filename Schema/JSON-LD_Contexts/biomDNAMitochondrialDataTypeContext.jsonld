@@ -1,13 +1,13 @@
 {
   "@context": {
     "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
-    "DNAMitoControlRegion1": "biom:DNAMitoControlRegion1Text",
-    "DNAMitoControlRegion2": "biom:DNAMitoControlRegion2Text",
-    "DNAMitoBaseStartNumeric": "biom:DNAMitoBaseStartNumeric",
-    "DNAMitoBaseEndNumeric": "biom:DNAMitoBaseEndNumeric",
-    "DNAMitoBaseAdenineQuantity": "biom:DNAMitoBaseAdenineQuantity",
-    "DNAMitoBaseGuanineQuantity": "biom:DNAMitoBaseGuanineQuantity",
-    "DNAMitoBaseCytosineQuantity": "biom:DNAMitoBaseCytosineQuantity",
-    "DNAMitoBaseThymineQuantity": "biom:DNAMitoBaseThymineQuantity"
+    "dnaMitoControlRegion1": "biom:DNAMitoControlRegion1Text",
+    "dnaMitoControlRegion2": "biom:DNAMitoControlRegion2Text",
+    "dnaMitoBaseStartNumeric": "biom:DNAMitoBaseStartNumeric",
+    "dnaMitoBaseEndNumeric": "biom:DNAMitoBaseEndNumeric",
+    "dnaMitoBaseAdenineQuantity": "biom:DNAMitoBaseAdenineQuantity",
+    "dnaMitoBaseGuanineQuantity": "biom:DNAMitoBaseGuanineQuantity",
+    "dnaMitoBaseCytosineQuantity": "biom:DNAMitoBaseCytosineQuantity",
+    "dnaMitoBaseThymineQuantity": "biom:DNAMitoBaseThymineQuantity"
   }
 }

@@ -22,7 +22,7 @@
     "otherContentInformation": "biom:OtherContentInformation",
     "otherContentDiaryInformation": "biom:OtherContentDiaryInformation",
     "vocalSegmentQualityValue": "biom:VocalSegmentQualityValue",
-    "vocalCollisionIDList": "biom:VocalCollisionIDList",
+    "vocalCollisionIdList": "biom:VocalCollisionIDList",
     "segmentProcessingPriorityInformation": "biom:SegmentProcessingPriorityInformation",
     "segmentContentInformation": "biom:SegmentContentInformation",
     "segmentSpeakerCharacteristicsInformation": "biom:SegmentSpeakerCharacteristicsInformation",

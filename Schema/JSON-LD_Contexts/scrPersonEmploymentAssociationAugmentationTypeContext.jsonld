@@ -7,8 +7,8 @@
     "payRateAmount": "scr:PayRateAmount",
     "beginSalaryAmount": "scr:BeginSalaryAmount",
     "endSalaryAmount": "scr:EndSalaryAmount",
-    "employeeStarNumberID": "scr:EmployeeStarNumberID",
-    "employeeBadgeNumberID": "scr:EmployeeBadgeNumberID",
-    "employeeCallNumberID": "scr:EmployeeCallNumberID"
+    "employeeStarNumberId": "scr:EmployeeStarNumberID",
+    "employeeBadgeNumberId": "scr:EmployeeBadgeNumberID",
+    "employeeCallNumberId": "scr:EmployeeCallNumberID"
   }
 }

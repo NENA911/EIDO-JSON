@@ -3,6 +3,6 @@
     "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
     "category": "nc:ContactRadioCategoryText",
     "channel": "nc:ContactRadioChannelText",
-    "callSignID": "nc:ContactRadioCallSignID"
+    "callSignId": "nc:ContactRadioCallSignID"
   }
 }

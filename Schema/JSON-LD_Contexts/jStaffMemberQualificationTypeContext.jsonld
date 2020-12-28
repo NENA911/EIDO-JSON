@@ -10,7 +10,7 @@
     "isSAffordableCareAct": "j:StaffMemberQualificationsAffordableCareActIndicator",
     "satisfactionStatement": "j:StaffMemberQualificationSatisfactionStatementText",
     "statement": "j:StaffMemberQualificationStatementText",
-    "sTXProfessionalCertification": "j:StaffMemberQualificationsTXProfessionalCertificationText",
+    "sTxProfessionalCertification": "j:StaffMemberQualificationsTXProfessionalCertificationText",
     "staffMemberServiceYearsOfServiceNumeric": "j:StaffMemberServiceYearsOfServiceNumeric",
     "staffMemberSecurityClearanceResults": "j:StaffMemberSecurityClearanceResultsText",
     "isStaffMemberSecurityClearanceCompleted": "j:StaffMemberSecurityClearanceCompletedIndicator",

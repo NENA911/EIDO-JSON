@@ -83,7 +83,7 @@ components:
           description: 'A measure of an angular value. NIEM reference is nc:AngleMeasure'
           items:
             $ref: nc.yaml#/components/schemas/ncAngleMeasureType
-        angularNATOMilValue:
+        angularNatoMilValue:
           type: array
           description: >-
             A measure of an angle in NATO Mils (there are 6400 NATO Mils in a
@@ -194,7 +194,7 @@ components:
             activity or event. NIEM reference is mo:ContactInformationRankText
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        contactInformationSecureEmailID:
+        contactInformationSecureEmailId:
           type: array
           description: >-
             A secure electronic mailing address by which a person or
@@ -372,7 +372,7 @@ components:
       title: 'mo:WGS84LocationCylinderType'
       description: A data type for a cylinder described with WGS84 coordinates and meters.
       properties:
-        WGS84LocationPoint:
+        wgs84LocationPoint:
           type: array
           description: >-
             A data type for a 3D geometric point, defined by a single coordinate
@@ -473,7 +473,7 @@ components:
             mo:ImageIdentification
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
-        imageRelativeLocationURI:
+        imageRelativeLocationUri:
           type: array
           description: >-
             A URI describing the relative location of an image. NIEM reference
@@ -585,7 +585,7 @@ components:
             nc:TaskDescriptionText
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        taskUUID:
+        taskUuid:
           type: array
           description: >-
             An identifier for a 128 bit Universally Unique ID (UUID) for a task.
@@ -638,7 +638,7 @@ components:
         A data type for a military element whose structure is prescribed by
         competent authority.
       properties:
-        organizationUniqueID:
+        organizationUniqueId:
           type: array
           description: >-
             An identifier to uniquely distinguish one DoD organizational element
@@ -647,7 +647,7 @@ components:
             reference is mo:OrganizationUniqueID
           items:
             $ref: mo.yaml#/components/schemas/moForceManagementIDType
-        identificationCodeID:
+        identificationCodeId:
           type: array
           description: >-
             An identifier with a six-character, alphanumeric code that uniquely
@@ -784,7 +784,7 @@ components:
       title: 'mo:SixAlphaNumericIDType'
       description: A data type for a six-character alphanumeric number.
       properties:
-        unitLineNumberIDSimpleType:
+        unitLineNumberIdSimpleType:
           $ref: mo.yaml#/components/schemas/moUnitLineNumberIDSimpleType
         '@context':
           type: string

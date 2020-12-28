@@ -5,14 +5,14 @@ components:
       title: 'm:LocationAugmentationType'
       description: A data type for additional information about a location.
       properties:
-        COTPZoneRegionCode:
+        cotpZoneRegionCode:
           type: array
           description: >-
             A Captain of the Port (COTP) zone code. NIEM reference is
             m:COTPZoneRegionCode
           items:
             $ref: m.yaml#/components/schemas/mCOTPRegionCodeType
-        COTPZoneRegion:
+        cotpZoneRegion:
           type: array
           description: >-
             A region of a Captain of the Port (COTP) zone. NIEM reference is
@@ -53,7 +53,7 @@ components:
           description: 'A location identified by a port. NIEM reference is m:LocationPort'
           items:
             $ref: m.yaml#/components/schemas/mPortType
-        locationUNLOCODE:
+        locationUnlocode:
           type: array
           description: >-
             A location identified by a United Nations Location Code, also known
@@ -143,7 +143,7 @@ components:
                 reference is m:PortAnchorageCapabilityText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            BENumber:
+            beNumber:
               type: array
               description: >-
                 A BE (Basic Encyclopedia) number for a port. NIEM reference is
@@ -162,7 +162,7 @@ components:
               description: 'A code to identify a port. NIEM reference is m:PortCodeText'
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            COTPZone:
+            cotpZone:
               type: array
               description: >-
                 A Captain of the Port (COTP) zone to which a port belongs. NIEM
@@ -188,7 +188,7 @@ components:
                 m:PortDockQuantity
               items:
                 $ref: nc.yaml#/components/schemas/ncQuantityType
-            governmentISO3166Alpha2Code:
+            governmentIso3166Alpha2Code:
               type: array
               description: >-
                 A government which owns or operates a port, especially in the
@@ -211,7 +211,7 @@ components:
               description: 'An image of a port. NIEM reference is m:PortImage'
               items:
                 $ref: nc.yaml#/components/schemas/ncImageType
-            isISPSCompliant:
+            isIspsCompliant:
               type: array
               description: >-
                 True if a port is compliant with International Ship and Port
@@ -260,7 +260,7 @@ components:
                 m:PortThreatLevelText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            UNLOCODE:
+            unlocode:
               type: array
               description: >-
                 A United Nations Location Code of a maritime port, also known as
@@ -299,28 +299,28 @@ components:
         A data type for a geographical area or zone where a Coast Guard Captain
         of the Port (COTP) enforces port safety and security.
       properties:
-        COTPZoneRegionCode:
+        cotpZoneRegionCode:
           type: array
           description: >-
             A Captain of the Port (COTP) zone code. NIEM reference is
             m:COTPZoneRegionCode
           items:
             $ref: m.yaml#/components/schemas/mCOTPRegionCodeType
-        COTPZoneRegion:
+        cotpZoneRegion:
           type: array
           description: >-
             A region of a Captain of the Port (COTP) zone. NIEM reference is
             m:COTPZoneRegionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        COTPZoneContactInformation:
+        cotpZoneContactInformation:
           type: array
           description: >-
             A point of contact (POC) for a Captain of the Port (COTP) zone. NIEM
             reference is m:COTPZoneContactInformation
           items:
             $ref: nc.yaml#/components/schemas/ncContactInformationType
-        COTPZoneGoverningEntity:
+        cotpZoneGoverningEntity:
           type: array
           description: >-
             An organization that is responsible for a Captain of the Port (COTP)
@@ -392,14 +392,14 @@ components:
             designed or built. NIEM reference is m:VesselCategoryText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        isVesselCDCCapable:
+        isVesselCdcCapable:
           type: array
           description: >-
             True if a vessel is Certain Dangerous Cargo (CDC) capable; false
             otherwise. NIEM reference is m:VesselCDCCapableIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        isVesselCDCCargoOnBoard:
+        isVesselCdcCargoOnBoard:
           type: array
           description: >-
             True if a vessel is carrying hazardous or Certain Dangerous Cargo
@@ -462,7 +462,7 @@ components:
             m:VesselCruiseSpeedMeasure
           items:
             $ref: nc.yaml#/components/schemas/ncSpeedMeasureType
-        isVesselCVSSAOnBoard:
+        isVesselCvssaOnBoard:
           type: array
           description: >-
             True if a vessel has at least one crew member qualified to meet 46
@@ -503,7 +503,7 @@ components:
             m:VesselDisplacementMeasure
           items:
             $ref: nc.yaml#/components/schemas/ncVolumeMeasureType
-        vesselDOCCertificate:
+        vesselDocCertificate:
           type: array
           description: >-
             A Document of Compliance (DOC) Certificate for a vessel. NIEM
@@ -579,7 +579,7 @@ components:
             m:VesselHeloPadQuantity
           items:
             $ref: nc.yaml#/components/schemas/ncQuantityType
-        vesselHIN:
+        vesselHin:
           type: array
           description: >-
             A Hull Identification Number (HIN) for a vessel. NIEM reference is
@@ -647,28 +647,28 @@ components:
             m:VesselIncidentHistorySummaryText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        vesselIMONumber:
+        vesselImoNumber:
           type: array
           description: >-
             An International Maritime Organization Number (IMO number) of a
             vessel. NIEM reference is m:VesselIMONumberText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        vesselIRCS:
+        vesselIrcs:
           type: array
           description: >-
             An International Registered Call Sign (IRCS) of a vessel. NIEM
             reference is m:VesselIRCSText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        vesselISMCode:
+        vesselIsmCode:
           type: array
           description: >-
             An International Safety Management (ISM) Code of a vessel. NIEM
             reference is m:VesselISMCodeText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        vesselISSC:
+        vesselIssc:
           type: array
           description: >-
             An International Ship Security Certificate (ISSC) for a vessel. NIEM
@@ -736,7 +736,7 @@ components:
             m:VesselMaximumPassengerQuantity
           items:
             $ref: nc.yaml#/components/schemas/ncQuantityType
-        vesselMMSI:
+        vesselMmsi:
           type: array
           description: >-
             A Maritime Mobile Service Identity (MMSI) of a vessel. NIEM
@@ -755,7 +755,7 @@ components:
           description: 'A name of a vessel. NIEM reference is m:VesselName'
           items:
             $ref: nc.yaml#/components/schemas/ncProperNameTextType
-        vesselNationalFlagISO3166Alpha2Code:
+        vesselNationalFlagIso3166Alpha2Code:
           type: array
           description: >-
             A national flag under which a vessel sails. NIEM reference is
@@ -862,7 +862,7 @@ components:
             is m:VesselSafetyManagementCertificate
           items:
             $ref: m.yaml#/components/schemas/mCertificateType
-        vesselSCONUM:
+        vesselSconum:
           type: array
           description: >-
             A Ship Control Number (SCONUM) of a vessel. NIEM reference is
@@ -918,7 +918,7 @@ components:
             m:VesselSuperstructureLocation
           items:
             $ref: m.yaml#/components/schemas/mLocationOnVesselType
-        vesselTRDM:
+        vesselTrdm:
           type: array
           description: >-
             A US Transportation Command (USTRANSCOM) Reference Data Model (TRDM)
@@ -1001,7 +1001,7 @@ components:
         - $ref: m.yaml#/components/schemas/mCertificateType
         - type: object
           properties:
-            reasonInterimISSCIssued:
+            reasonInterimIsscIssued:
               type: array
               description: >-
                 A reason why an interim International Ship Security Certificate
@@ -1009,7 +1009,7 @@ components:
                 m:ReasonInterimISSCIssuedText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            recognizedISSCSecurityEntity:
+            recognizedIsscSecurityEntity:
               type: array
               description: >-
                 A Recognized Security Organization/Flag Administration for an
@@ -1017,7 +1017,7 @@ components:
                 is m:RecognizedISSCSecurityEntity
               items:
                 $ref: nc.yaml#/components/schemas/ncEntityType
-            ISSCCategory:
+            isscCategory:
               type: array
               description: >-
                 A kind of International Ship Security Certificate (ISSC). NIEM
@@ -1230,7 +1230,7 @@ components:
       title: 'm:PersonAugmentationType'
       description: 'A data type that supplements nc:PersonType.'
       properties:
-        personBiometricURI:
+        personBiometricUri:
           type: array
           description: >-
             A URI for a biometric identification for a person. NIEM reference is
@@ -1314,7 +1314,7 @@ components:
           description: 'A date a person was born. NIEM reference is nc:PersonBirthDate'
           items:
             $ref: nc.yaml#/components/schemas/ncDateType
-        personCitizenshipISO3166Alpha2Code:
+        personCitizenshipIso3166Alpha2Code:
           type: array
           description: >-
             A country that assigns rights, duties, and privileges to a person
@@ -1398,7 +1398,7 @@ components:
           description: 'A gender or sex of a person. NIEM reference is j:PersonSexCode'
           items:
             $ref: ncic.yaml#/components/schemas/ncicSEXCodeType
-        personSexNDExCode:
+        personSexNdExCode:
           type: array
           description: >-
             A code that identifies the gender or sex of the person. NIEM
@@ -1417,7 +1417,7 @@ components:
           description: 'A gender or sex of a person. NIEM reference is nc:PersonSexText'
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        personSSNIdentification:
+        personSsnIdentification:
           type: array
           description: >-
             A unique identification reference to a living person; assigned by
@@ -1459,7 +1459,7 @@ components:
           description: 'A date a person was born. NIEM reference is nc:PersonBirthDate'
           items:
             $ref: nc.yaml#/components/schemas/ncDateType
-        personCitizenshipISO3166Alpha2Code:
+        personCitizenshipIso3166Alpha2Code:
           type: array
           description: >-
             A country that assigns rights, duties, and privileges to a person
@@ -1543,7 +1543,7 @@ components:
           description: 'A gender or sex of a person. NIEM reference is j:PersonSexCode'
           items:
             $ref: ncic.yaml#/components/schemas/ncicSEXCodeType
-        personSexNDExCode:
+        personSexNdExCode:
           type: array
           description: >-
             A code that identifies the gender or sex of the person. NIEM
@@ -1562,7 +1562,7 @@ components:
           description: 'A gender or sex of a person. NIEM reference is nc:PersonSexText'
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        personSSNIdentification:
+        personSsnIdentification:
           type: array
           description: >-
             A unique identification reference to a living person; assigned by

@@ -7,7 +7,7 @@
     "day": "nc:DayDate",
     "fiscalYear": "nc:FiscalYearDate",
     "month": "nc:MonthDate",
-    "quarterID": "nc:QuarterID",
+    "quarterId": "nc:QuarterID",
     "year": "nc:YearDate",
     "yearMonth": "nc:YearMonthDate",
     "zuluTime": "nc:ZuluDateTime",

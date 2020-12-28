@@ -5,7 +5,7 @@
     "privateMailbox": "nc:AddressPrivateMailboxText",
     "secondaryUnit": "nc:AddressSecondaryUnitText",
     "buildingName": "nc:AddressBuildingName",
-    "deliveryPointID": "nc:AddressDeliveryPointID",
+    "deliveryPointId": "nc:AddressDeliveryPointID",
     "deliveryPoint": "nc:AddressDeliveryPointText",
     "locationRouteName": "nc:LocationRouteName",
     "locationStreet": "nc:LocationStreet",

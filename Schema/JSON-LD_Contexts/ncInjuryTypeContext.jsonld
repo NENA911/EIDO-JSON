@@ -2,11 +2,11 @@
   "@context": {
     "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
     "locationCode": "j:InjuryLocationCode",
-    "locationNDEXCode": "j:InjuryLocationNDEXCode",
+    "locationNdexCode": "j:InjuryLocationNDEXCode",
     "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
     "location": "nc:InjuryLocationText",
     "categoryCode": "j:InjuryCategoryCode",
-    "categoryNDExCode": "j:InjuryCategoryNDExCode",
+    "categoryNdExCode": "j:InjuryCategoryNDExCode",
     "category": "nc:InjuryCategoryText",
     "date": "nc:InjuryDate",
     "description": "nc:InjuryDescriptionText",

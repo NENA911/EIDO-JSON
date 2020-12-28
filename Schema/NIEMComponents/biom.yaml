@@ -92,14 +92,14 @@ components:
       title: 'biom:BiometricDataType'
       description: A data type for a representation of the identifying Biometric in.
       properties:
-        biometricID:
+        biometricId:
           type: array
           description: >-
             An identifier used to uniquely refer to a biometric. NIEM reference
             is biom:BiometricID
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
-        ANSIRecordCategoryCode:
+        ansiRecordCategoryCode:
           type: array
           description: >-
             A kind of record, for example 1 for Type-1, 14 for Type-14 NIEM
@@ -113,7 +113,7 @@ components:
             biom:BiometricClassification
           items:
             $ref: biom.yaml#/components/schemas/biomBiometricClassificationType
-        DNASample:
+        dnaSample:
           type: array
           description: >-
             A representation or an encoding of the DNA data of a biological
@@ -164,12 +164,12 @@ components:
             a transaction package NIEM reference is biom:BiometricContextImage
           items:
             $ref: biom.yaml#/components/schemas/biomSegmentedImageType
-        CBEFFImage:
+        cbeffImage:
           type: array
           description: 'An image of a CBEFF record NIEM reference is biom:CBEFFImage'
           items:
             $ref: biom.yaml#/components/schemas/biomCBEFFImageType
-        DNAElectropherogramScreenshotImage:
+        dnaElectropherogramScreenshotImage:
           type: array
           description: >-
             An image of screenshot of a DNA electropherogram NIEM reference is
@@ -496,42 +496,42 @@ components:
             biom:BiometricCapture
           items:
             $ref: biom.yaml#/components/schemas/biomBiometricCaptureType
-        DNALaboratory:
+        dnaLaboratory:
           type: array
           description: >-
             An organization responsible for processing DNA samples NIEM
             reference is biom:DNALaboratory
           items:
             $ref: biom.yaml#/components/schemas/biomDNALaboratoryType
-        DNAAnalysisQuantityCode:
+        dnaAnalysisQuantityCode:
           type: array
           description: >-
             A number of analyses in this record NIEM reference is
             biom:DNAAnalysisQuantityCode
           items:
             $ref: biom.yaml#/components/schemas/biomDNAAnalysisQuantityCodeType
-        DNADonor:
+        dnaDonor:
           type: array
           description: >-
             A description of the subject of a DNA sample NIEM reference is
             biom:DNADonor
           items:
             $ref: biom.yaml#/components/schemas/biomDNADonorType
-        DNAClaimedRelationshipCode:
+        dnaClaimedRelationshipCode:
           type: array
           description: >-
             A claimed or purported relationship to be tested by DNA NIEM
             reference is biom:DNAClaimedRelationshipCode
           items:
             $ref: biom.yaml#/components/schemas/biomDNARelationshipCodeType
-        DNAValidatedRelationshipCode:
+        dnaValidatedRelationshipCode:
           type: array
           description: >-
             A validated relationship established by DNA NIEM reference is
             biom:DNAValidatedRelationshipCode
           items:
             $ref: biom.yaml#/components/schemas/biomDNARelationshipCodeType
-        DNAPedigree:
+        dnaPedigree:
           type: array
           description: >-
             A description of a pedigree originating and held at a DNA laboratory
@@ -545,7 +545,7 @@ components:
             reference is biom:DNASampleOrigin
           items:
             $ref: biom.yaml#/components/schemas/biomDNASampleOriginType
-        DNATypingTechnologyCategoryCode:
+        dnaTypingTechnologyCategoryCode:
           type: array
           description: >-
             A kind of typing technology used on a DNA sample NIEM reference is
@@ -560,59 +560,59 @@ components:
             reference is biom:DNASampleCollectionMethodText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        DNAProfileStorageDate:
+        dnaProfileStorageDate:
           type: array
           description: >-
             A date of the storage of a DNA profile NIEM reference is
             biom:DNAProfileStorageDate
           items:
             $ref: nc.yaml#/components/schemas/ncDateType
-        DNAProfile:
+        dnaProfile:
           type: array
           description: 'A description of a DNA profile NIEM reference is biom:DNAProfile'
           items:
             $ref: biom.yaml#/components/schemas/biomDNAProfileType
-        DNASTRProfile:
+        dnastrProfile:
           type: array
           description: >-
             An autosomal STR, X-STR, and Y-STR DNA profile NIEM reference is
             biom:DNASTRProfile
           items:
             $ref: biom.yaml#/components/schemas/biomDNASTRProfileType
-        DNAMitochondrialData:
+        dnaMitochondrialData:
           type: array
           description: >-
             A description of DNA mitochondrial data NIEM reference is
             biom:DNAMitochondrialData
           items:
             $ref: biom.yaml#/components/schemas/biomDNAMitochondrialDataType
-        DNAElectropherogram:
+        dnaElectropherogram:
           type: array
           description: 'A DNA electropherogram NIEM reference is biom:DNAElectropherogram'
           items:
             $ref: biom.yaml#/components/schemas/biomDNAElectropherogramType
-        DNAElectropherogramLadder:
+        dnaElectropherogramLadder:
           type: array
           description: >-
             A ladder/control sample DNA electropherogram NIEM reference is
             biom:DNAElectropherogramLadder
           items:
             $ref: biom.yaml#/components/schemas/biomDNAElectropherogramType
-        DNAGenotypeDistributionCode:
+        dnaGenotypeDistributionCode:
           type: array
           description: >-
             A kind of DNA genotype distribution NIEM reference is
             biom:DNAGenotypeDistributionCode
           items:
             $ref: biom.yaml#/components/schemas/biomDNAGenotypeDistributionCodeType
-        DNAGenotypeAllelePair:
+        dnaGenotypeAllelePair:
           type: array
           description: >-
             A DNA genotype allele pair NIEM reference is
             biom:DNAGenotypeAllelePair
           items:
             $ref: biom.yaml#/components/schemas/biomDNAGenotypeAllelePairType
-        DNAComment:
+        dnaComment:
           type: array
           description: >-
             A kind of comment regarding a DNA sample NIEM reference is
@@ -647,7 +647,7 @@ components:
           items:
             $ref: >-
               biom.yaml#/components/schemas/biomGeographicSampleAcquisitionLocationType
-        captureUTCDateTime:
+        captureUtcDateTime:
           type: array
           description: >-
             A UTC date and time for the capture of a biometric sample NIEM
@@ -728,7 +728,7 @@ components:
         A data type to contain the location where the biometric sample/original
         source/context information was acquired.
       properties:
-        captureUTCDateTime:
+        captureUtcDateTime:
           type: array
           description: >-
             A UTC date and time for the capture of a biometric sample NIEM
@@ -742,7 +742,7 @@ components:
             reference is nc:Location3DGeospatialCoordinate
           items:
             $ref: nc.yaml#/components/schemas/ncLocation3DGeospatialCoordinateType
-        locationUTMCoordinateValue:
+        locationUtmCoordinateValue:
           type: array
           description: >-
             A coordinate from the Universal Transverse Mercator (UTM) Coordinate
@@ -751,7 +751,7 @@ components:
             nc:LocationUTMCoordinateValue
           items:
             $ref: nc.yaml#/components/schemas/ncUTMCoordinateType
-        MGRSCoordinateString:
+        mgrsCoordinateString:
           type: array
           description: >-
             A complete coordinate string from the Military Grid Reference System
@@ -793,7 +793,7 @@ components:
         A data type definition contains a set of information regarding the
         captured device information
       properties:
-        deviceID:
+        deviceId:
           type: array
           description: 'An identifier for a capture device NIEM reference is biom:DeviceID'
           items:
@@ -1331,7 +1331,7 @@ components:
         A data type for a description of a pedigree originating and held at a
         DNA laboratory
       properties:
-        DNAPedigreeID:
+        dnaPedigreeId:
           type: array
           description: >-
             An identifier (i.e., file number) of a DNA pedigree NIEM reference
@@ -1353,7 +1353,7 @@ components:
             biom:DNAPedigreeMemberStatusCode
           items:
             $ref: biom.yaml#/components/schemas/biomDNAPedigreeMemberStatusCodeType
-        sampleID:
+        sampleId:
           type: array
           description: >-
             An Identifier for a DNA sample linking it to this related pedigree
@@ -1430,7 +1430,7 @@ components:
         A data type for a description of the cellular type and origin of a DNA
         sample
       properties:
-        DNACellularCategoryCode:
+        dnaCellularCategoryCode:
           type: array
           description: >-
             A kind of origination cell from where a DNA sample was collected
@@ -1538,7 +1538,7 @@ components:
             biom:DNAProfileResultCode
           items:
             $ref: biom.yaml#/components/schemas/biomDNAProfileResultCodeType
-        DNAProfileID:
+        dnaProfileId:
           type: array
           description: >-
             An identifier for uniquely identifying the profile or sample for
@@ -1621,35 +1621,35 @@ components:
             is biom:DNASTRProfileCategoryCode
           items:
             $ref: biom.yaml#/components/schemas/biomDNASTRProfileCategoryCodeType
-        DNALocusReferenceID:
+        dnaLocusReferenceId:
           type: array
           description: >-
             An identifier for a reference number of a DNA locus NIEM reference
             is biom:DNALocusReferenceID
           items:
             $ref: biom.yaml#/components/schemas/biomInteger1to999Type
-        isDNAAllele:
+        isDnaAllele:
           type: array
           description: >-
             True if DNA allele is found; false otherwise NIEM reference is
             biom:DNAAlleleIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        isDNALocusAnalysis:
+        isDnaLocusAnalysis:
           type: array
           description: >-
             True if DNA locus is analyzed; false otherwise NIEM reference is
             biom:DNALocusAnalysisIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        isDNAPreciseCall:
+        isDnaPreciseCall:
           type: array
           description: >-
             True if DNA precise call has been determined; false otherwise NIEM
             reference is biom:DNAPreciseCallIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        DNAAlleleCall1:
+        dnaAlleleCall1:
           type: array
           description: >-
             A kind of a DNA allele call (first of three possible) for the
@@ -1657,7 +1657,7 @@ components:
             biom:DNAAlleleCall1Text
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        DNAAlleleCall2:
+        dnaAlleleCall2:
           type: array
           description: >-
             A kind of a DNA allele call (second of three possible) for the
@@ -1665,7 +1665,7 @@ components:
             biom:DNAAlleleCall2Text
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        DNAAlleleCall3:
+        dnaAlleleCall3:
           type: array
           description: >-
             A kind of a DNA allele call (third of three possible) for the
@@ -1673,28 +1673,28 @@ components:
             biom:DNAAlleleCall3Text
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        DNABatchID:
+        dnaBatchId:
           type: array
           description: >-
             A identifier of the DNA batch to which a locus belongs NIEM
             reference is biom:DNABatchID
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        DNAElectropherogramID:
+        dnaElectropherogramId:
           type: array
           description: >-
             An identifier for a DNA electropherogram image NIEM reference is
             biom:DNAElectropherogramID
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        DNAElectropherogramLadderID:
+        dnaElectropherogramLadderId:
           type: array
           description: >-
             A unique identifier for a DNA electropherogram ladder image NIEM
             reference is biom:DNAElectropherogramLadderID
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        DNAKit:
+        dnaKit:
           type: array
           description: 'A DNA kit NIEM reference is biom:DNAKit'
           items:
@@ -1747,7 +1747,7 @@ components:
       title: 'biom:DNAKitType'
       description: A data type for a DNA kit
       properties:
-        referenceID:
+        referenceId:
           type: array
           description: >-
             An identifier for a reference number of a DNA kit NIEM reference is
@@ -1783,21 +1783,21 @@ components:
       title: 'biom:DNAMitochondrialDataType'
       description: A data type for a description of DNA mitochondrial data
       properties:
-        DNAMitoControlRegion1:
+        dnaMitoControlRegion1:
           type: array
           description: >-
             A kind of DNA codes for mitochondrial DNA region HV1 NIEM reference
             is biom:DNAMitoControlRegion1Text
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        DNAMitoControlRegion2:
+        dnaMitoControlRegion2:
           type: array
           description: >-
             A kind of DNA codes for mitochondrial DNA regions HV2 and HV3 NIEM
             reference is biom:DNAMitoControlRegion2Text
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        DNAMitoBaseStartNumeric:
+        dnaMitoBaseStartNumeric:
           type: array
           description: >-
             A number indicating the mitochondrial DNA base composition starting
@@ -1805,7 +1805,7 @@ components:
             DNA NIEM reference is biom:DNAMitoBaseStartNumeric
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xspositiveInteger
-        DNAMitoBaseEndNumeric:
+        dnaMitoBaseEndNumeric:
           type: array
           description: >-
             A number indicating the mitochondrial DNA base composition ending
@@ -1813,7 +1813,7 @@ components:
             DNA NIEM reference is biom:DNAMitoBaseEndNumeric
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xspositiveInteger
-        DNAMitoBaseAdenineQuantity:
+        dnaMitoBaseAdenineQuantity:
           type: array
           description: >-
             A count of the mitochondrial DNA base composition adenines in the
@@ -1821,7 +1821,7 @@ components:
             biom:DNAMitoBaseAdenineQuantity
           items:
             $ref: biom.yaml#/components/schemas/biomInteger1to99Type
-        DNAMitoBaseGuanineQuantity:
+        dnaMitoBaseGuanineQuantity:
           type: array
           description: >-
             A count of the mitochondrial DNA base composition guanines in the
@@ -1829,7 +1829,7 @@ components:
             biom:DNAMitoBaseGuanineQuantity
           items:
             $ref: biom.yaml#/components/schemas/biomInteger1to99Type
-        DNAMitoBaseCytosineQuantity:
+        dnaMitoBaseCytosineQuantity:
           type: array
           description: >-
             A count of the mitochondrial DNA base composition cytosines in the
@@ -1837,7 +1837,7 @@ components:
             biom:DNAMitoBaseCytosineQuantity
           items:
             $ref: biom.yaml#/components/schemas/biomInteger1to99Type
-        DNAMitoBaseThymineQuantity:
+        dnaMitoBaseThymineQuantity:
           type: array
           description: >-
             A count of the mitochondrial DNA base composition thymines in the
@@ -1872,7 +1872,7 @@ components:
       title: 'biom:DNAElectropherogramType'
       description: A data type for a DNA electropherogram
       properties:
-        DNAElectropherogramID:
+        dnaElectropherogramId:
           type: array
           description: >-
             An identifier for a DNA electropherogram image NIEM reference is
@@ -2244,14 +2244,14 @@ components:
       title: 'biom:ImageQualityType'
       description: A data type for a set of properties relating to image quality
       properties:
-        qualityAlgorithmProductID:
+        qualityAlgorithmProductId:
           type: array
           description: >-
             A unique identifier for a quality-algorithm product, assigned by the
             vendor NIEM reference is biom:QualityAlgorithmProductID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsunsignedShort
-        qualityAlgorithmVendorID:
+        qualityAlgorithmVendorId:
           type: array
           description: >-
             A unique identifier for the vendor of a quality-algorithm product
@@ -2524,7 +2524,7 @@ components:
       title: 'biom:DNAGenotypeAllelePairType'
       description: A data type for a DNA genotype allele pair
       properties:
-        DNALocusReferenceID:
+        dnaLocusReferenceId:
           type: array
           description: >-
             An identifier for a reference number of a DNA locus NIEM reference
@@ -2538,7 +2538,7 @@ components:
             biom:DNAGenotypeAllelePairText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        DNALocusGenotypeProbabilityValue:
+        dnaLocusGenotypeProbabilityValue:
           type: array
           description: >-
             A probability of an individual having these alleles at a single
@@ -2795,7 +2795,7 @@ components:
             nc:PersonEthnicityText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        subjectDNARecordsAvailableCode:
+        subjectDnaRecordsAvailableCode:
           type: array
           description: >-
             A code to indicate if DNA records are available for the subject NIEM
@@ -3054,7 +3054,7 @@ components:
         A data type for a description of the prior dental history of the
         subject, if known.
       properties:
-        dentalHistoryADAReferenceCode:
+        dentalHistoryAdaReferenceCode:
           type: array
           description: >-
             An ADA reference code to indicate whether the assignment of tooth
@@ -3094,7 +3094,7 @@ components:
             NIEM reference is biom:ToothDataRecordingDateEstimateRangeDuration
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsduration
-        toothID:
+        toothId:
           type: array
           description: >-
             An identifier of a tooth. Teeth shall be numbered utilizing the
@@ -3109,7 +3109,7 @@ components:
             biom:OriginalSystemEncodingText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        toothDataADAReferenceCodeList:
+        toothDataAdaReferenceCodeList:
           type: array
           description: >-
             A list of tooth data ADA reference valid codes from ANSI/ADA
@@ -3125,7 +3125,7 @@ components:
             biom:TransmittedToothEncodingText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        toothIDCertaintyCode:
+        toothIdCertaintyCode:
           type: array
           description: >-
             A code to indicate whether the assignment of tooth numbers was done
@@ -3152,7 +3152,7 @@ components:
         A data type for a list of tooth data ADA reference valid codes from
         ANSI/ADA Standard No. 1058, Section 9
       properties:
-        ADAReferenceCode:
+        adaReferenceCode:
           type: array
           description: >-
             A kind of ADA reference code text NIEM reference is
@@ -3209,7 +3209,7 @@ components:
             NIEM reference is biom:MouthDataRecordingDateEstimateRangeDuration
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsduration
-        mouthDataADAReferenceCodeList:
+        mouthDataAdaReferenceCodeList:
           type: array
           description: >-
             A list of mouth data ADA reference valid codes from ANSI/ADA
@@ -3237,7 +3237,7 @@ components:
         A data type for a list of mouth data ADA reference valid codes from
         ANSI/ADA Standard No. 1058, Section 10
       properties:
-        ADAReferenceCode:
+        adaReferenceCode:
           type: array
           description: >-
             A kind of ADA reference code text NIEM reference is
@@ -3487,7 +3487,7 @@ components:
             biom:VocalSegmentQualityValue
           items:
             $ref: biom.yaml#/components/schemas/biomVocalSegmentQualityValueType
-        vocalCollisionIDList:
+        vocalCollisionIdList:
           type: array
           description: >-
             A list of time segments, each identified as containing a vocal
@@ -3597,7 +3597,7 @@ components:
             biom.yaml#/components/schemas/biomGeographicSampleAcquisitionLocationType
         - type: object
           properties:
-            segmentIDList:
+            segmentIdList:
               type: array
               description: >-
                 A list of segment identifiers. NIEM reference is
@@ -3623,7 +3623,7 @@ components:
       title: 'biom:SegmentIDListType'
       description: A data type for a list of specific time segment identifiers.
       properties:
-        segmentID:
+        segmentId:
           type: array
           description: >-
             An identifier for a specific time segment. NIEM reference is
@@ -3974,7 +3974,7 @@ components:
       title: 'biom:TrackListType'
       description: A data type for a list of recorded tracks on a physical media object.
       properties:
-        trackID:
+        trackId:
           type: array
           description: >-
             An identifier for a specific recorded track on a physical media
@@ -4278,7 +4278,7 @@ components:
         A data type that lists basic information and timings within the voice
         recording of interest.
       properties:
-        segmentID:
+        segmentId:
           type: array
           description: >-
             An identifier for a specific time segment. NIEM reference is
@@ -4292,7 +4292,7 @@ components:
             is biom:TrackChannelList
           items:
             $ref: biom.yaml#/components/schemas/biomTrackListType
-        relativeStartTimeInMSValue:
+        relativeStartTimeInMsValue:
           type: array
           description: >-
             An indication in microseconds the time of the start of the redaction
@@ -4300,7 +4300,7 @@ components:
             biom:RelativeStartTimeInMSValue
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xspositiveInteger
-        relativeEndTimeInMSValue:
+        relativeEndTimeInMsValue:
           type: array
           description: >-
             An indication in microseconds the time of the end of the redaction
@@ -4449,19 +4449,19 @@ components:
       title: 'biom:VocalSegmentQualityValueType'
       description: A data type for vocal segment quality values.
       properties:
-        segmentIDList:
+        segmentIdList:
           type: array
           description: 'A list of segment identifiers. NIEM reference is biom:SegmentIDList'
           items:
             $ref: biom.yaml#/components/schemas/biomSegmentIDListType
-        qualityAlgorithmVendorID:
+        qualityAlgorithmVendorId:
           type: array
           description: >-
             A unique identifier for the vendor of a quality-algorithm product
             NIEM reference is biom:QualityAlgorithmVendorID
           items:
             $ref: biom.yaml#/components/schemas/biomHexDoubleByteType
-        qualityAlgorithmProductID:
+        qualityAlgorithmProductId:
           type: array
           description: >-
             A unique identifier for a quality-algorithm product, assigned by the
@@ -4494,7 +4494,7 @@ components:
         A data type for a list of identified segments, indicating the priority
         with which the segments should be processed.
       properties:
-        segmentIDList:
+        segmentIdList:
           type: array
           description: 'A list of segment identifiers. NIEM reference is biom:SegmentIDList'
           items:
@@ -4535,7 +4535,7 @@ components:
         list of identified time segments, including provision for semantic
         transcripts, phonetic transcriptions and translations of the segments.
       properties:
-        segmentIDList:
+        segmentIdList:
           type: array
           description: 'A list of segment identifiers. NIEM reference is biom:SegmentIDList'
           items:
@@ -4611,7 +4611,7 @@ components:
         within the segment, including intelligibility, emotional state and
         impairment.
       properties:
-        segmentIDList:
+        segmentIdList:
           type: array
           description: 'A list of segment identifiers. NIEM reference is biom:SegmentIDList'
           items:
@@ -4734,7 +4734,7 @@ components:
       title: 'biom:SpeakerListType'
       description: A data type for a list of speaker identifiers.
       properties:
-        speakerID:
+        speakerId:
           type: array
           description: 'An identifier of a speaker. NIEM reference is biom:SpeakerID'
           items:
@@ -4751,7 +4751,7 @@ components:
         A data type for a list of Type-2 records referenced in another record in
         the transaction.
       properties:
-        type2CrossReferenceID:
+        type2CrossReferenceId:
           type: array
           description: >-
             An identifier for a reference number for a Type-2 record in a
@@ -4924,7 +4924,7 @@ components:
         A data type for a description of the transducer and transmission channel
         used to capture a recording.
       properties:
-        segmentIDList:
+        segmentIdList:
           type: array
           description: 'A list of segment identifiers. NIEM reference is biom:SegmentIDList'
           items:
@@ -5187,7 +5187,7 @@ components:
             NIEM reference is biom:FingerprintIdentification
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
-        isFormatNISTStandard:
+        isFormatNistStandard:
           type: array
           description: >-
             True if the NIST standard format for minutiae is used; false
@@ -5209,7 +5209,7 @@ components:
             palm print image NIEM reference is biom:ExtendedFeatureSetMinutiae
           items:
             $ref: biom.yaml#/components/schemas/biomExtendedFeatureSetMinutiaeType
-        INCITS:
+        incits:
           type: array
           description: >-
             A set of minutiae definitions conforming to Section 5 of the ANSI
@@ -5759,7 +5759,7 @@ components:
       title: 'biom:MinutiaType'
       description: A data type definition for a single minutia.
       properties:
-        minutiaID:
+        minutiaId:
           type: array
           description: >-
             An index identifier for uniquely denoting a minutia NIEM reference
@@ -5878,7 +5878,7 @@ components:
       title: 'biom:MinutiaRidgeCountType'
       description: A data type for a minutia ridge count
       properties:
-        ridgeCountReferenceID:
+        ridgeCountReferenceId:
           type: array
           description: >-
             An index identifier for a distant minutia point NIEM reference is
@@ -6255,28 +6255,28 @@ components:
             reference is biom:MinutiaeImageRidgePath
           items:
             $ref: biom.yaml#/components/schemas/biomMinutiaeImageRidgePathType
-        EFSMinutia:
+        efsMinutia:
           type: array
           description: >-
             A minutia in a friction ridge image NIEM reference is
             biom:EFSMinutia
           items:
             $ref: biom.yaml#/components/schemas/biomEFSMinutiaType
-        EFSRidgeCountAlgorithmCode:
+        efsRidgeCountAlgorithmCode:
           type: array
           description: >-
             A quadrant matrix for associating minutiae NIEM reference is
             biom:EFSRidgeCountAlgorithmCode
           items:
             $ref: biom.yaml#/components/schemas/biomEFSRidgeCountAlgorithmCodeType
-        EFSRidgeCountItem:
+        efsRidgeCountItem:
           type: array
           description: >-
             A ridge count between two minutiae NIEM reference is
             biom:EFSRidgeCountItem
           items:
             $ref: biom.yaml#/components/schemas/biomEFSRidgeCountItemType
-        EFSTemporaryLine:
+        efsTemporaryLine:
           type: array
           description: >-
             A latent examiner to annotate a friction ridge image with temporary
@@ -6286,7 +6286,7 @@ components:
             biom:EFSTemporaryLine
           items:
             $ref: biom.yaml#/components/schemas/biomEFSTemporaryLineType
-        EFSFeatureColor:
+        efsFeatureColor:
           type: array
           description: >-
             A field enables a latent print examiner to annotate individual
@@ -7177,14 +7177,14 @@ components:
       title: 'biom:MinutiaeRidgeCountCoreToDeltaType'
       description: A data type for a core to delta ridge count
       properties:
-        coreID:
+        coreId:
           type: array
           description: >-
             An index identifier of a particular core NIEM reference is
             biom:CoreID
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        deltaID:
+        deltaId:
           type: array
           description: >-
             An identifier denoting the index number of a particular delta NIEM
@@ -7574,7 +7574,7 @@ components:
           items:
             $ref: >-
               biom.yaml#/components/schemas/biomMinutiaeFeatureDetectionMethodCodeType
-        minutiaeAlgorithmVendorID:
+        minutiaeAlgorithmVendorId:
           type: array
           description: >-
             An identifier for a vendor, or name of vendor of the minutiae
@@ -7582,7 +7582,7 @@ components:
             reference is biom:MinutiaeAlgorithmVendorID
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        minutiaeAlgorithmID:
+        minutiaeAlgorithmId:
           type: array
           description: >-
             An identifier for a minutiae extraction and encoding algorithm NIEM
@@ -8079,7 +8079,7 @@ components:
             biom:ImageReferenceIdentification
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
-        imageReferenceID:
+        imageReferenceId:
           type: array
           description: >-
             An identifier for denoting (or indexing together) instances of a
@@ -8115,7 +8115,7 @@ components:
         A data type for a correspondence between features in different friction
         ridge images
       properties:
-        featureLabelID:
+        featureLabelId:
           type: array
           description: >-
             An index identifier or unique label applied to minutiae by a latent
@@ -8139,7 +8139,7 @@ components:
             reference is biom:MinutiaeFeatureCategoryCode
           items:
             $ref: biom.yaml#/components/schemas/biomMinutiaeFeatureCategoryCodeType
-        correspondingSubfieldID:
+        correspondingSubfieldId:
           type: array
           description: >-
             An identifier that uniquely designates which subfield occurrence is
@@ -8241,7 +8241,7 @@ components:
             biom:ImageReferenceIdentification
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
-        imageReferenceID:
+        imageReferenceId:
           type: array
           description: >-
             An identifier for denoting (or indexing together) instances of a
@@ -8378,7 +8378,7 @@ components:
             biom:ImageReferenceIdentification
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
-        imageReferenceID:
+        imageReferenceId:
           type: array
           description: >-
             An identifier for denoting (or indexing together) instances of a
@@ -8542,14 +8542,14 @@ components:
       title: 'biom:MinutiaeRidgeCountItemType'
       description: A data type for a distance between two minutiae in ridges
       properties:
-        minutiaID:
+        minutiaId:
           type: array
           description: >-
             An index identifier for uniquely denoting a minutia NIEM reference
             is biom:MinutiaID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xspositiveInteger
-        minutiaReferenceID:
+        minutiaReferenceId:
           type: array
           description: >-
             An index identifier for a second minutia, when two minutia are to be
@@ -8750,7 +8750,7 @@ components:
         A data type for a set of minutiae definitions conforming to Section 5 of
         ANSI INCITS 378-2004 Standard
       properties:
-        CBEFFProductID:
+        cbeffProductId:
           type: array
           description: >-
             A unique registered identifier of minutiae encoding equipment;
@@ -8764,7 +8764,7 @@ components:
             reference is biom:DeviceCertificationCode
           items:
             $ref: biom.yaml#/components/schemas/biomDeviceCertificationCodeType
-        deviceID:
+        deviceId:
           type: array
           description: 'An identifier for a capture device NIEM reference is biom:DeviceID'
           items:
@@ -8831,7 +8831,7 @@ components:
             biom:MinutiaeQuantity
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xspositiveInteger
-        INCITSMinutia:
+        incitsMinutia:
           type: array
           description: >-
             A single minutia, as defined by the ANSI INCITS 378-2004 Standard
@@ -8910,7 +8910,7 @@ components:
         A data type for a single minutia, as defined by the ANSI INCITS 378-2004
         Standard
       properties:
-        minutiaID:
+        minutiaId:
           type: array
           description: >-
             An index identifier for uniquely denoting a minutia NIEM reference
@@ -8992,7 +8992,7 @@ components:
       title: 'biom:MinutiaeRidgeCountType'
       description: A data type for a proximity of one minutia to another
       properties:
-        INCITSRidgeCountAlgorithmCode:
+        incitsRidgeCountAlgorithmCode:
           type: array
           description: >-
             A quadrant matrix for associating minutiae, as defined by the ANSI
@@ -9759,7 +9759,7 @@ components:
       title: 'biom:ImageSegmentType'
       description: A data type for a portion of an image
       properties:
-        imageSegmentID:
+        imageSegmentId:
           type: array
           description: >-
             An index identifier for a particular set of segmentation coordinates
@@ -9826,21 +9826,21 @@ components:
         - $ref: biom.yaml#/components/schemas/biomImageType
         - type: object
           properties:
-            CBEFFFormatOwnerID:
+            cbeffFormatOwnerId:
               type: array
               description: >-
                 An assigned identifier specifying a biometric format NIEM
                 reference is biom:CBEFFFormatOwnerID
               items:
                 $ref: biom.yaml#/components/schemas/biomHexDoubleByteType
-            CBEFFFormatCategoryID:
+            cbeffFormatCategoryId:
               type: array
               description: >-
                 An identifier of a format designated by the owner NIEM reference
                 is biom:CBEFFFormatCategoryID
               items:
                 $ref: biom.yaml#/components/schemas/biomHexDoubleByteType
-            CBEFFVersionID:
+            cbeffVersionId:
               type: array
               description: >-
                 A identifier for the version number of the CBEFF specification
@@ -9848,7 +9848,7 @@ components:
                 biom:CBEFFVersionID
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            CBEFFCategoryCode:
+            cbeffCategoryCode:
               type: array
               description: >-
                 A kind of biometric modality as described by CBEFF NIEM
@@ -10068,7 +10068,7 @@ components:
                 NIEM reference is biom:FaceImageDescriptionText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            physicalFeatureNCICCode:
+            physicalFeatureNcicCode:
               type: array
               description: >-
                 A description of a physical feature from the NCIC codes. NIEM
@@ -10194,7 +10194,7 @@ components:
                 biom:FaceImageOcclusion
               items:
                 $ref: biom.yaml#/components/schemas/biomFaceImageOcclusionType
-            type10CrossReferenceID:
+            type10CrossReferenceId:
               type: array
               description: >-
                 An identifier for an image reference number that correlates type
@@ -10670,7 +10670,7 @@ components:
             biom:FeaturePointHorizontalCoordinateValue
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsnonNegativeInteger
-        featurePointID:
+        featurePointId:
           type: array
           description: >-
             An identifier for a particular feature point, defined by ISO/IEC
@@ -11194,7 +11194,7 @@ components:
               items:
                 $ref: >-
                   biom.yaml#/components/schemas/biomFrictionRidgeImageSegmentPositionSquareType
-            fingerprintImageNISTQuality:
+            fingerprintImageNistQuality:
               type: array
               description: >-
                 A quality measure of a fingerprint, as defined by NIST NIEM
@@ -11216,7 +11216,7 @@ components:
                 reference is biom:FingerprintImageSegmentationQuality
               items:
                 $ref: biom.yaml#/components/schemas/biomFingerprintImageQualityType
-            fingerprintSimultaneousCaptureID:
+            fingerprintSimultaneousCaptureId:
               type: array
               description: >-
                 An index identifier to reference a set of prints captured
@@ -11438,7 +11438,7 @@ components:
           description: 'A finger position code NIEM reference is biom:FingerPositionCode'
           items:
             $ref: biom.yaml#/components/schemas/biomFingerPositionCodeType
-        NISTQualityMeasure:
+        nistQualityMeasure:
           type: array
           description: >-
             A value of a NIST Fingerprint Image Quality score, predicted matcher
@@ -11467,14 +11467,14 @@ components:
           description: 'A finger position code NIEM reference is biom:FingerPositionCode'
           items:
             $ref: biom.yaml#/components/schemas/biomFingerPositionCodeType
-        qualityAlgorithmProductID:
+        qualityAlgorithmProductId:
           type: array
           description: >-
             A unique identifier for a quality-algorithm product, assigned by the
             vendor NIEM reference is biom:QualityAlgorithmProductID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsunsignedShort
-        qualityAlgorithmVendorID:
+        qualityAlgorithmVendorId:
           type: array
           description: >-
             A unique identifier for the vendor of a quality-algorithm product
@@ -11770,14 +11770,14 @@ components:
           items:
             $ref: >-
               biom.yaml#/components/schemas/biomLatentFrictionRidgePositionCodeType
-        qualityAlgorithmProductID:
+        qualityAlgorithmProductId:
           type: array
           description: >-
             A unique identifier for a quality-algorithm product, assigned by the
             vendor NIEM reference is biom:QualityAlgorithmProductID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsunsignedShort
-        qualityAlgorithmVendorID:
+        qualityAlgorithmVendorId:
           type: array
           description: >-
             A unique identifier for the vendor of a quality-algorithm product
@@ -12454,14 +12454,14 @@ components:
             biom:PalmPositionCode
           items:
             $ref: biom.yaml#/components/schemas/biomPalmPositionCodeType
-        qualityAlgorithmProductID:
+        qualityAlgorithmProductId:
           type: array
           description: >-
             A unique identifier for a quality-algorithm product, assigned by the
             vendor NIEM reference is biom:QualityAlgorithmProductID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsunsignedShort
-        qualityAlgorithmVendorID:
+        qualityAlgorithmVendorId:
           type: array
           description: >-
             A unique identifier for the vendor of a quality-algorithm product
@@ -12520,7 +12520,7 @@ components:
                 biom:PhysicalFeatureSize
               items:
                 $ref: biom.yaml#/components/schemas/biomPhysicalFeatureSizeType
-            type10CrossReferenceID:
+            type10CrossReferenceId:
               type: array
               description: >-
                 An identifier for an image reference number that correlates type
@@ -12592,7 +12592,7 @@ components:
               items:
                 $ref: >-
                   biom.yaml#/components/schemas/biomDentalVisualImageDataInformationType
-            physicalFeatureNCICCode:
+            physicalFeatureNcicCode:
               type: array
               description: >-
                 A description of a physical feature from the NCIC codes. NIEM
@@ -13176,14 +13176,14 @@ components:
             biom:PlantarPositionCode
           items:
             $ref: biom.yaml#/components/schemas/biomPlantarPositionCodeType
-        qualityAlgorithmProductID:
+        qualityAlgorithmProductId:
           type: array
           description: >-
             A unique identifier for a quality-algorithm product, assigned by the
             vendor NIEM reference is biom:QualityAlgorithmProductID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsunsignedShort
-        qualityAlgorithmVendorID:
+        qualityAlgorithmVendorId:
           type: array
           description: >-
             A unique identifier for the vendor of a quality-algorithm product

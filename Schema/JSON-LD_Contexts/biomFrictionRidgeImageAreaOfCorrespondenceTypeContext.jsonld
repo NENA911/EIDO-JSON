@@ -2,7 +2,7 @@
   "@context": {
     "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
     "imageReferenceIdentification": "biom:ImageReferenceIdentification",
-    "imageReferenceID": "biom:ImageReferenceID",
+    "imageReferenceId": "biom:ImageReferenceID",
     "imageSegmentPolygon": "biom:ImageSegmentPolygon",
     "minutiaeComment": "biom:MinutiaeCommentText"
   }

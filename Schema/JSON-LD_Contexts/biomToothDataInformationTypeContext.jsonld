@@ -3,11 +3,11 @@
     "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
     "toothDataRecordingDate": "biom:ToothDataRecordingDate",
     "toothDataRecordingDateEstimateRangeDuration": "biom:ToothDataRecordingDateEstimateRangeDuration",
-    "toothID": "biom:ToothID",
+    "toothId": "biom:ToothID",
     "originalSystemEncoding": "biom:OriginalSystemEncodingText",
-    "toothDataADAReferenceCodeList": "biom:ToothDataADAReferenceCodeList",
+    "toothDataAdaReferenceCodeList": "biom:ToothDataADAReferenceCodeList",
     "transmittedToothEncoding": "biom:TransmittedToothEncodingText",
-    "toothIDCertaintyCode": "biom:ToothIDCertaintyCode",
+    "toothIdCertaintyCode": "biom:ToothIDCertaintyCode",
     "toothDataAdditionalDescriptive": "biom:ToothDataAdditionalDescriptiveText"
   }
 }

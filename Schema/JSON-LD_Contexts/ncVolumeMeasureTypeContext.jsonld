@@ -38,7 +38,7 @@
     "personPrenatalAgeUnitCode": "j:PersonPrenatalAgeUnitCode",
     "timeUnitCode": "nc:TimeUnitCode",
     "engineDisplacementUnitCode": "j:EngineDisplacementUnitCode",
-    "engineDisplacementUnitNCICCode": "j:EngineDisplacementUnitNCICCode",
+    "engineDisplacementUnitNcicCode": "j:EngineDisplacementUnitNCICCode",
     "volumeUnitCode": "nc:VolumeUnitCode"
   }
 }

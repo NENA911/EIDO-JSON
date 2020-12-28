@@ -9,7 +9,7 @@
     "geoEllipse": "geo:Ellipse",
     "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
     "moEllipse": "mo:Ellipse",
-    "WGS84LocationEllipse": "mo:WGS84LocationEllipse",
-    "WGS84LocationExternalPolygon": "mo:WGS84LocationExternalPolygon"
+    "wgs84LocationEllipse": "mo:WGS84LocationEllipse",
+    "wgs84LocationExternalPolygon": "mo:WGS84LocationExternalPolygon"
   }
 }

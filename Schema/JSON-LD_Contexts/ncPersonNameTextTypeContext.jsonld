@@ -8,6 +8,6 @@
     "isPartial": "nc:partialIndicator",
     "softwareVersion": "nc:softwareVersionText",
     "isPersonNameInitial": "nc:personNameInitialIndicator",
-    "sequenceID": "nc:sequenceID"
+    "sequenceId": "nc:sequenceID"
   }
 }

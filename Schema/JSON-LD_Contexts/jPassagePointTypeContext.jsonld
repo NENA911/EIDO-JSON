@@ -40,7 +40,7 @@
     "securityCategoryCode": "j:PassagePointSecurityCategoryCode",
     "securityCategory": "j:PassagePointSecurityCategoryText",
     "methodCode": "j:PassagePointMethodCode",
-    "methodNDExCode": "j:PassagePointMethodNDExCode",
+    "methodNdExCode": "j:PassagePointMethodNDExCode",
     "methodOfAccessCode": "j:PassagePointMethodOfAccessCode",
     "methodOfAccess": "j:PassagePointMethodOfAccessText",
     "text": "j:PassagePointText",

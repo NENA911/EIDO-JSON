@@ -102,7 +102,7 @@ components:
             nc:PersonCircumcisionIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        citizenshipISO3166Alpha2Code:
+        citizenshipIso3166Alpha2Code:
           type: array
           description: >-
             A country that assigns rights, duties, and privileges to a person
@@ -519,7 +519,7 @@ components:
             locations and genetics. NIEM reference is j:PersonRaceCode
           items:
             $ref: ncic.yaml#/components/schemas/ncicRACECodeType
-        raceNDExCode:
+        raceNdExCode:
           type: array
           description: >-
             A classification of a person based on factors such as geographical
@@ -590,7 +590,7 @@ components:
           description: 'A gender or sex of a person. NIEM reference is j:PersonSexCode'
           items:
             $ref: ncic.yaml#/components/schemas/ncicSEXCodeType
-        sexNDExCode:
+        sexNdExCode:
           type: array
           description: >-
             A code that identifies the gender or sex of the person. NIEM
@@ -644,7 +644,7 @@ components:
             NIEM reference is nc:PersonSpeechDescriptionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        SSNIdentification:
+        ssnIdentification:
           type: array
           description: >-
             A unique identification reference to a living person; assigned by
@@ -687,7 +687,7 @@ components:
             nc:PersonUnionStatusText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        isUSCitizen:
+        isUsCitizen:
           type: array
           description: >-
             True if a person is a citizen of the United States; false otherwise.
@@ -715,14 +715,14 @@ components:
             nc:PersonWeightMeasure
           items:
             $ref: nc.yaml#/components/schemas/ncWeightMeasureType
-        XRayImage:
+        xRayImage:
           type: array
           description: >-
             An X-Ray image of a person or part of a person. NIEM reference is
             nc:PersonXRayImage
           items:
             $ref: nc.yaml#/components/schemas/ncImageType
-        nationalityANSID20Code:
+        nationalityAnsid20Code:
           type: array
           description: >-
             A country of a person's citizenship or a country in which a person
@@ -730,7 +730,7 @@ components:
             j:PersonNationalityANSID20Code
           items:
             $ref: aamva_d20.yaml#/components/schemas/aamva_d20CountryCodeType
-        nationalityISO3166Alpha2Code:
+        nationalityIso3166Alpha2Code:
           type: array
           description: >-
             A country of a person's citizenship or a country in which a person
@@ -1180,7 +1180,7 @@ components:
           description: 'A month. NIEM reference is nc:MonthDate'
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsgMonth
-        quarterID:
+        quarterId:
           type: array
           description: >-
             An identifier of a three-month period in a calendar or fiscal year.
@@ -1407,7 +1407,7 @@ components:
           description: 'An entity which owns a property item. NIEM reference is nc:ItemOwner'
           items:
             $ref: nc.yaml#/components/schemas/ncEntityType
-        ownerAppliedID:
+        ownerAppliedId:
           type: array
           description: >-
             An identifier applied to an item by the owner. NIEM reference is
@@ -1443,7 +1443,7 @@ components:
             official purposes. NIEM reference is nc:ItemReceiptIdentification
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
-        RFIdentification:
+        rfIdentification:
           type: array
           description: >-
             An identification of an item based on radio waves. NIEM reference is
@@ -1484,7 +1484,7 @@ components:
             nc:ItemValue
           items:
             $ref: nc.yaml#/components/schemas/ncItemValueType
-        visibleID:
+        visibleId:
           type: array
           description: >-
             An identifier of an item that is visible on the item itself. NIEM
@@ -1646,7 +1646,7 @@ components:
           items:
             $ref: >-
               commodity.yaml#/components/schemas/commodityConveyanceCategoryCodeType
-        creditBankIDCardCategoryCode:
+        creditBankIdCardCategoryCode:
           type: array
           description: >-
             A kind of credit/bank/ID card. NIEM reference is
@@ -1711,22 +1711,22 @@ components:
             j:HousewaresCategoryCode
           items:
             $ref: ndex.yaml#/components/schemas/ndexHousewaresCategoryCodeType
-        categoryNCICTYPACode:
+        categoryNcictypaCode:
           type: array
           description: 'A kind of property. NIEM reference is j:ItemCategoryNCICTYPACode'
           items:
             $ref: ncic.yaml#/components/schemas/ncicTYPAECodeType
-        categoryNCICTYPCode:
+        categoryNcictypCode:
           type: array
           description: 'A kind of property. NIEM reference is j:ItemCategoryNCICTYPCode'
           items:
             $ref: ncic.yaml#/components/schemas/ncicGTYPCodeType
-        categoryNIBRSCode:
+        categoryNibrsCode:
           type: array
           description: 'A kind of property. NIEM reference is j:ItemCategoryNIBRSCode'
           items:
             $ref: ucr.yaml#/components/schemas/ucrArresteeWeaponCodeType
-        categoryNIBRSPropertyCategoryCode:
+        categoryNibrsPropertyCategoryCode:
           type: array
           description: >-
             A kind of property. NIEM reference is
@@ -1738,7 +1738,7 @@ components:
           description: 'A kind of property item. NIEM reference is nc:ItemCategoryText'
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        propertyCategoryFBICode:
+        propertyCategoryFbiCode:
           type: array
           description: >-
             A kind of property item. NIEM reference is
@@ -1942,7 +1942,7 @@ components:
             NIEM reference is nc:IdentificationJurisdiction
           items:
             $ref: nc.yaml#/components/schemas/ncJurisdictionType
-        identificationID:
+        identificationId:
           type: array
           description: 'An identifier. NIEM reference is nc:IdentificationID'
           items:
@@ -1984,14 +1984,14 @@ components:
             NIEM reference is scr:PersonDesignatorCategoryCode
           items:
             $ref: scr.yaml#/components/schemas/scrPersonDesignatorCategoryCodeType
-        personIDCategoryCode:
+        personIdCategoryCode:
           type: array
           description: >-
             A kind of identifier assigned to a person. NIEM reference is
             j:PersonIDCategoryCode
           items:
             $ref: ncic.yaml#/components/schemas/ncicMNUCodeType
-        isTemporaryID:
+        isTemporaryId:
           type: array
           description: >-
             True if a badge is temporary; false otherwise NIEM reference is
@@ -2059,14 +2059,14 @@ components:
         A data type for a geopolitical area in which an organization, person, or
         object has a specific range of authority.
       properties:
-        authorityURI:
+        authorityUri:
           type: array
           description: >-
             A URI for an organization or other authority that assigns
             identifiers to things identified. NIEM reference is mo:AuthorityURI
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsanyURI
-        ANSID20AuthorityCode:
+        ansid20AuthorityCode:
           type: array
           description: >-
             An area, state, region, or other geographic unit over which some
@@ -2158,7 +2158,7 @@ components:
             subdivision of a location. NIEM reference is nc:CountryCode
           items:
             $ref: nc.yaml#/components/schemas/ncCodeType
-        locationFIPS10-4PlusNCTCCode:
+        locationFips10-4PlusNctcCode:
           type: array
           description: >-
             A union of additional country codes managed by NCTC and the FIPS
@@ -2173,7 +2173,7 @@ components:
             scr:LocationCountryIdentification
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
-        locationISO3166Alpha2Code:
+        locationIso3166Alpha2Code:
           type: array
           description: >-
             A country, territory, dependency, or other such geopolitical
@@ -2181,7 +2181,7 @@ components:
             nc:LocationCountryISO3166Alpha2Code
           items:
             $ref: iso_3166.yaml#/components/schemas/iso_3166CountryAlpha2CodeType
-        locationISO3166Alpha3Code:
+        locationIso3166Alpha3Code:
           type: array
           description: >-
             A country, territory, dependency, or other such geopolitical
@@ -2189,7 +2189,7 @@ components:
             nc:LocationCountryISO3166Alpha3Code
           items:
             $ref: iso_3166.yaml#/components/schemas/iso_3166CountryAlpha3CodeType
-        locationISO3166NumericCode:
+        locationIso3166NumericCode:
           type: array
           description: >-
             A country, territory, dependency, or other such geopolitical
@@ -2217,7 +2217,7 @@ components:
       properties:
         value:
           type: string
-        codeListURI:
+        codeListUri:
           type: string
           description: >-
             A universal identifier for a code list. NIEM reference is
@@ -2250,7 +2250,7 @@ components:
           description: 'A province. NIEM reference is nc:LocationCanadianProvinceCode'
           items:
             $ref: can.yaml#/components/schemas/canCanadianProvinceCodeType
-        locationFIPS5-2Code:
+        locationFips5-2Code:
           type: array
           description: >-
             A state, commonwealth, province, or other such geopolitical
@@ -2266,7 +2266,7 @@ components:
             nc:LocationStateName
           items:
             $ref: nc.yaml#/components/schemas/ncProperNameTextType
-        locationNCICLISCode:
+        locationNciclisCode:
           type: array
           description: >-
             A state, commonwealth, province, or other such geopolitical
@@ -2274,7 +2274,7 @@ components:
             j:LocationStateNCICLISCode
           items:
             $ref: ncic.yaml#/components/schemas/ncicCountryCodeType
-        locationNCICLSTACode:
+        locationNciclstaCode:
           type: array
           description: >-
             A state, commonwealth, province, or other such geopolitical
@@ -2282,7 +2282,7 @@ components:
             j:LocationStateNCICLSTACode
           items:
             $ref: ncic.yaml#/components/schemas/ncicCountryCodeType
-        locationNCICRESCode:
+        locationNcicresCode:
           type: array
           description: >-
             A state, commonwealth, province, or other such geopolitical
@@ -2290,7 +2290,7 @@ components:
             j:LocationStateNCICRESCode
           items:
             $ref: ncic.yaml#/components/schemas/ncicCountryCodeType
-        locationUSPostalServiceCode:
+        locationUsPostalServiceCode:
           type: array
           description: >-
             A state, commonwealth, province, or other such geopolitical
@@ -2305,7 +2305,7 @@ components:
             subdivision of a country. NIEM reference is nc:StateCode
           items:
             $ref: nc.yaml#/components/schemas/ncCodeType
-        ISO3166Code:
+        iso3166Code:
           type: array
           description: >-
             A state, commonwealth, province, or other such geopolitical
@@ -2649,7 +2649,7 @@ components:
           description: 'A kind of document. NIEM reference is scr:DocumentCategoryCode'
           items:
             $ref: scr.yaml#/components/schemas/scrDocumentCategoryCodeType
-        categoryID:
+        categoryId:
           type: array
           description: >-
             An identifier of a kind of information in a document. NIEM reference
@@ -2797,7 +2797,7 @@ components:
             reference is nc:DocumentExpirationDate
           items:
             $ref: nc.yaml#/components/schemas/ncDateType
-        fileControlID:
+        fileControlId:
           type: array
           description: >-
             An identifier assigned to a document to locate it within a file
@@ -2832,7 +2832,7 @@ components:
             of a document. NIEM reference is nc:DocumentFormatText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        groupID:
+        groupId:
           type: array
           description: >-
             An identifier of a group to which a document belongs. NIEM reference
@@ -2883,7 +2883,7 @@ components:
             nc:DocumentLocation
           items:
             $ref: nc.yaml#/components/schemas/ncLocationType
-        locationURI:
+        locationUri:
           type: array
           description: >-
             A location of an electronic representation of a document. NIEM
@@ -2979,7 +2979,7 @@ components:
             using a shared resource. NIEM reference is nc:DocumentRightsText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        sequenceID:
+        sequenceId:
           type: array
           description: >-
             An identifier that determines the document order in a set of related
@@ -3123,7 +3123,7 @@ components:
             nc:DocumentIssuanceLocation
           items:
             $ref: nc.yaml#/components/schemas/ncLocationType
-        isEUDataPrivacy:
+        isEuDataPrivacy:
           type: array
           description: >-
             True if the data is protected under the EU Data Protection
@@ -3174,7 +3174,7 @@ components:
         A data type for a digital representation of an object encoded in a
         binary format.
       properties:
-        binaryID:
+        binaryId:
           type: array
           description: >-
             An identifier that references a binary object. NIEM reference is
@@ -3228,7 +3228,7 @@ components:
             nc:HexBinaryObject
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xshexBinary
-        UTF8Object:
+        utf8Object:
           type: array
           description: >-
             A UTF8 binary encoding of data. NIEM reference is
@@ -3270,7 +3270,7 @@ components:
             NIEM reference is nc:BinaryFormatStandardName
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        URI:
+        uri:
           type: array
           description: >-
             A URL or file reference of a binary object. NIEM reference is
@@ -3433,7 +3433,7 @@ components:
             is it:LocationCategoryCodeText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        categoryNDExCode:
+        categoryNdExCode:
           type: array
           description: >-
             A kind of location or area. NIEM reference is
@@ -3499,7 +3499,7 @@ components:
             reference is geo:LocationGeospatialPoint
           items:
             $ref: geo.yaml#/components/schemas/geoPointType
-        UTMCoordinateValue:
+        utmCoordinateValue:
           type: array
           description: >-
             A coordinate from the Universal Transverse Mercator (UTM) Coordinate
@@ -3508,7 +3508,7 @@ components:
             nc:LocationUTMCoordinateValue
           items:
             $ref: nc.yaml#/components/schemas/ncUTMCoordinateType
-        MGRSCoordinateString:
+        mgrsCoordinateString:
           type: array
           description: >-
             A complete coordinate string from the Military Grid Reference System
@@ -3518,56 +3518,56 @@ components:
             mo:MGRSCoordinateStringText
           items:
             $ref: mo.yaml#/components/schemas/moMGRSCoordinateStringType
-        MGRSUPS1MeterCoordinateValue:
+        mgrsups1MeterCoordinateValue:
           type: array
           description: >-
             A 1-meter precision level MGRS UPS coordinate. NIEM reference is
             mo:MGRSUPS1MeterCoordinateValue
           items:
             $ref: mo.yaml#/components/schemas/moMGRSUPS1MeterCoordinateType
-        MGRSUTM100000MeterCoordinateValue:
+        mgrsutm100000MeterCoordinateValue:
           type: array
           description: >-
             A 100,000-meter precision level MGRS UTM coordinate. NIEM reference
             is mo:MGRSUTM100000MeterCoordinateValue
           items:
             $ref: mo.yaml#/components/schemas/moMGRSUTM100000MeterCoordinateType
-        MGRSUTM10000MeterCoordinateValue:
+        mgrsutm10000MeterCoordinateValue:
           type: array
           description: >-
             A 10,000-meter precision level MGRS UTM coordinate. NIEM reference
             is mo:MGRSUTM10000MeterCoordinateValue
           items:
             $ref: mo.yaml#/components/schemas/moMGRSUTM10000MeterCoordinateType
-        MGRSUTM1000MeterCoordinateValue:
+        mgrsutm1000MeterCoordinateValue:
           type: array
           description: >-
             A 1,000-meter precision level MGRS UTM coordinate. NIEM reference is
             mo:MGRSUTM1000MeterCoordinateValue
           items:
             $ref: mo.yaml#/components/schemas/moMGRSUTM1000MeterCoordinateType
-        MGRSUTM100MeterCoordinateValue:
+        mgrsutm100MeterCoordinateValue:
           type: array
           description: >-
             A 100-meter precision level MGRS UTM coordinate. NIEM reference is
             mo:MGRSUTM100MeterCoordinateValue
           items:
             $ref: mo.yaml#/components/schemas/moMGRSUTM100MeterCoordinateType
-        MGRSUTM10MeterCoordinateValue:
+        mgrsutm10MeterCoordinateValue:
           type: array
           description: >-
             A 10-meter precision level MGRS UTM coordinate. NIEM reference is
             mo:MGRSUTM10MeterCoordinateValue
           items:
             $ref: mo.yaml#/components/schemas/moMGRSUTM10MeterCoordinateType
-        MGRSUTM1MeterCoordinateValue:
+        mgrsutm1MeterCoordinateValue:
           type: array
           description: >-
             A 1-meter precision level MGRS UTM coordinate. NIEM reference is
             mo:MGRSUTM1MeterCoordinateValue
           items:
             $ref: mo.yaml#/components/schemas/moMGRSUTM1MeterCoordinateType
-        WGS84Cylinder:
+        wgs84Cylinder:
           type: array
           description: >-
             A location identified by a cylinder oriented vertically and centered
@@ -3776,7 +3776,7 @@ components:
             nc:AddressBuildingName
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        deliveryPointID:
+        deliveryPointId:
           type: array
           description: >-
             An identifier of a single place or unit at which mail is delivered.
@@ -4160,7 +4160,7 @@ components:
         A data type for a location identified by a unit of a grid system
         overlaid on an area.
       properties:
-        addressGridID:
+        addressGridId:
           type: array
           description: >-
             An identifier that references a unique address grid system. NIEM
@@ -4196,7 +4196,7 @@ components:
           description: 'A name of a highway. NIEM reference is nc:HighwayName'
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        highwayID:
+        highwayId:
           type: array
           description: 'An identifier of a highway. NIEM reference is nc:HighwayID'
           items:
@@ -4259,7 +4259,7 @@ components:
             with zero being due North. NIEM reference is mo:Ellipse
           items:
             $ref: mo.yaml#/components/schemas/moEllipseType
-        WGS84LocationEllipse:
+        wgs84LocationEllipse:
           type: array
           description: >-
             A  area region described by an ellipse specified by a point, major
@@ -4267,7 +4267,7 @@ components:
             degrees. NIEM reference is mo:WGS84LocationEllipse
           items:
             $ref: mo.yaml#/components/schemas/moWGS84EllipseType
-        WGS84LocationExternalPolygon:
+        wgs84LocationExternalPolygon:
           type: array
           description: >-
             An area region described by a polygon with no interior region, using
@@ -4585,7 +4585,7 @@ components:
       title: 'nc:ContactInformationType'
       description: A data type for how to contact a person or an organization.
       properties:
-        contactEmailID:
+        contactEmailId:
           type: array
           description: >-
             An electronic mailing address by which a person or organization may
@@ -4622,7 +4622,7 @@ components:
             nc:ContactTelephoneNumber
           items:
             $ref: nc.yaml#/components/schemas/ncTelephoneNumberType
-        contactWebsiteURI:
+        contactWebsiteUri:
           type: array
           description: >-
             A website address by which a person or organization may be
@@ -4708,7 +4708,7 @@ components:
             nc:InstantMessengerServiceName
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        screenID:
+        screenId:
           type: array
           description: >-
             An account identifier used to reference a person or organization
@@ -4742,7 +4742,7 @@ components:
             nc:ContactRadioChannelText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        callSignID:
+        callSignId:
           type: array
           description: >-
             An identifier of a person using a radio. NIEM reference is
@@ -4780,7 +4780,7 @@ components:
             nc:InternationalTelephoneNumber
           items:
             $ref: nc.yaml#/components/schemas/ncInternationalTelephoneNumberType
-        NANP:
+        nanp:
           type: array
           description: >-
             A North American Numbering Plan telephone number. NIEM reference is
@@ -4849,7 +4849,7 @@ components:
             reference is nc:DirectDialTelephoneNetworkText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        directDialTelephoneNumberID:
+        directDialTelephoneNumberId:
           type: array
           description: >-
             A shortened sequence of numbers that can be used in place of a full
@@ -4868,14 +4868,14 @@ components:
       title: 'nc:FullTelephoneNumberType'
       description: A data type for a full telephone number.
       properties:
-        telephoneNumberFullID:
+        telephoneNumberFullId:
           type: array
           description: >-
             A complete telephone number. NIEM reference is
             nc:TelephoneNumberFullID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        telephoneSuffixID:
+        telephoneSuffixId:
           type: array
           description: >-
             An additional sequence of numbers to be entered after a call
@@ -4893,19 +4893,19 @@ components:
       title: 'nc:InternationalTelephoneNumberType'
       description: A data type for an international telephone number.
       properties:
-        telephoneCountryCodeID:
+        telephoneCountryCodeId:
           type: array
           description: >-
             An international dialing code for a country. NIEM reference is
             nc:TelephoneCountryCodeID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        telephoneNumberID:
+        telephoneNumberId:
           type: array
           description: 'A telephone number. NIEM reference is nc:TelephoneNumberID'
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        telephoneSuffixID:
+        telephoneSuffixId:
           type: array
           description: >-
             An additional sequence of numbers to be entered after a call
@@ -4924,7 +4924,7 @@ components:
       title: 'nc:NANPTelephoneNumberType'
       description: A data type for a North American Numbering Plan telephone number.
       properties:
-        telephoneAreaCodeID:
+        telephoneAreaCodeId:
           type: array
           description: >-
             A dialing code for a state or province for phone numbers in the USA,
@@ -4932,21 +4932,21 @@ components:
             nc:TelephoneAreaCodeID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        telephoneExchangeID:
+        telephoneExchangeId:
           type: array
           description: >-
             A portion of a telephone number that usually represents a central
             telephone switch. NIEM reference is nc:TelephoneExchangeID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        telephoneLineID:
+        telephoneLineId:
           type: array
           description: >-
             A portion of a telephone number that identifies the individual
             circuit within an exchange. NIEM reference is nc:TelephoneLineID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        telephoneSuffixID:
+        telephoneSuffixId:
           type: array
           description: >-
             An additional sequence of numbers to be entered after a call
@@ -5141,14 +5141,14 @@ components:
       title: 'nc:LocaleType'
       description: A data type for a geopolitical area.
       properties:
-        censusBlockID:
+        censusBlockId:
           type: array
           description: >-
             An identifier of the smallest subdivision of an area. NIEM reference
             is nc:LocaleCensusBlockID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        censusTractID:
+        censusTractId:
           type: array
           description: >-
             An identifier of a designated census tract area. NIEM reference is
@@ -5183,7 +5183,7 @@ components:
             reference is nc:LocaleEmergencyServicesName
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        fireJurisdictionID:
+        fireJurisdictionId:
           type: array
           description: >-
             An identifier of a fire department jurisdiction. NIEM reference is
@@ -5216,7 +5216,7 @@ components:
           description: 'A police grid coordinate. NIEM reference is nc:LocalePoliceGridText'
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        policeJurisdictionID:
+        policeJurisdictionId:
           type: array
           description: >-
             An identifier of a police jurisdiction that encompasses a location.
@@ -5238,7 +5238,7 @@ components:
           description: 'A name of a zone. NIEM reference is nc:LocaleZoneName'
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        emergencyServicesJurisdictionID:
+        emergencyServicesJurisdictionId:
           type: array
           description: >-
             An identifier of an emergency services jurisdiction that encompasses
@@ -5296,7 +5296,7 @@ components:
           description: 'A name of a map. NIEM reference is nc:MapName'
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        mapPageID:
+        mapPageId:
           type: array
           description: >-
             An identifier of a page number in a map. NIEM reference is
@@ -5308,7 +5308,7 @@ components:
           description: 'A quadrant or square in a map. NIEM reference is nc:MapQuadrantText'
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        mapVersionID:
+        mapVersionId:
           type: array
           description: >-
             An identifier of a version of a map. NIEM reference is
@@ -5446,7 +5446,7 @@ components:
             activities. NIEM reference is nc:FacilitySystemIdentification
           items:
             $ref: nc.yaml#/components/schemas/ncSystemIdentificationType
-        systemIPAddressID:
+        systemIpAddressId:
           type: array
           description: >-
             An IP address of a computing system that supports a facility's
@@ -5987,7 +5987,7 @@ components:
                 True if value represents the first letter or initials of a
                 persons name; false otherwise. NIEM reference is
                 nc:personNameInitialIndicator
-            sequenceID:
+            sequenceId:
               type: number
               description: >-
                 A numeric identifier that explicitly sequences or orders
@@ -6029,7 +6029,7 @@ components:
             reference is nc:OrganizationAbbreviationText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        LEIIdentification:
+        leiIdentification:
           type: array
           description: >-
             An identification for a Legal Entity Identifier (LEI), to uniquely
@@ -6052,14 +6052,14 @@ components:
             nc:OrganizationBranchName
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        categoryNDExCode:
+        categoryNdExCode:
           type: array
           description: >-
             A kind of organization. NIEM reference is
             j:OrganizationCategoryNDExCode
           items:
             $ref: ndex.yaml#/components/schemas/ndexOrganizationCategoryCodeType
-        categoryNLETSCode:
+        categoryNletsCode:
           type: array
           description: >-
             A functional kind of an organization. NIEM reference is
@@ -6376,7 +6376,7 @@ components:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
           properties:
-            groupID:
+            groupId:
               type: array
               description: >-
                 An identifier of a group of conditions to which this condition
@@ -7085,7 +7085,7 @@ components:
                 is nc:ConveyanceTowedIndicator
               items:
                 $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-            vehicleUseANSID20Code:
+            vehicleUseAnsid20Code:
               type: array
               description: >-
                 A manner or way in which a vehicle is used. NIEM reference is
@@ -7502,7 +7502,7 @@ components:
             the crash. NIEM reference is j:InjuryLocationCode
           items:
             $ref: mmucc.yaml#/components/schemas/mmuccPersonInjuryLocationCodeType
-        locationNDEXCode:
+        locationNdexCode:
           type: array
           description: >-
             A location of the victim's injury. NIEM reference is
@@ -7523,7 +7523,7 @@ components:
             j:InjuryCategoryCode
           items:
             $ref: ucr.yaml#/components/schemas/ucrInjuryCategoryCodeType
-        categoryNDExCode:
+        categoryNdExCode:
           type: array
           description: >-
             A bodily injury suffered by a victim. NIEM reference is
@@ -7657,7 +7657,7 @@ components:
                 nc:DrugStrengthText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            DEAClassScheduleCode:
+            deaClassScheduleCode:
               type: array
               description: >-
                 A class to which the Drug Enforcement Agency (DEA) has assigned
@@ -7665,7 +7665,7 @@ components:
                 reference is nc:DEAClassScheduleCode
               items:
                 $ref: dea.yaml#/components/schemas/deaDEAClassScheduleCodeCodeType
-            DEAClassSchedule:
+            deaClassSchedule:
               type: array
               description: >-
                 A class to which the Drug Enforcement Agency (DEA) has assigned
@@ -7705,7 +7705,7 @@ components:
               description: 'A kind of drug. NIEM reference is j:DrugCategoryCode'
               items:
                 $ref: ucr.yaml#/components/schemas/ucrDrugCategoryCodeType
-            drugCategoryDEACode:
+            drugCategoryDeaCode:
               type: array
               description: 'A drug. NIEM reference is j:DrugCategoryDEACode'
               items:
@@ -7720,7 +7720,7 @@ components:
               description: 'A drug. NIEM reference is nc:DrugCode'
               items:
                 $ref: dea.yaml#/components/schemas/deaDrugCodeType
-            hazmatDeclarationUNHazmatCode:
+            hazmatDeclarationUnHazmatCode:
               type: array
               description: >-
                 A United Nations/North American (UN/NA) Hazardous Materials Code
@@ -8029,7 +8029,7 @@ components:
           description: 'A name of a task. NIEM reference is nc:TaskName'
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        taskID:
+        taskId:
           type: array
           description: 'An identifier for a task. NIEM reference is nc:TaskID'
           items:
@@ -8146,7 +8146,7 @@ components:
             nc:CaveatText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        administrativeID:
+        administrativeId:
           type: array
           description: >-
             An identifier generated locally within a processing system used to
@@ -8262,7 +8262,7 @@ components:
             nc:DescriptionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        sourceID:
+        sourceId:
           type: array
           description: >-
             A number or string set by a data provider so that information that
@@ -8291,7 +8291,7 @@ components:
             reference is nc:ReleaseDate
           items:
             $ref: nc.yaml#/components/schemas/ncDateType
-        repositoryID:
+        repositoryId:
           type: array
           description: >-
             An identifier assigned to the repository from which the information
@@ -8445,7 +8445,7 @@ components:
             institution. NIEM reference is nc:FinancialAccountCategoryText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        numberID:
+        numberId:
           type: array
           description: >-
             An identifier assigned to a type of financial account. NIEM
@@ -8991,7 +8991,7 @@ components:
               description: 'A year a case is opened. NIEM reference is nc:CaseYearDate'
               items:
                 $ref: niem-xs.yaml#/components/schemas/niem-xsgYear
-            trackingID:
+            trackingId:
               type: array
               description: >-
                 An identifier used to track a case. NIEM reference is
@@ -9005,7 +9005,7 @@ components:
                 is nc:CaseSubCategoryText
               items:
                 $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-            docketID:
+            docketId:
               type: array
               description: >-
                 An identifier used to reference a case docket. NIEM reference is
@@ -9544,7 +9544,7 @@ components:
         - $ref: nc.yaml#/components/schemas/ncConveyanceType
         - type: object
           properties:
-            isCMV:
+            isCmv:
               type: array
               description: >-
                 True if a vehicle is a commercial motor vehicle; false
@@ -9592,7 +9592,7 @@ components:
                 NIEM reference is j:VehicleModelCode
               items:
                 $ref: ncic.yaml#/components/schemas/ncicVMOCodeType
-            MSRPAmount:
+            msrpAmount:
               type: array
               description: >-
                 A manufacturer's suggested retail price of a vehicle; a price at
@@ -9716,7 +9716,7 @@ components:
                 engine. NIEM reference is j:EngineDisplacementUnitCode
               items:
                 $ref: j.yaml#/components/schemas/jEngineDisplacementUnitCodeType
-            engineDisplacementUnitNCICCode:
+            engineDisplacementUnitNcicCode:
               type: array
               description: >-
                 A kind of measurement unit used to quantify power/displacement.

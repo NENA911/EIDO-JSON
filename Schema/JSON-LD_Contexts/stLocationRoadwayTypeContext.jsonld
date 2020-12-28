@@ -3,7 +3,7 @@
     "st": "http://release.niem.gov/niem/domains/surfaceTransportation/4.0/#",
     "roadwayStructureIdentification": "st:RoadwayStructureIdentification",
     "roadwayInclinationValue": "st:RoadwayInclinationValue",
-    "AADTRampNumeric": "st:AADTRampNumeric",
+    "aadtRampNumeric": "st:AADTRampNumeric",
     "throughLanesNumeric": "st:ThroughLanesNumeric",
     "bridgeStructure": "st:BridgeStructure",
     "isRoadwayCurveApplicable": "st:RoadwayCurveApplicableIndicator",

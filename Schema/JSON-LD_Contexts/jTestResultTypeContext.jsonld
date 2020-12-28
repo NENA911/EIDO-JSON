@@ -5,6 +5,6 @@
     "testMonitorEntity": "j:TestMonitorEntity",
     "category": "j:TestResultCategoryText",
     "text": "j:TestResultText",
-    "testSpecimenID": "j:TestSpecimenID"
+    "testSpecimenId": "j:TestSpecimenID"
   }
 }

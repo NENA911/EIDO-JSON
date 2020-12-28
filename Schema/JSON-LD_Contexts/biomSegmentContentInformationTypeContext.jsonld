@@ -1,7 +1,7 @@
 {
   "@context": {
     "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
-    "segmentIDList": "biom:SegmentIDList",
+    "segmentIdList": "biom:SegmentIDList",
     "segmentTranscript": "biom:SegmentTranscriptText",
     "segmentTranscriptLanguageCode": "biom:SegmentTranscriptLanguageCode",
     "segmentPhoneticTranscript": "biom:SegmentPhoneticTranscriptText",

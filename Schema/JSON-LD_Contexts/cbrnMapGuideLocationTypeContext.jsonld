@@ -22,7 +22,7 @@
     "units": "cbrn:unitsText",
     "mapGuideBrandCode": "cbrn:MapGuideBrandCode",
     "mapGuideName": "cbrn:MapGuideName",
-    "mapGuidePageNumberID": "cbrn:MapGuidePageNumberID",
-    "mapGuideGridNumberID": "cbrn:MapGuideGridNumberID"
+    "mapGuidePageNumberId": "cbrn:MapGuidePageNumberID",
+    "mapGuideGridNumberId": "cbrn:MapGuideGridNumberID"
   }
 }

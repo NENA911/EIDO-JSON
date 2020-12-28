@@ -7,9 +7,9 @@
     "mapHorizontalCoordinate": "nc:MapHorizontalCoordinateText",
     "description": "nc:MapLocationDescriptionText",
     "mapName": "nc:MapName",
-    "mapPageID": "nc:MapPageID",
+    "mapPageId": "nc:MapPageID",
     "mapQuadrant": "nc:MapQuadrantText",
-    "mapVersionID": "nc:MapVersionID",
+    "mapVersionId": "nc:MapVersionID",
     "mapVerticalCoordinate": "nc:MapVerticalCoordinateText"
   }
 }

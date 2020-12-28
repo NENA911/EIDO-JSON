@@ -2,6 +2,6 @@
   "@context": {
     "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
     "isConveyanceJointlyRegistered": "j:ConveyanceJointlyRegisteredIndicator",
-    "isStateAssignedVIN": "j:StateAssignedVINIndicator"
+    "isStateAssignedVin": "j:StateAssignedVINIndicator"
   }
 }

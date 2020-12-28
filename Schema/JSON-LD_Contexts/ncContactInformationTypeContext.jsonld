@@ -1,12 +1,12 @@
 {
   "@context": {
     "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
-    "contactEmailID": "nc:ContactEmailID",
+    "contactEmailId": "nc:ContactEmailID",
     "contactInstantMessenger": "nc:ContactInstantMessenger",
     "contactMailingAddress": "nc:ContactMailingAddress",
     "contactRadio": "nc:ContactRadio",
     "contactTelephoneNumber": "nc:ContactTelephoneNumber",
-    "contactWebsiteURI": "nc:ContactWebsiteURI",
+    "contactWebsiteUri": "nc:ContactWebsiteURI",
     "contactEntity": "nc:ContactEntity",
     "contactEntityDescription": "nc:ContactEntityDescriptionText",
     "description": "nc:ContactInformationDescriptionText",

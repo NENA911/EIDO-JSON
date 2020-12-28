@@ -319,7 +319,7 @@ components:
           description: 'A hash value. NIEM reference is j:BinaryHashValue'
           items:
             $ref: j.yaml#/components/schemas/jBinaryHashValueType
-        MIMEContentCode:
+        mimeContentCode:
           type: array
           description: >-
             A MIME content type of a digital data file. NIEM reference is
@@ -454,7 +454,7 @@ components:
             is j:ImageJuvenileIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        imageNCICIdentification:
+        imageNcicIdentification:
           type: array
           description: >-
             A unique identification assigned to an Image by the FBI National
@@ -526,7 +526,7 @@ components:
             j:FacilityStaffingCapacityQuantity
           items:
             $ref: nc.yaml#/components/schemas/ncQuantityType
-        facilityBuildingID:
+        facilityBuildingId:
           type: array
           description: >-
             An numerical identifier of a facility building. NIEM reference is
@@ -786,7 +786,7 @@ components:
             j:AgencyBaselinePriorityValue
           items:
             $ref: nc.yaml#/components/schemas/ncNumericType
-        isAgencyCHRIAuthorized:
+        isAgencyChriAuthorized:
           type: array
           description: >-
             True if an agency is authorized to access criminal history
@@ -836,14 +836,14 @@ components:
             j:OrganizationGovernmentLevelText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        organizationFFLID:
+        organizationFflid:
           type: array
           description: >-
             An identifier of an organization that is licensed by the government
             to sell firearms. NIEM reference is j:OrganizationFFLID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        organizationORIIdentification:
+        organizationOriIdentification:
           type: array
           description: >-
             A unique nine character NCIC identification (ORI) assigned to a
@@ -946,7 +946,7 @@ components:
             reference is j:ItemFederalIdentification
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
-        itemNCICIdentification:
+        itemNcicIdentification:
           type: array
           description: >-
             An identification of an item which is self-checking  and consists of
@@ -1384,7 +1384,7 @@ components:
         A data type for an identifying number for a case submitted by an agency
         which is known or believed to be related to the case of this activity.
       properties:
-        organizationORIIdentification:
+        organizationOriIdentification:
           type: array
           description: >-
             A unique nine character NCIC identification (ORI) assigned to a
@@ -2028,7 +2028,7 @@ components:
             reference is j:ConveyanceJointlyRegisteredIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        isStateAssignedVIN:
+        isStateAssignedVin:
           type: array
           description: >-
             True if the VIN was state assigned rather than manufacturer or owner
@@ -2345,7 +2345,7 @@ components:
             incident. NIEM reference is j:StaffMemberAppliedForce
           items:
             $ref: j.yaml#/components/schemas/jForceType
-        badgeNumberID:
+        badgeNumberId:
           type: array
           description: >-
             A unique identifier of the badge assigned to a staff member. NIEM
@@ -2493,7 +2493,7 @@ components:
             services. NIEM reference is j:StaffMemberQualificationStatementText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        sTXProfessionalCertification:
+        sTxProfessionalCertification:
           type: array
           description: >-
             A kind of certifications for clinicians if applicable. NIEM
@@ -2867,7 +2867,7 @@ components:
             subject. NIEM reference is j:SubjectAssessment
           items:
             $ref: j.yaml#/components/schemas/jSubjectAssessmentType
-        DNACollectionStatus:
+        dnaCollectionStatus:
           type: array
           description: >-
             A status on the DNA collection from a subject. NIEM reference is
@@ -2991,7 +2991,7 @@ components:
             NIEM reference is j:SubjectDomesticViolenceHistoryIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        subjectMO:
+        subjectMo:
           type: array
           description: >-
             A set of details pertaining to facts attained from an actual crime
@@ -3593,7 +3593,7 @@ components:
       title: 'j:PlanType'
       description: A data type for a detailed proposal for doing or achieving something.
       properties:
-        planID:
+        planId:
           type: array
           description: 'A unique identifier of a specific plan. NIEM reference is j:PlanID'
           items:
@@ -4158,7 +4158,7 @@ components:
               items:
                 $ref: >-
                   aamva_d20.yaml#/components/schemas/aamva_d20DrivingOffenseCodeType
-            APCOCode:
+            apcoCode:
               type: array
               description: >-
                 An offense designation as specified by APCO. NIEM reference is
@@ -4172,7 +4172,7 @@ components:
                 j:OffenseName
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            NCICCode:
+            ncicCode:
               type: array
               description: >-
                 An offense designation as specified by FBI's National Crime
@@ -4180,12 +4180,12 @@ components:
                 j:OffenseNCICCode
               items:
                 $ref: ncic.yaml#/components/schemas/ncicOFFCodeType
-            NDExCode:
+            ndExCode:
               type: array
               description: 'An offense designation. NIEM reference is j:OffenseNDExCode'
               items:
                 $ref: ndex.yaml#/components/schemas/ndexOffenseCodeType
-            UCRCode:
+            ucrCode:
               type: array
               description: >-
                 An offense designation as specified by FBI's Uniform Crime
@@ -4198,7 +4198,7 @@ components:
               items:
                 $ref: >-
                   ucr.yaml#/components/schemas/ucrCriminalActivityCategoryCodeType
-            categoryNDExCode:
+            categoryNdExCode:
               type: array
               description: 'A kind of offense. NIEM reference is j:OffenseCategoryNDExCode'
               items:
@@ -4208,7 +4208,7 @@ components:
               description: 'A kind of offense. NIEM reference is j:OffenseCategoryText'
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            MOCrimeAndMotiveCode:
+            moCrimeAndMotiveCode:
               type: array
               description: >-
                 A probable crime type and/or motive based on a usual way in
@@ -4217,7 +4217,7 @@ components:
               items:
                 $ref: >-
                   ndex.yaml#/components/schemas/ndexOffenseMOCrimeAndMotiveCodeType
-            MOCrimeAndMotive:
+            moCrimeAndMotive:
               type: array
               description: >-
                 A probable crime type and/or motive based on a usual way in
@@ -4328,7 +4328,7 @@ components:
                 j:CriminalActivityCategoryText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            criminalActivityNDExCategoryCode:
+            criminalActivityNdExCategoryCode:
               type: array
               description: >-
                 A kind of criminal activity. NIEM reference is
@@ -4533,7 +4533,7 @@ components:
             reference is j:OffenseFactorJustifiableHomicideCode
           items:
             $ref: ucr.yaml#/components/schemas/ucrJustifiableHomicideFactorsCodeType
-        NIBRSAggravatedAssaultHomicideCode:
+        nibrsAggravatedAssaultHomicideCode:
           type: array
           description: >-
             A designation for an aggravated assault or homicide offense factor.
@@ -4603,7 +4603,7 @@ components:
                 reference is j:PassagePointMethodCode
               items:
                 $ref: ucr.yaml#/components/schemas/ucrMethodOfEntryCodeType
-            methodNDExCode:
+            methodNdExCode:
               type: array
               description: >-
                 A method used to enter or exit through a passage point. NIEM
@@ -4785,14 +4785,14 @@ components:
             book. NIEM reference is j:StatuteOffenseStateCodeText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        offenseAPCOCode:
+        offenseApcoCode:
           type: array
           description: >-
             A criminal offense within a code book. NIEM reference is
             j:StatuteOffenseAPCOCode
           items:
             $ref: apco.yaml#/components/schemas/apcoIncidentCategoryCodeType
-        offenseUCRCode:
+        offenseUcrCode:
           type: array
           description: >-
             A criminal offense within a code book. NIEM reference is
@@ -4828,7 +4828,7 @@ components:
                 j:SupervisionViolationCircumstancesText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            isDAAcceptedCase:
+            isDaAcceptedCase:
               type: array
               description: >-
                 True if the District Attorney accepted the rule violation case;
@@ -4836,7 +4836,7 @@ components:
                 j:SupervisionViolationDAAcceptedCaseIndicator
               items:
                 $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-            referredToDADate:
+            referredToDaDate:
               type: array
               description: >-
                 A date on which the case was referred to the DA. NIEM reference
@@ -5421,7 +5421,7 @@ components:
             NIEM reference is j:EvidenceDocumentationBinary
           items:
             $ref: nc.yaml#/components/schemas/ncBinaryType
-        IBISNumber:
+        ibisNumber:
           type: array
           description: >-
             A number assigned by the Integrated Ballistic Identification System
@@ -5667,7 +5667,7 @@ components:
             j:EnforcementOfficialActivityCategoryText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        activityNDExCategoryCode:
+        activityNdExCategoryCode:
           type: array
           description: >-
             A kind of activity or circumstance in which an enforcement official
@@ -5698,7 +5698,7 @@ components:
             reference is j:EnforcementOfficialBadgeIdentification
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
-        POSTLicenseIdentification:
+        postLicenseIdentification:
           type: array
           description: >-
             A Peace Official Standards and Training identification. NIEM
@@ -5727,7 +5727,7 @@ components:
             NIEM reference is j:EnforcementOfficialUnit
           items:
             $ref: j.yaml#/components/schemas/jEnforcementUnitType
-        LEOKACircumstanceCategoryCode:
+        leokaCircumstanceCategoryCode:
           type: array
           description: >-
             A LEOKA (Law Enforcement Officer Killed or Assaulted) classification
@@ -6366,7 +6366,7 @@ components:
             is j:IncidentDrug
           items:
             $ref: nc.yaml#/components/schemas/ncDrugType
-        incidentWeatherMMUCCCode:
+        incidentWeatherMmuccCode:
           type: array
           description: >-
             A weather condition at the time of the incident. NIEM reference is
@@ -6427,7 +6427,7 @@ components:
           description: 'A kind of incident. NIEM reference is j:IncidentCategoryCode'
           items:
             $ref: ucr.yaml#/components/schemas/ucrCriminalActivityCategoryCodeType
-        incidentCategoryUCRCode:
+        incidentCategoryUcrCode:
           type: array
           description: 'A kind of incident. NIEM reference is j:IncidentCategoryUCRCode'
           items:
@@ -6908,7 +6908,7 @@ components:
                 reference is j:ArrestResistedIndicator
               items:
                 $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-            sequenceID:
+            sequenceId:
               type: array
               description: >-
                 A sequential identifier number assigned to the arrest of a
@@ -6975,7 +6975,7 @@ components:
                 j:ArrestCategoryCode
               items:
                 $ref: ucr.yaml#/components/schemas/ucrArrestCategoryCodeType
-            categoryJABSCode:
+            categoryJabsCode:
               type: array
               description: >-
                 A kind of apprehension. NIEM reference is
@@ -7151,7 +7151,7 @@ components:
             j:ChargeLegalDescriptionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        MACRDisposition:
+        macrDisposition:
           type: array
           description: >-
             A charge disposition as reported to the Monthly Arrest and Citation
@@ -7165,7 +7165,7 @@ components:
             j:ChargeModifierEntity
           items:
             $ref: nc.yaml#/components/schemas/ncEntityType
-        MACRIndicationLevel:
+        macrIndicationLevel:
           type: array
           description: >-
             An indication of the level or seriousness of the charge, as reported
@@ -7173,7 +7173,7 @@ components:
             j:ChargeMACRIndicationLevelText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        MACRJuvenileLevel:
+        macrJuvenileLevel:
           type: array
           description: >-
             An indication of the level or seriousness of a juvenile charge, as
@@ -7181,7 +7181,7 @@ components:
             is j:ChargeMACRJuvenileLevelText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        MACRStatus:
+        macrStatus:
           type: array
           description: >-
             A status of a charge, as reported to the Monthly Arrest and Citation
@@ -7252,7 +7252,7 @@ components:
             j:ChargeSentenceRangeText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        sequenceID:
+        sequenceId:
           type: array
           description: >-
             A sequentially assigned identifier for charge tracking purposes.
@@ -7320,7 +7320,7 @@ components:
             been consolidated. NIEM reference is j:ChargeTrackingIdentification
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
-        UCRCrimeCategory:
+        ucrCrimeCategory:
           type: array
           description: >-
             A Uniform Crime Report (UCR) kind or classification of a crime
@@ -7342,7 +7342,7 @@ components:
             charge. NIEM reference is j:ChargeVictim
           items:
             $ref: j.yaml#/components/schemas/jVictimType
-        NCIC:
+        ncic:
           type: array
           description: >-
             A literal description of an offense within the National Crime
@@ -7364,14 +7364,14 @@ components:
           description: 'A kind of charge. NIEM reference is j:ChargeCategoryCode'
           items:
             $ref: ndex.yaml#/components/schemas/ndexChargeCategoryCodeType
-        NCICCode:
+        ncicCode:
           type: array
           description: >-
             An offense within the National Crime Information Center (NCIC)
             system. NIEM reference is j:ChargeNCICCode
           items:
             $ref: ncic.yaml#/components/schemas/ncicOFFCodeType
-        UCRCode:
+        ucrCode:
           type: array
           description: >-
             An offense within the Uniform Crime Report (UCR) system. NIEM
@@ -8191,7 +8191,7 @@ components:
             reference is j:VictimSequenceNumberText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        VICAPCaseNumber:
+        vicapCaseNumber:
           type: array
           description: >-
             A case number assigned to a victim case report by the Violent
@@ -8206,7 +8206,7 @@ components:
             j:VictimContactedIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        victimMO:
+        victimMo:
           type: array
           description: >-
             A set of details pertaining to facts attained from an actual crime
@@ -8222,7 +8222,7 @@ components:
             NIEM reference is j:VictimSeeksRestitutionDescriptionIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        isVICAP:
+        isVicap:
           type: array
           description: >-
             True if a case report for this victim was submitted to the Violent
@@ -8346,7 +8346,7 @@ components:
           items:
             $ref: >-
               ucr.yaml#/components/schemas/ucrAggravatedAssaultHomicideFactorsCodeType
-        aggravatedAssaultHomicideFactorNDExCode:
+        aggravatedAssaultHomicideFactorNdExCode:
           type: array
           description: >-
             A circumstance of either an aggravated assault or homicide. NIEM
@@ -8679,7 +8679,7 @@ components:
                 is j:BookingInterviewObservation
               items:
                 $ref: nc.yaml#/components/schemas/ncCommentType
-            isIAFIS:
+            isIafis:
               type: array
               description: >-
                 True if IAFIS was able to make an identification based upon the
@@ -9262,7 +9262,7 @@ components:
             j:IncidentFactorCode
           items:
             $ref: ucr.yaml#/components/schemas/ucrIncidentFactorCodeType
-        NIBRSAggravatedAssaultHomicideCode:
+        nibrsAggravatedAssaultHomicideCode:
           type: array
           description: >-
             A circumstance of factor in an incident. NIEM reference is
@@ -9270,14 +9270,14 @@ components:
           items:
             $ref: >-
               ucr.yaml#/components/schemas/ucrAggravatedAssaultHomicideFactorsCodeType
-        NIBRSBiasMotivationCode:
+        nibrsBiasMotivationCode:
           type: array
           description: >-
             A circumstance of factor in an incident. NIEM reference is
             j:IncidentFactorNIBRSBiasMotivationCode
           items:
             $ref: ucr.yaml#/components/schemas/ucrIncidentBiasMotivationCodeType
-        NIBRSJustifiableHomicideCode:
+        nibrsJustifiableHomicideCode:
           type: array
           description: >-
             A circumstance of factor in an incident. NIEM reference is
@@ -9572,7 +9572,7 @@ components:
             task. NIEM reference is j:TaskAssistanceProvider
           items:
             $ref: nc.yaml#/components/schemas/ncEntityType
-        taskID:
+        taskId:
           type: array
           description: 'An identifier for a task. NIEM reference is nc:TaskID'
           items:
@@ -9936,7 +9936,7 @@ components:
             specific type. NIEM reference is j:NeedIntensityLevelText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        needID:
+        needId:
           type: array
           description: >-
             An identifier of a need that a subject has been assessed with. NIEM
@@ -10947,7 +10947,7 @@ components:
                 j:MentalHealthAssessmentLegalStatusSummaryReviewedIndicator
               items:
                 $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-            isDMHPsychiatricReportReviewed:
+            isDmhPsychiatricReportReviewed:
               type: array
               description: >-
                 True if a DMH psychiatric report was reviewed; false otherwise.
@@ -10979,7 +10979,7 @@ components:
                 j:MentalHealthAssessmentCorrectionalCounselorIReviewDate
               items:
                 $ref: nc.yaml#/components/schemas/ncDateType
-            DMHPsychiatricReportAuthor:
+            dmhPsychiatricReportAuthor:
               type: array
               description: >-
                 A name of the author of the DMH psychiatric report that was
@@ -11002,7 +11002,7 @@ components:
                 false otherwise. NIEM reference is j:MentalHealthOtherIndicator
               items:
                 $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-            DMHPsychiatricReportReviewDate:
+            dmhPsychiatricReportReviewDate:
               type: array
               description: >-
                 A date of the DMH psychiatric report that was reviewed. NIEM
@@ -11485,7 +11485,7 @@ components:
             reference is j:EducationCourseEnrollmentDate
           items:
             $ref: nc.yaml#/components/schemas/ncDateType
-        metadataRepositoryID:
+        metadataRepositoryId:
           type: array
           description: >-
             An identifier for the details about an educational course. NIEM
@@ -11930,7 +11930,7 @@ components:
                 j:OffenseSummary
               items:
                 $ref: j.yaml#/components/schemas/jOffenseSummaryType
-            DEAViolatorClass:
+            deaViolatorClass:
               type: array
               description: >-
                 A description of the violator class as assigned by the DEA. NIEM
@@ -11983,7 +11983,7 @@ components:
                 j:SubjectClassificationAssessmentCriminalHistoryScoreText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            GDEPDescription:
+            gdepDescription:
               type: array
               description: >-
                 A description of the type of criminal activities engaged in by a
@@ -12365,7 +12365,7 @@ components:
           description: 'A test results. NIEM reference is j:TestResultText'
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        testSpecimenID:
+        testSpecimenId:
           type: array
           description: >-
             A unique identifier of a test specimen. NIEM reference is
@@ -12719,7 +12719,7 @@ components:
             reference is j:CriminalOrganizationMembershipLowQuantityText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        NCICIdentification:
+        ncicIdentification:
           type: array
           description: >-
             An identification assigned to a criminal organization. NIEM
@@ -13617,7 +13617,7 @@ components:
                 j:CourtEventSchedule
               items:
                 $ref: nc.yaml#/components/schemas/ncScheduleDayType
-            sequenceID:
+            sequenceId:
               type: array
               description: >-
                 A unique identifier for a court case event record. NIEM
@@ -13988,7 +13988,7 @@ components:
             j:VehicleInvoiceIdentification
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
-        vehicleVINA:
+        vehicleVina:
           type: array
           description: >-
             A Vehicle Identification Number Analysis; a combination of a vehicle
@@ -14060,7 +14060,7 @@ components:
             NIEM reference is j:VehicleNominalTonRateMeasure
           items:
             $ref: nc.yaml#/components/schemas/ncWeightMeasureType
-        isVehiclePaperMCOIssued:
+        isVehiclePaperMcoIssued:
           type: array
           description: >-
             True if a paper copy of the manufacturer's certificate of origin
@@ -14083,7 +14083,7 @@ components:
             NIEM reference is j:VehicleEmissionInspection
           items:
             $ref: j.yaml#/components/schemas/jVehicleEmissionInspectionType
-        vehicleOwnershipNICB:
+        vehicleOwnershipNicb:
           type: array
           description: >-
             A NICB Division location in the United States, showing interest in a
@@ -14450,14 +14450,14 @@ components:
             reference is j:PersonDrugAlcoholHistoryText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        personDEAIdentification:
+        personDeaIdentification:
           type: array
           description: >-
             An identification assigned to a person by the DEA. NIEM reference is
             j:PersonDEAIdentification
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
-        CODISNumber:
+        codisNumber:
           type: array
           description: >-
             A number assigned by the Combined DNA Index System (CODIS) to a
@@ -14467,7 +14467,7 @@ components:
             j:CODISNumberText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        personBOPRegisterNumberIdentification:
+        personBopRegisterNumberIdentification:
           type: array
           description: >-
             An identification used by the Bureau of Prisons (BOP). NIEM
@@ -14524,7 +14524,7 @@ components:
             reference is j:PersonSuicideAttemptIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        personUSMSFugitiveIdentification:
+        personUsmsFugitiveIdentification:
           type: array
           description: >-
             An identification assigned to a fugitive by the U.S. Marshal Service
@@ -14567,7 +14567,7 @@ components:
             NIEM reference is j:PersonProbationerIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        DNACollectionStatus:
+        dnaCollectionStatus:
           type: array
           description: >-
             A status on the DNA collection from a subject. NIEM reference is
@@ -14798,7 +14798,7 @@ components:
             j:PersonPsychologicalPsychiatricTreatmentIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        isPersonSMT:
+        isPersonSmt:
           type: array
           description: >-
             True if a person has distinguishing scars, marks, or tattoos; false
@@ -14851,7 +14851,7 @@ components:
             j:PersonAdultIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        isDNACollected:
+        isDnaCollected:
           type: array
           description: >-
             True if DNA has been collected; false otherwise. NIEM reference is
@@ -14881,7 +14881,7 @@ components:
           items:
             $ref: >-
               ndex.yaml#/components/schemas/ndexPersonDentalCharacteristicCodeType
-        personDentalCharacteristicNCICCode:
+        personDentalCharacteristicNcicCode:
           type: array
           description: >-
             A characteristic of a person's teeth. NIEM reference is
@@ -14917,7 +14917,7 @@ components:
             limited driving privileges. NIEM reference is j:DriverLicensePermit
           items:
             $ref: j.yaml#/components/schemas/jDriverLicensePermitType
-        personAFISIdentification:
+        personAfisIdentification:
           type: array
           description: >-
             An identification number issued by an agency's automatic fingerprint
@@ -15010,7 +15010,7 @@ components:
             j:PersonEmancipationDate
           items:
             $ref: nc.yaml#/components/schemas/ncDateType
-        personFBIIdentification:
+        personFbiIdentification:
           type: array
           description: >-
             A number issued by the FBI's Automated Fingerprint Identification
@@ -15047,7 +15047,7 @@ components:
             j:PersonIntoxication
           items:
             $ref: j.yaml#/components/schemas/jIntoxicationType
-        personNCICIdentification:
+        personNcicIdentification:
           type: array
           description: >-
             A file control number (FCN) identification that is often used to
@@ -15765,7 +15765,7 @@ components:
             reference is j:DriverLicenseEndorsementEndDate
           items:
             $ref: nc.yaml#/components/schemas/ncDateType
-        driverLicenseHMEThreatDate:
+        driverLicenseHmeThreatDate:
           type: array
           description: >-
             A date on which an adjudication by the TSA was made, of a driver's
@@ -15773,7 +15773,7 @@ components:
             is j:DriverLicenseHMEThreatDate
           items:
             $ref: nc.yaml#/components/schemas/ncDateType
-        driverLicenseHMEThreatCode:
+        driverLicenseHmeThreatCode:
           type: array
           description: >-
             A code indicating if a driver should be issued a Hazardous Material
@@ -15781,7 +15781,7 @@ components:
             adjudication process. NIEM reference is j:DriverLicenseHMEThreatCode
           items:
             $ref: j.yaml#/components/schemas/jDriverLicenseHMEThreatCodeType
-        driverLicenseHMEThreat:
+        driverLicenseHmeThreat:
           type: array
           description: >-
             A determination if a driver should be issued a HAZMAT Endorsement,
@@ -16158,7 +16158,7 @@ components:
                 NIEM reference is j:DrivingAccidentSeverityText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            CMVCode:
+            cmvCode:
               type: array
               description: >-
                 A determination of whether the incident occurred while the
@@ -16166,7 +16166,7 @@ components:
                 j:DrivingIncidentCMVCode
               items:
                 $ref: aamva_d20.yaml#/components/schemas/aamva_d20CMVCodeType
-            CMV:
+            cmv:
               type: array
               description: >-
                 A determination of whether the incident occurred while the
