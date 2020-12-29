@@ -526,15 +526,15 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - updatedCBNIdentifierURI
+            - updatedCbnIdentifierUri
           properties:
-            updatedCBNIdentifierUri:
+            updatedCbnIdentifierUri:
               type: string
               description:
                 A telephone number or SIP equivalent of a reporting party
                 described in the parent call.
               format: uri
-            updatedCBNCallerDescription:
+            updatedCbnCallerDescription:
               type: string
               description:
                 Additional descriptive text about an updated caller call back
@@ -629,7 +629,7 @@ components:
               description: Linked elements type is AgentType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-            updatedCBN:
+            updatedCbn:
               type: array
               items:
                 $ref: '#/components/schemas/UpdatedCBNType'
@@ -664,7 +664,7 @@ components:
             - enforcementUnitName
             - secondaryUnitStatusRegistryText
           properties:
-            ETA:
+            eta:
               type: string
               description: Timestamp of when the unit is expected to reach it's destination
               format: date-time
@@ -780,7 +780,7 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           properties:
-            CSAAAlarmInformation:
+            csaaAlarmInformation:
               type: string
               description:
                 Central Station Alarm Association (CSAA) data associated with an
@@ -803,12 +803,12 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - EIDOVersion
+            - eidoVersion
             - agentReference
             - issuingElementIdentification
             - reasonForIssueRegistryText
           properties:
-            EIDOVersion:
+            eidoVersion:
               type: string
               description: Version of the EIDO structure.
               enum:
