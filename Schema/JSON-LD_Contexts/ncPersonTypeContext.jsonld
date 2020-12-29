@@ -111,7 +111,7 @@
     "weightDescription": "nc:PersonWeightDescriptionText",
     "weightMeasure": "nc:PersonWeightMeasure",
     "xRayImage": "nc:PersonXRayImage",
-    "nationalityAnsid20Code": "j:PersonNationalityANSID20Code",
+    "nationalityAnsiD20Code": "j:PersonNationalityANSID20Code",
     "nationalityIso3166Alpha2Code": "nc:PersonNationalityISO3166Alpha2Code",
     "nationality": "nc:PersonNationalityText",
     "employmentContactInformation": "nc:EmploymentContactInformation",

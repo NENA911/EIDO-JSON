@@ -3,7 +3,7 @@
     "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
     "authorityUri": "mo:AuthorityURI",
     "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
-    "ansid20AuthorityCode": "j:JurisdictionANSID20AuthorityCode",
+    "ansiD20AuthorityCode": "j:JurisdictionANSID20AuthorityCode",
     "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
     "text": "nc:JurisdictionText",
     "locationCityName": "nc:LocationCityName",

@@ -722,7 +722,7 @@ components:
             nc:PersonXRayImage
           items:
             $ref: nc.yaml#/components/schemas/ncImageType
-        nationalityAnsid20Code:
+        nationalityAnsiD20Code:
           type: array
           description: >-
             A country of a person's citizenship or a country in which a person
@@ -2066,7 +2066,7 @@ components:
             identifiers to things identified. NIEM reference is mo:AuthorityURI
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsanyURI
-        ansid20AuthorityCode:
+        ansiD20AuthorityCode:
           type: array
           description: >-
             An area, state, region, or other geographic unit over which some
@@ -7085,7 +7085,7 @@ components:
                 is nc:ConveyanceTowedIndicator
               items:
                 $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-            vehicleUseAnsid20Code:
+            vehicleUseAnsiD20Code:
               type: array
               description: >-
                 A manner or way in which a vehicle is used. NIEM reference is
