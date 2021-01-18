@@ -226,12 +226,15 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           properties:
-            additionalDataUrl:
+            additionalDataByReferenceUrl:
               type: string
               description: A URL that references additional data associated with a call.
-            additionalDataDetail:
+            additionalDataByValue:
               type: string
               description: Additional data associated with a call.
+            urlPurpose:
+              type: string
+              description: Purpose that accompanied the URL. For example, the purpose parameter sent with the  URL in the Call-Info headers.
             notesReference:
               type: array
               description:
