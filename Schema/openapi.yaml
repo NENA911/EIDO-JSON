@@ -86,7 +86,7 @@ components:
             incidentOwningAgencyIndicator:
               type: boolean
               description: True if an agency owns the emergency incident; false otherwise
-            AgencyType:
+            agencyType:
               type: array
               items:
                 type: string
@@ -324,7 +324,7 @@ components:
             - personIncidentRoleRegistryText
           properties:
             ncPersonComponent:
-              $ref: 'NIEMComponents//nc.yaml#/components/schemas/ncPersonType'
+              $ref: 'NIEMComponents/nc.yaml#/components/schemas/ncPersonType'
             personIncidentRoleRegistryText:
               type: array
               description: Shall only contains values present in the Person Role registry
