@@ -459,10 +459,12 @@ components:
               items:
                 type: string
             incidentStatusCommonRegistryText:
-              type: string
+              type: array
               description:
                 Shall only contains values present in the Incident Status
                 registry
+              items:
+                type: string
             internalIncidentId:
               type: string
             agentReference:
@@ -492,7 +494,9 @@ components:
               items:
                 $ref: '#/components/schemas/ReferenceType'
             documentIdentification:
-              type: string
+              type: array
+              items:
+                type: string
             reportNumberType:
               type: string
             incidentPriorityInternalText:
@@ -563,10 +567,12 @@ components:
               type: string
               description: An identifier of a call associated with an incident.
             relatedCallIdentifier:
-              type: string
+              type: array
               description:
                 CallIdentifier of calls that are related to this call. Eg
                 Callbacks
+              items:
+                type: string
             queueIdentifier:
               type: string
               description: An identifier of a queue where the call is currently on.
@@ -617,7 +623,7 @@ components:
               type: string
               description: 
                 Value of the verstat parameter. Required if known.
-            SIPIdentity:
+            sipIdentity:
               type: string
               description: 
                 Content of the SIP identity header. Required if known.
@@ -650,6 +656,13 @@ components:
                 elements type is PersonInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
+            notesReference:
+              type: array
+              description:
+                Contains optional alphanumeric text further describing the call. 
+                Linked elements type are NotesType
+              items:
+                $ref: '#/components/schemas/ReferenceType' 
     EmergencyResourceType:
       title: Emergency Resource Type
       description: A data type for a resource (vehicle, person [foot patrol],
@@ -774,6 +787,13 @@ components:
                 elements type is EmergencyResourceType
               items:
                 $ref: '#/components/schemas/ReferenceType'
+            notesReference:
+              type: array
+              description:
+                Contains optional alphanumeric text further describing the dispatch. 
+                Linked elements type are NotesType
+              items:
+                $ref: '#/components/schemas/ReferenceType'
     AlarmsSensorsType:
       title: AlarmsSensorsType
       description:
@@ -797,6 +817,13 @@ components:
             agentReference:
               $ref: '#/components/schemas/ReferenceType'
               description: Linked elements type is AgentType
+            notesReference:
+              type: array
+              description:
+                Contains optional alphanumeric text further describing the dispatch. 
+                Linked elements type are NotesType
+              items:
+                $ref: '#/components/schemas/ReferenceType'
     EmergencyIncidentDataObjectType:
       title: Emergency Incident Data Object Type
       description:
@@ -807,6 +834,7 @@ components:
         - type: object
           required:
             - eidoVersion
+            - incidentTrackingIdentifier
             - agentReference
             - issuingElementIdentification
             - reasonForIssueRegistryText
@@ -900,21 +928,21 @@ components:
               description: All additional data referenced in this document are listed here
               items:
                 $ref: '#/components/schemas/AdditionalDataType'
-            locationInformationComponent:
+            locationComponent:
               type: array
               description:
                 All location informations referenced in this document are listed
                 here
               items:
                 $ref: '#/components/schemas/LocationInformationType'
-            personInformationComponent:
+            personComponent:
               type: array
               description:
                 All person informations referenced in this document are listed
                 here
               items:
                 $ref: '#/components/schemas/PersonInformationType'
-            vehicleInformationComponent:
+            vehicleComponent:
               type: array
               description:
                 All vehicle informations referenced in this document are listed
