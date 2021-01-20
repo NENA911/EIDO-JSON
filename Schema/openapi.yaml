@@ -67,7 +67,7 @@ components:
             A globally unique identifier of the agent or automaton that updated
             the data component last
       description: A common prologue on each data component
-  agencyType:
+    AgencyType:
       title: Agency Type
       description:
         A data type for an organization that owns or is otherwise related to an
@@ -102,7 +102,7 @@ components:
               description:
                 Reference to a Notes Data Component. Contains optional
                 alphanumeric text further describing the agency.
-  AgentType:
+    AgentType:
       title: Agent Type
       description: A data type for information about agents (e.g., call takers,
         dispatchers, supervisors, responding emergency resources, etc.) and
