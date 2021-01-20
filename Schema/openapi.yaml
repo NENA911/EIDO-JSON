@@ -881,9 +881,6 @@ components:
               items:
                 type: string
                 format: uri
-            agentReference:
-              $ref: '#/components/schemas/ReferenceType'
-              description: Linked elements type is AgentType
             agencyReference:
               type: array
               description:
