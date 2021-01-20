@@ -98,10 +98,12 @@ components:
                 Agencies are globally unique. See NENA-STA-010 Agency Identifier
                 section for the format and requirements
             notesReference:
-              $ref: '#/components/schemas/ReferenceType'
+              type: array
               description:
                 Reference to a Notes Data Component. Contains optional
                 alphanumeric text further describing the agency.
+              items:
+                $ref: '#/components/schemas/ReferenceType'
     AgentType:
       title: Agent Type
       description: A data type for information about agents (e.g., call takers,
@@ -134,10 +136,12 @@ components:
               $ref: '#/components/schemas/ReferenceType'
               description: Linked element type is AgencyType
             notesReference:
-              $ref: '#/components/schemas/ReferenceType'
+              type: array
               description:
                 Reference to a Notes Data Component. Contains optional
                 alphanumeric text further describing the agent.
+              items:
+                $ref: '#/components/schemas/ReferenceType'
     IncidentMergeDirectionCodeSimpleType:
       title: Incident Merge Direction Code Simple Type
       type: string
@@ -345,10 +349,12 @@ components:
               items:
                 $ref: '#/components/schemas/ReferenceType'
             notesReference:
-              $ref: '#/components/schemas/ReferenceType'
+              type: array
               description:
                 Reference to a Notes Data Component. Contains optional
                 alphanumeric text further describing the person.
+              items:
+                $ref: '#/components/schemas/ReferenceType'
     DispositionType:
       title: Disposition Type
       description:
@@ -375,10 +381,12 @@ components:
             dispositionDescriptionText:
               type: string
             notesReference:
-              $ref: '#/components/schemas/ReferenceType'
+              type: array
               description:
                 Reference to a Notes Data Component. Contains optional
                 alphanumeric text further describing the incident.
+              items:
+                $ref: '#/components/schemas/ReferenceType'
     VehicleInformationType:
       title: Vehicle Information Type
       allOf:
@@ -420,10 +428,12 @@ components:
               items:
                 $ref: '#/components/schemas/ReferenceType'
             notesReference:
-              $ref: '#/components/schemas/ReferenceType'
+              type: array
               description:
                 Reference to a Notes Data Component. Contains optional
                 alphanumeric text further describing the vehicle.
+              items:
+                $ref: '#/components/schemas/ReferenceType'
     IncidentInformationType:
       title: Incident Information Type
       description:
@@ -519,10 +529,12 @@ components:
               items:
                 $ref: '#/components/schemas/DispositionType'
             notesReference:
-              $ref: '#/components/schemas/ReferenceType'
+              type: array
               description:
                 Reference to a Notes Data Component. Contains optional
                 alphanumeric text further describing the incident.
+              items:
+                $ref: '#/components/schemas/ReferenceType'
     UpdatedCBNType:
       title: Updated CBN Type
       description:
@@ -716,8 +728,12 @@ components:
               items:
                 type: string
             notesReference:
-              $ref: '#/components/schemas/ReferenceType'
-              description: Linked elements type is NotesType
+              type: array
+              description:
+                Reference to a Notes Data Component. Contains optional
+                alphanumeric text further describing the incident.
+              items:
+                $ref: '#/components/schemas/ReferenceType'
             unitStatusInternal:
               type: array
               description: A local code for a status of an emergency resource.
