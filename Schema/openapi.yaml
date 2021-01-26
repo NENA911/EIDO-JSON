@@ -77,7 +77,7 @@ components:
         - type: object
           required:
             - agencyRoleDescriptionRegistryText
-            - organizationIdentification
+            - agencyIdentityComponent
             - agencyType
           properties:
             agencyRoleDescriptionRegistryText:
@@ -91,12 +91,10 @@ components:
               items:
                 type: string
               description: One or more members of a list of available provider and agency types such as Law Enforcement, Fire, EMS, Consolidated Dispatch, Ambulance Company, etc. Agency Types are defined in the IANA SOS- SubServices registry 
-            organizationIdentification:
-              type: string
+            agencyIdentityComponent:
+              $ref: '#/components/schemas/IdentityType'
               description:
-                Agency Identifier. This includes private and public providers.
-                Agencies are globally unique. See NENA-STA-010 Agency Identifier
-                section for the format and requirements
+                Identifiy the agency.
             notesReference:
               type: array
               description:
@@ -113,20 +111,16 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - agentIdentification
+            - agentIdentityComponent
             - personRoleRegistryText
           properties:
-            agentIdentification:
-              type: string
-              description: A globally unique identifier of an agent or automaton
-                responsible for generating an EIDO and/or that contributed
-                information contained in an EIDO.
+            agentIdentityComponent:
+              $ref: '#/components/schemas/IdentityType'
+              description: Identifiy the agent. The Agent may be a person or an automaton such as an IMR.
             agentWorkstationPositionIdentification:
               type: string
               description:
-                A globally unique identifier of a workstation position that
-                generated an EIDO or contributed information contained in an
-                EIDO.
+                The workstation position ID within the agency of the agent or device.
             agentRoleRegistryText:
               type: array
               items:
@@ -169,6 +163,23 @@ components:
             agentReference:
               $ref: '#/components/schemas/ReferenceType'
               description: Linked element type is AgentType
+    IdentityType:
+      title: IdentityType
+      description: A data type that is used to convey identity
+      allOf:
+        - $ref: '#/components/schemas/PrologueType'
+        - type: object
+          required:
+            - identifier
+          properties:
+            name:
+              type: array
+              description: Common name of the entity being identified.
+              items:
+                type: string              
+            identifier:
+              type: string
+              description: Globally unique identifier in the format defined in STA-010.
     LinkDirectionCodeSimpleType:
       title: Link Direction Code Simple Type
       type: string
@@ -413,6 +424,10 @@ components:
                 The date and time that the relationship of the vehicle to the
                 incident was established
               format: date-time
+            vehicleIdentityComponent:
+              $ref: '#/components/schemas/IdentityType'
+              description:
+                Identifiy the vehicle.
             additionalDataReference:
               type: array
               description:
@@ -686,11 +701,10 @@ components:
           required:
             - agentReference
             - emergencyResourceTypeCommonRegistryText
-            - enforcmentUnitName
             - primaryUnitStatusRegistryText
             - resourceAttributeRegistryText
-            - enforcementUnitName
             - secondaryUnitStatusRegistryText
+            - emergencyResourceIdentityComponent
           properties:
             eta:
               type: string
@@ -711,10 +725,10 @@ components:
                 registry
               items:
                 type: string
-            enforcementUnitName:
-              type: string
-            enforcementUnitIdentification:
-              type: string
+            emergencyResourceIdentityComponent:
+              $ref: '#/components/schemas/IdentityType'
+              description:
+                Identifiy the Emergency Resource.
             primaryUnitStatusRegistryText:
               type: string
               description:
