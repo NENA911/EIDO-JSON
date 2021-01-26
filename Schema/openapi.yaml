@@ -159,9 +159,9 @@ components:
         - type: object
           required:
             - incidentMergeDirectionCode
-            - incidentTrackingIdentification
+            - linkedIncidentId
           properties:
-            incidentTrackingIdentification:
+            linkedIncidentId:
               type: string
               description: A globally unique emergency incident identifier.
             incidentMergeDirectionCode:
@@ -601,7 +601,7 @@ components:
               items:
                 $ref: '#/components/schemas/ReferenceType'
             activityDateRange:
-              $ref: 'NIEMComponents//nc.yaml#/components/schemas/ncDateRangeType'
+              $ref: 'NIEMComponents/nc.yaml#/components/schemas/ncDateRangeType'
             answerDate:
               type: string
               description: A date on which the call was answered by an agent.
