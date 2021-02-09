@@ -166,20 +166,18 @@ components:
     IdentityType:
       title: IdentityType
       description: A data type that is used to convey identity
-      allOf:
-        - $ref: '#/components/schemas/PrologueType'
-        - type: object
-          required:
-            - identifier
-          properties:
-            name:
-              type: array
-              description: Common name of the entity being identified.
-              items:
-                type: string              
-            identifier:
-              type: string
-              description: Globally unique identifier in the format defined in STA-010.
+      type: object
+      required:
+        - identifier
+      properties:
+        name:
+          type: array
+          description: Common name of the entity being identified.
+          items:
+            type: string              
+        identifier:
+          type: string
+          description: Globally unique identifier in the format defined in STA-010.
     LinkDirectionCodeSimpleType:
       title: Link Direction Code Simple Type
       type: string
