@@ -585,7 +585,7 @@ components:
             - callStatusRegistryText
             - callTypeDescriptionRegistryText
             - activityDateRange
-            - deviceCallBackInformationUrl
+            - deviceCallBackInformationUri
             - deviceContactHeader
           properties:
             callIdentifier:
@@ -630,7 +630,7 @@ components:
               items:
                 type: string
                 format: uri
-            deviceCallBackInformationUrl:
+            deviceCallBackInformationUri:
               type: array
               description:
                 A URL containing limited duration information for a telephone
