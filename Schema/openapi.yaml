@@ -865,7 +865,6 @@ components:
             - incidentTrackingIdentifier
             - agentReference
             - issuingElementIdentification
-            - reasonForIssueRegistryText
           properties:
             eidoVersion:
               type: string
@@ -875,11 +874,6 @@ components:
             incidentTrackingIdentifier:
               type: string
               description: A globally unique emergency incident identifier.
-            reasonForIssueRegistryText:
-              type: string
-              description:
-                Shall only contains values present in the Reason For Issue
-                registry
             issuingElementIdentification:
               type: string
               description:
