@@ -79,10 +79,12 @@ components:
             - agencyRoleDescriptionRegistryText
             - agencyIdentityComponent
             - agencyType
-          properties:
+          properties:            
             agencyRoleDescriptionRegistryText:
-              type: string
+              type: array
               description: Shall only contains values present in the Agency Role registry
+              items:
+                type: string
             incidentOwningAgencyIndicator:
               type: boolean
               description: True if an agency owns the emergency incident; false otherwise
