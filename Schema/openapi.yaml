@@ -113,6 +113,7 @@ components:
           required:
             - agentIdentityComponent
             - personRoleRegistryText
+            - agencyReference
           properties:
             agentIdentityComponent:
               $ref: '#/components/schemas/IdentityType'
@@ -120,7 +121,7 @@ components:
             agentWorkstationPositionIdentification:
               type: string
               description:
-                The workstation position ID within the agency of the agent or device.
+                The workstation position ID within the agent’s agency.
             agentRoleRegistryText:
               type: array
               items:
@@ -865,6 +866,7 @@ components:
             - incidentTrackingIdentifier
             - agentReference
             - issuingElementIdentification
+            - agencyComponent
           properties:
             eidoVersion:
               type: string
