@@ -77,9 +77,12 @@ components:
         - type: object
           required:
             - agencyRoleDescriptionRegistryText
-            - agencyIdentityComponent
             - agencyType
-          properties:            
+          properties:   
+            agencyJcard:
+              type: string
+              description:
+                The agency’s contact information.          
             agencyRoleDescriptionRegistryText:
               type: array
               description: Shall only contains values present in the Agency Role registry
@@ -93,10 +96,6 @@ components:
               items:
                 type: string
               description: One or more members of a list of available provider and agency types such as Law Enforcement, Fire, EMS, Consolidated Dispatch, Ambulance Company, etc. Agency Types are defined in the IANA SOS- SubServices registry 
-            agencyIdentityComponent:
-              $ref: '#/components/schemas/IdentityType'
-              description:
-                Identifiy the agency.
             notesReference:
               type: array
               description:
@@ -113,13 +112,13 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - agentIdentityComponent
             - personRoleRegistryText
             - agencyReference
           properties:
-            agentIdentityComponent:
-              $ref: '#/components/schemas/IdentityType'
-              description: Identifiy the agent. The Agent may be a person or an automaton such as an IMR.
+            agentJcard:
+              type: string
+              description:
+                The agent’s contact information.
             agentWorkstationPositionIdentification:
               type: string
               description:
@@ -163,24 +162,6 @@ components:
               description: A globally unique emergency incident identifier.
             incidentMergeDirectionCode:
               $ref: '#/components/schemas/IncidentMergeDirectionCodeSimpleType'
-            agentReference:
-              $ref: '#/components/schemas/ReferenceType'
-              description: Linked element type is AgentType
-    IdentityType:
-      title: IdentityType
-      description: A data type that is used to convey identity
-      type: object
-      required:
-        - identifier
-      properties:
-        name:
-          type: array
-          description: Common name of the entity being identified.
-          items:
-            type: string              
-        identifier:
-          type: string
-          description: Globally unique identifier in the format defined in STA-010.
     LinkDirectionCodeSimpleType:
       title: Link Direction Code Simple Type
       type: string
@@ -215,9 +196,6 @@ components:
                 incident.
             linkDirectionCode:
               $ref: '#/components/schemas/LinkDirectionCodeSimpleType'
-            agentReference:
-              $ref: '#/components/schemas/ReferenceType'
-              description: Linked element type is AgentType
     NotesType:
       title: Notes Type
       description: A data type for notes and comments associated with an incident.
@@ -425,10 +403,6 @@ components:
                 The date and time that the relationship of the vehicle to the
                 incident was established
               format: date-time
-            vehicleIdentityComponent:
-              $ref: '#/components/schemas/IdentityType'
-              description:
-                Identifiy the vehicle.
             additionalDataReference:
               type: array
               description:
@@ -705,7 +679,6 @@ components:
             - primaryUnitStatusRegistryText
             - resourceAttributeRegistryText
             - secondaryUnitStatusRegistryText
-            - emergencyResourceIdentityComponent
           properties:
             eta:
               type: string
@@ -726,10 +699,9 @@ components:
                 registry
               items:
                 type: string
-            emergencyResourceIdentityComponent:
-              $ref: '#/components/schemas/IdentityType'
-              description:
-                Identifiy the Emergency Resource.
+            emergencyResourceName:
+              type: string
+                Common name of the emergency resource.
             primaryUnitStatusRegistryText:
               type: string
               description:
