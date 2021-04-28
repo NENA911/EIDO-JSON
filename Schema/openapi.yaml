@@ -47,6 +47,7 @@ components:
       required:
         - $id
         - lastUpdateTimeStamp
+        - updatedByAgencyReference
       type: object
       properties:
         $id:
@@ -56,13 +57,13 @@ components:
           type: string
           description: Timestamp of the last time the data component was modified
           format: date-time
-        owningAgencyIdentifier:
-          type: string
+        updatedByAgencyReference:
+          $ref: '#/components/schemas/ReferenceType'
           description:
             Owning Agency Identifier. This includes private and public
             providers. Agencies are globally unique.
-        updatedByAgentIdentifier:
-          type: string
+        updatedByAgentReference:
+          $ref: '#/components/schemas/ReferenceType'
           description:
             A globally unique identifier of the agent or automaton that updated
             the data component last
@@ -155,11 +156,13 @@ components:
         - type: object
           required:
             - incidentMergeDirectionCode
-            - linkedIncidentId
+            - incidentTrackingIdentifier
           properties:
-            linkedIncidentId:
+            incidentTrackingIdentifier:
               type: string
-              description: A globally unique emergency incident identifier.
+              description: 
+                The Incident Tracking Identification of the Incident 
+                that is being merged with, or split from the Incident.
             incidentMergeDirectionCode:
               $ref: '#/components/schemas/IncidentMergeDirectionCodeSimpleType'
     LinkDirectionCodeSimpleType:
@@ -179,10 +182,10 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - incidentTrackingIdentification
+            - incidentTrackingIdentifier
             - linkDirectionCode
           properties:
-            incidentTrackingIdentification:
+            incidentTrackingIdentifier:
               type: string
               description: A globally unique emergency incident identifier.
             transactionReasonText:
@@ -324,6 +327,11 @@ components:
               description: Shall only contains values present in the Person Role registry
               items:
                 type: string
+            callIdentifier:
+              type: array
+              description: Call Identifier of the calls this person was involved on.
+              items:
+                type: string
             additionalDataReference:
               type: array
               description:
@@ -345,6 +353,13 @@ components:
                 alphanumeric text further describing the person.
               items:
                 $ref: '#/components/schemas/ReferenceType'
+            callBackReference:
+              type: array
+              description:
+                Reference to a call back data component. Identifies how the person 
+                described in this data component can be called back.  
+              items:
+                $ref: '#/components/schemas/ReferenceType'                
     DispositionType:
       title: Disposition Type
       description:
@@ -558,16 +573,11 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - callIdentifier
             - callStatusRegistryText
-            - callTypeDescriptionRegistryText
-            - activityDateRange
-            - deviceCallBackInformationUri
-            - deviceContactHeader
+            - standardPrimaryCallType
+            - direction
+            - callStartTimestamp
           properties:
-            callIdentifier:
-              type: string
-              description: An identifier of a call associated with an incident.
             relatedCallIdentifier:
               type: array
               description:
@@ -577,12 +587,32 @@ components:
                 type: string
             queueIdentifier:
               type: string
-              description: An identifier of a queue where the call is currently on.
-            callTypeDescriptionRegistryText:
+              description: 
+                An identifier of a queue where the call is currently on.
+            standardPrimaryCallType:
               type: string
               description:
-                Shall only contains values present in the Call Origination
-                registry
+                Values limited to those in the LogEvent CallTypes registry with 
+                “Primary” classification.
+            standardSecondaryCallType:
+              type: string
+              description:
+                Values limited to those in the LogEvent CallTypes registry with 
+                “Secondary” classification.
+            localCallType:
+              type: string
+              description: 
+                Locally defined call type.    
+            direction:
+              type: string
+              enum:
+                - incoming
+                - outgoing
+                - internal
+              description:
+                “incoming” means received by the EIDO sender, “outgoing” means sent
+                by the EIDO sender and “internal” means both caller and recipient 
+                are within the EIDO sender.
             additionalDataReference:
               type: array
               description:
@@ -590,37 +620,24 @@ components:
                 location, or person. Linked elements type is AdditionalDataType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-            activityDateRange:
-              $ref: 'NIEMComponents/nc.yaml#/components/schemas/ncDateRangeType'
+            callStartTimestamp:
+              type: string
+              description: Date and time stamp of when the call was received. 
+              format: date-time
             answerDate:
               type: string
               description: A date on which the call was answered by an agent.
               format: date-time
-            callStatusRegistryText:
+            callStateRegistryText:
               type: string
               description: Shall only contains values present in the Call Status registry
-            callMediaUrl:
+            callBackReference:
               type: array
               description:
-                A location where media associated with the call (images,
-                streaming video, streaming audio, etc.) is available.
+                Reference to a call back data component. Identifies how the caller 
+                described in this data component can be called back.  
               items:
-                type: string
-                format: uri
-            deviceCallBackInformationUri:
-              type: array
-              description:
-                A URL containing limited duration information for a telephone
-                number or SIP equivalent for calling back a device that
-                initiated a call. URI(s) found in the P-Asserted-Identity 
-                header if provided else  the URI in the From header.
-              items:
-                type: string
-                format: uri
-            deviceContactHeader:
-              type: string
-              description: 
-                Content of the device contact header.
+                $ref: '#/components/schemas/ReferenceType'
             verstat:
               type: string
               description: 
@@ -629,21 +646,11 @@ components:
               type: string
               description: 
                 Content of the SIP identity header. Required if known.
-            callerCallBackInformationUrl:
-              type: string
-              description:
-                A URL for a telephone number or SIP equivalent for calling back
-                a caller that initiated a call.
-              format: uri
             agentReference:
               type: array
               description: Linked elements type is AgentType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-            updatedCbn:
-              type: array
-              items:
-                $ref: '#/components/schemas/UpdatedCBNType'
             locationReference:
               type: array
               description:
@@ -665,6 +672,32 @@ components:
                 Linked elements type are NotesType
               items:
                 $ref: '#/components/schemas/ReferenceType' 
+    CallbackType:
+      title: Callback Type
+      description: 
+        This data component is used to exchange information about 
+        how to contact the Incident’s reporting parties.
+      allOf:
+        - $ref: '#/components/schemas/PrologueType'
+        - type: object
+          properties:
+            callBackInformationUri:
+              type: string
+              description: 
+                Information that enables agents and responders to call 
+                back. URI(s) found in the P-Asserted-Identity header if provided 
+                else  the URI in the From header.
+            deviceContactHeader:
+              type: string
+              description: 
+                Content of the device contact header. Information that 
+                enables agents and responders to possibly reach (call back) the 
+                device that initiated the call.
+            updatedCbn:
+              description: 
+                Identifies additional telephone numbers and SIP 
+                equivalents that can be used to contact.
+              $ref: '#/components/schemas/UpdatedCBNType' 
     EmergencyResourceType:
       title: Emergency Resource Type
       description: A data type for a resource (vehicle, person [foot patrol],
@@ -701,6 +734,7 @@ components:
                 type: string
             emergencyResourceName:
               type: string
+              description:
                 Common name of the emergency resource.
             primaryUnitStatusRegistryText:
               type: string
@@ -755,20 +789,6 @@ components:
                 elements type is VehicleInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-            dispositionComponent:
-              type: array
-              description:
-                Incident disposition information entered or updated by a
-                dispatch agent and/or a responding emergency resource.
-              items:
-                $ref: '#/components/schemas/DispositionType'
-            additionalDataReference:
-              type: array
-              description:
-                Additional information associated with an emergency resource.
-                Linked elements type is AdditionalDataType
-              items:
-                $ref: '#/components/schemas/ReferenceType'
     DispatchInformationType:
       title: Dispatch Information Type
       description: A data type for dispatch information related to an incident.
@@ -776,11 +796,16 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           properties:
-            organizationIdentification:
-              type: string
+            agencyReference:
+              $ref: '#/components/schemas/ReferenceType'
+              description:
+                Reference to an AgencyType. Agency that was dispatched
+                through action performed in this data component.
             agentReference:
               $ref: '#/components/schemas/ReferenceType'
-              description: Linked elements type is AgentType
+              description: 
+                Linked elements type is AgentType. Identifies the agent that 
+                completed the dispatch operation described 
             emergencyResourceReference:
               type: array
               description:
@@ -837,8 +862,6 @@ components:
         - type: object
           required:
             - eidoVersion
-            - incidentTrackingIdentifier
-            - agentReference
             - issuingElementIdentification
             - agencyComponent
           properties:
@@ -847,29 +870,11 @@ components:
               description: Version of the EIDO structure.
               enum:
                 - '1.0'
-            incidentTrackingIdentifier:
-              type: string
-              description: A globally unique emergency incident identifier.
             issuingElementIdentification:
               type: string
               description:
                 An identifier of a functional element that created the EIDO
                 instance.
-            incidentCollaborationUrl:
-              type: array
-              description:
-                A URL reference to multi-media collaboration information
-                associated with an incident.
-              items:
-                type: string
-                format: uri
-            agencyReference:
-              type: array
-              description:
-                An organization that owns or is otherwise related to an
-                emergency incident. Linked elements type is AgencyType
-              items:
-                $ref: '#/components/schemas/ReferenceType'
             mergeComponent:
               type: array
               description: Information about a merged or split incident.
@@ -893,6 +898,12 @@ components:
                 agent.
               items:
                 $ref: '#/components/schemas/CallInformationType'
+            callbackComponent:
+              type: array
+              description:
+                Contains information about how to call a person.
+              items:
+                $ref: '#/components/schemas/CallbackType'
             dispatchComponent:
               type: array
               description: Dispatch information related to an incident.
