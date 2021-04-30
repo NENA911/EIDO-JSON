@@ -354,12 +354,10 @@ components:
               items:
                 $ref: '#/components/schemas/ReferenceType'
             callBackReference:
-              type: array
+              $ref: '#/components/schemas/ReferenceType'  
               description:
                 Reference to a call back data component. Identifies how the person 
-                described in this data component can be called back.  
-              items:
-                $ref: '#/components/schemas/ReferenceType'                
+                described in this data component can be called back.
     DispositionType:
       title: Disposition Type
       description:
@@ -632,12 +630,10 @@ components:
               type: string
               description: Shall only contains values present in the Call Status registry
             callBackReference:
-              type: array
+              $ref: '#/components/schemas/ReferenceType'  
               description:
                 Reference to a call back data component. Identifies how the caller 
-                described in this data component can be called back.  
-              items:
-                $ref: '#/components/schemas/ReferenceType'
+                described in this data component can be called back.   
             verstat:
               type: string
               description: 
@@ -682,11 +678,13 @@ components:
         - type: object
           properties:
             callBackInformationUri:
-              type: string
+              type: array
               description: 
                 Information that enables agents and responders to call 
                 back. URI(s) found in the P-Asserted-Identity header if provided 
                 else  the URI in the From header.
+              items:
+                type: string
             deviceContactHeader:
               type: string
               description: 
