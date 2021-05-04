@@ -113,7 +113,7 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - personRoleRegistryText
+            - agentRoleRegistryText
             - agencyReference
           properties:
             agentJcard:
