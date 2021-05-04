@@ -396,7 +396,6 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - ncVehicleComponent
             - vehicleRelationshipType
             - vehicleRelationshipTimeStamp
           properties:
