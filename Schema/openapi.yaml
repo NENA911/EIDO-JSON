@@ -5,9 +5,9 @@ info:
     A standard format and content definition for exchanging emergency incident
     related data.
   contact:
-    name: Richard Maw
-    email: rmaw@msn.com
-  version: '0.0.3'
+    name: NENA
+    email: commleadership@nena.org
+  version: '1.0.0'
 servers:
   - url: 'http://localhost/'
   - url: 'https://localhost/'
