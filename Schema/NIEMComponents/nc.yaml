@@ -1961,8 +1961,7 @@ components:
             A kind of financial account number. NIEM reference is
             nc:FinancialAccountNumberCategoryCode
           items:
-            $ref: >-
-              '#/components/schemas/ncFinancialAccountNumberCategoryCodeType'
+            $ref: '#/components/schemas/ncFinancialAccountNumberCategoryCodeType'
         categoryCode:
           type: array
           description: >-
@@ -2490,8 +2489,7 @@ components:
       description: A data type for a kind of financial account number.
       properties:
         simpleType:
-          $ref: >-
-            '#/components/schemas/ncFinancialAccountNumberCategoryCodeSimpleType'
+          $ref: '#/components/schemas/ncFinancialAccountNumberCategoryCodeSimpleType'
         '@context':
           type: string
           description: ncFinancialAccountNumberCategoryCodeType JSON-LD context
@@ -4664,8 +4662,7 @@ components:
             be contacted with the given contact information. NIEM reference is
             nc:ContactInformationAvailabilityCode
           items:
-            $ref: >-
-              '#/components/schemas/ncContactInformationAvailabilityCodeType'
+            $ref: '#/components/schemas/ncContactInformationAvailabilityCodeType'
         availability:
           type: array
           description: >-
@@ -4967,8 +4964,7 @@ components:
         available to be contacted with the given contact information.
       properties:
         simpleType:
-          $ref: >-
-            '#/components/schemas/ncContactInformationAvailabilityCodeSimpleType'
+          $ref: '#/components/schemas/ncContactInformationAvailabilityCodeSimpleType'
         '@context':
           type: string
           description: ncContactInformationAvailabilityCodeType JSON-LD context
@@ -8796,8 +8792,7 @@ components:
         service.
       properties:
         simpleType:
-          $ref: >-
-            '#/components/schemas/ncMilitaryDischargeCategoryCodeSimpleType'
+          $ref: '#/components/schemas/ncMilitaryDischargeCategoryCodeSimpleType'
         '@context':
           type: string
           description: ncMilitaryDischargeCategoryCodeType JSON-LD context
