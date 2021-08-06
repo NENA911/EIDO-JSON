@@ -570,7 +570,7 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - callStatusRegistryText
+            - callStateRegistryText
             - standardPrimaryCallType
             - direction
             - callStartTimestamp
@@ -627,7 +627,7 @@ components:
               format: date-time
             callStateRegistryText:
               type: string
-              description: Shall only contains values present in the Call Status registry
+              description: Current call status (when the EIDO was created) from the available call statuses in the “Call States” registry i.e., callBegin, callAnswered, callEnd, partyAdd , etc. Values limited to those in the IANA CallStates registry.
             callBackReference:
               $ref: '#/components/schemas/ReferenceType'  
               description:
