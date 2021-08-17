@@ -54,6 +54,9 @@
 	"callbackComponent": [{
 		"$id": "123e4567-e89b-1234-a456-426614174000",
 		"lastUpdateTimeStamp": "2021-04-30T18:40:00.0Z",
+		"updatedByAgencyReference": {
+			"$ref": "state.pa.us"
+		},
 		"updatedByAgentReference": {
 			"$ref": "tjones.atroop@state.pa.us"
 		},
@@ -149,9 +152,9 @@
 		"callIdentifier": [
 			"urn:emergency:uid:callid:a56e556d871:bcf.state.pa.us"
 		],
-		"callBackReference": [{
+		"callBackReference": {
 			"$ref": "123e4567-e89b-1234-a456-426614174000"
-		}]
+		}
 	}],
 	"@context": {
 		"@vocab": "./JSON-LD_Contexts/EmergencyIncidentDataObjectType.jsonld"
