@@ -1,0 +1,60 @@
+    PTT-P25:
+      title: PTT-P25
+      description:
+        A P25 talk path, typically a talkgroup on a trunked radio system. However, may be operating in direct (talk-around) mode or through a conventional radio repeater.
+      type: object
+      required:
+        - channelAlias
+      properties:
+        channelAlias:
+          type: string
+          description: The alias or common name associated with a talk path or radio channel. Required. For example, 'LTAC-1'
+        channelID:
+          type: string
+          description: The P25 talkgroup ID for the talkpath or the channel identifier, if available. May be in hex or decimal format.
+        channelUplinkFrequency:
+          type: string
+          description: The uplink frequency for the talkpath, if operating in direct or conventional mode.
+        channelDownlinkFrequency:
+          type: string
+          description: The downlink frequency for the talkpath, if operating in direct or conventional mode.
+        channelNac:
+          type: string
+          description: The Network Access Code (NAC) for the talkpath, if available. May be in hex or decimal format. 
+        channelEncrypted:
+          type: boolean
+          description: Indicates whether the talk path is encrypted.
+        SystemAlias:
+          type: string
+          description: The alias or common name for radio system. Typically the name for a radio system. For example, 'Allied Matrix for Emergency Response'.
+        WACN:
+          type: string
+          description: The Wide Area Communications Network  code for the system. This with the SystemID uniquely identifies a trunked radio system.
+        SystemId:
+          type: string
+          description: The system ID for a trunked radio system. This with the WACN uniquely identifies a trunked radio system.
+        units:
+          type: array
+          items:
+            type: object
+            properties:
+              alias:
+                type: string
+                description: The common name or alias for units assigned to the talk path for the incident. For example, 'Cruiser-2020-Mobile' or 'Dern Handy'.
+              ID:
+                type: string
+                description: The unique ID for the radio terminal assigned to the talk path for the incident. Can be presented in hex or decimal.
+        talkMode:
+          enum:
+            - Group
+            - Private
+          description: Whether the talk path is a group or private call. Typically, talk paths are group calls.
+        groupMode:
+          type: string
+          description:
+            The type of group call if the talk path is a group call. Typically, group calls will be in conventional (through a repeater) or trunked mode (over a trunked radio system). MUST be a value from the groupMode registry in the Emergency area in IANA protocol registries.
+        radioBearer:
+          type: array
+          items: 
+            type: string
+            description: The frequency band(s) for radio bearer(s) that the talk path may be conveyed on. Typically this is determined by the frequency band that a radio repeater or trunked radio system is configured for. MUST be a value from the radioBearer registry in the Emergency area in IANA protocol registries.
