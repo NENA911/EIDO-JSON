@@ -729,6 +729,12 @@ components:
                 registry
               items:
                 type: string
+            resourceAttributeInternalText:
+              type: array
+              description: 
+                A local code for an emergency resource attribute.  Must be populated if the resourceAttributeRegistryText is set to 'Other'
+                items:
+                  type: string
             emergencyResourceName:
               type: string
               description:
