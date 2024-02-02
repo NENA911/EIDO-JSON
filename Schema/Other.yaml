@@ -1,0 +1,22 @@
+openapi: 3.0.2
+info:
+  title: Other
+  description: Other Incident Resource not otherwise defined.
+  contact:
+    name: NENA
+    email: commleadership@nena.org
+  version: '1.0.0'
+components:
+  schemas:
+    other:
+      title: Other
+      type: object
+      required:
+        - otherValue
+      properties:
+        otherValue:
+          type: string
+          description: Other incident resource not otherwise defined.
+        notes:
+          type: string
+          description: Any notes associated with the incident resource not otherwise defined.
