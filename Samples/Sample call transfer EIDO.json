@@ -1,6 +1,6 @@
 {
 	"$id": "urn:emergency:uid:incidentid:a56e556d871:bcf.state.pa.us",
-	"lastUpdateTimeStamp": "2021-04-30T18:43:49.439Z",
+	"lastUpdateTimeStamp": "2021-04-30T14:43:49.439-04:00",
 	"updatedByAgencyReference": {
 		"$ref": "state.pa.us"
 	},
@@ -11,7 +11,7 @@
 	"issuingElementIdentification": "idx.state.pa.us",
 	"callComponent": [{
 		"$id": "urn:emergency:uid:callid:a56e556d871:bcf.state.pa.us",
-		"lastUpdateTimeStamp": "2021-04-30T18:42:00.0Z",
+		"lastUpdateTimeStamp": "2021-04-30T14:42:00.0-04:00",
 		"updatedByAgencyReference": {
 			"$ref": "state.pa.us"
 		},
@@ -31,8 +31,8 @@
 				"$ref": "123e4567-e89b-12d3-a456-426614174002"
 			}
 		],
-		"callStartTimestamp": "2021-04-30T18:40:00.0Z",
-		"answerDate": "2021-04-30T18:42:00.0Z",
+		"callStartTimestamp": "2021-04-30T14:40:00.0-04:00",
+		"answerDate": "2021-04-30T14:42:00.0-04:00",
 		"callStateRegistryText": "callAnswered",
 		"callBackReference": {
 			"$ref": "123e4567-e89b-1234-a456-426614174000"
@@ -53,7 +53,7 @@
 	}],
 	"callbackComponent": [{
 		"$id": "123e4567-e89b-1234-a456-426614174000",
-		"lastUpdateTimeStamp": "2021-04-30T18:40:00.0Z",
+		"lastUpdateTimeStamp": "2021-04-30T14:40:00.0-04:00",
 		"updatedByAgencyReference": {
 			"$ref": "state.pa.us"
 		},
@@ -68,7 +68,7 @@
 	}],
 	"agencyComponent": [{
 		"$id": "state.pa.us",
-		"lastUpdateTimeStamp": "2021-04-30T18:40:00.0Z",
+		"lastUpdateTimeStamp": "2021-04-30T14:40:00.0-04:00",
 		"updatedByAgencyReference": {
 			"$ref": "state.pa.us"
 		},
@@ -81,7 +81,7 @@
 	}],
 	"agentComponent": [{
 		"$id": "tjones.atroop@state.pa.us",
-		"lastUpdateTimeStamp": "2021-04-30T18:42:00.0Z",
+		"lastUpdateTimeStamp": "2021-04-30T14:42:00.0-04:00",
 		"updatedByAgencyReference": {
 			"$ref": "state.pa.us"
 		},
@@ -98,7 +98,7 @@
 	}],
 	"additionalDataComponent": [{
 			"$id": "123e4567-e89b-12d3-a456-426614174000",
-			"lastUpdateTimeStamp": "2021-04-30T18:40:00.0Z",
+			"lastUpdateTimeStamp": "2021-04-30T14:40:00.0-04:00",
 			"updatedByAgencyReference": {
 				"$ref": "state.pa.us"
 			},
@@ -106,7 +106,7 @@
 		},
 		{
 			"$id": "123e4567-e89b-12d3-a456-426614174001",
-			"lastUpdateTimeStamp": "2021-04-30T18:40:00.0Z",
+			"lastUpdateTimeStamp": "2021-04-30T14:40:00.0-04:00",
 			"updatedByAgencyReference": {
 				"$ref": "state.pa.us"
 			},
@@ -114,7 +114,7 @@
 		},
 		{
 			"$id": "123e4567-e89b-12d3-a456-426614174002",
-			"lastUpdateTimeStamp": "2021-04-30T18:40:00.0Z",
+			"lastUpdateTimeStamp": "2021-04-30T14:40:00.0-04:00",
 			"updatedByAgencyReference": {
 				"$ref": "state.pa.us"
 			},
@@ -123,16 +123,16 @@
 	],
 	"locationComponent": [{
 			"$id": "123e4567-dead-12d3-a456-426614174000",
-			"lastUpdateTimeStamp": "2021-04-30T18:40:00.0Z",
+			"lastUpdateTimeStamp": "2021-04-30T14:40:00.0-04:00",
 			"updatedByAgencyReference": {
 				"$ref": "state.pa.us"
 			},
 			"locationTypeDescriptionRegistryText": "RoutingLocation",
-			"locationByValue": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <presence xmlns=\"urn:ietf:params:xml:ns:pidf\" xmlns:gp=\"urn:ietf:params:xml:ns:pidf:geopriv10\" xmlns:gbp=\"urn:ietf:params:xml:ns:pidf:geopriv10:basicPolicy\" xmlns:dm=\"urn:ietf:params:xml:ns:pidf:data-model\" entity=\"pres:alice@atlanta.example.com\"> <dm:device id=\"target123-1\"> <gp:geopriv> <gp:location-info> <civicAddress xmlns=\"urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr\"> <country>US</country> <A1>DE</A1> <A3>Wilmington</A3> <PRD>W</PRD> <RD>Cellular</RD> <STS>Street</STS> <HNO>42</HNO> </civicAddress> </gp:location-info> <gp:usage-rules> <gbp:retransmission-allowed>true</gbp:retransmission-allowed> <gbp:retention-expiry>2021-12-10T20:00:00Z</gbp:retention-expiry> </gp:usage-rules> <gp:method>Manual</gp:method> <gp:provided-by xmlns=\"urn:ietf:params:xml:ns:EmergencyCallData\"> <EmergencyCallDataValue> <EmergencyCallData.ProviderInfo xmlns=\"urn:ietf:params:xml:ns:EmergencyCallData:ProviderInfo\"> <DataProviderReference>88QV4FpfZ976T@example.com</DataProviderReference> <DataProviderString>Diamond State Exemplar</DataProviderString> <ProviderID>urn:nena:companyid:diamond</ProviderID> <ProviderIDSeries>NENA</ProviderIDSeries> <TypeOfProvider>Access Network Provider</TypeOfProvider> <ContactURI>tel:+1-302-555-0000</ContactURI> <Language>en</Language> </EmergencyCallData.ProviderInfo> </EmergencyCallDataValue> </gp:provided-by> </gp:geopriv> </dm:device> </presence>"
+			"locationByValue": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <presence xmlns=\"urn:ietf:params:xml:ns:pidf\" xmlns:gp=\"urn:ietf:params:xml:ns:pidf:geopriv10\" xmlns:gbp=\"urn:ietf:params:xml:ns:pidf:geopriv10:basicPolicy\" xmlns:dm=\"urn:ietf:params:xml:ns:pidf:data-model\" entity=\"pres:alice@atlanta.example.com\"> <dm:device id=\"target123-1\"> <gp:geopriv> <gp:location-info> <civicAddress xmlns=\"urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr\"> <country>US</country> <A1>DE</A1> <A3>Wilmington</A3> <PRD>W</PRD> <RD>Cellular</RD> <STS>Street</STS> <HNO>42</HNO> </civicAddress> </gp:location-info> <gp:usage-rules> <gbp:retransmission-allowed>true</gbp:retransmission-allowed> <gbp:retention-expiry>2021-12-10T16:00:00-04:00</gbp:retention-expiry> </gp:usage-rules> <gp:method>Manual</gp:method> <gp:provided-by xmlns=\"urn:ietf:params:xml:ns:EmergencyCallData\"> <EmergencyCallDataValue> <EmergencyCallData.ProviderInfo xmlns=\"urn:ietf:params:xml:ns:EmergencyCallData:ProviderInfo\"> <DataProviderReference>88QV4FpfZ976T@example.com</DataProviderReference> <DataProviderString>Diamond State Exemplar</DataProviderString> <ProviderID>urn:nena:companyid:diamond</ProviderID> <ProviderIDSeries>NENA</ProviderIDSeries> <TypeOfProvider>Access Network Provider</TypeOfProvider> <ContactURI>tel:+1-302-555-0000</ContactURI> <Language>en</Language> </EmergencyCallData.ProviderInfo> </EmergencyCallDataValue> </gp:provided-by> </gp:geopriv> </dm:device> </presence>"
 		},
 		{
 			"$id": "123e4567-beef-12d3-a456-426614174000",
-			"lastUpdateTimeStamp": "2021-04-30T18:40:30.0Z",
+			"lastUpdateTimeStamp": "2021-04-30T14:40:30.0-04:00",
 			"updatedByAgencyReference": {
 				"$ref": "state.pa.us"
 			},
@@ -142,7 +142,7 @@
 	],
 	"personComponent": [{
 		"$id": "123e4567-abcd-12d3-a456-426614174000",
-		"lastUpdateTimeStamp": "2021-04-30T18:40:00.0",
+		"lastUpdateTimeStamp": "2021-04-30T14:40:00.0-04:00",
 		"updatedByAgencyReference": {
 			"$ref": "state.pa.us"
 		},
