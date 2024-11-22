@@ -96,7 +96,7 @@ components:
               type: array
               items:
                 type: string
-              description: One or more members of a list of available provider and agency types such as Law Enforcement, Fire, EMS, Consolidated Dispatch, Ambulance Company, etc. Agency Types are defined in the IANA SOS- SubServices registry 
+              description: 'One or more members of a list of available provider and agency types. The agency types are taken from the IANA urn:emergency:service:responder registry and the subregistries defined for that registry. Values exclude the “urn:emergency:service:responder.” prefix. Example values: “police.federal.fbi”, “fire.forest”, “poison_control” including: Law Enforcement, Fire, EMS, Consolidated Dispatch, Ambulance Company, etc. Agency Types are defined in the IANA urn:emergency:service:responder registry' 
             notesReference:
               type: array
               description:
@@ -623,7 +623,7 @@ components:
               format: date-time
             answerDate:
               type: string
-              description: A date on which the call was answered by an agent.
+              description: A date and time stamp on which the call was answered by an agent.
               format: date-time
             callStateRegistryText:
               type: string
