@@ -265,7 +265,7 @@ components:
               items:
                 $ref: '#/components/schemas/ReferenceType'
               description: 
-                A reference to information usedd to raise special attention 
+                A reference to information used to raise special attention 
                 to circumstances related to this Note that might threaten the safety of 
                 people or property. Linked elements type are CautionType.
     AdditionalDataType:
@@ -829,12 +829,10 @@ components:
                 enables agents and responders to possibly reach (call back) the 
                 device that initiated the call.
             updatedCbn:
-              type: array
               description: 
                 Identifies additional telephone numbers and SIP 
                 equivalents that can be used to contact.
-              items:
-                $ref: '#/components/schemas/UpdatedCBNType' 
+              $ref: '#/components/schemas/UpdatedCBNType' 
     EmergencyResourceType:
       title: Emergency Resource Type
       description: A data type for a resource (vehicle, person [foot patrol],
@@ -1094,7 +1092,7 @@ components:
                 creating a circular reference. Implementations MUST take this fact into 
                 consideration to avoid circular reference exceptions. 
               items:
-                $ref: '#/components/schemas/SharedCommunicationInformationType'
+                $ref: '#/components/schemas/ReferenceType'
             notesReference:
               type: array
               description:
