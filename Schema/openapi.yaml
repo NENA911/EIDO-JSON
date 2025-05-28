@@ -67,7 +67,12 @@ components:
           description:
             A globally unique identifier of the agent or automaton that updated
             the data component last
-        externalInformationSourceReferences: 
+        AlternateValueReferences:
+          type: array
+          description: References to alternate values data component. Alternate values for data elements in this data component.
+          items:
+            $ref: '#/components/schemas/ReferenceType'
+        externalInformationSourceReferences:
           type: array
           items:
             $ref: '#/components/schemas/ReferenceType'
@@ -81,6 +86,54 @@ components:
           description:
             References to Media Data Components that link to external media.
       description: A common prologue on each data component
+    AlternateValuesType:
+      title: Alternate Values Type
+      description: 
+        Subscribers may need to see conflicting values not chosen by an inter-agency IDX coalescing algorithm. 
+        For this purpose, a data component for an EIDO is defined which contains the differences. 
+        For each data component where a constituent sends a candidate value that the IDX does not use in the EIDO proper, 
+        the IDX includes the “Alternate Values” data component. 
+        That data component has conflicting values from the constituents.
+      type: object
+      required:
+        - DataComponentReference
+        - Element
+        - Alternate
+      properties:
+        DataComponentReference:
+          description: Reference to the data component this alternate value applies to.
+          $ref: '#/components/schemas/ReferenceType'
+        Element:
+          type: string
+          description:
+            Name of Element in the referenced component.
+        Alternate:
+          description: Alternate value for the element.
+          type: array
+          items:
+            $ref: '#/components/schemas/AlternateType'
+
+    AlternateType:
+      title: Alternate Type
+      description: Alternate Type
+      type: object
+      required:
+        - Constituent
+        - TimeStamp
+        - Value
+      properties:
+        Constituent:
+          type: string
+          description: Agency/Service/FE Id of constituent
+        Timestamp:
+          type: string
+          format: date-time
+          description: TimeStamp of Data Component 
+        values:
+          type: string
+          description: 
+            Value for this element sent by constituent
+            If the element is complex (array or object), the value is the JSON representation of the element. 
     AgencyType:
       title: Agency Type
       description:
@@ -107,13 +160,13 @@ components:
               items:
                 type: string
               description: 
-                One or more members of a list of available provider and agency types. 
+                'One or more members of a list of available provider and agency types. 
                 The agency types are taken from the IANA urn:emergency:service:responder 
                 registry and the subregistries defined for that registry. Values exclude 
                 the “urn:emergency:service:responder.” prefix. 
                 Example values: “police.federal.fbi”, “fire.forest”, “poison_control” 
                 including: Law Enforcement, Fire, EMS, Consolidated Dispatch, Ambulance Company, etc. 
-                Agency Types are defined in the IANA urn:emergency:service:responder registry.
+                Agency Types are defined in the IANA urn:emergency:service:responder registry.'
             notesReference:
               type: array
               description:
@@ -462,6 +515,53 @@ components:
                 Linked elements type is ItemInformationType.
               items:
                 $ref: '#/components/schemas/ReferenceType'
+    OrganizationInformationType:
+      title: Organization Information Type
+      description: Information about organizations associated with an Incident.
+      allOf:
+        - $ref: '#/components/schemas/PrologueType'
+        - type: object
+          required:
+            - organizationIncidentRoleRegistryText
+          properties:
+            ncOrganizationComponent:
+              $ref: 'NIEMComponents/nc.yaml#/components/schemas/ncOrganizationType'
+            organizationIncidentRoleRegistryText:
+              type: array
+              description: Shall only contains values from the Organization Incident Role registry.
+              items:
+                type: string
+            callIdentifier:
+              type: array
+              description: Call Identifier of the calls this person was involved on.
+              items:
+                type: string
+            additionalDataReference:
+              type: array
+              description:
+                Additional Data about an organization.
+                Linked elements type are AdditionalDataType
+              items:
+                $ref: '#/components/schemas/ReferenceType'
+            locationReference:
+              type: array
+              description:
+                A location associated with an organisation. Linked elements type is
+                LocationInformationType
+              items:
+                $ref: '#/components/schemas/ReferenceType'
+            notesReference:
+              type: array
+              description:
+                Reference to a Notes Data Component. Contains optional
+                alphanumeric text further describing the organization.
+              items:
+                $ref: '#/components/schemas/ReferenceType'
+            callBackReference:
+              $ref: '#/components/schemas/ReferenceType'  
+              description:
+                Reference to a call back data component. Identifies how the organization 
+                described in this data component can be called back.
     DispositionType:
       title: Disposition Type
       description:
@@ -504,7 +604,7 @@ components:
             - vehicleRelationshipTimeStamp
           properties:
             ncVehicleComponent:
-              $ref: 'NIEMComponents//nc.yaml#/components/schemas/ncVehicleType'
+              $ref: 'NIEMComponents/nc.yaml#/components/schemas/ncVehicleType'
             vehicleRelationshipType:
               type: array
               description:
@@ -622,6 +722,13 @@ components:
                 elements type is PersonInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
+            organizationReference:
+              type: array
+              description:
+                Information about an organizations associated with an incident. Linked
+                elements type is OrganizationInformationType
+              items:
+                $ref: '#/components/schemas/ReferenceType'
             vehicleReference:
               type: array
               description:
@@ -731,9 +838,9 @@ components:
                 - outgoing
                 - internal
               description:
-                'incoming' means received by the EIDO sender, 'outgoing' means sent
+                "'incoming' means received by the EIDO sender, 'outgoing' means sent
                 by the EIDO sender and 'internal' means both caller and recipient 
-                are within the EIDO sender.
+                are within the EIDO sender."
             priorityIdentifier:
               type: string
               description: 
@@ -800,6 +907,13 @@ components:
               description:
                 Information about a person associated with an incident. Linked
                 elements type is PersonInformationType
+              items:
+                $ref: '#/components/schemas/ReferenceType'
+            organizationReference:
+              type: array
+              description:
+                Information about a organization associated with an incident. Linked
+                elements type is OrganizationInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
             agencyReference:
@@ -872,8 +986,8 @@ components:
               type: array
               description: 
                 A local code for an emergency resource attribute.  Must be populated if the resourceAttributeRegistryText is set to 'Other'
-                items:
-                  type: string
+              items:
+                type: string
             emergencyResourceName:
               type: string
               description:
@@ -1021,8 +1135,8 @@ components:
                 Linked elements type are NotesType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-    MediaComponentType:
-      title: Link Information Type
+    MediaType:
+      title: Media Type
       description: A data type representing a URI link to static or streaming media.
       allOf:
         - $ref: '#/components/schemas/PrologueType'
@@ -1034,7 +1148,7 @@ components:
             uri:
               type: string
               format: uri-reference
-              description: A globally unique emergency incident identifier.
+              description: A URI which when dereferenced will retrieve the media.  
             contentType:
               type: string
               description: An entry from the IANA “Media Types” registry 
@@ -1060,9 +1174,9 @@ components:
                 to which the call leg is related to. 
             callStateRegistryText:
               type: string
-              description: An entry from the IANA “Media Types” registry 
-    SharedCommunicationInformationType:
-      title: Shared Communiucation Information Type
+              description: An entry from the IANA “Call Status” registry 
+    SharedCommunicationResourceType:
+      title: Shared Communication Resource Type
       description: 
         A data type representing information about shared resources used for shared communication 
         between agents and agencies for this Incident. This would include information about radio 
@@ -1107,7 +1221,7 @@ components:
               items:
                 $ref: '#/components/schemas/ReferenceType'
     ExternalInformationSourceType:
-      title: Shared Communiucation Information Type
+      title: External Information Source
       description: 
         A data type representing external information sources not otherwise defined in the EIDO. 
         The referenced external information source is likely to apply its own data right 
@@ -1142,6 +1256,7 @@ components:
         - type: object
           required:
             - severity
+            - startTimestamp
           properties:
             severity:
               type: string
@@ -1216,7 +1331,9 @@ components:
                 A textual description indicating the type of caution information. This 
                 is the internal text used by the local agencies involved in the Incident.
             cautionTypeCommonRegistryText:
-              type: string
+              type: array
+              items:
+                type: string
               description: 
                 A registry value further describing the caution. More than one is allowed 
                 when they are related.
@@ -1263,7 +1380,7 @@ components:
         - type: object
           properties:
             ncItemType:
-                $ref: 'NIEMComponents/nc.yaml#/components/schemas/ncItemType'
+              $ref: 'NIEMComponents/nc.yaml#/components/schemas/ncItemType'
               description: 
                 A data type for an article or thing. Many NIEM types extend the ItemType and 
                 can be represented in this field e.g. j:FirearmType,j:ExplosiveType, 
@@ -1300,6 +1417,13 @@ components:
               description: Version of the EIDO structure.
               enum:
                 - '1.0'
+            eidoExtensionId:
+              type: array
+              description: 
+                EIDO extension IDs identifying extension that are used in the EIDO instance. 
+                Values are to be included in the EIDO EidoExtensionId registry.
+              items:
+                type: string
             issuingElementIdentification:
               type: string
               description:
@@ -1394,30 +1518,24 @@ components:
               description:
                 All caution information referenced in this document are listed here.
               items:
-                $ref: '#/components/schemas/CautionInformationType'
+                $ref: '#/components/schemas/CautionType'
             mediaComponent:
               type: array
               description:
                 All media component information referenced in this document are listed here. 
               items:
-                $ref: '#/components/schemas/MediaComponentType'
+                $ref: '#/components/schemas/MediaType'
             sharedCommunicationResourceComponent:
               type: array
               description:
                 All shared resources used for shared communication between agents and agencies
-                for this Incident. This includes information about radio channels, talk groups, 
-                chat rooms, etc..
+                for this Incident.
               items:
-                $ref: '#/components/schemas/SharedCommunicationInformationType'
+                $ref: '#/components/schemas/SharedCommunicationResourceType'
             externalInformationSourceComponent:
               type: array
               description:
-                All external information sources not otherwise defined in the EIDO. The referenced 
-                external information source is likely to apply its own data right management policies
-                while responding to any agencies trying to access the external data. This is not a 
-                replacement for Additional Data but can be used to provide a reference to an IS-ADR. 
-                A data provider SHOULD use the mechanism described in rfc7852 for any new sources 
-                of data about a call, person, or location. 
+                All external information sources not otherwise defined in the EIDO. 
               items:
                 $ref: '#/components/schemas/ExternalInformationSourceType'
             '@context':
