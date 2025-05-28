@@ -16618,3 +16618,271 @@ components:
               description: jCauseOfDeathAssessmentType JSON-LD context
               enum:
                 - ../JSON-LD_Contexts/jCauseOfDeathAssessmentTypeContext.jsonld
+    jCommercialVehicleType:
+      title: 'j:CommercialVehicleType'
+      description: >-
+        A data type for a class of vehicle that includes motor vehicles with a
+        gross vehicle weight rating of 26,001 pounds or more.
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncVehicleType
+        - type: object
+          properties:
+            prismTargetDate:
+              type: array
+              description: >-
+                A date associated with the current value of the Target/ History
+                Indicator on the Performance and Registration Information
+                Systems Management (PRISM) Carrier Record. NIEM reference is
+                j:CommercialVehiclePRISMTargetDate
+              items:
+                $ref: nc.yaml#/components/schemas/ncDateType
+            isPreviouslyTargeted:
+              type: array
+              description: >-
+                True if the Performance and Registration Information Systems
+                Management (PRISM) Carrier Target/History Indicator reveals the
+                carrier had been targeted in the past for increased enforcement
+                action record; false otherwise. NIEM reference is
+                j:CommercialVehiclePreviouslyTargetedIndicator
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            isCurrentlyTargeted:
+              type: array
+              description: >-
+                True if the Performance and Registration Information Systems
+                Management (PRISM) Carrier Target/History Indicator reveals the
+                carrier is currently Targeted for increased enforcement action
+                record; false otherwise. NIEM reference is
+                j:CommercialVehicleCurrentlyTargetedIndicator
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            prismAdditionDate:
+              type: array
+              description: >-
+                A date on which the vehicle was added to the Performance and
+                Registration Information Systems Management (PRISM) Vehicle File
+                for safety monitoring. NIEM reference is
+                j:CommercialVehiclePRISMAdditionDate
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsdate
+            motorCarrier:
+              type: array
+              description: >-
+                An organization providing commercial motor vehicle
+                transportation for compensation. NIEM reference is
+                j:MotorCarrier
+              items:
+                $ref: j.yaml#/components/schemas/jMotorCarrierType
+            cargoBodyCategoryCode:
+              type: array
+              description: >-
+                A kind of body for buses and trucks more than 10,000 lbs (4,536
+                kg) GVWR. NIEM reference is
+                j:CommercialVehicleCargoBodyCategoryCode
+              items:
+                $ref: >-
+                  mmucc.yaml#/components/schemas/mmuccVehicleCargoBodyCategoryCodeType
+            configurationCode:
+              type: array
+              description: >-
+                An indication of the general configuration of commercial motor
+                vehicle. NIEM reference is j:CommercialVehicleConfigurationCode
+              items:
+                $ref: >-
+                  mmucc.yaml#/components/schemas/mmuccCommercialVehicleConfigurationCodeType
+            '@context':
+              type: string
+              description: jCommercialVehicleType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/jCommercialVehicleTypeContext.jsonld
+    jMotorCarrierType:
+      title: 'j:MotorCarrierType'
+      description: >-
+        A data type for an organization providing commercial motor vehicle
+        transportation for compensation.
+      allOf:
+        - $ref: nc.yaml#/components/schemas/ncOrganizationType
+        - type: object
+          properties:
+            iccIdentification:
+              type: array
+              description: >-
+                An identification assigned by the Interstate Commerce Commission
+                to uniquely identify a given carrier. NIEM reference is
+                j:MotorCarrierICCIdentification
+              items:
+                $ref: nc.yaml#/components/schemas/ncIdentificationType
+            dotIdentification:
+              type: array
+              description: >-
+                An identification assigned by a federal or state department of
+                transportation agency, to uniquely identify a given carrier.
+                NIEM reference is j:MotorCarrierDOTIdentification
+              items:
+                $ref: nc.yaml#/components/schemas/ncIdentificationType
+            isInterstateOperations:
+              type: array
+              description: >-
+                True if a given carrier operates commercial vehicles in
+                interstate commerce; false otherwise.  An interstate designation
+                allows operation in multiple state jurisdictions, which includes
+                U.S. and Mexican states and Canadian provinces. NIEM reference
+                is j:MotorCarrierInterstateOperationsIndicator
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            isHazMatTransportation:
+              type: array
+              description: >-
+                True if a given carrier transports Hazardous Materials (HAZMAT);
+                false otherwise. NIEM reference is
+                j:MotorCarrierHazMatTransportationIndicator
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            isActive:
+              type: array
+              description: >-
+                True if a carrier is in business and is currently subject to
+                regulation; false otherwise. NIEM reference is
+                j:MotorCarrierActiveIndicator
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            categoryCode:
+              type: array
+              description: >-
+                A categorization of a USDOT Number holder. NIEM reference is
+                j:MotorCarrierCategoryCode
+              items:
+                $ref: j.yaml#/components/schemas/jMotorCarrierCategoryCodeType
+            category:
+              type: array
+              description: >-
+                A kind or categorization of a USDOT Number holder. NIEM
+                reference is j:MotorCarrierCategoryText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            isMcsipParticipant:
+              type: array
+              description: >-
+                True if a motor carrier currently participates in the USDOT
+                Motor Carrier Safety Improvement Process (MCSIP) program; false
+                otherwise. NIEM reference is
+                j:MotorCarrierMCSIPParticipantIndicator
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            isCurrentlyTargeted:
+              type: array
+              description: >-
+                True if a motor carrier is currently targeted for increased
+                enforcement action due to a poor safety record; false otherwise.
+                NIEM reference is j:MotorCarrierCurrentlyTargetedIndicator
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            isPreviouslyTargeted:
+              type: array
+              description: >-
+                True if a motor carrier was targeted in the past, for increased
+                enforcement action due to a poor safety record; false otherwise.
+                NIEM reference is j:MotorCarrierPreviouslyTargetedIndicator
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            targetDate:
+              type: array
+              description: >-
+                A date on which the status of targeting a carrier changed.  NIEM
+                reference is j:MotorCarrierTargetDate
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsdate
+            mcsipStep:
+              type: array
+              description: >-
+                A description of the Motor Carrier Safety Improvement Process
+                (MCSIP) Step, reflecting the phase of the MCSIP program that the
+                carrier is assigned to. The step is assigned based on safety
+                statistics (SAFESTAT). NIEM reference is
+                j:MotorCarrierMCSIPStepText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            mcsipStepDate:
+              type: array
+              description: >-
+                A date the carrier was assigned to the associated MCSIP Step. 
+                NIEM reference is j:MotorCarrierMCSIPStepDate
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsdate
+            safestatRating:
+              type: array
+              description: >-
+                A SAFESTAT rating provides a summary of a carriers safety
+                record. The rating is assigned by the SAFESTAT system, using a
+                collection of programs that review a motor carrier's
+                accumulation of accidents, vehicle inspections, law enforcement
+                actions, and compliance reviews and using factors such as the
+                number of vehicles/drivers and approximate mileage. NIEM
+                reference is j:MotorCarrierSAFESTATRatingText
+              items:
+                $ref: nc.yaml#/components/schemas/ncTextType
+            safestatDate:
+              type: array
+              description: >-
+                A date that the associated SAFESTAT rating is assigned by the
+                SAFESTAT system NIEM reference is j:MotorCarrierSAFESTATDate
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsdate
+            prismAdditionDate:
+              type: array
+              description: >-
+                A date on which the carrier was added to the Performance and
+                Registration Information Systems Management (PRISM) Carrier File
+                for safety monitoring. NIEM reference is
+                j:MotorCarrierPRISMAdditionDate
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsdate
+            prismUpdateDate:
+              type: array
+              description: >-
+                A date on which the Performance and Registration Information
+                Systems Management (PRISM) was last updated for the carrier.
+                NIEM reference is j:MotorCarrierPRISMUpdateDate
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsdate
+            censusUpdateDate:
+              type: array
+              description: >-
+                A date on which (DOT MCMIS Census File) information about a
+                Motor Carrier was last updated.  NIEM reference is
+                j:MotorCarrierCensusUpdateDate
+              items:
+                $ref: niem-xs.yaml#/components/schemas/niem-xsdate
+            commercialVehicle:
+              type: array
+              description: >-
+                A class of vehicle that includes motor vehicles with a gross
+                vehicle weight rating of 26,001 pounds or more. NIEM reference
+                is j:CommercialVehicle
+              items:
+                $ref: j.yaml#/components/schemas/jCommercialVehicleType
+            '@context':
+              type: string
+              description: jMotorCarrierType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/jMotorCarrierTypeContext.jsonld
+    jMotorCarrierCategoryCodeType:
+      type: object
+      title: 'j:MotorCarrierCategoryCodeType'
+      description: A data type for a code set that categorizes a USDOT Number holder.
+      properties:
+        simpleType:
+          $ref: j.yaml#/components/schemas/jMotorCarrierCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: jMotorCarrierCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/jMotorCarrierCategoryCodeTypeContext.jsonld
+    jMotorCarrierCategoryCodeSimpleType:
+      type: string
+      description: A data type for a code set that categorizes a USDOT Number holder.
+      enum:
+        - B
+        - C
+        - R
+        - S

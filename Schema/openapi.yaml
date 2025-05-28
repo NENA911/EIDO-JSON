@@ -283,6 +283,11 @@ components:
             additionalDataByValue:
               type: string
               description: Additional data associated with a call.
+            additionalDataDereferencedFromReference:
+              $ref: '#/components/schemas/ReferenceType'
+              description:
+                A reference to the Additional Data data component containing the source 
+                additionalDataByReferenceUrl when additionalDataByValue came from a dereference operation.
             urlPurpose:
               type: string
               description: Purpose that accompanied the URL. For example, the purpose parameter sent with the  URL in the Call-Info headers.
