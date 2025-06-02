@@ -111,29 +111,25 @@ components:
           description: Alternate value for the element.
           type: array
           items:
-            $ref: '#/components/schemas/AlternateType'
-
-    AlternateType:
-      title: Alternate Type
-      description: Alternate Type
-      type: object
-      required:
-        - Constituent
-        - TimeStamp
-        - Value
-      properties:
-        Constituent:
-          type: string
-          description: Agency/Service/FE Id of constituent
-        Timestamp:
-          type: string
-          format: date-time
-          description: TimeStamp of Data Component 
-        values:
-          type: string
-          description: 
-            Value for this element sent by constituent
-            If the element is complex (array or object), the value is the JSON representation of the element. 
+            description: Alternate Type
+            type: object
+            required:
+              - Constituent
+              - TimeStamp
+              - Value
+            properties:
+              Constituent:
+                type: string
+                description: Agency/Service/FE Id of constituent
+              Timestamp:
+                type: string
+                format: date-time
+                description: TimeStamp of Data Component 
+              values:
+                type: string
+                description: 
+                  Value for this element sent by constituent
+                  If the element is complex (array or object), the value is the JSON representation of the element. 
     AgencyType:
       title: Agency Type
       description:
@@ -528,12 +524,7 @@ components:
               $ref: 'NIEMComponents/nc.yaml#/components/schemas/ncOrganizationType'
             organizationIncidentRoleRegistryText:
               type: array
-              description: Shall only contains values from the Organization Incident Role registry.
-              items:
-                type: string
-            callIdentifier:
-              type: array
-              description: Call Identifier of the calls this person was involved on.
+              description: Contains values from the Organization Incident Role registry.
               items:
                 type: string
             additionalDataReference:
@@ -912,7 +903,7 @@ components:
             organizationReference:
               type: array
               description:
-                Information about a organization associated with an incident. Linked
+                Information about an organization associated with a call. Linked
                 elements type is OrganizationInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
@@ -1331,9 +1322,7 @@ components:
                 A textual description indicating the type of caution information. This 
                 is the internal text used by the local agencies involved in the Incident.
             cautionTypeCommonRegistryText:
-              type: array
-              items:
-                type: string
+              type: string
               description: 
                 A registry value further describing the caution. More than one is allowed 
                 when they are related.
