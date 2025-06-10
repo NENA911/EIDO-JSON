@@ -125,7 +125,7 @@ components:
                 type: string
                 format: date-time
                 description: TimeStamp of Data Component 
-              values:
+              OtherValue:
                 type: string
                 description: 
                   Value for this element sent by constituent
