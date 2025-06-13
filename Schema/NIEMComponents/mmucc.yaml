@@ -309,3 +309,74 @@ components:
         - '8'
         - '9'
         - '98'
+    mmuccVehicleCargoBodyCategoryCodeType:
+      type: object
+      title: 'mmucc:VehicleCargoBodyCategoryCodeType'
+      description: >-
+        A data type for a kind of body for buses and trucks more than 10,000 lbs
+        (4,536 kg) GVWR.
+      properties:
+        simpleType:
+          $ref: >-
+            mmucc.yaml#/components/schemas/mmuccVehicleCargoBodyCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: mmuccVehicleCargoBodyCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/mmuccVehicleCargoBodyCategoryCodeTypeContext.jsonld
+    mmuccVehicleCargoBodyCategoryCodeSimpleType:
+      type: string
+      description: >-
+        A data type for a kind of body for buses and trucks more than 10,000 lbs
+        (4,536 kg) GVWR.
+      enum:
+        - '0'
+        - '1'
+        - '10'
+        - '11'
+        - '12'
+        - '2'
+        - '22'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+        - '96'
+        - '97'
+        - '98'
+        - '99'
+    mmuccCommercialVehicleConfigurationCodeType:
+      type: object
+      title: 'mmucc:CommercialVehicleConfigurationCodeType'
+      description: A data type for a general configuration of a motor vehicle.
+      properties:
+        simpleType:
+          $ref: >-
+            mmucc.yaml#/components/schemas/mmuccCommercialVehicleConfigurationCodeSimpleType
+        '@context':
+          type: string
+          description: mmuccCommercialVehicleConfigurationCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/mmuccCommercialVehicleConfigurationCodeTypeContext.jsonld
+    mmuccCommercialVehicleConfigurationCodeSimpleType:
+      type: string
+      description: A data type for a general configuration of a motor vehicle.
+      enum:
+        - '0'
+        - '1'
+        - '10'
+        - '19'
+        - '2'
+        - '20'
+        - '21'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '99'
