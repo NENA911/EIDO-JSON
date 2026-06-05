@@ -7,7 +7,7 @@ info:
   contact:
     name: NENA
     email: commleadership@nena.org
-  version: '1.0.0'
+  version: '1.0.1'
 servers:
   - url: 'http://localhost/'
   - url: 'https://localhost/'
@@ -641,6 +641,11 @@ components:
               type: string
               description: 
                 Content of the SIP identity header. Required if known.
+            sipIdentities:
+              type: array
+              description: Content of the SIP identity headers. Required if known.
+              items:
+                type: string
             agentReference:
               type: array
               description: Linked elements type is AgentType
