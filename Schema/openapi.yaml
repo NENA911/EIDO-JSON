@@ -1390,6 +1390,11 @@ components:
               description: 
                 Describe the type of value in the cautionSource Data Element. Possible 
                 values are “AgentId”, “AgencyId”, “PersonId” or “Text”.
+              enum:
+                - AgentId
+                - AgencyId
+                - PersonId
+                - Text
             startDate:
               type: string
               description: 
