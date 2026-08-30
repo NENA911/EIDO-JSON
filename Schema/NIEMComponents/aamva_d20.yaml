@@ -94,7 +94,7 @@ components:
         - OA
         - OH
         - OK
-        - 'ON'
+        - ON
         - OR
         - PA
         - PB
@@ -156,8 +156,8 @@ components:
         - '05'
         - '06'
         - '07'
-        - 08
-        - 09
+        - '08'
+        - '09'
         - '10'
         - '11'
         - '12'
@@ -264,8 +264,8 @@ components:
         - '05'
         - '06'
         - '07'
-        - 08
-        - 09
+        - '08'
+        - '09'
         - '10'
         - '11'
         - '12'
@@ -648,7 +648,7 @@ components:
         - K
         - L
         - M
-        - 'N'
+        - N
         - P
         - Q
         - R
@@ -743,8 +743,8 @@ components:
       enum:
         - B
         - E
-        - 'N'
-        - 'Y'
+        - N
+        - Y
     aamva_d20BrandDamagePercentageCategoryCodeType:
       type: object
       title: 'aamva_d20:BrandDamagePercentageCategoryCodeType'
@@ -810,8 +810,8 @@ components:
         - '05'
         - '06'
         - '07'
-        - 08
-        - 09
+        - '08'
+        - '09'
         - '10'
         - '11'
         - '12'
@@ -881,7 +881,7 @@ components:
         - '02'
         - '03'
         - '04'
-        - 09
+        - '09'
     aamva_d20DriverLicenseMedicalCertificationRestrictionCodeType:
       type: object
       title: 'aamva_d20:DriverLicenseMedicalCertificationRestrictionCodeType'
@@ -1044,7 +1044,7 @@ components:
         - K
         - L
         - M
-        - 'N'
+        - N
         - O
         - P
         - V
@@ -1073,7 +1073,7 @@ components:
         the operation of specified kinds of vehicles carrying specified loads.
       enum:
         - L
-        - 'N'
+        - N
         - O
         - P
         - S
@@ -1234,7 +1234,7 @@ components:
         - K
         - L
         - M
-        - 'N'
+        - N
         - O
         - P
         - V
@@ -1265,7 +1265,7 @@ components:
       enum:
         - H
         - L
-        - 'N'
+        - N
         - O
         - P
         - S
