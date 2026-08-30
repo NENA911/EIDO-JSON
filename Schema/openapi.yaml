@@ -1357,7 +1357,7 @@ components:
             cautionTypeCommonRegistryText:
               type: string
               description:
-                A type of caution as described in the 'Caution Type' registry.
+                A type of caution as described in the 'EIDO Caution Type' registry.
             cautionTypeCommonSubRegistryText:
               type: array
               description: 
