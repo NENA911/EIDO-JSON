@@ -23,8 +23,8 @@ components:
         - '05'
         - '06'
         - '07'
-        - 08
-        - 09
+        - '08'
+        - '09'
         - '10'
         - '11'
         - '12'
@@ -285,7 +285,7 @@ components:
         - G
         - I
         - J
-        - 'N'
+        - N
         - O
         - P
         - S
@@ -314,7 +314,7 @@ components:
         - A
         - C
         - D
-        - 'N'
+        - N
     ucrJustifiableHomicideFactorsCodeType:
       type: object
       title: 'ucr:JustifiableHomicideFactorsCodeType'
@@ -369,8 +369,8 @@ components:
         - '05'
         - '06'
         - '07'
-        - 08
-        - 09
+        - '08'
+        - '09'
         - '10'
         - '20'
         - '21'
@@ -396,7 +396,7 @@ components:
       description: A data type for methods of entry into a structure or premises.
       enum:
         - F
-        - 'N'
+        - N
     ucrLEOKAActivityCategoryCodeType:
       type: object
       title: 'ucr:LEOKAActivityCategoryCodeType'
@@ -424,8 +424,8 @@ components:
         - '05'
         - '06'
         - '07'
-        - 08
-        - 09
+        - '08'
+        - '09'
         - '10'
         - '11'
     ucrLEOKAOfficerAssignmentCategoryCodeType:
@@ -477,7 +477,7 @@ components:
         - I
         - L
         - M
-        - 'N'
+        - N
         - O
         - T
         - U
@@ -551,7 +551,7 @@ components:
       enum:
         - C
         - M
-        - 'N'
+        - N
     ucrDrugCategoryCodeType:
       type: object
       title: 'ucr:DrugCategoryCodeType'
@@ -581,7 +581,7 @@ components:
         - K
         - L
         - M
-        - 'N'
+        - N
         - O
         - P
         - U
@@ -640,7 +640,7 @@ components:
         - C
         - D
         - E
-        - 'N'
+        - N
     ucrIncidentBiasMotivationCodeType:
       type: object
       title: 'ucr:IncidentBiasMotivationCodeType'
@@ -703,7 +703,7 @@ components:
       description: A data type for kinds of cultural lineages of a person.
       enum:
         - H
-        - 'N'
+        - N
         - U
     ucrForceCategoryCodeType:
       type: object
@@ -767,6 +767,6 @@ components:
         A data type for whether or not a person was a resident of a town, city,
         or community in relation to some activity.
       enum:
-        - 'N'
+        - N
         - R
         - U
