@@ -130,9 +130,9 @@ components:
                 format: date-time
                 description: TimeStamp of Data Component 
               otherValue:
-                type: object
+                type: string
                 description: 
-                  Value for this element sent by constituent
+                  JSON string value for this element sent by constituent
     AgencyType:
       title: Agency Type
       description:
