@@ -1595,4 +1595,4 @@ components:
                 '@vocab': 
                   type: string
                   enum:
-                    - './JSON-LD_Contexts/EmergencyIncidentDataObjectType.jsonld'
+                    - 'file:./JSON-LD_Contexts/EmergencyIncidentDataObjectType.jsonld'
