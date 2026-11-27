@@ -156,8 +156,8 @@ components:
         - '05'
         - '06'
         - '07'
-        - 08
-        - 09
+        - '08'
+        - '09'
         - '10'
         - '11'
         - '12'
@@ -264,8 +264,8 @@ components:
         - '05'
         - '06'
         - '07'
-        - 08
-        - 09
+        - '08'
+        - '09'
         - '10'
         - '11'
         - '12'
@@ -810,8 +810,8 @@ components:
         - '05'
         - '06'
         - '07'
-        - 08
-        - 09
+        - '08'
+        - '09'
         - '10'
         - '11'
         - '12'
@@ -881,7 +881,7 @@ components:
         - '02'
         - '03'
         - '04'
-        - 09
+        - '09'
     aamva_d20DriverLicenseMedicalCertificationRestrictionCodeType:
       type: object
       title: 'aamva_d20:DriverLicenseMedicalCertificationRestrictionCodeType'
